@@ -1,0 +1,344 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "images": [
+      {
+        "alt": "AC Experts — Expertise You Can Trust",
+        "source": "/images/design/ac-experts-logo-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fac-experts-logo-hq.png&w=640&q=90",
+        "width": 210,
+        "height": 70.1875,
+        "complete": true,
+        "naturalWidth": 210,
+        "naturalHeight": 70,
+        "className": ""
+      },
+      {
+        "alt": "AC Experts technician servicing a wall-mounted air conditioner",
+        "source": "/images/design/hero-hq-clean.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fhero-hq-clean.png&w=1920&q=90",
+        "width": 729.203125,
+        "height": 700.59375,
+        "complete": true,
+        "naturalWidth": 485,
+        "naturalHeight": 467,
+        "className": ""
+      },
+      {
+        "alt": "",
+        "source": "/images/design/skyline-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fskyline-hq.png&w=3840&q=90",
+        "width": 1180.796875,
+        "height": 393.59375,
+        "complete": true,
+        "naturalWidth": 668,
+        "naturalHeight": 222,
+        "className": ""
+      },
+      {
+        "alt": "Daikin",
+        "source": "/images/quality/5-9a789422-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2F5-9a789422-hq.png&w=384&q=90",
+        "width": 154.5625,
+        "height": 52,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "LG",
+        "source": "/images/quality/lg-logo-hq-v2.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Flg-logo-hq-v2.png&w=384&q=90",
+        "width": 154.578125,
+        "height": 52,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "Samsung",
+        "source": "/images/design/samsung-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fsamsung-hq.png&w=384&q=90",
+        "width": 148.8125,
+        "height": 47.734375,
+        "complete": true,
+        "naturalWidth": 150,
+        "naturalHeight": 50,
+        "className": ""
+      },
+      {
+        "alt": "Mitsubishi",
+        "source": "/images/quality/7-1dadd2db-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2F7-1dadd2db-hq.png&w=384&q=90",
+        "width": 154.578125,
+        "height": 52,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "Gree",
+        "source": "/images/quality/3-9deac3c0-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2F3-9deac3c0-hq.png&w=384&q=90",
+        "width": 154.5625,
+        "height": 52,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "Panasonic",
+        "source": "/images/design/panasonic-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fpanasonic-hq.png&w=384&q=90",
+        "width": 158.75,
+        "height": 48.859375,
+        "complete": true,
+        "naturalWidth": 160,
+        "naturalHeight": 53,
+        "className": ""
+      },
+      {
+        "alt": "General",
+        "source": "/images/quality/1-7386d9e3-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2F1-7386d9e3-hq.png&w=384&q=90",
+        "width": 154.5625,
+        "height": 52,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "",
+        "source": "/images/gallery/farmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Ffarmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg&w=256&q=90",
+        "width": 44,
+        "height": 44,
+        "complete": true,
+        "naturalWidth": 72,
+        "naturalHeight": 47,
+        "className": ""
+      },
+      {
+        "alt": "",
+        "source": "/images/gallery/close-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Fclose-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg&w=256&q=90",
+        "width": 44,
+        "height": 44,
+        "complete": true,
+        "naturalWidth": 72,
+        "naturalHeight": 48,
+        "className": ""
+      },
+      {
+        "alt": "",
+        "source": "/images/gallery/testimonial3-7b0d2810.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Ftestimonial3-7b0d2810.png&w=256&q=90",
+        "width": 44,
+        "height": 44,
+        "complete": true,
+        "naturalWidth": 22,
+        "naturalHeight": 22,
+        "className": ""
+      },
+      {
+        "alt": "AC Experts technician beside a branded service van",
+        "source": "/images/design/cta-hq-v2.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fcta-hq-v2.png&w=1080&q=90",
+        "width": 493.109375,
+        "height": 369.3125,
+        "complete": true,
+        "naturalWidth": 500,
+        "naturalHeight": 375,
+        "className": ""
+      },
+      {
+        "alt": "AC Experts — Expertise You Can Trust",
+        "source": "/images/design/ac-experts-logo-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fac-experts-logo-hq.png&w=640&q=90",
+        "width": 195,
+        "height": 65.171875,
+        "complete": true,
+        "naturalWidth": 210,
+        "naturalHeight": 70,
+        "className": ""
+      }
+    ]
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "images": [
+      {
+        "alt": "AC Experts — Expertise You Can Trust",
+        "source": "/images/design/ac-experts-logo-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fac-experts-logo-hq.png&w=640&q=90",
+        "width": 158,
+        "height": 52.796875,
+        "complete": true,
+        "naturalWidth": 210,
+        "naturalHeight": 70,
+        "className": ""
+      },
+      {
+        "alt": "AC Experts technician servicing a wall-mounted air conditioner",
+        "source": "/images/design/hero-hq-clean.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fhero-hq-clean.png&w=828&q=90",
+        "width": 390,
+        "height": 374.703125,
+        "complete": true,
+        "naturalWidth": 390,
+        "naturalHeight": 375,
+        "className": ""
+      },
+      {
+        "alt": "",
+        "source": "/images/design/skyline-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fskyline-hq.png&w=3840&q=90",
+        "width": 390,
+        "height": 129.96875,
+        "complete": true,
+        "naturalWidth": 668,
+        "naturalHeight": 222,
+        "className": ""
+      },
+      {
+        "alt": "Daikin",
+        "source": "/images/quality/5-9a789422-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2F5-9a789422-hq.png&w=384&q=90",
+        "width": 75.5,
+        "height": 32,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "LG",
+        "source": "/images/quality/lg-logo-hq-v2.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Flg-logo-hq-v2.png&w=384&q=90",
+        "width": 75.5,
+        "height": 32,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "Samsung",
+        "source": "/images/design/samsung-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fsamsung-hq.png&w=384&q=90",
+        "width": 86.421875,
+        "height": 27.71875,
+        "complete": true,
+        "naturalWidth": 150,
+        "naturalHeight": 50,
+        "className": ""
+      },
+      {
+        "alt": "Mitsubishi",
+        "source": "/images/quality/7-1dadd2db-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2F7-1dadd2db-hq.png&w=384&q=90",
+        "width": 75.5,
+        "height": 32,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "Gree",
+        "source": "/images/quality/3-9deac3c0-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2F3-9deac3c0-hq.png&w=384&q=90",
+        "width": 75.5,
+        "height": 32,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "Panasonic",
+        "source": "/images/design/panasonic-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fpanasonic-hq.png&w=384&q=90",
+        "width": 92.203125,
+        "height": 28.375,
+        "complete": true,
+        "naturalWidth": 160,
+        "naturalHeight": 53,
+        "className": ""
+      },
+      {
+        "alt": "General",
+        "source": "/images/quality/1-7386d9e3-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2F1-7386d9e3-hq.png&w=384&q=90",
+        "width": 75.5,
+        "height": 32,
+        "complete": true,
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "className": " quality-image"
+      },
+      {
+        "alt": "",
+        "source": "/images/gallery/farmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Ffarmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg&w=256&q=90",
+        "width": 44,
+        "height": 44,
+        "complete": true,
+        "naturalWidth": 72,
+        "naturalHeight": 47,
+        "className": ""
+      },
+      {
+        "alt": "",
+        "source": "/images/gallery/close-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Fclose-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg&w=256&q=90",
+        "width": 0,
+        "height": 0,
+        "complete": true,
+        "naturalWidth": 72,
+        "naturalHeight": 48,
+        "className": ""
+      },
+      {
+        "alt": "",
+        "source": "/images/gallery/testimonial3-7b0d2810.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Ftestimonial3-7b0d2810.png&w=256&q=90",
+        "width": 0,
+        "height": 0,
+        "complete": true,
+        "naturalWidth": 22,
+        "naturalHeight": 22,
+        "className": ""
+      },
+      {
+        "alt": "AC Experts technician beside a branded service van",
+        "source": "/images/design/cta-hq-v2.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fcta-hq-v2.png&w=828&q=90",
+        "width": 348,
+        "height": 260.625,
+        "complete": true,
+        "naturalWidth": 390,
+        "naturalHeight": 292,
+        "className": ""
+      },
+      {
+        "alt": "AC Experts — Expertise You Can Trust",
+        "source": "/images/design/ac-experts-logo-hq.png",
+        "deliveredUrl": "http://localhost:3001/_next/image/?url=%2Fimages%2Fdesign%2Fac-experts-logo-hq.png&w=640&q=90",
+        "width": 177,
+        "height": 59.15625,
+        "complete": true,
+        "naturalWidth": 210,
+        "naturalHeight": 70,
+        "className": ""
+      }
+    ]
+  }
+]

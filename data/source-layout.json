@@ -1,0 +1,5006 @@
+{
+  "capturedAt": "2026-10-05T10:05:50.506Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "pages": {
+    "/about/": {
+      "257756c": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2019/04/about_us_bg.jpg"
+        ],
+        "tag": "div",
+        "width": 1440,
+        "height": 663
+      },
+      "257756c:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 663
+      },
+      "19a725a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 635,
+        "height": 473
+      },
+      "54626ed": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 169,
+        "height": 28
+      },
+      "8289bf9": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 568,
+        "height": 50
+      },
+      "938d9a8": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 568,
+        "height": 302
+      },
+      "775100c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 568,
+        "height": 48
+      },
+      "bd1f08b": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 775,
+        "height": 473
+      },
+      "ed61dc4": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 745,
+        "height": 400
+      },
+      "ed61dc4:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 745,
+        "height": 400
+      },
+      "081068b": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/technician-man.webp"
+        ],
+        "tag": "div",
+        "width": 1440,
+        "height": 215
+      },
+      "081068b:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 215
+      },
+      "78f0ff3": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 894,
+        "height": 130
+      },
+      "5c3a645": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 864,
+        "height": 18
+      },
+      "9722b36": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 864,
+        "height": 72
+      },
+      "ad8970c": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 516,
+        "height": 130
+      },
+      "c5637df": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 486,
+        "height": 48
+      },
+      "0eaa57e": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 118
+      },
+      "0eaa57e:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 118
+      },
+      "12f01b4": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 98
+      },
+      "d7c15d7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 140,
+        "height": 26
+      },
+      "d4b84cf": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 281,
+        "height": 32
+      },
+      "57448bb": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 222
+      },
+      "57448bb:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 222
+      },
+      "1079d26": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 463,
+        "height": 202
+      },
+      "102ae0a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 443,
+        "height": 52
+      },
+      "f41133e": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 443,
+        "height": 110
+      },
+      "564bc56": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 463,
+        "height": 202
+      },
+      "3ba0573": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 443,
+        "height": 52
+      },
+      "8fc991c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 443,
+        "height": 110
+      },
+      "3e45531": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 463,
+        "height": 202
+      },
+      "fa43cc9": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 443,
+        "height": 52
+      },
+      "aa0df2d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 443,
+        "height": 110
+      },
+      "68a2a07": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 520
+      },
+      "90bba6a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/ac-man.png"
+        ],
+        "tag": "div",
+        "width": 679,
+        "height": 500
+      },
+      "f957520": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 679,
+        "height": 500
+      },
+      "73420c3": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 741,
+        "height": 500
+      },
+      "b804b66": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 621,
+        "height": 72
+      },
+      "4e3d9f0": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 621,
+        "height": 62
+      },
+      "c1b2d46": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 621,
+        "height": 48
+      },
+      "ad14f44": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 124
+      },
+      "ad14f44:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 124
+      },
+      "20f3229": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 44
+      },
+      "b78bd06": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      },
+      "b78bd06:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      }
+    },
+    "/ac-installation-service/": {
+      "c5dcaaa": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 60
+      },
+      "c5dcaaa:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 60
+      },
+      "a2d1a98": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 40
+      },
+      "1c385e3": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 2168
+      },
+      "1c385e3:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2168
+      },
+      "094762b": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 2148
+      },
+      "c5ade00": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 335,
+        "height": 468
+      },
+      "e280403": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 315,
+        "height": 82
+      },
+      "707af95": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/banneer01.jpg"
+        ],
+        "tag": "div",
+        "width": 315,
+        "height": 346
+      },
+      "2221e76": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 55
+      },
+      "db96671": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 173
+      },
+      "92bb90d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 48
+      },
+      "18b0181": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1065,
+        "height": 2148
+      },
+      "bb48542": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 350
+      },
+      "4fdfc48": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/ac-installation1.jpg"
+        ],
+        "tag": "div",
+        "width": 518,
+        "height": 320
+      },
+      "ae9522b": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 503,
+        "height": 320
+      },
+      "f9f4c23": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 518,
+        "height": 320
+      },
+      "e9fd4d7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 503,
+        "height": 314
+      },
+      "94cdadf": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "203.391px 203.406px 203.391px 203.406px 203.391px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 310
+      },
+      "af180af": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "aa88a1a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "2d93b11": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "f8f2a7c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "0507404": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "85d0b6c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "ac74faa": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "fae566d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "87e4fc8": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "ec79896": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "344e648": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "67b46f3": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "d1b5423": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "fd1abcf": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "99aac3c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "60e7867": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 24
+      },
+      "edf1782": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 870
+      },
+      "24143b1": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 24
+      },
+      "dfc7f2f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 449
+      }
+    },
+    "/": {
+      "2914914": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 520
+      },
+      "3461656": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1350,
+        "height": 18
+      },
+      "3502940": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 347,
+        "height": 305
+      },
+      "4247287": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 662,
+        "height": 62
+      },
+      "4441316": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 650,
+        "height": 665
+      },
+      "9904433": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 669,
+        "height": 153
+      },
+      "3276b8d": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 596
+      },
+      "f1be7b6": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 596
+      },
+      "f1be7b6:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 596
+      },
+      "ed7a325": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 596
+      },
+      "ed7a325:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 596
+      },
+      "3a6efc4": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 596
+      },
+      "cd2d743": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 80
+      },
+      "743e4d0": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 48
+      },
+      "da272ac": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 47
+      },
+      "e9ed1a8": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 596
+      },
+      "07304a6": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 596
+      },
+      "61b3851": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 596
+      },
+      "61b3851:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 596
+      },
+      "bb2ad11": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 596
+      },
+      "d616682": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 546
+      },
+      "431fc64": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 596
+      },
+      "57edb6e": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 80
+      },
+      "fd57e1d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 20
+      },
+      "4beddd5": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 47
+      },
+      "b4436bb": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 596
+      },
+      "b4436bb:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 596
+      },
+      "180ef52": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 596
+      },
+      "96a18b3": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 454
+      },
+      "0fa0e4d": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 596
+      },
+      "ef3d1aa": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 80
+      },
+      "9c1ff2f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 20
+      },
+      "136c62c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 47
+      },
+      "0e8fc79": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 317
+      },
+      "0e8fc79:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 317
+      },
+      "1e25800": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 331
+      },
+      "727948c": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1360,
+        "height": 301
+      },
+      "af978b8": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 328,
+        "height": 281
+      },
+      "47c0093": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 278,
+        "height": 86
+      },
+      "ffe696a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 278,
+        "height": 134
+      },
+      "a2f24f6": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 328,
+        "height": 281
+      },
+      "2afbfee": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 278,
+        "height": 86
+      },
+      "ae644b2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 278,
+        "height": 134
+      },
+      "c75accf": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 328,
+        "height": 281
+      },
+      "9e7e07e": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 278,
+        "height": 86
+      },
+      "1ba1edc": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 278,
+        "height": 110
+      },
+      "132d20d": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 328,
+        "height": 281
+      },
+      "4a7c9e8": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 278,
+        "height": 86
+      },
+      "b53330b": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 278,
+        "height": 110
+      },
+      "a14454e": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 842
+      },
+      "a14454e:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 842
+      },
+      "2175a99": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 699,
+        "height": 612
+      },
+      "3a212f7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 120,
+        "height": 26
+      },
+      "b5a2f75": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 669,
+        "height": 40
+      },
+      "b00b1e7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 669,
+        "height": 245
+      },
+      "b02e113": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 329,
+        "height": 153
+      },
+      "3e6f182": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 309,
+        "height": 67
+      },
+      "c10c575": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 309,
+        "height": 46
+      },
+      "7b9860a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 329,
+        "height": 153
+      },
+      "d657448": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 309,
+        "height": 67
+      },
+      "410d998": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 309,
+        "height": 46
+      },
+      "e29847b": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 669,
+        "height": 48
+      },
+      "ad3e1c6": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 711,
+        "height": 612
+      },
+      "9cae23a": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 656,
+        "height": 530
+      },
+      "ab57d33": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 313,
+        "height": 540
+      },
+      "d9fd2bd": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 313,
+        "height": 510
+      },
+      "1ea1f2d": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 313,
+        "height": 510
+      },
+      "e4ed9c4": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 313,
+        "height": 510
+      },
+      "2acb55a": {
+        "display": "none",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 0,
+        "height": 0
+      },
+      "003e075": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/banneer01.jpg"
+        ],
+        "tag": "div",
+        "width": 1440,
+        "height": 415
+      },
+      "003e075:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 415
+      },
+      "a42d025": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 235
+      },
+      "0004694": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 36
+      },
+      "1b17f57": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 91
+      },
+      "b1c2735": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 48
+      },
+      "9d2a467": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 118
+      },
+      "9d2a467:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 118
+      },
+      "00b2c60": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 98
+      },
+      "42dde49": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 168,
+        "height": 26
+      },
+      "29842ec": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 449,
+        "height": 32
+      },
+      "c5e6c52": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 325
+      },
+      "c5e6c52:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 325
+      },
+      "6b47b93": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 348,
+        "height": 305
+      },
+      "9f0ff26": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 327,
+        "height": 275
+      },
+      "4c78cba": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 327,
+        "height": 284
+      },
+      "a7a2438": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 348,
+        "height": 305
+      },
+      "35a43f7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 327,
+        "height": 251
+      },
+      "13a7b11": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 348,
+        "height": 305
+      },
+      "0f18316": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 327,
+        "height": 284
+      },
+      "c4a310c": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 177
+      },
+      "c4a310c:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 177
+      },
+      "9165f3f": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 467,
+        "height": 137
+      },
+      "47af2e2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 447,
+        "height": 117
+      },
+      "e9ba947": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 467,
+        "height": 137
+      },
+      "8feda04": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 447,
+        "height": 117
+      },
+      "a8ce519": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 467,
+        "height": 137
+      },
+      "6ce26a9": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 447,
+        "height": 117
+      },
+      "2b6c349": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 520
+      },
+      "2b6c349:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 520
+      },
+      "e7b02f7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 662,
+        "height": 64
+      },
+      "f52b163": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 662,
+        "height": 134
+      },
+      "a2cd23e": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2025/02/banner-side.webp"
+        ],
+        "tag": "div",
+        "width": 710,
+        "height": 520
+      },
+      "9c3832a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 514
+      },
+      "9c3832a:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 514
+      },
+      "e5af620": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 364
+      },
+      "ae9a97a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 168,
+        "height": 26
+      },
+      "dedc272": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 32
+      },
+      "220f9cb": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 246
+      },
+      "220f9cb:loop": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "1400px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 246
+      },
+      "220f9cb:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 230
+      },
+      "c895d85": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/ac-cool.jpg"
+        ],
+        "tag": "div",
+        "width": 1400,
+        "height": 230
+      },
+      "c895d85:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1380,
+        "height": 230
+      },
+      "516c51f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1380,
+        "height": 18
+      },
+      "f16d82d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1380,
+        "height": 37
+      },
+      "43e2892": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 355
+      },
+      "43e2892:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 355
+      },
+      "cfebec9": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 315
+      },
+      "717b39b": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 168,
+        "height": 26
+      },
+      "3467ab1": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 218,
+        "height": 28
+      },
+      "96d2874": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 201
+      },
+      "96d2874:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1330,
+        "height": 161
+      },
+      "ee8d90e": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 919
+      },
+      "ee8d90e:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 919
+      },
+      "c2591be": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 739
+      },
+      "6757ce1": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 168,
+        "height": 26
+      },
+      "8cfd460": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 224,
+        "height": 28
+      },
+      "4e68eeb": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 625
+      },
+      "4e68eeb:loop": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "1400px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 625
+      },
+      "4e68eeb:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 625
+      },
+      "c1bc576": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 625
+      },
+      "c1bc576:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1350,
+        "height": 623
+      },
+      "979ab0d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1350,
+        "height": 499
+      },
+      "152bce8": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1350,
+        "height": 18
+      },
+      "cab1adb": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 881
+      },
+      "cab1adb:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 881
+      },
+      "fd9eed1": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 861
+      },
+      "73d6f3a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 215,
+        "height": 26
+      },
+      "9cafd68": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 650,
+        "height": 32
+      },
+      "34d6666": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 650,
+        "height": 38
+      },
+      "71998e8": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/10/worker-acexperts.webp"
+        ],
+        "tag": "div",
+        "width": 710,
+        "height": 861
+      },
+      "6f32adb": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 50
+      }
+    },
+    "/ac-repair-services/": {
+      "7d551c8": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 69
+      },
+      "7d551c8:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 69
+      },
+      "c5cd886": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 49
+      },
+      "f20c0b3": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 2071
+      },
+      "f20c0b3:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2071
+      },
+      "becdfda": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 2051
+      },
+      "c73e371": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 335,
+        "height": 468
+      },
+      "eed4da3": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 315,
+        "height": 82
+      },
+      "1561d79": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/banneer01.jpg"
+        ],
+        "tag": "div",
+        "width": 315,
+        "height": 346
+      },
+      "f15aa01": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 55
+      },
+      "5ceeb37": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 173
+      },
+      "39675f2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 48
+      },
+      "a4dabd8": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1065,
+        "height": 2051
+      },
+      "3f82d54": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 350
+      },
+      "dc8d7c8": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2024/08/Ac-Repair-Dubai.webp"
+        ],
+        "tag": "div",
+        "width": 518,
+        "height": 320
+      },
+      "0c1389d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 503,
+        "height": 320
+      },
+      "5f4f231": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 518,
+        "height": 320
+      },
+      "0c3b56b": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 503,
+        "height": 224
+      },
+      "df61db1": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "203.391px 203.406px 203.391px 203.406px 203.391px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 229
+      },
+      "aea5024": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "3cfd097": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "55c5118": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "9d85b46": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "03b52c7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "61e0ff3": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "336ea9a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "f195a45": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "77bc554": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "efc9630": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 68
+      },
+      "2b060c2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 24
+      },
+      "33229a0": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 870
+      },
+      "98c386f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 24
+      },
+      "f3b8329": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 433
+      }
+    },
+    "/blog/": {
+      "3461656": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 800,
+        "height": 18
+      },
+      "ccd1064": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 130
+      },
+      "ccd1064:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 130
+      },
+      "b52f3fa": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 40
+      },
+      "754384b": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 2638
+      },
+      "754384b:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2638
+      },
+      "b0dabeb": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2618
+      },
+      "b0dabeb:loop": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "850px 850px 850px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2594
+      },
+      "c1bc576": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 850,
+        "height": 626
+      },
+      "c1bc576:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 800,
+        "height": 624
+      },
+      "979ab0d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 800,
+        "height": 500
+      },
+      "152bce8": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 800,
+        "height": 18
+      }
+    },
+    "/blog/page/2/": {
+      "3461656": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 800,
+        "height": 18
+      },
+      "ccd1064": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 130
+      },
+      "ccd1064:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 130
+      },
+      "b52f3fa": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 40
+      },
+      "754384b": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 2638
+      },
+      "754384b:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2638
+      },
+      "b0dabeb": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2618
+      },
+      "b0dabeb:loop": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "850px 850px 850px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2594
+      },
+      "c1bc576": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 850,
+        "height": 626
+      },
+      "c1bc576:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 800,
+        "height": 624
+      },
+      "979ab0d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 800,
+        "height": 499
+      },
+      "152bce8": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 800,
+        "height": 18
+      }
+    },
+    "/category/acexpertdubai/": {},
+    "/category/acrepairing/": {},
+    "/category/acservices/": {},
+    "/category/maintenance/": {},
+    "/category/uncategorized/": {},
+    "/category/uncategorized/page/2/": {},
+    "/category/uncategorized/repairing/": {},
+    "/emergency-ac-maintenance-service/": {
+      "7a91277": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 60
+      },
+      "7a91277:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 60
+      },
+      "53d5ffe": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 40
+      },
+      "83683e0": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 2094
+      },
+      "83683e0:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2094
+      },
+      "9f67a68": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 2074
+      },
+      "d9b4098": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 335,
+        "height": 468
+      },
+      "3fd93f1": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 315,
+        "height": 82
+      },
+      "eb34237": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/banneer01.jpg"
+        ],
+        "tag": "div",
+        "width": 315,
+        "height": 346
+      },
+      "33b721c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 55
+      },
+      "e1f0047": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 173
+      },
+      "8275d8a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 48
+      },
+      "293fa49": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1065,
+        "height": 2074
+      },
+      "b753263": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 350
+      },
+      "fbf442c": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2024/08/Professional-AC-Repair-1.webp"
+        ],
+        "tag": "div",
+        "width": 518,
+        "height": 320
+      },
+      "8b0ead8": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 503,
+        "height": 320
+      },
+      "6ad2e43": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 518,
+        "height": 320
+      },
+      "80a06b9": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 503,
+        "height": 224
+      },
+      "3954f97": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "203.391px 203.406px 203.391px 203.406px 203.391px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 213
+      },
+      "4e24c66": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "171bd95": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "ce889af": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "c12ed9e": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "427235b": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "26115da": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "75c4fe9": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 95
+      },
+      "aaecfe5": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 24
+      },
+      "bff1900": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 822
+      },
+      "11ef3c4": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 24
+      },
+      "3aca6c9": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 521
+      }
+    },
+    "/contact-us/": {
+      "c7ea52c": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 478
+      },
+      "c7ea52c:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 478
+      },
+      "0fc3544": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 913,
+        "height": 458
+      },
+      "e0faf18": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 141,
+        "height": 26
+      },
+      "c140221": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 502,
+        "height": 40
+      },
+      "41b2dac": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 783,
+        "height": 0
+      },
+      "ef6cc8d": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 467,
+        "height": 458
+      },
+      "a43eaa6": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 407,
+        "height": 36
+      },
+      "1dc81fc": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 407,
+        "height": 18
+      },
+      "f6b9cbf": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 407,
+        "height": 18
+      },
+      "69e98f0": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 407,
+        "height": 246
+      },
+      "751431d": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 407,
+        "height": 221
+      },
+      "0f028e2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 407,
+        "height": 221
+      },
+      "bf25e03": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 540
+      },
+      "4f529be": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 520
+      },
+      "da90be5": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 500
+      },
+      "e32556e": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 124
+      },
+      "e32556e:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 124
+      },
+      "2a8d0c2": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 44
+      },
+      "5ed6db2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      },
+      "5ed6db2:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      }
+    },
+    "/faq/": {
+      "c3e4c4a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 60
+      },
+      "c3e4c4a:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 60
+      },
+      "a4c6de7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 40
+      },
+      "907a138": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 1127
+      },
+      "907a138:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 927
+      },
+      "b481c22": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 982,
+        "height": 927
+      },
+      "65d3ef7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 952,
+        "height": 927
+      },
+      "83b1960": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 438,
+        "height": 927
+      },
+      "81ec875": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 408,
+        "height": 282
+      },
+      "81ec875:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 408,
+        "height": 282
+      },
+      "76bb07b": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 408,
+        "height": 282
+      },
+      "da6f844": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 348,
+        "height": 62
+      },
+      "edf1328": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 348,
+        "height": 62
+      },
+      "238e982": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 348,
+        "height": 48
+      },
+      "3133ebf": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 408,
+        "height": 95
+      },
+      "dd0af59": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 408,
+        "height": 305
+      },
+      "dd0af59:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 408,
+        "height": 305
+      },
+      "aa8badc": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 408,
+        "height": 305
+      },
+      "d685d36": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 358,
+        "height": 62
+      },
+      "d81a834": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 358,
+        "height": 125
+      },
+      "8f7e490": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 358,
+        "height": 48
+      },
+      "35cb716": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 124
+      },
+      "35cb716:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 44
+      },
+      "1c5beaf": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 44
+      },
+      "faeceda": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      },
+      "faeceda:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      }
+    },
+    "/preventive-ac-maintenance-service/": {
+      "6030213": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "203.391px 203.406px 203.391px 203.406px 203.391px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 391
+      },
+      "5c7709e": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 60
+      },
+      "5c7709e:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 60
+      },
+      "231e2d7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 40
+      },
+      "e156841": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 2999
+      },
+      "e156841:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 2999
+      },
+      "f4cea7b": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 2979
+      },
+      "e9f9856": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 335,
+        "height": 468
+      },
+      "fce279d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 315,
+        "height": 82
+      },
+      "c6f73db": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/banneer01.jpg"
+        ],
+        "tag": "div",
+        "width": 315,
+        "height": 346
+      },
+      "a917772": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 55
+      },
+      "6f0fe40": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 173
+      },
+      "0b74f79": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 265,
+        "height": 48
+      },
+      "361688a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1065,
+        "height": 2979
+      },
+      "75a7be9": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 350
+      },
+      "4d79aa1": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2024/08/Ac-Maintenance-Service-Dubai.webp"
+        ],
+        "tag": "div",
+        "width": 518,
+        "height": 320
+      },
+      "9632a35": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 503,
+        "height": 320
+      },
+      "a02c16f": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 518,
+        "height": 320
+      },
+      "5bb956d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 503,
+        "height": 224
+      },
+      "c17d676": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "52121bb": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "ef1b5d3": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "5f8da43": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "06ab27d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "f397a73": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "9cb354f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "846c604": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "7e06040": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "d1d05a1": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 203,
+        "height": 122
+      },
+      "107a12b": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 24
+      },
+      "63fcc33": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 798
+      },
+      "e9029e5": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 30
+      },
+      "3117a56": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 864
+      },
+      "b1185a5": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 24
+      },
+      "9b57a52": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1045,
+        "height": 337
+      }
+    },
+    "/products/": {
+      "1178488": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 411
+      },
+      "8222062": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 435
+      },
+      "8294878": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 894,
+        "height": 98
+      },
+      "8835094": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 486,
+        "height": 48
+      },
+      "5a5fa09": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 116
+      },
+      "5a5fa09:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 116
+      },
+      "c8d97a7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 96
+      },
+      "d7e6156": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 446
+      },
+      "d7e6156:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 446
+      },
+      "cde5af2": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 338,
+        "height": 406
+      },
+      "89c42f2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 338,
+        "height": 386
+      },
+      "c6f62f0": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 338,
+        "height": 406
+      },
+      "9c08d5a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 338,
+        "height": 386
+      },
+      "072d8cb": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 338,
+        "height": 406
+      },
+      "73efafd": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 338,
+        "height": 362
+      },
+      "f524490": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 338,
+        "height": 406
+      },
+      "2e51e55": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 338,
+        "height": 386
+      },
+      "bd30d01": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 435
+      },
+      "bd30d01:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 435
+      },
+      "ea72f3d": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 435
+      },
+      "7ce41a5": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 350,
+        "height": 371
+      },
+      "c8149a6": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 350,
+        "height": 395
+      },
+      "3950ace": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 435
+      },
+      "a249bea": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 350,
+        "height": 395
+      },
+      "9b6b340": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 435
+      },
+      "eec22fa": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 350,
+        "height": 371
+      },
+      "52c68b7": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 411
+      },
+      "52c68b7:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 411
+      },
+      "cf045b1": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 350,
+        "height": 371
+      },
+      "f79be65": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 411
+      },
+      "2c5cf02": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 350,
+        "height": 371
+      },
+      "a66d4af": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 411
+      },
+      "9ecd0e2": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 411
+      },
+      "6d61700": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/technician-man.webp"
+        ],
+        "tag": "div",
+        "width": 1440,
+        "height": 183
+      },
+      "6d61700:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 183
+      },
+      "be7de4a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 155,
+        "height": 26
+      },
+      "c63093f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 864,
+        "height": 32
+      },
+      "eaee432": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 516,
+        "height": 98
+      },
+      "f8896bb": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 508
+      },
+      "f8896bb:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 508
+      },
+      "0583b0b": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 418
+      },
+      "6983e40": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 168,
+        "height": 26
+      },
+      "de133fb": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 262,
+        "height": 32
+      },
+      "6ca4b0e": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 300
+      },
+      "590526a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 124
+      },
+      "590526a:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 124
+      },
+      "547c7ee": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 44
+      },
+      "0c70320": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      },
+      "0c70320:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      }
+    },
+    "/project-portfolio/": {},
+    "/project-portfolio/luxury-villa-ac-installation/": {
+      "2347125": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 32
+      },
+      "4973238": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 318,
+        "height": 93
+      },
+      "b07de63": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/ac-cool.jpg"
+        ],
+        "tag": "div",
+        "width": 1440,
+        "height": 390
+      },
+      "b07de63:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 390
+      },
+      "408d123": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 549,
+        "height": 40
+      },
+      "4960ccd": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "1420px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 165
+      },
+      "4960ccd:inner": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "340px 340px 340px 340px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 165
+      },
+      "787f24a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 340,
+        "height": 145
+      },
+      "3abd1e1": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 318,
+        "height": 93
+      },
+      "9770e9a": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 340,
+        "height": 145
+      },
+      "2a327f0": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 318,
+        "height": 93
+      },
+      "a0dea83": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 340,
+        "height": 145
+      },
+      "95f0d4f": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 340,
+        "height": 145
+      },
+      "4eef5f2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 318,
+        "height": 123
+      },
+      "9a532fd": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 190
+      },
+      "9a532fd:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 190
+      },
+      "90755b4": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 38
+      },
+      "35d5090": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 1
+      },
+      "dc824d9": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 39
+      }
+    },
+    "/projects/": {
+      "187bb52": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 120
+      },
+      "187bb52:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 120
+      },
+      "90f9438": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 40
+      },
+      "a334364": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 520
+      },
+      "a334364:inner": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 520
+      },
+      "0dbeb57": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 353,
+        "height": 500
+      },
+      "ce7632c": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 353,
+        "height": 400
+      },
+      "380f73f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 333,
+        "height": 135
+      },
+      "c275266": {
+        "display": "none",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 0,
+        "height": 0
+      },
+      "6af0e12": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 0,
+        "height": 0
+      },
+      "f2d65eb": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 0,
+        "height": 0
+      },
+      "eaf1d2e": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 0,
+        "height": 0
+      },
+      "79f248c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 0,
+        "height": 0
+      },
+      "03e59d2": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1058,
+        "height": 500
+      },
+      "e03ce73": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1058,
+        "height": 230
+      },
+      "e03ce73:loop": {
+        "display": "grid",
+        "direction": "row",
+        "columns": "349.156px 349.172px 349.172px",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1058,
+        "height": 230
+      },
+      "c895d85": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/ac-cool.jpg"
+        ],
+        "tag": "div",
+        "width": 349,
+        "height": 230
+      },
+      "c895d85:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 329,
+        "height": 230
+      },
+      "516c51f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 329,
+        "height": 18
+      },
+      "f16d82d": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 329,
+        "height": 37
+      }
+    },
+    "/services/": {
+      "fa4ad52": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 70
+      },
+      "fa4ad52:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 70
+      },
+      "03480ab": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 70
+      },
+      "96ae826": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 50
+      },
+      "40dfcb0": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 1
+      },
+      "40dfcb0:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 1
+      },
+      "f614e2b": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 1
+      },
+      "cfee8d8": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 1
+      },
+      "13c714d": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 1
+      },
+      "49f6a8a": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 355,
+        "height": 1
+      },
+      "1733b49": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 374
+      },
+      "1733b49:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 374
+      },
+      "ea7d8de": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 374
+      },
+      "ee5dadd": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 354
+      },
+      "6ccf980": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 374
+      },
+      "fbd2053": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 254
+      },
+      "a8bc5b6": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 39
+      },
+      "aec36aa": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 70
+      },
+      "aec36aa:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 70
+      },
+      "262757b": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 70
+      },
+      "f8c3f51": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 50
+      },
+      "2a4e3df": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 343
+      },
+      "2a4e3df:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 343
+      },
+      "0b47867": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 343
+      },
+      "fd3d2d5": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 221
+      },
+      "5ecbbf2": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 39
+      },
+      "ff92b79": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 343
+      },
+      "638ed9a": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 323
+      },
+      "4361b73": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 70
+      },
+      "4361b73:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 70
+      },
+      "88b3ec0": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 70
+      },
+      "ae57513": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 50
+      },
+      "0a7cb16": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 343
+      },
+      "0a7cb16:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 343
+      },
+      "8f3c4db": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 343
+      },
+      "25302a5": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 323
+      },
+      "763125c": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 343
+      },
+      "31cffed": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 216
+      },
+      "33b1722": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 39
+      },
+      "027f4ea": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 343
+      },
+      "027f4ea:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 343
+      },
+      "6b0d54a": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 343
+      },
+      "8092dfd": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 216
+      },
+      "17d5a3f": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 39
+      },
+      "c3988ca": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 710,
+        "height": 343
+      },
+      "74ece34": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 690,
+        "height": 323
+      },
+      "a8b7f89": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 224
+      },
+      "a8b7f89:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 224
+      },
+      "b5d059c": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 32
+      },
+      "e101f39": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1065,
+        "height": 72
+      },
+      "2617ed9": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 44
+      },
+      "2617ed9:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 44
+      },
+      "ff29bcc": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 24
+      },
+      "6fbffbb": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1440,
+        "height": 301
+      },
+      "6fbffbb:inner": {
+        "display": "flex",
+        "direction": "column",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 301
+      },
+      "5590fc3": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 281
+      },
+      "a2e07ac": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "section",
+        "width": 1440,
+        "height": 124
+      },
+      "a2e07ac:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 44
+      },
+      "ec1e164": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 44
+      },
+      "7b058a6": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      },
+      "7b058a6:track": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1400,
+        "height": 24
+      },
+      "ad6af79": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [
+          "https://acexperts.ae/wp-content/uploads/2023/02/technician-man.webp"
+        ],
+        "tag": "section",
+        "width": 1440,
+        "height": 133
+      },
+      "ad6af79:container": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 1420,
+        "height": 48
+      },
+      "4bbed72": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 900,
+        "height": 48
+      },
+      "d019eea": {
+        "display": "flex",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 520,
+        "height": 48
+      },
+      "a982236": {
+        "display": "block",
+        "direction": "row",
+        "columns": "none",
+        "backgrounds": [],
+        "tag": "div",
+        "width": 490,
+        "height": 48
+      }
+    }
+  }
+}

@@ -1,0 +1,261 @@
+[
+  {
+    "sourceLocalPath": "/images/logo/client-1-e4d6bb0f.png",
+    "width": 88,
+    "height": 45,
+    "alt": [
+      "client-1",
+      "client-6"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/client-2-397dd1e6.png",
+    "width": 104,
+    "height": 45,
+    "alt": [
+      "client-2",
+      "client-7"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/client-4-2cc84e1a.png",
+    "width": 137,
+    "height": 45,
+    "alt": [
+      "client-4",
+      "client-9"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/client-10-3fe85f38.png",
+    "width": 134,
+    "height": 45,
+    "alt": [
+      "client-5",
+      "client-10"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/client-3-150x45-e5106a45.png",
+    "width": 150,
+    "height": 45,
+    "alt": [
+      "client-3",
+      "client-8"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/icons/fevicon-d71d1fce.png",
+    "width": 65,
+    "height": 65,
+    "alt": [
+      ""
+    ],
+    "alpha": false,
+    "transparent": false
+  },
+  {
+    "sourceLocalPath": "/images/logo/5-9a789422.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "Daikin",
+      "Daikin logo"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/6-4b2f3efd.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "Legrand | Our Client"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/11-c27218bc.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "LS Industrial systems"
+    ],
+    "alpha": false,
+    "transparent": false
+  },
+  {
+    "sourceLocalPath": "/images/logo/6-982866f1.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "LG",
+      "LG logo"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/7-1dadd2db.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "Mitsubishi",
+      "Mitsubishi electric logo"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/3-9deac3c0.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "Gree"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/1-7386d9e3.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "General",
+      "General logo"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/2-114d1f50.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "Siemens | Our Client"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/3-97ed2995.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "L & T Energy | Our Client"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/4-e8f77d74.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "Epcos | Our Client"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/5-ee7840e9.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "EATON | Our Client"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/7-8f9f1ceb.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "Danfoss | Our Client"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/8-a5aa5518.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "alfanar | Our Client"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/9-931adbd4.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "Hager | Our Client"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/10-ddb9b7b8.png",
+    "width": 185,
+    "height": 45,
+    "alt": [
+      "schneider Electric"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/2-ec36719a.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "Hitachi logo"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/4-e6177339.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "Super General logo"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/8-2b2c3ab5.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "Rheem logo"
+    ],
+    "alpha": true,
+    "transparent": true
+  },
+  {
+    "sourceLocalPath": "/images/logo/9-eba8cd1c.png",
+    "width": 185,
+    "height": 50,
+    "alt": [
+      "Voltas logo"
+    ],
+    "alpha": true,
+    "transparent": true
+  }
+]

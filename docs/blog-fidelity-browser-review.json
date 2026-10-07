@@ -1,0 +1,82 @@
+{
+  "capturedAt": "2026-10-05T13:07:06.065Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "deviceScaleFactor": 2,
+  "method": "Enhanced image captured from actual route; original image substituted in browser DOM only, with the same image wrapper, CSS, dimensions and white background.",
+  "images": [
+    {
+      "route": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "id": "questions",
+      "source": "/images/blog/10-important-questions-to-ask-before-signing-an-ac-maintenance-contract-in-dubai-featured-image-voltronix-6929ebbb.png",
+      "enhanced": "/images/quality/10-important-questions-to-ask-before-signing-an-ac-maintenance-contract-in-dubai-featured-image-voltronix-6929ebbb-hq.png",
+      "bounds": {
+        "x": 776.4375,
+        "y": 165.875,
+        "width": 588.5625,
+        "height": 367.265625
+      },
+      "screenshots": {
+        "original": "docs/blog-fidelity-questions-original.png",
+        "enhanced": "docs/blog-fidelity-questions-enhanced.png"
+      }
+    },
+    {
+      "route": "/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "id": "hvac",
+      "source": "/images/blog/the-benefits-of-professional-hvac-inspections-for-dubai-commercial-properties-voltronix-6d47df7e.png",
+      "enhanced": "/images/quality/hvac-inspections-hq-v3.png",
+      "bounds": {
+        "x": 776.4375,
+        "y": 164,
+        "width": 588.5625,
+        "height": 367.265625
+      },
+      "screenshots": {
+        "original": "docs/blog-fidelity-hvac-original.png",
+        "enhanced": "docs/blog-fidelity-hvac-enhanced.png"
+      }
+    },
+    {
+      "route": "/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "id": "installation",
+      "source": "/images/blog/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents-e1b40893.png",
+      "enhanced": "/images/quality/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents-e1b40893-hq.png",
+      "bounds": {
+        "x": 776.4375,
+        "y": 165.875,
+        "width": 588.5625,
+        "height": 367.265625
+      },
+      "screenshots": {
+        "original": "docs/blog-fidelity-installation-original.png",
+        "enhanced": "docs/blog-fidelity-installation-enhanced.png"
+      }
+    },
+    {
+      "route": "/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "id": "efficiency",
+      "source": "/images/blog/featured-image-voltronix-1-311f7cae.webp",
+      "enhanced": "/images/quality/featured-image-voltronix-1-311f7cae-hq.png",
+      "bounds": {
+        "x": 776.4375,
+        "y": 164,
+        "width": 588.5625,
+        "height": 367.265625
+      },
+      "screenshots": {
+        "original": "docs/blog-fidelity-efficiency-original.png",
+        "enhanced": "docs/blog-fidelity-efficiency-enhanced.png"
+      }
+    }
+  ],
+  "findings": {
+    "version": "Final registry, including HVAC v3",
+    "spelling": "VOLTRONIX and acexperts.ae are preserved and spelled correctly in all four illustrations.",
+    "backgrounds": "Questions and HVAC remain transparent over the existing red hero background; installation and efficiency retain white image backgrounds.",
+    "artwork": "People counts, equipment, composition and main colors retained. Fine reconstructed shapes, including HVAC wordmark character contours, differ slightly from source.",
+    "status": "Final candidate captures refreshed; no spelling errors or new scene content found."
+  }
+}

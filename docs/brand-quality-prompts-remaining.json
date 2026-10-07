@@ -1,0 +1,302 @@
+{
+  "tool": "built-in-imagegen",
+  "entries": [
+    {
+      "sourceLocalPath": "/images/logo/5-ee7840e9.png",
+      "replacementLocalPath": "/images/quality/5-ee7840e9-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact low-resolution logo to restore. Input image 2 is the same logo displayed on white, supplied only to make original lettering and transparent cutouts readable. Restore the SAME logo to a crisp high-resolution raster PNG; do not redesign or reinterpret it.\nEATON: exact original blue geometric custom block capitals EATON with their distinctive negative-space cuts and round negative-space dot in the O; below is the exact gray italic tagline 'Powering Business Worldwide'. Preserve original wordmark/tagline positioning and relative sizes, including existing side margins.\nOutput canvas: 1536 by 512 pixels, landscape 3:1. Uniformly scale the entire original 185 by 45 canvas to 1536 pixels wide (keeping every original margin), center it vertically, and add only transparent padding above and below to fit the 3:1 canvas. Do not stretch or crop the artwork. Preserve exact original colors, shape topology, lineweights, text, branding, proportions and composition. Improve edge clarity and remove pixelation only. True alpha transparency outside the artwork and through all original transparent letter cutouts; no white rectangle, no shadow, no outline additions, no checkerboard background, no extra marks or text.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-1176dc4e-7730-482c-bd2f-6169c8cf850b.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 24,
+        "top": 0,
+        "right": 161,
+        "bottom": 44
+      },
+      "contentBounds": {
+        "left": 297,
+        "top": 119,
+        "right": 1877,
+        "bottom": 616
+      },
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals.",
+      "comparisonScreenshot": "docs/brand-compare-5-ee7840e9.png",
+      "sha256": "72522dfc67985a51135b90bda4e683926e201087d6a3d1828225f842176e03f1"
+    },
+    {
+      "sourceLocalPath": "/images/logo/7-8f9f1ceb.png",
+      "replacementLocalPath": "/images/quality/7-8f9f1ceb-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "prompt": "Use case: precise-object-edit.\nImage 1 is the original low-resolution Danfoss logo edit target. Image 2 is the exact same source shown against white so every red stroke is visible. Restore the original logo by careful tracing/edge restoration; absolutely no redesign. The word is exactly 'Danfoss' in its original distinctive red script with underline.\nCRITICAL GEOMETRY: Original full canvas is 185 by 45, with very wide transparent left/right margins. The red lettering spans approximately x=35 through x=150 of that 185-pixel canvas. Retain those original generous side margins; do NOT fit the lettering to the output width. Produce a transparent PNG canvas with exact 3:1 aspect ratio at 1536 by 512. Uniformly scale the entire 185x45 original canvas to output width, then add equal transparent vertical padding only. Consequently the red mark must span only approximately x=291 to x=1245, and y=70 to y=442 on the 1536x512 output. Every stroke must remain entirely within this central region. Center the original canvas, not a newly fitted bounding box.\nPreserve original script topology, letter proportions, stroke thickness, slant, red color, curves and underline exactly. Smooth pixelated edges only. True alpha transparency outside and through original holes. No white background, no shadows, no halo, no extra marks, no cropping.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-7abc3d66-9a8a-49bb-b416-6bf0e8b3b21b.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "rejectedVariants": [
+        {
+          "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-2d7889af-9187-4a30-bc05-40c64c1eb816.png",
+          "reason": "Artwork enlarged beyond original margins, causing clipping when restored to original canvas proportions."
+        }
+      ],
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 35,
+        "top": 0,
+        "right": 150,
+        "bottom": 44
+      },
+      "contentBounds": {
+        "left": 396,
+        "top": 91,
+        "right": 1777,
+        "bottom": 628
+      },
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals.",
+      "comparisonScreenshot": "docs/brand-compare-7-8f9f1ceb.png",
+      "sha256": "a8fc3a19bc390f0d71b3b166f184ed2c0abaca06987855eb0b73c7a469a71d5f"
+    },
+    {
+      "sourceLocalPath": "/images/logo/8-a5aa5518.png",
+      "replacementLocalPath": "/images/quality/8-a5aa5518-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact low-resolution logo to restore. Input image 2 is the same logo displayed on white, supplied only to make original lettering and transparent cutouts readable. Restore the SAME logo to a crisp high-resolution raster PNG; do not redesign or reinterpret it.\nalfanar: exact original blue circular grid/emblem at left, including white/transparent grid lines, central four-point opening and stair-like diagonal base; at right blue Arabic 'الفنار' above lowercase English 'alfanar'. Preserve the Arabic text verbatim, original custom letterforms, line placement, relative emblem size and spacing.\nOutput canvas: 1536 by 512 pixels, landscape 3:1. Uniformly scale the entire original 185 by 45 canvas to 1536 pixels wide (keeping every original margin), center it vertically, and add only transparent padding above and below to fit the 3:1 canvas. Do not stretch or crop the artwork. Preserve exact original colors, shape topology, lineweights, text, branding, proportions and composition. Improve edge clarity and remove pixelation only. True alpha transparency outside the artwork and through all original transparent letter cutouts; no white rectangle, no shadow, no outline additions, no checkerboard background, no extra marks or text.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-0bc944a3-6167-413d-917b-420e5b8a3e5f.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 13,
+        "top": 0,
+        "right": 171,
+        "bottom": 44
+      },
+      "contentBounds": {
+        "left": 157,
+        "top": 95,
+        "right": 2022,
+        "bottom": 626
+      },
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals.",
+      "comparisonScreenshot": "docs/brand-compare-8-a5aa5518.png",
+      "sha256": "e56ba408b142a30ed42a3e5f63131df3c9419ebe3beedbf2b26c161d38c07958"
+    },
+    {
+      "sourceLocalPath": "/images/logo/9-931adbd4.png",
+      "replacementLocalPath": "/images/quality/9-931adbd4-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact low-resolution logo to restore. Input image 2 is the same logo displayed on white, supplied only to make original lettering and transparent cutouts readable. Restore the SAME logo to a crisp high-resolution raster PNG; do not redesign or reinterpret it.\nhager: exact original light blue lowercase custom rounded wordmark 'hager' preceded by two small stacked orange rounded square marks. Preserve the distinctive h stem, lettering curves/spacing and proportions. The source includes the original clear side margins; do not enlarge the logo to fill those margins.\nOutput canvas: 1536 by 512 pixels, landscape 3:1. Uniformly scale the entire original 185 by 45 canvas to 1536 pixels wide (keeping every original margin), center it vertically, and add only transparent padding above and below to fit the 3:1 canvas. Do not stretch or crop the artwork. Preserve exact original colors, shape topology, lineweights, text, branding, proportions and composition. Improve edge clarity and remove pixelation only. True alpha transparency outside the artwork and through all original transparent letter cutouts; no white rectangle, no shadow, no outline additions, no checkerboard background, no extra marks or text.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-fbc01284-39b8-453f-88d4-b53e47a2d802.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 22,
+        "top": 0,
+        "right": 162,
+        "bottom": 44
+      },
+      "contentBounds": {
+        "left": 336,
+        "top": 118,
+        "right": 1852,
+        "bottom": 615
+      },
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals.",
+      "comparisonScreenshot": "docs/brand-compare-9-931adbd4.png",
+      "sha256": "9bad8f30e914113859cc613f4aa4cdd897ae1b0235e7408f450d4a3a816c1ede"
+    },
+    {
+      "sourceLocalPath": "/images/logo/10-ddb9b7b8.png",
+      "replacementLocalPath": "/images/quality/10-ddb9b7b8-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact low-resolution logo to restore. Input image 2 is the same logo displayed on white, supplied only to make original lettering and transparent cutouts readable. Restore the SAME logo to a crisp high-resolution raster PNG; do not redesign or reinterpret it.\nSchneider Electric: exact source green custom lettering 'Schneider' on the upper line. Below, keep its green interlocking stylized S/e monogram at the left of the spaced green word 'Electric'. Preserve all precise custom letterforms, the icon geometry, line arrangement and original margins.\nOutput canvas: 1536 by 512 pixels, landscape 3:1. Uniformly scale the entire original 185 by 45 canvas to 1536 pixels wide (keeping every original margin), center it vertically, and add only transparent padding above and below to fit the 3:1 canvas. Do not stretch or crop the artwork. Preserve exact original colors, shape topology, lineweights, text, branding, proportions and composition. Improve edge clarity and remove pixelation only. True alpha transparency outside the artwork and through all original transparent letter cutouts; no white rectangle, no shadow, no outline additions, no checkerboard background, no extra marks or text.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-40affa06-51d0-4c48-b327-070d377b50f9.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 16,
+        "top": 0,
+        "right": 168,
+        "bottom": 44
+      },
+      "contentBounds": {
+        "left": 174,
+        "top": 88,
+        "right": 2000,
+        "bottom": 631
+      },
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals.",
+      "comparisonScreenshot": "docs/brand-compare-10-ddb9b7b8.png",
+      "sha256": "b9adb02bf38d173aef57db4765fa67cf0f178e0368b12dd7071f02b6aa2bb247"
+    },
+    {
+      "sourceLocalPath": "/images/logo/2-ec36719a.png",
+      "replacementLocalPath": "/images/quality/2-ec36719a-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "prompt": "Use case: precise-object-edit.\nImage 1 is the low-resolution ORIGINAL logo edit target, and image 2 is its exact appearance on white. Restore this original image sharply without redesign. The source says 'HITACHI' in bold custom dark-gray capitals, with the smaller tagline 'Inspire the Next' below in a REGULAR-WEIGHT delicate serif typeface. The tagline is NOT bold. Preserve thin hairlines, serif details, and larger counters exactly like the source; keep the tiny red accent above the t in Next. The upper HITACHI wordmark keeps its source weight.\nThe highest priority is exact letterform and stroke-weight fidelity, not a heavier bolder logo. Trace the original visible shape boundaries. Preserve every original color, word, letter, relative size, position, spacing and transparent margin. Output a high-resolution transparent PNG on a 3:1 canvas, ideally1536x512. Uniformly scale the entire original185x50canvas to full output width, adding only equal transparent padding above/below. Keep its original proportions. True alpha transparency outside the existing artwork; no opaque background, no extra lettering, no new outlines, no added shadows.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-2f88322b-c5e0-4305-bce2-85ac53597805.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 20,
+        "top": 5,
+        "right": 164,
+        "bottom": 46
+      },
+      "contentBounds": {
+        "left": 232,
+        "top": 132,
+        "right": 1939,
+        "bottom": 617
+      },
+      "rejectedVariants": [
+        {
+          "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-fcf2f24a-83e2-418c-9995-eb5f0c7fc76d.png",
+          "reason": "Tagline serif lettering was heavier than the source."
+        }
+      ],
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals. The tagline remains somewhat heavier than the low-resolution source after correction; all exact words and red accent are intact.",
+      "comparisonScreenshot": "docs/brand-compare-2-ec36719a.png",
+      "sha256": "147affa0f841be235868680701346a5b61188706010be15f385df551308a3222"
+    },
+    {
+      "sourceLocalPath": "/images/logo/4-e6177339.png",
+      "replacementLocalPath": "/images/quality/4-e6177339-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "prompt": "Use case: precise-object-edit.\nImage 1 is the low-resolution ORIGINAL logo edit target, and image 2 is its exact appearance on white. Restore this original image sharply without redesign. The source is the blue SUPER GENERAL logo with its stepped capsule outline and diagonal connector. The words 'SUPER' and 'GENERAL' use a REGULAR-WEIGHT thin serif typeface, similar to Times Roman regular, NOT bold. Faithfully preserve the source's narrow strokes, fine hairlines, serif details and large counters. Keep the original outer capsule border and diagonal line at their original weight; only restore lost clarity.\nThe highest priority is exact letterform and stroke-weight fidelity, not a heavier bolder logo. Trace the original visible shape boundaries. Preserve every original color, word, letter, relative size, position, spacing and transparent margin. Output a high-resolution transparent PNG on a 3:1 canvas, ideally1536x512. Uniformly scale the entire original185x50canvas to full output width, adding only equal transparent padding above/below. Keep its original proportions. True alpha transparency outside the existing artwork; no opaque background, no extra lettering, no new outlines, no added shadows.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-6912ef0d-f475-4da7-8645-b9fce2d35522.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 1,
+        "top": 4,
+        "right": 181,
+        "bottom": 47
+      },
+      "contentBounds": {
+        "left": 20,
+        "top": 126,
+        "right": 2149,
+        "bottom": 607
+      },
+      "rejectedVariants": [
+        {
+          "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-50ae4da8-1bae-4afa-9cda-9d84a0e9f4db.png",
+          "reason": "Serif wordmark lettering was heavier than the source."
+        }
+      ],
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals. Small serif stroke-weight differences remain after correction; wordmark text and stepped frame geometry are intact.",
+      "comparisonScreenshot": "docs/brand-compare-4-e6177339.png",
+      "sha256": "b7364d8f37fddda12862f4ab2f7e39b620aa9f1ab63359cfa0a7cfd1a8c9c7eb"
+    },
+    {
+      "sourceLocalPath": "/images/logo/8-2b2c3ab5.png",
+      "replacementLocalPath": "/images/quality/8-2b2c3ab5-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact low-resolution logo to restore. Input image 2 is the same logo displayed on white, supplied only to make original lettering and transparent cutouts readable. Restore the SAME logo to a crisp high-resolution raster PNG; do not redesign or reinterpret it.\nRheem: exact original small red circular badge containing the distinctive narrow white custom lettering 'Rheem', with its tall capital R extending up and slanting down into a long diagonal leg. Preserve the tiny original registration mark at lower right. Very important: preserve the original large transparent side margins! The badge spans approximately source x=61 through107 of the original185width and y=1 through48 of50height, so it occupies about25% of the imagewidth and is slightly left of center; do NOT enlarge the circle to fill the canvas.\nOutput canvas: 1536 by 512 pixels, landscape 3:1. Uniformly scale the entire original 185 by 50 canvas to 1536 pixels wide (keeping every original margin), center it vertically, and add only transparent padding above and below to fit the 3:1 canvas. Do not stretch or crop the artwork. Preserve exact original colors, shape topology, lineweights, text, branding, proportions and composition. Improve edge clarity and remove pixelation only. True alpha transparency outside the artwork and through all original transparent cutouts, with original white logo lettering still white; no white background rectangle, no shadow, no extra outline, no checkerboard background, no extra marks or text.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-4f23a659-6833-4013-808d-5c1747653fb2.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 61,
+        "top": 2,
+        "right": 106,
+        "bottom": 47
+      },
+      "contentBounds": {
+        "left": 743,
+        "top": 118,
+        "right": 1241,
+        "bottom": 607
+      },
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals.",
+      "comparisonScreenshot": "docs/brand-compare-8-2b2c3ab5.png",
+      "sha256": "1d8ac14bf7289a1a9d26709c108f57660b4ec8f7f04a1057bdf24612802a55bf"
+    },
+    {
+      "sourceLocalPath": "/images/logo/9-eba8cd1c.png",
+      "replacementLocalPath": "/images/quality/9-eba8cd1c-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "prompt": "Use case: precise-object-edit.\nInput image 1 is the exact low-resolution logo to restore. Input image 2 is the same logo displayed on white, supplied only to make original lettering and transparent cutouts readable. Restore the SAME logo to a crisp high-resolution raster PNG; do not redesign or reinterpret it.\nVOLTAS: exact original medium-blue horizontal rectangular plaque containing bold white italic uppercase 'VOLTAS'. Preserve the custom lettering geometry, slant, letter spacing, blue shade, rectangular proportions and original clear side/top/bottom margins. The blue rectangle spans approximately original x=14 through172 out of185width and y=6 through45 out of50height.\nOutput canvas: 1536 by 512 pixels, landscape 3:1. Uniformly scale the entire original 185 by 50 canvas to 1536 pixels wide (keeping every original margin), center it vertically, and add only transparent padding above and below to fit the 3:1 canvas. Do not stretch or crop the artwork. Preserve exact original colors, shape topology, lineweights, text, branding, proportions and composition. Improve edge clarity and remove pixelation only. True alpha transparency outside the artwork and through all original transparent cutouts, with original white logo lettering still white; no white background rectangle, no shadow, no extra outline, no checkerboard background, no extra marks or text.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-ae325a8c-b662-40fb-a713-9fdb38a2c8ea.png",
+      "transparentBackground": true,
+      "inspection": "accepted",
+      "status": "accepted",
+      "padded": true,
+      "width": 2172,
+      "height": 724,
+      "hasAlpha": true,
+      "sourceContentBounds": {
+        "left": 14,
+        "top": 6,
+        "right": 170,
+        "bottom": 43
+      },
+      "contentBounds": {
+        "left": 165,
+        "top": 157,
+        "right": 2006,
+        "bottom": 566
+      },
+      "alphaMin": 0,
+      "inspectionNotes": "Visually compared original and selected restoration on a white background. Brand words, recognizable symbol geometry and colors are preserved; restored contours, stroke weights and minor spacing remain generative approximations rather than pixel-identical originals.",
+      "comparisonScreenshot": "docs/brand-compare-9-eba8cd1c.png",
+      "sha256": "c2039168451118b71bf0c13643b52047b1ad4c3eca231a100c946f060fb071bf"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tool": "Built-in image_gen",
+  "hvac": "Use case: precise-object-edit. Image1 is the edit target1588×991 transparent HVAC illustration. Image2 is the original1024×639 reference. Change ONLY the top-left VOLTRONIX logo and bottom domain label of image1 to match image2 accurately. Keep all central illustration pixels, outlines, colors, transparentholes, positions exactlyunchanged.\nLogo: match the ORIGINALfont/letterforms in image2, especially original O symbol. At1588×991, logo exactinkbounds should be x91 through494, y108 through160 (about403wide52high). It must say \"VOLTRONIX\" with red circular O symbol. Do not add whitebackground behindit. Currentlogo in image1 istoo wide; correctit.\nBottomlabel: exacttext \"acexperts.ae\" in originalsmallregularblackfont. Boundsx707through880 andy916through938; centeredx794. Exactsamefontshapeandsmallweightasimage2, scaleduniformly1.5508×. Currentlabel sits too high; placeit at the specifiedrectangle. Preserve originalbottommargin.\nNootheredits. Matchreferencepositionsandtypographywithoutaddingstyle/shadows/gradients. Preserve1588×991canvasandrealtransparentalpha.",
+  "logoScaling": [
+    {
+      "name": "lg",
+      "input": "6-982866f1-hq.png",
+      "prompt": "Use case: precise-object-edit. Input is existing correctly restored LG brandlogo on a2172×724 transparentcanvas. Only increase the size of the complete logo artwork uniformly by1.67× about canvascenter(1086,362), keeping the canvas2172×724 and genuinealpha. The full redcirclewhiteeye/whiteLGlettering PLUS the black LG letters atitsright currently occupies approximatelyx826..1343,y213..511. Afteruniformscaling it shouldoccupyapproximatelyx652..1516,y113..611. Preserveexactshapes, proportions, color, everyletterandwhiteeye and internalholes. No redrawing or newdesign; this isonly a size/margincorrection. Crisp clean edges, nothingelse."
+    },
+    {
+      "name": "epcos",
+      "input": "4-e8f77d74-hq.png",
+      "prompt": "Use case: precise-object-edit. Input is existing EPCOS logo on2172×724 transparentcanvas. Only enlarge ALL logoartwork uniformly by1.70× aboutcenter(1086,362). Sourceartboundsx921..1250,y209..518; newboundsaboutx805..1365,y102..627. Canvasmustremain2172×724. Preserveexactcyantrianglebands, exact blacktext \"EPCOS\", letterforms, proportions, alltransparentholes/spacing/colors; no redesign or newwordmark. Keepgenuinealpha andclean antialiasededges. Onlycontent scalechanges, margins shrink correspondingly. Nootherchange."
+    }
+  ]
+}

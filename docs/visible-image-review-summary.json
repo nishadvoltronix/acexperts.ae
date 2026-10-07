@@ -1,0 +1,27 @@
+{
+  "origin": "http://localhost:3001",
+  "viewports": [1440, 390],
+  "deviceScaleFactor": 2,
+  "reviewedRoutes": ["/", "/about/", "/products/"],
+  "productImages": {
+    "count": 10,
+    "visibleQuality": "All ten reviewed individually at their largest displayed desktop/mobile size; clean and detailed.",
+    "objectsAndComposition": "No visible object loss, crop drift or product identity change relative to the source.",
+    "deliveredHttpStatus": 200,
+    "desktopDecodedSize": [1484, 1060],
+    "mobileDecodedSize": [828, 591],
+    "largestDesktopCssWidth": 588.5625,
+    "largestMobileCardCssWidth": 298,
+    "evidence": "docs/product-visible-details.json"
+  },
+  "sharedLogo": "AC Experts header and footer logos are clean, with legible tagline at desktop and mobile display sizes.",
+  "sharedCta": "Technician, van and branding are clear at desktop and mobile sizes; no clipped subject or broken image.",
+  "aboutBackground": {
+    "source": "/images/gallery/about-us-bg-d41e08d4.jpg",
+    "dimensions": [1600, 550],
+    "finding": "Pale low-contrast city and bridge fade into a white gradient in the original file. This is intentional background artwork, not a resolution defect. Preserve it."
+  },
+  "remainingObviousBlurInReviewedImages": [],
+  "scopeLimit": "This independent visual review covers the restored products, shared AC logo/CTA and visible About/Home imagery. It is separate from the complete route image-density audit.",
+  "applicationFilesChanged": false
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "route": "/",
+    "logos": [
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2F5-9a789422-hq.png&w=3840&q=90",
+        "alt": "Daikin",
+        "w": 154.5625,
+        "h": 52,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo--3.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Flg-logo-hq-v2.png&w=3840&q=90",
+        "alt": "LG",
+        "w": 154.578125,
+        "h": 52,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo--4.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2F7-1dadd2db-hq.png&w=3840&q=90",
+        "alt": "Mitsubishi",
+        "w": 154.578125,
+        "h": 52,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo--6.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2F3-9deac3c0-hq.png&w=3840&q=90",
+        "alt": "Gree",
+        "w": 154.5625,
+        "h": 52,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo--7.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2F1-7386d9e3-hq.png&w=3840&q=90",
+        "alt": "General",
+        "w": 154.5625,
+        "h": 52,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 130,
+        "naturalHeight": 43,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo--9.png"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "route": "/about/",
+    "logos": [
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2F2-114d1f50-hq.png&w=3840&q=90",
+        "alt": "Siemens | Our Client",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 0,
+        "naturalHeight": 0,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-about-4.png",
+        "lazyDecodeRecheck": {
+          "loaded": true,
+          "screenshot": "artifacts/image-quality-inputs/checked-2-114d1f50-hq.png"
+        }
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2F3-97ed2995-hq.png&w=3840&q=90",
+        "alt": "L & T Energy | Our Client",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "contain",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 68,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-about-5.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fepcos-logo-hq-v2.png&w=3840&q=90",
+        "alt": "Epcos | Our Client",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 68,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-about-6.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2F6-4b2f3efd-hq.png&w=3840&q=90",
+        "alt": "Legrand | Our Client",
+        "w": 204.8125,
+        "h": 65,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 68,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-about-8.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2F11-c27218bc-hq.png&w=3840&q=90",
+        "alt": "LS Industrial systems",
+        "w": 204.8125,
+        "h": 65,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 68,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-about-13.png"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "route": "/faq/",
+    "logos": [
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-1-e4d6bb0f-hq.png&w=3840&q=90",
+        "alt": "client-1",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "contain",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 104,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-1.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-2-397dd1e6-hq.png&w=3840&q=90",
+        "alt": "client-2",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "contain",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 88,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-2.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-3-150x45-e5106a45-hq.png&w=3840&q=90",
+        "alt": "client-3",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 68,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-3.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-4-2cc84e1a-hq.png&w=3840&q=90",
+        "alt": "client-4",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 67,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-4.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-10-3fe85f38-hq.png&w=3840&q=90",
+        "alt": "client-5",
+        "w": 204.8125,
+        "h": 65,
+        "objectFit": "contain",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 68,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-5.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-1-e4d6bb0f-hq.png&w=3840&q=90",
+        "alt": "client-6",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "contain",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 104,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-6.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-2-397dd1e6-hq.png&w=3840&q=90",
+        "alt": "client-7",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "contain",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 88,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-7.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-3-150x45-e5106a45-hq.png&w=3840&q=90",
+        "alt": "client-8",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 68,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-8.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-4-2cc84e1a-hq.png&w=3840&q=90",
+        "alt": "client-9",
+        "w": 204.796875,
+        "h": 65,
+        "objectFit": "cover",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 67,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-9.png"
+      },
+      {
+        "src": "/_next/image/?url=%2Fimages%2Fquality%2Fclient-10-3fe85f38-hq.png&w=3840&q=90",
+        "alt": "client-10",
+        "w": 204.8125,
+        "h": 65,
+        "objectFit": "contain",
+        "transform": "none",
+        "naturalWidth": 205,
+        "naturalHeight": 68,
+        "screenshot": "artifacts/image-quality-inputs/integrated-logo-faq-10.png"
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "route": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+    "logos": [
+      {
+        "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Ffevicon-d71d1fce-hq.png&w=256&q=90",
+        "alt": "",
+        "width": 72,
+        "height": 72,
+        "objectFit": "cover",
+        "loaded": true
+      }
+    ],
+    "screenshot": "artifacts/image-quality-inputs/integrated-author-icon.png"
+  }
+]

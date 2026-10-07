@@ -1,0 +1,5 @@
+/* Preserve each upgraded source's original layout ratio; component crop rules still take precedence. */
+.quality-image{aspect-ratio:var(--image-native-ratio)}
+.quality-image-padded{object-fit:contain!important}
+.brand-row .quality-image-padded{object-fit:cover!important}
+@media(min-width:1280px){.quality-image-padded{object-fit:cover!important}}

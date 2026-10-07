@@ -1,0 +1,1992 @@
+{
+  "checkedAt": "2026-10-05T10:15:21.622Z",
+  "baseUrl": "http://127.0.0.1:3100/",
+  "widths": [
+    320,
+    375,
+    390,
+    430,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "cases": [
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/home-390.png"
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/about-1440.png"
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/home-1440.png"
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/service-1440.png"
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/projects-1440.png"
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/project-1440.png"
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/article-1440.png"
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/blog-1440.png"
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/faq-1440.png"
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/products-1440.png"
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/local/contact-1440.png"
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    }
+  ],
+  "accessibility": [
+    {
+      "path": "/about/",
+      "width": 390,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 25,
+      "checkedAt": "2026-10-05T10:18:40.476Z",
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "button > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "h1 > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(3) > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".button[href$=\"contact-us/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".carousel-card:nth-child(1) > a[href$=\"services/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "a[href$=\"services/\"] > .button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".carousel-card:nth-child(2) > a[href$=\"products/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "a[href$=\"products/\"] > .button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".section-cta > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".columns-2.content-grid > .content-column:nth-child(1) > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "h2 > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".button[href$=\"projects/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".floating-contact > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 25
+    },
+    {
+      "path": "/about/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 25,
+      "checkedAt": "2026-10-05T10:18:40.476Z",
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "summary > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "h1 > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "p:nth-child(3) > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".button[href$=\"contact-us/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".carousel-card:nth-child(1) > a[href$=\"services/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "a[href$=\"services/\"] > .button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".carousel-card:nth-child(2) > a[href$=\"products/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "a[href$=\"products/\"] > .button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".section-cta > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".columns-2.content-grid > .content-column:nth-child(1) > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                "h2 > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".button[href$=\"projects/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element"
+            },
+            {
+              "target": [
+                ".floating-contact > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 25
+    },
+    {
+      "path": "/ac-installation-service/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 2,
+      "passes": 24
+    },
+    {
+      "path": "/projects/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 25
+    },
+    {
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 24
+    },
+    {
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 25,
+      "checkedAt": "2026-10-05T10:18:40.476Z",
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "summary > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(1) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(2) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(3) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(4) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(5) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".floating-contact > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/blog/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 24
+    },
+    {
+      "path": "/faq/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 24
+    },
+    {
+      "path": "/products/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 24
+    },
+    {
+      "path": "/contact-us/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "passes": 29
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Desktop services opens with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes desktop services",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile menu opens with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes mobile menu and restores focus",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile navigation follows local link and closes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ toggles with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ closes/restores on second keyboard action",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Empty form is blocked by native validation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Valid local form returns explicit disabled-backend 503",
+      "ok": true,
+      "detail": {
+        "status": 503,
+        "message": "Online enquiries are not available yet. Your message has not been sent. Please call +971 4 824 0002 or email info@voltronix.ae."
+      }
+    },
+    {
+      "name": "Hero Next selects second slide",
+      "ok": true,
+      "detail": "",
+      "checkedAt": "2026-10-05T10:18:40.476Z"
+    },
+    {
+      "name": "Hero Previous restores first slide",
+      "ok": true,
+      "detail": "",
+      "checkedAt": "2026-10-05T10:18:40.476Z"
+    },
+    {
+      "name": "Project filter Civil retains matching villa",
+      "ok": true,
+      "detail": "1 project in Civil",
+      "checkedAt": "2026-10-05T10:18:40.476Z"
+    },
+    {
+      "name": "Project filter MEP retains matching villa",
+      "ok": true,
+      "detail": "1 project in MEP",
+      "checkedAt": "2026-10-05T10:18:40.476Z"
+    },
+    {
+      "name": "Project filter All retains matching villa",
+      "ok": true,
+      "detail": "1 project",
+      "checkedAt": "2026-10-05T10:18:40.476Z"
+    },
+    {
+      "name": "Contact Other shows required detail without submitting",
+      "ok": true,
+      "detail": "",
+      "checkedAt": "2026-10-05T10:18:40.476Z"
+    },
+    {
+      "name": "Contact standard service hides Other detail",
+      "ok": true,
+      "detail": "",
+      "checkedAt": "2026-10-05T10:18:40.476Z"
+    }
+  ],
+  "externalRequests": [],
+  "failures": [],
+  "interactionConsole": {
+    "type": "interaction",
+    "path": "interactive checks",
+    "jsErrors": [],
+    "consoleErrors": [],
+    "failedResponses": []
+  },
+  "summary": {
+    "viewportCases": 90,
+    "expectedViewportCases": 90,
+    "accessibilityScans": 12,
+    "interactionChecks": 16,
+    "failures": 0,
+    "passed": true
+  },
+  "rechecks": [
+    {
+      "checkedAt": "2026-10-05T10:18:40.476Z",
+      "reason": "Underline fixes: previously failing accessibility scans; additional carousel, project filter, and Other-service interactions.",
+      "scans": [
+        {
+          "path": "/about/",
+          "width": 390,
+          "violations": 0
+        },
+        {
+          "path": "/about/",
+          "width": 1440,
+          "violations": 0
+        },
+        {
+          "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+          "width": 1440,
+          "violations": 0
+        }
+      ],
+      "interactions": [
+        {
+          "name": "Hero Next selects second slide",
+          "ok": true,
+          "detail": "",
+          "checkedAt": "2026-10-05T10:18:40.476Z"
+        },
+        {
+          "name": "Hero Previous restores first slide",
+          "ok": true,
+          "detail": "",
+          "checkedAt": "2026-10-05T10:18:40.476Z"
+        },
+        {
+          "name": "Project filter Civil retains matching villa",
+          "ok": true,
+          "detail": "1 project in Civil",
+          "checkedAt": "2026-10-05T10:18:40.476Z"
+        },
+        {
+          "name": "Project filter MEP retains matching villa",
+          "ok": true,
+          "detail": "1 project in MEP",
+          "checkedAt": "2026-10-05T10:18:40.476Z"
+        },
+        {
+          "name": "Project filter All retains matching villa",
+          "ok": true,
+          "detail": "1 project",
+          "checkedAt": "2026-10-05T10:18:40.476Z"
+        },
+        {
+          "name": "Contact Other shows required detail without submitting",
+          "ok": true,
+          "detail": "",
+          "checkedAt": "2026-10-05T10:18:40.476Z"
+        },
+        {
+          "name": "Contact standard service hides Other detail",
+          "ok": true,
+          "detail": "",
+          "checkedAt": "2026-10-05T10:18:40.476Z"
+        }
+      ]
+    }
+  ],
+  "lastRecheckedAt": "2026-10-05T10:18:40.476Z"
+}

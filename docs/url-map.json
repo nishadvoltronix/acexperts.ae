@@ -1,0 +1,610 @@
+[
+  {
+    "originalUrl": "https://acexperts.ae/blog/",
+    "route": "/blog/",
+    "type": "blog",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/blog/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+    "route": "/top-ac-repair-in-dubai-your-ultimate-guide/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/top-ac-repair-in-dubai-your-ultimate-guide/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+    "route": "/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+    "route": "/top-benefits-of-ac-maintenance-dubai/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/top-benefits-of-ac-maintenance-dubai/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+    "route": "/ac-maintenance-for-villas-and-apartments-in-dubai/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/ac-maintenance-for-villas-and-apartments-in-dubai/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+    "route": "/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/",
+    "route": "/why-choose-us-for-your-ac-repair-and-maintenance-needs/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+    "route": "/how-to-choose-best-ac-maintenance-company-dubai/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/how-to-choose-best-ac-maintenance-company-dubai/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+    "route": "/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/10-ways-to-save-money-on-your-energy-bill-this-summer/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+    "route": "/how-to-choose-the-right-ac-size-for-your-room/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/how-to-choose-the-right-ac-size-for-your-room/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+    "route": "/7-clear-signs-you-need-ac-repair-service/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/7-clear-signs-you-need-ac-repair-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+    "route": "/common-emergency-ac-issues-we-fix/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/common-emergency-ac-issues-we-fix/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+    "route": "/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/commercial-ac-installation-guide-for-offices-warehouses-retail/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+    "route": "/benefits-of-installing-a-vrf-ac-systems/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/benefits-of-installing-a-vrf-ac-systems/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+    "route": "/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+    "route": "/how-many-times-a-year-to-clean-ac-ducts/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/how-many-times-a-year-to-clean-ac-ducts/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+    "route": "/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+    "route": "/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/ac-experts-tips-for-keeping-your-cooling-system-efficient/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+    "route": "/common-ac-duct-problems-and-how-professional-services-fix-them/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/common-ac-duct-problems-and-how-professional-services-fix-them/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+    "route": "/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+    "route": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+    "route": "/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+    "route": "/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+    "route": "/the-benefits-of-professional-hvac-inspections-for-dubai/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/the-benefits-of-professional-hvac-inspections-for-dubai/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/contact-us/",
+    "route": "/contact-us/",
+    "type": "contact",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/contact-us/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/projects/",
+    "route": "/projects/",
+    "type": "projects",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/projects/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+    "route": "/common-ac-compressor-problems-in-dubai-expert-fixes/",
+    "type": "article",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/common-ac-compressor-problems-in-dubai-expert-fixes/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/products/",
+    "route": "/products/",
+    "type": "products",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/products/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/about/",
+    "route": "/about/",
+    "type": "about",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/about/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/preventive-ac-maintenance-service/",
+    "route": "/preventive-ac-maintenance-service/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/preventive-ac-maintenance-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/faq/",
+    "route": "/faq/",
+    "type": "faq",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/faq/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/ac-repair-services/",
+    "route": "/ac-repair-services/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/ac-repair-services/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/emergency-ac-maintenance-service/",
+    "route": "/emergency-ac-maintenance-service/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/emergency-ac-maintenance-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/ac-installation-service/",
+    "route": "/ac-installation-service/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/ac-installation-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/services/",
+    "route": "/services/",
+    "type": "services",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/services/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/project-portfolio/",
+    "route": "/project-portfolio/",
+    "type": "projects",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/project-portfolio/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/",
+    "route": "/project-portfolio/luxury-villa-ac-installation/",
+    "type": "project",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/project-portfolio/luxury-villa-ac-installation/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/author/talk2maries/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2026/09/17/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/category/uncategorized/repairing/",
+    "route": "/category/uncategorized/repairing/",
+    "type": "archive",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/category/uncategorized/repairing/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/category/acrepairing/",
+    "route": "/category/acrepairing/",
+    "type": "archive",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/category/acrepairing/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2026/08/13/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2026/06/15/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/category/uncategorized/",
+    "route": "/category/uncategorized/",
+    "type": "archive",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/category/uncategorized/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2026/04/14/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2026/05/13/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2026/03/11/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/category/acexpertdubai/",
+    "route": "/category/acexpertdubai/",
+    "type": "archive",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/category/acexpertdubai/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2026/01/16/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2026/02/05/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/12/16/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/category/acservices/",
+    "route": "/category/acservices/",
+    "type": "archive",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/category/acservices/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/11/19/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/09/25/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/10/15/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/category/maintenance/",
+    "route": "/category/maintenance/",
+    "type": "archive",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/category/maintenance/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/preventive-maintenance/",
+    "route": "/preventive-ac-maintenance-service/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/preventive-ac-maintenance-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/blog/page/2/",
+    "route": "/blog/page/2/",
+    "type": "archive",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/blog/page/2/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2024/08/13/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/emergency-maintenance/",
+    "route": "/emergency-ac-maintenance-service/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/emergency-ac-maintenance-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2024/10/17/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2024/08/29/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2024/08/15/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/08/11/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/01/03/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2024/11/18/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/04/28/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/06/12/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/2025/05/14/",
+    "route": "/",
+    "type": "home",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/maintenance-services/",
+    "route": "/ac-installation-service/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/ac-installation-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/automation-solution/",
+    "route": "/preventive-ac-maintenance-service/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/preventive-ac-maintenance-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/category/uncategorized/page/2/",
+    "route": "/category/uncategorized/page/2/",
+    "type": "archive",
+    "sourceStatus": 200,
+    "action": "migrate",
+    "destination": "/category/uncategorized/page/2/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/service-installation/",
+    "route": "/ac-installation-service/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/ac-installation-service/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/repair-services/",
+    "route": "/ac-repair-services/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/ac-repair-services/"
+  },
+  {
+    "originalUrl": "https://acexperts.ae/switchgear-solutions/",
+    "route": "/ac-repair-services/",
+    "type": "service",
+    "sourceStatus": 200,
+    "action": "redirect",
+    "destination": "/ac-repair-services/"
+  }
+]

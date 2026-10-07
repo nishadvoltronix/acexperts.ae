@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-05",
+  "method": "Built-in image_gen image editing; no custom raster processing",
+  "useCase": "identity-preserve / precise-object-edit",
+  "source": {
+    "path": "artifacts/image-quality-inputs/cta-original.png",
+    "width": 239,
+    "height": 179
+  },
+  "selected": {
+    "path": "public/images/design/cta-hq-v2.png",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 1774641,
+    "format": "PNG",
+    "generatedPath": "C:/Users/Nishad/.codex/generated_images/01a10ba6-5c29-7fc1-9121-d28efb3a32d5/exec-1e6d578d-4d6e-42f0-8460-fff904f69718.png"
+  },
+  "prompts": [
+    {
+      "step": "faithful restoration",
+      "prompt": "Use case: identity-preserve.\nAsset type: high-resolution restoration of an existing AC Experts website CTA photo illustration.\nInput image 1 is the ONLY edit target and strict visual source of truth. Enhance this exact 239-by-179-pixel image into a sharp, clean, photorealistic high-resolution version at 1920 by 1440 pixels (same approximately 4:3 framing). This is a faithful restoration and upscale, not a redesign.\nPreserve the exact composition: the smiling dark-haired bearded technician in a red AC Experts cap and plain red polo shirt, arms crossed in front of his torso, body filling the left/center foreground, with the white service van behind him on the right, facing diagonally toward the viewer-left. Preserve facial identity, expression, crossed-arm pose, head size, red cap position, shirt collar, and crop at the bottom. Preserve the van model silhouette, high roof, windows, side mirror, wheel positions, perspective and existing occlusion by the person.\nPreserve the bright red rounded panel, its curved white/light-gray crescent along the left edge, white top/outer background, rounded right corners, and exact placement and proportions. Keep the same neutral daylight and original red, white, gray and black colors.\nBranding: restore the existing AC EXPERTS lettering on the cap and on the van's upper side panel, keeping the original typography, placement, size and red/white ink colors. Spell only \"AC EXPERTS\"; do not add words or slogans. Crucially preserve the SMALL red-and-gray pictorial decals along the lower van doors exactly where they appear in the reference. Keep their varied original shapes and scale. Do not replace them with large generic swooshes, angular arrows, big abstract symbols or a new vehicle wrap.\nChange ONLY resolution and clarity: remove JPEG blur and sharpen genuine edges, natural facial detail, fabric weave, paint and tires gently. Preserve original design, pose, van livery, boundaries, geometry, camera perspective and all objects. Do not add/remove any object, do not expand the scene, do not stylize, do not add layout text, do not add a watermark. Opaque white background as in the target. Prioritize fidelity to the tiny original over new invented details.",
+      "inputPaths": [
+        "G:/acexperts.ae/artifacts/image-quality-inputs/cta-original.png"
+      ],
+      "outputPath": "C:/Users/Nishad/.codex/generated_images/01a10ba6-5c29-7fc1-9121-d28efb3a32d5/exec-85ed15ca-c6a0-4002-9b99-d1ae94640919.png"
+    },
+    {
+      "step": "targeted lower-door livery refinement",
+      "prompt": "Use case: precise-object-edit.\nImage 1 is the high-resolution EDIT TARGET. Image 2 is the original 239x179 source, supplied as the strict reference for the van livery.\nMake one tightly limited correction to image 1: restore the small graphics on the white van's lower side doors to match image 2's actual lower-door graphics in shape, scale, position, and subtle gray/red detail. In the original they are small discrete mixed red-and-gray service decals, with significant white door area around and above them. In image 1 they have become oversized, bold, stylized abstract red symbols. Correct this drift. Use the actual image 2 details, not new invented branding. Keep uncertain microscopic decal detail soft rather than inventing large graphic forms. Leave the AC EXPERTS wordmark on the upper van side exactly as in image 1.\nLock every other pixel relationship: same technician identity/face, smile, cap logo, red polo, crossed arms, pose, van body, glass, wheels, mirror, perspective, occlusion, red curved background, white-gray left crescent, rounded corners, lighting, and full composition. No crop change, no face/hand alteration, no added text or objects. Maintain the excellent sharpness of image 1, same 4:3 ratio and at least 1440 pixels wide (1920x1440 preferred). Opaque white background. This is only a faithful correction to the lower-door decal treatment.",
+      "inputPaths": [
+        "C:/Users/Nishad/.codex/generated_images/01a10ba6-5c29-7fc1-9121-d28efb3a32d5/exec-85ed15ca-c6a0-4002-9b99-d1ae94640919.png",
+        "G:/acexperts.ae/artifacts/image-quality-inputs/cta-original.png"
+      ]
+    }
+  ],
+  "inspection": {
+    "selectedAfter": "Two built-in edits and visual inspection of both outputs",
+    "preserved": "Technician pose, red cap and polo, crossed arms, van behind him, upper AC EXPERTS branding, approximate 4:3 framing, red rounded panel and gray-white left curve.",
+    "improved": "Crisper person, clothing, vehicle, typography and curved edges; lower-door decals reduced compared with the first candidate.",
+    "limitations": "Generative restoration, not pixel-identical recovery. Facial and vehicle microdetail is reconstructed from the small source. Lower van-door decals remain approximate red/gray shapes rather than exact recoverable original artwork.",
+    "integration": "Asset only; no application components were changed."
+  }
+}

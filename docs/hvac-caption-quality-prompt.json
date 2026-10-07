@@ -1,0 +1,5 @@
+{
+  "tool": "Built-in image_gen",
+  "asset": "public/images/quality/hvac-inspections-hq-v2.png",
+  "prompt": "Use case: precise-object-edit. Edit target is the attached transparent HVAC inspection illustration1588×991. Change ONLY the bottomcenter webaddress \"acexperts.ae\", currently too large. Restore that text to exact original proportion: targetboundingbox approximately x707to880,y915to938 in this1588×991canvas (174pxwide,24pxhigh). Regular black sans-serif type, SAMEspelling \"acexperts.ae\", small unobtrusive text centered x794. Remove oldlargeversion completely. Leave logo and all illustration objects, exact pixelpositions/colors/shapes and transparentbackground untouched. Nootherspatial/cosmeticchanges. Samecanvas andalpha."
+}

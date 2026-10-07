@@ -1,0 +1,466 @@
+{
+  "tool": "built-in image_gen",
+  "entries": [
+    {
+      "sourceLocalPath": "/images/logo/client-1-e4d6bb0f.png",
+      "replacementLocalPath": "/images/quality/client-1-e4d6bb0f-hq.png",
+      "oldWidth": 88,
+      "oldHeight": 45,
+      "width": 1754,
+      "height": 897,
+      "prompt": "Precise-object-edit, faithful resolution restoration. Input1 is original transparent raster to upscale. Input2 is a white-background browser screenshot of THE SAME ORIGINAL to make its black contours visible; use it only to see the immutable geometry, not as a new design. Preserve every original shape, letter outline, text thickness, spacing, gray shade, size and location. M/I HOMES must remain HEAVY bold condensed black exactly as input, nearly spans fullwidth. Do not shrink it or use light or widely spaced text. CUSTOM below and exact house emblem above. Output genuinely transparent PNG at about1536pxwide. Match original aspect ratio 88:45, except if wider than3:1 create1536x512 and add ONLY symmetric vertical transparent padding. Source original MUST fill same width and retain original crop and margins; no new side margins. Aim for direct faithful restoration of existing edge silhouettes, removing pixel blur while changing nothing else. All words spelled exactly as reference. No reinterpretation, embellishment, different font, new symbols, or gradients.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-7b3f3d55-e07c-4a48-90e1-fd55152c106a.png",
+      "previousAttempt": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-46b88d7a-8790-4a8f-b581-b68fe0ed166d.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 12,
+        "top": 11,
+        "right": 1743,
+        "bottom": 878
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": false,
+      "sourceContentBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 87,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-0.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/client-2-397dd1e6.png",
+      "replacementLocalPath": "/images/quality/client-2-397dd1e6-hq.png",
+      "oldWidth": 104,
+      "oldHeight": 45,
+      "width": 1907,
+      "height": 825,
+      "prompt": "Precise-object-edit, faithful resolution restoration. Input1 is original transparent raster to upscale. Input2 is a white-background browser screenshot of THE SAME ORIGINAL to make its black contours visible; use it only to see the immutable geometry, not as a new design. Preserve every original shape, letter outline, text thickness, spacing, gray shade, size and location. ORANGE left emblem: large outlined O with ATTACHED outlined half-oval leaf cap pointing right from the top-right, NOT a separate solid leaf. Match this original O height and width. Exact thin black RANGE and condensed gray BRAND ELEMENTS. Output genuinely transparent PNG at about1536pxwide. Match original aspect ratio 104:45, except if wider than3:1 create1536x512 and add ONLY symmetric vertical transparent padding. Source original MUST fill same width and retain original crop and margins; no new side margins. Aim for direct faithful restoration of existing edge silhouettes, removing pixel blur while changing nothing else. All words spelled exactly as reference. No reinterpretation, embellishment, different font, new symbols, or gradients.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-e772c09e-d75a-4ddc-92d2-59d9870bf644.png",
+      "previousAttempt": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-f636efbd-b1c8-4c03-b98e-0bd845e8f7af.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 1906,
+        "bottom": 824
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": false,
+      "sourceContentBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 103,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-0.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/client-4-2cc84e1a.png",
+      "replacementLocalPath": "/images/quality/client-4-2cc84e1a-hq.png",
+      "oldWidth": 137,
+      "oldHeight": 45,
+      "width": 2188,
+      "height": 719,
+      "prompt": "Precise-object-edit, faithful resolution restoration. Input1 is original transparent raster to upscale. Input2 is a white-background browser screenshot of THE SAME ORIGINAL to make its black contours visible; use it only to see the immutable geometry, not as a new design. Preserve every original shape, letter outline, text thickness, spacing, gray shade, size and location. BOROS is thin/medium stroke black B R S, NOT heavy bold, with two very tall gray oblique O rings rising above the black letters. The first O has thicker top-right arc and second has thicker bottom-left arc. Preserve exact GR?FICA DIGITAL E DESIGN tagline in BOLD condensed uppercase. Output genuinely transparent PNG at about1536pxwide. Match original aspect ratio 137:45, except if wider than3:1 create1536x512 and add ONLY symmetric vertical transparent padding. Source original MUST fill same width and retain original crop and margins; no new side margins. Aim for direct faithful restoration of existing edge silhouettes, removing pixel blur while changing nothing else. All words spelled exactly as reference. No reinterpretation, embellishment, different font, new symbols, or gradients.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-b8bd2dda-a88a-490e-bdf3-771f4938ec43.png",
+      "previousAttempt": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-7e30a70b-20d4-4fa7-b8ec-aa6e49b2e203.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 12,
+        "top": 9,
+        "right": 2179,
+        "bottom": 699
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 136,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-0.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/client-10-3fe85f38.png",
+      "replacementLocalPath": "/images/quality/client-10-3fe85f38-hq.png",
+      "oldWidth": 134,
+      "oldHeight": 45,
+      "width": 2164,
+      "height": 727,
+      "prompt": "Precise-object-edit, faithful resolution restoration. Input1 is original transparent raster to upscale. Input2 is a white-background browser screenshot of THE SAME ORIGINAL to make its black contours visible; use it only to see the immutable geometry, not as a new design. Preserve every original shape, letter outline, text thickness, spacing, gray shade, size and location. LEGECAMP thin sans-serif letters, LEGE black CAMP gray. Above them is original 3 clusters of vertical columns of DIFFERING heights and the thick low stepped platform widening into shallow triangular bases at sides, plus straight gray roof bar. Do not change platform to a thin arc or make columns uniform heights. Output genuinely transparent PNG at about1536pxwide. Match original aspect ratio 134:45, except if wider than3:1 create1536x512 and add ONLY symmetric vertical transparent padding. Source original MUST fill same width and retain original crop and margins; no new side margins. Aim for direct faithful restoration of existing edge silhouettes, removing pixel blur while changing nothing else. All words spelled exactly as reference. No reinterpretation, embellishment, different font, new symbols, or gradients.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-708774ac-6ca7-4ebc-b7fa-de83bbdacd46.png",
+      "previousAttempt": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-bf7e4e3e-c5b5-4c9b-a614-7b57389203c0.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 11,
+        "top": 9,
+        "right": 2159,
+        "bottom": 711
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": false,
+      "sourceContentBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 133,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-0.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/client-3-150x45-e5106a45.png",
+      "replacementLocalPath": "/images/quality/client-3-150x45-e5106a45-hq.png",
+      "oldWidth": 150,
+      "oldHeight": 45,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Precise-object-edit, faithful resolution restoration. Input1 is original transparent raster to upscale. Input2 is a white-background browser screenshot of THE SAME ORIGINAL to make contours legible; use this only to see the immutable geometry, not as a different design. Preserve every original shape, letter outline, text thickness, spacing, color, size and location. PURE DIGITAL: preserve the EXACT clipping at right edge, PURE's E partially cut and DIGITAL's end clipped. Text is the ORIGINAL horizontally wide medium-weight sans-serif, not heavy bold. The left emblem is only a solid gray clipped pentagon and a touching solid light-gray triangle at lower-left; NO hole, no gap, no3D, no faceted gemstone, no arrow. Follow pixel silhouettes seen in white source screenshot. Output transparent PNG about1536x512. Original canvas150x45; scale uniformly to1536px wide and center vertically in512px, adding ONLY symmetric transparent padding. The logo itself must keep the original aspect ratio, margins and framing. No clipping added. All words spelled exactly as reference, all internal whites preserved. Restore edges without different fonts, symbols, embellishment, shadows or gradients.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-6a551e5d-e5f8-4cb9-8f26-927355bd9a28.png",
+      "previousAttempt": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-d68061d9-4905-4d78-a457-963ce8b37d17.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 107,
+        "top": 97,
+        "right": 2072,
+        "bottom": 622
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 0,
+        "top": 0,
+        "right": 149,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-4.png",
+      "renderingNote": "Preserved original cropped wording; no invented L after visible DIGITA. Small added transparent left margin may be compensated using content bounds."
+    },
+    {
+      "sourceLocalPath": "/icons/fevicon-d71d1fce.png",
+      "replacementLocalPath": "/images/quality/fevicon-d71d1fce-hq.png",
+      "oldWidth": 65,
+      "oldHeight": 65,
+      "width": 1254,
+      "height": 1254,
+      "prompt": "Use case: precise-object-edit. Faithfully restore the existing raster logo in the input, changing ONLY resolution and clarity. Exact source details: the existing red rounded square with a centered white lightning-bolt symbol. Preserve the exact bolt geometry, square corners, red hue and original white outer background; no text.\nOutput high-resolution PNG, target1536 by 1536pixels. Originalcanvas65by65. Uniformly scale the ENTIRE originalcanvas to1536pixelswide, includingits existing margins; preserve every logo element's relative position and size. If the output canvas is taller than originalaspect, center that uniformlyscaled original vertically and add only white vertical padding. Do not distort, stretch or maximize the logo itself. Preserve the original opaque white background exactly.\nThe exact original typography is mandatory: same font style, case, stroke weight, kerning and words. Restore clean edges; keep every logo shape, color, symbol, accent and linebreak. No rebranding, new typefaces, new text, invented letters, altered emblems, shadows or decorative effects.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-a1cca15a-c3a6-4caa-9d66-2316ac3145bc.png",
+      "transparentBackground": false,
+      "hasAlpha": false,
+      "alphaMin": null,
+      "contentBounds": null,
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": false,
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-4.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/5-9a789422.png",
+      "replacementLocalPath": "/images/quality/5-9a789422-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Use case: precise-object-edit. Faithfully restore the existing raster logo in the input, changing ONLY resolution and clarity. Exact source details: DAIKIN in the exact dark blue italic block lettering with its cyan and dark-blue slanted emblem on the left.\nOutput high-resolution PNG, target1536 by 512pixels. Originalcanvas185by50. Uniformly scale the ENTIRE originalcanvas to1536pixelswide, includingits existing margins; preserve every logo element's relative position and size. If the output canvas is taller than originalaspect, center that uniformlyscaled original vertically and add only transparent vertical padding. Do not distort, stretch or maximize the logo itself. Preserve genuine transparent alpha, all internal holes and semitransparent parts. No white matte or checkerboard.\nThe exact original typography is mandatory: same font style, case, stroke weight, kerning and words. Restore clean edges; keep every logo shape, color, symbol, accent and linebreak. No rebranding, new typefaces, new text, invented letters, altered emblems, shadows or decorative effects.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-80fe6546-2859-4a02-a2bc-802a69d045df.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 65,
+        "top": 158,
+        "right": 2118,
+        "bottom": 572
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 1,
+        "top": 5,
+        "right": 184,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-4.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/6-4b2f3efd.png",
+      "replacementLocalPath": "/images/quality/6-4b2f3efd-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Use case: precise-object-edit. Faithfully restore the existing raster logo in the input, changing ONLY resolution and clarity. Exact source details: legrand in lowercase red letters with the black outlined electrical-style square emblem on the left and black registered mark at upper right.\nOutput high-resolution PNG, target1536 by 512pixels. Originalcanvas185by45. Uniformly scale the ENTIRE originalcanvas to1536pixelswide, includingits existing margins; preserve every logo element's relative position and size. If the output canvas is taller than originalaspect, center that uniformlyscaled original vertically and add only transparent vertical padding. Do not distort, stretch or maximize the logo itself. Preserve genuine transparent alpha, all internal holes and semitransparent parts. No white matte or checkerboard.\nThe exact original typography is mandatory: same font style, case, stroke weight, kerning and words. Restore clean edges; keep every logo shape, color, symbol, accent and linebreak. No rebranding, new typefaces, new text, invented letters, altered emblems, shadows or decorative effects.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-15105dbe-1fca-4928-830d-54a9a5bd7a4a.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 78,
+        "top": 128,
+        "right": 2105,
+        "bottom": 623
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 1,
+        "top": 0,
+        "right": 184,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-4.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/11-c27218bc.png",
+      "replacementLocalPath": "/images/quality/11-c27218bc-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Use case: precise-object-edit. Restore this exact existing raster brand logo to a crisp high-resolution PNG. This is an upscale/restoration, NEVER a redesign. Visible source details: LS Industrial Systems: stylized dark-blue LS with the small red accent above, then gray Industrial Systems text. Preserve white background.\nTarget 1536 by 512 pixels. Original canvas is 185 by 45 pixels. Uniformly scale the entire original canvas to fill the output width, preserving original transparent/white margins and the relative position and size of all elements. When original ratio exceeds 3:1, use a 1536x512 canvas and add only equal vertical padding above/below the uniformly scaled original. Keep logo geometry undistorted.\nPreserve the original opaque white background. Match the input colors, letterforms, exact typography, stroke widths, kerning, symbol outlines, wording, capitalization and tagline spacing. Reconstruct sharp edges with flat original fills. Do not change shapes, invent details, substitute symbols, add gradients, shadows, 3D, new text or creative effects. Strict fidelity to the original is more important than artistic embellishment.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-78c434b7-24bb-45f0-b95f-216f7a8b19f1.png",
+      "transparentBackground": false,
+      "hasAlpha": false,
+      "alphaMin": null,
+      "contentBounds": null,
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-8.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/6-982866f1.png",
+      "replacementLocalPath": "/images/quality/lg-logo-hq-v2.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Precise-object-edit, faithful resolution restoration. Input1 is original transparent raster to upscale. Input2 is a white-background browser screenshot of THE SAME ORIGINAL to make contours legible; use this only to see the immutable geometry, not as a different design. Preserve every original shape, letter outline, text thickness, spacing, color, size and location. LG: retain the burgundy/red circle and the WHITE eye dot, WHITE arc and WHITE L/G monogram. The eye must be white, not black or transparent. Keep black LG next to it. Mark remains small centered with the original large transparent side margins. Output transparent PNG about1536x512. Original canvas185x50; scale uniformly to1536px wide and center vertically in512px, adding ONLY symmetric transparent padding. The logo itself must keep the original aspect ratio, margins and framing. No clipping added. All words spelled exactly as reference, all internal whites preserved. Restore edges without different fonts, symbols, embellishment, shadows or gradients.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-12637d23-8f8b-42d3-9d75-c55c8a664260.png",
+      "previousAttempt": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-e54bbda8-f82f-444a-a85c-ec1a525eaf2c.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 826,
+        "top": 213,
+        "right": 1343,
+        "bottom": 511
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 56,
+        "top": 2,
+        "right": 128,
+        "bottom": 46
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-8.png",
+      "renderingNote": "Corrected white eye preserved. Logo content is smaller than original relative to canvas; increase visible content scale to original sourceContentBounds while retaining original outer image box.",
+      "previousReplacementLocalPath": "/images/quality/6-982866f1-hq.png",
+      "finalCorrection": "docs/final-image-correction-prompts.json",
+      "renderingNotes": "Content enlarged to match original visual footprint; original outer box retained."
+    },
+    {
+      "sourceLocalPath": "/images/logo/7-1dadd2db.png",
+      "replacementLocalPath": "/images/quality/7-1dadd2db-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Precise-object-edit, faithful resolution restoration. Input1 is original transparent raster to upscale. Input2 is a white-background browser screenshot of THE SAME ORIGINAL to make contours legible; use this only to see the immutable geometry, not as a different design. Preserve every original shape, letter outline, text thickness, spacing, color, size and location. MITSUBISHI ELECTRIC: exact original plain sans-serif tagline is Cooling and Heating Solutions (NOT Changes for the Better). Preserve original black2-line letters and3red diamonds, and original large side margins. Do not substitute tagline, font, italics or symbols. Output transparent PNG about1536x512. Original canvas185x50; scale uniformly to1536px wide and center vertically in512px, adding ONLY symmetric transparent padding. The logo itself must keep the original aspect ratio, margins and framing. No clipping added. All words spelled exactly as reference, all internal whites preserved. Restore edges without different fonts, symbols, embellishment, shadows or gradients.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-d3560d31-f24a-4d57-b0e3-3842cd5f1350.png",
+      "previousAttempt": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-7c409c1a-02e0-4d67-bfa9-014417254d0c.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 412,
+        "top": 65,
+        "right": 1907,
+        "bottom": 633
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 36,
+        "top": 1,
+        "right": 161,
+        "bottom": 49
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-8.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/3-9deac3c0.png",
+      "replacementLocalPath": "/images/quality/3-9deac3c0-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Use case: precise-object-edit. Restore this exact existing raster brand logo to a crisp high-resolution PNG. This is an upscale/restoration, NEVER a redesign. Visible source details: GREE in italic dark-blue letters beside the original dark-blue and red circular curved emblem.\nTarget 1536 by 512 pixels. Original canvas is 185 by 50 pixels. Uniformly scale the entire original canvas to fill the output width, preserving original transparent/white margins and the relative position and size of all elements. When original ratio exceeds 3:1, use a 1536x512 canvas and add only equal vertical padding above/below the uniformly scaled original. Keep logo geometry undistorted.\nPreserve genuine transparent alpha and every internal hole; no opaque matte and no checkerboard. Match the input colors, letterforms, exact typography, stroke widths, kerning, symbol outlines, wording, capitalization and tagline spacing. Reconstruct sharp edges with flat original fills. Do not change shapes, invent details, substitute symbols, add gradients, shadows, 3D, new text or creative effects. Strict fidelity to the original is more important than artistic embellishment.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-d5d19bb6-23ee-40d3-93f4-e5e6d1b0110c.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 62,
+        "top": 161,
+        "right": 2109,
+        "bottom": 549
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 5,
+        "top": 8,
+        "right": 179,
+        "bottom": 41
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-8.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/1-7386d9e3.png",
+      "replacementLocalPath": "/images/quality/1-7386d9e3-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 50,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Precise-object-edit, faithful resolution restoration. Input1 is original transparent raster to upscale. Input2 is a white-background browser screenshot of THE SAME ORIGINAL to make contours legible; use this only to see the immutable geometry, not as a different design. Preserve every original shape, letter outline, text thickness, spacing, color, size and location. GENERAL: solid flat RED wordmark with the original stylized arch-shaped A and dot below the arch. Left red circle contains white lightning bolt. ABSOLUTELY NO BLACK OUTLINE anywhere, no black stroke, no black dot, no red-outline lettering. Shape interiors match source. Output transparent PNG about1536x512. Original canvas185x50; scale uniformly to1536px wide and center vertically in512px, adding ONLY symmetric transparent padding. The logo itself must keep the original aspect ratio, margins and framing. No clipping added. All words spelled exactly as reference, all internal whites preserved. Restore edges without different fonts, symbols, embellishment, shadows or gradients.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-23c5d95e-8471-420a-a1d2-1577fd832115.png",
+      "previousAttempt": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-54a29237-958f-4fe9-b160-4978f4534b3d.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 45,
+        "top": 232,
+        "right": 2139,
+        "bottom": 489
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 3,
+        "top": 14,
+        "right": 182,
+        "bottom": 36
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-12.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/2-114d1f50.png",
+      "replacementLocalPath": "/images/quality/2-114d1f50-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Use case: precise-object-edit. Faithfully upscale/restorate this provided raster logo to sharp high-resolution PNG; do NOT redesign or reinterpret. Source wording and symbols: SIEMENS in the exact teal uppercase geometric sans-serif wordmark.\nRequested canvas: 1536 x 512. Source canvas: 185 x 45. Scale the WHOLE original rectangle uniformly to the full requested width, keeping all original transparent margins and every logo element at the same relative size and position. If source is wider than 3:1, use1536x512 output with ONLY equal transparent padding at top and bottom around the scaled original; no distortion. Preserve genuine transparent alpha, including every letter counter and shape hole. No matte or checkerboard.\nKeep original colors, geometry, font design, weight, kerning, case and any tagline. Restore clean flat edges without inventing new decorative details. No extra text, changed brand spelling, replaced glyphs, simplified emblem, 3D, shadow, gloss or gradients. The source design is immutable; only clarity improves.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-709338bd-81e7-4141-9f8b-32acb63470fd.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 78,
+        "top": 215,
+        "right": 2093,
+        "bottom": 520
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 0,
+        "top": 9,
+        "right": 184,
+        "bottom": 36
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-12.png"
+    },
+    {
+      "sourceLocalPath": "/images/logo/3-97ed2995.png",
+      "replacementLocalPath": "/images/quality/3-97ed2995-hq.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "width": 2167,
+      "height": 726,
+      "prompt": "Use case: precise-object-edit. Faithfully upscale/restorate this provided raster logo to sharp high-resolution PNG; do NOT redesign or reinterpret. Source wording and symbols: L&T Energy with the circular L&T monogram to the left and Power below at right, all in the original blue italic typography.\nRequested canvas: 1536 x 512. Source canvas: 185 x 45. Scale the WHOLE original rectangle uniformly to the full requested width, keeping all original transparent margins and every logo element at the same relative size and position. If source is wider than 3:1, use1536x512 output with ONLY equal transparent padding at top and bottom around the scaled original; no distortion. Preserve genuine transparent alpha, including every letter counter and shape hole. No matte or checkerboard.\nKeep original colors, geometry, font design, weight, kerning, case and any tagline. Restore clean flat edges without inventing new decorative details. No extra text, changed brand spelling, replaced glyphs, simplified emblem, 3D, shadow, gloss or gradients. The source design is immutable; only clarity improves.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-8191413c-62ee-47c2-9450-86e0fe97f447.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 156,
+        "top": 99,
+        "right": 2025,
+        "bottom": 651
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": false,
+      "sourceContentBounds": {
+        "left": 20,
+        "top": 0,
+        "right": 165,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-12.png",
+      "renderingNote": "Power tagline intact in PNG, but center object-fit:cover to old185:45 aspect clips its bottom; use contain or measured content positioning, not generic cover."
+    },
+    {
+      "sourceLocalPath": "/images/logo/4-e8f77d74.png",
+      "replacementLocalPath": "/images/quality/epcos-logo-hq-v2.png",
+      "oldWidth": 185,
+      "oldHeight": 45,
+      "width": 2172,
+      "height": 724,
+      "prompt": "Use case: precise-object-edit. Faithfully upscale/restorate this provided raster logo to sharp high-resolution PNG; do NOT redesign or reinterpret. Source wording and symbols: EPCOS in black uppercase below the cyan layered tapered triangular swirl symbol. Keep this small centered mark at the same relative size within the original wide canvas.\nRequested canvas: 1536 x 512. Source canvas: 185 x 45. Scale the WHOLE original rectangle uniformly to the full requested width, keeping all original transparent margins and every logo element at the same relative size and position. If source is wider than 3:1, use1536x512 output with ONLY equal transparent padding at top and bottom around the scaled original; no distortion. Preserve genuine transparent alpha, including every letter counter and shape hole. No matte or checkerboard.\nKeep original colors, geometry, font design, weight, kerning, case and any tagline. Restore clean flat edges without inventing new decorative details. No extra text, changed brand spelling, replaced glyphs, simplified emblem, 3D, shadow, gloss or gradients. The source design is immutable; only clarity improves.",
+      "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10ba6-5c29-7fc1-9121-d28efb3a32d5\\exec-0277efb5-0fc6-4742-869b-c52bc4824208.png",
+      "transparentBackground": true,
+      "hasAlpha": true,
+      "alphaMin": 0,
+      "contentBounds": {
+        "left": 921,
+        "top": 209,
+        "right": 1250,
+        "bottom": 518
+      },
+      "inspection": "Visually compared original and selected restoration on white background; exact visible brand words and recognizable symbol geometry checked. Restored contours and small spacing/color details remain generative approximations, not pixel-identical originals.",
+      "status": "accepted",
+      "padded": true,
+      "sourceContentBounds": {
+        "left": 69,
+        "top": 0,
+        "right": 116,
+        "bottom": 44
+      },
+      "comparisonScreenshot": "artifacts/image-quality-inputs/brand-final-compare-12.png",
+      "renderingNote": "Logo content smaller than original relative to canvas; increase visible content scale to original sourceContentBounds while retaining original outer image box.",
+      "previousReplacementLocalPath": "/images/quality/4-e8f77d74-hq.png",
+      "finalCorrection": "docs/final-image-correction-prompts.json",
+      "renderingNotes": "Content enlarged to match original visual footprint; original outer box retained."
+    }
+  ],
+  "boundsAlphaThreshold": 12
+}

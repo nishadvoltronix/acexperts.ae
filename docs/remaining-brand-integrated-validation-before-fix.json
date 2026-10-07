@@ -1,0 +1,521 @@
+{
+  "origin": "http://localhost:3001",
+  "results": [
+    {
+      "route": "/about/",
+      "viewport": 1440,
+      "deviceScaleFactor": 2,
+      "images": [
+        {
+          "index": 7,
+          "assetPath": "/images/quality/5-ee7840e9-hq.png",
+          "alt": "EATON | Our Client",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-1440-5-ee7840e9.png"
+        },
+        {
+          "index": 9,
+          "assetPath": "/images/quality/7-8f9f1ceb-hq.png",
+          "alt": "Danfoss | Our Client",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-1440-7-8f9f1ceb.png"
+        },
+        {
+          "index": 10,
+          "assetPath": "/images/quality/8-a5aa5518-hq.png",
+          "alt": "alfanar | Our Client",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-1440-8-a5aa5518.png"
+        },
+        {
+          "index": 11,
+          "assetPath": "/images/quality/9-931adbd4-hq.png",
+          "alt": "Hager | Our Client",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-1440-9-931adbd4.png"
+        },
+        {
+          "index": 12,
+          "assetPath": "/images/quality/10-ddb9b7b8-hq.png",
+          "alt": "schneider Electric",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-1440-10-ddb9b7b8.png"
+        }
+      ]
+    },
+    {
+      "route": "/about/",
+      "viewport": 390,
+      "deviceScaleFactor": 2,
+      "images": [
+        {
+          "index": 7,
+          "assetPath": "/images/quality/5-ee7840e9-hq.png",
+          "alt": "EATON | Our Client",
+          "width": 82.65625,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 124.07638888888891,
+            "top": 0,
+            "right": 126.07638888888891,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-390-5-ee7840e9.png"
+        },
+        {
+          "index": 9,
+          "assetPath": "/images/quality/7-8f9f1ceb-hq.png",
+          "alt": "Danfoss | Our Client",
+          "width": 82.65625,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 25.076388888888914,
+            "top": 0,
+            "right": 26.076388888888914,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-390-7-8f9f1ceb.png"
+        },
+        {
+          "index": 10,
+          "assetPath": "/images/quality/8-a5aa5518-hq.png",
+          "alt": "alfanar | Our Client",
+          "width": 82.65625,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 264.0763888888889,
+            "top": 0,
+            "right": 271.0763888888889,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-390-8-a5aa5518.png"
+        },
+        {
+          "index": 11,
+          "assetPath": "/images/quality/9-931adbd4-hq.png",
+          "alt": "Hager | Our Client",
+          "width": 82.671875,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 84.95069444444448,
+            "top": 0,
+            "right": 100.95069444444448,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-390-9-931adbd4.png"
+        },
+        {
+          "index": 12,
+          "assetPath": "/images/quality/10-ddb9b7b8-hq.png",
+          "alt": "schneider Electric",
+          "width": 82.65625,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 247.0763888888889,
+            "top": 0,
+            "right": 249.0763888888889,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-about-390-10-ddb9b7b8.png"
+        }
+      ]
+    },
+    {
+      "route": "/products/",
+      "viewport": 1440,
+      "deviceScaleFactor": 2,
+      "images": [
+        {
+          "index": 13,
+          "assetPath": "/images/quality/2-ec36719a-hq.png",
+          "alt": "Hitachi logo",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-products-1440-2-ec36719a.png"
+        },
+        {
+          "index": 15,
+          "assetPath": "/images/quality/4-e6177339-hq.png",
+          "alt": "Super General logo",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-products-1440-4-e6177339.png"
+        },
+        {
+          "index": 19,
+          "assetPath": "/images/quality/8-2b2c3ab5-hq.png",
+          "alt": "Rheem logo",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-products-1440-8-2b2c3ab5.png"
+        },
+        {
+          "index": 20,
+          "assetPath": "/images/quality/9-eba8cd1c-hq.png",
+          "alt": "Voltas logo",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-products-1440-9-eba8cd1c.png"
+        }
+      ]
+    },
+    {
+      "route": "/products/",
+      "viewport": 390,
+      "deviceScaleFactor": 2,
+      "images": [
+        {
+          "index": 13,
+          "assetPath": "/images/quality/2-ec36719a-hq.png",
+          "alt": "Hitachi logo",
+          "width": 82.671875,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 188.95069444444448,
+            "top": 0,
+            "right": 187.95069444444448,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-products-390-2-ec36719a.png"
+        },
+        {
+          "index": 15,
+          "assetPath": "/images/quality/4-e6177339-hq.png",
+          "alt": "Super General logo",
+          "width": 82.65625,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 401.0763888888889,
+            "top": 0,
+            "right": 398.0763888888889,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-products-390-4-e6177339.png"
+        },
+        {
+          "index": 19,
+          "assetPath": "/images/quality/8-2b2c3ab5-hq.png",
+          "alt": "Rheem logo",
+          "width": 82.671875,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-products-390-8-2b2c3ab5.png"
+        },
+        {
+          "index": 20,
+          "assetPath": "/images/quality/9-eba8cd1c-hq.png",
+          "alt": "Voltas logo",
+          "width": 82.65625,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 256.0763888888889,
+            "top": 0,
+            "right": 255.0763888888889,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-products-390-9-eba8cd1c.png"
+        }
+      ]
+    },
+    {
+      "route": "/services/",
+      "viewport": 1440,
+      "deviceScaleFactor": 2,
+      "images": [
+        {
+          "index": 6,
+          "assetPath": "/images/quality/2-ec36719a-hq.png",
+          "alt": "Hitachi logo",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-services-1440-2-ec36719a.png"
+        },
+        {
+          "index": 8,
+          "assetPath": "/images/quality/4-e6177339-hq.png",
+          "alt": "Super General logo",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-services-1440-4-e6177339.png"
+        },
+        {
+          "index": 12,
+          "assetPath": "/images/quality/8-2b2c3ab5-hq.png",
+          "alt": "Rheem logo",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-services-1440-8-2b2c3ab5.png"
+        },
+        {
+          "index": 13,
+          "assetPath": "/images/quality/9-eba8cd1c-hq.png",
+          "alt": "Voltas logo",
+          "width": 204.796875,
+          "height": 65,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-services-1440-9-eba8cd1c.png"
+        }
+      ]
+    },
+    {
+      "route": "/services/",
+      "viewport": 390,
+      "deviceScaleFactor": 2,
+      "images": [
+        {
+          "index": 6,
+          "assetPath": "/images/quality/2-ec36719a-hq.png",
+          "alt": "Hitachi logo",
+          "width": 82.671875,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 188.95069444444448,
+            "top": 0,
+            "right": 187.95069444444448,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-services-390-2-ec36719a.png"
+        },
+        {
+          "index": 8,
+          "assetPath": "/images/quality/4-e6177339-hq.png",
+          "alt": "Super General logo",
+          "width": 82.65625,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 401.0763888888889,
+            "top": 0,
+            "right": 398.0763888888889,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-services-390-4-e6177339.png"
+        },
+        {
+          "index": 12,
+          "assetPath": "/images/quality/8-2b2c3ab5-hq.png",
+          "alt": "Rheem logo",
+          "width": 82.671875,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-services-390-8-2b2c3ab5.png"
+        },
+        {
+          "index": 13,
+          "assetPath": "/images/quality/9-eba8cd1c-hq.png",
+          "alt": "Voltas logo",
+          "width": 82.65625,
+          "height": 45,
+          "objectFit": "cover",
+          "objectPosition": "50% 50%",
+          "complete": true,
+          "naturalWidth": 205,
+          "nativeContentClipping": {
+            "left": 256.0763888888889,
+            "top": 0,
+            "right": 255.0763888888889,
+            "bottom": 0
+          },
+          "screenshot": "docs/brand-integrated-services-390-9-eba8cd1c.png"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "desktop": "All nine remaining logos clear and unclipped at1440.",
+    "mobile": "Eight of nine remaining logos clipped horizontally at390; Rheem is unaffected.",
+    "cause": "object-fit:cover on padded3:1 assets inside fixed82.66x45 mobile boxes.",
+    "applicationFilesChanged": false
+  }
+}

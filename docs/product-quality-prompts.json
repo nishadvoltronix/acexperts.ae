@@ -1,0 +1,122 @@
+[
+  {
+    "id": "central",
+    "sourceLocalPath": "/images/services/central-air-conditioning-4c3aae90.webp",
+    "replacementLocalPath": "/images/quality/central-air-conditioning-4c3aae90-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-db25f83d-e0aa-44a8-ada7-97ac94ad059c.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. Two tall white rectangular rooftop HVAC condenser cabinets, each with two round fans. The left cabinet has a visible left side vent. Concrete plinth, gray parapet, pipes and vertical conduits to the right, blue sky. Preserve these exact units and all fan counts, positions, dimensions, perspective, pipe routing, wall and sky.\nIncrease clean natural fine detail, reduce JPEG/WebP blocking and pixelation, restore crisp edges and realistic surface texture. Keep all original colors, lighting, shadows, background, objects, number of objects, and their placement unchanged. Preserve existing logos and text exactly without replacement, expansion, or added lettering. Do not redesign, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 2484584,
+    "mode": "built-in-imagegen",
+    "sha256": "ac85534aafaa4c5a72f2e8dd14cef882ec955134135d6a9f54351c202e352e35"
+  },
+  {
+    "id": "split",
+    "sourceLocalPath": "/images/services/split-air-conditioning-0bf7b3a9.webp",
+    "replacementLocalPath": "/images/quality/split-air-conditioning-0bf7b3a9-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-9ae9e4a1-aa3f-4c9d-9b95-2fef6744d407.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The same front-facing ivory white wall-mounted split air conditioner centered on white. Preserve curved gold/tan trim, lower open vent, tiny gray brand lettering on the left, tiny red/black mark on the right, and every product contour and grille. Do not invent or substitute brand text.\nIncrease clean natural fine detail, reduce JPEG/WebP blocking and pixelation, restore crisp edges and realistic surface texture. Keep all original colors, lighting, shadows, background, objects, number of objects, and their placement unchanged. Preserve existing logos and text exactly without replacement, expansion, or added lettering. Do not redesign, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 925216,
+    "mode": "built-in-imagegen",
+    "sha256": "c45148a90e69eee43b3f7a4df8e8d7ccd6bd3a4d9b6e29622cf06a118c6f6910"
+  },
+  {
+    "id": "window",
+    "sourceLocalPath": "/images/services/window-air-conditioning-a8c93bf7.webp",
+    "replacementLocalPath": "/images/quality/window-air-conditioning-a8c93bf7-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-54eb0786-4bf8-4de2-8de2-cf61856aa001.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The same rectangular white window air conditioner on white: large left grille, dark upper-right grille, small lower-right control panel with its blue dial, small existing red wordmark near bottom center. Preserve all exact grille geometry, controls, lettering, colors and crop.\nIncrease clean natural fine detail, reduce JPEG/WebP blocking and pixelation, restore crisp edges and realistic surface texture. Keep all original colors, lighting, shadows, background, objects, number of objects, and their placement unchanged. Preserve existing logos and text exactly without replacement, expansion, or added lettering. Do not redesign, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 1247215,
+    "mode": "built-in-imagegen",
+    "sha256": "426df6a2fee12f61728808fd42d9924641323365bbffe7b5069ac067e0ec1f77"
+  },
+  {
+    "id": "portable",
+    "sourceLocalPath": "/images/services/portable-air-conditioning-636c41ec.webp",
+    "replacementLocalPath": "/images/quality/portable-air-conditioning-636c41ec-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-93dc956c-60fd-41ff-9215-023d8ecb4a3d.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The same rounded white/gray portable air conditioner on white: black top vent, small existing front brand badge, remote control leaning at lower left, soft product shadow. Preserve exact proportions, angles, badge/text, remote and all controls.\nIncrease clean natural fine detail, reduce JPEG/WebP blocking and pixelation, restore crisp edges and realistic surface texture. Keep all original colors, lighting, shadows, background, objects, number of objects, and their placement unchanged. Preserve existing logos and text exactly without replacement, expansion, or added lettering. Do not redesign, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 1034278,
+    "mode": "built-in-imagegen",
+    "sha256": "718b2358d78014c597ad8f9675edf2ad00d2c956c17ccedf72059221c6dc2c0a"
+  },
+  {
+    "id": "chiller",
+    "sourceLocalPath": "/images/services/chiller-system-1-c94a1584.webp",
+    "replacementLocalPath": "/images/quality/chiller-system-1-c94a1584-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-a612448b-9618-4f42-9f6d-4b71cb9cb4a8.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The same industrial mechanical plant room photograph, with the exact large beige horizontal cylindrical chillers and their positions, connected white overhead insulated pipes with red and blue bands, control cabinets at the rear/right, gray-white floor, and all existing fittings, platforms, wiring, labels and background structures. Preserve camera viewpoint and visible pipe routing precisely.\nIncrease clean natural fine detail, reduce WebP blocking and pixelation, restore crisp edges and realistic material texture. Keep the original color palette, lighting, shadows, background, objects, number of objects and placement unchanged. Preserve existing logos/text exactly; do not invent, replace or add labels. Do not redesign, modernize, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 1924338,
+    "mode": "built-in-imagegen",
+    "sha256": "2222c0d9e49ef56b2213e9a4741e97b0f6421ef03e5154fbb8c961a2ee44db0d"
+  },
+  {
+    "id": "fresh",
+    "sourceLocalPath": "/images/services/fresh-air-system-8844527e.webp",
+    "replacementLocalPath": "/images/quality/fresh-air-system-8844527e-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-935175aa-f4c9-4021-be20-2e9bda6e8cc7.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The same upward-looking mechanical ceiling photo. The square silver metal ventilation box with its round radial grille remains at exactly the same place and orientation. Preserve the surrounding silver round ducts going upward/right and down/right, white pipes along the left, the partially cropped far-left unit, gray ceiling, perspective, and every object position.\nIncrease clean natural fine detail, reduce WebP blocking and pixelation, restore crisp edges and realistic material texture. Keep the original color palette, lighting, shadows, background, objects, number of objects and placement unchanged. Preserve existing logos/text exactly; do not invent, replace or add labels. Do not redesign, modernize, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 1831726,
+    "mode": "built-in-imagegen",
+    "sha256": "a745f11d6d34abf53484ffdfb5e67f221cb00b641e4eea45e6d4b4c49ba3a3a6"
+  },
+  {
+    "id": "ventilation",
+    "sourceLocalPath": "/images/services/ventilation-system-464c5b1e.webp",
+    "replacementLocalPath": "/images/quality/ventilation-system-464c5b1e-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-ccc28ca0-cfd5-4f31-9d45-3e5e97e31ddb.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The exact same upper corner of a bright white room: ceiling cassette air conditioner near upper right, its faint green air-flow visualization, white ceiling, black track and spotlights, black grid window at lower left and green trees outside. Preserve the existing green airflow effect, framing, ceiling geometry, light placement, and window grid exactly.\nIncrease clean natural fine detail, reduce WebP blocking and pixelation, restore crisp edges and realistic material texture. Keep the original color palette, lighting, shadows, background, objects, number of objects and placement unchanged. Preserve existing logos/text exactly; do not invent, replace or add labels. Do not redesign, modernize, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 1986137,
+    "mode": "built-in-imagegen",
+    "sha256": "f1a44fe3cf68a70c2aaae21a8f397a57c992062885cebc35fa63ff4e52c04e9d"
+  },
+  {
+    "id": "dx",
+    "sourceLocalPath": "/images/services/dx-system-cd9c01b9.webp",
+    "replacementLocalPath": "/images/quality/dx-system-cd9c01b9-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-5002cada-7457-4890-9f56-edaeead11dd7.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The exact same HVAC equipment composite/photo: bright blue sky with soft clouds behind the shiny large silver ducts at left/middle; tall white vented unit at center-left; the same three large white square fan units on the right, one high and two below with the same lower cropping. Preserve all fan/duct counts, locations, scale, angles, geometry, highlights and sky.\nIncrease clean natural fine detail, reduce WebP blocking and pixelation, restore crisp edges and realistic material texture. Keep the original color palette, lighting, shadows, background, objects, number of objects and placement unchanged. Preserve existing logos/text exactly; do not invent, replace or add labels. Do not redesign, modernize, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 2365711,
+    "mode": "built-in-imagegen",
+    "sha256": "c2669e40ea9ea0a6e40f651f2a28f831121c280f31e62c9cb0079222c31ec803"
+  },
+  {
+    "id": "dehumidifier",
+    "sourceLocalPath": "/images/services/dehumidifier-6c8e9419.webp",
+    "replacementLocalPath": "/images/quality/dehumidifier-6c8e9419-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-8d8f1650-9743-40ae-bd8b-defac01adbe3.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The same compact black dehumidifier centered on a plain white backdrop: rounded rectangular black housing with vent on top and a tiny faint 'Dehumidifier' label at the upper front, translucent dark blue water reservoir at the bottom showing rippled water, soft shadow extending right. Preserve exact proportions, view angle, label placement, water level, reflection, color and background.\nIncrease clean natural fine detail, reduce WebP blocking and pixelation, restore crisp edges and realistic material texture. Keep all original colors, lighting, shadows, background, objects, number of objects and their placement unchanged. Preserve existing logos and text exactly without replacing, expanding or adding lettering. Do not redesign, modernize, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 1222727,
+    "mode": "built-in-imagegen",
+    "sha256": "80c52f2e9c169d7e991b7f92581e0459427ebab675f3ca6090666283be8e82ec"
+  },
+  {
+    "id": "parking",
+    "sourceLocalPath": "/images/services/car-parking-exhaust-system-e6040978.webp",
+    "replacementLocalPath": "/images/quality/car-parking-exhaust-system-e6040978-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b80-6c90-7b31-a8e1-cd64a0753590\\exec-063efd89-339d-47e6-8642-665cd4efc5e6.png",
+    "prompt": "Use case: precise-object-edit.\nInput image 1 is the edit target, an existing website product image. Perform conservative resolution restoration only. Produce a high-resolution PNG at 1792 by 1280 pixels, the same 7:5 aspect ratio and identical crop/composition. Preserve the exact photograph and product identity. The same indoor basement car-park photo: prominent silver cylindrical jet ventilation fan suspended upper-right with its square mounting frame, smaller fan farther upper-left, exposed concrete ceiling, dark pipes, parked black and silver cars below, green letter B markers on the rear wall and original yellow/black striped column edges. Keep precisely the same perspective, fan and car counts, crop, lettering, pipes, concrete, beams, pillars, lighting and arrangement.\nIncrease clean natural fine detail, reduce WebP blocking and pixelation, restore crisp edges and realistic material texture. Keep all original colors, lighting, shadows, background, objects, number of objects and their placement unchanged. Preserve existing logos and text exactly without replacing, expanding or adding lettering. Do not redesign, modernize, move, recolor, reframe, add or remove anything. No new scene, no decorative effects, no added text or watermark. Opaque background exactly as source.",
+    "width": 1484,
+    "height": 1060,
+    "bytes": 2203125,
+    "mode": "built-in-imagegen",
+    "sha256": "3a381c102b127bad3c917954ff245ee6d6b39a47c4ccb14a4e54027d0c88f8fe"
+  }
+]

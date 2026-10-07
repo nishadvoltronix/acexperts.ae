@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-05T11:14:56.746Z",
+  "checks": [
+    {
+      "command": "npm run lint",
+      "chunk_id": "8843e1",
+      "wall_time_seconds": 6.7549213,
+      "exit_code": 0,
+      "original_token_count": 11,
+      "output": "\n> acexperts-next@1.0.0 lint\n> eslint .\n\n"
+    },
+    {
+      "command": "npm run build",
+      "chunk_id": "b55bc6",
+      "wall_time_seconds": 9.2544062,
+      "exit_code": 0,
+      "original_token_count": 280,
+      "output": "\n> acexperts-next@1.0.0 build\n> next build\n\n▲ Next.js 16.3.8 (Turbopack)\n✓ Running next.config.ts took 33ms\n\n  Creating an optimized production build ...\n✓ Compiled successfully in 952ms\n  Running TypeScript ...\n  Finished TypeScript in 2.6s ...\n  Collecting page data using 8 workers ...\n  Generating static pages using 8 workers (0/51) ...\n  Generating static pages using 8 workers (12/51) \r\n  Generating static pages using 8 workers (25/51) \r\n  Generating static pages using 8 workers (38/51) \r\n✓ Generating static pages using 8 workers (51/51) in 1455ms\n  Finalizing page optimization ...\n\nRoute (app)\n┌ ○ /\n├ ○ /_not-found\n├   /[...slug]\n│ ├ ● /10-important-questions-ask-before-signing-ac-maintenance-contract-dubai\n│ ├ ● /10-ways-to-save-money-on-your-energy-bill-this-summer\n│ ├ ● /7-clear-signs-you-need-ac-repair-service\n│ └ ● [+42 more paths]\n├ ƒ /api/contact\n├ ○ /robots.txt\n└ ○ /sitemap.xml\n\n\n○  (Static)   prerendered as static content\n●  (SSG)      prerendered as static HTML (uses generateStaticParams)\nƒ  (Dynamic)  server-rendered on demand\n\n"
+    }
+  ]
+}

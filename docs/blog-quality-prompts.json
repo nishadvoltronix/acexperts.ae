@@ -1,0 +1,51 @@
+[
+  {
+    "name": "10-important-questions-to-ask-before-signing-an-ac-maintenance-contract-in-dubai-featured-image-voltronix-6929ebbb.png",
+    "transparent": true,
+    "prompt": "Use case: identity-preserve. Edit target: attached original AC Experts blog illustration1024×639. Restore to crisp high-resolution 3072×1917 with the EXACTsamecomposition, objects, people, poses, count, colors, style and crop. This is an image clarity upgrade, not new artwork. Preserve the flat vector-style shapes, every line and arrangement. Preserve the exact existing VOLTRONIX logo at the top left including its red circular O mark, and the exact existing bottom-center text \"acexperts.ae\", with same fonts/size/proportion/positions. Do not add or remove any text. Preserve original transparent background and alpha; return transparency where original is transparent. Smooth sharp antialiasing with all sourcegeometryunchanged. No reframing, padding, restyling or extraobjects. Output same1024:639aspectratio.",
+    "sourceLocalPath": "/images/blog/10-important-questions-to-ask-before-signing-an-ac-maintenance-contract-in-dubai-featured-image-voltronix-6929ebbb.png",
+    "replacementLocalPath": "/images/quality/10-important-questions-to-ask-before-signing-an-ac-maintenance-contract-in-dubai-featured-image-voltronix-6929ebbb-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b7d-7784-7350-a158-a7016706efaa\\exec-afc84503-146b-41d8-8b2f-3cc93682dc99.png",
+    "tool": "Built-in image_gen",
+    "width": 1588,
+    "height": 991,
+    "hasAlpha": true
+  },
+  {
+    "name": "the-benefits-of-professional-hvac-inspections-for-dubai-commercial-properties-voltronix-6d47df7e.png",
+    "transparent": true,
+    "prompt": "Use case: identity-preserve. Edit target: attached original AC Experts blog illustration1024×639. Restore to crisp high-resolution 3072×1917 with the EXACTsamecomposition, objects, people, poses, count, colors, style and crop. This is an image clarity upgrade, not new artwork. Preserve the flat vector-style shapes, every line and arrangement. Preserve the exact existing VOLTRONIX logo at the top left including its red circular O mark, and the exact existing bottom-center text \"acexperts.ae\", with same fonts/size/proportion/positions. Do not add or remove any text. Preserve original transparent background and alpha; return transparency where original is transparent. Smooth sharp antialiasing with all sourcegeometryunchanged. No reframing, padding, restyling or extraobjects. Output same1024:639aspectratio.",
+    "sourceLocalPath": "/images/blog/the-benefits-of-professional-hvac-inspections-for-dubai-commercial-properties-voltronix-6d47df7e.png",
+    "replacementLocalPath": "/images/quality/hvac-inspections-hq-v3.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b7d-7784-7350-a158-a7016706efaa\\exec-ee93ff83-9d43-41eb-b056-1c3dd63e6d88.png",
+    "tool": "Built-in image_gen",
+    "width": 1588,
+    "height": 991,
+    "hasAlpha": true,
+    "correctionPromptFile": "docs/hvac-caption-quality-prompt.json"
+  },
+  {
+    "name": "from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents-e1b40893.png",
+    "transparent": false,
+    "prompt": "Use case: identity-preserve. Edit target: attached original AC Experts blog illustration1024×639. Restore to crisp high-resolution 3072×1917 with the EXACTsamecomposition, objects, people, poses, count, colors, style and crop. This is an image clarity upgrade, not new artwork. Preserve the flat vector-style shapes, every line and arrangement. Preserve the exact existing VOLTRONIX logo at the top left including its red circular O mark, and the exact existing bottom-center text \"acexperts.ae\", with same fonts/size/proportion/positions. Do not add or remove any text. Keep the white background. Smooth sharp antialiasing with all sourcegeometryunchanged. No reframing, padding, restyling or extraobjects. Output same1024:639aspectratio.",
+    "sourceLocalPath": "/images/blog/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents-e1b40893.png",
+    "replacementLocalPath": "/images/quality/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents-e1b40893-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b7d-7784-7350-a158-a7016706efaa\\exec-2a505b7c-2b7a-4048-8097-f689c529d6bd.png",
+    "tool": "Built-in image_gen",
+    "width": 1588,
+    "height": 991,
+    "hasAlpha": false
+  },
+  {
+    "name": "featured-image-voltronix-1-311f7cae.webp",
+    "transparent": false,
+    "prompt": "Use case: identity-preserve. Edit target: attached original AC Experts blog illustration1024×639. Restore to crisp high-resolution 3072×1917 with the EXACTsamecomposition, objects, people, poses, count, colors, style and crop. This is an image clarity upgrade, not new artwork. Preserve the flat vector-style shapes, every line and arrangement. Preserve the exact existing VOLTRONIX logo at the top left including its red circular O mark, and the exact existing bottom-center text \"acexperts.ae\", with same fonts/size/proportion/positions. Do not add or remove any text. Keep the white background. Smooth sharp antialiasing with all sourcegeometryunchanged. No reframing, padding, restyling or extraobjects. Output same1024:639aspectratio.",
+    "sourceLocalPath": "/images/blog/featured-image-voltronix-1-311f7cae.webp",
+    "replacementLocalPath": "/images/quality/featured-image-voltronix-1-311f7cae-hq.png",
+    "generatedPath": "C:\\Users\\Nishad\\.codex\\generated_images\\01a10b7d-7784-7350-a158-a7016706efaa\\exec-ba0fe11c-de3a-4159-800a-b984f2e25dd6.png",
+    "tool": "Built-in image_gen",
+    "width": 1588,
+    "height": 991,
+    "hasAlpha": false
+  }
+]

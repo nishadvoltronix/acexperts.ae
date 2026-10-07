@@ -1,0 +1,3069 @@
+{
+  "capturedAt": "2026-10-05T11:42:05.350Z",
+  "url": "http://localhost:3001/",
+  "browser": "Playwright Chrome",
+  "deviceScaleFactor": 1,
+  "sourceHashes": {
+    "app/[...slug]/page.tsx": "ac227dbbdbd8555537e07e38c1f37385e020997bb7b73aaf8e7d335b3f4b00dc",
+    "app/api/contact/route.ts": "af34d88d3d18f97ec593eb0107883ab842bb6a2c9a17474a561283ddba0ed917",
+    "app/globals.css": "fb5f1bf7766051ac4f30281ddb5fffa9ee6597f92f0207f57f52eb01e56936a4",
+    "app/home.css": "640d07c6322912f729b8f1221796283fd447ea5cadd808bb7a6c68b9e8c52c24",
+    "app/internal.css": "600c9ab37fe0ce0ac07b257f844184e537dce399861a8c9781c676ba48213e1d",
+    "app/layout.tsx": "d78fec8e39f4866162a73b0e14381edc5e3dad68035d44e3634c9a8e55ebb42d",
+    "app/not-found.tsx": "f40dc65805e2c8d5f078d492106c77948d5e6c6d2cf40c2913b13e17fe7fb5bb",
+    "app/page.tsx": "528b66d6cc94b981df434c000583d4758a8438fe822a3d1e4c44d0d93bc4b7a5",
+    "app/responsive.css": "794a79a1703a08cb0c3e5cbbe659e696d5ee480fb5a0f7048ec78cc64433bd4a",
+    "app/robots.ts": "2fbf755a75430a418f5c30bfbb6d3266bd5a35059d442697b73889a7ccbc46a5",
+    "app/shared.css": "68a2cc51986cbf6dbbe01e94fd9a111c01a53d1b72d972445646d884ca5afb05",
+    "app/sitemap.ts": "b38f8e7e2b5d9d785c85b0303b9cc330478ad6822f3bbf96df981d6d194f7952",
+    "app/tokens.css": "8118308b202a966e748ec8091ebc3ffd52652b38d027c86f7da8f29705c7c961",
+    "components/Cards.tsx": "f863bfe6a43408306f9ce1e3a29745e5b9056bb6830197365a70533fbd76c0f3",
+    "components/ContactForm.tsx": "cc2636c4d48e3d27c48ad5146f472af21691fe64ae26c9862dc90a6e6777f52b",
+    "components/Footer.tsx": "e3f937d8146f2805812ec79161f1ae3f850a398b81132257ea98e36561c427cb",
+    "components/Header.tsx": "3745f9c1677ed1edb549320d5474235f78718e0a6c401a14d90f3e98c17ecbe1",
+    "components/HeroCarousel.tsx": "5573676ebe852ba48d6217d23e8700047d024ae5a05f47b5db664e93378ac2b5",
+    "components/HomePage.tsx": "f497145d64f5ba755491555602cf8d695724e2aa32013dcba73c26290464695d",
+    "components/LegacyHomeContent.tsx": "bbd27981f27eb209e7a1cba194567c73d08e54f6b9bc0823073ddc5e36afd73f",
+    "components/NewsletterForm.tsx": "5076ebee0c06b90880d72cd3aae7933aacf7ff7f97cd0541d5bdf405b6e72e17",
+    "components/PageContent.tsx": "b2edb4f1b79d8d3475bd7f0ab95a1708fc8cd403ee32c986c7a2979a81184477",
+    "components/PageHero.tsx": "2ac6feceff6626f8b0cc0dca536e5b90ca3ab4e469f1e0d85f84c5cb3bc17ad7",
+    "components/ProjectFilters.tsx": "734d75ab6010b192361c359c15078a388b6baed91787c9ff68a2ed3e329ed1ea",
+    "components/RichContent.tsx": "781babcdf38c801c2a4e2bfbacac4ecc0385ba85a97588b733ffc842a0873a83",
+    "components/SharedCTA.tsx": "493957d367608086f9355a4ca0889d999713fca50a3b8ae76b4e652f62cad9b8",
+    "components/Testimonials.tsx": "c2946c495f151b063e5f023883032225dbcf380eb9a23fac5fd342508544a941",
+    "components/ui.tsx": "cf6ec5f31bf50593042add304bc58dbf83d3d4a06998fc998be9b733c84d69dd",
+    "data/assets.json": "935e89f15c15778b8891ec6bd05959919af0333dbc0ea8da92092adf4d5ab553",
+    "data/pages.json": "ce6755230e64c1163a148a7ae85fdf8422ed91da0d10306ed5dfeaf3ed8a1bf0",
+    "lib/content.ts": "be7e82badd6449d24180236106aa80ea007876944e762cba3352fe91fad32d9e",
+    "lib/metadata.ts": "030d0ace1e89c08efaeb7b7168b7312d8d747c369f30262650a03537f973b380",
+    "lib/site.ts": "c06907fa8b321f79195ba89171bb9d2ef3d68d3d23dedf5bab3d0e096855ac96",
+    "lib/types.ts": "d6128bf3a27b985bb6fc42d44739043f95c5087ad2cc2dcf33e8aaab926dfc23",
+    "next.config.ts": "f1b36b7a4a54904ccec7c93de69875969c2546d280ce8aacc20a860e13ff0f3a",
+    "package-lock.json": "d8efbfa9b495706c21f2d902898689ada1fb5883119fd2bf89e2f0c6963b517e",
+    "package.json": "a90511c2645150f973c3b03207d52155a8185b1d97fe691667dfb846ad3b22f5",
+    "tsconfig.json": "15a1042d528a9dce8929e233e28f7a3523d1078ff6c65e035f6081cd177e2ba0"
+  },
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "document": {
+        "width": 1440,
+        "height": 3288
+      },
+      "font": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+      "title": "24/7 AC Repair Experts | ac service company Dubai",
+      "description": "Looking for a trusted AC service company in Dubai? AC Repair experts provides fast, reliable, and affordable AC Repair and maintenance services. Contact us today!",
+      "canonical": "https://acexperts.ae/",
+      "visibleBodyText": "Skip to content\nHome\nServices\nAbout Us\nWhy Us\nBlogs\nContact Us\n+971 4 824 0002\n24/7 Customer Support\nBest AC service company Dubai\nAC REPAIR & MAINTENANCE IN UAE\nKeeping You Cool,\nEvery Day.\n\nAC Experts provides professional AC repair, installation and\nmaintenance services across Dubai & UAE.\n\n24/7\nEmergency Service\nCertified\nAC Technicians\nQuick & Reliable\nService\n100% Satisfaction\nGuarantee\nBook a Service\nOur Services\nExpert\nAC Diagnostics\nFaster. Smarter. Reliable.\nOUR SERVICES\nComplete AC Solutions for\nHomes & Businesses\nAC Repair\n\nFast & reliable repair for all AC brands.\n\nLearn More\n→\nAC Installation\n\nProfessional installation for residential & commercial spaces.\n\nLearn More\n→\nAC Maintenance\n\nKeep your AC running efficiently with our maintenance plans.\n\nLearn More\n→\nAC Cleaning\n\nImprove air quality with deep AC cleaning.\n\nLearn More\n→\nWHY CHOOSE US\nExperience the AC Experts\nDifference\n\nWe combine skilled professionals, advanced tools, and a customer-first approach to deliver unmatched AC services you can rely on.\n\nAbout Us\n156\nClients\n15+\nYears of Experience\n200\nProactive Team\n100%\nSatisfaction Guarantee\nWe Make AC Services Simple, Fast & Reliable!\n\n24/7\nEmergency Support\n\nOn-Time\nService\n\nAffordable\nPricing\n\nQuality Parts\nExpert Repairs\n\nWarranty\nOn Our Work\n\nTrusted Across\nUAE\n\nWe Service All Major Brands\nWHAT OUR CLIENTS SAY\nTrusted by Our Clients\n“\nI was impressed with the quick response and quality of work provided by the Voltronix AC Expert’s professional technicians. They fixed my AC unit in no time, and it has been working perfectly ever since.\nMuhammed Navas\n\nCEO\n\n“\nThe technician who came to my home was knowledgeable, friendly, and professional. They were able to diagnose the problem with my AC and fix it in a timely manner. I would definitely recommend their services.\nJuan\n\nManager\n\n“\nI was in a bit of a panic when my AC stopped working on a hot summer day, but the team at Voltronix AC Experts quickly came to my rescue. They were able to repair my unit, and I was back to feeling comfortable in no time.\nJane Jacob\n\nOperating Officer\n\nNEED IMMEDIATE HELP?\nWe’re Just a Call Away!\n\nOur customer support team is available 24/7\nto assist you anytime, anywhere in UAE.\n\n+971 4 824 0002\n\n24/7\nSupport\n\nQuick\nResponse\n\nExpert\nTechnicians\n\nAC Experts provides AC repair, installation and maintenance services in Dubai & UAE.\n\nPart of Voltronix Group\nQuick Links\nHome\nAbout Us\nWhy Us\nBlogs\nContact Us\nOur Services\nAC Installation\nPreventive AC Maintenance\nAC Repair Services\nEmergency AC Maintenance\nOur Projects\nProducts\nContact Us\n+971 4 824 0002\ninfo@voltronix.ae\nDubai, UAE\n24/7 Customer Support\nAddress & business hours\nNewsletter\n\nSubscribe to get updates & offers.\n\nYour email address\n\n© 2026 AC Experts. All Rights Reserved.\n\nFAQs\n|\nContact Us",
+      "bodyTextContent": "Skip to contentMenuHomeServicesAC InstallationPreventive AC MaintenanceAC Repair ServicesEmergency AC MaintenanceOur ProjectsProductsFrequently Asked QuestionsAbout UsWhy UsBlogsContact Us+971 4 824 000224/7 Customer SupportBest AC service company DubaiAC REPAIR & MAINTENANCE IN UAEKeeping You Cool,Every Day.AC Experts provides professional AC repair, installation and maintenance services across Dubai & UAE.24/7Emergency ServiceCertifiedAC TechniciansQuick & ReliableService100% SatisfactionGuaranteeBook a ServiceOur ServicesExpertAC DiagnosticsFaster. Smarter. Reliable.Our servicesComplete AC Solutions forHomes & BusinessesAC RepairFast & reliable repair for all AC brands.Learn More →AC InstallationProfessional installation for residential & commercial spaces.Learn More →AC MaintenanceKeep your AC running efficiently with our maintenance plans.Learn More →AC CleaningImprove air quality with deep AC cleaning.Learn More →Why choose usExperience the AC ExpertsDifferenceWe combine skilled professionals, advanced tools, and a customer-first approach to deliver unmatched AC services you can rely on.About Us156Clients15+Years of Experience200Proactive Team100%Satisfaction GuaranteeWe Make AC Services Simple, Fast & Reliable!24/7Emergency SupportOn-TimeServiceAffordablePricingQuality PartsExpert RepairsWarrantyOn Our WorkTrusted AcrossUAEWe Service All Major BrandsWhat our clients sayTrusted by Our Clients“I was impressed with the quick response and quality of work provided by the Voltronix AC Expert’s professional technicians. They fixed my AC unit in no time, and it has been working perfectly ever since.Muhammed NavasCEO“The technician who came to my home was knowledgeable, friendly, and professional. They were able to diagnose the problem with my AC and fix it in a timely manner. I would definitely recommend their services.JuanManager“I was in a bit of a panic when my AC stopped working on a hot summer day, but the team at Voltronix AC Experts quickly came to my rescue. They were able to repair my unit, and I was back to feeling comfortable in no time.Jane JacobOperating OfficerNeed immediate help?We’re Just a Call Away!Our customer support team is available 24/7 to assist you anytime, anywhere in UAE.+971 4 824 000224/7SupportQuickResponseExpertTechniciansAC Experts provides AC repair, installation and maintenance services in Dubai & UAE.Part of Voltronix GroupOur team of specialists from varying disciplines will guarantee the provision of integrated solutions to finish your task by drawing on their experience from the collection of our completed projects.ContractingDEWA ApprovalsSwitchgearQuick LinksHomeAbout UsWhy UsBlogsContact UsOur ServicesAC InstallationPreventive AC MaintenanceAC Repair ServicesEmergency AC MaintenanceOur ProjectsProductsContact Us+971 4 824 0002info@voltronix.aeDubai, UAE24/7 Customer SupportAddress & business hoursVOLTRONIXShed 06, Aber Warehouse, Dubai Investment Park 02, PO Box: 414345, Dubai, United Arab Emirates.Mobile: +971 50 242 0957Contact AC Experts on WhatsAppMonday – Saturday (8.00 AM–6.00 PM)NewsletterSubscribe to get updates & offers.Your email address© 2026 AC Experts. All Rights Reserved.FAQs|Contact Us",
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content",
+          "ariaLabel": null
+        },
+        {
+          "href": "/",
+          "text": "",
+          "ariaLabel": "AC Experts home"
+        },
+        {
+          "href": "/",
+          "text": "Home",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-installation-service/",
+          "text": "AC Installation",
+          "ariaLabel": null
+        },
+        {
+          "href": "/preventive-ac-maintenance-service/",
+          "text": "Preventive AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-repair-services/",
+          "text": "AC Repair Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/emergency-ac-maintenance-service/",
+          "text": "Emergency AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/projects/",
+          "text": "Our Projects",
+          "ariaLabel": null
+        },
+        {
+          "href": "/products/",
+          "text": "Products",
+          "ariaLabel": null
+        },
+        {
+          "href": "/faq/",
+          "text": "Frequently Asked Questions",
+          "ariaLabel": null
+        },
+        {
+          "href": "/about/",
+          "text": "About Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/#why-us",
+          "text": "Why Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/blog/",
+          "text": "Blogs",
+          "ariaLabel": null
+        },
+        {
+          "href": "/contact-us/",
+          "text": "Contact Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "tel:+97148240002",
+          "text": "+971 4 824 000224/7 Customer Support",
+          "ariaLabel": null
+        },
+        {
+          "href": "/contact-us/",
+          "text": "Book a Service",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "Our Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-repair-services/",
+          "text": "AC Repair",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-repair-services/",
+          "text": "Learn More →",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-installation-service/",
+          "text": "AC Installation",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-installation-service/",
+          "text": "Learn More →",
+          "ariaLabel": null
+        },
+        {
+          "href": "/preventive-ac-maintenance-service/",
+          "text": "AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/preventive-ac-maintenance-service/",
+          "text": "Learn More →",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "AC Cleaning",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "Learn More →",
+          "ariaLabel": null
+        },
+        {
+          "href": "/about/",
+          "text": "About Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "tel:+97148240002",
+          "text": "+971 4 824 0002",
+          "ariaLabel": null
+        },
+        {
+          "href": "/",
+          "text": "",
+          "ariaLabel": "AC Experts home"
+        },
+        {
+          "href": "https://www.facebook.com/voltronixuae",
+          "text": "",
+          "ariaLabel": "AC Experts on Facebook"
+        },
+        {
+          "href": "https://www.instagram.com/vtnxllc",
+          "text": "",
+          "ariaLabel": "AC Experts on Instagram"
+        },
+        {
+          "href": "https://www.linkedin.com/company/voltronix-uae/",
+          "text": "",
+          "ariaLabel": "AC Experts on LinkedIn"
+        },
+        {
+          "href": "https://x.com/nstsllc",
+          "text": "",
+          "ariaLabel": "AC Experts on X"
+        },
+        {
+          "href": "https://voltronix.ae",
+          "text": "Contracting",
+          "ariaLabel": null
+        },
+        {
+          "href": "https://dewaapprovals.ae",
+          "text": "DEWA Approvals",
+          "ariaLabel": null
+        },
+        {
+          "href": "https://switchgear.ae",
+          "text": "Switchgear",
+          "ariaLabel": null
+        },
+        {
+          "href": "/",
+          "text": "Home",
+          "ariaLabel": null
+        },
+        {
+          "href": "/about/",
+          "text": "About Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/#why-us",
+          "text": "Why Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/blog/",
+          "text": "Blogs",
+          "ariaLabel": null
+        },
+        {
+          "href": "/contact-us/",
+          "text": "Contact Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "Our Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-installation-service/",
+          "text": "AC Installation",
+          "ariaLabel": null
+        },
+        {
+          "href": "/preventive-ac-maintenance-service/",
+          "text": "Preventive AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-repair-services/",
+          "text": "AC Repair Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/emergency-ac-maintenance-service/",
+          "text": "Emergency AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/projects/",
+          "text": "Our Projects",
+          "ariaLabel": null
+        },
+        {
+          "href": "/products/",
+          "text": "Products",
+          "ariaLabel": null
+        },
+        {
+          "href": "tel:+97148240002",
+          "text": "+971 4 824 0002",
+          "ariaLabel": null
+        },
+        {
+          "href": "mailto:info@voltronix.ae",
+          "text": "info@voltronix.ae",
+          "ariaLabel": null
+        },
+        {
+          "href": "tel:+971502420957",
+          "text": "+971 50 242 0957",
+          "ariaLabel": null
+        },
+        {
+          "href": "https://wa.me/971502420957",
+          "text": "Contact AC Experts on WhatsApp",
+          "ariaLabel": null
+        },
+        {
+          "href": "/faq/",
+          "text": "FAQs",
+          "ariaLabel": null
+        },
+        {
+          "href": "/contact-us/",
+          "text": "Contact Us",
+          "ariaLabel": null
+        }
+      ],
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "text": "Menu",
+          "name": null,
+          "ariaLabel": null
+        },
+        {
+          "tag": "SUMMARY",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Service pages and more"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Previous testimonials"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Next testimonials"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Show Muhammed Navas's testimonial"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Show Juan's testimonial"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Show Jane Jacob's testimonial"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Show Lookman's testimonial"
+        },
+        {
+          "tag": "SUMMARY",
+          "type": null,
+          "text": "Part of Voltronix Group",
+          "name": null,
+          "ariaLabel": null
+        },
+        {
+          "tag": "SUMMARY",
+          "type": null,
+          "text": "Address & business hours",
+          "name": null,
+          "ariaLabel": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "text": "",
+          "name": "email",
+          "ariaLabel": null
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "text": "",
+          "name": null,
+          "ariaLabel": "Subscribe to newsletter"
+        }
+      ],
+      "geometry": [
+        {
+          "index": 0,
+          "tag": "HEADER",
+          "className": "site-header",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 110
+          }
+        },
+        {
+          "index": 1,
+          "tag": "DIV",
+          "className": "navigation-bar container",
+          "rect": {
+            "x": 65,
+            "y": 0,
+            "width": 1310,
+            "height": 110
+          }
+        },
+        {
+          "index": 2,
+          "tag": "A",
+          "className": "header-brand",
+          "rect": {
+            "x": 65,
+            "y": 23,
+            "width": 210,
+            "height": 64
+          }
+        },
+        {
+          "index": 3,
+          "tag": "SPAN",
+          "className": "reference-art reference-logo brand-logo",
+          "rect": {
+            "x": 65,
+            "y": 23,
+            "width": 210,
+            "height": 64
+          }
+        },
+        {
+          "index": 4,
+          "tag": "NAV",
+          "className": "primary-navigation",
+          "rect": {
+            "x": 477.38,
+            "y": 15.09,
+            "width": 469.53,
+            "height": 79.8
+          }
+        },
+        {
+          "index": 5,
+          "tag": "A",
+          "className": "header-phone",
+          "rect": {
+            "x": 1149.27,
+            "y": 21.91,
+            "width": 225.73,
+            "height": 66.19
+          }
+        },
+        {
+          "index": 6,
+          "tag": "DIV",
+          "className": "home-page",
+          "rect": {
+            "x": 0,
+            "y": 110,
+            "width": 1440,
+            "height": 2871.36
+          }
+        },
+        {
+          "index": 7,
+          "tag": "SECTION",
+          "className": "home-hero",
+          "rect": {
+            "x": 0,
+            "y": 110,
+            "width": 1440,
+            "height": 710
+          }
+        },
+        {
+          "index": 8,
+          "tag": "DIV",
+          "className": "home-hero-copy",
+          "rect": {
+            "x": 65,
+            "y": 110,
+            "width": 668.09,
+            "height": 571.02
+          }
+        },
+        {
+          "index": 9,
+          "tag": "SPAN",
+          "className": "hero-kicker",
+          "rect": {
+            "x": 65,
+            "y": 208,
+            "width": 224.97,
+            "height": 28.5
+          }
+        },
+        {
+          "index": 10,
+          "tag": "H2",
+          "className": "",
+          "rect": {
+            "x": 65,
+            "y": 260.5,
+            "width": 668.09,
+            "height": 142.53
+          }
+        },
+        {
+          "index": 11,
+          "tag": "P",
+          "className": "",
+          "rect": {
+            "x": 65,
+            "y": 428.03,
+            "width": 530,
+            "height": 64.59
+          }
+        },
+        {
+          "index": 12,
+          "tag": "DIV",
+          "className": "hero-features",
+          "rect": {
+            "x": 65,
+            "y": 537.63,
+            "width": 635,
+            "height": 31.39
+          }
+        },
+        {
+          "index": 13,
+          "tag": "DIV",
+          "className": "hero-actions",
+          "rect": {
+            "x": 65,
+            "y": 633.02,
+            "width": 668.09,
+            "height": 48
+          }
+        },
+        {
+          "index": 14,
+          "tag": "SPAN",
+          "className": "reference-art reference-hero hero-art",
+          "rect": {
+            "x": 710.8,
+            "y": 110,
+            "width": 729.2,
+            "height": 700.59
+          }
+        },
+        {
+          "index": 15,
+          "tag": "SPAN",
+          "className": "hero-diagnostics",
+          "rect": {
+            "x": 823.81,
+            "y": 620.03,
+            "width": 257.41,
+            "height": 101.58
+          }
+        },
+        {
+          "index": 16,
+          "tag": "SECTION",
+          "className": "home-services container",
+          "rect": {
+            "x": 65,
+            "y": 820,
+            "width": 1310,
+            "height": 576.06
+          }
+        },
+        {
+          "index": 17,
+          "tag": "DIV",
+          "className": "section-heading ",
+          "rect": {
+            "x": 65,
+            "y": 820,
+            "width": 1310,
+            "height": 136.28
+          }
+        },
+        {
+          "index": 18,
+          "tag": "DIV",
+          "className": "service-grid",
+          "rect": {
+            "x": 65,
+            "y": 974.28,
+            "width": 1310,
+            "height": 355.78
+          }
+        },
+        {
+          "index": 19,
+          "tag": "ARTICLE",
+          "className": "service-card",
+          "rect": {
+            "x": 89,
+            "y": 974.28,
+            "width": 285.5,
+            "height": 355.78
+          }
+        },
+        {
+          "index": 20,
+          "tag": "ARTICLE",
+          "className": "service-card",
+          "rect": {
+            "x": 414.5,
+            "y": 974.28,
+            "width": 285.5,
+            "height": 355.78
+          }
+        },
+        {
+          "index": 21,
+          "tag": "ARTICLE",
+          "className": "service-card",
+          "rect": {
+            "x": 740,
+            "y": 974.28,
+            "width": 285.5,
+            "height": 355.78
+          }
+        },
+        {
+          "index": 22,
+          "tag": "ARTICLE",
+          "className": "service-card",
+          "rect": {
+            "x": 1065.5,
+            "y": 974.28,
+            "width": 285.5,
+            "height": 355.78
+          }
+        },
+        {
+          "index": 23,
+          "tag": "SECTION",
+          "className": "home-why",
+          "rect": {
+            "x": 0,
+            "y": 1396.06,
+            "width": 1440,
+            "height": 406
+          }
+        },
+        {
+          "index": 24,
+          "tag": "DIV",
+          "className": "why-copy",
+          "rect": {
+            "x": 65,
+            "y": 1422.06,
+            "width": 477.52,
+            "height": 272.06
+          }
+        },
+        {
+          "index": 25,
+          "tag": "DIV",
+          "className": "stats-grid",
+          "rect": {
+            "x": 620.52,
+            "y": 1422.06,
+            "width": 754.48,
+            "height": 223
+          }
+        },
+        {
+          "index": 26,
+          "tag": "DIV",
+          "className": "stat-card",
+          "rect": {
+            "x": 620.52,
+            "y": 1442.06,
+            "width": 175.11,
+            "height": 203
+          }
+        },
+        {
+          "index": 27,
+          "tag": "DIV",
+          "className": "stat-card",
+          "rect": {
+            "x": 813.63,
+            "y": 1442.06,
+            "width": 175.13,
+            "height": 203
+          }
+        },
+        {
+          "index": 28,
+          "tag": "DIV",
+          "className": "stat-card",
+          "rect": {
+            "x": 1006.75,
+            "y": 1442.06,
+            "width": 175.13,
+            "height": 203
+          }
+        },
+        {
+          "index": 29,
+          "tag": "DIV",
+          "className": "stat-card",
+          "rect": {
+            "x": 1199.88,
+            "y": 1442.06,
+            "width": 175.13,
+            "height": 203
+          }
+        },
+        {
+          "index": 30,
+          "tag": "SPAN",
+          "className": "reference-art reference-skyline skyline-art",
+          "rect": {
+            "x": 259.2,
+            "y": 1641.05,
+            "width": 1180.8,
+            "height": 161.02
+          }
+        },
+        {
+          "index": 31,
+          "tag": "SECTION",
+          "className": "promise-band",
+          "rect": {
+            "x": 0,
+            "y": 1802.06,
+            "width": 1440,
+            "height": 188
+          }
+        },
+        {
+          "index": 32,
+          "tag": "DIV",
+          "className": "promise-grid",
+          "rect": {
+            "x": 65,
+            "y": 1898.66,
+            "width": 1310,
+            "height": 44
+          }
+        },
+        {
+          "index": 33,
+          "tag": "SECTION",
+          "className": "home-brands container",
+          "rect": {
+            "x": 65,
+            "y": 1990.06,
+            "width": 1310,
+            "height": 224.8
+          }
+        },
+        {
+          "index": 34,
+          "tag": "DIV",
+          "className": "section-heading ",
+          "rect": {
+            "x": 65,
+            "y": 2029.06,
+            "width": 1310,
+            "height": 56.8
+          }
+        },
+        {
+          "index": 35,
+          "tag": "DIV",
+          "className": "brand-row",
+          "rect": {
+            "x": 65,
+            "y": 2107.86,
+            "width": 1310,
+            "height": 54
+          }
+        },
+        {
+          "index": 36,
+          "tag": "SPAN",
+          "className": "reference-art reference-brandSamsung brand-art",
+          "rect": {
+            "x": 462.42,
+            "y": 2119.86,
+            "width": 130,
+            "height": 30
+          }
+        },
+        {
+          "index": 37,
+          "tag": "SPAN",
+          "className": "reference-art reference-brandPanasonic brand-art",
+          "rect": {
+            "x": 1040.13,
+            "y": 2119.86,
+            "width": 130,
+            "height": 30
+          }
+        },
+        {
+          "index": 38,
+          "tag": "SECTION",
+          "className": "home-testimonials container",
+          "rect": {
+            "x": 65,
+            "y": 2214.86,
+            "width": 1310,
+            "height": 358.5
+          }
+        },
+        {
+          "index": 39,
+          "tag": "DIV",
+          "className": "section-heading ",
+          "rect": {
+            "x": 65,
+            "y": 2242.86,
+            "width": 1310,
+            "height": 98.5
+          }
+        },
+        {
+          "index": 40,
+          "tag": "DIV",
+          "className": "testimonials-track",
+          "rect": {
+            "x": 65,
+            "y": 2277.36,
+            "width": 1310,
+            "height": 270
+          }
+        },
+        {
+          "index": 41,
+          "tag": "DIV",
+          "className": "testimonials-grid",
+          "rect": {
+            "x": 105,
+            "y": 2277.36,
+            "width": 1230,
+            "height": 270
+          }
+        },
+        {
+          "index": 42,
+          "tag": "ARTICLE",
+          "className": "testimonial-card testimonial-position-0",
+          "rect": {
+            "x": 105,
+            "y": 2277.36,
+            "width": 391.33,
+            "height": 270
+          }
+        },
+        {
+          "index": 43,
+          "tag": "DIV",
+          "className": "testimonial-person",
+          "rect": {
+            "x": 141,
+            "y": 2476.36,
+            "width": 319.33,
+            "height": 44
+          }
+        },
+        {
+          "index": 44,
+          "tag": "ARTICLE",
+          "className": "testimonial-card testimonial-position-1",
+          "rect": {
+            "x": 524.33,
+            "y": 2277.36,
+            "width": 391.33,
+            "height": 270
+          }
+        },
+        {
+          "index": 45,
+          "tag": "DIV",
+          "className": "testimonial-person",
+          "rect": {
+            "x": 560.33,
+            "y": 2476.36,
+            "width": 319.33,
+            "height": 44
+          }
+        },
+        {
+          "index": 46,
+          "tag": "ARTICLE",
+          "className": "testimonial-card testimonial-position-2",
+          "rect": {
+            "x": 943.66,
+            "y": 2277.36,
+            "width": 391.34,
+            "height": 270
+          }
+        },
+        {
+          "index": 47,
+          "tag": "DIV",
+          "className": "testimonial-person",
+          "rect": {
+            "x": 979.66,
+            "y": 2476.36,
+            "width": 319.34,
+            "height": 44
+          }
+        },
+        {
+          "index": 48,
+          "tag": "SECTION",
+          "className": "shared-cta container",
+          "rect": {
+            "x": 65,
+            "y": 2573.36,
+            "width": 1310,
+            "height": 408
+          }
+        },
+        {
+          "index": 49,
+          "tag": "DIV",
+          "className": "cta-card",
+          "rect": {
+            "x": 65,
+            "y": 2603.36,
+            "width": 1310,
+            "height": 333
+          }
+        },
+        {
+          "index": 50,
+          "tag": "DIV",
+          "className": "cta-copy",
+          "rect": {
+            "x": 111,
+            "y": 2651.36,
+            "width": 368.83,
+            "height": 246
+          }
+        },
+        {
+          "index": 51,
+          "tag": "DIV",
+          "className": "cta-features",
+          "rect": {
+            "x": 504.83,
+            "y": 2651.36,
+            "width": 276.64,
+            "height": 246
+          }
+        },
+        {
+          "index": 52,
+          "tag": "SPAN",
+          "className": "reference-art reference-cta cta-art",
+          "rect": {
+            "x": 880.89,
+            "y": 2566.05,
+            "width": 493.11,
+            "height": 369.31
+          }
+        },
+        {
+          "index": 53,
+          "tag": "FOOTER",
+          "className": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 2981.36,
+            "width": 1440,
+            "height": 306.81
+          }
+        },
+        {
+          "index": 54,
+          "tag": "DIV",
+          "className": "footer-grid container",
+          "rect": {
+            "x": 65,
+            "y": 2986.36,
+            "width": 1310,
+            "height": 245.13
+          }
+        },
+        {
+          "index": 55,
+          "tag": "SPAN",
+          "className": "reference-art reference-logo brand-logo",
+          "rect": {
+            "x": 89,
+            "y": 2986.36,
+            "width": 195,
+            "height": 59.42
+          }
+        },
+        {
+          "index": 56,
+          "tag": "DIV",
+          "className": "footer-bottom container",
+          "rect": {
+            "x": 65,
+            "y": 3231.48,
+            "width": 1310,
+            "height": 56.69
+          }
+        }
+      ],
+      "referenceArt": [
+        {
+          "className": "reference-art reference-logo brand-logo",
+          "alt": "AC Experts — Expertise You Can Trust",
+          "viewport": {
+            "x": 65,
+            "y": 23,
+            "width": 210,
+            "height": 64
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": 1,
+            "y": 1,
+            "width": 1410,
+            "height": 3200
+          },
+          "effectiveSourceCrop": {
+            "width": 105,
+            "height": 32
+          },
+          "enlargementFactor": 2,
+          "styles": {
+            "aspectRatio": "105 / 32",
+            "artWidth": "671.4285714285714%",
+            "artHeight": "5000%",
+            "artLeft": "-30.476190476190478%",
+            "artTop": "-34.375%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-hero hero-art",
+          "alt": "AC Experts technician servicing a wall-mounted air conditioner",
+          "viewport": {
+            "x": 710.8,
+            "y": 110,
+            "width": 729.2,
+            "height": 700.59
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -0.02,
+            "y": -2.33,
+            "width": 1440.02,
+            "height": 3268.06
+          },
+          "effectiveSourceCrop": {
+            "width": 357,
+            "height": 343
+          },
+          "enlargementFactor": 2.04,
+          "styles": {
+            "aspectRatio": "357 / 343",
+            "artWidth": "197.47899159663865%",
+            "artHeight": "466.4723032069971%",
+            "artLeft": "-97.47899159663865%",
+            "artTop": "-16.034985422740526%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-skyline skyline-art",
+          "alt": "",
+          "viewport": {
+            "x": 259.2,
+            "y": 1641.05,
+            "width": 1180.8,
+            "height": 161.02
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -15.34,
+            "y": -10.39,
+            "width": 1455.34,
+            "height": 3302.88
+          },
+          "effectiveSourceCrop": {
+            "width": 572,
+            "height": 78
+          },
+          "enlargementFactor": 2.06,
+          "styles": {
+            "aspectRatio": "572 / 78",
+            "artWidth": "123.25174825174825%",
+            "artHeight": "2051.2820512820513%",
+            "artLeft": "-23.251748251748253%",
+            "artTop": "-1025.6410256410256%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-brandSamsung brand-art",
+          "alt": "Samsung",
+          "viewport": {
+            "x": 462.42,
+            "y": 2119.86,
+            "width": 130,
+            "height": 30
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": 12.42,
+            "y": 55.86,
+            "width": 1410,
+            "height": 3200
+          },
+          "effectiveSourceCrop": {
+            "width": 65,
+            "height": 15
+          },
+          "enlargementFactor": 2,
+          "styles": {
+            "aspectRatio": "65 / 15",
+            "artWidth": "1084.6153846153848%",
+            "artHeight": "10666.666666666668%",
+            "artLeft": "-346.1538461538462%",
+            "artTop": "-6880%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-brandPanasonic brand-art",
+          "alt": "Panasonic",
+          "viewport": {
+            "x": 1040.13,
+            "y": 2119.86,
+            "width": 130,
+            "height": 30
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": 30.13,
+            "y": 55.86,
+            "width": 1410,
+            "height": 3200
+          },
+          "effectiveSourceCrop": {
+            "width": 65,
+            "height": 15
+          },
+          "enlargementFactor": 2,
+          "styles": {
+            "aspectRatio": "65 / 15",
+            "artWidth": "1084.6153846153848%",
+            "artHeight": "10666.666666666668%",
+            "artLeft": "-776.9230769230769%",
+            "artTop": "-6880%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-cta cta-art",
+          "alt": "AC Experts technician beside a branded service van",
+          "viewport": {
+            "x": 880.89,
+            "y": 2566.05,
+            "width": 493.11,
+            "height": 369.31
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -12.47,
+            "y": -43.89,
+            "width": 1454.56,
+            "height": 3301.11
+          },
+          "effectiveSourceCrop": {
+            "width": 239,
+            "height": 179
+          },
+          "enlargementFactor": 2.06,
+          "styles": {
+            "aspectRatio": "239 / 179",
+            "artWidth": "294.97907949790795%",
+            "artHeight": "893.8547486033519%",
+            "artLeft": "-181.1715481171548%",
+            "artTop": "-706.7039106145251%",
+            "borderRadius": "0px 36px 36px 0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-logo brand-logo",
+          "alt": "AC Experts — Expertise You Can Trust",
+          "viewport": {
+            "x": 89,
+            "y": 2986.36,
+            "width": 195,
+            "height": 59.42
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": 29.58,
+            "y": 2965.94,
+            "width": 1309.28,
+            "height": 2971.09
+          },
+          "effectiveSourceCrop": {
+            "width": 105,
+            "height": 32
+          },
+          "enlargementFactor": 1.86,
+          "styles": {
+            "aspectRatio": "105 / 32",
+            "artWidth": "671.4285714285714%",
+            "artHeight": "5000%",
+            "artLeft": "-30.476190476190478%",
+            "artTop": "-34.375%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "alt": "AC Experts — Expertise You Can Trust",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": 1,
+            "y": 1,
+            "width": 1410,
+            "height": 3200
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 1,
+          "alt": "AC Experts technician servicing a wall-mounted air conditioner",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -0.02,
+            "y": -2.33,
+            "width": 1440.02,
+            "height": 3268.06
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 2,
+          "alt": "",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -15.34,
+            "y": -10.39,
+            "width": 1455.34,
+            "height": 3302.88
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 3,
+          "alt": "Daikin",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F5-9a789422.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F5-9a789422.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 65,
+            "y": 2108.86,
+            "width": 154.56,
+            "height": 52
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 4,
+          "alt": "LG",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F6-982866f1.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F6-982866f1.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 257.56,
+            "y": 2108.86,
+            "width": 154.58,
+            "height": 52
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 5,
+          "alt": "Samsung",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": 12.42,
+            "y": 55.86,
+            "width": 1410,
+            "height": 3200
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 6,
+          "alt": "Mitsubishi",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F7-1dadd2db.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F7-1dadd2db.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 642.7,
+            "y": 2108.86,
+            "width": 154.58,
+            "height": 52
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 7,
+          "alt": "Gree",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F3-9deac3c0.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F3-9deac3c0.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 835.28,
+            "y": 2108.86,
+            "width": 154.56,
+            "height": 52
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 8,
+          "alt": "Panasonic",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": 30.13,
+            "y": 55.86,
+            "width": 1410,
+            "height": 3200
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 9,
+          "alt": "General",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F1-7386d9e3.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F1-7386d9e3.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 1220.42,
+            "y": 2108.86,
+            "width": 154.56,
+            "height": 52
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 10,
+          "alt": "",
+          "source": "/_next/image/?url=%2Fimages%2Fgallery%2Ffarmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg&w=96&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Ffarmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg&w=48&q=75",
+          "naturalWidth": 48,
+          "naturalHeight": 32,
+          "rendered": {
+            "x": 141,
+            "y": 2476.36,
+            "width": 44,
+            "height": 44
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 11,
+          "alt": "",
+          "source": "/_next/image/?url=%2Fimages%2Fgallery%2Fclose-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg&w=96&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Fclose-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg&w=48&q=75",
+          "naturalWidth": 48,
+          "naturalHeight": 32,
+          "rendered": {
+            "x": 560.33,
+            "y": 2476.36,
+            "width": 44,
+            "height": 44
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 12,
+          "alt": "",
+          "source": "/_next/image/?url=%2Fimages%2Fgallery%2Ftestimonial3-7b0d2810.png&w=96&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Ftestimonial3-7b0d2810.png&w=48&q=75",
+          "naturalWidth": 48,
+          "naturalHeight": 48,
+          "rendered": {
+            "x": 979.66,
+            "y": 2476.36,
+            "width": 44,
+            "height": 44
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 13,
+          "alt": "AC Experts technician beside a branded service van",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -12.47,
+            "y": -43.89,
+            "width": 1454.56,
+            "height": 3301.11
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 14,
+          "alt": "AC Experts — Expertise You Can Trust",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": 29.58,
+            "y": 2965.94,
+            "width": 1309.28,
+            "height": 2971.09
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        }
+      ],
+      "screenshot": "docs/image-quality-baseline-1440.png",
+      "screenshotHash": "517aff096532c665def59f73c235368f428a95b8ddb5af8219c0593a1e585cbd",
+      "errors": []
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 1000,
+        "dpr": 1
+      },
+      "document": {
+        "width": 390,
+        "height": 4992
+      },
+      "font": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+      "title": "24/7 AC Repair Experts | ac service company Dubai",
+      "description": "Looking for a trusted AC service company in Dubai? AC Repair experts provides fast, reliable, and affordable AC Repair and maintenance services. Contact us today!",
+      "canonical": "https://acexperts.ae/",
+      "visibleBodyText": "Skip to content\nMenu\nBest AC service company Dubai\nAC REPAIR & MAINTENANCE IN UAE\nKeeping You Cool,\nEvery Day.\n\nAC Experts provides professional AC repair, installation and maintenance services across Dubai & UAE.\n\n24/7\nEmergency Service\nCertified\nAC Technicians\nQuick & Reliable\nService\n100% Satisfaction\nGuarantee\nBook a Service\nOur Services\nExpert\nAC Diagnostics\nFaster. Smarter. Reliable.\nOUR SERVICES\nComplete AC Solutions for\nHomes & Businesses\nAC Repair\n\nFast & reliable repair for all AC brands.\n\nLearn More\n→\nAC Installation\n\nProfessional installation for residential & commercial spaces.\n\nLearn More\n→\nAC Maintenance\n\nKeep your AC running efficiently with our maintenance plans.\n\nLearn More\n→\nAC Cleaning\n\nImprove air quality with deep AC cleaning.\n\nLearn More\n→\nWHY CHOOSE US\nExperience the AC Experts\nDifference\n\nWe combine skilled professionals, advanced tools, and a customer-first approach to deliver unmatched AC services you can rely on.\n\nAbout Us\n156\nClients\n15+\nYears of Experience\n200\nProactive Team\n100%\nSatisfaction Guarantee\nWe Make AC Services Simple, Fast & Reliable!\n\n24/7\nEmergency Support\n\nOn-Time\nService\n\nAffordable\nPricing\n\nQuality Parts\nExpert Repairs\n\nWarranty\nOn Our Work\n\nTrusted Across\nUAE\n\nWe Service All Major Brands\nWHAT OUR CLIENTS SAY\nTrusted by Our Clients\n“\nI was impressed with the quick response and quality of work provided by the Voltronix AC Expert’s professional technicians. They fixed my AC unit in no time, and it has been working perfectly ever since.\nMuhammed Navas\n\nCEO\n\nNEED IMMEDIATE HELP?\nWe’re Just a Call Away!\n\nOur customer support team is available 24/7 to assist you anytime, anywhere in UAE.\n\n+971 4 824 0002\n\n24/7\nSupport\n\nQuick\nResponse\n\nExpert\nTechnicians\n\nAC Experts provides AC repair, installation and maintenance services in Dubai & UAE.\n\nPart of Voltronix Group\nQuick Links\nHome\nAbout Us\nWhy Us\nBlogs\nContact Us\nOur Services\nAC Installation\nPreventive AC Maintenance\nAC Repair Services\nEmergency AC Maintenance\nOur Projects\nProducts\nContact Us\n+971 4 824 0002\ninfo@voltronix.ae\nDubai, UAE\n24/7 Customer Support\nAddress & business hours\nNewsletter\n\nSubscribe to get updates & offers.\n\nYour email address\n\n© 2026 AC Experts. All Rights Reserved.\n\nFAQs\n|\nContact Us",
+      "bodyTextContent": "Skip to contentMenuHomeServicesAC InstallationPreventive AC MaintenanceAC Repair ServicesEmergency AC MaintenanceOur ProjectsProductsFrequently Asked QuestionsAbout UsWhy UsBlogsContact Us+971 4 824 000224/7 Customer SupportBest AC service company DubaiAC REPAIR & MAINTENANCE IN UAEKeeping You Cool,Every Day.AC Experts provides professional AC repair, installation and maintenance services across Dubai & UAE.24/7Emergency ServiceCertifiedAC TechniciansQuick & ReliableService100% SatisfactionGuaranteeBook a ServiceOur ServicesExpertAC DiagnosticsFaster. Smarter. Reliable.Our servicesComplete AC Solutions forHomes & BusinessesAC RepairFast & reliable repair for all AC brands.Learn More →AC InstallationProfessional installation for residential & commercial spaces.Learn More →AC MaintenanceKeep your AC running efficiently with our maintenance plans.Learn More →AC CleaningImprove air quality with deep AC cleaning.Learn More →Why choose usExperience the AC ExpertsDifferenceWe combine skilled professionals, advanced tools, and a customer-first approach to deliver unmatched AC services you can rely on.About Us156Clients15+Years of Experience200Proactive Team100%Satisfaction GuaranteeWe Make AC Services Simple, Fast & Reliable!24/7Emergency SupportOn-TimeServiceAffordablePricingQuality PartsExpert RepairsWarrantyOn Our WorkTrusted AcrossUAEWe Service All Major BrandsWhat our clients sayTrusted by Our Clients“I was impressed with the quick response and quality of work provided by the Voltronix AC Expert’s professional technicians. They fixed my AC unit in no time, and it has been working perfectly ever since.Muhammed NavasCEO“The technician who came to my home was knowledgeable, friendly, and professional. They were able to diagnose the problem with my AC and fix it in a timely manner. I would definitely recommend their services.JuanManager“I was in a bit of a panic when my AC stopped working on a hot summer day, but the team at Voltronix AC Experts quickly came to my rescue. They were able to repair my unit, and I was back to feeling comfortable in no time.Jane JacobOperating OfficerNeed immediate help?We’re Just a Call Away!Our customer support team is available 24/7 to assist you anytime, anywhere in UAE.+971 4 824 000224/7SupportQuickResponseExpertTechniciansAC Experts provides AC repair, installation and maintenance services in Dubai & UAE.Part of Voltronix GroupOur team of specialists from varying disciplines will guarantee the provision of integrated solutions to finish your task by drawing on their experience from the collection of our completed projects.ContractingDEWA ApprovalsSwitchgearQuick LinksHomeAbout UsWhy UsBlogsContact UsOur ServicesAC InstallationPreventive AC MaintenanceAC Repair ServicesEmergency AC MaintenanceOur ProjectsProductsContact Us+971 4 824 0002info@voltronix.aeDubai, UAE24/7 Customer SupportAddress & business hoursVOLTRONIXShed 06, Aber Warehouse, Dubai Investment Park 02, PO Box: 414345, Dubai, United Arab Emirates.Mobile: +971 50 242 0957Contact AC Experts on WhatsAppMonday – Saturday (8.00 AM–6.00 PM)NewsletterSubscribe to get updates & offers.Your email address© 2026 AC Experts. All Rights Reserved.FAQs|Contact Us",
+      "links": [
+        {
+          "href": "#main-content",
+          "text": "Skip to content",
+          "ariaLabel": null
+        },
+        {
+          "href": "/",
+          "text": "",
+          "ariaLabel": "AC Experts home"
+        },
+        {
+          "href": "/",
+          "text": "Home",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-installation-service/",
+          "text": "AC Installation",
+          "ariaLabel": null
+        },
+        {
+          "href": "/preventive-ac-maintenance-service/",
+          "text": "Preventive AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-repair-services/",
+          "text": "AC Repair Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/emergency-ac-maintenance-service/",
+          "text": "Emergency AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/projects/",
+          "text": "Our Projects",
+          "ariaLabel": null
+        },
+        {
+          "href": "/products/",
+          "text": "Products",
+          "ariaLabel": null
+        },
+        {
+          "href": "/faq/",
+          "text": "Frequently Asked Questions",
+          "ariaLabel": null
+        },
+        {
+          "href": "/about/",
+          "text": "About Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/#why-us",
+          "text": "Why Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/blog/",
+          "text": "Blogs",
+          "ariaLabel": null
+        },
+        {
+          "href": "/contact-us/",
+          "text": "Contact Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "tel:+97148240002",
+          "text": "+971 4 824 000224/7 Customer Support",
+          "ariaLabel": null
+        },
+        {
+          "href": "/contact-us/",
+          "text": "Book a Service",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "Our Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-repair-services/",
+          "text": "AC Repair",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-repair-services/",
+          "text": "Learn More →",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-installation-service/",
+          "text": "AC Installation",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-installation-service/",
+          "text": "Learn More →",
+          "ariaLabel": null
+        },
+        {
+          "href": "/preventive-ac-maintenance-service/",
+          "text": "AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/preventive-ac-maintenance-service/",
+          "text": "Learn More →",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "AC Cleaning",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "Learn More →",
+          "ariaLabel": null
+        },
+        {
+          "href": "/about/",
+          "text": "About Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "tel:+97148240002",
+          "text": "+971 4 824 0002",
+          "ariaLabel": null
+        },
+        {
+          "href": "/",
+          "text": "",
+          "ariaLabel": "AC Experts home"
+        },
+        {
+          "href": "https://www.facebook.com/voltronixuae",
+          "text": "",
+          "ariaLabel": "AC Experts on Facebook"
+        },
+        {
+          "href": "https://www.instagram.com/vtnxllc",
+          "text": "",
+          "ariaLabel": "AC Experts on Instagram"
+        },
+        {
+          "href": "https://www.linkedin.com/company/voltronix-uae/",
+          "text": "",
+          "ariaLabel": "AC Experts on LinkedIn"
+        },
+        {
+          "href": "https://x.com/nstsllc",
+          "text": "",
+          "ariaLabel": "AC Experts on X"
+        },
+        {
+          "href": "https://voltronix.ae",
+          "text": "Contracting",
+          "ariaLabel": null
+        },
+        {
+          "href": "https://dewaapprovals.ae",
+          "text": "DEWA Approvals",
+          "ariaLabel": null
+        },
+        {
+          "href": "https://switchgear.ae",
+          "text": "Switchgear",
+          "ariaLabel": null
+        },
+        {
+          "href": "/",
+          "text": "Home",
+          "ariaLabel": null
+        },
+        {
+          "href": "/about/",
+          "text": "About Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/#why-us",
+          "text": "Why Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/blog/",
+          "text": "Blogs",
+          "ariaLabel": null
+        },
+        {
+          "href": "/contact-us/",
+          "text": "Contact Us",
+          "ariaLabel": null
+        },
+        {
+          "href": "/services/",
+          "text": "Our Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-installation-service/",
+          "text": "AC Installation",
+          "ariaLabel": null
+        },
+        {
+          "href": "/preventive-ac-maintenance-service/",
+          "text": "Preventive AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/ac-repair-services/",
+          "text": "AC Repair Services",
+          "ariaLabel": null
+        },
+        {
+          "href": "/emergency-ac-maintenance-service/",
+          "text": "Emergency AC Maintenance",
+          "ariaLabel": null
+        },
+        {
+          "href": "/projects/",
+          "text": "Our Projects",
+          "ariaLabel": null
+        },
+        {
+          "href": "/products/",
+          "text": "Products",
+          "ariaLabel": null
+        },
+        {
+          "href": "tel:+97148240002",
+          "text": "+971 4 824 0002",
+          "ariaLabel": null
+        },
+        {
+          "href": "mailto:info@voltronix.ae",
+          "text": "info@voltronix.ae",
+          "ariaLabel": null
+        },
+        {
+          "href": "tel:+971502420957",
+          "text": "+971 50 242 0957",
+          "ariaLabel": null
+        },
+        {
+          "href": "https://wa.me/971502420957",
+          "text": "Contact AC Experts on WhatsApp",
+          "ariaLabel": null
+        },
+        {
+          "href": "/faq/",
+          "text": "FAQs",
+          "ariaLabel": null
+        },
+        {
+          "href": "/contact-us/",
+          "text": "Contact Us",
+          "ariaLabel": null
+        }
+      ],
+      "controls": [
+        {
+          "tag": "BUTTON",
+          "type": "button",
+          "text": "Menu",
+          "name": null,
+          "ariaLabel": null
+        },
+        {
+          "tag": "SUMMARY",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Service pages and more"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Previous testimonials"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Next testimonials"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Show Muhammed Navas's testimonial"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Show Juan's testimonial"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Show Jane Jacob's testimonial"
+        },
+        {
+          "tag": "BUTTON",
+          "type": null,
+          "text": "",
+          "name": null,
+          "ariaLabel": "Show Lookman's testimonial"
+        },
+        {
+          "tag": "SUMMARY",
+          "type": null,
+          "text": "Part of Voltronix Group",
+          "name": null,
+          "ariaLabel": null
+        },
+        {
+          "tag": "SUMMARY",
+          "type": null,
+          "text": "Address & business hours",
+          "name": null,
+          "ariaLabel": null
+        },
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "text": "",
+          "name": "email",
+          "ariaLabel": null
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "text": "",
+          "name": null,
+          "ariaLabel": "Subscribe to newsletter"
+        }
+      ],
+      "geometry": [
+        {
+          "index": 0,
+          "tag": "HEADER",
+          "className": "site-header",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 390,
+            "height": 76
+          }
+        },
+        {
+          "index": 1,
+          "tag": "DIV",
+          "className": "navigation-bar container",
+          "rect": {
+            "x": 20,
+            "y": 0,
+            "width": 350,
+            "height": 76
+          }
+        },
+        {
+          "index": 2,
+          "tag": "A",
+          "className": "header-brand",
+          "rect": {
+            "x": 20,
+            "y": 13.92,
+            "width": 158,
+            "height": 48.14
+          }
+        },
+        {
+          "index": 3,
+          "tag": "SPAN",
+          "className": "reference-art reference-logo brand-logo",
+          "rect": {
+            "x": 20,
+            "y": 13.92,
+            "width": 158,
+            "height": 48.14
+          }
+        },
+        {
+          "index": 4,
+          "tag": "NAV",
+          "className": "primary-navigation",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 5,
+          "tag": "A",
+          "className": "header-phone",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 6,
+          "tag": "DIV",
+          "className": "home-page",
+          "rect": {
+            "x": 0,
+            "y": 76,
+            "width": 390,
+            "height": 4157.19
+          }
+        },
+        {
+          "index": 7,
+          "tag": "SECTION",
+          "className": "home-hero",
+          "rect": {
+            "x": 0,
+            "y": 76,
+            "width": 390,
+            "height": 835.48
+          }
+        },
+        {
+          "index": 8,
+          "tag": "DIV",
+          "className": "home-hero-copy",
+          "rect": {
+            "x": 20,
+            "y": 76,
+            "width": 350,
+            "height": 417.78
+          }
+        },
+        {
+          "index": 9,
+          "tag": "SPAN",
+          "className": "hero-kicker",
+          "rect": {
+            "x": 20,
+            "y": 111,
+            "width": 192.08,
+            "height": 28
+          }
+        },
+        {
+          "index": 10,
+          "tag": "H2",
+          "className": "",
+          "rect": {
+            "x": 20,
+            "y": 159,
+            "width": 350,
+            "height": 80.63
+          }
+        },
+        {
+          "index": 11,
+          "tag": "P",
+          "className": "",
+          "rect": {
+            "x": 20,
+            "y": 259.63,
+            "width": 350,
+            "height": 50.38
+          }
+        },
+        {
+          "index": 12,
+          "tag": "DIV",
+          "className": "hero-features",
+          "rect": {
+            "x": 20,
+            "y": 337,
+            "width": 350,
+            "height": 81.78
+          }
+        },
+        {
+          "index": 13,
+          "tag": "DIV",
+          "className": "hero-actions",
+          "rect": {
+            "x": 20,
+            "y": 448.78,
+            "width": 350,
+            "height": 45
+          }
+        },
+        {
+          "index": 14,
+          "tag": "SPAN",
+          "className": "reference-art reference-hero hero-art",
+          "rect": {
+            "x": 0,
+            "y": 521.78,
+            "width": 390,
+            "height": 374.7
+          }
+        },
+        {
+          "index": 15,
+          "tag": "SPAN",
+          "className": "hero-diagnostics",
+          "rect": {
+            "x": 60.44,
+            "y": 794.56,
+            "width": 137.66,
+            "height": 54.33
+          }
+        },
+        {
+          "index": 16,
+          "tag": "SECTION",
+          "className": "home-services container",
+          "rect": {
+            "x": 20,
+            "y": 911.48,
+            "width": 350,
+            "height": 862.94
+          }
+        },
+        {
+          "index": 17,
+          "tag": "DIV",
+          "className": "section-heading ",
+          "rect": {
+            "x": 20,
+            "y": 946.48,
+            "width": 350,
+            "height": 121.38
+          }
+        },
+        {
+          "index": 18,
+          "tag": "DIV",
+          "className": "service-grid",
+          "rect": {
+            "x": 20,
+            "y": 1103.86,
+            "width": 350,
+            "height": 622.56
+          }
+        },
+        {
+          "index": 19,
+          "tag": "ARTICLE",
+          "className": "service-card",
+          "rect": {
+            "x": 20,
+            "y": 1103.86,
+            "width": 167,
+            "height": 312.06
+          }
+        },
+        {
+          "index": 20,
+          "tag": "ARTICLE",
+          "className": "service-card",
+          "rect": {
+            "x": 203,
+            "y": 1103.86,
+            "width": 167,
+            "height": 312.06
+          }
+        },
+        {
+          "index": 21,
+          "tag": "ARTICLE",
+          "className": "service-card",
+          "rect": {
+            "x": 20,
+            "y": 1431.92,
+            "width": 167,
+            "height": 294.5
+          }
+        },
+        {
+          "index": 22,
+          "tag": "ARTICLE",
+          "className": "service-card",
+          "rect": {
+            "x": 203,
+            "y": 1431.92,
+            "width": 167,
+            "height": 294.5
+          }
+        },
+        {
+          "index": 23,
+          "tag": "SECTION",
+          "className": "home-why",
+          "rect": {
+            "x": 0,
+            "y": 1774.42,
+            "width": 390,
+            "height": 736.23
+          }
+        },
+        {
+          "index": 24,
+          "tag": "DIV",
+          "className": "why-copy",
+          "rect": {
+            "x": 20,
+            "y": 1792.42,
+            "width": 350,
+            "height": 270.86
+          }
+        },
+        {
+          "index": 25,
+          "tag": "DIV",
+          "className": "stats-grid",
+          "rect": {
+            "x": 20,
+            "y": 2063.28,
+            "width": 350,
+            "height": 382.38
+          }
+        },
+        {
+          "index": 26,
+          "tag": "DIV",
+          "className": "stat-card",
+          "rect": {
+            "x": 20,
+            "y": 2095.28,
+            "width": 167,
+            "height": 167.19
+          }
+        },
+        {
+          "index": 27,
+          "tag": "DIV",
+          "className": "stat-card",
+          "rect": {
+            "x": 203,
+            "y": 2095.28,
+            "width": 167,
+            "height": 167.19
+          }
+        },
+        {
+          "index": 28,
+          "tag": "DIV",
+          "className": "stat-card",
+          "rect": {
+            "x": 20,
+            "y": 2278.47,
+            "width": 167,
+            "height": 167.19
+          }
+        },
+        {
+          "index": 29,
+          "tag": "DIV",
+          "className": "stat-card",
+          "rect": {
+            "x": 203,
+            "y": 2278.47,
+            "width": 167,
+            "height": 167.19
+          }
+        },
+        {
+          "index": 30,
+          "tag": "SPAN",
+          "className": "reference-art reference-skyline skyline-art",
+          "rect": {
+            "x": 0,
+            "y": 2457.48,
+            "width": 390,
+            "height": 53.17
+          }
+        },
+        {
+          "index": 31,
+          "tag": "SECTION",
+          "className": "promise-band",
+          "rect": {
+            "x": 0,
+            "y": 2510.66,
+            "width": 390,
+            "height": 314
+          }
+        },
+        {
+          "index": 32,
+          "tag": "DIV",
+          "className": "promise-grid",
+          "rect": {
+            "x": 20,
+            "y": 2636.66,
+            "width": 350,
+            "height": 158
+          }
+        },
+        {
+          "index": 33,
+          "tag": "SECTION",
+          "className": "home-brands container",
+          "rect": {
+            "x": 20,
+            "y": 2824.66,
+            "width": 350,
+            "height": 257
+          }
+        },
+        {
+          "index": 34,
+          "tag": "DIV",
+          "className": "section-heading ",
+          "rect": {
+            "x": 20,
+            "y": 2856.66,
+            "width": 350,
+            "height": 52
+          }
+        },
+        {
+          "index": 35,
+          "tag": "DIV",
+          "className": "brand-row",
+          "rect": {
+            "x": 20,
+            "y": 2936.66,
+            "width": 350,
+            "height": 89
+          }
+        },
+        {
+          "index": 36,
+          "tag": "SPAN",
+          "className": "reference-art reference-brandSamsung brand-art",
+          "rect": {
+            "x": 203,
+            "y": 2943.94,
+            "width": 75.5,
+            "height": 17.42
+          }
+        },
+        {
+          "index": 37,
+          "tag": "SPAN",
+          "className": "reference-art reference-brandPanasonic brand-art",
+          "rect": {
+            "x": 111.5,
+            "y": 3000.94,
+            "width": 75.5,
+            "height": 17.42
+          }
+        },
+        {
+          "index": 38,
+          "tag": "SECTION",
+          "className": "home-testimonials container",
+          "rect": {
+            "x": 20,
+            "y": 3081.66,
+            "width": 350,
+            "height": 469.94
+          }
+        },
+        {
+          "index": 39,
+          "tag": "DIV",
+          "className": "section-heading ",
+          "rect": {
+            "x": 20,
+            "y": 3111.66,
+            "width": 350,
+            "height": 90.19
+          }
+        },
+        {
+          "index": 40,
+          "tag": "DIV",
+          "className": "testimonials-track",
+          "rect": {
+            "x": 20,
+            "y": 3226.84,
+            "width": 350,
+            "height": 265.75
+          }
+        },
+        {
+          "index": 41,
+          "tag": "DIV",
+          "className": "testimonials-grid",
+          "rect": {
+            "x": 28,
+            "y": 3226.84,
+            "width": 334,
+            "height": 265.75
+          }
+        },
+        {
+          "index": 42,
+          "tag": "ARTICLE",
+          "className": "testimonial-card testimonial-position-0",
+          "rect": {
+            "x": 28,
+            "y": 3226.84,
+            "width": 334,
+            "height": 265.75
+          }
+        },
+        {
+          "index": 43,
+          "tag": "DIV",
+          "className": "testimonial-person",
+          "rect": {
+            "x": 57,
+            "y": 3419.59,
+            "width": 276,
+            "height": 44
+          }
+        },
+        {
+          "index": 44,
+          "tag": "ARTICLE",
+          "className": "testimonial-card testimonial-position-1",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 45,
+          "tag": "DIV",
+          "className": "testimonial-person",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 46,
+          "tag": "ARTICLE",
+          "className": "testimonial-card testimonial-position-2",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 47,
+          "tag": "DIV",
+          "className": "testimonial-person",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "index": 48,
+          "tag": "SECTION",
+          "className": "shared-cta container",
+          "rect": {
+            "x": 20,
+            "y": 3551.59,
+            "width": 350,
+            "height": 681.59
+          }
+        },
+        {
+          "index": 49,
+          "tag": "DIV",
+          "className": "cta-card",
+          "rect": {
+            "x": 20,
+            "y": 3573.59,
+            "width": 350,
+            "height": 624.59
+          }
+        },
+        {
+          "index": 50,
+          "tag": "DIV",
+          "className": "cta-copy",
+          "rect": {
+            "x": 47,
+            "y": 3604.59,
+            "width": 296,
+            "height": 203.97
+          }
+        },
+        {
+          "index": 51,
+          "tag": "DIV",
+          "className": "cta-features",
+          "rect": {
+            "x": 47,
+            "y": 3835.56,
+            "width": 290,
+            "height": 83
+          }
+        },
+        {
+          "index": 52,
+          "tag": "SPAN",
+          "className": "reference-art reference-cta cta-art",
+          "rect": {
+            "x": 47,
+            "y": 3936.56,
+            "width": 348,
+            "height": 260.63
+          }
+        },
+        {
+          "index": 53,
+          "tag": "FOOTER",
+          "className": "site-footer",
+          "rect": {
+            "x": 0,
+            "y": 4233.19,
+            "width": 390,
+            "height": 758.78
+          }
+        },
+        {
+          "index": 54,
+          "tag": "DIV",
+          "className": "footer-grid container",
+          "rect": {
+            "x": 20,
+            "y": 4238.19,
+            "width": 350,
+            "height": 668.78
+          }
+        },
+        {
+          "index": 55,
+          "tag": "SPAN",
+          "className": "reference-art reference-logo brand-logo",
+          "rect": {
+            "x": 20,
+            "y": 4238.19,
+            "width": 177,
+            "height": 53.94
+          }
+        },
+        {
+          "index": 56,
+          "tag": "DIV",
+          "className": "footer-bottom container",
+          "rect": {
+            "x": 20,
+            "y": 4906.97,
+            "width": 350,
+            "height": 85
+          }
+        }
+      ],
+      "referenceArt": [
+        {
+          "className": "reference-art reference-logo brand-logo",
+          "alt": "AC Experts — Expertise You Can Trust",
+          "viewport": {
+            "x": 20,
+            "y": 13.92,
+            "width": 158,
+            "height": 48.14
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -28.14,
+            "y": -2.62,
+            "width": 1060.84,
+            "height": 2407.03
+          },
+          "effectiveSourceCrop": {
+            "width": 105,
+            "height": 32
+          },
+          "enlargementFactor": 1.5,
+          "styles": {
+            "aspectRatio": "105 / 32",
+            "artWidth": "671.4285714285714%",
+            "artHeight": "5000%",
+            "artLeft": "-30.476190476190478%",
+            "artTop": "-34.375%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-hero hero-art",
+          "alt": "AC Experts technician servicing a wall-mounted air conditioner",
+          "viewport": {
+            "x": 0,
+            "y": 521.78,
+            "width": 390,
+            "height": 374.7
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -380.16,
+            "y": 461.7,
+            "width": 770.16,
+            "height": 1747.88
+          },
+          "effectiveSourceCrop": {
+            "width": 357.01,
+            "height": 343
+          },
+          "enlargementFactor": 1.09,
+          "styles": {
+            "aspectRatio": "357 / 343",
+            "artWidth": "197.47899159663865%",
+            "artHeight": "466.4723032069971%",
+            "artLeft": "-97.47899159663865%",
+            "artTop": "-16.034985422740526%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-skyline skyline-art",
+          "alt": "",
+          "viewport": {
+            "x": 0,
+            "y": 2457.48,
+            "width": 390,
+            "height": 53.17
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -90.67,
+            "y": 1912.14,
+            "width": 480.67,
+            "height": 1090.7
+          },
+          "effectiveSourceCrop": {
+            "width": 572.01,
+            "height": 78
+          },
+          "enlargementFactor": 0.68,
+          "styles": {
+            "aspectRatio": "572 / 78",
+            "artWidth": "123.25174825174825%",
+            "artHeight": "2051.2820512820513%",
+            "artLeft": "-23.251748251748253%",
+            "artTop": "-1025.6410256410256%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-brandSamsung brand-art",
+          "alt": "Samsung",
+          "viewport": {
+            "x": 203,
+            "y": 2943.94,
+            "width": 75.5,
+            "height": 17.42
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -58.34,
+            "y": 1745.31,
+            "width": 818.88,
+            "height": 1858.33
+          },
+          "effectiveSourceCrop": {
+            "width": 65,
+            "height": 15
+          },
+          "enlargementFactor": 1.16,
+          "styles": {
+            "aspectRatio": "65 / 15",
+            "artWidth": "1084.6153846153848%",
+            "artHeight": "10666.666666666668%",
+            "artLeft": "-346.1538461538462%",
+            "artTop": "-6880%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-brandPanasonic brand-art",
+          "alt": "Panasonic",
+          "viewport": {
+            "x": 111.5,
+            "y": 3000.94,
+            "width": 75.5,
+            "height": 17.42
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -475.06,
+            "y": 1802.31,
+            "width": 818.88,
+            "height": 1858.33
+          },
+          "effectiveSourceCrop": {
+            "width": 65,
+            "height": 15
+          },
+          "enlargementFactor": 1.16,
+          "styles": {
+            "aspectRatio": "65 / 15",
+            "artWidth": "1084.6153846153848%",
+            "artHeight": "10666.666666666668%",
+            "artLeft": "-776.9230769230769%",
+            "artTop": "-6880%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-cta cta-art",
+          "alt": "AC Experts technician beside a branded service van",
+          "viewport": {
+            "x": 47,
+            "y": 3936.56,
+            "width": 348,
+            "height": 260.63
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -583.47,
+            "y": 2094.72,
+            "width": 1026.52,
+            "height": 2329.59
+          },
+          "effectiveSourceCrop": {
+            "width": 239,
+            "height": 179
+          },
+          "enlargementFactor": 1.46,
+          "styles": {
+            "aspectRatio": "239 / 179",
+            "artWidth": "294.97907949790795%",
+            "artHeight": "893.8547486033519%",
+            "artLeft": "-181.1715481171548%",
+            "artTop": "-706.7039106145251%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        },
+        {
+          "className": "reference-art reference-logo brand-logo",
+          "alt": "AC Experts — Expertise You Can Trust",
+          "viewport": {
+            "x": 20,
+            "y": 4238.19,
+            "width": 177,
+            "height": 53.94
+          },
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "imageBox": {
+            "x": -33.94,
+            "y": 4219.66,
+            "width": 1188.42,
+            "height": 2696.88
+          },
+          "effectiveSourceCrop": {
+            "width": 105,
+            "height": 32
+          },
+          "enlargementFactor": 1.69,
+          "styles": {
+            "aspectRatio": "105 / 32",
+            "artWidth": "671.4285714285714%",
+            "artHeight": "5000%",
+            "artLeft": "-30.476190476190478%",
+            "artTop": "-34.375%",
+            "borderRadius": "0px",
+            "maskImage": "none"
+          }
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "alt": "AC Experts — Expertise You Can Trust",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -28.14,
+            "y": -2.62,
+            "width": 1060.84,
+            "height": 2407.03
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 1,
+          "alt": "AC Experts technician servicing a wall-mounted air conditioner",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -380.16,
+            "y": 461.7,
+            "width": 770.16,
+            "height": 1747.88
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 2,
+          "alt": "",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -90.67,
+            "y": 1912.14,
+            "width": 480.67,
+            "height": 1090.7
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 3,
+          "alt": "Daikin",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F5-9a789422.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F5-9a789422.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 20,
+            "y": 2936.66,
+            "width": 75.5,
+            "height": 32
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 4,
+          "alt": "LG",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F6-982866f1.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F6-982866f1.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 111.5,
+            "y": 2936.66,
+            "width": 75.5,
+            "height": 32
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 5,
+          "alt": "Samsung",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -58.34,
+            "y": 1745.31,
+            "width": 818.88,
+            "height": 1858.33
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 6,
+          "alt": "Mitsubishi",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F7-1dadd2db.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F7-1dadd2db.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 294.5,
+            "y": 2936.66,
+            "width": 75.5,
+            "height": 32
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 7,
+          "alt": "Gree",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F3-9deac3c0.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F3-9deac3c0.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 20,
+            "y": 2993.66,
+            "width": 75.5,
+            "height": 32
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 8,
+          "alt": "Panasonic",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -475.06,
+            "y": 1802.31,
+            "width": 818.88,
+            "height": 1858.33
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 9,
+          "alt": "General",
+          "source": "/_next/image/?url=%2Fimages%2Flogo%2F1-7386d9e3.png&w=3840&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Flogo%2F1-7386d9e3.png&w=256&q=75",
+          "naturalWidth": 93,
+          "naturalHeight": 25,
+          "rendered": {
+            "x": 203,
+            "y": 2993.66,
+            "width": 75.5,
+            "height": 32
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 10,
+          "alt": "",
+          "source": "/_next/image/?url=%2Fimages%2Fgallery%2Ffarmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg&w=96&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Ffarmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg&w=48&q=75",
+          "naturalWidth": 48,
+          "naturalHeight": 32,
+          "rendered": {
+            "x": 57,
+            "y": 3419.59,
+            "width": 44,
+            "height": 44
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 11,
+          "alt": "",
+          "source": "/_next/image/?url=%2Fimages%2Fgallery%2Fclose-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg&w=96&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Fclose-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg&w=48&q=75",
+          "naturalWidth": 48,
+          "naturalHeight": 32,
+          "rendered": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 12,
+          "alt": "",
+          "source": "/_next/image/?url=%2Fimages%2Fgallery%2Ftestimonial3-7b0d2810.png&w=96&q=75",
+          "currentSource": "http://localhost:3001/_next/image/?url=%2Fimages%2Fgallery%2Ftestimonial3-7b0d2810.png&w=48&q=75",
+          "naturalWidth": 48,
+          "naturalHeight": 48,
+          "rendered": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "loading": "eager",
+          "quality": "75",
+          "referenceCrop": false
+        },
+        {
+          "index": 13,
+          "alt": "AC Experts technician beside a branded service van",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -583.47,
+            "y": 2094.72,
+            "width": 1026.52,
+            "height": 2329.59
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        },
+        {
+          "index": 14,
+          "alt": "AC Experts — Expertise You Can Trust",
+          "source": "/images/design/homepage-reference.jpeg",
+          "currentSource": "http://localhost:3001/images/design/homepage-reference.jpeg",
+          "naturalWidth": 705,
+          "naturalHeight": 1600,
+          "rendered": {
+            "x": -33.94,
+            "y": 4219.66,
+            "width": 1188.42,
+            "height": 2696.88
+          },
+          "loading": "eager",
+          "quality": null,
+          "referenceCrop": true
+        }
+      ],
+      "screenshot": "docs/image-quality-baseline-390.png",
+      "screenshotHash": "26e1a6a65aedade0f919209721c9e042f5eac9c91856a427c0d11ae3bf610623",
+      "errors": []
+    }
+  ],
+  "acceptance": {
+    "source": "Only explicitly permitted image assets and their image source/dimension handling may change; stylesheets, text, routes, metadata, links, controls and business facts stay identical.",
+    "layout": "Compare ordered geometry records at identical viewport/DPR after fonts and images decode. Allow at most 0.1 CSS pixel rounding; document scroll width and height must stay identical.",
+    "text": "Compare bodyTextContent, visibleBodyText, titles, descriptions, canonical, links and controls exactly.",
+    "images": "Compare effective source crop dimensions to rendered viewport dimensions at DPR1 and DPR2. Prefer source pixels at least equal to rendered pixels; improvements must preserve crop, composition, branding, people, icon artwork and color."
+  },
+  "imageAssetHashes": {
+    "public/images/design/homepage-reference.jpeg": {
+      "sha256": "5e0f7a3cc8bb9c117efd67eb6de8f7b439289e82d90cf153008617400a7b5280",
+      "bytes": 213905
+    }
+  },
+  "sourceHashesStableDuringCapture": true
+}

@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-05T11:16:20.049Z",
+  "baseUrl": "http://localhost:3100",
+  "route": "/why-choose-us-for-your-ac-repair-and-maintenance-needs/",
+  "image": "/images/blog/1-31-1-scaled-fe28220d.jpg",
+  "request": "/_next/image/?url=%2Fimages%2Fblog%2F1-31-1-scaled-fe28220d.jpg&w=640&q=75",
+  "accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
+  "recovery": "Restarted the production process after the final build; no original asset changes or unoptimized fallback.",
+  "response": {
+    "status": 200,
+    "contentType": "image/avif",
+    "bytes": 7605,
+    "elapsedMs": 2342
+  }
+}

@@ -1,0 +1,2414 @@
+[
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/about_us_bg.jpg",
+    "localPath": "/images/gallery/about-us-bg-d41e08d4.jpg",
+    "width": 1600,
+    "height": 550,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 18703,
+    "sha256": "54c647ca5d1603cf61844aeb86ba2fe2b84496ecfa2e1e398dac7d06dd03d738",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-1.png",
+    "localPath": "/images/logo/client-1-e4d6bb0f.png",
+    "width": 88,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-1",
+    "status": "downloaded",
+    "bytes": 1103,
+    "sha256": "4bdf2047ab51ea3d3bf7f3dd34e3a739d06d5073d409fb79262d49aa13e7f5f5",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-10.png",
+    "localPath": "/images/logo/client-10-3fe85f38.png",
+    "width": 134,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-10",
+    "status": "downloaded",
+    "bytes": 1255,
+    "sha256": "f134ec17c012aaafb9f809cb1542c8866d2ac474b15bd57a420cee2cf4338d24",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-2.png",
+    "localPath": "/images/logo/client-2-397dd1e6.png",
+    "width": 104,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-2",
+    "status": "downloaded",
+    "bytes": 1507,
+    "sha256": "711d85e25bdebb8b0d0bc98709101ada823d8599372a6b51903f462875d44c3d",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-3-150x45.png",
+    "localPath": "/images/logo/client-3-150x45-e5106a45.png",
+    "width": 150,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-3",
+    "status": "downloaded",
+    "bytes": 1207,
+    "sha256": "8d24c8f335c06c754da9cb4cd26c87c37be73c72b876dda47078bc4198c10ed2",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-4.png",
+    "localPath": "/images/logo/client-4-2cc84e1a.png",
+    "width": 137,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-4",
+    "status": "downloaded",
+    "bytes": 1887,
+    "sha256": "523037710817619caacf4ee6f9422b4ea5219e8a97b5d59c50abb4f12f1f9933",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-5.png",
+    "localPath": "/images/logo/client-10-3fe85f38.png",
+    "width": 134,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-5",
+    "status": "downloaded",
+    "bytes": 1255,
+    "sha256": "f134ec17c012aaafb9f809cb1542c8866d2ac474b15bd57a420cee2cf4338d24",
+    "mime": "image/png",
+    "deduplicated": true
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-6.png",
+    "localPath": "/images/logo/client-1-e4d6bb0f.png",
+    "width": 88,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-6",
+    "status": "downloaded",
+    "bytes": 1103,
+    "sha256": "4bdf2047ab51ea3d3bf7f3dd34e3a739d06d5073d409fb79262d49aa13e7f5f5",
+    "mime": "image/png",
+    "deduplicated": true
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-7.png",
+    "localPath": "/images/logo/client-2-397dd1e6.png",
+    "width": 104,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-7",
+    "status": "downloaded",
+    "bytes": 1507,
+    "sha256": "711d85e25bdebb8b0d0bc98709101ada823d8599372a6b51903f462875d44c3d",
+    "mime": "image/png",
+    "deduplicated": true
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-8-150x45.png",
+    "localPath": "/images/logo/client-3-150x45-e5106a45.png",
+    "width": 150,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-8",
+    "status": "downloaded",
+    "bytes": 1207,
+    "sha256": "8d24c8f335c06c754da9cb4cd26c87c37be73c72b876dda47078bc4198c10ed2",
+    "mime": "image/png",
+    "deduplicated": true
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/client-9.png",
+    "localPath": "/images/logo/client-4-2cc84e1a.png",
+    "width": 137,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "client-9",
+    "status": "downloaded",
+    "bytes": 1887,
+    "sha256": "523037710817619caacf4ee6f9422b4ea5219e8a97b5d59c50abb4f12f1f9933",
+    "mime": "image/png",
+    "deduplicated": true
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/04/service-img-2.jpg",
+    "localPath": "/images/gallery/service-img-2-ca462b3f.jpg",
+    "width": 350,
+    "height": 224,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/faq/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 19647,
+    "sha256": "9d03373685eb7b36a514e77686895c17f1af8b6a2a490e1529bee29d2b79d4cd",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2019/05/testimonial3.png",
+    "localPath": "/images/gallery/testimonial3-7b0d2810.png",
+    "width": 80,
+    "height": 80,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Jane Jacob ",
+    "status": "downloaded",
+    "bytes": 4360,
+    "sha256": "ef8bf08cca71b119815393728bde9e5d2542cd920061a4e69dfc7e41e40103f5",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2022/12/fevicon-e1672396977395.png",
+    "localPath": "/icons/fevicon-e1672396977395-2bd4a645.png",
+    "width": 65,
+    "height": 65,
+    "type": "icon",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-installation-service/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-services/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/acexpertdubai/",
+      "https://acexperts.ae/category/acrepairing/",
+      "https://acexperts.ae/category/acservices/",
+      "https://acexperts.ae/category/maintenance/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/page/2/",
+      "https://acexperts.ae/category/uncategorized/repairing/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/emergency-ac-maintenance-service/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/preventive-ac-maintenance-service/",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/project-portfolio/",
+      "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/",
+      "https://acexperts.ae/projects/",
+      "https://acexperts.ae/services/",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 2590,
+    "sha256": "bf7e5d8a01b7f612496a9089781e065243934bf7a17e8fa8130c0179b1d9ef26",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/10.png",
+    "localPath": "/images/logo/10-ddb9b7b8.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "schneider Electric",
+    "status": "downloaded",
+    "bytes": 4264,
+    "sha256": "a65ddb06f13118774d6edab6a167ef11c9e7fbc8bc453ed48c651e1fd869fa53",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/11.png",
+    "localPath": "/images/logo/11-c27218bc.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "LS Industrial systems",
+    "status": "downloaded",
+    "bytes": 3004,
+    "sha256": "388c001e56fcb930e5ae46e0df67407cfd6f5363ab35f60d1179ed91b1ae91d5",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/2.png",
+    "localPath": "/images/logo/2-114d1f50.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Siemens | Our Client",
+    "status": "downloaded",
+    "bytes": 3279,
+    "sha256": "859922662ff255d28b320d9cad7eb4d32af0b85f272a08a1f9f4de0ed3b69de4",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/3.png",
+    "localPath": "/images/logo/3-97ed2995.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "L & T Energy | Our Client",
+    "status": "downloaded",
+    "bytes": 3155,
+    "sha256": "ce86bfe0030151066a20318f9f8e98fba13a9e413dd0bbff62666deb4cdb68c9",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/4.png",
+    "localPath": "/images/logo/4-e8f77d74.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Epcos | Our Client",
+    "status": "downloaded",
+    "bytes": 2193,
+    "sha256": "b20b1d52130435b43dbd732b79a271015f69346ef09ea15b8067aa8ad640fa5b",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/5.png",
+    "localPath": "/images/logo/5-ee7840e9.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "EATON | Our Client",
+    "status": "downloaded",
+    "bytes": 3402,
+    "sha256": "9ac981da026a3017aef871a0d77e5cbd80388286b14e25c6fd1f2601cfdb0412",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/6.png",
+    "localPath": "/images/logo/6-4b2f3efd.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Legrand | Our Client",
+    "status": "downloaded",
+    "bytes": 3112,
+    "sha256": "813ae87042d35802e36942017eae05c85866af37d578fd23f0b17ce8477047ab",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/7.png",
+    "localPath": "/images/logo/7-8f9f1ceb.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Danfoss | Our Client",
+    "status": "downloaded",
+    "bytes": 3407,
+    "sha256": "23682702f138d7fae634335cb917861025a8b14f9a21c41ac3237335aaf01a4c",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/8.png",
+    "localPath": "/images/logo/8-a5aa5518.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "alfanar | Our Client",
+    "status": "downloaded",
+    "bytes": 3555,
+    "sha256": "bb3392b65338321c25b2767452c83ff8a72a8db10326a2fdb4aa027ecb8cdb4a",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/01/9.png",
+    "localPath": "/images/logo/9-931adbd4.png",
+    "width": 185,
+    "height": 45,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Hager | Our Client",
+    "status": "downloaded",
+    "bytes": 3774,
+    "sha256": "5001069ebf793f4a1df16bc9009094fa4a84f5202131ee11f1439a9a49373875",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/02/ac-cool-1024x560.jpg",
+    "localPath": "/images/projects/ac-cool-1024x560-0798d822.jpg",
+    "width": 1024,
+    "height": 560,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/project-portfolio/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 70692,
+    "sha256": "8968fb007cbd9303f2db457850788cf0bd6a04ae2c68dbaab2a5e814c93fb838",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/02/ac-cool.jpg",
+    "localPath": "/images/projects/ac-cool-121957f3.jpg",
+    "width": 1600,
+    "height": 875,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/project-portfolio-sitemap.xml",
+      "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/",
+      "https://acexperts.ae/projects/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 149266,
+    "sha256": "90fd991e3a4c340e2fe1ab713d04fcd9579737ece44f4583ed2b5d9bcee7f040",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/02/ac-installation1.jpg",
+    "localPath": "/images/services/ac-installation1-b782b633.jpg",
+    "width": 600,
+    "height": 476,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/ac-installation-service/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 33027,
+    "sha256": "334a2609137433bcb7a4769864fbbfadea6b34acdbfcd8ab4cad8e335b2040d6",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/02/ac-man.png",
+    "localPath": "/images/gallery/ac-man-dc1d5b3a.png",
+    "width": 816,
+    "height": 750,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 449512,
+    "sha256": "9fc87eb2c75ebca8e683dcc3db50c9db72d4132fcf06bb6357cdf9784b5c9727",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/02/ac-repair.jpg",
+    "localPath": "/images/gallery/ac-repair-189403be.jpg",
+    "width": 473,
+    "height": 350,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 39545,
+    "sha256": "03ca0af0d4f5e006052cb9cbab6f00e0033887b376d70eaf2581399d1a5b48b8",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/02/banneer01.jpg",
+    "localPath": "/images/hero/banneer01-2e209cdb.jpg",
+    "width": 1600,
+    "height": 820,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/ac-installation-service/",
+      "https://acexperts.ae/ac-repair-services/",
+      "https://acexperts.ae/emergency-ac-maintenance-service/",
+      "https://acexperts.ae/preventive-ac-maintenance-service/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 72545,
+    "sha256": "5cb22f07b2467470465a65a6de9f27f34b1d42e6ddcfc55e56adf6c71722fb35",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/02/technician-man.webp",
+    "localPath": "/images/services/technician-man-108f4502.webp",
+    "width": 740,
+    "height": 493,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 61284,
+    "sha256": "c3fd95419fb75a7f5449c605908d7173c5ab432d9ba7a07f53fb6b8797b08cda",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/1.png",
+    "localPath": "/images/logo/1-7386d9e3.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "General logo",
+    "status": "downloaded",
+    "bytes": 3641,
+    "sha256": "d072dbe5f8e2bd2decd17d19fcce1531f40c96972658fcfd7589e0bb81a7184a",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/2.png",
+    "localPath": "/images/logo/2-ec36719a.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Hitachi logo",
+    "status": "downloaded",
+    "bytes": 3411,
+    "sha256": "cf029ce6f0845abb2f02ccae2160acf077116a08998d5223d12d27c27434b11c",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/3.png",
+    "localPath": "/images/logo/3-9deac3c0.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Gree",
+    "status": "downloaded",
+    "bytes": 3030,
+    "sha256": "101b95547b7033f39f3c54da9ebbc47f8c42109baf8267b677c3a1009caf745c",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/4.png",
+    "localPath": "/images/logo/4-e6177339.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Super General logo",
+    "status": "downloaded",
+    "bytes": 4317,
+    "sha256": "dbf10227b5e5ec2bcb76c431f02b79e23408974885c621143b89933fedc1c2b0",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/5.png",
+    "localPath": "/images/logo/5-9a789422.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Daikin logo",
+    "status": "downloaded",
+    "bytes": 2476,
+    "sha256": "bb26e2058b2242cf5121beaff389469e1e7eb9acb30e1dbe3fdcb44dfa3d1521",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/6.png",
+    "localPath": "/images/logo/6-982866f1.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "LG logo",
+    "status": "downloaded",
+    "bytes": 2402,
+    "sha256": "751dedf32cb4ce1e9126792e6ce6a7a09a8ec1e0c6b8466300a3c510e74b710f",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/7.png",
+    "localPath": "/images/logo/7-1dadd2db.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Mitsubishi electric logo",
+    "status": "downloaded",
+    "bytes": 4416,
+    "sha256": "202d6aa726ef75cb173344608ce3c76485b982ab7d1385f5fe820d35f76bd6c9",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/8.png",
+    "localPath": "/images/logo/8-2b2c3ab5.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Rheem logo",
+    "status": "downloaded",
+    "bytes": 2341,
+    "sha256": "6807e0e87c8a51913de6a77595a95b7558cb6fefb7c288f0878b40a3318aaf11",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/03/9.png",
+    "localPath": "/images/logo/9-eba8cd1c.png",
+    "width": 185,
+    "height": 50,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Voltas logo",
+    "status": "downloaded",
+    "bytes": 2972,
+    "sha256": "88593d623a4dbba7350a44007b346a94abdaca66179adeff7b2642cbe0d1ed87",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/05/VOLTRONIX-LOGO-updated.png",
+    "localPath": "/images/logo/voltronix-logo-updated-66268811.png",
+    "width": 407,
+    "height": 75,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/ac-installation-service/",
+      "https://acexperts.ae/ac-repair-services/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/acexpertdubai/",
+      "https://acexperts.ae/category/acrepairing/",
+      "https://acexperts.ae/category/acservices/",
+      "https://acexperts.ae/category/maintenance/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/page/2/",
+      "https://acexperts.ae/category/uncategorized/repairing/",
+      "https://acexperts.ae/emergency-ac-maintenance-service/",
+      "https://acexperts.ae/preventive-ac-maintenance-service/",
+      "https://acexperts.ae/project-portfolio/",
+      "https://acexperts.ae/projects/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 6485,
+    "sha256": "7d2f68cd6c60815af9b5acab61c49849f0d86ab732d4b4077c064be39b079ac4",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/06/voltronix-R.png",
+    "localPath": "/images/logo/voltronix-r-f374379d.png",
+    "width": 407,
+    "height": 75,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-installation-service/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-services/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/acexpertdubai/",
+      "https://acexperts.ae/category/acrepairing/",
+      "https://acexperts.ae/category/acservices/",
+      "https://acexperts.ae/category/maintenance/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/page/2/",
+      "https://acexperts.ae/category/uncategorized/repairing/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/emergency-ac-maintenance-service/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/preventive-ac-maintenance-service/",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/project-portfolio/",
+      "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/",
+      "https://acexperts.ae/projects/",
+      "https://acexperts.ae/services/",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "voltronix Logo Image",
+    "status": "downloaded",
+    "bytes": 7686,
+    "sha256": "9db6ae0f07ffcb0c6d55c505697af1e79fa6b2b5a91e536d9810481baed65e04",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/10/worker-acexperts.webp",
+    "localPath": "/images/hero/worker-acexperts-ae408d58.webp",
+    "width": 1080,
+    "height": 1620,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 100760,
+    "sha256": "b34f0a12a915da6e67efafe29f400e88f7a234c6a99261120a775d3e872fd21d",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/12/slider03-300x300.webp",
+    "localPath": "/images/hero/slider03-300x300-b30c74a8.webp",
+    "width": 300,
+    "height": 300,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "AC Repair | 24/7 Service Available",
+    "status": "downloaded",
+    "bytes": 13122,
+    "sha256": "ddfe4c675e96bd6bd222f960947741238b8289a80652acdd132f9fee3c631518",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2023/12/voltronix-R-white-logo.png",
+    "localPath": "/images/logo/voltronix-r-white-logo-f6ce78e1.png",
+    "width": 407,
+    "height": 75,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/about/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-installation-service/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-services/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/acexpertdubai/",
+      "https://acexperts.ae/category/acrepairing/",
+      "https://acexperts.ae/category/acservices/",
+      "https://acexperts.ae/category/maintenance/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/page/2/",
+      "https://acexperts.ae/category/uncategorized/repairing/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/contact-us/",
+      "https://acexperts.ae/emergency-ac-maintenance-service/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/faq/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/preventive-ac-maintenance-service/",
+      "https://acexperts.ae/products/",
+      "https://acexperts.ae/project-portfolio/",
+      "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/",
+      "https://acexperts.ae/projects/",
+      "https://acexperts.ae/services/",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "Voltronix Logo",
+    "status": "downloaded",
+    "bytes": 5688,
+    "sha256": "2f2f5834c70f4db26f9be298febf951e1fb35a655dcf51ddc1442f62cad1a1be",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/1-20-1024x639.jpg",
+    "localPath": "/images/blog/1-20-1024x639-15eb0bd4.jpg",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/maintenance/"
+    ],
+    "alt": "Emergency Ac repair solution | AC repair",
+    "status": "downloaded",
+    "bytes": 25239,
+    "sha256": "419288c0bc687e6af73f996a4842cb2b10b31aaf6db2a5c45d005c9dddf17ac7",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/1-20-scaled.jpg",
+    "localPath": "/images/blog/1-20-scaled-107be4b4.jpg",
+    "width": 2560,
+    "height": 1598,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "Emergency Ac repair solution | AC repair",
+    "status": "downloaded",
+    "bytes": 86967,
+    "sha256": "c3646e6ad1c3319e3c532c7b237bc56261dde7bf72b68ad3f75515d546acce03",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/1-21-1024x639.png",
+    "localPath": "/images/blog/1-21-1024x639-10733925.png",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/maintenance/"
+    ],
+    "alt": "AC Repairing services in dubai",
+    "status": "downloaded",
+    "bytes": 39317,
+    "sha256": "ff3e1c9d2832c6d1073df6e2306d261aef85157710c2b5ecd30af2559e885a1d",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/1-21.png",
+    "localPath": "/images/blog/1-21-c073e42e.png",
+    "width": 2664,
+    "height": 1663,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "AC Repairing services in dubai",
+    "status": "downloaded",
+    "bytes": 146389,
+    "sha256": "992853b4e9ed0f55a445bf0daddb9e7f9714bd8c20e0764edb587c98e8fd6e01",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/1-23-1024x639.jpg",
+    "localPath": "/images/blog/1-23-1024x639-c81e7968.jpg",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/maintenance/",
+      "https://acexperts.ae/category/uncategorized/page/2/",
+      "https://acexperts.ae/category/uncategorized/repairing/"
+    ],
+    "alt": "AC MAintenance in Dubai",
+    "status": "downloaded",
+    "bytes": 24392,
+    "sha256": "4009adf017ac3473c599a5a1650a87cf70830a1182ceb040596bf167ae4394e1",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/1-23-scaled.jpg",
+    "localPath": "/images/blog/1-23-scaled-346d30de.jpg",
+    "width": 2560,
+    "height": 1598,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/post-sitemap.xml",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/"
+    ],
+    "alt": "AC MAintenance in Dubai",
+    "status": "downloaded",
+    "bytes": 78554,
+    "sha256": "ff8f4e53825317776e803df40b31bf4b4d8e182ffc50bedd44066edaa6f4134a",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/1-24-1024x640.jpg",
+    "localPath": "/images/blog/1-24-1024x640-dd1fdebf.jpg",
+    "width": 1024,
+    "height": 640,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/maintenance/",
+      "https://acexperts.ae/category/uncategorized/page/2/"
+    ],
+    "alt": "AC Safety Tips for Dubai Homes",
+    "status": "downloaded",
+    "bytes": 31214,
+    "sha256": "e04c2e926a978b189aa917e6f3bd1de3721b911efe5961c6d9477d152c6b007f",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/1-24-scaled.jpg",
+    "localPath": "/images/blog/1-24-scaled-9a4fe8cd.jpg",
+    "width": 2560,
+    "height": 1599,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "AC Safety Tips for Dubai Homes",
+    "status": "downloaded",
+    "bytes": 98354,
+    "sha256": "42949e9b24d33d48c4d5f8de0c7124f8cde3259f3b64381d369ae30983373007",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/AC-Maintenance-and-Repair-2.webp",
+    "localPath": "/images/gallery/ac-maintenance-and-repair-2-cb52a893.webp",
+    "width": 350,
+    "height": 370,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 25656,
+    "sha256": "353873e1a63c0c95bda93c22ea9fadaf5e61eb6fedee2813b636f2152a4b0754",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/AC-maintenance-and-repairing-service-in-Dubai.webp",
+    "localPath": "/images/services/ac-maintenance-and-repairing-service-in-dubai-b865acb4.webp",
+    "width": 1024,
+    "height": 480,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Your Trusted AC Repairing Experts | AC service in Dubai",
+    "status": "downloaded",
+    "bytes": 71114,
+    "sha256": "e3c0382af765c5fafe11c6ab02c3c99fbee96b75c1a2337696f70ddbf4ff9c67",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Ac-Maintenance-Service-Dubai.webp",
+    "localPath": "/images/services/ac-maintenance-service-dubai-f269173d.webp",
+    "width": 780,
+    "height": 750,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/preventive-ac-maintenance-service/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 52738,
+    "sha256": "fc7dc7ae4e4dd9edfa31ed4be90a88a63fc3036ed44bc9f5a0a949b4b97d598a",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/AC-repair-and-maintenance-1-1024x639.jpg",
+    "localPath": "/images/blog/ac-repair-and-maintenance-1-1024x639-058dc5bf.jpg",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/maintenance/",
+      "https://acexperts.ae/category/uncategorized/page/2/",
+      "https://acexperts.ae/category/uncategorized/repairing/"
+    ],
+    "alt": "AC Maintenance for Villas and Apartments in Dubai",
+    "status": "downloaded",
+    "bytes": 24409,
+    "sha256": "d06cb246c60196e92347184324c238c64c3d285cf7647e9ed43df2ae3104bf5a",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/AC-repair-and-maintenance-1-scaled.jpg",
+    "localPath": "/images/blog/ac-repair-and-maintenance-1-scaled-eb2781b2.jpg",
+    "width": 2560,
+    "height": 1598,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "AC Maintenance for Villas and Apartments in Dubai",
+    "status": "downloaded",
+    "bytes": 78539,
+    "sha256": "cd3d5e82a72ed045ed5de7594f302a7d4c478d6d953dfd80534cb861a910aa1d",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Ac-Repair-Dubai.webp",
+    "localPath": "/images/services/ac-repair-dubai-c51dfba3.webp",
+    "width": 780,
+    "height": 750,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/ac-repair-services/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 67884,
+    "sha256": "ef8fc8b53b83a71aba8bbf993e75f33ce06b83b522005eab5558d8622992a6f0",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Ac-Repair-in-Dubai.webp",
+    "localPath": "/images/gallery/ac-repair-in-dubai-bec943e9.webp",
+    "width": 225,
+    "height": 240,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Expert AC repair technician servicing Dubai",
+    "status": "downloaded",
+    "bytes": 5336,
+    "sha256": "79bf9cc7c7652edc5559cdacb794cf483b2d67e615a58ffcedcc19304c3c07de",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/AC-Repair-Mechanic-1.jpg",
+    "localPath": "/images/gallery/ac-repair-mechanic-1-ba3b5d4a.jpg",
+    "width": 350,
+    "height": 370,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 20061,
+    "sha256": "da26f0e0c017b73763eea761fbac8b483cecf106d33dbb6787aced930c1203d7",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Ac-Repair-Service-1.webp",
+    "localPath": "/images/gallery/ac-repair-service-1-c577e225.webp",
+    "width": 225,
+    "height": 240,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Speedy AC repair Dubai. Our expert technician is ready to fix your AC",
+    "status": "downloaded",
+    "bytes": 9200,
+    "sha256": "9bff0d4a92e4bc8aca046ee746602f48e2ed031c175352e19ec6342d70fba742",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/AC-Repair.webp",
+    "localPath": "/images/gallery/ac-repair-17b0067f.webp",
+    "width": 225,
+    "height": 240,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Our dedicated team of AC repair experts in Dubai",
+    "status": "downloaded",
+    "bytes": 3774,
+    "sha256": "86c60554f69485b1a0f42eff0da136144e11420428e83ca3c382c638458b8f03",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Car-parking-exhaust-system.webp",
+    "localPath": "/images/services/car-parking-exhaust-system-e6040978.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Car park ventilation system with exhaust fans.",
+    "status": "downloaded",
+    "bytes": 15670,
+    "sha256": "98c164da85fd5060bfb4a1af84f72427627b030a27b7dc87011bc4d05a846af9",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Central-Air-Conditioning.webp",
+    "localPath": "/images/services/central-air-conditioning-4c3aae90.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Create a Perfect Indoor Climate with Our Central AC",
+    "status": "downloaded",
+    "bytes": 14718,
+    "sha256": "61705c343b6e15a61e2113305113db109598d3520fd7df9334ad912f00c0ec73",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Chiller-System-1.webp",
+    "localPath": "/images/services/chiller-system-1-c94a1584.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Industrial chiller system for efficient cooling",
+    "status": "downloaded",
+    "bytes": 18466,
+    "sha256": "307fe80df2d5975e9741590b05a9671a956db74a87cf5f0b84bc13c8253b7dc8",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/close-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outdoors-communication-modern-technology-concept-Phone.jpg",
+    "localPath": "/images/gallery/close-up-young-arabian-man-holding-phone-handsome-bearded-man-speaking-mobile-phone-reflecting-shop-glass-outd-209958b4.jpg",
+    "width": 480,
+    "height": 320,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Smiling customer with repaired AC unit in Dubai 1",
+    "status": "downloaded",
+    "bytes": 18750,
+    "sha256": "d49f20df992cd81a4dfe00d9242f374eae27a9dafae7be56df9cec12db5dd68a",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Dehumidifier.webp",
+    "localPath": "/images/services/dehumidifier-6c8e9419.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Portable dehumidifier for small spaces.",
+    "status": "downloaded",
+    "bytes": 6038,
+    "sha256": "1323ec9a9ccfc876ce19deb29f255296b60836056df83515628b31bcb4b41ff6",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/DX-System.webp",
+    "localPath": "/images/services/dx-system-cd9c01b9.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Residential air conditioning system using DX technology.",
+    "status": "downloaded",
+    "bytes": 23146,
+    "sha256": "d163aca2101cc632f0b38bb4c95903151f3cf68451eb6f4ea98f1613085f478b",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Emergency-ac-services-in-dubai.webp",
+    "localPath": "/images/services/emergency-ac-services-in-dubai-4befea2f.webp",
+    "width": 1024,
+    "height": 480,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Happy customer after receiving AC service in dubai",
+    "status": "downloaded",
+    "bytes": 64252,
+    "sha256": "aacda1e98af28693c41182ca90b9ca25fccc60ddd8ab07ddab6a25a28ff12e3f",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/farmer-black-vest-plaid-shirt-standing-near-cattle-pen-Phone.jpg",
+    "localPath": "/images/gallery/farmer-black-vest-plaid-shirt-standing-near-cattle-pen-phone-03e4be3b.jpg",
+    "width": 481,
+    "height": 320,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "AC repair Dubai | Best AC repair in Dubai",
+    "status": "downloaded",
+    "bytes": 17286,
+    "sha256": "ca738713a6c5d55caedff86df29dcf52fad1634765eaf13d8ae1cbd3ec3852e9",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Fresh-Air-System.webp",
+    "localPath": "/images/services/fresh-air-system-8844527e.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Advanced fresh air system for improved indoor air quality",
+    "status": "downloaded",
+    "bytes": 9462,
+    "sha256": "2ef00dd3422ccff9e1fbb0087b9286ad7300c16e3404819d12211213e310f8ab",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/front-view-smiley-man-posing-Phone.jpg",
+    "localPath": "/images/gallery/front-view-smiley-man-posing-phone-28bb936c.jpg",
+    "width": 480,
+    "height": 320,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "Delighted Dubai resident relaxing at home thanks to fast AC repair",
+    "status": "downloaded",
+    "bytes": 22844,
+    "sha256": "688537d632cb86f100c68e0aaf774edb705819e574e6d5b59fd2a5b17453d542",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Mother-and-daughter-relaxing-in-modern-room-with-AC.webp",
+    "localPath": "/images/services/mother-and-daughter-relaxing-in-modern-room-with-ac-ffe27686.webp",
+    "width": 1600,
+    "height": 820,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "Happy family enjoying air conditioning | AC service in Dubai",
+    "status": "downloaded",
+    "bytes": 69208,
+    "sha256": "b5a0824bfd23ed4ab182f7223bfc29d4fe059357d1923605c206960b3f59fed9",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Portable-Air-Conditioning%E2%80%8B.webp",
+    "localPath": "/images/services/portable-air-conditioning-636c41ec.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Compact and portable air conditioner for on-the-go cooling",
+    "status": "downloaded",
+    "bytes": 3366,
+    "sha256": "81ac3ec84fbbc9f7739bcb1c86c8e5869485b1b400b6b809230a37bdc1f43c58",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Professional-AC-Repair-1.webp",
+    "localPath": "/images/gallery/professional-ac-repair-1-9592eb02.webp",
+    "width": 350,
+    "height": 370,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/emergency-ac-maintenance-service/",
+      "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 15522,
+    "sha256": "0e1b54079f844fae1ac0351a76716e28f26c5bfa8a27ed94ec1a811fa28d3673",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Professional-AC-Repair-in-Dubai-1.webp",
+    "localPath": "/images/gallery/professional-ac-repair-in-dubai-1-d6982f71.webp",
+    "width": 350,
+    "height": 370,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/project-portfolio/luxury-villa-ac-installation/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 25430,
+    "sha256": "2c55cfd100e9747dbf96ddfc994c4f6e9ea6d99aae3f55b28665c9e204430cf3",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Split-Air-Conditioning.webp",
+    "localPath": "/images/services/split-air-conditioning-0bf7b3a9.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Compare features and specifications of our split AC models.",
+    "status": "downloaded",
+    "bytes": 2524,
+    "sha256": "082dcf353d33cc0aab823046861c085914e21c4ef9cf5723b0c6a5bfa02721bb",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Technician-inspecting-industrial-AC-unit.webp",
+    "localPath": "/images/services/technician-inspecting-industrial-ac-unit-778601a8.webp",
+    "width": 1024,
+    "height": 480,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/services/"
+    ],
+    "alt": "AC technician inspecting commercial air conditioning unit | AC service in Dubai",
+    "status": "downloaded",
+    "bytes": 79574,
+    "sha256": "88872d6227f9cef8bd3b00a07fdb8b0e87fada80e6fa7c45355928714a505f5a",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Ventilation-System.webp",
+    "localPath": "/images/services/ventilation-system-464c5b1e.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Efficient ventilation system for improved indoor air quality",
+    "status": "downloaded",
+    "bytes": 14774,
+    "sha256": "3749dd73671fae2a49ab2ba7f549938d6f3e21178b32962b79200f4a1ff457f7",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Window-Air-Conditioning.webp",
+    "localPath": "/images/services/window-air-conditioning-a8c93bf7.webp",
+    "width": 350,
+    "height": 250,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/page-sitemap.xml",
+      "https://acexperts.ae/products/"
+    ],
+    "alt": "Efficient window air conditioner for cooling your room",
+    "status": "downloaded",
+    "bytes": 8948,
+    "sha256": "6263f85903c08ec84aba03106370e727c085de367e9f8f9dae93340b45bfe9a0",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/08/Woman-relaxing-under-AC-in-living-room-ac-repair.webp",
+    "localPath": "/images/gallery/woman-relaxing-under-ac-in-living-room-ac-repair-e8c814a4.webp",
+    "width": 225,
+    "height": 240,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "AC Repair | AC Repairing in Dubai",
+    "status": "downloaded",
+    "bytes": 3910,
+    "sha256": "61d72d1c2447b450d9196b07ee3aa1dd8c3fee0b449a30aa99ace46d80c62a93",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/10/Top-Benefits-of-Regular-AC-Maintenance-for-Dubai-Homes-1024x639.webp",
+    "localPath": "/images/blog/top-benefits-of-regular-ac-maintenance-for-dubai-homes-1024x639-05c4c3bd.webp",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/uncategorized/page/2/"
+    ],
+    "alt": "Top Benefits of Regular AC Maintenance for Dubai Homes",
+    "status": "downloaded",
+    "bytes": 16382,
+    "sha256": "54b2db16bacec36da7339e11dc14d23b2127752ee4992b19e64384d28b167d80",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/10/Top-Benefits-of-Regular-AC-Maintenance-for-Dubai-Homes-scaled.webp",
+    "localPath": "/images/blog/top-benefits-of-regular-ac-maintenance-for-dubai-homes-scaled-a59a0e2c.webp",
+    "width": 2560,
+    "height": 1599,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/post-sitemap.xml",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/"
+    ],
+    "alt": "Top Benefits of Regular AC Maintenance for Dubai Homes",
+    "status": "downloaded",
+    "bytes": 45858,
+    "sha256": "43a052f14609ced0d370ca294e66c6581ab28a2d0bce913d3729ca484fd3d300",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/10/WhatsApp-Image-2024-11-18-at-2.45.34-PM-1024x639.jpeg",
+    "localPath": "/images/blog/whatsapp-image-2024-11-18-at-2-45-34-pm-1024x639-5389b964.jpeg",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/uncategorized/page/2/"
+    ],
+    "alt": "Best AC Maintenance Company in Dubai",
+    "status": "downloaded",
+    "bytes": 29517,
+    "sha256": "caf8adc72f33fe7aaf69ac6dac72736e47c1dbb4063f44e5970ea06cc8277e93",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2024/10/WhatsApp-Image-2024-11-18-at-2.45.34-PM.jpeg",
+    "localPath": "/images/blog/whatsapp-image-2024-11-18-at-2-45-34-pm-59936e5f.jpeg",
+    "width": 1600,
+    "height": 999,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "Best AC Maintenance Company in Dubai",
+    "status": "downloaded",
+    "bytes": 57520,
+    "sha256": "2264ecddbe5c82080980ab0ef8850f85cda44a8a894840fb4374ef416f7b3fd3",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/01/1-31-1-1024x640.jpg",
+    "localPath": "/images/blog/1-31-1-1024x640-1ec3d075.jpg",
+    "width": 1024,
+    "height": 640,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/uncategorized/page/2/"
+    ],
+    "alt": "Why Choose Us for Your AC Repair and Maintenance Needs",
+    "status": "downloaded",
+    "bytes": 34988,
+    "sha256": "b74861d6ddf12d365526a1da7e3126d5ea2a0aaee1d7cb602f5097533f62c75e",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/01/1-31-1-scaled.jpg",
+    "localPath": "/images/blog/1-31-1-scaled-fe28220d.jpg",
+    "width": 2560,
+    "height": 1599,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/post-sitemap.xml",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "Why Choose Us for Your AC Repair and Maintenance Needs",
+    "status": "downloaded",
+    "bytes": 124125,
+    "sha256": "c032c17bcc766f61afcf94d0e7435b83cd83381c597c30bf8905295948bfbe8a",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/02/banner-side.webp",
+    "localPath": "/images/hero/banner-side-c7785b5c.webp",
+    "width": 800,
+    "height": 820,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/"
+    ],
+    "alt": "",
+    "status": "downloaded",
+    "bytes": 51234,
+    "sha256": "17e6790930047a7065866d3701e356bba0753527c4b1f8b1aeafdf610511806c",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/02/fevicon.png",
+    "localPath": "/icons/fevicon-d71d1fce.png",
+    "width": 65,
+    "height": 65,
+    "type": "icon",
+    "pages": [
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "Picture of Maries",
+    "status": "downloaded",
+    "bytes": 1435,
+    "sha256": "f97411ff7d6078cc758063cb7a863ce14eda63003da97d0c525e2ce07bc95c8a",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/02/slider-voltronix-1.png",
+    "localPath": "/images/hero/slider-voltronix-1-3c556dd6.png",
+    "width": 1046,
+    "height": 750,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "Book a call | Acexperts",
+    "status": "downloaded",
+    "bytes": 49155,
+    "sha256": "dc6a097db4f540522efd876cb5cd5fff53174ac1a0574d9bcca53a3e5d935cd8",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/02/worker-acexperts01.webp",
+    "localPath": "/images/hero/worker-acexperts01-2600a61d.webp",
+    "width": 720,
+    "height": 1080,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "AC Repair Expert | AC Expert",
+    "status": "downloaded",
+    "bytes": 45844,
+    "sha256": "59726fd224bba6af8cf1d397d2228f54e94dbeab23099d44945c853c05752b65",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/02/worker-acexperts03-768x787.webp",
+    "localPath": "/images/hero/worker-acexperts03-768x787-4443c7e0.webp",
+    "width": 768,
+    "height": 787,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/page-sitemap.xml"
+    ],
+    "alt": "AC Repair Dubai | worker",
+    "status": "downloaded",
+    "bytes": 44082,
+    "sha256": "63fb9c0330f7fb4735ba7f5501dba3fbbb44340e4bf377bc4f1f272f27854c30",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/04/10-Ways-to-Save-Money-on-Your-Energy-Bill-This-Summer-1024x640.jpg",
+    "localPath": "/images/blog/10-ways-to-save-money-on-your-energy-bill-this-summer-1024x640-3080c94d.jpg",
+    "width": 1024,
+    "height": 640,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/acexpertdubai/"
+    ],
+    "alt": "Save Money on Energy Bill | 10 Ways to Save on Energy Bills",
+    "status": "downloaded",
+    "bytes": 27176,
+    "sha256": "7b705b9239b1dc3d41844238a3d8fa8f750248b10ba74bdb5846148262d0e8e2",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/04/10-Ways-to-Save-Money-on-Your-Energy-Bill-This-Summer-scaled.jpg",
+    "localPath": "/images/blog/10-ways-to-save-money-on-your-energy-bill-this-summer-scaled-ca98003a.jpg",
+    "width": 2560,
+    "height": 1599,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "Save Money on Energy Bill | 10 Ways to Save on Energy Bills",
+    "status": "downloaded",
+    "bytes": 99236,
+    "sha256": "bd30ab53558edbf5902b057d9d879a7b4588b2dd0cd335243045212c01df0b75",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/05/Common-Emergency-AC-Issues-We-Fix-1024x640.webp",
+    "localPath": "/images/blog/common-emergency-ac-issues-we-fix-1024x640-58e0190a.webp",
+    "width": 1024,
+    "height": 640,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/acrepairing/"
+    ],
+    "alt": "Common-Emergency-AC-Issues-We-Fix",
+    "status": "downloaded",
+    "bytes": 27528,
+    "sha256": "d4fcfad5c4412b66b7bc39c90ab9a10721f4e16e7f57b6ae54689f7b0a6a8377",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/05/Common-Emergency-AC-Issues-We-Fix-scaled.webp",
+    "localPath": "/images/blog/common-emergency-ac-issues-we-fix-scaled-1d5368f4.webp",
+    "width": 2560,
+    "height": 1600,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "Common-Emergency-AC-Issues-We-Fix",
+    "status": "downloaded",
+    "bytes": 67314,
+    "sha256": "e31a719e8580adb1a10965d90ceba7d4736d7e33af1bf16096f044e106c010bc",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/06/7-Clear-Signs-You-Need-AC-Repair-Service-1024x640.jpg",
+    "localPath": "/images/blog/7-clear-signs-you-need-ac-repair-service-1024x640-a5cc105d.jpg",
+    "width": 1024,
+    "height": 640,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/uncategorized/page/2/"
+    ],
+    "alt": "7 Clear Signs You Need AC Repair Service",
+    "status": "downloaded",
+    "bytes": 22966,
+    "sha256": "1e5adf9c5ef413f509dad640ab4d9d8b2f84a41fa85913b22cdd97f5d4e6591e",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/06/7-Clear-Signs-You-Need-AC-Repair-Service-scaled.jpg",
+    "localPath": "/images/blog/7-clear-signs-you-need-ac-repair-service-scaled-0b7f22bf.jpg",
+    "width": 2560,
+    "height": 1600,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "7 Clear Signs You Need AC Repair Service",
+    "status": "downloaded",
+    "bytes": 77414,
+    "sha256": "a32e0e55d685e01594bbb2ea9e551a74467f7dfc7b278b749927c2d773278cec",
+    "mime": "image/jpeg"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/08/How-to-Choose-the-Right-AC-Size-for-Your-Room-1024x640.webp",
+    "localPath": "/images/blog/how-to-choose-the-right-ac-size-for-your-room-1024x640-1db543c3.webp",
+    "width": 1024,
+    "height": 640,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/page/2/",
+      "https://acexperts.ae/category/acservices/"
+    ],
+    "alt": "How to Choose the Right AC Size for Your Room",
+    "status": "downloaded",
+    "bytes": 34254,
+    "sha256": "5a728d3198e7db9a8b5d67513cc0675fe2b4c4fbc116e63257f34905cca03556",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/08/How-to-Choose-the-Right-AC-Size-for-Your-Room-scaled.webp",
+    "localPath": "/images/blog/how-to-choose-the-right-ac-size-for-your-room-scaled-4686c1b6.webp",
+    "width": 2560,
+    "height": 1600,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "How to Choose the Right AC Size for Your Room",
+    "status": "downloaded",
+    "bytes": 130944,
+    "sha256": "743f39993920e736ab103d4b1b3e6efbf3d4e0f104bbd9ffad38591689c0f4ed",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/09/How-Many-Times-a-Year-to-Clean-AC-Ducts-1024x640.webp",
+    "localPath": "/images/blog/how-many-times-a-year-to-clean-ac-ducts-1024x640-0cfc5473.webp",
+    "width": 1024,
+    "height": 640,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/acexpertdubai/"
+    ],
+    "alt": "How Many Times a Year to Clean AC Ducts",
+    "status": "downloaded",
+    "bytes": 19900,
+    "sha256": "5a5ecc10dda67cf2e4f5c29db8f111914cb2e1c4a2b69d65c37d0194749bb2b9",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/09/How-Many-Times-a-Year-to-Clean-AC-Ducts-scaled.webp",
+    "localPath": "/images/blog/how-many-times-a-year-to-clean-ac-ducts-scaled-cb4df580.webp",
+    "width": 2560,
+    "height": 1600,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "How Many Times a Year to Clean AC Ducts",
+    "status": "downloaded",
+    "bytes": 57630,
+    "sha256": "eacd1245d003548d5bc9cba0ac404155d8c740ec60665004ab8437ae8ed66550",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/10/Benefits-of-Installing-a-VRF-AC-System-in-Your-Building-1024x639.webp",
+    "localPath": "/images/blog/benefits-of-installing-a-vrf-ac-system-in-your-building-1024x639-6bb54f16.webp",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/acservices/"
+    ],
+    "alt": "Benefits of Installing a VRF AC System in Your Building",
+    "status": "downloaded",
+    "bytes": 35344,
+    "sha256": "4cb751fd306e60a2d9fc2adc338772443383540e6b32472a69ab7dcf78c6700c",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/10/Benefits-of-Installing-a-VRF-AC-System-in-Your-Building-scaled.webp",
+    "localPath": "/images/blog/benefits-of-installing-a-vrf-ac-system-in-your-building-scaled-dc5c317c.webp",
+    "width": 2560,
+    "height": 1599,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "Benefits of Installing a VRF AC System in Your Building",
+    "status": "downloaded",
+    "bytes": 102540,
+    "sha256": "ddbce52fe6256128209478697465c7841523f2dd5d2fdfd5fd1f8ce564eb26ab",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/11/Commercial-AC-Installation-Guide-1024x640.webp",
+    "localPath": "/images/blog/commercial-ac-installation-guide-1024x640-b120722f.webp",
+    "width": 1024,
+    "height": 640,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/acexpertdubai/"
+    ],
+    "alt": "Commercial AC Installation Guide",
+    "status": "downloaded",
+    "bytes": 21180,
+    "sha256": "67206d3b5ee5621bf46834765208bfb8817e827db4b09093e121e075c0a24f63",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/11/Commercial-AC-Installation-Guide-scaled.webp",
+    "localPath": "/images/blog/commercial-ac-installation-guide-scaled-22f95417.webp",
+    "width": 2560,
+    "height": 1599,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "Commercial AC Installation Guide",
+    "status": "downloaded",
+    "bytes": 68526,
+    "sha256": "9a9d2e59378beaac90aa485442fb7cdce0f6b3d61eff6586f7d352ffc3949731",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/12/AC-Repair-vs.-AC-Maintenance-What-Dubai-Residents-Should-Know-1024x639.webp",
+    "localPath": "/images/blog/ac-repair-vs--ac-maintenance-what-dubai-residents-should-know-1024x639-c32770d9.webp",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/acexpertdubai/",
+      "https://acexperts.ae/category/uncategorized/"
+    ],
+    "alt": "AC Repair vs. AC Maintenance What Dubai Residents Should Know",
+    "status": "downloaded",
+    "bytes": 21976,
+    "sha256": "d5e1e5ff1ef0cdafac12915e21a5bcc8cf08c13c825139900ab652a82bb6ceb5",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2025/12/AC-Repair-vs.-AC-Maintenance-What-Dubai-Residents-Should-Know-scaled.webp",
+    "localPath": "/images/blog/ac-repair-vs--ac-maintenance-what-dubai-residents-should-know-scaled-c458a50d.webp",
+    "width": 2560,
+    "height": 1598,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "AC Repair vs. AC Maintenance What Dubai Residents Should Know",
+    "status": "downloaded",
+    "bytes": 58408,
+    "sha256": "d621edae33a7756d94b4d0b9b59d8033ddea3de4963b741438d5f430c2c7acb6",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/01/AC-duct-problems-1024x639.webp",
+    "localPath": "/images/blog/ac-duct-problems-1024x639-d826ab76.webp",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/acrepairing/"
+    ],
+    "alt": "Common AC Duct Problems and How Professional Services Fix Them",
+    "status": "downloaded",
+    "bytes": 17312,
+    "sha256": "93be215bddc6b8fea98e11265365d54c2243186f375ac6b8f5725cfb8ef6ff25",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/01/AC-duct-problems-scaled.webp",
+    "localPath": "/images/blog/ac-duct-problems-scaled-71e78883.webp",
+    "width": 2560,
+    "height": 1598,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "Common AC Duct Problems and How Professional Services Fix Them",
+    "status": "downloaded",
+    "bytes": 47742,
+    "sha256": "a1ec365381c3da12c7c067380e449cb184a5fbc5d091bbbad301c99d47826c1a",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/02/Your-Complete-Guide-to-AC-Maintenance-in-UAE-1024x639.webp",
+    "localPath": "/images/blog/your-complete-guide-to-ac-maintenance-in-uae-1024x639-7d5adb9d.webp",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/repairing/"
+    ],
+    "alt": "Your Complete Guide to AC Maintenance in UAE: Tips, Tricks, and Expert Advice",
+    "status": "downloaded",
+    "bytes": 20050,
+    "sha256": "54dff49d95dd7aabcaaa071311eea80266654a9d16ef81c9dd3081b591903480",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/02/Your-Complete-Guide-to-AC-Maintenance-in-UAE-scaled.webp",
+    "localPath": "/images/blog/your-complete-guide-to-ac-maintenance-in-uae-scaled-7447e4f5.webp",
+    "width": 2560,
+    "height": 1598,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "Your Complete Guide to AC Maintenance in UAE: Tips, Tricks, and Expert Advice",
+    "status": "downloaded",
+    "bytes": 59786,
+    "sha256": "4106bc9d6f0af80176448f9ed8a12525fd21d80e1eaa4137a56c7dc064fc4959",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/03/Featured-image-Voltronix-1.webp",
+    "localPath": "/images/blog/featured-image-voltronix-1-311f7cae.webp",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/post-sitemap.xml",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "AC Experts Tips for Keeping Your Cooling System Efficient",
+    "status": "downloaded",
+    "bytes": 15082,
+    "sha256": "542725c24a452da88820f70ea9450705240d58bacdd4c3d64bf25b9f27763162",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/04/From-Installation-to-Maintenance-The-Complete-AC-Guide-for-New-Dubai-Residents.png",
+    "localPath": "/images/blog/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents-e1b40893.png",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/repairing/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/post-sitemap.xml",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "From Installation to Maintenance: The Complete AC Guide for New Dubai Residents",
+    "status": "downloaded",
+    "bytes": 11061,
+    "sha256": "8c8a33e62f0310ca116c0358bcf7925954e310107591d3492732e78df47cc138",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/05/10-Important-Questions-to-Ask-Before-Signing-an-AC-Maintenance-Contract-in-Dubai-Featured-image-Voltronix-.png",
+    "localPath": "/images/blog/10-important-questions-to-ask-before-signing-an-ac-maintenance-contract-in-dubai-featured-image-voltronix-6929ebbb.png",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/repairing/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/post-sitemap.xml",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "10 Important Questions to Ask Before Signing an AC Maintenance Contract in Dubai",
+    "status": "downloaded",
+    "bytes": 20109,
+    "sha256": "7376deadb6d98eee9626e892b584f14536d7310cf0d48d24f4001c2190e3f957",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/06/The-Benefits-of-Professional-HVAC-Inspections-for-Dubai-Commercial-Properties-Voltronix.png",
+    "localPath": "/images/blog/the-benefits-of-professional-hvac-inspections-for-dubai-commercial-properties-voltronix-6d47df7e.png",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/repairing/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/post-sitemap.xml",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "The Benefits of Professional HVAC Inspections for Dubai Commercial Properties",
+    "status": "downloaded",
+    "bytes": 39259,
+    "sha256": "e419093edbf55981f1078277fc1f042446af3869dcdca7ac5f4ab1a1e4ef97b7",
+    "mime": "image/png"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/08/Hidden-Reasons-Your-AC-Is-Not-Cooling-in-Dubai-Weather-1024x639.webp",
+    "localPath": "/images/blog/hidden-reasons-your-ac-is-not-cooling-in-dubai-weather-1024x639-b03908b3.webp",
+    "width": 1024,
+    "height": 639,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/uncategorized/",
+      "https://acexperts.ae/category/uncategorized/repairing/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "AC not cooling properly in Dubai weather | acexperts",
+    "status": "downloaded",
+    "bytes": 26610,
+    "sha256": "950fabaa9bd309a478c4f6faed7d9ef98189081c888faecd114a6dc61c30d3e4",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/08/Hidden-Reasons-Your-AC-Is-Not-Cooling-in-Dubai-Weather.webp",
+    "localPath": "/images/blog/hidden-reasons-your-ac-is-not-cooling-in-dubai-weather-af153955.webp",
+    "width": 1231,
+    "height": 768,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "AC not cooling properly in Dubai weather | acexperts",
+    "status": "downloaded",
+    "bytes": 53966,
+    "sha256": "8fbca7c0d26aa4f40cabf2c9875a2aa893563a662463d2bdf33c7c9cdb9a56fb",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/09/AC-compressor-problems-in-Dubai-and-expert-repair-solutions-1024x638.webp",
+    "localPath": "/images/blog/ac-compressor-problems-in-dubai-and-expert-repair-solutions-1024x638-ee1d3c96.webp",
+    "width": 1024,
+    "height": 638,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/",
+      "https://acexperts.ae/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "https://acexperts.ae/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "https://acexperts.ae/7-clear-signs-you-need-ac-repair-service/",
+      "https://acexperts.ae/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "https://acexperts.ae/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "https://acexperts.ae/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "https://acexperts.ae/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "https://acexperts.ae/benefits-of-installing-a-vrf-ac-systems/",
+      "https://acexperts.ae/blog/",
+      "https://acexperts.ae/category/acrepairing/",
+      "https://acexperts.ae/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "https://acexperts.ae/common-emergency-ac-issues-we-fix/",
+      "https://acexperts.ae/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "https://acexperts.ae/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "https://acexperts.ae/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "https://acexperts.ae/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "https://acexperts.ae/how-many-times-a-year-to-clean-ac-ducts/",
+      "https://acexperts.ae/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "https://acexperts.ae/how-to-choose-best-ac-maintenance-company-dubai/",
+      "https://acexperts.ae/how-to-choose-the-right-ac-size-for-your-room/",
+      "https://acexperts.ae/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "https://acexperts.ae/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "https://acexperts.ae/top-benefits-of-ac-maintenance-dubai/",
+      "https://acexperts.ae/why-choose-us-for-your-ac-repair-and-maintenance-needs/"
+    ],
+    "alt": "AC compressor problems in Dubai and expert repair solutions",
+    "status": "downloaded",
+    "bytes": 19614,
+    "sha256": "dd44b4d4b19d1d86cae32cf22fc3e81ace11aae5a3c44841d84835f9c4304275",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://acexperts.ae/wp-content/uploads/2026/09/AC-compressor-problems-in-Dubai-and-expert-repair-solutions.webp",
+    "localPath": "/images/blog/ac-compressor-problems-in-dubai-and-expert-repair-solutions-fad692bc.webp",
+    "width": 1600,
+    "height": 997,
+    "type": "image",
+    "pages": [
+      "https://acexperts.ae/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "https://acexperts.ae/post-sitemap.xml"
+    ],
+    "alt": "AC compressor problems in Dubai and expert repair solutions",
+    "status": "downloaded",
+    "bytes": 49592,
+    "sha256": "dc33e95c8845fa74b1b08e745eaae9101ca334a62562033bc43ea614b12550d6",
+    "mime": "image/webp"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+    "localPath": "/fonts/roboto-latin.woff2",
+    "width": 0,
+    "height": 0,
+    "type": "font",
+    "pages": [
+      "All pages"
+    ],
+    "alt": "Roboto Latin variable, weights 100–900",
+    "status": "downloaded",
+    "bytes": 43136,
+    "sha256": "1404ca348bd75ef836f4dd8b6f2cc719458642d1237c368296b2fc652dca47dc",
+    "mime": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYoEf6HOpWw.woff2",
+    "localPath": "/fonts/zilla-slab-latin-700.woff2",
+    "width": 0,
+    "height": 0,
+    "type": "font",
+    "pages": [
+      "All pages"
+    ],
+    "alt": "Zilla Slab Latin 700",
+    "status": "downloaded",
+    "bytes": 26100,
+    "sha256": "896b6ebb8cd10aca90bdff88a5a1b648cbc0d50751740bd5a6d012007aef9ebe",
+    "mime": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYskZ6HOpWw.woff2",
+    "localPath": "/fonts/zilla-slab-latin-500.woff2",
+    "width": 0,
+    "height": 0,
+    "type": "font",
+    "pages": [
+      "All pages"
+    ],
+    "alt": "Zilla Slab Latin 500",
+    "status": "downloaded",
+    "bytes": 26468,
+    "sha256": "993eac5cf2c8439fc1d781e6de24bbac2885b089e9f170795b8bcad280ca4790",
+    "mime": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/zillaslab/v12/dFa5ZfeM_74wlPZtksIFYuUe6HOpWw.woff2",
+    "localPath": "/fonts/zilla-slab-latin-600.woff2",
+    "width": 0,
+    "height": 0,
+    "type": "font",
+    "pages": [
+      "All pages"
+    ],
+    "alt": "Zilla Slab Latin 600",
+    "status": "downloaded",
+    "bytes": 26472,
+    "sha256": "fd78ed94061d91a141bf6be05559398e21a3d8aab8f7e21594d434573fcf3305",
+    "mime": "font/woff2"
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/zillaslab/v12/dFa6ZfeM_74wlPZtksIFajo6_Q.woff2",
+    "localPath": "/fonts/zilla-slab-latin-400.woff2",
+    "width": 0,
+    "height": 0,
+    "type": "font",
+    "pages": [
+      "All pages"
+    ],
+    "alt": "Zilla Slab Latin 400",
+    "status": "downloaded",
+    "bytes": 26468,
+    "sha256": "ab2607313bc04e82a53aca235853a0b83463e99b3ae88b17cc963e371f8fe91c",
+    "mime": "font/woff2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "localPath": "/fonts/Roboto-OFL.txt",
+    "width": 0,
+    "height": 0,
+    "type": "license",
+    "pages": [
+      "Font licensing"
+    ],
+    "alt": "SIL Open Font License",
+    "status": "downloaded",
+    "bytes": 4394,
+    "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41",
+    "mime": "text/plain"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/zillaslab/OFL.txt",
+    "localPath": "/fonts/Zilla-Slab-OFL.txt",
+    "width": 0,
+    "height": 0,
+    "type": "license",
+    "pages": [
+      "Font licensing"
+    ],
+    "alt": "SIL Open Font License",
+    "status": "downloaded",
+    "bytes": 4342,
+    "sha256": "240b385d3ec8c8d5c1d4af2bbba6ac72bac0309a80c1a8ff112c168643cc6811",
+    "mime": "text/plain"
+  }
+]

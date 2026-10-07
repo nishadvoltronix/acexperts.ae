@@ -1,0 +1,17 @@
+{
+  "tool": "Built-in image_gen",
+  "prompts": [
+    {
+      "name": "skyline",
+      "prompt": "Use case: identity-preserve. Edit target: attached faint gray Dubai skyline line-art strip572×78. Restore the SAME architectural illustration at higher resolution: same buildings, positions, proportions and fine pale gray lines on white, same thin red strip at the bottom. Preserve its intentionally subtle light tone; do not darken, redesign or add buildings. Targetcanvas3072×1024. The original572×78image should scale uniformly to3072×419px CENTERED vertically (top302.5px white padding, bottom302.5px white padding). Do not stretch illustration vertically. Only the middle419px band contains the restored skyline, unchanged in appearance. Outside is pure white. No text, no newobjects."
+    },
+    {
+      "name": "samsung",
+      "prompt": "Use case: identity-preserve. Edit target: attached blue SAMSUNG wordmark65×15. Restore EXACT same blue upright condensed lettering, same letterforms/spacing/color, at high resolution; no ellipse or additions. Textverbatim \"SAMSUNG\". Preserveoriginaltypography. Targetcanvas1950×650. Uniformly map original65×15 to1950×450 centered vertically, leaving100px purewhite padding above/below. This extra padding is intentional: doNOTstretch lettering. Crisp smoothantialiasing, purewhitebackground. Nothingelse."
+    },
+    {
+      "name": "panasonic",
+      "prompt": "Use case: identity-preserve. Edit target: attached darkblue Panasonic wordmark65×15. Restore EXACT same lettering, case, spacing, boldletterforms and darkbluecolor at high resolution. Textverbatim \"Panasonic\". No slogan, no additionalmark. Targetcanvas1950×650. Uniformly map original65×15 to1950×450 centered vertically, leaving100px purewhitepadding above/below. This extra padding isintentional: doNOTstretchlettering. Crisp edges, purewhitebackground. Nothingelse."
+    }
+  ]
+}

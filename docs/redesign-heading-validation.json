@@ -1,0 +1,471 @@
+{
+  "date": "2026-10-05",
+  "baseUrl": "http://localhost:3100",
+  "scope": "All public routes, including headings in expandable content",
+  "routeCount": 46,
+  "allResponsesOk": true,
+  "allH1sPreserved": true,
+  "totalHeadingSkips": 0,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "h1s": [
+        "Best AC service company Dubai"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 12,
+      "skips": []
+    },
+    {
+      "route": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "status": 200,
+      "h1s": [
+        "10 Important Questions to Ask Before Signing an AC Maintenance Contract in Dubai"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 24,
+      "skips": []
+    },
+    {
+      "route": "/10-ways-to-save-money-on-your-energy-bill-this-summer/",
+      "status": 200,
+      "h1s": [
+        "10 Ways to Save Money on Your Energy Bill This Summer"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 43,
+      "skips": []
+    },
+    {
+      "route": "/7-clear-signs-you-need-ac-repair-service/",
+      "status": 200,
+      "h1s": [
+        "7 Clear Signs You Need AC Repair Service"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 43,
+      "skips": []
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "h1s": [
+        "Who We Are"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 39,
+      "skips": []
+    },
+    {
+      "route": "/ac-experts-tips-for-keeping-your-cooling-system-efficient/",
+      "status": 200,
+      "h1s": [
+        "AC Experts Tips for Keeping Your Cooling System Efficient"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 23,
+      "skips": []
+    },
+    {
+      "route": "/ac-installation-service/",
+      "status": 200,
+      "h1s": [
+        "AC Installation Service"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 6,
+      "skips": []
+    },
+    {
+      "route": "/ac-maintenance-for-villas-and-apartments-in-dubai/",
+      "status": 200,
+      "h1s": [
+        "AC Maintenance for Villas and Apartments in Dubai"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 20,
+      "skips": []
+    },
+    {
+      "route": "/ac-repair-services/",
+      "status": 200,
+      "h1s": [
+        "AC Repair Service"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 7,
+      "skips": []
+    },
+    {
+      "route": "/ac-repair-vs-ac-maintenance-what-dubai-residents-should-know/",
+      "status": 200,
+      "h1s": [
+        "AC Repair vs. AC Maintenance: What Dubai Residents Should Know"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 22,
+      "skips": []
+    },
+    {
+      "route": "/ac-safety-tips-for-dubai-homes-preventing-accidents-and-health-hazards/",
+      "status": 200,
+      "h1s": [
+        "AC Safety Tips for Dubai Homes – Preventing Accidents and Health Hazards"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 19,
+      "skips": []
+    },
+    {
+      "route": "/benefits-of-installing-a-vrf-ac-systems/",
+      "status": 200,
+      "h1s": [
+        "Benefits of Installing a VRF AC System in Your Building"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 31,
+      "skips": []
+    },
+    {
+      "route": "/blog/",
+      "status": 200,
+      "h1s": [
+        "Blog"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 14,
+      "skips": []
+    },
+    {
+      "route": "/blog/page/2/",
+      "status": 200,
+      "h1s": [
+        "Blog"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 14,
+      "skips": []
+    },
+    {
+      "route": "/category/acexpertdubai/",
+      "status": 200,
+      "h1s": [
+        "Ac Expert Dubai"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 6,
+      "skips": []
+    },
+    {
+      "route": "/category/acrepairing/",
+      "status": 200,
+      "h1s": [
+        "AC repairing"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 5,
+      "skips": []
+    },
+    {
+      "route": "/category/acservices/",
+      "status": 200,
+      "h1s": [
+        "Ac Services"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 4,
+      "skips": []
+    },
+    {
+      "route": "/category/maintenance/",
+      "status": 200,
+      "h1s": [
+        "Maintenance"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 7,
+      "skips": []
+    },
+    {
+      "route": "/category/uncategorized/",
+      "status": 200,
+      "h1s": [
+        "AC Expert Repair Services & Maintenance"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 9,
+      "skips": []
+    },
+    {
+      "route": "/category/uncategorized/page/2/",
+      "status": 200,
+      "h1s": [
+        "| Page 2 of 2 AC Expert Repair Services & Maintenance"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 9,
+      "skips": []
+    },
+    {
+      "route": "/category/uncategorized/repairing/",
+      "status": 200,
+      "h1s": [
+        "AC Repairing Experts Dubai, UAE"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 9,
+      "skips": []
+    },
+    {
+      "route": "/commercial-ac-installation-guide-for-offices-warehouses-retail/",
+      "status": 200,
+      "h1s": [
+        "The Ultimate Guide to Commercial AC Installation for Offices, Warehouses, and Retail Spaces"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 20,
+      "skips": []
+    },
+    {
+      "route": "/common-ac-compressor-problems-in-dubai-expert-fixes/",
+      "status": 200,
+      "h1s": [
+        "Common AC Compressor Problems in Dubai and How Experts Fix Them"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 35,
+      "skips": []
+    },
+    {
+      "route": "/common-ac-duct-problems-and-how-professional-services-fix-them/",
+      "status": 200,
+      "h1s": [
+        "Common AC Duct Problems and How Professional Services Fix Them"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 23,
+      "skips": []
+    },
+    {
+      "route": "/common-emergency-ac-issues-we-fix/",
+      "status": 200,
+      "h1s": [
+        "Common Emergency AC Issues We Fix"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 23,
+      "skips": []
+    },
+    {
+      "route": "/complete-guide-to-ac-maintenance-uae-tips-tricks-and-expert-advice/",
+      "status": 200,
+      "h1s": [
+        "Your Complete Guide to AC Maintenance in UAE: Tips, Tricks, and Expert Advice"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 23,
+      "skips": []
+    },
+    {
+      "route": "/contact-us/",
+      "status": 200,
+      "h1s": [
+        "Get in Touch With Acexperts"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 8,
+      "skips": []
+    },
+    {
+      "route": "/emergency-ac-maintenance-service/",
+      "status": 200,
+      "h1s": [
+        "Emergency AC Services"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 6,
+      "skips": []
+    },
+    {
+      "route": "/emergency-ac-repair-in-dubai-the-ultimate-solution-for-immediate-cooling-relief/",
+      "status": 200,
+      "h1s": [
+        "Emergency AC Repair in Dubai: The Ultimate Solution for Immediate Cooling Relief"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 21,
+      "skips": []
+    },
+    {
+      "route": "/faq/",
+      "status": 200,
+      "h1s": [
+        "FAQs – AC Repair and Maintenance by AC Experts"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 3,
+      "skips": []
+    },
+    {
+      "route": "/from-installation-to-maintenance-the-complete-ac-guide-for-new-dubai-residents/",
+      "status": 200,
+      "h1s": [
+        "From Installation to Maintenance: The Complete AC Guide for New Dubai Residents"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 27,
+      "skips": []
+    },
+    {
+      "route": "/hidden-reasons-your-ac-is-not-cooling-properly-in-dubai-weather/",
+      "status": 200,
+      "h1s": [
+        "Hidden Reasons Your AC Is Not Cooling Properly in Dubai Weather"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 19,
+      "skips": []
+    },
+    {
+      "route": "/how-many-times-a-year-to-clean-ac-ducts/",
+      "status": 200,
+      "h1s": [
+        "How Many Times a Year to Clean AC Ducts"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 20,
+      "skips": []
+    },
+    {
+      "route": "/how-regular-ac-maintenance-can-improve-your-indoor-air-quality/",
+      "status": 200,
+      "h1s": [
+        "How Regular AC Maintenance Can Improve Your Indoor Air Quality"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 26,
+      "skips": []
+    },
+    {
+      "route": "/how-to-choose-best-ac-maintenance-company-dubai/",
+      "status": 200,
+      "h1s": [
+        "How to Choose the Best AC Maintenance Company in Dubai for Reliable Service"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 23,
+      "skips": []
+    },
+    {
+      "route": "/how-to-choose-the-right-ac-size-for-your-room/",
+      "status": 200,
+      "h1s": [
+        "How to Choose the Right AC Size for Your Room?"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 21,
+      "skips": []
+    },
+    {
+      "route": "/preventive-ac-maintenance-service/",
+      "status": 200,
+      "h1s": [
+        "Preventive AC Maintenance Service Dubai"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 13,
+      "skips": []
+    },
+    {
+      "route": "/products/",
+      "status": 200,
+      "h1s": [
+        "Air Conditioning Products"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 16,
+      "skips": []
+    },
+    {
+      "route": "/project-portfolio/",
+      "status": 200,
+      "h1s": [
+        "Projects"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 3,
+      "skips": []
+    },
+    {
+      "route": "/project-portfolio/luxury-villa-ac-installation/",
+      "status": 200,
+      "h1s": [
+        "Luxury Villa – AC Installation"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 7,
+      "skips": []
+    },
+    {
+      "route": "/projects/",
+      "status": 200,
+      "h1s": [
+        "Our Recent Projects"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 3,
+      "skips": []
+    },
+    {
+      "route": "/services/",
+      "status": 200,
+      "h1s": [
+        "AC Installation"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 7,
+      "skips": []
+    },
+    {
+      "route": "/the-benefits-of-professional-hvac-inspections-for-dubai/",
+      "status": 200,
+      "h1s": [
+        "The Benefits of Professional HVAC Inspections for Dubai Commercial Properties"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 22,
+      "skips": []
+    },
+    {
+      "route": "/top-ac-repair-in-dubai-your-ultimate-guide/",
+      "status": 200,
+      "h1s": [
+        "Top AC Repair in Dubai- Your Ultimate Guide"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 30,
+      "skips": []
+    },
+    {
+      "route": "/top-benefits-of-ac-maintenance-dubai/",
+      "status": 200,
+      "h1s": [
+        "Top Benefits of Regular AC Maintenance for Dubai Homes"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 22,
+      "skips": []
+    },
+    {
+      "route": "/why-choose-us-for-your-ac-repair-and-maintenance-needs/",
+      "status": 200,
+      "h1s": [
+        "Why Choose Us for Your AC Repair and Maintenance Needs?"
+      ],
+      "h1MatchesSource": true,
+      "headingCount": 18,
+      "skips": []
+    }
+  ]
+}

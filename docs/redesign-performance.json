@@ -1,0 +1,85 @@
+{
+  "checkedAt": "2026-10-05T11:15:20.546Z",
+  "baseUrl": "http://localhost:3100",
+  "note": "Single cold browser-context samples from the local production build; lab measurements, not field Core Web Vitals. Mobile uses 4x CPU slowdown, 100ms network latency and 1.6Mbps download.",
+  "cases": [
+    {
+      "route": "/",
+      "viewport": "1440 desktop / unthrottled",
+      "lcpMs": 668,
+      "cls": 0,
+      "ttfbMs": 46,
+      "domContentLoadedMs": 78,
+      "loadMs": 420,
+      "transferBytes": 505814,
+      "scriptTransferBytes": 147757,
+      "requests": 32,
+      "externalRequests": []
+    },
+    {
+      "route": "/ac-installation-service/",
+      "viewport": "1440 desktop / unthrottled",
+      "lcpMs": 320,
+      "cls": 0,
+      "ttfbMs": 7,
+      "domContentLoadedMs": 36,
+      "loadMs": 325,
+      "transferBytes": 509522,
+      "scriptTransferBytes": 147757,
+      "requests": 29,
+      "externalRequests": []
+    },
+    {
+      "route": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "viewport": "1440 desktop / unthrottled",
+      "lcpMs": 336,
+      "cls": 0,
+      "ttfbMs": 17,
+      "domContentLoadedMs": 45,
+      "loadMs": 367,
+      "transferBytes": 540258,
+      "scriptTransferBytes": 147757,
+      "requests": 26,
+      "externalRequests": []
+    },
+    {
+      "route": "/",
+      "viewport": "390 mobile / throttled",
+      "lcpMs": 2900,
+      "cls": 0,
+      "ttfbMs": 6,
+      "domContentLoadedMs": 561,
+      "loadMs": 2875,
+      "transferBytes": 455958,
+      "scriptTransferBytes": 147757,
+      "requests": 20,
+      "externalRequests": []
+    },
+    {
+      "route": "/ac-installation-service/",
+      "viewport": "390 mobile / throttled",
+      "lcpMs": 1440,
+      "cls": 0,
+      "ttfbMs": 8,
+      "domContentLoadedMs": 535,
+      "loadMs": 2521,
+      "transferBytes": 491949,
+      "scriptTransferBytes": 147757,
+      "requests": 26,
+      "externalRequests": []
+    },
+    {
+      "route": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "viewport": "390 mobile / throttled",
+      "lcpMs": 1580,
+      "cls": 0.0001,
+      "ttfbMs": 6,
+      "domContentLoadedMs": 563,
+      "loadMs": 2504,
+      "transferBytes": 477419,
+      "scriptTransferBytes": 147757,
+      "requests": 21,
+      "externalRequests": []
+    }
+  ]
+}

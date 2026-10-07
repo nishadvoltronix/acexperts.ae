@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-05",
+  "baseUrl": "http://localhost:3100",
+  "route": "/about/",
+  "results": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "open": true,
+      "focusRetained": true,
+      "imageCount": 21,
+      "imageFailures": [],
+      "overflow": [],
+      "gallery": [
+        {
+          "gridWidth": 242,
+          "columnWidth": 242,
+          "columns": "242px",
+          "imageWidths": [
+            242,
+            242
+          ]
+        },
+        {
+          "gridWidth": 242,
+          "columnWidth": 242,
+          "columns": "242px",
+          "imageWidths": [
+            242,
+            242
+          ]
+        }
+      ],
+      "keyboardCloses": true
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "open": true,
+      "focusRetained": true,
+      "imageCount": 21,
+      "imageFailures": [],
+      "overflow": [],
+      "gallery": [
+        {
+          "gridWidth": 258.5,
+          "columnWidth": 258.5,
+          "columns": "258.5px",
+          "imageWidths": [
+            258.5,
+            258.5
+          ]
+        },
+        {
+          "gridWidth": 258.5,
+          "columnWidth": 258.5,
+          "columns": "258.5px",
+          "imageWidths": [
+            258.5,
+            258.5
+          ]
+        }
+      ],
+      "keyboardCloses": true
+    }
+  ]
+}

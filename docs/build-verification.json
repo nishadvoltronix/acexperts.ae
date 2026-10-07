@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-10-05T10:17:07.647Z",
+  "commands": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm audit --omit=dev",
+      "exitCode": 0
+    }
+  ],
+  "node": "v24.19.0",
+  "next": "^16.3.8",
+  "staticallyGeneratedContentPages": 46,
+  "developmentUrl": "http://localhost:3001",
+  "productionValidationUrl": "http://127.0.0.1:3100"
+}

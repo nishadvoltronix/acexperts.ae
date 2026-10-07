@@ -1,0 +1,3029 @@
+{
+  "checkedAt": "2026-10-05T11:00:03.100Z",
+  "baseUrl": "http://localhost:3001/",
+  "widths": [
+    390,
+    1440
+  ],
+  "cases": [
+    {
+      "type": "home",
+      "path": "/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1032.703125
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 390
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 390
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 760.53125
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 343.8125
+        },
+        {
+          "tag": "SPAN",
+          "class": "reference-art reference-cta cta-art",
+          "text": "",
+          "right": 395
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 443.046875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1154.484375
+        }
+      ],
+      "missingImages": [],
+      "design": {
+        "header": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/services/",
+            "Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "/faq/",
+            "Frequently Asked Questions"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 000224/7 Customer Support"
+          ]
+        ],
+        "footer": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "https://www.facebook.com/voltronixuae",
+            ""
+          ],
+          [
+            "https://www.instagram.com/vtnxllc",
+            ""
+          ],
+          [
+            "https://www.linkedin.com/company/voltronix-uae/",
+            ""
+          ],
+          [
+            "https://x.com/nstsllc",
+            ""
+          ],
+          [
+            "https://voltronix.ae",
+            "Contracting"
+          ],
+          [
+            "https://dewaapprovals.ae",
+            "DEWA Approvals"
+          ],
+          [
+            "https://switchgear.ae",
+            "Switchgear"
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "/services/",
+            "Our Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 0002"
+          ],
+          [
+            "mailto:info@voltronix.ae",
+            "info@voltronix.ae"
+          ],
+          [
+            "tel:+971502420957",
+            "+971 50 242 0957"
+          ],
+          [
+            "https://wa.me/971502420957",
+            "Contact AC Experts on WhatsApp"
+          ],
+          [
+            "/faq/",
+            "FAQs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ]
+        ],
+        "headerLogo": "/images/design/homepage-reference.jpeg",
+        "footerLogo": "/images/design/homepage-reference.jpeg",
+        "bodyFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "headingFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "primary": "#e5091b",
+        "background": "rgb(255, 255, 255)",
+        "text": "rgb(24, 24, 24)"
+      },
+      "performance": {
+        "domContentLoadedMs": 296.19999999925494,
+        "loadMs": 697.2999999970198,
+        "jsResources": 15,
+        "imageResources": 8
+      },
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/redesign/home-390.png"
+    },
+    {
+      "type": "10-important-questions-ask-before-signing-ac-maintenance-contract-dubai",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1032.703125
+        },
+        {
+          "tag": "SPAN",
+          "class": "reference-art reference-cta cta-art",
+          "text": "",
+          "right": 395
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 443.046875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1154.484375
+        }
+      ],
+      "missingImages": [],
+      "design": {
+        "header": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/services/",
+            "Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "/faq/",
+            "Frequently Asked Questions"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 000224/7 Customer Support"
+          ]
+        ],
+        "footer": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "https://www.facebook.com/voltronixuae",
+            ""
+          ],
+          [
+            "https://www.instagram.com/vtnxllc",
+            ""
+          ],
+          [
+            "https://www.linkedin.com/company/voltronix-uae/",
+            ""
+          ],
+          [
+            "https://x.com/nstsllc",
+            ""
+          ],
+          [
+            "https://voltronix.ae",
+            "Contracting"
+          ],
+          [
+            "https://dewaapprovals.ae",
+            "DEWA Approvals"
+          ],
+          [
+            "https://switchgear.ae",
+            "Switchgear"
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "/services/",
+            "Our Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 0002"
+          ],
+          [
+            "mailto:info@voltronix.ae",
+            "info@voltronix.ae"
+          ],
+          [
+            "tel:+971502420957",
+            "+971 50 242 0957"
+          ],
+          [
+            "https://wa.me/971502420957",
+            "Contact AC Experts on WhatsApp"
+          ],
+          [
+            "/faq/",
+            "FAQs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ]
+        ],
+        "headerLogo": "/images/design/homepage-reference.jpeg",
+        "footerLogo": "/images/design/homepage-reference.jpeg",
+        "bodyFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "headingFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "primary": "#e5091b",
+        "background": "rgb(255, 255, 255)",
+        "text": "rgb(24, 24, 24)"
+      },
+      "performance": {
+        "domContentLoadedMs": 275.3999999985099,
+        "loadMs": 480,
+        "jsResources": 15,
+        "imageResources": 7
+      },
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "ac-installation-service",
+      "path": "/ac-installation-service/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1032.703125
+        },
+        {
+          "tag": "SPAN",
+          "class": "reference-art reference-cta cta-art",
+          "text": "",
+          "right": 395
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 443.046875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1154.484375
+        }
+      ],
+      "missingImages": [],
+      "design": {
+        "header": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/services/",
+            "Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "/faq/",
+            "Frequently Asked Questions"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 000224/7 Customer Support"
+          ]
+        ],
+        "footer": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "https://www.facebook.com/voltronixuae",
+            ""
+          ],
+          [
+            "https://www.instagram.com/vtnxllc",
+            ""
+          ],
+          [
+            "https://www.linkedin.com/company/voltronix-uae/",
+            ""
+          ],
+          [
+            "https://x.com/nstsllc",
+            ""
+          ],
+          [
+            "https://voltronix.ae",
+            "Contracting"
+          ],
+          [
+            "https://dewaapprovals.ae",
+            "DEWA Approvals"
+          ],
+          [
+            "https://switchgear.ae",
+            "Switchgear"
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "/services/",
+            "Our Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 0002"
+          ],
+          [
+            "mailto:info@voltronix.ae",
+            "info@voltronix.ae"
+          ],
+          [
+            "tel:+971502420957",
+            "+971 50 242 0957"
+          ],
+          [
+            "https://wa.me/971502420957",
+            "Contact AC Experts on WhatsApp"
+          ],
+          [
+            "/faq/",
+            "FAQs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ]
+        ],
+        "headerLogo": "/images/design/homepage-reference.jpeg",
+        "footerLogo": "/images/design/homepage-reference.jpeg",
+        "bodyFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "headingFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "primary": "#e5091b",
+        "background": "rgb(255, 255, 255)",
+        "text": "rgb(24, 24, 24)"
+      },
+      "performance": {
+        "domContentLoadedMs": 322.1000000014901,
+        "loadMs": 345.9000000022352,
+        "jsResources": 15,
+        "imageResources": 1
+      },
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact-us",
+      "path": "/contact-us/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1032.703125
+        },
+        {
+          "tag": "SPAN",
+          "class": "reference-art reference-cta cta-art",
+          "text": "",
+          "right": 395
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 443.046875
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1154.484375
+        }
+      ],
+      "missingImages": [],
+      "design": {
+        "header": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/services/",
+            "Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "/faq/",
+            "Frequently Asked Questions"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 000224/7 Customer Support"
+          ]
+        ],
+        "footer": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "https://www.facebook.com/voltronixuae",
+            ""
+          ],
+          [
+            "https://www.instagram.com/vtnxllc",
+            ""
+          ],
+          [
+            "https://www.linkedin.com/company/voltronix-uae/",
+            ""
+          ],
+          [
+            "https://x.com/nstsllc",
+            ""
+          ],
+          [
+            "https://voltronix.ae",
+            "Contracting"
+          ],
+          [
+            "https://dewaapprovals.ae",
+            "DEWA Approvals"
+          ],
+          [
+            "https://switchgear.ae",
+            "Switchgear"
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "/services/",
+            "Our Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 0002"
+          ],
+          [
+            "mailto:info@voltronix.ae",
+            "info@voltronix.ae"
+          ],
+          [
+            "tel:+971502420957",
+            "+971 50 242 0957"
+          ],
+          [
+            "https://wa.me/971502420957",
+            "Contact AC Experts on WhatsApp"
+          ],
+          [
+            "/faq/",
+            "FAQs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ]
+        ],
+        "headerLogo": "/images/design/homepage-reference.jpeg",
+        "footerLogo": "/images/design/homepage-reference.jpeg",
+        "bodyFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "headingFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "primary": "#e5091b",
+        "background": "rgb(255, 255, 255)",
+        "text": "rgb(24, 24, 24)"
+      },
+      "performance": {
+        "domContentLoadedMs": 487.79999999701977,
+        "loadMs": 572.7999999970198,
+        "jsResources": 15,
+        "imageResources": 10
+      },
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1440
+        },
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1442.09375
+        }
+      ],
+      "missingImages": [],
+      "design": {
+        "header": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/services/",
+            "Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "/faq/",
+            "Frequently Asked Questions"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 000224/7 Customer Support"
+          ]
+        ],
+        "footer": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "https://www.facebook.com/voltronixuae",
+            ""
+          ],
+          [
+            "https://www.instagram.com/vtnxllc",
+            ""
+          ],
+          [
+            "https://www.linkedin.com/company/voltronix-uae/",
+            ""
+          ],
+          [
+            "https://x.com/nstsllc",
+            ""
+          ],
+          [
+            "https://voltronix.ae",
+            "Contracting"
+          ],
+          [
+            "https://dewaapprovals.ae",
+            "DEWA Approvals"
+          ],
+          [
+            "https://switchgear.ae",
+            "Switchgear"
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "/services/",
+            "Our Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 0002"
+          ],
+          [
+            "mailto:info@voltronix.ae",
+            "info@voltronix.ae"
+          ],
+          [
+            "tel:+971502420957",
+            "+971 50 242 0957"
+          ],
+          [
+            "https://wa.me/971502420957",
+            "Contact AC Experts on WhatsApp"
+          ],
+          [
+            "/faq/",
+            "FAQs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ]
+        ],
+        "headerLogo": "/images/design/homepage-reference.jpeg",
+        "footerLogo": "/images/design/homepage-reference.jpeg",
+        "bodyFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "headingFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "primary": "#e5091b",
+        "background": "rgb(255, 255, 255)",
+        "text": "rgb(24, 24, 24)"
+      },
+      "performance": {
+        "domContentLoadedMs": 338.4000000022352,
+        "loadMs": 395,
+        "jsResources": 15,
+        "imageResources": 8
+      },
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/redesign/home-1440.png"
+    },
+    {
+      "type": "10-important-questions-ask-before-signing-ac-maintenance-contract-dubai",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1442.09375
+        }
+      ],
+      "missingImages": [],
+      "design": {
+        "header": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/services/",
+            "Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "/faq/",
+            "Frequently Asked Questions"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 000224/7 Customer Support"
+          ]
+        ],
+        "footer": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "https://www.facebook.com/voltronixuae",
+            ""
+          ],
+          [
+            "https://www.instagram.com/vtnxllc",
+            ""
+          ],
+          [
+            "https://www.linkedin.com/company/voltronix-uae/",
+            ""
+          ],
+          [
+            "https://x.com/nstsllc",
+            ""
+          ],
+          [
+            "https://voltronix.ae",
+            "Contracting"
+          ],
+          [
+            "https://dewaapprovals.ae",
+            "DEWA Approvals"
+          ],
+          [
+            "https://switchgear.ae",
+            "Switchgear"
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "/services/",
+            "Our Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 0002"
+          ],
+          [
+            "mailto:info@voltronix.ae",
+            "info@voltronix.ae"
+          ],
+          [
+            "tel:+971502420957",
+            "+971 50 242 0957"
+          ],
+          [
+            "https://wa.me/971502420957",
+            "Contact AC Experts on WhatsApp"
+          ],
+          [
+            "/faq/",
+            "FAQs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ]
+        ],
+        "headerLogo": "/images/design/homepage-reference.jpeg",
+        "footerLogo": "/images/design/homepage-reference.jpeg",
+        "bodyFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "headingFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "primary": "#e5091b",
+        "background": "rgb(255, 255, 255)",
+        "text": "rgb(24, 24, 24)"
+      },
+      "performance": {
+        "domContentLoadedMs": 386.3999999985099,
+        "loadMs": 447.1000000014901,
+        "jsResources": 15,
+        "imageResources": 7
+      },
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/redesign/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai-1440.png"
+    },
+    {
+      "type": "ac-installation-service",
+      "path": "/ac-installation-service/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1442.09375
+        }
+      ],
+      "missingImages": [],
+      "design": {
+        "header": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/services/",
+            "Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "/faq/",
+            "Frequently Asked Questions"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 000224/7 Customer Support"
+          ]
+        ],
+        "footer": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "https://www.facebook.com/voltronixuae",
+            ""
+          ],
+          [
+            "https://www.instagram.com/vtnxllc",
+            ""
+          ],
+          [
+            "https://www.linkedin.com/company/voltronix-uae/",
+            ""
+          ],
+          [
+            "https://x.com/nstsllc",
+            ""
+          ],
+          [
+            "https://voltronix.ae",
+            "Contracting"
+          ],
+          [
+            "https://dewaapprovals.ae",
+            "DEWA Approvals"
+          ],
+          [
+            "https://switchgear.ae",
+            "Switchgear"
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "/services/",
+            "Our Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 0002"
+          ],
+          [
+            "mailto:info@voltronix.ae",
+            "info@voltronix.ae"
+          ],
+          [
+            "tel:+971502420957",
+            "+971 50 242 0957"
+          ],
+          [
+            "https://wa.me/971502420957",
+            "Contact AC Experts on WhatsApp"
+          ],
+          [
+            "/faq/",
+            "FAQs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ]
+        ],
+        "headerLogo": "/images/design/homepage-reference.jpeg",
+        "footerLogo": "/images/design/homepage-reference.jpeg",
+        "bodyFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "headingFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "primary": "#e5091b",
+        "background": "rgb(255, 255, 255)",
+        "text": "rgb(24, 24, 24)"
+      },
+      "performance": {
+        "domContentLoadedMs": 304.8999999985099,
+        "loadMs": 355.8999999985099,
+        "jsResources": 15,
+        "imageResources": 1
+      },
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/redesign/ac-installation-service-1440.png"
+    },
+    {
+      "type": "contact-us",
+      "path": "/contact-us/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "",
+          "text": "",
+          "right": 1442.09375
+        }
+      ],
+      "missingImages": [],
+      "design": {
+        "header": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/services/",
+            "Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "/faq/",
+            "Frequently Asked Questions"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 000224/7 Customer Support"
+          ]
+        ],
+        "footer": [
+          [
+            "/",
+            ""
+          ],
+          [
+            "https://www.facebook.com/voltronixuae",
+            ""
+          ],
+          [
+            "https://www.instagram.com/vtnxllc",
+            ""
+          ],
+          [
+            "https://www.linkedin.com/company/voltronix-uae/",
+            ""
+          ],
+          [
+            "https://x.com/nstsllc",
+            ""
+          ],
+          [
+            "https://voltronix.ae",
+            "Contracting"
+          ],
+          [
+            "https://dewaapprovals.ae",
+            "DEWA Approvals"
+          ],
+          [
+            "https://switchgear.ae",
+            "Switchgear"
+          ],
+          [
+            "/",
+            "Home"
+          ],
+          [
+            "/about/",
+            "About Us"
+          ],
+          [
+            "/#why-us",
+            "Why Us"
+          ],
+          [
+            "/blog/",
+            "Blogs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ],
+          [
+            "/services/",
+            "Our Services"
+          ],
+          [
+            "/ac-installation-service/",
+            "AC Installation"
+          ],
+          [
+            "/preventive-ac-maintenance-service/",
+            "Preventive AC Maintenance"
+          ],
+          [
+            "/ac-repair-services/",
+            "AC Repair Services"
+          ],
+          [
+            "/emergency-ac-maintenance-service/",
+            "Emergency AC Maintenance"
+          ],
+          [
+            "/projects/",
+            "Our Projects"
+          ],
+          [
+            "/products/",
+            "Products"
+          ],
+          [
+            "tel:+97148240002",
+            "+971 4 824 0002"
+          ],
+          [
+            "mailto:info@voltronix.ae",
+            "info@voltronix.ae"
+          ],
+          [
+            "tel:+971502420957",
+            "+971 50 242 0957"
+          ],
+          [
+            "https://wa.me/971502420957",
+            "Contact AC Experts on WhatsApp"
+          ],
+          [
+            "/faq/",
+            "FAQs"
+          ],
+          [
+            "/contact-us/",
+            "Contact Us"
+          ]
+        ],
+        "headerLogo": "/images/design/homepage-reference.jpeg",
+        "footerLogo": "/images/design/homepage-reference.jpeg",
+        "bodyFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "headingFont": "roboto, \"roboto Fallback\", Arial, Helvetica, sans-serif",
+        "primary": "#e5091b",
+        "background": "rgb(255, 255, 255)",
+        "text": "rgb(24, 24, 24)"
+      },
+      "performance": {
+        "domContentLoadedMs": 288.69999999925494,
+        "loadMs": 358.6000000014901,
+        "jsResources": 15,
+        "imageResources": 10
+      },
+      "overflow": false,
+      "ok": true,
+      "screenshot": "docs/screenshots/redesign/contact-us-1440.png"
+    }
+  ],
+  "accessibility": [
+    {
+      "path": "/",
+      "width": 390,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".hero-kicker"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".home-hero-copy > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".home-hero-copy > h2 > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".home-hero-copy > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#our-services > .section-heading > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "#our-services > .section-heading > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".learn-more[href$=\"ac-repair-services/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".learn-more[href$=\"ac-installation-service/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".service-card:nth-child(3) > .learn-more > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".service-card:nth-child(4) > .learn-more[href$=\"services/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(3) > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(4) > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".container > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(5) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(5) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(6) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(6) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".home-brands > .section-heading > h2 > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".home-testimonials > .section-heading > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(1) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(2) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(3) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".footer-brand > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 28
+    },
+    {
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 390,
+      "violations": [],
+      "incomplete": 2,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".breadcrumbs > a[href$=\"blog/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".article-meta > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".article-meta > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "time"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "span:nth-child(4) > a"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(1) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(2) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(3) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(4) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(5) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(1) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(2) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "help": "Links must be distinguishable without relying on color",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(4) > a"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/ac-installation-service/",
+      "width": 390,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".breadcrumbs > a[href$=\"services/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".internal-hero-copy > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".has-background > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".has-background > p:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".has-background > p:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "a[href=\"tel:971 50 2420957\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "p:nth-child(4) > a[href$=\"mailto:info@voltronix.ae\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".button[href$=\"contact-us/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(1) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(2) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(3) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".footer-brand > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".footer-group > summary"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/contact-us/",
+      "width": 390,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-copy > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(1) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".cta-features > div:nth-child(2) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".footer-brand > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".home-hero-copy > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".home-hero-copy > h2 > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".home-hero-copy > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+            },
+            {
+              "target": [
+                ".hero-diagnostics > span:nth-child(2) > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+            },
+            {
+              "target": [
+                "#our-services > .section-heading > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "#our-services > .section-heading > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "#our-services > .section-heading > h2 > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".learn-more[href$=\"ac-repair-services/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".learn-more[href$=\"ac-installation-service/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".service-card:nth-child(3) > .learn-more > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".service-card:nth-child(4) > .learn-more[href$=\"services/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".why-copy > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(1) > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(1) > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(2) > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(2) > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(3) > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(3) > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(4) > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card:nth-child(4) > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".container > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(5) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(5) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(6) > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(6) > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".home-testimonials > .section-heading > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                ".home-testimonials > .section-heading > h2 > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it's partially obscured by another element"
+            },
+            {
+              "target": [
+                ".testimonial-position-2 > .testimonial-person > div > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".testimonial-position-2 > .testimonial-person > div > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".footer-brand > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 28
+    },
+    {
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 2,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".breadcrumbs > a[href$=\"blog/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".article-meta > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".article-meta > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "time"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "span:nth-child(4) > a"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(1) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(2) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(3) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(4) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(5) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".footer-contact > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "li:nth-child(1) > a[href=\"tel:+97148240002\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".footer-newsletter > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".footer-newsletter > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "help": "Links must be distinguishable without relying on color",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(4) > a"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/ac-installation-service/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".breadcrumbs > a[href$=\"services/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".has-background > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".has-background > p:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".has-background > p:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "a[href=\"tel:971 50 2420957\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "p:nth-child(4) > a[href$=\"mailto:info@voltronix.ae\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".button[href$=\"contact-us/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".footer-brand > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/contact-us/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".footer-brand > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Next testimonial updates selected dot",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Previous testimonial restores selected dot",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Newsletter accurately reports unavailable delivery",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Desktop services opens with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes desktop services",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile menu opens with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes mobile menu and restores focus",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile navigation follows local link and closes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Original homepage content disclosure opens with keyboard without overflow",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ toggles with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ closes/restores on second keyboard action",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Project category filter retains MEP selection",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Empty form is blocked by native validation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Other service reveals required detail field",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Valid local form returns explicit disabled-backend 503",
+      "ok": true,
+      "detail": {
+        "status": 503,
+        "message": "Online enquiries are not available yet. Your message has not been sent. Please call +971 4 824 0002 or email info@voltronix.ae."
+      }
+    }
+  ],
+  "consistency": [
+    {
+      "path": "/",
+      "width": 390,
+      "ok": true
+    },
+    {
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 390,
+      "ok": true
+    },
+    {
+      "path": "/ac-installation-service/",
+      "width": 390,
+      "ok": true
+    },
+    {
+      "path": "/contact-us/",
+      "width": 390,
+      "ok": true
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "ok": true
+    },
+    {
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1440,
+      "ok": true
+    },
+    {
+      "path": "/ac-installation-service/",
+      "width": 1440,
+      "ok": true
+    },
+    {
+      "path": "/contact-us/",
+      "width": 1440,
+      "ok": true
+    }
+  ],
+  "externalRequests": [],
+  "failures": [],
+  "interactionConsole": {
+    "type": "interaction",
+    "path": "interactive checks",
+    "jsErrors": [],
+    "consoleErrors": [],
+    "failedResponses": []
+  },
+  "summary": {
+    "viewportCases": 8,
+    "expectedViewportCases": 8,
+    "accessibilityScans": 8,
+    "interactionChecks": 15,
+    "designConsistencyChecks": 8,
+    "failures": 0,
+    "passed": true
+  }
+}

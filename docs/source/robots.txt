@@ -1,0 +1,21 @@
+# Robots policy: allow clean pages and let Google recrawl hacked parameter URLs to see 410/noindex cleanup signals.
+# Do not disallow URL parameters here; robots.txt can keep stale indexed URLs visible without snippets.
+
+User-agent: *
+Allow: /
+
+# WordPress admin hygiene
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Tracking-only parameters remain crawlable for ad/campaign landing and attribution.
+Allow: /*?utm_*
+Allow: /*&utm_*
+Allow: /*?gclid=*
+Allow: /*&gclid=*
+Allow: /*?gbraid=*
+Allow: /*&gbraid=*
+Allow: /*?wbraid=*
+Allow: /*&wbraid=*
+
+Sitemap: https://acexperts.ae/sitemap_index.xml

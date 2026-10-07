@@ -1,0 +1,31 @@
+{
+  "name": "acexperts-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "crawl": "node scripts/crawl.mjs",
+    "migrate": "node scripts/migrate.mjs && node scripts/refresh-inventory.mjs",
+    "validate": "node scripts/validate.mjs"
+  },
+  "dependencies": {
+    "html-react-parser": "^6.1.8",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "cheerio": "^1.2.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.8",
+    "playwright": "^1.63.0",
+    "typescript": "^6.0.3"
+  }
+}

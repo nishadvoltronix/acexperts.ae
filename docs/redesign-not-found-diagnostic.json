@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-10-05T11:06:01.374Z",
+  "baseUrl": "http://localhost:3100",
+  "route": "/__redesign-diagnostic-missing/",
+  "status": 404,
+  "contentType": "text/html; charset=utf-8",
+  "title": "Voltronix AC Experts",
+  "headings": ["Page not found"],
+  "main": 1,
+  "header": 1,
+  "footer": 1,
+  "loggedForUnknownPath": "Error: Internal: NoFallbackError\n    at ignore-listed frames\n",
+  "subsequentKnownRoute": "/about/",
+  "knownPageStatus": 200,
+  "interpretation": "The installed Next.js version logs a NoFallbackError diagnostic for an unknown dynamicParams=false route. The request still returns the expected branded 404 page and known routes remain HTTP 200. This is server-side diagnostic noise, not a browser/hydration error or failed public route."
+}

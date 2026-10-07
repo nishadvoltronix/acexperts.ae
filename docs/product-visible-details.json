@@ -1,0 +1,222 @@
+[
+  {
+    "id": "central",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fcentral-air-conditioning-4c3aae90-hq.png&w=1920&q=90",
+    "width": 588.5625,
+    "height": 420.390625,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "split",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fsplit-air-conditioning-0bf7b3a9-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "window",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fwindow-air-conditioning-a8c93bf7-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "portable",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fportable-air-conditioning-636c41ec-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "chiller",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fchiller-system-1-c94a1584-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "fresh",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Ffresh-air-system-8844527e-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "ventilation",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fventilation-system-464c5b1e-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "dx",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fdx-system-cd9c01b9-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "dehumidifier",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fdehumidifier-6c8e9419-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "parking",
+    "viewport": 1440,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fcar-parking-exhaust-system-e6040978-hq.png&w=3840&q=90",
+    "width": 229.5,
+    "height": 163.921875,
+    "complete": true,
+    "deliveredWidth": 1484,
+    "deliveredHeight": 1060,
+    "status": 200
+  },
+  {
+    "id": "central",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fcentral-air-conditioning-4c3aae90-hq.png&w=828&q=90",
+    "width": 340,
+    "height": 242.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "split",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fsplit-air-conditioning-0bf7b3a9-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "window",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fwindow-air-conditioning-a8c93bf7-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "portable",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fportable-air-conditioning-636c41ec-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "chiller",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fchiller-system-1-c94a1584-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "fresh",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Ffresh-air-system-8844527e-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "ventilation",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fventilation-system-464c5b1e-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "dx",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fdx-system-cd9c01b9-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "dehumidifier",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fdehumidifier-6c8e9419-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  },
+  {
+    "id": "parking",
+    "viewport": 390,
+    "src": "http://localhost:3001/_next/image/?url=%2Fimages%2Fquality%2Fcar-parking-exhaust-system-e6040978-hq.png&w=828&q=90",
+    "width": 298,
+    "height": 212.84375,
+    "complete": true,
+    "deliveredWidth": 828,
+    "deliveredHeight": 591,
+    "status": 200
+  }
+]
