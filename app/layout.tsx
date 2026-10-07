@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -20,9 +21,11 @@ export const metadata: Metadata = {
     )?.localPath,
   },
 };
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  // Reading request headers opts pages into dynamic rendering for fresh CSP nonces.
+  const nonce = (await headers()).get("x-nonce") || undefined;
   const logo = getAsset(
     "https://acexperts.ae/wp-content/uploads/2023/06/voltronix-R.png",
   )!.localPath;
@@ -66,6 +69,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.variable}>
         <script
+          nonce={nonce}
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organization).replaceAll("<", "\\u003c"),

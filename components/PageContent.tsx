@@ -1,5 +1,6 @@
 import { QualityImage as Image } from "./QualityImage";
 import Link from "next/link";
+import { headers } from "next/headers";
 import { getAsset, getPage, localLink } from "@/lib/content";
 import { site } from "@/lib/site";
 import type { ContentSection, FAQItem, PageData } from "@/lib/types";
@@ -27,13 +28,14 @@ const articleHeadingRepairs: Record<string, Record<string, "h2" | "h3">> = {
   },
 };
 
-export function StructuredData({
+export async function StructuredData({
   page,
   additionalFaqs = [],
 }: {
   page: PageData;
   additionalFaqs?: FAQItem[];
 }) {
+  const nonce = (await headers()).get("x-nonce") || undefined;
   const graph: object[] = [
     {
       "@type": "BreadcrumbList",
@@ -78,6 +80,7 @@ export function StructuredData({
     });
   return (
     <script
+      nonce={nonce}
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({

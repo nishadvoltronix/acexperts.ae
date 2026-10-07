@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "test:security": "node --test scripts/contact-security.test.mjs scripts/content-security.test.mjs",
+    "check:security": "node scripts/security-browser-check.mjs",
     "crawl": "node scripts/crawl.mjs",
     "migrate": "node scripts/migrate.mjs && node scripts/refresh-inventory.mjs",
     "validate": "node scripts/validate.mjs"
