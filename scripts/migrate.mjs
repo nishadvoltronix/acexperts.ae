@@ -357,6 +357,15 @@ for (const source of byRoute.values()) {
         ? "project"
         : source.type;
   const migrationNotes = [];
+  if (source.route === "/contact-us/") {
+    main.find("h3, h4").each((_, node) => {
+      const heading = $(node);
+      const name = cleanText(heading.text());
+      if (name === "VOLTRONIX CONTRACTING LLC")
+        heading.text("AC EXPERT LLC");
+      else if (name === "VOLTRONIX SWITCHGEAR LLC") heading.remove();
+    });
+  }
   if (source.route === "/faq/") {
     main.find(".elementor-top-column").each((_, node) => {
       const text = cleanText($(node).text());
