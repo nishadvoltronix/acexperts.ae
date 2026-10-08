@@ -1,0 +1,240 @@
+/* Shared navigation, contact form, support card, and footer layouts. */
+.footer-grid > div,
+.contact-form-section,
+.contact-form label {
+  min-width: 0;
+}
+
+.footer-contact-list a,
+.newsletter-status {
+  overflow-wrap: anywhere;
+}
+
+.contact-form .form-status:empty {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .menu-toggle {
+    min-height: 44px;
+  }
+
+  .nav-dropdown summary {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-dropdown a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    overflow-wrap: anywhere;
+  }
+
+  .primary-navigation {
+    overscroll-behavior: contain;
+  }
+
+  .contact-main {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .contact-information .location-panel {
+    max-width: 640px;
+  }
+
+  .contact-form-section {
+    padding: 30px;
+  }
+
+  .contact-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 16px;
+  }
+
+  .cta-copy h2 {
+    white-space: normal;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .footer-brand > p {
+    max-width: 420px;
+  }
+
+  .footer-grid h2 {
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+
+  .footer-grid li {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .footer-links li > a,
+  .footer-services li > a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-block: 9px;
+  }
+
+  .footer-contact-list li {
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .footer-contact-list li > a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+  }
+
+  .footer-contact-list .icon {
+    margin-top: 0;
+  }
+
+  .social-links a {
+    width: 44px;
+    height: 44px;
+  }
+
+  .social-links svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer-details summary {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 12px;
+  }
+
+  .footer-newsletter > p {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+
+  .newsletter-input-wrap input {
+    min-height: 54px;
+    padding: 12px 60px 12px 16px;
+    font-size: 16px;
+  }
+
+  .newsletter-submit {
+    width: 44px;
+    height: 44px;
+  }
+
+  .footer-bottom-links {
+    align-items: center;
+  }
+
+  .footer-bottom-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cta-card {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    min-height: 0;
+    padding: 32px;
+    gap: 24px;
+  }
+
+  .cta-copy,
+  .cta-features {
+    grid-column: 1;
+  }
+
+  .cta-features {
+    position: static;
+    max-width: none;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .cta-art {
+    width: 44%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-grid {
+    gap: 26px 20px;
+  }
+
+  .cta-art {
+    margin-left: -26px;
+    margin-right: -26px;
+  }
+
+  .cta-features {
+    max-width: 100%;
+    gap: 12px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-form-section {
+    padding: 24px;
+  }
+
+  .contact-form {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .contact-form button[type="submit"] {
+    width: 100%;
+  }
+
+  .footer-contact,
+  .footer-newsletter {
+    grid-column: 1 / -1;
+  }
+
+  .newsletter-form {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 359px) {
+  .contact-form-section {
+    padding: 20px;
+  }
+
+  .cta-art {
+    margin-left: -22px;
+    margin-right: -22px;
+  }
+}

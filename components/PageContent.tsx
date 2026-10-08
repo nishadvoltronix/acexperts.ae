@@ -210,7 +210,7 @@ export function PageContent({ page }: { page: PageData }) {
             </div>
             {!!page.cards?.length && (
               <section className="container related-posts">
-                <div className="section-heading">
+                <div className="section-heading" data-reveal="up">
                   <p className="eyebrow">More expert advice</p>
                   <h2>You may also like</h2>
                 </div>
@@ -226,7 +226,7 @@ export function PageContent({ page }: { page: PageData }) {
           <ContactContent page={page} />
         ) : (
           <>
-            <div className="migrated-content internal-content">
+            <div className={`migrated-content internal-content${page.route === "/about/" ? " about-content" : ""}`}>
               {page.sections?.length ? (
                 page.sections
                   .filter((section) => !isHeadingOnlyIntro(section))
@@ -235,7 +235,7 @@ export function PageContent({ page }: { page: PageData }) {
                       key={`${section.id}-${index}`}
                       html={section.html}
                       omitH1
-                      omitImageSrc={heroImage}
+                      omitImageSrc={page.type === "products" ? undefined : heroImage}
                       normalizeHeadings
                       brandGrid={page.route === "/about/" ? <BrandGrid /> : undefined}
                     />

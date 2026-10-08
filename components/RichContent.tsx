@@ -58,6 +58,14 @@ export function RichContent({
     if (node.name === "img") return !withDescription || Boolean(node.attribs.alt?.trim());
     return (node.children as DOMNode[]).some((child) => containsImage(child, withDescription));
   }
+  function isCardImage(node: Element): boolean {
+    let parent = node.parent;
+    while (parent instanceof Element) {
+      if (parent.attribs.class?.split(/\s+/).some((name) => name === "content-card" || name === "service-card")) return true;
+      parent = parent.parent;
+    }
+    return false;
+  }
   const options: HTMLReactParserOptions = {
     replace(node) {
       if (!(node instanceof Element)) return;
@@ -65,6 +73,10 @@ export function RichContent({
       if (brandGrid && node.attribs.class?.split(" ").includes("logo-grid"))
         return <>{brandGrid}</>;
       const attributes = safeContentAttributes(node.name, node.attribs);
+      // Reuse the same reveal system for migrated cards without wrapping their layout.
+      if (attributes.class?.split(" ").some((name) =>
+        ["content-card", "service-card", "carousel-card", "section-heading"].includes(name),
+      )) attributes["data-reveal"] = "up";
       if (omitH1 && node.name === "h1") return <></>;
       if (headingOverrides && /^h[2-6]$/.test(node.name)) {
         const text = nodeText(node).replace(/\s+/g, " ").trim();
@@ -109,7 +121,9 @@ export function RichContent({
             width={asset.width || Number(attributes.width) || 900}
             height={asset.height || Number(attributes.height) || 600}
             className={attributes.class || "content-image"}
-            sizes={asset.localPath.includes('/logo/') ? '205px' : '(max-width: 767px) 100vw, 1310px'}
+            sizes={asset.localPath.includes('/logo/') ? '205px' : isCardImage(node)
+              ? '(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 45vw, 30vw'
+              : '(max-width: 767px) 100vw, 1310px'}
             unoptimized={node.attribs.class?.includes('section-background')}
             priority={highPriority}
           />

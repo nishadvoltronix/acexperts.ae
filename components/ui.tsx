@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 
 export function Container({ children, className = "", id }: { children: ReactNode; className?: string; id?: string }) { return <div id={id} className={`container ${className}`}>{children}</div>; }
 export function Button({ children, href, secondary = false, className = "", arrow = true }: { children: ReactNode; href: string; secondary?: boolean; className?: string; arrow?: boolean }) { return <Link href={href} className={`button ${secondary ? "button-secondary" : ""} ${className}`}>{children}{arrow && <Icon name="arrow" size={18} />}</Link>; }
-export function SectionHeading({ eyebrow, children, className = "" }: { eyebrow?: string; children: ReactNode; className?: string }) { return <div className={`section-heading ${className}`}>{eyebrow && <span className="eyebrow">{eyebrow}</span>}<h2>{children}</h2><span className="heading-rule" aria-hidden="true"><i /></span></div>; }
+export function SectionHeading({ eyebrow, children, className = "" }: { eyebrow?: string; children: ReactNode; className?: string }) { return <div className={`section-heading ${className}`} data-reveal="up">{eyebrow && <span className="eyebrow">{eyebrow}</span>}<h2>{children}</h2><span className="heading-rule" aria-hidden="true"><i /></span></div>; }
 
 export type IconName = "phone" | "shield" | "bolt" | "thumb" | "clock" | "arrow" | "snow" | "wrench" | "drop" | "gear" | "users" | "award" | "heart" | "price" | "email" | "pin" | "send" | "check" | "menu" | "close" | "star" | "cpu";
 const paths: Record<IconName, ReactNode> = {
@@ -53,5 +53,5 @@ export function ReferenceArt({ crop, alt = "", className = "", priority = false,
   return <span className={`reference-art reference-${crop} ${className}`} style={style}><Image src={restored?.src || "/images/design/homepage-reference.jpeg"} alt={alt} width={restored?.width || 705} height={restored?.height || 1600} sizes={restored?.sizes} quality={90} priority={priority} unoptimized={!restored} draggable={false} />{children}</span>;
 }
 export function BrandLogo({ preload = false }: { preload?: boolean }) {
-  return <Image src={site.logo} alt="Voltronix" width={479} height={69} className="brand-logo" preload={preload} unoptimized />;
+  return <Image src={site.logo} alt="Voltronix" width={407} height={75} className="brand-logo" preload={preload} unoptimized />;
 }

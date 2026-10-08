@@ -1,0 +1,79 @@
+/* Keep migrated card layouts aligned as headings and descriptions wrap. */
+.home-services .service-card { display: flex; flex-direction: column; }
+.home-services .service-card .learn-more { align-self: flex-start; margin-top: auto; }
+.page-products .content-grid.columns-4 {
+  align-items: stretch;
+  gap: 24px;
+}
+.page-products .columns-4 > .content-column { display: flex; }
+.page-products .internal-content .service-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+  text-align: left;
+}
+.page-products .service-card figure {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  aspect-ratio: 7 / 5;
+  margin: 0 0 20px;
+}
+.page-products .service-card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-small);
+}
+.page-products .internal-content .service-card .card-title {
+  font-size: 22px;
+  line-height: 1.3;
+  min-height: 2.6em;
+  margin: 0 0 14px;
+}
+.page-products .internal-content .service-card p { margin: 0; }
+.card-grid { align-items: stretch; }
+.card-grid .content-card :is(h2, h3, h4, h5) { margin-top: 16px; margin-bottom: 0; }
+.card-grid .content-card .post-meta { justify-content: flex-start; }
+.card-grid .content-card .content-inner > .post-meta { margin-inline: 0; }
+
+/* CTA actions align with their copy, rather than the top of the section. */
+.page-products .section-cta {
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface-soft);
+}
+.page-products .section-cta .content-grid { align-items: center; }
+.page-products .section-cta .content-column:last-child { justify-self: end; }
+.page-products .section-cta .content-column:first-child > :last-child { margin-bottom: 0; }
+.page-products .section-cta .content-column:first-child > h2 + h2 { margin-top: 16px; }
+.page-products .section-cta .content-column:first-child > h2:first-child {
+  margin-bottom: 0;
+  color: var(--color-primary-dark);
+  font-size: 12px;
+  letter-spacing: .04em;
+  line-height: 1.5;
+}
+.page-services .section-content:has(> .content-inner > h2:only-child):has(+ .section-faq) { padding-bottom: 24px; }
+.page-services .section-content:has(> .content-inner > h2:only-child) + .section-faq { padding-top: 0; border-top: 0; }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-products .content-grid.columns-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  /* Read each service in the same order: image, description, then its action. */
+  .page-services .content-grid.columns-2 > .content-column:has(> .content-image:only-child) { order: -1; }
+  .page-services .content-section:has(.columns-2) { padding-block: 36px; }
+  .page-services .content-column > .button { width: 100%; }
+  .page-products .internal-content .service-card .card-title { min-height: 0; }
+  .page-products .section-cta .content-column:last-child { justify-self: stretch; }
+  .page-products .section-cta .button { width: 100%; margin-top: 0; }
+  .page-service .columns-5 { align-items: stretch; }
+  .page-service .columns-5 > .content-column { display: flex; align-items: center; }
+  .internal-content .button, .article-sidebar .button { max-width: 100%; }
+}
+@media (max-width: 479px) {
+  .page-service .columns-5 { grid-template-columns: 1fr; }
+}

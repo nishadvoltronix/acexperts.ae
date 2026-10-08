@@ -18,6 +18,14 @@
   border: 1px solid var(--color-border);
   border-radius: 12px;
   background: var(--color-surface);
+  transition: transform 300ms var(--motion-ease), box-shadow 300ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-card);
+  }
 }
 
 .logo {

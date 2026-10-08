@@ -1,0 +1,55 @@
+.scene {
+  position: relative;
+  width: 1080px;
+  height: 620px;
+  transform: perspective(1800px) rotateX(var(--ac-rotate-x, 0deg)) rotateY(var(--ac-rotate-y, 0deg));
+  pointer-events: none;
+  user-select: none;
+}
+
+.part {
+  position: absolute;
+  left: 540px;
+  top: 305px;
+  transform: translate(-50%, -50%) translate(calc(var(--dx) * var(--ac-explode, 1)), calc(var(--dy) * var(--ac-explode, 1))) scale(calc(1.45 - var(--ac-explode, 1) * .45));
+  opacity: clamp(0, calc(var(--ac-explode, 1) * 4), 1);
+}
+.crop { position: relative; width: 100%; overflow: hidden; }
+.atlas { position: absolute; max-width: none; object-fit: fill; }
+
+/* Moving along the camera's depth diagonal preserves the reference perspective.
+   Each component remains a crisp photographic layer throughout the movement. */
+.front { width: 360px; --dx: -345px; --dy: 55px; opacity: 1; }
+.filter { width: 280px; --dx: -175px; --dy: 3px; }
+.evaporator { width: 320px; --dx: -42px; --dy: -25px; }
+.blower { width: 340px; --dx: 118px; --dy: -83px; }
+.pcb { width: 150px; --dx: 285px; --dy: 22px; }
+.chassis { width: 395px; --dx: 333px; --dy: -95px; }
+
+.shadow {
+  position: absolute;
+  left: 160px;
+  right: 65px;
+  top: 440px;
+  height: 110px;
+  background: radial-gradient(ellipse, #20283136, #20283113 42%, transparent 70%);
+  filter: blur(14px);
+  transform: scaleX(calc(.55 + var(--ac-explode, 1) * .45));
+}
+.guides {
+  position: absolute;
+  inset: 0;
+  opacity: calc(var(--ac-explode, 1) * .4);
+}
+.guides i {
+  position: absolute;
+  width: 680px;
+  height: 1px;
+  border-top: 1px dashed #697278;
+  transform: rotate(-13deg);
+  transform-origin: left;
+  left: 170px;
+  top: 240px;
+}
+.guides i:nth-child(2) { left: 350px; top: 445px; width: 545px; }
+.guides i:nth-child(3) { left: 135px; top: 425px; width: 680px; }

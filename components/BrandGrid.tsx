@@ -25,8 +25,8 @@ const brands = [
 export function BrandGrid() {
   return (
     <ul className={styles.grid} aria-label="Brands we service" role="list">
-      {brands.map((brand) => (
-        <li className={styles.card} key={brand.name}>
+      {brands.map((brand, index) => (
+        <li className={styles.card} key={brand.name} data-reveal="up" data-reveal-delay={(index % 6) * 45}>
           <Image
             src={brand.src}
             alt={brand.name}

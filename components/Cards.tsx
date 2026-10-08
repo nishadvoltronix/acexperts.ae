@@ -6,7 +6,7 @@ export function ContentCard({ card }: { card: PageCard }) {
   const page = getPage(card.route);
   const asset = getAsset(card.image || page?.heroImage);
   return (
-    <article className="content-card">
+    <article className="content-card" data-reveal="up">
       <Link href={localLink(card.route)}>
         {asset && (
           <Image
@@ -14,7 +14,7 @@ export function ContentCard({ card }: { card: PageCard }) {
             alt={asset.alt || card.title}
             width={asset.width || 768}
             height={asset.height || 512}
-            sizes="(max-width: 767px) 100vw, 1310px"
+            sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 45vw, 30vw"
           />
         )}
         <div className="card-copy">

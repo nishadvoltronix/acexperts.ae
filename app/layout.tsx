@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { MotionEffects } from "@/components/MotionEffects";
 import { site } from "@/lib/site";
 import "./globals.css";
 const roboto = localFont({
@@ -60,7 +61,7 @@ export default async function RootLayout({
     ],
   };
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body className={roboto.variable}>
         <script
           nonce={nonce}
@@ -73,6 +74,7 @@ export default async function RootLayout({
           Skip to content
         </a>
         <Header />
+        <MotionEffects />
         <main id="main-content">{children}</main>
         <Footer />
       </body>

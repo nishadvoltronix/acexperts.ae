@@ -1,0 +1,184 @@
+/* Shared motion language; content is visible until the observer opts it in. */
+:root {
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-reveal][data-motion-state="pending"] {
+  opacity: 0;
+}
+
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 2px;
+  z-index: 40;
+  pointer-events: none;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.site-header {
+  transition: box-shadow 250ms ease;
+}
+
+.site-header[data-scrolled] {
+  box-shadow: 0 5px 24px #0000000d;
+}
+
+.hero-scroll-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 25px;
+  font-size: 11px;
+  color: var(--color-muted);
+  transition: opacity 200ms ease;
+}
+
+.hero-scroll-cue .icon {
+  color: var(--color-primary);
+  rotate: 90deg;
+}
+
+body[data-scrolled] .hero-scroll-cue:not(:focus-visible) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.stat-card strong {
+  display: grid;
+  font-variant-numeric: tabular-nums;
+}
+
+.count-reserve,
+[data-count-value] {
+  grid-area: 1 / 1;
+}
+
+.count-reserve {
+  visibility: hidden;
+}
+
+.service-icon-orb,
+.learn-more > span,
+.button > .icon,
+.content-card .text-link > span {
+  transition: transform 350ms var(--motion-ease);
+}
+
+.content-card .text-link > span {
+  display: inline-block;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero is rendered visibly by the server; entrance motion never waits for JS. */
+  .hero-kicker,
+  .home-hero-copy > h2,
+  .home-hero-copy > p,
+  .hero-features,
+  .hero-actions > .button {
+    animation: hero-arrive 650ms var(--motion-ease) both;
+  }
+
+  .hero-kicker { animation-delay: 100ms; }
+  .home-hero-copy > h2 { animation-delay: 200ms; }
+  .home-hero-copy > p { animation-delay: 350ms; }
+  .hero-features { animation-delay: 400ms; }
+  .hero-actions > .button { animation-delay: 450ms; }
+  .hero-actions > .button + .button { animation-delay: 550ms; }
+
+  .internal-hero-copy {
+    animation: page-arrive 350ms var(--motion-ease) both;
+  }
+
+  .cta-copy[data-motion-state="visible"] .button > .icon {
+    animation: contact-pulse 900ms ease-in-out 700ms 2;
+  }
+
+  @media (min-width: 1024px) {
+    .hero-art > img {
+      animation: hero-breathe 10s ease-out forwards;
+      transform-origin: center 40%;
+    }
+    .hero-scroll-cue .icon {
+      animation: explore-nudge 1600ms ease-in-out 3;
+    }
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .service-card:hover,
+    .content-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+    .service-card:hover .service-icon-orb,
+    .content-card:hover img { transform: scale(1.04); }
+    .service-card:hover .learn-more > span,
+    .content-card:hover .text-link > span { transform: translateX(4px); }
+    .button:hover > .icon:last-child { transform: translateX(3px); }
+    .cta-copy .button:hover > .icon { transform: scale(1.08); }
+  }
+}
+
+@keyframes hero-arrive {
+  from { opacity: 0.7; translate: 0 20px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes page-arrive {
+  from { opacity: 0.8; translate: 0 8px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+@keyframes hero-breathe {
+  from { transform: scale(1); }
+  to { transform: scale(1.035); }
+}
+
+@keyframes explore-nudge {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 4px; }
+}
+
+@keyframes contact-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@media (max-width: 1023px) {
+  .hero-scroll-cue { display: none; }
+}
+
+@media (max-width: 767px) {
+  .hero-kicker,
+  .home-hero-copy > h2,
+  .home-hero-copy > p,
+  .hero-features,
+  .hero-actions > .button {
+    animation-duration: 420ms;
+    animation-delay: 0ms;
+  }
+  .hero-actions > .button + .button { animation-delay: 80ms; }
+  @keyframes hero-arrive {
+    from { opacity: 0.8; translate: 0 10px; }
+    to { opacity: 1; translate: 0 0; }
+  }
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .service-card:hover,
+  .content-card:hover,
+  .button:hover { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal][data-motion-state] { opacity: 1; translate: none; }
+  .scroll-progress { display: none; }
+}
+
+@media print {
+  [data-reveal][data-motion-state] { opacity: 1; translate: none; }
+  .scroll-progress,
+  .hero-scroll-cue { display: none; }
+}
