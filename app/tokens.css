@@ -1,4 +1,5 @@
 :root {
+  --header-height: 110px;
   --color-primary: #e5091b;
   --color-primary-dark: #c90818;
   --color-secondary: #161616;
