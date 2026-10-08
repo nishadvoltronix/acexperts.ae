@@ -361,9 +361,7 @@ for (const source of byRoute.values()) {
     main.find("h3, h4").each((_, node) => {
       const heading = $(node);
       const name = cleanText(heading.text());
-      if (name === "VOLTRONIX CONTRACTING LLC")
-        heading.text("AC EXPERT LLC");
-      else if (name === "VOLTRONIX SWITCHGEAR LLC") heading.remove();
+      if (name === "VOLTRONIX SWITCHGEAR LLC") heading.remove();
     });
   }
   if (source.route === "/faq/") {

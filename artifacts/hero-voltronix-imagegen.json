@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "edit",
+  "useCase": "text-localization",
+  "target": "public/images/design/hero-hq-clean.png",
+  "brandReference": "public/images/logo/voltronix.png",
+  "output": "public/images/design/hero-voltronix.png",
+  "width": 1278,
+  "height": 1230,
+  "prompt": "Use case: text-localization, precise localized logo replacement. Image 1 is the EDIT TARGET: the existing website hero photograph of a technician in a red polo shirt and red cap servicing a white wall air conditioner, including its existing red-and-white curved graphic background. Image 2 is ONLY the supporting VOLTRONIX wordmark reference, not a scene to recreate. Make one very small edit to image 1: replace the white 'AC EXPERTS' logo printed on the technician's back with the exact word 'VOLTRONIX' (V O L T R O N I X), in white, with the bold wordmark letter forms from image 2, using an all-white version so it remains visible on the red fabric. Fit it inside the existing logo footprint on the same part of his back. Make the lettering follow precisely the existing shirt perspective, folds, material texture and lighting. Remove the entire previous AC EXPERTS lettering/monogram only within that logo area. CRITICAL PRESERVATION: Keep the original photograph unchanged everywhere else. Preserve the exact same technician identity, profile, cap, hair, beard, body, arms, hands/gloves, shirt shape/folds and red color; the same air conditioner, grille, fins, surroundings, white/red curve, dots, crop, framing and composition. Do not regenerate, retouch, enhance, move, replace or redesign anything else. Do not add text, badges or logos elsewhere. No diagnostics card: the website adds it separately. Preserve the input's 1278 x 1230 dimensions/aspect ratio as closely as possible and output only the complete edited target image. The user's essential requirement is to keep the image itself and change only the branded name.",
+  "generatedSource": "C:/Users/Nishad/.codex/generated_images/01a119e8-b5d6-7f60-b425-6ec99f39d691/exec-2ebcac89-703e-475a-94b3-40cd0cc44d12.png",
+  "originalPreserved": true
+}

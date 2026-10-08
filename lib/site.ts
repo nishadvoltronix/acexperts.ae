@@ -1,5 +1,7 @@
 export const site = {
   name: "Voltronix AC Experts",
+  logo: "/images/logo/voltronix.png",
+  icon: "/icons/voltronix.svg",
   origin: "https://acexperts.ae",
   phone: "+971 4 824 0002",
   phoneHref: "tel:+97148240002",

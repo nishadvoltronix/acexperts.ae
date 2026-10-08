@@ -8,6 +8,7 @@ import { RichContent } from "./RichContent";
 import { ContentCard, formatDate } from "./Cards";
 import { ContactForm } from "./ContactForm";
 import { HomePage } from "./HomePage";
+import { BrandGrid } from "./BrandGrid";
 import { PageHero, getPageHeroImage } from "./PageHero";
 import { SharedCTA } from "./SharedCTA";
 import { LegacyHomeContent, LegacyHomeFAQs } from "./LegacyHomeContent";
@@ -129,7 +130,7 @@ function ContactContent({ page }: { page: PageData }) {
       </div>
       <div className="migrated-content internal-content contact-clients">
         {sections.filter((section) => section.kind !== "intro").map((section) => (
-          <RichContent key={section.id} html={section.html} omitH1 normalizeHeadings />
+          <RichContent key={section.id} html={section.html} omitH1 normalizeHeadings brandGrid={<BrandGrid />} />
         ))}
       </div>
     </>
@@ -181,7 +182,7 @@ export function PageContent({ page }: { page: PageData }) {
                   <aside className="author-box" aria-label="About the author">
                     {authorImage && (
                       <Image
-                        src={authorImage.localPath}
+                        src={authorImage.localPath === "/icons/fevicon-d71d1fce.png" ? site.icon : authorImage.localPath}
                         alt=""
                         width={72}
                         height={72}
@@ -236,6 +237,7 @@ export function PageContent({ page }: { page: PageData }) {
                       omitH1
                       omitImageSrc={heroImage}
                       normalizeHeadings
+                      brandGrid={page.route === "/about/" ? <BrandGrid /> : undefined}
                     />
                   ))
               ) : (

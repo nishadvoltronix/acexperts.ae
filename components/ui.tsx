@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
+import { site } from "@/lib/site";
 
 export function Container({ children, className = "", id }: { children: ReactNode; className?: string; id?: string }) { return <div id={id} className={`container ${className}`}>{children}</div>; }
 export function Button({ children, href, secondary = false, className = "", arrow = true }: { children: ReactNode; href: string; secondary?: boolean; className?: string; arrow?: boolean }) { return <Link href={href} className={`button ${secondary ? "button-secondary" : ""} ${className}`}>{children}{arrow && <Icon name="arrow" size={18} />}</Link>; }
@@ -34,11 +35,10 @@ const paths: Record<IconName, ReactNode> = {
 export function Icon({ name, size = 24, className = "" }: { name: IconName; size?: number; className?: string }) { return <svg className={`icon ${className}`} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{paths[name]}</svg>; }
 export function ACIcon({ type }: { type: "repair" | "installation" | "maintenance" | "cleaning" }) { return <div className={`ac-icon ac-icon-${type}`} aria-hidden="true"><svg viewBox="0 0 80 64" fill="none"><rect x="9" y="9" width="61" height="28" rx="5"/><path d="M10 28h59M20 32h36M56 16h5M20 43c-7 6 7 8 0 14M32 43c-7 6 7 8 0 14M44 43c-7 6 7 8 0 14"/></svg>{type !== "repair" && <Icon name={type === "installation" ? "wrench" : type === "maintenance" ? "gear" : "drop"} size={36} />}</div>; }
 
-export const referenceCrops = { logo: [32, 11, 105, 32], hero: [348, 55, 357, 343], cta: [433, 1265, 239, 179], skyline: [133, 800, 572, 78], portrait1: [78, 1196, 28, 29], portrait2: [272, 1196, 28, 29], portrait3: [467, 1196, 28, 29], brandSamsung: [225, 1032, 65, 15], brandPanasonic: [505, 1032, 65, 15] } as const;
+export const referenceCrops = { hero: [348, 55, 357, 343], cta: [433, 1265, 239, 179], skyline: [133, 800, 572, 78], portrait1: [78, 1196, 28, 29], portrait2: [272, 1196, 28, 29], portrait3: [467, 1196, 28, 29], brandSamsung: [225, 1032, 65, 15], brandPanasonic: [505, 1032, 65, 15] } as const;
 const restoredArt: Partial<Record<keyof typeof referenceCrops, {src: string; width: number; height: number; cropHeight?: number; inset?: [number, number, number, number]; sizes: string}>> = {
-  logo: {src: '/images/design/ac-experts-logo-hq.png', width: 2169, height: 725, cropHeight: 2169 * 32 / 105, sizes: '210px'},
-  hero: {src: '/images/design/hero-hq-clean.png', width: 1278, height: 1230, sizes: '(max-width: 767px) 100vw, (max-width: 1440px) 50.64vw, 730px'},
-  cta: {src: '/images/design/cta-hq-v2.png', width: 1448, height: 1086, sizes: '(max-width: 767px) 100vw, 500px'},
+  hero: {src: '/images/design/hero-voltronix.png', width: 1278, height: 1230, sizes: '(max-width: 767px) 100vw, (max-width: 1440px) 50.64vw, 730px'},
+  cta: {src: '/images/design/cta-voltronix.png', width: 1448, height: 1086, sizes: '(max-width: 767px) 100vw, 500px'},
   skyline: {src: '/images/design/skyline-hq.png', width: 2172, height: 724, cropHeight: 2172 * 78 / 572, sizes: '1181px'},
   brandSamsung: {src: '/images/design/samsung-hq.png', width: 2172, height: 724, inset: [151.4, 126, 1897.3, 455], sizes: '150px'},
   brandPanasonic: {src: '/images/design/panasonic-hq.png', width: 2172, height: 724, inset: [211.9, 140.1, 1778.5, 444.4], sizes: '160px'},
@@ -52,4 +52,6 @@ export function ReferenceArt({ crop, alt = "", className = "", priority = false,
   const style = { aspectRatio: `${w}/${h}`, '--art-width': restored ? `${inset ? restored.width / inset[2] * 100 : 100}%` : `${705 / w * 100}%`, '--art-height': `${imageHeight}%`, '--art-left': inset ? `${-inset[0] / inset[2] * 100}%` : restored ? '0%' : `${-x / w * 100}%`, '--art-top': inset ? `${-inset[1] / inset[3] * 100}%` : restored ? `${(100 - imageHeight) / 2}%` : `${-y / h * 100}%` } as CSSProperties;
   return <span className={`reference-art reference-${crop} ${className}`} style={style}><Image src={restored?.src || "/images/design/homepage-reference.jpeg"} alt={alt} width={restored?.width || 705} height={restored?.height || 1600} sizes={restored?.sizes} quality={90} priority={priority} unoptimized={!restored} draggable={false} />{children}</span>;
 }
-export function BrandLogo() { return <ReferenceArt crop="logo" alt="AC Experts — Expertise You Can Trust" className="brand-logo" priority />; }
+export function BrandLogo({ preload = false }: { preload?: boolean }) {
+  return <Image src={site.logo} alt="Voltronix" width={479} height={69} className="brand-logo" preload={preload} unoptimized />;
+}

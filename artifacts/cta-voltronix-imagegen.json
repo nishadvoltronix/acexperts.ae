@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "edit",
+  "target": "public/images/design/cta-hq-v2.png",
+  "supporting_reference": "public/images/logo/voltronix.png",
+  "output": "public/images/design/cta-voltronix.png",
+  "dimensions": {
+    "width": 1448,
+    "height": 1086
+  },
+  "generated_source": "C:/Users/Nishad/.codex/generated_images/01a11a03-e6d6-78a0-8958-681c3c834f01/exec-66b8e91b-1ac3-4967-9520-a7b76029b1c0.png",
+  "prompt": "Use case: text-localization.\nAsset type: existing website service photograph, precise branding replacement only.\nInput images: Image 1 (cta-hq-v2.png) is the edit target. Image 2 (voltronix.png) is only a supporting Voltronix brand lettering reference.\nPrimary request: Keep the exact existing Image 1 photograph and replace only the two AC EXPERTS branded wordmarks with VOLTRONIX. On the cap replace the white AC EXPERTS mark with the exact text \"VOLTRONIX\" in white clean bold brand lettering, following the same fabric curvature and placement. On the van replace ONLY the large red AC EXPERTS wordmark on the upper side panel with the exact text \"VOLTRONIX\" in red clean bold brand lettering, using the supporting brand reference for letter style, naturally foreshortened to match the existing van perspective. Spell V-O-L-T-R-O-N-I-X exactly.\nCRITICAL INVARIANTS: Treat this as a local text retouch, NEVER as generation of a new scene. Preserve the original photograph and exact pixels everywhere outside the two former logo areas. Preserve absolutely identical smiling man, facial features, hair, beard, teeth, eyes, skin, arms, hands, pose, clothing cut, fabric texture, cap color, red polo without a chest logo; preserve the original identical van model, body, side doors, wheels, windows, windscreen, mirrors, handles, shadows, bottom van decorative graphics; preserve red-white graphic background, lighting, colors, geometry, composition, framing, camera angle and original 1448 by 1086 landscape aspect ratio. Do not crop, enlarge, replace or redesign the vehicle, man, clothing or background. Do not alter the lower van decorative graphics. Do not add any other text, logos, slogans or objects. Only remove the old AC EXPERTS ink and print the new VOLTRONIX name in its two existing positions.",
+  "inspection": "Both old wordmarks replaced with correctly spelled VOLTRONIX. Man's identity and pose, red clothing, van geometry, windows and wheels, composition, lower decorative van graphics, and red-white background visually preserved. No new chest logo. Original image preserved."
+}

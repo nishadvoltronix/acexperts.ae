@@ -58,10 +58,10 @@ export function Header() {
         <Link
           href="/"
           className="header-brand"
-          aria-label="AC Experts home"
+          aria-label="Voltronix home"
           onClick={close}
         >
-          <BrandLogo />
+          <BrandLogo preload />
         </Link>
         <button
           ref={toggle}

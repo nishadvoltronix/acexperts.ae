@@ -1,6 +1,6 @@
 import { QualityImage as Image } from "./QualityImage";
 import Link from "next/link";
-import { createElement } from "react";
+import { createElement, type ReactNode } from "react";
 import parse, {
   Element,
   attributesToProps,
@@ -21,6 +21,7 @@ export function RichContent({
   omitImageSrc,
   normalizeHeadings = false,
   headingOverrides,
+  brandGrid,
 }: {
   html: string;
   priority?: boolean;
@@ -29,6 +30,7 @@ export function RichContent({
   omitImageSrc?: string;
   normalizeHeadings?: boolean;
   headingOverrides?: Record<string, "h2" | "h3" | "h4">;
+  brandGrid?: ReactNode;
 }) {
   let imageIndex = 0;
   function keepsContent(node: DOMNode): boolean {
@@ -60,6 +62,8 @@ export function RichContent({
     replace(node) {
       if (!(node instanceof Element)) return;
       if (!isAllowedContentTag(node.name)) return <></>;
+      if (brandGrid && node.attribs.class?.split(" ").includes("logo-grid"))
+        return <>{brandGrid}</>;
       const attributes = safeContentAttributes(node.name, node.attribs);
       if (omitH1 && node.name === "h1") return <></>;
       if (headingOverrides && /^h[2-6]$/.test(node.name)) {

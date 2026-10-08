@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Daikin",
+    "file": "public/images/brands/daikin.svg",
+    "sourceUrl": "https://www.daikin.eu/etc.clientlibs/daikin/clientlibs/clientlib-internet-site/resources/images/logo/daikin-logo.svg"
+  },
+  {
+    "name": "Mitsubishi Electric",
+    "file": "public/images/brands/mitsubishi-electric.svg",
+    "sourceUrl": "https://www.mitsubishielectric.com/global/common/img/logo.svg"
+  },
+  {
+    "name": "Panasonic",
+    "file": "public/images/brands/panasonic.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Panasonic_logo_%28Blue%29.svg"
+  },
+  {
+    "name": "Samsung Electronics",
+    "file": "public/images/brands/samsung.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Samsung_Electronics_logo_%28english%29.svg"
+  },
+  {
+    "name": "Midea Group",
+    "file": "public/images/brands/midea-group.svg",
+    "sourceUrl": "https://merchandise.midea-group.com/images/midea-group-logo.svg"
+  },
+  {
+    "name": "Shenling",
+    "file": "public/images/brands/shenling.svg",
+    "sourceUrl": "https://www.shenling.com/wp-content/themes/sr-shenling/dist/images/shenling-logo-color_da0258cd.svg"
+  },
+  {
+    "name": "LG Electronics",
+    "file": "public/images/brands/lg-electronics.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/LG_Electronics.svg"
+  },
+  {
+    "name": "Carrier",
+    "file": "public/images/brands/carrier.png",
+    "sourceUrl": "https://images.carriercms.com/image/upload/v1573562016/common/logos/carrier-corp-logo.png"
+  },
+  {
+    "name": "Johnson Controls",
+    "file": "public/images/brands/johnson-controls.png",
+    "sourceUrl": "https://www.johnsoncontrols.com/-/media/project/jci-global/johnson-controls/jci-common-media-library/logo/jci-logo_global-brands.png"
+  },
+  {
+    "name": "Trane",
+    "file": "public/images/brands/trane.png",
+    "sourceUrl": "https://www.trane.com/content/dam/Trane/Commercial/tc-horiz-red-logo.png"
+  },
+  {
+    "name": "Enerquip Thermal Solutions",
+    "file": "public/images/brands/enerquip.png",
+    "sourceUrl": "https://www.enerquip.com/wp-content/uploads/Enerquip-Logo-full-color-2.png"
+  },
+  {
+    "name": "Danfoss",
+    "file": "public/images/brands/danfoss.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Danfoss-Logo.svg"
+  },
+  {
+    "name": "Hisaka",
+    "file": "public/images/brands/hisaka.png",
+    "sourceUrl": "https://www.hisaka.co.jp/english/img/common_new/logo.png"
+  },
+  {
+    "name": "IHI",
+    "file": "public/images/brands/ihi.svg",
+    "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0d/IHI_logo.svg"
+  },
+  {
+    "name": "Kelvion",
+    "file": "public/images/brands/kelvion.gif",
+    "sourceUrl": "https://cdn.pressebox.de/f/8a14994ce29c8b8b/logos/119679/500_500.gif"
+  },
+  {
+    "name": "Mersen",
+    "file": "public/images/brands/mersen.svg",
+    "sourceUrl": "https://www.mersen.com/themes/custom/mersen/logo.svg"
+  },
+  {
+    "name": "Modine",
+    "file": "public/images/brands/modine.svg",
+    "sourceUrl": "https://www.modine.com/wp-content/uploads/2025/03/Modine_Logo_RGB_Tagline.svg"
+  },
+  {
+    "name": "Xylem",
+    "file": "public/images/brands/xylem.svg",
+    "sourceUrl": "https://www.xylem.com/siteassets/brand/_logos/color-lockups-transparent/xylem_tag_7704c.svg"
+  }
+]

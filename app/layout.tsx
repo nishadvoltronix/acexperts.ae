@@ -3,7 +3,6 @@ import { headers } from "next/headers";
 import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { getAsset } from "@/lib/content";
 import { site } from "@/lib/site";
 import "./globals.css";
 const roboto = localFont({
@@ -16,9 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.origin),
   title: { default: site.name, template: "%s | Voltronix AC Experts" },
   icons: {
-    icon: getAsset(
-      "https://acexperts.ae/wp-content/uploads/2022/12/fevicon-e1672396977395.png",
-    )?.localPath,
+    icon: { url: site.icon, type: "image/svg+xml" },
   },
 };
 export default async function RootLayout({
@@ -26,9 +23,6 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   // Reading request headers opts pages into dynamic rendering for fresh CSP nonces.
   const nonce = (await headers()).get("x-nonce") || undefined;
-  const logo = getAsset(
-    "https://acexperts.ae/wp-content/uploads/2023/06/voltronix-R.png",
-  )!.localPath;
   const organization = {
     "@context": "https://schema.org",
     "@graph": [
@@ -38,7 +32,7 @@ export default async function RootLayout({
         name: site.name,
         alternateName: "Ac experts",
         url: site.origin,
-        logo: site.origin + logo,
+        logo: site.origin + site.logo,
         telephone: site.phone,
         email: site.email,
         address: {
