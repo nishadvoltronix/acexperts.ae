@@ -365,6 +365,18 @@ for (const source of byRoute.values()) {
     });
   }
   if (source.route === "/faq/") {
+    const assets = JSON.parse(await readFile("data/assets.json", "utf8"));
+    const assetPaths = new Map(assets.map((asset) => [asset.url, asset.localPath]));
+    main.find(".elementor-image-carousel").each((_, carousel) => {
+      const seen = new Set();
+      $(carousel).children(".swiper-slide").each((_, slide) => {
+        const src = $(slide).find("img").first().attr("src");
+        if (!src) return;
+        const image = assetPaths.get(src) || src;
+        if (seen.has(image)) $(slide).remove();
+        else seen.add(image);
+      });
+    });
     main.find(".elementor-top-column").each((_, node) => {
       const text = cleanText($(node).text());
       if (
