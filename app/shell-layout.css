@@ -1,4 +1,75 @@
 /* Shared navigation, contact form, support card, and footer layouts. */
+.shared-cta {
+  padding-block: 30px 45px;
+}
+
+.cta-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .9fr) minmax(0, 1.3fr);
+  grid-template-areas: "copy features art";
+  align-items: center;
+  gap: 24px;
+  padding: 36px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  background: #fff;
+  box-shadow: var(--shadow-card);
+}
+
+.cta-card > * {
+  min-width: 0;
+}
+
+.cta-copy {
+  grid-area: copy;
+}
+
+.cta-copy h2 {
+  margin-bottom: 18px;
+  font-size: 32px;
+  white-space: normal;
+}
+
+.cta-copy p {
+  margin-bottom: 23px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.cta-copy .button {
+  gap: 14px;
+  padding: 11px 24px;
+}
+
+.cta-features {
+  grid-area: features;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: 12px;
+  text-align: center;
+}
+
+.cta-features .icon-orb {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 15px;
+}
+
+.cta-features p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.cta-art {
+  grid-area: art;
+  width: 100%;
+  align-self: end;
+  border-radius: 0 var(--radius-card) var(--radius-card) 0;
+}
+
 .footer-grid > div,
 .contact-form-section,
 .contact-form label {
@@ -68,10 +139,6 @@
   .contact-form select,
   .contact-form textarea {
     font-size: 16px;
-  }
-
-  .cta-copy h2 {
-    white-space: normal;
   }
 
   .footer-grid {
@@ -165,28 +232,24 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1279px) {
   .cta-card {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-    min-height: 0;
+    grid-template-areas: "copy art" "features art";
     padding: 32px;
     gap: 24px;
   }
 
-  .cta-copy,
-  .cta-features {
-    grid-column: 1;
+  .cta-copy h2 {
+    font-size: 27px;
+  }
+
+  .cta-copy p {
+    font-size: 13px;
   }
 
   .cta-features {
-    position: static;
-    max-width: none;
-    padding: 0;
-    gap: 12px;
-  }
-
-  .cta-art {
-    width: 44%;
+    max-width: 340px;
   }
 }
 
@@ -195,14 +258,54 @@
     gap: 26px 20px;
   }
 
-  .cta-art {
-    margin-left: -26px;
-    margin-right: -26px;
+  .shared-cta {
+    padding-block: 22px 35px;
+  }
+
+  .cta-card {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "copy" "features" "art";
+    gap: 26px;
+    padding: 30px 26px 0;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+  }
+
+  .cta-copy h2 {
+    max-width: 340px;
+    font-size: 26px;
+  }
+
+  .cta-copy p {
+    max-width: 380px;
+    font-size: 13px;
+  }
+
+  .cta-copy .button {
+    font-size: 13px;
   }
 
   .cta-features {
-    max-width: 100%;
-    gap: 12px;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .cta-features .icon-orb {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .cta-features p {
+    font-size: 11px;
+  }
+
+  .cta-art {
+    justify-self: end;
+    width: calc(100% + 52px);
+    max-width: 490px;
+    margin-inline: -26px;
+    border-radius: 0;
   }
 
   .footer-bottom {
@@ -243,5 +346,14 @@
   .cta-art {
     margin-left: -22px;
     margin-right: -22px;
+    width: calc(100% + 44px);
+  }
+
+  .cta-card {
+    padding-inline: 22px;
+  }
+
+  .cta-copy h2 {
+    font-size: 24px;
   }
 }

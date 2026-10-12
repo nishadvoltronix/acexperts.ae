@@ -1,5 +1,4 @@
 import { QualityImage as Image } from "./QualityImage";
-import Link from "next/link";
 import type { ReactNode } from "react";
 import { htmlToDOM, type Element, type DOMNode } from "html-react-parser";
 import { getAsset } from "@/lib/content";
@@ -52,29 +51,10 @@ export function PageHero({
   children?: ReactNode;
 }) {
   const image = getPageHeroImage(page);
-  const parent = page.type === "article" || page.type === "archive"
-    ? { route: "/blog/", label: "Blog" }
-    : page.type === "service"
-      ? { route: "/services/", label: "Services" }
-      : page.type === "project"
-        ? { route: "/projects/", label: "Projects" }
-        : undefined;
-
   return (
     <section className={`internal-hero${image ? " has-art" : " text-hero"}`}>
       <div className="container internal-hero-inner">
         <div className="internal-hero-copy">
-          <nav className="breadcrumbs" aria-label="Breadcrumb">
-            <Link href="/">Home</Link>
-            <span aria-hidden="true">/</span>
-            {parent && (
-              <>
-                <Link href={parent.route}>{parent.label}</Link>
-                <span aria-hidden="true">/</span>
-              </>
-            )}
-            <span aria-current="page">{page.h1}</span>
-          </nav>
           <p className="eyebrow">{pageLabels[page.type] || "AC Experts"}</p>
           <h1>{page.h1}</h1>
           {description && <p className="internal-hero-description">{description}</p>}

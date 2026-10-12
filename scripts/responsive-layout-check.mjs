@@ -115,7 +115,26 @@ async function auditGeometry(page) {
         if (spread > 2) alignmentIssues.push({ selector, target, rowTop: round(row.top + scrollY), spread: round(spread) });
       }
     }
-    return { documentWidth: document.documentElement.scrollWidth, viewportWidth: innerWidth, textOverflow, controlOverflow, buttonOverlaps, clippedControls, missingImages, tableScroll, alignmentIssues };
+    const supportCardIssues = [];
+    for (const card of document.querySelectorAll(".cta-card")) {
+      const bounds = card.getBoundingClientRect();
+      const parts = [...card.querySelectorAll(".cta-copy,.cta-features,.cta-art")].filter(isVisible);
+      for (const [index, part] of parts.entries()) {
+        const rect = part.getBoundingClientRect();
+        if (rect.left < bounds.left - 2 || rect.right > bounds.right + 2 || rect.top < bounds.top - 2 || rect.bottom > bounds.bottom + 2) {
+          supportCardIssues.push({ type: "outside-card", part: descriptor(part), rect: rectData(rect), bounds: rectData(bounds) });
+        }
+        for (const other of parts.slice(index + 1)) {
+          const next = other.getBoundingClientRect();
+          if (Math.min(rect.right, next.right) - Math.max(rect.left, next.left) > 2 && Math.min(rect.bottom, next.bottom) - Math.max(rect.top, next.top) > 2) {
+            supportCardIssues.push({ type: "overlap", first: descriptor(part), second: descriptor(other) });
+          }
+        }
+      }
+    }
+    const topStrips = document.querySelectorAll(".top-strip").length;
+    const heroBreadcrumbs = document.querySelectorAll('.internal-hero .breadcrumbs,.internal-hero nav[aria-label="Breadcrumb"]').length;
+    return { documentWidth: document.documentElement.scrollWidth, viewportWidth: innerWidth, textOverflow, controlOverflow, buttonOverlaps, clippedControls, missingImages, tableScroll, alignmentIssues, supportCardIssues, topStrips, heroBreadcrumbs };
   });
 }
 
@@ -145,7 +164,7 @@ async function worker() {
       await page.waitForTimeout(150);
       Object.assign(entry, await auditGeometry(page));
       if (entry.missingImages.length) entry.pendingImageRequests = [...pendingImages];
-      entry.ok = entry.status === 200 && entry.documentWidth <= job.width + 1 && !entry.textOverflow.length && !entry.controlOverflow.length && !entry.buttonOverlaps.length && !entry.clippedControls.length && !entry.missingImages.length && !entry.alignmentIssues.length && entry.tableScroll.every((table) => table.reachable) && !entry.errors.length;
+      entry.ok = entry.status === 200 && entry.documentWidth <= job.width + 1 && !entry.textOverflow.length && !entry.controlOverflow.length && !entry.buttonOverlaps.length && !entry.clippedControls.length && !entry.missingImages.length && !entry.alignmentIssues.length && !entry.supportCardIssues.length && entry.topStrips === 0 && entry.heroBreadcrumbs === 0 && entry.tableScroll.every((table) => table.reachable) && !entry.errors.length;
       if (representatives.has(job.route) && [390, 1440].includes(job.width) && process.env.SCREENSHOTS !== "0") {
         entry.screenshot = `${outputDir}/responsive-${representatives.get(job.route)}-${job.width}.png`;
         await page.screenshot({ path: entry.screenshot, fullPage: true, animations: "disabled" });
@@ -162,7 +181,7 @@ async function worker() {
     report.cases.push(entry);
     if (!entry.ok) {
       report.failures.push(entry);
-      console.error(`FAIL ${job.width} ${job.route} ${JSON.stringify({ text: entry.textOverflow, controls: entry.controlOverflow, overlap: entry.buttonOverlaps, clipped: entry.clippedControls, alignment: entry.alignmentIssues, images: entry.missingImages, errors: entry.errors })}`);
+      console.error(`FAIL ${job.width} ${job.route} ${JSON.stringify({ text: entry.textOverflow, controls: entry.controlOverflow, overlap: entry.buttonOverlaps, clipped: entry.clippedControls, alignment: entry.alignmentIssues, supportCard: entry.supportCardIssues, topStrips: entry.topStrips, heroBreadcrumbs: entry.heroBreadcrumbs, images: entry.missingImages, errors: entry.errors })}`);
     } else {
       console.log(`PASS ${job.width} ${job.route}`);
     }

@@ -2,7 +2,22 @@
 
 12 October 2026, Asia/Dubai. This report covers the current local production build and the original supplied Word document. After reviewing the deployment boundary, the user explicitly authorized **“Push main and allow automatic Vercel deployment.”** That authorization covers this reviewed GitHub push and its automatic Vercel deployment. Live email tests, DNS changes and other infrastructure operations remain outside this authorization.
 
-## Latest adjustment: faster testimonial rotation
+## Latest adjustment: navigation cleanup and responsive support card
+
+The top contact/group strip and visible hero breadcrumbs are now removed across all pages, including client-side navigation. Services opens on desktop mouse hover and retains click, keyboard, Escape and touch controls. The shared support card now gives the copy, feature icons and technician image separate grid areas so they cannot overlap; tablet and mobile layouts stack appropriately. The three-second testimonial rotation remains unchanged.
+
+Verification against the local production build passed:
+
+- Build, lint and TypeScript checks.
+- **384 responsive cases**: 48 routes at 320, 360, 390, 414, 768, 1024, 1280 and 1440px, including absent strips/breadcrumbs and support-card containment/overlap checks.
+- **27 completion checks**, including desktop hover and pointer travel, mouseleave, click, Escape, keyboard, real touch taps, mocked form responses and 16 automated accessibility scans with no reported violations.
+- **17 focused checks**, 20 testimonial layout cases and two further automated accessibility scans. The measured repeat interval was 3,018ms with a 450ms transition.
+- **94 Node tests**, zero failures; 16 PostgreSQL integration tests skipped because an isolated database was not running for this UI change.
+- Route/content/SEO verification: 48 pages, 134 protected files, 24 article checks, 67 FAQ checks, 30 page redirects, 121 media redirects and 915 linked targets; zero failures.
+
+The support card was captured at six widths and visually reviewed at 390, 1024 and 1440px. [Verification summary](../artifacts/navigation-responsive-2026-10-12/verification-summary.json) records the results and source hashes. Full logs, browser reports and screenshots are retained locally under `artifacts/navigation-responsive-2026-10-12/`. Automated accessibility scans have manual-review items and do not establish full compliance. No live email was sent; hosted deployment and the production configuration requirements below remain separate checks.
+
+## Earlier adjustment: faster testimonial rotation (commit 920b964)
 
 Following the user's request for a faster slider, testimonials now advance every **three seconds** with a **450ms** transition. The production build and lint passed, along with all 17 focused browser checks, 20 alignment cases and two accessibility scans. The measured repeat interval was 3,032ms. Pause behavior, manual controls and reduced-motion support remain intact. [Verification summary](../artifacts/testimonial-speed-2026-10-12/verification-summary.json).
 

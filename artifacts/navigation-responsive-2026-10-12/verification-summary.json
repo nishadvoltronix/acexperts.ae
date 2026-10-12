@@ -1,0 +1,258 @@
+{
+  "checkedAt": "2026-10-12T13:46:46.291Z",
+  "base": "http://127.0.0.1:3112/",
+  "baselineCommit": "920b9648e5d5db112d64ce7ad52ed966c6bf7ea5",
+  "scope": [
+    "Remove top strip across all routes",
+    "Open Services on desktop mouse hover with click, keyboard and touch controls",
+    "Remove visible hero breadcrumbs across all routes",
+    "Prevent shared support-card overlap on desktop, tablet and mobile"
+  ],
+  "commands": {
+    "build": {
+      "command": "npm run build",
+      "passed": true,
+      "localLog": "build.log"
+    },
+    "lint": {
+      "command": "npm run lint",
+      "passed": true,
+      "localLog": "lint.log"
+    },
+    "typecheck": {
+      "command": "npm run typecheck",
+      "passed": true,
+      "localLog": "typecheck.log"
+    }
+  },
+  "nodeTests": {
+    "command": "npm test",
+    "tests": 110,
+    "passed": 94,
+    "failed": 0,
+    "skipped": 16,
+    "skipReason": "16 PostgreSQL integration tests require an isolated database; not started for this UI change.",
+    "localLog": "tests.log"
+  },
+  "responsive": {
+    "cases": 384,
+    "routes": 48,
+    "failures": 0,
+    "passed": true,
+    "widths": [
+      320,
+      360,
+      390,
+      414,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "topStripCount": 0,
+    "heroBreadcrumbCount": 0,
+    "supportCardIssues": 0,
+    "localEvidence": "full-site/responsive-layout-check.json"
+  },
+  "completion": {
+    "checks": [
+      {
+        "name": "Homepage content, simplified header and group links",
+        "passed": true
+      },
+      {
+        "name": "Desktop Services hover, pointer path, click, Escape and keyboard 1024px",
+        "passed": true
+      },
+      {
+        "name": "Desktop Services hover, pointer path, click, Escape and keyboard 1280px",
+        "passed": true
+      },
+      {
+        "name": "Desktop Services hover, pointer path, click, Escape and keyboard 1440px",
+        "passed": true
+      },
+      {
+        "name": "Touch Services disclosure and direct navigation 390px",
+        "passed": true
+      },
+      {
+        "name": "Touch Services disclosure and direct navigation 1440px",
+        "passed": true
+      },
+      {
+        "name": "Project filters show real installation and honest empty categories",
+        "passed": true
+      },
+      {
+        "name": "Original service CTAs and new service routes",
+        "passed": true
+      },
+      {
+        "name": "Contact provider acceptance, failure, network error and duplicate click UI",
+        "passed": true
+      },
+      {
+        "name": "Newsletter consent, provider failure and confirmation-email acceptance UI",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 390px /",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 390px /about/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 390px /services/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 390px /projects/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 390px /contact-us/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 390px /emergency-ac-maintenance-service/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 390px /ac-duct-cleaning-services-in-dubai/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 390px /hvac-services/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 1440px /",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 1440px /about/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 1440px /services/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 1440px /projects/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 1440px /contact-us/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 1440px /emergency-ac-maintenance-service/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 1440px /ac-duct-cleaning-services-in-dubai/",
+        "passed": true
+      },
+      {
+        "name": "Accessibility 1440px /hvac-services/",
+        "passed": true
+      },
+      {
+        "name": "No uncaught page errors",
+        "passed": true
+      }
+    ],
+    "failures": 0,
+    "accessibilityScans": 16,
+    "providerMode": "Browser response mocks; no live provider calls",
+    "accessibilityViolations": 0,
+    "accessibilityScansWithManualReviewItems": 16,
+    "localEvidence": "completion/completion-browser-check.json"
+  },
+  "focused": {
+    "passed": true,
+    "checks": 17,
+    "failures": 0,
+    "layoutCases": 20,
+    "accessibilityScans": 2,
+    "accessibilityViolations": 0,
+    "repeatIntervalMs": 3018,
+    "transitionDuration": "0.45s",
+    "errors": [],
+    "blockedMutations": [],
+    "localEvidence": "focused/homepage-updates-browser-check.json"
+  },
+  "routes": {
+    "pages": 48,
+    "expectedPages": 48,
+    "protectedFiles": 134,
+    "intentionalFileChanges": 2,
+    "articleChecks": 24,
+    "faqChecks": 67,
+    "redirects": 30,
+    "mediaRedirects": 121,
+    "linkedTargets": 915,
+    "failures": 0,
+    "passed": true,
+    "localEvidence": "route-validation.json"
+  },
+  "supportCardVisualReview": {
+    "geometry": [
+      {
+        "width": 320,
+        "contained": true,
+        "nonoverlap": true
+      },
+      {
+        "width": 390,
+        "contained": true,
+        "nonoverlap": true
+      },
+      {
+        "width": 768,
+        "contained": true,
+        "nonoverlap": true
+      },
+      {
+        "width": 1024,
+        "contained": true,
+        "nonoverlap": true
+      },
+      {
+        "width": 1280,
+        "contained": true,
+        "nonoverlap": true
+      },
+      {
+        "width": 1440,
+        "contained": true,
+        "nonoverlap": true
+      }
+    ],
+    "visuallyReviewedWidths": [
+      390,
+      1024,
+      1440
+    ],
+    "localEvidence": "cta-review/"
+  },
+  "sourceSha256": {
+    "components/Header.tsx": "49639e704c9c90e52d55b891e8a60f1ea685a3d24a1597b0dcfc0afcc3ba5d54",
+    "components/PageHero.tsx": "67c917dbbee3018c26ab6622b12e4ccd8bee6674161f2faab8077a4eb2d1d3a1",
+    "app/shared.css": "c264c39a4b099085a94909f09a8546926adef3ffcf3899b08cc1e63a7a5871a4",
+    "app/responsive.css": "9de2a32c0d679b730d37a7b436bd5edb8985498a907950639fae4dca5f7b279d",
+    "app/shell-layout.css": "2a5aa571bbbd536f44fdeac42750d4d49c7e8ad513a08717145d9e4e17968ad8",
+    "scripts/completion-browser-check.mjs": "216d75884dacc3e173b4bc84574c42a82180f2e00ea98783512d0f3e1b36d7aa",
+    "scripts/homepage-updates-browser-check.mjs": "ef4b529ce5d3a02c858f6827b85a516ff6e6f41dfb6ab6b92c1f7289dfaa89fc",
+    "scripts/responsive-layout-check.mjs": "9490daa5eb1c5ff6a180afe366be363c40f4afaa9a7880715178ae3c65f6b97a"
+  },
+  "limitations": [
+    "Local production-build verification; hosted deployment checked separately.",
+    "Browser forms used response mocks; no live delivery tested.",
+    "Automated accessibility scans do not establish full compliance.",
+    "Existing hosting, PostgreSQL, privacy and Brevo configuration requirements remain open."
+  ]
+}

@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import type { PointerEvent } from "react";
 import { services, site } from "@/lib/site";
 import { BrandLogo, Icon } from "./ui";
-import { TopStrip } from "./TopStrip";
+
+const desktopHoverQuery = "(min-width: 1024px) and (hover: hover) and (pointer: fine)";
 
 const primaryLinks = [
   { title: "Home", route: "/" },
@@ -22,6 +24,40 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const toggle = useRef<HTMLButtonElement>(null);
   const nav = useRef<HTMLElement>(null);
+  const serviceDisclosure = useRef<HTMLDetailsElement>(null);
+  const hoverOpened = useRef(false);
+  const hoverCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function cancelHoverClose() {
+    if (hoverCloseTimer.current !== null) {
+      clearTimeout(hoverCloseTimer.current);
+      hoverCloseTimer.current = null;
+    }
+  }
+
+  function openOnHover(event: PointerEvent<HTMLLIElement>) {
+    if (event.pointerType === "touch" || !window.matchMedia(desktopHoverQuery).matches) return;
+    cancelHoverClose();
+    if (serviceDisclosure.current && !serviceDisclosure.current.open) {
+      serviceDisclosure.current.open = true;
+      hoverOpened.current = true;
+    }
+  }
+
+  function closeAfterHover(event: PointerEvent<HTMLLIElement>) {
+    if (event.pointerType === "touch" || !window.matchMedia(desktopHoverQuery).matches) return;
+    cancelHoverClose();
+    // Give the pointer time to cross into the dropdown without interrupting
+    // keyboard users who still have focus inside the disclosure.
+    hoverCloseTimer.current = setTimeout(() => {
+      hoverCloseTimer.current = null;
+      const disclosure = serviceDisclosure.current;
+      if (disclosure && !disclosure.querySelector(":focus-visible")) {
+        disclosure.open = false;
+        hoverOpened.current = false;
+      }
+    }, 180);
+  }
 
   useEffect(() => {
     function onKey(event: KeyboardEvent) {
@@ -30,6 +66,9 @@ export function Header() {
         "details[open]",
       );
       if (disclosure) {
+        if (hoverCloseTimer.current !== null) clearTimeout(hoverCloseTimer.current);
+        hoverCloseTimer.current = null;
+        hoverOpened.current = false;
         disclosure.open = false;
         disclosure.querySelector("summary")?.focus();
       } else if (open) {
@@ -41,7 +80,20 @@ export function Header() {
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
 
+  useEffect(() => {
+    // The shared header stays mounted during client-side navigation.
+    if (serviceDisclosure.current) serviceDisclosure.current.open = false;
+    hoverOpened.current = false;
+    if (hoverCloseTimer.current !== null) clearTimeout(hoverCloseTimer.current);
+    hoverCloseTimer.current = null;
+    return () => {
+      if (hoverCloseTimer.current !== null) clearTimeout(hoverCloseTimer.current);
+    };
+  }, [pathname]);
+
   function close() {
+    cancelHoverClose();
+    hoverOpened.current = false;
     setOpen(false);
     nav.current?.querySelectorAll("details").forEach((item) => {
       item.open = false;
@@ -49,8 +101,6 @@ export function Header() {
   }
 
   return (
-    <>
-    {pathname !== "/" && <TopStrip />}
     <header className="site-header">
       <div className="navigation-bar container">
         <Link
@@ -83,6 +133,16 @@ export function Header() {
               <li
                 key={item.route}
                 className={item.route === "/services/" ? "has-dropdown" : undefined}
+                onPointerEnter={item.route === "/services/" ? openOnHover : undefined}
+                onPointerLeave={item.route === "/services/" ? closeAfterHover : undefined}
+                onFocus={item.route === "/services/" ? cancelHoverClose : undefined}
+                onBlur={item.route === "/services/" ? (event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget)) {
+                    cancelHoverClose();
+                    if (serviceDisclosure.current) serviceDisclosure.current.open = false;
+                    hoverOpened.current = false;
+                  }
+                } : undefined}
               >
                 <Link
                   href={item.route}
@@ -92,8 +152,17 @@ export function Header() {
                   {item.title}
                 </Link>
                 {item.route === "/services/" && (
-                  <details className="nav-dropdown">
-                    <summary aria-label="Service pages">
+                  <details ref={serviceDisclosure} className="nav-dropdown">
+                    <summary
+                      aria-label="Service pages"
+                      onClick={(event) => {
+                        // A pointer first enters before clicking. Keep that
+                        // first click open; subsequent clicks toggle natively.
+                        if (event.detail > 0 && hoverOpened.current) event.preventDefault();
+                        hoverOpened.current = false;
+                      }}
+                      onKeyDown={() => { hoverOpened.current = false; }}
+                    >
                       <Icon name="arrow" size={12} />
                     </summary>
                     <ul>
@@ -126,6 +195,5 @@ export function Header() {
         </a>
       </div>
     </header>
-    </>
   );
 }

@@ -113,12 +113,16 @@ async function scan(page, width) {
 try {
   const desktop = await openPage();
   const page = desktop.page;
-  await check("Homepage strip removed; internal strip retained after client navigation", async () => {
+  await check("Top strip and visible hero breadcrumbs stay absent through client navigation", async () => {
     assert.equal(await page.locator(".top-strip").count(), 0);
-    await page.locator('.primary-navigation a[href="/about/"]').first().click();
-    await page.waitForURL("**/about/");
-    await page.locator(".top-strip").waitFor({ state: "visible" });
-    assert.equal(await page.locator(".top-strip").count(), 1);
+    for (const route of ["/about/", "/services/", "/projects/", "/products/", "/blog/", "/contact-us/"]) {
+      await page.locator(`.primary-navigation a[href="${route}"]`).first().click();
+      await page.waitForURL(new URL(route, base).href);
+      await page.locator("main h1").waitFor({ state: "visible" });
+      assert.equal(await page.locator(".top-strip").count(), 0, route);
+      assert.equal(await page.locator(".internal-hero .breadcrumbs").count(), 0, route);
+      assert.equal(await page.getByRole("navigation", { name: "Breadcrumb", exact: true }).count(), 0, route);
+    }
     await page.locator(".site-header").getByRole("link", { name: "Voltronix home", exact: true }).click();
     await page.waitForURL(base.href);
     await page.locator(".promise-band h2").waitFor();

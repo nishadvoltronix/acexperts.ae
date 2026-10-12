@@ -49,28 +49,89 @@ try {
     assert.equal(await page.getByRole("button", { name: "Menu", exact: true }).evaluate((el) => el === document.activeElement), true);
   });
   for (const width of [1024, 1280, 1440]) {
-    await check(`Desktop service disclosure target and keyboard ${width}px`, async () => {
+    await check(`Desktop Services hover, pointer path, click, Escape and keyboard ${width}px`, async () => {
       await page.setViewportSize({ width, height: 900 });
       await page.goto(base.href, { waitUntil: "networkidle" });
       const disclosure = page.locator(".primary-navigation .nav-dropdown");
       const summary = disclosure.locator("summary");
       const serviceLink = page.locator('.primary-navigation > ul > li.has-dropdown > a');
+      const menu = disclosure.locator("ul");
       assert.equal(await serviceLink.getAttribute("href"), "/services/");
       const box = await summary.boundingBox();
       const linkBox = await serviceLink.boundingBox();
       assert(box && box.width >= 24 && box.height >= 24, "Desktop disclosure must meet the WCAG 2.2 minimum target size");
       assert(linkBox && box.x >= linkBox.x + linkBox.width, "Disclosure must not overlap the Services link");
-      await summary.click({ position: { x: box.width - 2, y: box.height / 2 } });
-      assert.equal(await disclosure.evaluate((element) => element.open), true, "The outer disclosure target must open service links");
+      await serviceLink.hover();
+      await menu.waitFor({ state: "visible" });
+      assert.equal(await disclosure.evaluate(element => element.open), true, "Hovering the Services link must open its dropdown");
+      const firstItem = await menu.locator("a").first().boundingBox();
+      assert(firstItem);
+      await page.mouse.move(firstItem.x + firstItem.width / 2, firstItem.y + firstItem.height / 2, { steps: 12 });
+      await page.waitForTimeout(250);
+      assert.equal(await disclosure.evaluate(element => element.open), true, "The pointer must be able to cross into the dropdown without closing it");
       assert(await disclosure.getByRole("link", { name: "HVAC Services", exact: true }).isVisible());
+      await page.mouse.move(1, 400);
+      await menu.waitFor({ state: "hidden" });
+      assert.equal(await disclosure.evaluate(element => element.open), false, "Leaving the entire dropdown area must close hover navigation");
+      await summary.hover();
+      await menu.waitFor({ state: "visible" });
+      assert.equal(await disclosure.evaluate(element => element.open), true, "Hovering the caret must also open service links");
+      await summary.click({ position: { x: box.width - 2, y: box.height / 2 } });
+      assert.equal(await disclosure.evaluate((element) => element.open), true, "A first click must preserve the menu just opened by pointer hover");
+      assert(await disclosure.getByRole("link", { name: "HVAC Services", exact: true }).isVisible());
+      await summary.click();
+      await menu.waitFor({ state: "hidden" });
+      assert.equal(await disclosure.evaluate(element => element.open), false, "A second caret click must close the menu");
+      await summary.click();
+      await menu.waitFor({ state: "visible" });
       await page.keyboard.press("Escape");
       assert.equal(await disclosure.evaluate((element) => element.open), false);
       assert.equal(await summary.evaluate((element) => element === document.activeElement), true);
+      await page.mouse.move(box.x + box.width / 2 + 1, box.y + box.height / 2);
+      await page.waitForTimeout(300);
+      assert.equal(await disclosure.evaluate(element => element.open), false, "Escape must stay closed while the pointer remains over the caret");
       await page.keyboard.press("Enter");
       assert.equal(await disclosure.evaluate((element) => element.open), true, "Keyboard activation must remain available");
       await page.keyboard.press("Escape");
       assert.equal(await disclosure.evaluate((element) => element.open), false);
+      await page.keyboard.press("Space");
+      assert.equal(await disclosure.evaluate(element => element.open), true, "Space must retain native disclosure activation");
+      await page.keyboard.press("Escape");
+      await page.mouse.move(1, 400);
+      await serviceLink.hover();
+      await menu.waitFor({ state: "visible" });
+      assert.equal(await disclosure.evaluate(element => element.open), true, "Leaving and re-entering restores hover after Escape");
+      await serviceLink.click();
+      await page.waitForURL(new URL("/services/", base).href);
+      assert.equal(await disclosure.evaluate(element => element.open), false, "Service navigation closes the dropdown");
+      assert.equal(await page.locator(".top-strip").count(), 0);
+      assert.equal(await page.getByRole("navigation", { name: "Breadcrumb", exact: true }).count(), 0);
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    });
+  }
+  for (const width of [390, 1440]) {
+    await check(`Touch Services disclosure and direct navigation ${width}px`, async () => {
+      const touchContext = await browser.newContext({ viewport: { width, height: 900 }, hasTouch: true, isMobile: width < 768, reducedMotion: "reduce" });
+      try {
+        const touchPage = await touchContext.newPage();
+        touchPage.on("pageerror", error => pageErrors.push(error.message));
+        await touchPage.goto(base.href, { waitUntil: "networkidle" });
+        if (width < 1024) await touchPage.getByRole("button", { name: "Menu", exact: true }).tap();
+        const disclosure = touchPage.locator(".primary-navigation .nav-dropdown");
+        const summary = disclosure.locator("summary");
+        assert.equal(await disclosure.evaluate(element => element.open), false);
+        await summary.tap();
+        assert.equal(await disclosure.evaluate(element => element.open), true, "First touch must open service links without a hover dependency");
+        assert(await disclosure.getByRole("link", { name: "HVAC Services", exact: true }).isVisible());
+        await summary.tap();
+        assert.equal(await disclosure.evaluate(element => element.open), false, "Second touch must close the disclosure");
+        await touchPage.locator('.primary-navigation > ul > li.has-dropdown > a').tap();
+        await touchPage.waitForURL(new URL("/services/", base).href);
+        assert.equal(await touchPage.locator(".top-strip").count(), 0);
+        assert.equal(await touchPage.getByRole("navigation", { name: "Breadcrumb", exact: true }).count(), 0);
+        if (width < 1024) assert.equal(await touchPage.locator(".primary-navigation").isVisible(), false);
+        assert.equal(await touchPage.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+      } finally { await touchContext.close(); }
     });
   }
   await check("Project filters show real installation and honest empty categories", async () => {
@@ -98,6 +159,8 @@ try {
       assert.equal(await page.locator("main .shared-cta").count(), 1, route);
       assert(await page.locator('.shared-cta a[href="tel:+97148240002"]').isVisible(), route);
       assert.equal(await page.locator("main h1").count(), 1, route);
+      assert.equal(await page.locator(".top-strip").count(), 0, route);
+      assert.equal(await page.getByRole("navigation", { name: "Breadcrumb", exact: true }).count(), 0, route);
     }
   });
   await check("Contact provider acceptance, failure, network error and duplicate click UI", async () => {
@@ -153,6 +216,8 @@ try {
       await check(`Accessibility ${width}px ${route}`, async () => {
         await page.setViewportSize({ width, height: 900 });
         await page.goto(new URL(route, base).href, { waitUntil: "networkidle" });
+        assert.equal(await page.locator(".top-strip").count(), 0, route);
+        assert.equal(await page.getByRole("navigation", { name: "Breadcrumb", exact: true }).count(), 0, route);
         const scan = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).analyze();
         report.accessibility.push({ width, route, violations: scan.violations.map((item) => ({ id: item.id, nodes: item.nodes.map((node) => ({ target: node.target, summary: node.failureSummary })) })), incomplete: scan.incomplete.map((item) => ({ id: item.id, targets: item.nodes.map((node) => node.target) })) });
         assert.deepEqual(scan.violations.map((item) => item.id), []);
