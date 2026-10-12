@@ -67,7 +67,6 @@
 .home-hero-copy > p:not(.hero-tagline) { margin-bottom: 32px; }
 .home-services-extra { text-align: center; margin-top: 28px; font-size: 14px; }
 .home-services-extra a { display: inline-flex; align-items: center; min-height: 44px; gap: 10px; color: var(--color-primary-dark); }
-.promise-audience { text-align: center; font-size: 15px; font-weight: 500; margin: 0 0 14px; }
 .home-completion-section { padding-block: 58px; }
 .home-portfolio, .home-faq { background: var(--color-surface-soft); }
 .home-completion-section .section-heading h2 { font-size: clamp(26px, 2.5vw, 34px); }

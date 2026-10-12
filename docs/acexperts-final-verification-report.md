@@ -2,6 +2,22 @@
 
 12 October 2026, Asia/Dubai. This report covers the current local production build and the original supplied Word document. After reviewing the deployment boundary, the user explicitly authorized **“Push main and allow automatic Vercel deployment.”** That authorization covers this reviewed GitHub push and its automatic Vercel deployment. Live email tests, DNS changes and other infrastructure operations remain outside this authorization.
 
+## Subsequent homepage changes requested on 12 October 2026
+
+The user's later screenshot instructions supersede the original homepage top-strip and banner requirements. The thin contact/group strip is now omitted on the homepage, while internal pages retain it. The red banner heading is now **Residential & Commercial**, with the duplicate subtitle removed. Testimonials advance every seven seconds with an 850ms slide, Pause/Play controls, hover/focus/offscreen/background pausing and reduced-motion support. Existing arrows, dots, keyboard navigation and touch swipe remain available.
+
+The slower transition exposed a real temporary text-contrast failure from the inherited opacity fade. Removing that fade keeps text fully opaque throughout the slide; the existing motion-suite contrast assertion was retained unchanged.
+
+Follow-up verification:
+
+- Production build, lint and TypeScript checks passed.
+- The Node suite passed 82 tests with 28 environment-dependent skips. A subsequent rendered SEO run passed all 27 SEO tests, including the 12 initially skipped browser-dependent checks. The remaining 16 PostgreSQL integration checks were not rerun for this UI-only change; their earlier results below remain historical evidence.
+- All 16 focused homepage checks passed, including actual repeated seven-second rotation and two accessibility scans: [focused results](../artifacts/homepage-updates-2026-10-12/focused/final/homepage-updates-browser-check.json). Run with `npm run check:homepage` against a local production server using `BASE_URL`.
+- The final motion suite passed all eight widths and reduced-motion, no-JavaScript, no-observer and live-preference checks: [motion results](../artifacts/homepage-updates-2026-10-12/motion-final/motion-browser-check.json).
+- The completion suite passed 25 checks including 16 accessibility scans: [completion results](../artifacts/homepage-updates-2026-10-12/completion/completion-browser-check.json). Homepage/About responsive verification passed all 16 cases: [responsive results](../artifacts/homepage-updates-2026-10-12/responsive/responsive-layout-check.json). Desktop and mobile captures were visually inspected.
+
+No live email was sent. The production-configuration blockers documented below remain open. This follow-up is authorized for GitHub publication, with the previously approved automatic Vercel deployment.
+
 ## Changes and document comparison
 
 The original `web modification- acexperts.docx` was read directly again, along with both supplied implementation prompts. Its SHA-256 remains `79fc75b01983e5f24a3b2f2f5554ffdd23cf6ded0eb2179a1ed5041e12c2e365`. All 11 specified page titles, meta descriptions and canonical URLs match the original table exactly. [Direct document comparison](../artifacts/final-document-verification-2026-10-12T12-17-33-253Z/document-audit/word-source-comparison.json), [requirement-by-requirement review](../artifacts/final-document-verification-2026-10-12T12-17-33-253Z/document-audit/review.md).

@@ -16,6 +16,7 @@
     "check:motion": "node scripts/motion-browser-check.mjs",
     "check:ac-viewer": "node scripts/ac-viewer-browser-check.mjs",
     "check:completion": "node scripts/completion-browser-check.mjs",
+    "check:homepage": "node scripts/homepage-updates-browser-check.mjs",
     "test:security": "node --test scripts/contact-security.test.mjs scripts/content-security.test.mjs",
     "check:security": "node scripts/security-browser-check.mjs",
     "crawl": "node scripts/crawl.mjs",

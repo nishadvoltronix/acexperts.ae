@@ -50,7 +50,7 @@ export function Header() {
 
   return (
     <>
-    <TopStrip />
+    {pathname !== "/" && <TopStrip />}
     <header className="site-header">
       <div className="navigation-bar container">
         <Link

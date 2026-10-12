@@ -24,16 +24,16 @@ page.on("pageerror", (error) => pageErrors.push(error.message));
 await context.route("**/api/contact/", (route) => route.fulfill({ status: 503, json: { ok: false, message: "Your message has not been sent. Please contact us by phone." } }));
 await context.route("**/api/newsletter/", (route) => route.fulfill({ status: 503, json: { ok: false, message: "Newsletter signup is currently unavailable. Please try again later." } }));
 try {
-  await check("Homepage content, restored header and group links", async () => {
+  await check("Homepage content, simplified header and group links", async () => {
     await page.goto(base.href, { waitUntil: "networkidle" });
     assert.equal(await page.locator("h1").count(), 1);
     assert.equal(await page.locator("h1").textContent(), "Welcome to Voltronix, AC Service Company in Dubai");
-    assert(await page.locator(".top-strip").isVisible());
-    assert.match(await page.locator(".top-strip").textContent(), /SINCE 2009/i);
+    assert.equal(await page.locator(".top-strip").count(), 0);
     assert.equal(await page.locator("#home-blog .content-card").count(), 3);
     assert.equal(await page.locator("#home-faq details").count(), 8);
     assert.equal(await page.locator("#home-portfolio .home-project-card").count(), 1);
-    assert.match(await page.locator(".promise-band").textContent(), /Residential & Commercial/);
+    assert.equal(await page.locator(".promise-band h2").textContent(), "Residential & Commercial");
+    assert.doesNotMatch(await page.locator(".promise-band").textContent(), /We Make AC Services Simple/);
     for (const label of ["Contracting", "DEWA Approvals", "AC Experts", "Switchgear"]) {
       assert(await page.locator(".footer-group").getByRole("link", { name: label, exact: true }).isVisible());
     }

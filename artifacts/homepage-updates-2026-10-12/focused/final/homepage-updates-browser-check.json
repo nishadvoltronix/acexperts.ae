@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-10-12T13:02:13.957Z",
+  "base": "http://127.0.0.1:3112/",
+  "cases": [
+    {
+      "name": "Homepage strip removed; internal strip retained after client navigation",
+      "passed": true
+    },
+    {
+      "name": "Residential & Commercial replaces the old heading without duplicate subtitle",
+      "passed": true
+    },
+    {
+      "name": "Real-time autoplay waits seven seconds, repeats, and does not announce automatic changes",
+      "passed": true
+    },
+    {
+      "name": "Desktop accessibility, overflow and screenshots",
+      "passed": true
+    },
+    {
+      "name": "Autoplay remains stopped offscreen and restarts with a full delay",
+      "passed": true
+    },
+    {
+      "name": "Hover pauses autoplay, leaving resumes with a full interval",
+      "passed": true
+    },
+    {
+      "name": "Keyboard focus pauses autoplay until focus leaves the carousel",
+      "passed": true
+    },
+    {
+      "name": "Pause persists through manual navigation; Play resumes automatic rotation",
+      "passed": true
+    },
+    {
+      "name": "Simulated document-hidden events pause and resume rotation",
+      "passed": true
+    },
+    {
+      "name": "Live reduced-motion preference stops autoplay and transition; reverting resumes",
+      "passed": true
+    },
+    {
+      "name": "Arrows, dots, keyboard and manual announcements remain available",
+      "passed": true
+    },
+    {
+      "name": "Mobile autoplay and real touch swipe work with 44px selector targets",
+      "passed": true
+    },
+    {
+      "name": "Mobile accessibility, banner/header and overflow at 320/390/768px",
+      "passed": true
+    },
+    {
+      "name": "Initial reduced motion disables autoplay while preserving manual navigation",
+      "passed": true
+    },
+    {
+      "name": "No-IntersectionObserver fallback retains offscreen protection and autoplay",
+      "passed": true
+    },
+    {
+      "name": "No browser errors or network mutations",
+      "passed": true
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "realTiming": {
+    "firstAdvanceMs": 6910,
+    "secondAdvanceMs": 13927,
+    "transitionDuration": "0.85s"
+  },
+  "errors": [],
+  "blockedMutations": [],
+  "finishedAt": "2026-10-12T13:02:49.158Z",
+  "passed": true
+}
