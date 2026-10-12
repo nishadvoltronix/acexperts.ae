@@ -7,36 +7,9 @@
   --slide-offset: -14px;
 }
 
-.playback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 44px;
-  margin: 4px auto 0;
-  padding: 8px 14px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-pill);
-  background: white;
-  color: var(--color-primary-dark);
-  font: inherit;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-.playback:hover {
-  background: var(--color-surface-soft);
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .entering {
     animation: testimonial-enter 850ms cubic-bezier(.22, 1, .36, 1) both;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .playback {
-    display: none;
   }
 }
 

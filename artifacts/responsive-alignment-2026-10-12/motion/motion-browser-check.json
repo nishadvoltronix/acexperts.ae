@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-12T13:25:26.623Z",
+  "base": "http://127.0.0.1:3112",
+  "checked": [
+    {
+      "width": 320,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed"
+    },
+    {
+      "width": 360,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed"
+    },
+    {
+      "width": 390,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed"
+    },
+    {
+      "width": 414,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed"
+    },
+    {
+      "width": 768,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed"
+    },
+    {
+      "width": 1024,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed"
+    },
+    {
+      "width": 1280,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed"
+    },
+    {
+      "width": 1440,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed"
+    },
+    {
+      "mode": "reduced",
+      "checks": "All content and final statistics remain visible"
+    },
+    {
+      "mode": "no-javascript",
+      "checks": "All content and final statistics remain visible"
+    },
+    {
+      "mode": "no-observer",
+      "checks": "All content and final statistics remain visible"
+    },
+    {
+      "mode": "live-preference",
+      "checks": "All content and final statistics remain visible"
+    }
+  ]
+}

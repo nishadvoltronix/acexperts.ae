@@ -1,0 +1,2095 @@
+{
+  "checkedAt": "2026-10-12T13:25:32.610Z",
+  "base": "http://127.0.0.1:3112/",
+  "cases": [
+    {
+      "name": "Homepage strip removed; internal strip retained after client navigation",
+      "passed": true
+    },
+    {
+      "name": "Residential & Commercial replaces the old heading without duplicate subtitle",
+      "passed": true
+    },
+    {
+      "name": "Real-time autoplay waits seven seconds, repeats, and does not announce automatic changes",
+      "passed": true
+    },
+    {
+      "name": "Desktop accessibility, overflow and screenshots",
+      "passed": true
+    },
+    {
+      "name": "Autoplay remains stopped offscreen and restarts with a full delay",
+      "passed": true
+    },
+    {
+      "name": "Hover pauses autoplay, leaving resumes with a full interval",
+      "passed": true
+    },
+    {
+      "name": "Keyboard focus pauses autoplay until focus leaves the carousel",
+      "passed": true
+    },
+    {
+      "name": "Manual browsing stops rotation; section Space resumes without a visible playback button",
+      "passed": true
+    },
+    {
+      "name": "Space on a carousel button keeps its native action and does not resume autoplay",
+      "passed": true
+    },
+    {
+      "name": "Simulated document-hidden events pause and resume rotation",
+      "passed": true
+    },
+    {
+      "name": "Live reduced-motion preference stops autoplay and transition; reverting resumes",
+      "passed": true
+    },
+    {
+      "name": "Arrows, dots, keyboard and manual announcements remain available",
+      "passed": true
+    },
+    {
+      "name": "Mobile autoplay and real touch swipe work with 44px selector targets",
+      "passed": true
+    },
+    {
+      "name": "Heading/card alignment, control bounds and responsive layout at 320/390/768/1024/1440px",
+      "passed": true
+    },
+    {
+      "name": "Initial reduced motion disables autoplay while preserving manual navigation",
+      "passed": true
+    },
+    {
+      "name": "No-IntersectionObserver fallback retains offscreen protection and autoplay",
+      "passed": true
+    },
+    {
+      "name": "No browser errors or network mutations",
+      "passed": true
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "violations": []
+    }
+  ],
+  "layouts": [
+    {
+      "width": 320,
+      "active": 0,
+      "heading": {
+        "top": 213.1875,
+        "left": 20,
+        "right": 300,
+        "bottom": 303.375,
+        "width": 280,
+        "height": 90.1875
+      },
+      "cards": [
+        {
+          "top": 331.375,
+          "left": 14.012187957763672,
+          "right": 294.0121879577637,
+          "bottom": 666.875,
+          "width": 280,
+          "height": 335.5
+        }
+      ],
+      "people": [
+        {
+          "top": 593.875,
+          "left": 43.01218795776367,
+          "right": 265.01220321655273,
+          "bottom": 637.875,
+          "width": 222.00001525878906,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 682.875,
+          "left": 108,
+          "right": 152,
+          "bottom": 726.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 682.875,
+          "left": 168,
+          "right": 212,
+          "bottom": 726.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 61.5,
+          "right": 105.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 112.5,
+          "right": 156.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 163.5,
+          "right": 207.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 214.5,
+          "right": 258.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 320
+    },
+    {
+      "width": 320,
+      "active": 1,
+      "heading": {
+        "top": 213.1875,
+        "left": 20,
+        "right": 300,
+        "bottom": 303.375,
+        "width": 280,
+        "height": 90.1875
+      },
+      "cards": [
+        {
+          "top": 331.375,
+          "left": 26.747344970703125,
+          "right": 306.7473449707031,
+          "bottom": 666.875,
+          "width": 280,
+          "height": 335.5
+        }
+      ],
+      "people": [
+        {
+          "top": 593.875,
+          "left": 55.747344970703125,
+          "right": 277.7473449707031,
+          "bottom": 637.875,
+          "width": 222,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 682.875,
+          "left": 108,
+          "right": 152,
+          "bottom": 726.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 682.875,
+          "left": 168,
+          "right": 212,
+          "bottom": 726.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 61.5,
+          "right": 105.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 112.5,
+          "right": 156.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 163.5,
+          "right": 207.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 214.5,
+          "right": 258.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 320
+    },
+    {
+      "width": 320,
+      "active": 2,
+      "heading": {
+        "top": 213.1875,
+        "left": 20,
+        "right": 300,
+        "bottom": 303.375,
+        "width": 280,
+        "height": 90.1875
+      },
+      "cards": [
+        {
+          "top": 331.375,
+          "left": 27.578941345214844,
+          "right": 307.57894134521484,
+          "bottom": 666.875,
+          "width": 280,
+          "height": 335.5
+        }
+      ],
+      "people": [
+        {
+          "top": 593.875,
+          "left": 56.578941345214844,
+          "right": 278.57894134521484,
+          "bottom": 637.875,
+          "width": 222,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 682.875,
+          "left": 108,
+          "right": 152,
+          "bottom": 726.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 682.875,
+          "left": 168,
+          "right": 212,
+          "bottom": 726.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 61.5,
+          "right": 105.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 112.5,
+          "right": 156.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 163.5,
+          "right": 207.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.875,
+          "left": 214.5,
+          "right": 258.5,
+          "bottom": 778.875,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 320
+    },
+    {
+      "width": 320,
+      "active": 3,
+      "heading": {
+        "top": 213.1875,
+        "left": 20,
+        "right": 300,
+        "bottom": 303.375,
+        "width": 280,
+        "height": 90.1875
+      },
+      "cards": [
+        {
+          "top": 331.375,
+          "left": 26.749059677124023,
+          "right": 306.749059677124,
+          "bottom": 691.375,
+          "width": 280,
+          "height": 360
+        }
+      ],
+      "people": [
+        {
+          "top": 618.375,
+          "left": 55.74905776977539,
+          "right": 277.7490577697754,
+          "bottom": 662.375,
+          "width": 222,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 707.375,
+          "left": 108,
+          "right": 152,
+          "bottom": 751.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 707.375,
+          "left": 168,
+          "right": 212,
+          "bottom": 751.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 759.375,
+          "left": 61.5,
+          "right": 105.5,
+          "bottom": 803.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 759.375,
+          "left": 112.5,
+          "right": 156.5,
+          "bottom": 803.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 759.375,
+          "left": 163.5,
+          "right": 207.5,
+          "bottom": 803.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 759.375,
+          "left": 214.5,
+          "right": 258.5,
+          "bottom": 803.375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 320
+    },
+    {
+      "width": 390,
+      "active": 0,
+      "heading": {
+        "top": 220.453125,
+        "left": 20,
+        "right": 370,
+        "bottom": 310.640625,
+        "width": 350,
+        "height": 90.1875
+      },
+      "cards": [
+        {
+          "top": 338.640625,
+          "left": 14.014007568359375,
+          "right": 364.0140075683594,
+          "bottom": 658.640625,
+          "width": 350,
+          "height": 320
+        }
+      ],
+      "people": [
+        {
+          "top": 585.640625,
+          "left": 43.014007568359375,
+          "right": 335.0140075683594,
+          "bottom": 629.640625,
+          "width": 292,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 674.640625,
+          "left": 143,
+          "right": 187,
+          "bottom": 718.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 674.640625,
+          "left": 203,
+          "right": 247,
+          "bottom": 718.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 96.5,
+          "right": 140.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 147.5,
+          "right": 191.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 198.5,
+          "right": 242.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 249.5,
+          "right": 293.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 390
+    },
+    {
+      "width": 390,
+      "active": 1,
+      "heading": {
+        "top": 220.453125,
+        "left": 20,
+        "right": 370,
+        "bottom": 310.640625,
+        "width": 350,
+        "height": 90.1875
+      },
+      "cards": [
+        {
+          "top": 338.640625,
+          "left": 25.989978790283203,
+          "right": 375.9899787902832,
+          "bottom": 658.640625,
+          "width": 350,
+          "height": 320
+        }
+      ],
+      "people": [
+        {
+          "top": 585.640625,
+          "left": 54.9899787902832,
+          "right": 346.9899787902832,
+          "bottom": 629.640625,
+          "width": 292,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 674.640625,
+          "left": 143,
+          "right": 187,
+          "bottom": 718.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 674.640625,
+          "left": 203,
+          "right": 247,
+          "bottom": 718.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 96.5,
+          "right": 140.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 147.5,
+          "right": 191.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 198.5,
+          "right": 242.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 249.5,
+          "right": 293.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 390
+    },
+    {
+      "width": 390,
+      "active": 2,
+      "heading": {
+        "top": 220.453125,
+        "left": 20,
+        "right": 370,
+        "bottom": 310.640625,
+        "width": 350,
+        "height": 90.1875
+      },
+      "cards": [
+        {
+          "top": 338.640625,
+          "left": 26.746915817260742,
+          "right": 376.74691581726074,
+          "bottom": 658.640625,
+          "width": 350,
+          "height": 320
+        }
+      ],
+      "people": [
+        {
+          "top": 585.640625,
+          "left": 55.74691390991211,
+          "right": 347.7469139099121,
+          "bottom": 629.640625,
+          "width": 292,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 674.640625,
+          "left": 143,
+          "right": 187,
+          "bottom": 718.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 674.640625,
+          "left": 203,
+          "right": 247,
+          "bottom": 718.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 96.5,
+          "right": 140.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 147.5,
+          "right": 191.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 198.5,
+          "right": 242.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 249.5,
+          "right": 293.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 390
+    },
+    {
+      "width": 390,
+      "active": 3,
+      "heading": {
+        "top": 220.453125,
+        "left": 20,
+        "right": 370,
+        "bottom": 310.640625,
+        "width": 350,
+        "height": 90.1875
+      },
+      "cards": [
+        {
+          "top": 338.640625,
+          "left": 27.57587242126465,
+          "right": 377.57587242126465,
+          "bottom": 658.640625,
+          "width": 350,
+          "height": 320
+        }
+      ],
+      "people": [
+        {
+          "top": 585.640625,
+          "left": 56.57587432861328,
+          "right": 348.5758743286133,
+          "bottom": 629.640625,
+          "width": 292,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 674.640625,
+          "left": 143,
+          "right": 187,
+          "bottom": 718.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 674.640625,
+          "left": 203,
+          "right": 247,
+          "bottom": 718.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 96.5,
+          "right": 140.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 147.5,
+          "right": 191.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 198.5,
+          "right": 242.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 726.640625,
+          "left": 249.5,
+          "right": 293.5,
+          "bottom": 770.640625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 390
+    },
+    {
+      "width": 768,
+      "active": 0,
+      "heading": {
+        "top": 235.40625,
+        "left": 34.859375,
+        "right": 733.125,
+        "bottom": 333.90625,
+        "width": 698.265625,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 365.90625,
+          "left": 84.11712646484375,
+          "right": 367.24212646484375,
+          "bottom": 705.90625,
+          "width": 283.125,
+          "height": 340
+        },
+        {
+          "top": 365.90625,
+          "left": 387.24212646484375,
+          "right": 670.3827514648438,
+          "bottom": 705.90625,
+          "width": 283.140625,
+          "height": 340
+        }
+      ],
+      "people": [
+        {
+          "top": 630.90625,
+          "left": 109.11712646484375,
+          "right": 342.24212646484375,
+          "bottom": 674.90625,
+          "width": 233.125,
+          "height": 44
+        },
+        {
+          "top": 630.90625,
+          "left": 412.24212646484375,
+          "right": 645.3827514648438,
+          "bottom": 674.90625,
+          "width": 233.140625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 513.90625,
+          "left": 34.859375,
+          "right": 78.859375,
+          "bottom": 557.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 513.90625,
+          "left": 689.125,
+          "right": 733.125,
+          "bottom": 557.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 285.484375,
+          "right": 329.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 336.484375,
+          "right": 380.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 387.484375,
+          "right": 431.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 438.484375,
+          "right": 482.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 768
+    },
+    {
+      "width": 768,
+      "active": 1,
+      "heading": {
+        "top": 235.40625,
+        "left": 34.859375,
+        "right": 733.125,
+        "bottom": 333.90625,
+        "width": 698.265625,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 365.90625,
+          "left": 98.42838287353516,
+          "right": 381.55338287353516,
+          "bottom": 705.90625,
+          "width": 283.125,
+          "height": 340
+        },
+        {
+          "top": 365.90625,
+          "left": 401.5533752441406,
+          "right": 684.6939697265625,
+          "bottom": 705.90625,
+          "width": 283.1405944824219,
+          "height": 340
+        }
+      ],
+      "people": [
+        {
+          "top": 630.90625,
+          "left": 123.42838287353516,
+          "right": 356.55338287353516,
+          "bottom": 674.90625,
+          "width": 233.125,
+          "height": 44
+        },
+        {
+          "top": 630.90625,
+          "left": 426.5533752441406,
+          "right": 659.6939697265625,
+          "bottom": 674.90625,
+          "width": 233.14059448242188,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 513.90625,
+          "left": 34.859375,
+          "right": 78.859375,
+          "bottom": 557.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 513.90625,
+          "left": 689.125,
+          "right": 733.125,
+          "bottom": 557.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 285.484375,
+          "right": 329.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 336.484375,
+          "right": 380.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 387.484375,
+          "right": 431.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 438.484375,
+          "right": 482.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 768
+    },
+    {
+      "width": 768,
+      "active": 2,
+      "heading": {
+        "top": 235.40625,
+        "left": 34.859375,
+        "right": 733.125,
+        "bottom": 333.90625,
+        "width": 698.265625,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 365.90625,
+          "left": 98.44133758544922,
+          "right": 381.5663375854492,
+          "bottom": 705.90625,
+          "width": 283.125,
+          "height": 340
+        },
+        {
+          "top": 365.90625,
+          "left": 401.56634521484375,
+          "right": 684.7069702148438,
+          "bottom": 705.90625,
+          "width": 283.140625,
+          "height": 340
+        }
+      ],
+      "people": [
+        {
+          "top": 630.90625,
+          "left": 123.44133758544922,
+          "right": 356.5663375854492,
+          "bottom": 674.90625,
+          "width": 233.125,
+          "height": 44
+        },
+        {
+          "top": 630.90625,
+          "left": 426.56634521484375,
+          "right": 659.7069702148438,
+          "bottom": 674.90625,
+          "width": 233.140625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 513.90625,
+          "left": 34.859375,
+          "right": 78.859375,
+          "bottom": 557.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 513.90625,
+          "left": 689.125,
+          "right": 733.125,
+          "bottom": 557.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 285.484375,
+          "right": 329.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 336.484375,
+          "right": 380.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 387.484375,
+          "right": 431.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 438.484375,
+          "right": 482.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 768
+    },
+    {
+      "width": 768,
+      "active": 3,
+      "heading": {
+        "top": 235.40625,
+        "left": 34.859375,
+        "right": 733.125,
+        "bottom": 333.90625,
+        "width": 698.265625,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 365.90625,
+          "left": 98.43353271484375,
+          "right": 381.55853271484375,
+          "bottom": 705.90625,
+          "width": 283.125,
+          "height": 340
+        },
+        {
+          "top": 365.90625,
+          "left": 401.55853271484375,
+          "right": 684.6991577148438,
+          "bottom": 705.90625,
+          "width": 283.140625,
+          "height": 340
+        }
+      ],
+      "people": [
+        {
+          "top": 630.90625,
+          "left": 123.43353271484375,
+          "right": 356.55853271484375,
+          "bottom": 674.90625,
+          "width": 233.125,
+          "height": 44
+        },
+        {
+          "top": 630.90625,
+          "left": 426.55853271484375,
+          "right": 659.6991577148438,
+          "bottom": 674.90625,
+          "width": 233.140625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 513.90625,
+          "left": 34.859375,
+          "right": 78.859375,
+          "bottom": 557.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 513.90625,
+          "left": 689.125,
+          "right": 733.125,
+          "bottom": 557.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 285.484375,
+          "right": 329.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 336.484375,
+          "right": 380.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 387.484375,
+          "right": 431.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 721.90625,
+          "left": 438.484375,
+          "right": 482.484375,
+          "bottom": 765.90625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 768
+    },
+    {
+      "width": 1024,
+      "active": 0,
+      "heading": {
+        "top": 224.125,
+        "left": 46.484375,
+        "right": 977.5,
+        "bottom": 322.625,
+        "width": 931.015625,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 354.625,
+          "left": 95.74384307861328,
+          "right": 352.7438430786133,
+          "bottom": 722.625,
+          "width": 257,
+          "height": 368
+        },
+        {
+          "top": 354.625,
+          "left": 376.74383544921875,
+          "right": 633.7438354492188,
+          "bottom": 722.625,
+          "width": 257,
+          "height": 368
+        },
+        {
+          "top": 354.625,
+          "left": 657.7438354492188,
+          "right": 914.7594604492188,
+          "bottom": 722.625,
+          "width": 257.015625,
+          "height": 368
+        }
+      ],
+      "people": [
+        {
+          "top": 645.625,
+          "left": 124.74384307861328,
+          "right": 323.7438430786133,
+          "bottom": 689.625,
+          "width": 199,
+          "height": 44
+        },
+        {
+          "top": 645.625,
+          "left": 405.74383544921875,
+          "right": 604.7438354492188,
+          "bottom": 689.625,
+          "width": 199,
+          "height": 44
+        },
+        {
+          "top": 645.625,
+          "left": 686.7438354492188,
+          "right": 885.7594604492188,
+          "bottom": 689.625,
+          "width": 199.015625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 516.625,
+          "left": 46.484375,
+          "right": 90.484375,
+          "bottom": 560.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 516.625,
+          "left": 933.5,
+          "right": 977.5,
+          "bottom": 560.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 413.484375,
+          "right": 457.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 464.484375,
+          "right": 508.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 515.484375,
+          "right": 559.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 566.484375,
+          "right": 610.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 1024
+    },
+    {
+      "width": 1024,
+      "active": 1,
+      "heading": {
+        "top": 224.125,
+        "left": 46.484375,
+        "right": 977.5,
+        "bottom": 322.625,
+        "width": 931.015625,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 354.625,
+          "left": 110.0591049194336,
+          "right": 367.0591049194336,
+          "bottom": 722.625,
+          "width": 257,
+          "height": 368
+        },
+        {
+          "top": 354.625,
+          "left": 391.0591125488281,
+          "right": 648.05908203125,
+          "bottom": 722.625,
+          "width": 256.9999694824219,
+          "height": 368
+        },
+        {
+          "top": 354.625,
+          "left": 672.05908203125,
+          "right": 929.07470703125,
+          "bottom": 722.625,
+          "width": 257.015625,
+          "height": 368
+        }
+      ],
+      "people": [
+        {
+          "top": 645.625,
+          "left": 139.05911254882812,
+          "right": 338.05908203125,
+          "bottom": 689.625,
+          "width": 198.99996948242188,
+          "height": 44
+        },
+        {
+          "top": 645.625,
+          "left": 420.0591125488281,
+          "right": 619.05908203125,
+          "bottom": 689.625,
+          "width": 198.99996948242188,
+          "height": 44
+        },
+        {
+          "top": 645.625,
+          "left": 701.05908203125,
+          "right": 900.07470703125,
+          "bottom": 689.625,
+          "width": 199.015625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 516.625,
+          "left": 46.484375,
+          "right": 90.484375,
+          "bottom": 560.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 516.625,
+          "left": 933.5,
+          "right": 977.5,
+          "bottom": 560.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 413.484375,
+          "right": 457.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 464.484375,
+          "right": 508.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 515.484375,
+          "right": 559.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 566.484375,
+          "right": 610.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 1024
+    },
+    {
+      "width": 1024,
+      "active": 2,
+      "heading": {
+        "top": 224.125,
+        "left": 46.484375,
+        "right": 977.5,
+        "bottom": 322.625,
+        "width": 931.015625,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 354.625,
+          "left": 110.06175231933594,
+          "right": 367.06175231933594,
+          "bottom": 722.625,
+          "width": 257,
+          "height": 368
+        },
+        {
+          "top": 354.625,
+          "left": 391.061767578125,
+          "right": 648.061767578125,
+          "bottom": 722.625,
+          "width": 257,
+          "height": 368
+        },
+        {
+          "top": 354.625,
+          "left": 672.061767578125,
+          "right": 929.077392578125,
+          "bottom": 722.625,
+          "width": 257.015625,
+          "height": 368
+        }
+      ],
+      "people": [
+        {
+          "top": 645.625,
+          "left": 139.06175231933594,
+          "right": 338.061767578125,
+          "bottom": 689.625,
+          "width": 199.00001525878906,
+          "height": 44
+        },
+        {
+          "top": 645.625,
+          "left": 420.061767578125,
+          "right": 619.061767578125,
+          "bottom": 689.625,
+          "width": 199,
+          "height": 44
+        },
+        {
+          "top": 645.625,
+          "left": 701.061767578125,
+          "right": 900.077392578125,
+          "bottom": 689.625,
+          "width": 199.015625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 516.625,
+          "left": 46.484375,
+          "right": 90.484375,
+          "bottom": 560.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 516.625,
+          "left": 933.5,
+          "right": 977.5,
+          "bottom": 560.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 413.484375,
+          "right": 457.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 464.484375,
+          "right": 508.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 515.484375,
+          "right": 559.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 566.484375,
+          "right": 610.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 1024
+    },
+    {
+      "width": 1024,
+      "active": 3,
+      "heading": {
+        "top": 224.125,
+        "left": 46.484375,
+        "right": 977.5,
+        "bottom": 322.625,
+        "width": 931.015625,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 354.625,
+          "left": 110.0632095336914,
+          "right": 367.0632095336914,
+          "bottom": 722.625,
+          "width": 257,
+          "height": 368
+        },
+        {
+          "top": 354.625,
+          "left": 391.0632019042969,
+          "right": 648.063232421875,
+          "bottom": 722.625,
+          "width": 257.0000305175781,
+          "height": 368
+        },
+        {
+          "top": 354.625,
+          "left": 672.063232421875,
+          "right": 929.078857421875,
+          "bottom": 722.625,
+          "width": 257.015625,
+          "height": 368
+        }
+      ],
+      "people": [
+        {
+          "top": 645.625,
+          "left": 139.06321716308594,
+          "right": 338.063232421875,
+          "bottom": 689.625,
+          "width": 199.00001525878906,
+          "height": 44
+        },
+        {
+          "top": 645.625,
+          "left": 420.0632019042969,
+          "right": 619.063232421875,
+          "bottom": 689.625,
+          "width": 199.00003051757812,
+          "height": 44
+        },
+        {
+          "top": 645.625,
+          "left": 701.063232421875,
+          "right": 900.078857421875,
+          "bottom": 689.625,
+          "width": 199.015625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 516.625,
+          "left": 46.484375,
+          "right": 90.484375,
+          "bottom": 560.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 516.625,
+          "left": 933.5,
+          "right": 977.5,
+          "bottom": 560.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 413.484375,
+          "right": 457.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 464.484375,
+          "right": 508.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 515.484375,
+          "right": 559.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 738.625,
+          "left": 566.484375,
+          "right": 610.484375,
+          "bottom": 782.625,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 1024
+    },
+    {
+      "width": 1440,
+      "active": 0,
+      "heading": {
+        "top": 247.875,
+        "left": 65,
+        "right": 1375,
+        "bottom": 346.375,
+        "width": 1310,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 378.375,
+          "left": 114.25189208984375,
+          "right": 497.58001708984375,
+          "bottom": 718.375,
+          "width": 383.328125,
+          "height": 340
+        },
+        {
+          "top": 378.375,
+          "left": 521.5800170898438,
+          "right": 904.9081420898438,
+          "bottom": 718.375,
+          "width": 383.328125,
+          "height": 340
+        },
+        {
+          "top": 378.375,
+          "left": 928.9081420898438,
+          "right": 1312.251953125,
+          "bottom": 718.375,
+          "width": 383.34381103515625,
+          "height": 340
+        }
+      ],
+      "people": [
+        {
+          "top": 641.375,
+          "left": 143.25189208984375,
+          "right": 468.58001708984375,
+          "bottom": 685.375,
+          "width": 325.328125,
+          "height": 44
+        },
+        {
+          "top": 641.375,
+          "left": 550.5800170898438,
+          "right": 875.9081420898438,
+          "bottom": 685.375,
+          "width": 325.328125,
+          "height": 44
+        },
+        {
+          "top": 641.375,
+          "left": 957.9081420898438,
+          "right": 1283.251953125,
+          "bottom": 685.375,
+          "width": 325.34381103515625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 526.375,
+          "left": 65,
+          "right": 109,
+          "bottom": 570.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 526.375,
+          "left": 1331,
+          "right": 1375,
+          "bottom": 570.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 621.5,
+          "right": 665.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 672.5,
+          "right": 716.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 723.5,
+          "right": 767.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 774.5,
+          "right": 818.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 1440
+    },
+    {
+      "width": 1440,
+      "active": 1,
+      "heading": {
+        "top": 247.875,
+        "left": 65,
+        "right": 1375,
+        "bottom": 346.375,
+        "width": 1310,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 378.375,
+          "left": 127.74896240234375,
+          "right": 511.07708740234375,
+          "bottom": 718.375,
+          "width": 383.328125,
+          "height": 340
+        },
+        {
+          "top": 378.375,
+          "left": 535.0770874023438,
+          "right": 918.4052124023438,
+          "bottom": 718.375,
+          "width": 383.328125,
+          "height": 340
+        },
+        {
+          "top": 378.375,
+          "left": 942.4052124023438,
+          "right": 1325.7490234375,
+          "bottom": 718.375,
+          "width": 383.34381103515625,
+          "height": 340
+        }
+      ],
+      "people": [
+        {
+          "top": 641.375,
+          "left": 156.74896240234375,
+          "right": 482.07708740234375,
+          "bottom": 685.375,
+          "width": 325.328125,
+          "height": 44
+        },
+        {
+          "top": 641.375,
+          "left": 564.0770874023438,
+          "right": 889.4052124023438,
+          "bottom": 685.375,
+          "width": 325.328125,
+          "height": 44
+        },
+        {
+          "top": 641.375,
+          "left": 971.4052124023438,
+          "right": 1296.7490234375,
+          "bottom": 685.375,
+          "width": 325.34381103515625,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 526.375,
+          "left": 65,
+          "right": 109,
+          "bottom": 570.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 526.375,
+          "left": 1331,
+          "right": 1375,
+          "bottom": 570.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 621.5,
+          "right": 665.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 672.5,
+          "right": 716.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 723.5,
+          "right": 767.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 774.5,
+          "right": 818.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 1440
+    },
+    {
+      "width": 1440,
+      "active": 2,
+      "heading": {
+        "top": 247.875,
+        "left": 65,
+        "right": 1375,
+        "bottom": 346.375,
+        "width": 1310,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 378.375,
+          "left": 128.57400512695312,
+          "right": 511.9021301269531,
+          "bottom": 718.375,
+          "width": 383.328125,
+          "height": 340
+        },
+        {
+          "top": 378.375,
+          "left": 535.902099609375,
+          "right": 919.230224609375,
+          "bottom": 718.375,
+          "width": 383.328125,
+          "height": 340
+        },
+        {
+          "top": 378.375,
+          "left": 943.230224609375,
+          "right": 1326.573974609375,
+          "bottom": 718.375,
+          "width": 383.34375,
+          "height": 340
+        }
+      ],
+      "people": [
+        {
+          "top": 641.375,
+          "left": 157.57400512695312,
+          "right": 482.9021301269531,
+          "bottom": 685.375,
+          "width": 325.328125,
+          "height": 44
+        },
+        {
+          "top": 641.375,
+          "left": 564.902099609375,
+          "right": 890.230224609375,
+          "bottom": 685.375,
+          "width": 325.328125,
+          "height": 44
+        },
+        {
+          "top": 641.375,
+          "left": 972.230224609375,
+          "right": 1297.573974609375,
+          "bottom": 685.375,
+          "width": 325.34375,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 526.375,
+          "left": 65,
+          "right": 109,
+          "bottom": 570.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 526.375,
+          "left": 1331,
+          "right": 1375,
+          "bottom": 570.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 621.5,
+          "right": 665.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 672.5,
+          "right": 716.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 723.5,
+          "right": 767.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 774.5,
+          "right": 818.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 1440
+    },
+    {
+      "width": 1440,
+      "active": 3,
+      "heading": {
+        "top": 247.875,
+        "left": 65,
+        "right": 1375,
+        "bottom": 346.375,
+        "width": 1310,
+        "height": 98.5
+      },
+      "cards": [
+        {
+          "top": 378.375,
+          "left": 128.5748291015625,
+          "right": 511.9029541015625,
+          "bottom": 718.375,
+          "width": 383.328125,
+          "height": 340
+        },
+        {
+          "top": 378.375,
+          "left": 535.9029541015625,
+          "right": 919.2310791015625,
+          "bottom": 718.375,
+          "width": 383.328125,
+          "height": 340
+        },
+        {
+          "top": 378.375,
+          "left": 943.2310791015625,
+          "right": 1326.5748291015625,
+          "bottom": 718.375,
+          "width": 383.34375,
+          "height": 340
+        }
+      ],
+      "people": [
+        {
+          "top": 641.375,
+          "left": 157.5748291015625,
+          "right": 482.9029541015625,
+          "bottom": 685.375,
+          "width": 325.328125,
+          "height": 44
+        },
+        {
+          "top": 641.375,
+          "left": 564.9029541015625,
+          "right": 890.2310791015625,
+          "bottom": 685.375,
+          "width": 325.328125,
+          "height": 44
+        },
+        {
+          "top": 641.375,
+          "left": 972.2310791015625,
+          "right": 1297.5748291015625,
+          "bottom": 685.375,
+          "width": 325.34375,
+          "height": 44
+        }
+      ],
+      "controls": [
+        {
+          "top": 526.375,
+          "left": 65,
+          "right": 109,
+          "bottom": 570.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 526.375,
+          "left": 1331,
+          "right": 1375,
+          "bottom": 570.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 621.5,
+          "right": 665.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 672.5,
+          "right": 716.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 723.5,
+          "right": 767.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "top": 734.375,
+          "left": 774.5,
+          "right": 818.5,
+          "bottom": 778.375,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clippedCards": 0,
+      "viewport": 1440
+    }
+  ],
+  "realTiming": {
+    "firstAdvanceMs": 6858,
+    "secondAdvanceMs": 13889,
+    "transitionDuration": "0.85s"
+  },
+  "errors": [],
+  "blockedMutations": [],
+  "finishedAt": "2026-10-12T13:26:14.517Z",
+  "passed": true
+}

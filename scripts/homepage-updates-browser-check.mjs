@@ -8,10 +8,8 @@ const base = new URL(process.env.BASE_URL || "http://127.0.0.1:3112");
 if (!["localhost", "127.0.0.1", "[::1]"].includes(base.hostname)) throw new Error("BASE_URL must be local.");
 const output = process.env.ARTIFACT_DIR || "artifacts/homepage-updates";
 await mkdir(output, { recursive: true });
-const report = { checkedAt: new Date().toISOString(), base: base.href, cases: [], accessibility: [], realTiming: null, errors: [], blockedMutations: [] };
+const report = { checkedAt: new Date().toISOString(), base: base.href, cases: [], accessibility: [], layouts: [], realTiming: null, errors: [], blockedMutations: [] };
 const browser = await chromium.launch({ channel: "chrome", headless: true });
-const pauseName = "Pause automatic testimonial rotation";
-const playName = "Play automatic testimonial rotation";
 const settle = () => new Promise(resolve => setTimeout(resolve, 100));
 
 async function check(name, action) {
@@ -43,7 +41,7 @@ async function openPage({ width = 1440, reducedMotion = "no-preference", clock =
 
 async function active(page) {
   const values = await page.locator(".slider-dots button").evaluateAll(buttons => buttons.map(button => button.getAttribute("aria-pressed") === "true"));
-  assert.equal(values.length, 4, "Playback control must not become a fifth testimonial selector");
+  assert.equal(values.length, 4, "The four testimonial selectors must remain available");
   assert.equal(values.filter(Boolean).length, 1, "Exactly one testimonial must be selected");
   return values.indexOf(true);
 }
@@ -62,6 +60,48 @@ async function showTestimonials(page) {
 
 async function assertNoOverflow(page) {
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth), false, "Page must not overflow horizontally");
+}
+
+async function assertNoPlaybackButton(page) {
+  assert.equal(await page.locator(".home-testimonials button").count(), 6, "Only previous/next arrows and four testimonial selectors remain");
+  assert.equal(await page.getByRole("button", { name: /(?:pause|play).*slideshow|automatic testimonial rotation/i, includeHidden: true }).count(), 0);
+}
+
+async function toggleRotationWithKeyboard(page) {
+  await page.locator(".home-testimonials").focus();
+  await page.keyboard.press("Space");
+  await showTestimonials(page);
+}
+
+async function assertTestimonialLayout(page, width) {
+  const layout = await page.locator(".home-testimonials").evaluate(section => {
+    const rectangle = element => {
+      const { top, left, right, bottom, width, height } = element.getBoundingClientRect();
+      return { top, left, right, bottom, width, height };
+    };
+    const cards = [...section.querySelectorAll(".testimonial-card")].filter(element => element.getBoundingClientRect().width > 0);
+    return {
+      active: [...section.querySelectorAll(".slider-dots button")].findIndex(button => button.getAttribute("aria-pressed") === "true"),
+      heading: rectangle(section.querySelector(".section-heading")),
+      cards: cards.map(rectangle),
+      people: cards.map(card => rectangle(card.querySelector(".testimonial-person"))),
+      controls: [...section.querySelectorAll("button")].map(rectangle),
+      clippedCards: cards.filter(card => card.scrollWidth > card.clientWidth + 1 || card.scrollHeight > card.clientHeight + 1).length,
+      viewport: window.innerWidth,
+    };
+  });
+  report.layouts.push({ width, ...layout });
+  const expectedCards = width < 768 ? 1 : width < 1024 ? 2 : 3;
+  assert.equal(layout.cards.length, expectedCards, `${width}px visible card count`);
+  assert(layout.cards.every(card => card.top >= layout.heading.bottom + 12), "Every testimonial card must sit clearly below the heading");
+  assert(layout.cards.every(card => Math.abs(card.top - layout.cards[0].top) <= 1), "Visible card tops must align");
+  assert(layout.cards.every(card => Math.abs(card.bottom - layout.cards[0].bottom) <= 1), "Visible card bottoms must align");
+  assert(layout.people.every(person => Math.abs(person.top - layout.people[0].top) <= 1), "Client identity rows must align");
+  assert.equal(layout.clippedCards, 0, "Testimonial content must fit inside its cards");
+  assert(layout.controls.every(control => control.left >= 0 && control.right <= layout.viewport), "All controls must stay within the viewport");
+  assert(layout.controls.every(control => control.width >= 44 && control.height >= 44), "Testimonial controls must retain comfortable touch targets");
+  assert(layout.controls.every(control => layout.cards.every(card => control.right <= card.left || control.left >= card.right || control.bottom <= card.top || control.top >= card.bottom)), "Controls must not overlap testimonial cards");
+  await assertNoPlaybackButton(page);
 }
 
 async function scan(page, width) {
@@ -110,8 +150,10 @@ try {
     report.realTiming = { firstAdvanceMs: Math.round(firstAdvanceMs), secondAdvanceMs: Math.round(secondAdvanceMs), transitionDuration: duration };
   });
   await check("Desktop accessibility, overflow and screenshots", async () => {
-    await page.getByRole("button", { name: pauseName, exact: true }).click();
+    await page.getByRole("button", { name: "Next testimonials", exact: true }).click();
+    await page.waitForTimeout(1000);
     await assertNoOverflow(page);
+    await assertNoPlaybackButton(page);
     await scan(page, 1440);
     await page.screenshot({ path: `${output}/home-testimonials-1440.png`, animations: "disabled" });
     await page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
@@ -159,21 +201,34 @@ try {
     await tick(timed, 7500);
     assert.equal(await active(timed), (start + 1) % 4);
   });
-  await check("Pause persists through manual navigation; Play resumes automatic rotation", async () => {
-    await timed.getByRole("button", { name: pauseName, exact: true }).click();
-    await showTestimonials(timed);
+  await check("Manual browsing stops rotation; section Space resumes without a visible playback button", async () => {
+    await assertNoPlaybackButton(timed);
     const start = await active(timed);
-    await tick(timed, 16000);
-    assert.equal(await active(timed), start);
     await timed.getByRole("button", { name: "Next testimonials", exact: true }).click();
     assert.equal(await active(timed), (start + 1) % 4);
     await showTestimonials(timed);
     await tick(timed, 16000);
     assert.equal(await active(timed), (start + 1) % 4);
-    await timed.getByRole("button", { name: playName, exact: true }).click();
-    await showTestimonials(timed);
+    await toggleRotationWithKeyboard(timed);
     await tick(timed, 7500);
     assert.equal(await active(timed), (start + 2) % 4);
+  });
+  await check("Space on a carousel button keeps its native action and does not resume autoplay", async () => {
+    const dots = timed.locator(".slider-dots button");
+    await dots.first().click();
+    await dots.nth(2).focus();
+    await timed.keyboard.press("Space");
+    assert.equal(await active(timed), 2);
+    await showTestimonials(timed);
+    await tick(timed, 16000);
+    assert.equal(await active(timed), 2);
+    await toggleRotationWithKeyboard(timed);
+    await tick(timed, 7500);
+    assert.equal(await active(timed), 3);
+    await toggleRotationWithKeyboard(timed);
+    await tick(timed, 16000);
+    assert.equal(await active(timed), 3, "Section Space can also stop an automatically rotating carousel");
+    await toggleRotationWithKeyboard(timed);
   });
   await check("Simulated document-hidden events pause and resume rotation", async () => {
     await showTestimonials(timed);
@@ -198,7 +253,7 @@ try {
     const start = await active(timed);
     await tick(timed, 16000);
     assert.equal(await active(timed), start);
-    assert.equal(await timed.getByRole("button", { name: pauseName, exact: true }).count(), 0);
+    await assertNoPlaybackButton(timed);
     assert.equal(await timed.locator(".testimonial-position-0").evaluate(element => getComputedStyle(element).animationName), "none");
     await timed.emulateMedia({ reducedMotion: "no-preference" });
     await settle();
@@ -206,7 +261,6 @@ try {
     assert.equal(await active(timed), (start + 1) % 4);
   });
   await check("Arrows, dots, keyboard and manual announcements remain available", async () => {
-    await timed.getByRole("button", { name: pauseName, exact: true }).click();
     const dots = timed.locator(".slider-dots button");
     await dots.nth(0).click();
     assert.equal(await active(timed), 0);
@@ -222,9 +276,9 @@ try {
       assert.equal(await active(timed), index);
       assert.match(await timed.locator('.home-testimonials [role="status"]').textContent(), new RegExp(`testimonial ${index + 1} of 4`));
     }
+    await toggleRotationWithKeyboard(timed);
     const announcement = await timed.locator('.home-testimonials [role="status"]').textContent();
-    await timed.getByRole("button", { name: playName, exact: true }).click();
-    await showTestimonials(timed);
+    assert.equal(announcement, "Automatic testimonial rotation resumed.", "User-requested playback changes need accessible confirmation");
     await tick(timed, 7500);
     assert.equal(await active(timed), 0);
     assert.equal(await timed.locator('.home-testimonials [role="status"]').textContent(), announcement, "Automatic movement must not interrupt screen-reader users");
@@ -237,7 +291,6 @@ try {
     const start = await active(mobile.page);
     await tick(mobile.page, 7500);
     assert.equal(await active(mobile.page), (start + 1) % 4);
-    await mobile.page.getByRole("button", { name: pauseName, exact: true }).click();
     const beforeSwipe = await active(mobile.page);
     const grid = await mobile.page.locator(".testimonials-grid").boundingBox();
     assert(grid);
@@ -250,18 +303,26 @@ try {
     await session.detach();
     await settle();
     assert.equal(await active(mobile.page), (beforeSwipe + 1) % 4, "A horizontal touch swipe must advance one slide");
+    await showTestimonials(mobile.page);
+    await tick(mobile.page, 16000);
+    assert.equal(await active(mobile.page), (beforeSwipe + 1) % 4, "Manual swipe must keep rotation stopped after touch interaction ends");
     for (const box of await mobile.page.locator(".slider-dots button").evaluateAll(buttons => buttons.map(button => ({ width: button.getBoundingClientRect().width, height: button.getBoundingClientRect().height })))) {
       assert(box.width >= 44 && box.height >= 44);
     }
   });
-  await check("Mobile accessibility, banner/header and overflow at 320/390/768px", async () => {
-    for (const width of [320, 390, 768]) {
+  await check("Heading/card alignment, control bounds and responsive layout at 320/390/768/1024/1440px", async () => {
+    for (const width of [320, 390, 768, 1024, 1440]) {
       await mobile.page.setViewportSize({ width, height: 900 });
       await tick(mobile.page, 1000);
       assert.equal(await mobile.page.locator(".top-strip").count(), 0);
       await assertNoOverflow(mobile.page);
       await showTestimonials(mobile.page);
-      await tick(mobile.page, 1000);
+      for (let position = 0; position < 4; position++) {
+        await mobile.page.locator(".slider-dots button").nth(position).click();
+        await tick(mobile.page, 1000);
+        assert.equal(await active(mobile.page), position);
+        await assertTestimonialLayout(mobile.page, width);
+      }
       await mobile.page.screenshot({ path: `${output}/home-testimonials-${width}.png`, animations: "disabled" });
       await mobile.page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
       await mobile.page.screenshot({ path: `${output}/home-header-${width}.png`, animations: "disabled" });
@@ -270,7 +331,7 @@ try {
       await mobile.page.locator(".promise-band").screenshot({ path: `${output}/home-banner-${width}.png`, animations: "disabled" });
       if (width === 390) {
         // axe uses browser timers internally; release the controlled clock while
-        // it runs. Explicit playback pause keeps the carousel stable for scans.
+        // it runs. Manual swipe has already stopped rotation for stable scans.
         await mobile.page.clock.resume();
         await scan(mobile.page, width);
         await mobile.page.clock.pauseAt(new Date(await mobile.page.evaluate(() => Date.now()) + 100));
@@ -285,7 +346,7 @@ try {
     const start = await active(reduced.page);
     await tick(reduced.page, 22000);
     assert.equal(await active(reduced.page), start);
-    assert.equal(await reduced.page.getByRole("button", { name: pauseName, exact: true }).count(), 0);
+    await assertNoPlaybackButton(reduced.page);
     await reduced.page.getByRole("button", { name: "Next testimonials", exact: true }).click();
     assert.equal(await active(reduced.page), (start + 1) % 4);
     assert.equal(await reduced.page.locator(".testimonial-position-0").evaluate(element => getComputedStyle(element).animationName), "none");

@@ -2,7 +2,19 @@
 
 12 October 2026, Asia/Dubai. This report covers the current local production build and the original supplied Word document. After reviewing the deployment boundary, the user explicitly authorized **“Push main and allow automatic Vercel deployment.”** That authorization covers this reviewed GitHub push and its automatic Vercel deployment. Live email tests, DNS changes and other infrastructure operations remain outside this authorization.
 
-## Subsequent homepage changes requested on 12 October 2026
+## Latest testimonial alignment and full-site responsive verification
+
+The subsequent screenshot request removes the visible slideshow Pause/Play button entirely. The testimonial heading now sits above evenly aligned cards, with three cards on desktop, two on tablet and one on mobile. Negative track margins and the middle-card offset were removed. Card text, client details and 44px navigation controls fit without clipping or overlap. Automatic rotation retains the seven-second interval and full-opacity 850ms slide. Manual arrows, dots, keyboard navigation or swipe stop rotation; Space on the focused carousel can resume it. Hover/focus/offscreen/background and reduced-motion protections remain.
+
+The production build, lint and TypeScript checks passed. The Node suite, including rendered SEO, passed **94 tests**, with zero failures and **16 PostgreSQL integration tests skipped** because an isolated database was not running for this UI change.
+
+- **384 responsive cases passed**: all 48 routes at 320, 360, 390, 414, 768, 1024, 1280 and 1440px. Checks cover text/control overflow, overlapping or clipped controls, missing images, table access and card alignment: [full-site results](../artifacts/responsive-alignment-2026-10-12/full-site/responsive-layout-check.json).
+- **17 focused checks passed**, including all four testimonial positions at five widths, two accessibility scans, actual repeated autoplay timing, manual stopping and keyboard resuming, touch swipe, reduced-motion behavior and removal of the playback button: [focused results](../artifacts/responsive-alignment-2026-10-12/focused/final/homepage-updates-browser-check.json).
+- **The motion suite passed** all eight widths and its reduced-motion, no-JavaScript, no-observer and live-preference cases: [motion results](../artifacts/responsive-alignment-2026-10-12/motion/motion-browser-check.json).
+
+Desktop, tablet and mobile screenshots were visually reviewed. Unrelated CSS rules were preserved. These are local production-build results; they do not establish successful hosted deployment or resolve the launch configuration requirements below.
+
+## Earlier homepage changes on 12 October 2026 (commit b8164cd)
 
 The user's later screenshot instructions supersede the original homepage top-strip and banner requirements. The thin contact/group strip is now omitted on the homepage, while internal pages retain it. The red banner heading is now **Residential & Commercial**, with the duplicate subtitle removed. Testimonials advance every seven seconds with an 850ms slide, Pause/Play controls, hover/focus/offscreen/background pausing and reduced-motion support. Existing arrows, dots, keyboard navigation and touch swipe remain available.
 

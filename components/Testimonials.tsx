@@ -108,6 +108,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   const visible = Array.from({ length: Math.min(3, items.length) }, (_, offset) => items[(active + offset) % items.length]);
 
   function move(step: number) {
+    setPaused(true);
     setCarousel(current => {
       const next = (current.active + step + items.length) % items.length;
       return {
@@ -120,6 +121,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   }
 
   function select(index: number) {
+    setPaused(true);
     setCarousel(current => current.active === index ? current : {
       active: index,
       direction: index > current.active ? 'next' : 'previous',
@@ -130,7 +132,11 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
 
   function handleKeyDown(event: KeyboardEvent<HTMLElement>) {
     if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
-    if (event.key === 'ArrowLeft') move(-1);
+    if (event.key === ' ' && event.target === event.currentTarget) {
+      setPaused(!paused);
+      setCarousel(current => ({ ...current, announcement: `Automatic testimonial rotation ${paused ? 'resumed' : 'paused'}.` }));
+    }
+    else if (event.key === 'ArrowLeft') move(-1);
     else if (event.key === 'ArrowRight') move(1);
     else if (event.key === 'Home') select(0);
     else if (event.key === 'End') select(items.length - 1);
@@ -155,7 +161,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   return (
     <section ref={section} className="home-testimonials container" aria-label="Client testimonials" aria-roledescription="carousel" aria-describedby={instructionsId} tabIndex={0} onKeyDown={handleKeyDown}>
       <SectionHeading eyebrow="What our clients say">Trusted by <span>Our Clients</span></SectionHeading>
-      <p className="sr-only" id={instructionsId}>Testimonials advance every seven seconds. Rotation pauses while you hover over or focus this section and respects reduced-motion preferences. Use the pause button, previous and next buttons, left and right arrow keys, or swipe to browse testimonials.</p>
+      <p className="sr-only" id={instructionsId}>Testimonials advance every seven seconds and respect reduced-motion preferences. Hover or focus this section to pause temporarily. Use the previous and next buttons, dots, arrow keys, or swipe to stop automatic rotation and browse at your own pace. With this section focused, press Space to pause or resume automatic rotation after focus leaves.</p>
       <div className="testimonials-track" data-reveal="up">
         <button type="button" className="slider-arrow previous" aria-label="Previous testimonials" onClick={() => move(-1)}><Icon name="arrow" size={16} /></button>
         <div className={`testimonials-grid ${styles.grid}`} data-direction={direction} onPointerDown={handlePointerDown} onPointerUp={handlePointerUp} onPointerCancel={() => { gesture.current = null; }}>
@@ -172,14 +178,6 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
       <div className="slider-dots" role="group" aria-label="Choose testimonial">
         {items.map((item, index) => <button type="button" key={item.name} aria-label={`Show ${item.name}'s testimonial`} aria-pressed={active === index} onClick={() => select(index)} />)}
       </div>
-      {items.length > 1 && (
-        <button type="button" className={styles.playback} aria-label={paused ? 'Play automatic testimonial rotation' : 'Pause automatic testimonial rotation'} onClick={() => setPaused(current => !current)}>
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
-            {paused ? <path d="M3 1.5v11L12 7z" /> : <path d="M3 2h3v10H3zm5 0h3v10H8z" />}
-          </svg>
-          {paused ? 'Play slideshow' : 'Pause slideshow'}
-        </button>
-      )}
       <p className="sr-only" role="status" aria-atomic="true">{carousel.announcement}</p>
     </section>
   );
