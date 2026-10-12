@@ -130,22 +130,22 @@ try {
     assert.doesNotMatch(await page.locator(".promise-band").textContent(), /We Make AC Services Simple, Fast & Reliable/i);
     assert.equal(await page.locator(".promise-grid > div").count(), 6, "Existing service benefits stay present");
   });
-  await check("Real-time autoplay waits seven seconds, repeats, and does not announce automatic changes", async () => {
+  await check("Real-time autoplay waits three seconds, repeats, and does not announce automatic changes", async () => {
     await showTestimonials(page);
     const start = await active(page);
     const initialAnnouncement = await page.locator('.home-testimonials [role="status"]').textContent();
     const startedAt = performance.now();
-    await page.waitForTimeout(6100);
-    assert.equal(await active(page), start, "No advance before the slow seven-second interval");
+    await page.waitForTimeout(2100);
+    assert.equal(await active(page), start, "No advance before the three-second interval");
     await page.waitForFunction(expected => document.querySelectorAll('.slider-dots button')[expected]?.getAttribute('aria-pressed') === 'true', (start + 1) % 4, { timeout: 4000 });
     const firstAdvanceMs = performance.now() - startedAt;
     const duration = await page.locator(".testimonial-position-0").evaluate(element => getComputedStyle(element).animationDuration);
-    assert.equal(duration, "0.85s", "Slide transition must be gentle");
+    assert.equal(duration, "0.45s", "Slide transition must use the faster requested duration");
     assert.equal(await page.locator(".testimonial-position-0").evaluate(element => getComputedStyle(element).opacity), "1", "Moving testimonial text must retain full contrast throughout the slide");
-    await page.waitForFunction(expected => document.querySelectorAll('.slider-dots button')[expected]?.getAttribute('aria-pressed') === 'true', (start + 2) % 4, { timeout: 10000 });
+    await page.waitForFunction(expected => document.querySelectorAll('.slider-dots button')[expected]?.getAttribute('aria-pressed') === 'true', (start + 2) % 4, { timeout: 6000 });
     const secondAdvanceMs = performance.now() - startedAt;
-    assert(firstAdvanceMs >= 6300 && firstAdvanceMs <= 9000, `Unexpected first advance: ${firstAdvanceMs}ms`);
-    assert(secondAdvanceMs - firstAdvanceMs >= 6500 && secondAdvanceMs - firstAdvanceMs <= 9000, "Repeated advance must retain the slow interval");
+    assert(firstAdvanceMs >= 2300 && firstAdvanceMs <= 4500, `Unexpected first advance: ${firstAdvanceMs}ms`);
+    assert(secondAdvanceMs - firstAdvanceMs >= 2500 && secondAdvanceMs - firstAdvanceMs <= 4500, "Repeated advance must retain the three-second interval");
     assert.equal(await page.locator('.home-testimonials [role="status"]').textContent(), initialAnnouncement);
     report.realTiming = { firstAdvanceMs: Math.round(firstAdvanceMs), secondAdvanceMs: Math.round(secondAdvanceMs), transitionDuration: duration };
   });
@@ -170,7 +170,7 @@ try {
     await tick(timed, 16000);
     assert.equal(await active(timed), start);
     await showTestimonials(timed);
-    await tick(timed, 6500);
+    await tick(timed, 2500);
     assert.equal(await active(timed), start);
     await tick(timed, 1000);
     assert.equal(await active(timed), (start + 1) % 4);
@@ -187,7 +187,7 @@ try {
     await tick(timed, 16000);
     assert.equal(await active(timed), start);
     await timed.mouse.move(1, 1);
-    await tick(timed, 6500);
+    await tick(timed, 2500);
     assert.equal(await active(timed), start);
     await tick(timed, 1000);
     assert.equal(await active(timed), (start + 1) % 4);
@@ -198,7 +198,7 @@ try {
     await tick(timed, 16000);
     assert.equal(await active(timed), start);
     await timed.evaluate(() => document.activeElement.blur());
-    await tick(timed, 7500);
+    await tick(timed, 3500);
     assert.equal(await active(timed), (start + 1) % 4);
   });
   await check("Manual browsing stops rotation; section Space resumes without a visible playback button", async () => {
@@ -210,7 +210,7 @@ try {
     await tick(timed, 16000);
     assert.equal(await active(timed), (start + 1) % 4);
     await toggleRotationWithKeyboard(timed);
-    await tick(timed, 7500);
+    await tick(timed, 3500);
     assert.equal(await active(timed), (start + 2) % 4);
   });
   await check("Space on a carousel button keeps its native action and does not resume autoplay", async () => {
@@ -223,7 +223,7 @@ try {
     await tick(timed, 16000);
     assert.equal(await active(timed), 2);
     await toggleRotationWithKeyboard(timed);
-    await tick(timed, 7500);
+    await tick(timed, 3500);
     assert.equal(await active(timed), 3);
     await toggleRotationWithKeyboard(timed);
     await tick(timed, 16000);
@@ -243,7 +243,7 @@ try {
     } finally {
       await timed.evaluate(() => { delete document.hidden; document.dispatchEvent(new Event("visibilitychange")); });
     }
-    await tick(timed, 7500);
+    await tick(timed, 3500);
     assert.equal(await active(timed), (start + 1) % 4);
   });
   await check("Live reduced-motion preference stops autoplay and transition; reverting resumes", async () => {
@@ -257,7 +257,7 @@ try {
     assert.equal(await timed.locator(".testimonial-position-0").evaluate(element => getComputedStyle(element).animationName), "none");
     await timed.emulateMedia({ reducedMotion: "no-preference" });
     await settle();
-    await tick(timed, 7500);
+    await tick(timed, 3500);
     assert.equal(await active(timed), (start + 1) % 4);
   });
   await check("Arrows, dots, keyboard and manual announcements remain available", async () => {
@@ -279,7 +279,7 @@ try {
     await toggleRotationWithKeyboard(timed);
     const announcement = await timed.locator('.home-testimonials [role="status"]').textContent();
     assert.equal(announcement, "Automatic testimonial rotation resumed.", "User-requested playback changes need accessible confirmation");
-    await tick(timed, 7500);
+    await tick(timed, 3500);
     assert.equal(await active(timed), 0);
     assert.equal(await timed.locator('.home-testimonials [role="status"]').textContent(), announcement, "Automatic movement must not interrupt screen-reader users");
   });
@@ -289,7 +289,7 @@ try {
   await check("Mobile autoplay and real touch swipe work with 44px selector targets", async () => {
     await showTestimonials(mobile.page);
     const start = await active(mobile.page);
-    await tick(mobile.page, 7500);
+    await tick(mobile.page, 3500);
     assert.equal(await active(mobile.page), (start + 1) % 4);
     const beforeSwipe = await active(mobile.page);
     const grid = await mobile.page.locator(".testimonials-grid").boundingBox();
@@ -360,7 +360,7 @@ try {
     await tick(fallback.page, 16000);
     assert.equal(await active(fallback.page), start);
     await showTestimonials(fallback.page);
-    await tick(fallback.page, 7500);
+    await tick(fallback.page, 3500);
     assert.equal(await active(fallback.page), (start + 1) % 4);
     await fallback.page.evaluate(() => window.scrollTo({ top: 0, behavior: "instant" }));
     await settle();

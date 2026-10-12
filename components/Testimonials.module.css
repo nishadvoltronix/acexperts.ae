@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .entering {
-    animation: testimonial-enter 850ms cubic-bezier(.22, 1, .36, 1) both;
+    animation: testimonial-enter 450ms cubic-bezier(.22, 1, .36, 1) both;
   }
 }
 

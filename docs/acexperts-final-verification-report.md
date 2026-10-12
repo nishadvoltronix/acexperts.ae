@@ -2,7 +2,11 @@
 
 12 October 2026, Asia/Dubai. This report covers the current local production build and the original supplied Word document. After reviewing the deployment boundary, the user explicitly authorized **“Push main and allow automatic Vercel deployment.”** That authorization covers this reviewed GitHub push and its automatic Vercel deployment. Live email tests, DNS changes and other infrastructure operations remain outside this authorization.
 
-## Latest testimonial alignment and full-site responsive verification
+## Latest adjustment: faster testimonial rotation
+
+Following the user's request for a faster slider, testimonials now advance every **three seconds** with a **450ms** transition. The production build and lint passed, along with all 17 focused browser checks, 20 alignment cases and two accessibility scans. The measured repeat interval was 3,032ms. Pause behavior, manual controls and reduced-motion support remain intact. [Verification summary](../artifacts/testimonial-speed-2026-10-12/verification-summary.json).
+
+## Testimonial alignment and full-site responsive verification (commit 393500a)
 
 The subsequent screenshot request removes the visible slideshow Pause/Play button entirely. The testimonial heading now sits above evenly aligned cards, with three cards on desktop, two on tablet and one on mobile. Negative track margins and the middle-card offset were removed. Card text, client details and 44px navigation controls fit without clipping or overlap. Automatic rotation retains the seven-second interval and full-opacity 850ms slide. Manual arrows, dots, keyboard navigation or swipe stop rotation; Space on the focused carousel can resume it. Hover/focus/offscreen/background and reduced-motion protections remain.
 

@@ -7,7 +7,7 @@ import styles from './Testimonials.module.css';
 
 export interface Testimonial { quote: string; name: string; role: string; image: string; }
 
-const AUTOPLAY_INTERVAL = 7000;
+const AUTOPLAY_INTERVAL = 3000;
 
 export function Testimonials({ items }: { items: Testimonial[] }) {
   const [carousel, setCarousel] = useState({ active: 0, direction: 'next', interacted: false, announcement: '' });
@@ -161,7 +161,7 @@ export function Testimonials({ items }: { items: Testimonial[] }) {
   return (
     <section ref={section} className="home-testimonials container" aria-label="Client testimonials" aria-roledescription="carousel" aria-describedby={instructionsId} tabIndex={0} onKeyDown={handleKeyDown}>
       <SectionHeading eyebrow="What our clients say">Trusted by <span>Our Clients</span></SectionHeading>
-      <p className="sr-only" id={instructionsId}>Testimonials advance every seven seconds and respect reduced-motion preferences. Hover or focus this section to pause temporarily. Use the previous and next buttons, dots, arrow keys, or swipe to stop automatic rotation and browse at your own pace. With this section focused, press Space to pause or resume automatic rotation after focus leaves.</p>
+      <p className="sr-only" id={instructionsId}>Testimonials advance every three seconds and respect reduced-motion preferences. Hover or focus this section to pause temporarily. Use the previous and next buttons, dots, arrow keys, or swipe to stop automatic rotation and browse at your own pace. With this section focused, press Space to pause or resume automatic rotation after focus leaves.</p>
       <div className="testimonials-track" data-reveal="up">
         <button type="button" className="slider-arrow previous" aria-label="Previous testimonials" onClick={() => move(-1)}><Icon name="arrow" size={16} /></button>
         <div className={`testimonials-grid ${styles.grid}`} data-direction={direction} onPointerDown={handlePointerDown} onPointerUp={handlePointerUp} onPointerCancel={() => { gesture.current = null; }}>
