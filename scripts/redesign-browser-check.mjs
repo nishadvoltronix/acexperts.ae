@@ -1,9 +1,13 @@
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile, writeFile, mkdir, access } from "node:fs/promises";
+import { dirname, join } from "node:path";
 
 const base = new URL(process.env.BASE_URL || "http://localhost:3001");
 const smoke = process.env.REDESIGN_SMOKE === "1";
+const artifactDirectory = process.env.ARTIFACT_DIR;
+const screenshotDirectory = artifactDirectory ? join(artifactDirectory, "screenshots", "redesign") : "docs/screenshots/redesign";
+const outputPath = process.env.REDESIGN_OUTPUT || join(artifactDirectory || "docs", smoke ? "redesign-browser-smoke.json" : "redesign-browser-validation.json");
 const requestedRoutes = process.env.REDESIGN_ROUTES ? new Set(process.env.REDESIGN_ROUTES.startsWith("[") ? JSON.parse(process.env.REDESIGN_ROUTES) : process.env.REDESIGN_ROUTES.split(",").map((route) => route.trim())) : null;
 const widths = smoke ? [390, 1440] : [320, 375, 390, 430, 768, 1024, 1280, 1440, 1920];
 const result = {
@@ -65,6 +69,8 @@ async function main() {
     throw new Error(
       "BASE_URL must point to a loopback host; browser tests never submit to the public site.",
     );
+  if (process.env.LOCAL_FORM_TEST_MODE !== "disabled-provider")
+    throw new Error("Set LOCAL_FORM_TEST_MODE=disabled-provider only after starting an isolated local server with deliberately invalid sender/list settings. This suite posts to the real local API; the test flag does not disable provider delivery.");
   const input = JSON.parse(await readFile("data/pages.json", "utf8"));
   const pages = Array.isArray(input) ? input : input.pages;
   const identityResponse = await fetch(base, {
@@ -96,7 +102,7 @@ async function main() {
   const smokeRoutes = new Set(["/", "/ac-installation-service/", pages.find((entry) => entry.type === "article").route, "/contact-us/"]);
   if (requestedRoutes && [...requestedRoutes].some((route) => !pages.some((entry) => entry.route === route))) throw new Error("REDESIGN_ROUTES contains an unknown public route.");
   const candidates = pages.filter((entry) => (!requestedRoutes || requestedRoutes.has(entry.route)) && (!smoke || smokeRoutes.has(entry.route))).map((entry) => [entry.route === "/" ? "home" : entry.route.split("/").filter(Boolean).join("--"), entry.route]);
-  await mkdir("docs/screenshots/redesign", { recursive: true });
+  await mkdir(screenshotDirectory, { recursive: true });
   const browser = await chromium.launch({
     executablePath: await executable(),
     headless: true,
@@ -125,7 +131,7 @@ async function main() {
   });
   const page = await context.newPage();
   let currentCase = null;
-  let expectedApiFailure = false;
+  let expectedApiFailurePath = null;
   page.on("pageerror", (error) => {
     if (currentCase) currentCase.jsErrors.push(String(error));
   });
@@ -133,7 +139,7 @@ async function main() {
     if (
       message.type() === "error" &&
       currentCase &&
-      !(expectedApiFailure && /503|Service Unavailable/.test(message.text()))
+      !(expectedApiFailurePath && /503|Service Unavailable/.test(message.text()))
     )
       currentCase.consoleErrors.push(message.text());
   });
@@ -142,7 +148,7 @@ async function main() {
       currentCase &&
       response.status() >= 400 &&
       response.url().startsWith(base.origin) &&
-      !(expectedApiFailure && response.url().includes("/api/contact/"))
+      !(response.status() === 503 && new URL(response.url()).pathname === expectedApiFailurePath)
     )
       currentCase.failedResponses.push({
         url: response.url(),
@@ -254,7 +260,7 @@ async function main() {
             (width === 390 && type === "home") ||
             !currentCase.ok
           ) {
-            currentCase.screenshot = `docs/screenshots/redesign/${type}-${width}.png`;
+            currentCase.screenshot = join(screenshotDirectory, `${type}-${width}.png`);
             await page.screenshot({
               path: currentCase.screenshot,
               fullPage: width === 1440,
@@ -316,6 +322,8 @@ async function main() {
     await testimonials.getByRole("button", { name: "Previous testimonials" }).click();
     recordInteraction("Previous testimonial restores selected dot", (await dots.nth(0).getAttribute("aria-pressed")) === "true");
     const newsletter = page.locator("footer .newsletter-form");
+    const newsletterConsent = newsletter.getByRole("checkbox");
+    recordInteraction("Newsletter consent starts unchecked and is required", !(await newsletterConsent.isChecked()) && (await newsletterConsent.getAttribute("required")) !== null);
     let newsletterApiRequests = 0;
     const countNewsletterRequests = (request) => {
       if (request.method() === "POST" || new URL(request.url()).pathname.startsWith("/api/")) newsletterApiRequests++;
@@ -326,10 +334,20 @@ async function main() {
     recordInteraction("Invalid newsletter email is blocked by native validation", await newsletter.evaluate((element) => !element.checkValidity()) && newsletterApiRequests === 0 && !(await newsletter.getByRole("status").textContent()).trim());
     await newsletter.getByRole("textbox", { name: "Your email address" }).fill("local-validation@example.invalid");
     await newsletter.getByRole("button", { name: "Subscribe to newsletter" }).click();
-    recordInteraction("Newsletter accurately reports unavailable delivery without API requests", (await newsletter.getByRole("status").textContent()).includes("not been sent or saved") && newsletterApiRequests === 0);
+    recordInteraction("Missing newsletter consent blocks submission without API requests", await newsletter.evaluate((element) => !element.checkValidity()) && newsletterApiRequests === 0 && !(await newsletter.getByRole("status").textContent()).trim());
+    await newsletterConsent.check();
+    expectedApiFailurePath = "/api/newsletter/";
+    const newsletterResponsePromise = page.waitForResponse((response) => new URL(response.url()).origin === base.origin && new URL(response.url()).pathname === "/api/newsletter/" && response.request().method() === "POST");
+    await newsletter.getByRole("button", { name: "Subscribe to newsletter" }).click();
+    const newsletterResponse = await newsletterResponsePromise;
+    const newsletterBody = await newsletterResponse.json();
+    const newsletterPayload = newsletterResponse.request().postDataJSON();
+    await newsletter.getByRole("status").filter({ hasText: newsletterBody.message }).waitFor();
+    recordInteraction("Consented newsletter submission records boolean consent and truthful disabled-backend status", newsletterResponse.status() === 503 && newsletterApiRequests === 1 && newsletterPayload.email === "local-validation@example.invalid" && newsletterPayload.consent === true && newsletterPayload.website === "" && newsletterResponse.headers()["cache-control"] === "no-store" && newsletterResponse.headers()["x-content-type-options"] === "nosniff" && typeof newsletterBody.message === "string" && newsletterBody.message.includes("not been sent or saved") && (await newsletter.getByRole("textbox", { name: "Your email address" }).inputValue()) === "local-validation@example.invalid" && await newsletterConsent.isChecked(), { status: newsletterResponse.status(), message: newsletterBody.message });
+    expectedApiFailurePath = null;
     page.off("request", countNewsletterRequests);
     const serviceSummary = page.locator(
-      'header summary[aria-label="Service pages and more"]',
+      'header summary[aria-label="Service pages"]',
     );
     await serviceSummary.focus();
     await page.keyboard.press("Enter");
@@ -406,8 +424,17 @@ async function main() {
     );
     await page.goto(new URL("/projects/", base).href, { waitUntil: "load" });
     const categories = page.getByRole("navigation", { name: "Project categories" });
-    await categories.getByRole("button", { name: "MEP", exact: true }).click();
-    recordInteraction("Project category filter retains MEP selection", (await categories.getByRole("button", { name: "MEP", exact: true }).getAttribute("aria-pressed")) === "true" && (await page.locator(".filter-status").textContent()).includes("MEP"));
+    const expectedCategories = ["All", "AC Repair", "AC Maintenance", "AC Installation", "Commercial AC (HVAC)"];
+    recordInteraction("Project categories match the approved AC categories", JSON.stringify(await categories.getByRole("button").allTextContents()) === JSON.stringify(expectedCategories));
+    for (const category of expectedCategories) {
+      const categoryButton = categories.getByRole("button", { name: category, exact: true });
+      await categoryButton.click();
+      const hasInstallation = category === "All" || category === "AC Installation";
+      const projectLinks = await page.locator("#project-results article > a").evaluateAll((links) => links.map((link) => link.getAttribute("href")));
+      const expectedLinks = hasInstallation ? ["/project-portfolio/luxury-villa-ac-installation/"] : [];
+      const expectedStatus = `${hasInstallation ? "1 project" : "0 projects"}${category === "All" ? "" : ` in ${category}`}`;
+      recordInteraction(`Project category ${category} shows accurate membership and selection`, (await categoryButton.getAttribute("aria-pressed")) === "true" && await categories.locator('button[aria-pressed="true"]').count() === 1 && JSON.stringify(projectLinks) === JSON.stringify(expectedLinks) && (await page.locator(".filter-status").textContent()).trim() === expectedStatus && (hasInstallation ? await page.locator(".project-empty").count() === 0 : (await page.locator(".project-empty").textContent()).includes("No projects published in this category yet.")), { projectLinks, expectedStatus });
+    }
     await page.goto(new URL("/contact-us/", base).href, {
       waitUntil: "load",
     });
@@ -438,7 +465,7 @@ async function main() {
     await form
       .locator('[name="message"]')
       .fill("Synthetic local validation. No delivery is expected.");
-    expectedApiFailure = true;
+    expectedApiFailurePath = "/api/contact/";
     const responsePromise = page.waitForResponse(
       (response) =>
         new URL(response.url()).origin === base.origin &&
@@ -453,11 +480,14 @@ async function main() {
       "Valid local form returns explicit disabled-backend 503",
       response.status() === 503 &&
         posts === 1 &&
+        response.headers()["cache-control"] === "no-store" &&
+        response.headers()["x-content-type-options"] === "nosniff" &&
         typeof body.message === "string" &&
-        body.message.length > 20,
+        body.message.includes("has not been sent") &&
+        (await form.locator('[name="firstName"]').inputValue()) === "Local validation",
       { status: response.status(), message: body.message },
     );
-    expectedApiFailure = false;
+    expectedApiFailurePath = null;
     page.off("request", countPosts);
     if (
       currentCase.jsErrors.length ||
@@ -482,8 +512,9 @@ async function main() {
       !result.failures.length &&
       result.cases.length === widths.length * candidates.length,
   };
+  await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(
-    process.env.REDESIGN_OUTPUT || (smoke ? "docs/redesign-browser-smoke.json" : "docs/redesign-browser-validation.json"),
+    outputPath,
     JSON.stringify(result, null, 2) + "\n",
   );
   console.log(JSON.stringify(result.summary, null, 2));

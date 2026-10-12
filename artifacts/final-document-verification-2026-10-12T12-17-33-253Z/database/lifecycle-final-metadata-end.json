@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-10-12T12:30:37.502Z",
+  "ownedPid": 19520,
+  "syntheticLocalOnly": true,
+  "productionTouched": false,
+  "passed": true,
+  "phase": "complete",
+  "schemaVersion": 1,
+  "fixtureCounts": {
+    "namespace_settings": 0,
+    "rate_limits": 0,
+    "submissions": 0,
+    "consent_events": 0
+  },
+  "restoreDatabases": 0,
+  "runtimeRoles": 0,
+  "otherClientConnections": 0,
+  "hbaOriginalBytesRestored": true,
+  "noServerRunning": true,
+  "postmasterPidRemoved": true,
+  "completedAt": "2026-10-12T12:30:37.891Z"
+}

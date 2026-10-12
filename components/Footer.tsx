@@ -2,6 +2,8 @@ import Link from "next/link";
 import { services, site } from "@/lib/site";
 import { BrandLogo, Icon } from "./ui";
 import { NewsletterForm } from "./NewsletterForm";
+import { CompanyLinks, SocialLinks } from "./CompanyLinks";
+import { configuredPrivacyNotice } from "@/lib/privacy-notice";
 
 const quickLinks = [
   { title: "Home", route: "/" },
@@ -10,25 +12,6 @@ const quickLinks = [
   { title: "Blogs", route: "/blog/" },
   { title: "Contact Us", route: "/contact-us/" },
 ];
-
-function SocialLinks() {
-  return (
-    <nav className="social-links" aria-label="Social media">
-      <a href="https://www.facebook.com/voltronixuae" aria-label="Voltronix on Facebook">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 21v-8h3l.5-4H14V7c0-1 .4-2 2-2h2V1.5C17 1.2 16 1 15 1c-3 0-5 2-5 5v3H7v4h3v8h4Z" /></svg>
-      </a>
-      <a href="https://www.instagram.com/vtnxllc" aria-label="Voltronix on Instagram">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" /></svg>
-      </a>
-      <a href="https://www.linkedin.com/company/voltronix-uae/" aria-label="Voltronix on LinkedIn">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 8h4v13H4V8Zm2-7a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm5 7h4v2c1-2 6-3 7 2v9h-4v-8c0-3-3-3-3 0v8h-4V8Z" /></svg>
-      </a>
-      <a href="https://x.com/nstsllc" aria-label="Voltronix on X">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><path d="m4 3 13 18h4L8 3H4Zm0 18L20 3" /></svg>
-      </a>
-    </nav>
-  );
-}
 
 export function Footer() {
   return (
@@ -43,19 +26,6 @@ export function Footer() {
             in Dubai &amp; UAE.
           </p>
           <SocialLinks />
-          <details className="footer-details footer-group">
-            <summary>Part of Voltronix Group</summary>
-            <p>
-              Our team of specialists from varying disciplines will guarantee the
-              provision of integrated solutions to finish your task by drawing on
-              their experience from the collection of our completed projects.
-            </p>
-            <ul>
-              <li><a href="https://voltronix.ae">Contracting</a></li>
-              <li><a href="https://dewaapprovals.ae">DEWA Approvals</a></li>
-              <li><a href="https://switchgear.ae">Switchgear</a></li>
-            </ul>
-          </details>
         </div>
         <div className="footer-links">
           <h2>Quick Links</h2>
@@ -94,9 +64,20 @@ export function Footer() {
         <div className="footer-newsletter">
           <h2>Newsletter</h2>
           <p>Subscribe to get updates &amp; offers.</p>
-          <NewsletterForm />
+          <NewsletterForm privacyNotice={configuredPrivacyNotice()} />
         </div>
       </div>
+      <section className="footer-group container" aria-labelledby="footer-group-title">
+        <div>
+          <h2 id="footer-group-title">Part of Voltronix Group</h2>
+          <p>
+            Our team of specialists from varying disciplines will guarantee the
+            provision of integrated solutions to finish your task by drawing on
+            their experience from the collection of our completed projects.
+          </p>
+        </div>
+        <CompanyLinks label="Footer group companies" />
+      </section>
       <div className="footer-bottom container">
         <p>© 2026 Voltronix Contracting LLC. All Rights Reserved.</p>
         <div className="footer-bottom-links">

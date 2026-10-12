@@ -36,6 +36,10 @@ if (process.argv.includes("--capture")) {
 }
 if (!["localhost", "127.0.0.1", "[::1]"].includes(base.hostname)) throw new Error("Redesign validation requires a loopback BASE_URL.");
 const baseline = await json(baselinePath);
+// Keep the original migration evidence immutable. Only reviewed, exact file
+// revisions and explicitly requested additional routes can depart from it.
+const changes = await json("docs/completion-preservation-changes.json");
+const imageQuality = await json("data/image-quality.json");
 const result = { checkedAt: new Date().toISOString(), baseUrl: base.href, baselineCapturedAt: baseline.capturedAt, files: [], pages: [], contentRelocation: [], redirects: [], mediaRedirects: [], targets: [], fragments: [], seo: {}, failures: [] };
 const fail = (kind, path, detail) => result.failures.push({ kind, path, detail });
 async function pool(items, task, concurrency = 5) {
@@ -51,12 +55,13 @@ async function request(path) {
 }
 for (const file of baseline.files) {
   const actual = hash(await readFile(file.path));
-  const entry = { path: file.path, sha256: actual, unchanged: file.sha256 === actual };
+  const intentional = changes.files.find((entry) => entry.path === file.path);
+  const entry = { path: file.path, sha256: actual, unchanged: file.sha256 === actual, intentionalChange: intentional?.sha256 === actual && intentional?.originalSha256 === file.sha256, reason: intentional?.reason };
   result.files.push(entry);
-  if (!entry.unchanged) fail("preservation", file.path, "Protected migration data, SEO implementation, contact API or original asset changed.");
+  if (!entry.unchanged && !entry.intentionalChange) fail("preservation", file.path, "Protected file differs from both the original baseline and reviewed completion revision.");
 }
-const oldRoutes = baseline.pages.map((page) => page.route).sort();
-if (JSON.stringify(oldRoutes) !== JSON.stringify(pages.map((page) => page.route).sort())) fail("routes", "/", "Public route inventory differs from the baseline.");
+const expectedRoutes = [...baseline.pages.map((page) => page.route), ...changes.addedRoutes].sort();
+if (new Set(expectedRoutes).size !== expectedRoutes.length || JSON.stringify(expectedRoutes) !== JSON.stringify(pages.map((page) => page.route).sort())) fail("routes", "/", "Public route inventory differs from the preserved routes plus requested additions.");
 const targets = new Map();
 const rendered = new Map();
 const fragments = [];
@@ -80,9 +85,9 @@ await pool(pages, async (page) => {
       row.paragraphs = paragraphs.length;
       for (const paragraph of paragraphs) if (!mainText.includes(paragraph)) issue(`Article text missing: ${paragraph.slice(0, 150)}`);
     }
-    // The approved reference homepage omits FAQs. Its eight original FAQs now
-    // remain publicly rendered on /faq/, with matching FAQPage structured data.
-    const faqs = page.type === "home" ? [] : [...page.faqs, ...(page.route === "/faq/" ? pages.find((entry) => entry.route === "/").faqs : [])];
+    // The completion requirements restore homepage FAQs. Retain the existing
+    // FAQ-page copies too, and validate the schema against each rendered page.
+    const faqs = [...page.faqs, ...(page.route === "/faq/" ? pages.find((entry) => entry.route === "/").faqs : [])];
     for (const faq of faqs) {
       row.faqs++;
       if (!mainText.includes(normalize(faq.question))) issue(`FAQ question missing: ${faq.question}`);
@@ -118,8 +123,8 @@ await pool(pages, async (page) => {
   } catch (error) { fail("request", page.route, String(error)); }
 });
 console.log(`Checked ${result.pages.length} rendered pages against migrated metadata, article and FAQ content.`);
-// The supplied homepage is locked. Its previous copy, images, and links remain
-// in the public About-page disclosure and FAQ page, rather than being deleted.
+// Original copy, images and links remain in the About disclosure and FAQ page,
+// in addition to the sections restored to the homepage by the completion work.
 function preservedLink(raw) {
   const asset = assets.find((entry) => entry.url === raw || entry.localPath === raw);
   if (asset) return asset.localPath;
@@ -144,7 +149,7 @@ for (const section of pages.find((page) => page.route === "/").sections || []) {
     const src = new URL(target(element).attr("src"), base);
     return { src: /^\/_next\/image\/?$/.test(src.pathname) ? src.searchParams.get("url") : src.pathname, alt: target(element).attr("alt") || "" };
   }).get();
-  const missingImages = expectedImages.filter((expected) => !actualImages.some((actual) => actual.src === expected.src && actual.alt === expected.alt));
+  const missingImages = expectedImages.filter((expected) => !actualImages.some((actual) => actual.src === (imageQuality[expected.src]?.localPath || expected.src) && actual.alt === expected.alt));
   const row = { section: section.id, kind: section.kind, destination: path, textChecks: text.length, linkChecks: expectedLinks.length, imageChecks: expectedImages.length, missingText, missingLinks, missingImages, ok: !missingText.length && !missingLinks.length && !missingImages.length };
   result.contentRelocation.push(row);
   if (!row.ok) fail("homepage-content-relocation", path, row);
@@ -214,7 +219,7 @@ result.seo.notFound = { status: missingResponse.status, ok: missingResponse.stat
 await missingResponse.body?.cancel();
 if (!result.seo.notFound.ok) fail("404", "/__redesign-missing-page/", result.seo.notFound);
 result.pages.sort((a, b) => a.route.localeCompare(b.route));
-result.summary = { pages: result.pages.length, expectedPages: baseline.pages.length, protectedFiles: result.files.length, articleChecks: result.pages.filter((page) => page.type === "article").length, faqChecks: result.pages.reduce((sum, page) => sum + page.faqs, 0), redirects: result.redirects.length, mediaRedirects: result.mediaRedirects.length, linkedTargets: result.targets.length, failures: result.failures.length, passed: !result.failures.length && result.pages.length === baseline.pages.length };
-await writeFile("docs/redesign-validation.json", JSON.stringify(result, null, 2) + "\n");
+result.summary = { pages: result.pages.length, expectedPages: expectedRoutes.length, protectedFiles: result.files.length, intentionalFileChanges: result.files.filter((file) => file.intentionalChange).length, articleChecks: result.pages.filter((page) => page.type === "article").length, faqChecks: result.pages.reduce((sum, page) => sum + page.faqs, 0), redirects: result.redirects.length, mediaRedirects: result.mediaRedirects.length, linkedTargets: result.targets.length, failures: result.failures.length, passed: !result.failures.length && result.pages.length === expectedRoutes.length };
+await writeFile(process.env.VALIDATION_OUTPUT || "docs/redesign-validation.json", JSON.stringify(result, null, 2) + "\n");
 console.log(JSON.stringify(result.summary, null, 2));
 if (!result.summary.passed) { console.error(JSON.stringify(result.failures.slice(0, 20), null, 2)); process.exitCode = 1; }

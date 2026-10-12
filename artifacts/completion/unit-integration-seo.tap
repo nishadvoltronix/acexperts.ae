@@ -1,0 +1,384 @@
+TAP version 13
+# (node:10520) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/contact-request.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\G:\\acexperts.ae\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: unconfigured public form stays explicitly unsent and disables caching
+ok 1 - unconfigured public form stays explicitly unsent and disables caching
+  ---
+  duration_ms: 37.0284
+  type: 'test'
+  ...
+# Subtest: rejects filled honeypots and accepts the new AC/HVAC enquiry choices
+ok 2 - rejects filled honeypots and accepts the new AC/HVAC enquiry choices
+  ---
+  duration_ms: 4.0182
+  type: 'test'
+  ...
+# Subtest: accepts Other only with its conditional detail
+ok 3 - accepts Other only with its conditional detail
+  ---
+  duration_ms: 4.2391
+  type: 'test'
+  ...
+# Subtest: rejects unexpected fields, invalid types, invalid services, missing values, and excess lengths
+ok 4 - rejects unexpected fields, invalid types, invalid services, missing values, and excess lengths
+  ---
+  duration_ms: 4.9154
+  type: 'test'
+  ...
+# Subtest: rejects malformed JSON and returns generic errors without submitted data
+ok 5 - rejects malformed JSON and returns generic errors without submitted data
+  ---
+  duration_ms: 1.3866
+  type: 'test'
+  ...
+# Subtest: validates required mobile and optional phone without rejecting normal international formatting
+ok 6 - validates required mobile and optional phone without rejecting normal international formatting
+  ---
+  duration_ms: 6.4486
+  type: 'test'
+  ...
+# Subtest: rejects non-JSON, encoded bodies, and malformed Content-Length
+ok 7 - rejects non-JSON, encoded bodies, and malformed Content-Length
+  ---
+  duration_ms: 1.8258
+  type: 'test'
+  ...
+# Subtest: rejects foreign, null, absent, or spoofed origins without trusting forwarding headers
+ok 8 - rejects foreign, null, absent, or spoofed origins without trusting forwarding headers
+  ---
+  duration_ms: 1.809
+  type: 'test'
+  ...
+# Subtest: allows canonical www and matching loopback origins for local form use
+ok 9 - allows canonical www and matching loopback origins for local form use
+  ---
+  duration_ms: 1.8112
+  type: 'test'
+  ...
+# Subtest: allows explicit loopback hostname aliases only at the same protocol and port
+ok 10 - allows explicit loopback hostname aliases only at the same protocol and port
+  ---
+  duration_ms: 6.4598
+  type: 'test'
+  ...
+# Subtest: loopback exceptions reject foreign hosts, wrong ports/schemes and malformed origins
+ok 11 - loopback exceptions reject foreign hosts, wrong ports/schemes and malformed origins
+  ---
+  duration_ms: 3.5633
+  type: 'test'
+  ...
+# Subtest: bounds actual body bytes when the declared length is missing or dishonest
+ok 12 - bounds actual body bytes when the declared length is missing or dishonest
+  ---
+  duration_ms: 3.0706
+  type: 'test'
+  ...
+# Subtest: rate limits before reading another body and cannot be bypassed with forged client IPs
+ok 13 - rate limits before reading another body and cannot be bypassed with forged client IPs
+  ---
+  duration_ms: 9.9469
+  type: 'test'
+  ...
+# Subtest: cancels a stalled request and responds with a generic timeout
+ok 14 - cancels a stalled request and responds with a generic timeout
+  ---
+  duration_ms: 1.5258
+  type: 'test'
+  ...
+# Subtest: links reject executable, malformed and ambiguous URLs, including obfuscation
+ok 15 - links reject executable, malformed and ambiguous URLs, including obfuscation
+  ---
+  duration_ms: 1.8228
+  type: 'test'
+  ...
+# Subtest: rendering removes executable elements, namespaces and forbidden attributes
+ok 16 - rendering removes executable elements, namespaces and forbidden attributes
+  ---
+  duration_ms: 18.6208
+  type: 'test'
+  ...
+# Subtest: HTML-entity and control-character URL payloads cannot become executable links
+ok 17 - HTML-entity and control-character URL payloads cannot become executable links
+  ---
+  duration_ms: 2.8456
+  type: 'test'
+  ...
+# Subtest: heading replacements and wrapper normalization use sanitized attributes too
+ok 18 - heading replacements and wrapper normalization use sanitized attributes too
+  ---
+  duration_ms: 2.1649
+  type: 'test'
+  ...
+# Subtest: semantic content, accessibility, table attributes and external link protections survive
+ok 19 - semantic content, accessibility, table attributes and external link protections survive
+  ---
+  duration_ms: 17.8492
+  type: 'test'
+  ...
+# Subtest: all checked-in migrated content uses allowed tags and safe URLs, and preserves visible text
+ok 20 - all checked-in migrated content uses allowed tags and safe URLs, and preserves visible text
+  ---
+  duration_ms: 1732.5052
+  type: 'test'
+  ...
+# (node:18140) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/contact-request.ts is not specified and it doesn't parse as CommonJS.
+# Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+# To eliminate this warning, add "type": "module" to \\\\?\\G:\\acexperts.ae\\package.json.
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: contact delivery uses configured recipient/sender and returns success only after a receipt
+ok 21 - contact delivery uses configured recipient/sender and returns success only after a receipt
+  ---
+  duration_ms: 39.7127
+  type: 'test'
+  ...
+# Subtest: contact coalesces concurrent and reordered normalized duplicates
+ok 22 - contact coalesces concurrent and reordered normalized duplicates
+  ---
+  duration_ms: 3.3461
+  type: 'test'
+  ...
+# Subtest: contact dedupe expires after 30 minutes; changed enquiries still send
+ok 23 - contact dedupe expires after 30 minutes; changed enquiries still send
+  ---
+  duration_ms: 4.1986
+  type: 'test'
+  ...
+# Subtest: contact rejects invalid data before sending to a configured provider
+ok 24 - contact rejects invalid data before sending to a configured provider
+  ---
+  duration_ms: 2.1055
+  type: 'test'
+  ...
+# Subtest: contact provider rejection never exposes upstream data and can retry after cooldown
+ok 25 - contact provider rejection never exposes upstream data and can retry after cooldown
+  ---
+  duration_ms: 3.2368
+  type: 'test'
+  ...
+# Subtest: provider 5xx, transport errors, invalid receipt and unexpected 2xx remain uncertain
+ok 26 - provider 5xx, transport errors, invalid receipt and unexpected 2xx remain uncertain
+  ---
+  duration_ms: 7.2235
+  type: 'test'
+  ...
+# Subtest: provider timeout aborts the request, reports uncertainty, and suppresses retries
+ok 27 - provider timeout aborts the request, reports uncertainty, and suppresses retries
+  ---
+  duration_ms: 17.3452
+  type: 'test'
+  ...
+# Subtest: provider timeout also bounds a stalled success-response body
+ok 28 - provider timeout also bounds a stalled success-response body
+  ---
+  duration_ms: 15.5556
+  type: 'test'
+  ...
+# Subtest: missing or malformed configuration fails closed without a provider request
+ok 29 - missing or malformed configuration fails closed without a provider request
+  ---
+  duration_ms: 5.2824
+  type: 'test'
+  ...
+# Subtest: newsletter initiates double opt-in with explicit consent and no tracking consent
+ok 30 - newsletter initiates double opt-in with explicit consent and no tracking consent
+  ---
+  duration_ms: 1.7372
+  type: 'test'
+  ...
+# Subtest: newsletter rejects missing/fake consent, spam traps, invalid addresses and unknown fields
+ok 31 - newsletter rejects missing/fake consent, spam traps, invalid addresses and unknown fields
+  ---
+  duration_ms: 3.2812
+  type: 'test'
+  ...
+# Subtest: newsletter duplicate/provider rejection and timeout never claim subscription
+ok 32 - newsletter duplicate/provider rejection and timeout never claim subscription
+  ---
+  duration_ms: 22.4398
+  type: 'test'
+  ...
+# Subtest: newsletter shares origin, body, media, and global abuse guards
+ok 33 - newsletter shares origin, body, media, and global abuse guards
+  ---
+  duration_ms: 4.6026
+  type: 'test'
+  ...
+# Subtest: original routes, canonicals, indexability and every original FAQ answer survive
+ok 34 - original routes, canonicals, indexability and every original FAQ answer survive
+  ---
+  duration_ms: 6.2521
+  type: 'test'
+  ...
+# Subtest: all articles and content outside explicitly revised service/project/contact/logo sections are preserved
+ok 35 - all articles and content outside explicitly revised service/project/contact/logo sections are preserved
+  ---
+  duration_ms: 10.065
+  type: 'test'
+  ...
+# Subtest: only the two reviewed protected files depart from the original snapshot; original media remains byte-identical
+ok 36 - only the two reviewed protected files depart from the original snapshot; original media remains byte-identical
+  ---
+  duration_ms: 165.7408
+  type: 'test'
+  ...
+# Subtest: SEO expectations preserve the independent original Word document table
+ok 37 - SEO expectations preserve the independent original Word document table
+  ---
+  duration_ms: 3.0681
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /
+ok 38 - Word document metadata: /
+  ---
+  duration_ms: 0.5244
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /products/
+ok 39 - Word document metadata: /products/
+  ---
+  duration_ms: 0.2788
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /contact-us/
+ok 40 - Word document metadata: /contact-us/
+  ---
+  duration_ms: 0.35
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /about/
+ok 41 - Word document metadata: /about/
+  ---
+  duration_ms: 0.3015
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /emergency-ac-maintenance-service/
+ok 42 - Word document metadata: /emergency-ac-maintenance-service/
+  ---
+  duration_ms: 0.3504
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /ac-installation-service/
+ok 43 - Word document metadata: /ac-installation-service/
+  ---
+  duration_ms: 0.2748
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /services/
+ok 44 - Word document metadata: /services/
+  ---
+  duration_ms: 0.2783
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /ac-repair-services/
+ok 45 - Word document metadata: /ac-repair-services/
+  ---
+  duration_ms: 0.3431
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /faq/
+ok 46 - Word document metadata: /faq/
+  ---
+  duration_ms: 0.5121
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /projects/
+ok 47 - Word document metadata: /projects/
+  ---
+  duration_ms: 0.3922
+  type: 'test'
+  ...
+# Subtest: Word document metadata: /preventive-ac-maintenance-service/
+ok 48 - Word document metadata: /preventive-ac-maintenance-service/
+  ---
+  duration_ms: 0.1801
+  type: 'test'
+  ...
+# Subtest: new service pages are indexable and linked from service navigation and content
+ok 49 - new service pages are indexable and linked from service navigation and content
+  ---
+  duration_ms: 35.7663
+  type: 'test'
+  ...
+# Subtest: project filters classify only the published residential installation
+ok 50 - project filters classify only the published residential installation
+  ---
+  duration_ms: 0.481
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /
+ok 51 - rendered metadata, canonical, H1 and robots: /
+  ---
+  duration_ms: 360.7121
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /products/
+ok 52 - rendered metadata, canonical, H1 and robots: /products/
+  ---
+  duration_ms: 130.0343
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /contact-us/
+ok 53 - rendered metadata, canonical, H1 and robots: /contact-us/
+  ---
+  duration_ms: 70.0643
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /about/
+ok 54 - rendered metadata, canonical, H1 and robots: /about/
+  ---
+  duration_ms: 79.0464
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /emergency-ac-maintenance-service/
+ok 55 - rendered metadata, canonical, H1 and robots: /emergency-ac-maintenance-service/
+  ---
+  duration_ms: 44.9776
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /ac-installation-service/
+ok 56 - rendered metadata, canonical, H1 and robots: /ac-installation-service/
+  ---
+  duration_ms: 30.8589
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /services/
+ok 57 - rendered metadata, canonical, H1 and robots: /services/
+  ---
+  duration_ms: 38.3097
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /ac-repair-services/
+ok 58 - rendered metadata, canonical, H1 and robots: /ac-repair-services/
+  ---
+  duration_ms: 41.952
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /faq/
+ok 59 - rendered metadata, canonical, H1 and robots: /faq/
+  ---
+  duration_ms: 140.8733
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /projects/
+ok 60 - rendered metadata, canonical, H1 and robots: /projects/
+  ---
+  duration_ms: 20.1516
+  type: 'test'
+  ...
+# Subtest: rendered metadata, canonical, H1 and robots: /preventive-ac-maintenance-service/
+ok 61 - rendered metadata, canonical, H1 and robots: /preventive-ac-maintenance-service/
+  ---
+  duration_ms: 30.4439
+  type: 'test'
+  ...
+1..61
+# tests 61
+# suites 0
+# pass 61
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2968.7591

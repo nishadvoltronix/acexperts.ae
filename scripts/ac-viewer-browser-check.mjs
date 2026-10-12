@@ -5,9 +5,11 @@ import AxeBuilder from "@axe-core/playwright";
 
 // Run against `npm run dev`, or set BASE_URL to a local production server.
 const base = (process.env.BASE_URL || "http://localhost:3001").replace(/\/$/, "");
+if (!["localhost", "127.0.0.1", "[::1]"].includes(new URL(base).hostname)) throw new Error("BASE_URL must be local.");
+const outputDir = process.env.ARTIFACT_DIR || "artifacts";
 const browser = await chromium.launch({ channel: "chrome", headless: true });
 const report = [];
-await mkdir("artifacts", { recursive: true });
+await mkdir(outputDir, { recursive: true });
 
 async function check(name, work) {
   try {
@@ -28,9 +30,9 @@ function controls(page) {
     slider: viewer.getByRole("slider", { name: "Explode level" }),
     normal: viewer.getByRole("button", { name: "Normal (Assembled)", exact: true }),
     explode: viewer.getByRole("button", { name: "Explode (Separate)", exact: true }),
-    loop: viewer.getByRole("button", { name: /^(?:Start|Stop) auto loop animation$/ }),
-    start: viewer.getByRole("button", { name: "Start auto loop animation", exact: true }),
-    stop: viewer.getByRole("button", { name: "Stop auto loop animation", exact: true }),
+    loop: viewer.getByRole("button", { name: /^(?:Auto|Stop) loop Animation$/ }),
+    start: viewer.getByRole("button", { name: "Auto loop Animation", exact: true }),
+    stop: viewer.getByRole("button", { name: "Stop loop Animation", exact: true }),
   };
 }
 
@@ -170,11 +172,36 @@ async function rotateToCorner(page, x, y) {
 }
 
 async function assertAccessible(page) {
-  const result = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
+  const result = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).analyze();
   assert.deepEqual(result.violations.map((issue) => ({ id: issue.id, nodes: issue.nodes.map((node) => node.target) })), []);
 }
 
 try {
+  for (const width of [390, 1440]) {
+    await check(`accessible loop names in both states ${width}px`, async () => {
+      const context = await browser.newContext({ viewport: { width, height: 1000 }, isMobile: width < 768, hasTouch: width < 768 });
+      const page = await context.newPage();
+      try {
+        await openHome(page);
+        const ui = controls(page);
+        await assertAutoplay(page);
+        for (const playing of [true, false]) {
+          const expected = playing ? "Stop loop Animation" : "Auto loop Animation";
+          const button = ui.viewer.getByRole("button", { name: expected, exact: true });
+          assert.equal(await button.count(), 1, "The accessible name must exactly match the visible loop-control label");
+          assert.equal((await button.innerText()).replace(/\s+/g, " ").trim(), expected);
+          assert.equal(await button.getAttribute("aria-pressed"), String(playing));
+          await assertAccessible(page);
+          if (playing) await button.click();
+        }
+        await assertFrozen(page);
+        return { checks: "visible and accessible labels agree while autoplay is active and paused; aria-pressed matches; both states pass WCAG 2.2 A/AA automated rules" };
+      } finally {
+        await context.close();
+      }
+    });
+  }
+
   for (const width of [320, 390, 768, 1024, 1440]) {
     await check(`responsive ${width}px`, async () => {
       const context = await browser.newContext({ viewport: { width, height: 900 }, isMobile: width < 768, hasTouch: width < 768 });
@@ -220,18 +247,18 @@ try {
           await ui.slider.evaluate((element) => element.blur());
           await page.mouse.move(0, 0);
           await page.waitForTimeout(1800);
-          await page.screenshot({ path: `artifacts/ac-viewer-${width}.png`, animations: "disabled" });
+          await page.screenshot({ path: `${outputDir}/ac-viewer-${width}.png`, animations: "disabled" });
           if (width === 1440) {
             await page.locator("#our-services").evaluate((element) => window.scrollTo({ top: window.scrollY + element.getBoundingClientRect().top - document.querySelector(".site-header").getBoundingClientRect().height, behavior: "instant" }));
             await page.waitForTimeout(200);
             await ui.slider.fill("100");
             await ui.slider.evaluate((element) => element.blur());
             await page.waitForTimeout(1800);
-            await page.screenshot({ path: "artifacts/ac-home-desktop.png", animations: "disabled" });
+            await page.screenshot({ path: `${outputDir}/ac-home-desktop.png`, animations: "disabled" });
           }
         }
         assert.deepEqual(errors, []);
-        return { checks: "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow", accessibility: [390, 1440].includes(width) ? "WCAG 2.1 A/AA passed" : undefined };
+        return { checks: "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow", accessibility: [390, 1440].includes(width) ? "WCAG 2.2 A/AA automated rules passed" : undefined };
       } finally {
         await context.close();
       }
@@ -596,7 +623,7 @@ try {
     });
   }
 } finally {
-  await writeFile("artifacts/ac-viewer-check.json", JSON.stringify({ base, checked: report }, null, 2) + "\n");
+  await writeFile(`${outputDir}/ac-viewer-check.json`, JSON.stringify({ checkedAt: new Date().toISOString(), base, checked: report }, null, 2) + "\n");
   await browser.close();
 }
 

@@ -1,11 +1,14 @@
 "use client";
-import { useState, type FormEvent } from "react";
-export function ContactForm() {
+import { useRef, useState, type FormEvent } from "react";
+export function ContactForm({ privacyNoticeUrl }: { privacyNoticeUrl?: string }) {
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
   const [service, setService] = useState("");
+  const submitting = useRef(false);
   async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (submitting.current) return;
+    submitting.current = true;
     setBusy(true);
     setMessage("");
     const form = event.currentTarget;
@@ -14,15 +17,21 @@ export function ContactForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        signal: AbortSignal.timeout(15_000),
       });
-      const result = await response.json();
+      const result: unknown = await response.json();
+      if (!result || typeof result !== "object" || !("message" in result) || typeof result.message !== "string") throw new Error("Invalid response");
       setMessage(result.message);
-      if (response.ok) form.reset();
+      if (response.status === 200) {
+        form.reset();
+        setService("");
+      }
     } catch {
       setMessage(
-        "Your message could not be sent. Please call +971 4 824 0002 or email info@voltronix.ae.",
+        "We could not confirm delivery of your enquiry. Please call +971 4 824 0002 or email info@voltronix.ae before sending it again.",
       );
     } finally {
+      submitting.current = false;
       setBusy(false);
     }
   }
@@ -30,7 +39,10 @@ export function ContactForm() {
     <section className="contact-form-section" aria-labelledby="enquiry-title">
       <h2 id="enquiry-title">Send an enquiry</h2>
       <p>Tell us about your air conditioning needs.</p>
-      <form onSubmit={submit} className="contact-form">
+      <form onSubmit={submit} className="contact-form" aria-busy={busy}>
+        <div className="form-honeypot" aria-hidden="true">
+          <label>Leave this field empty<input name="website" tabIndex={-1} autoComplete="off" maxLength={200} /></label>
+        </div>
         <label>
           First Name <span aria-hidden="true">*</span>
           <input
@@ -95,6 +107,8 @@ export function ContactForm() {
               "Upgrades",
               "Repairs",
               "Solutions",
+              "Duct Cleaning",
+              "HVAC Services",
               "Other",
             ].map((s) => (
               <option key={s}>{s}</option>
@@ -112,10 +126,11 @@ export function ContactForm() {
           <textarea name="message" required rows={6} maxLength={5000} />
         </label>
         <div className="full-width">
+          {privacyNoticeUrl && <p><a href={privacyNoticeUrl}>Privacy notice</a></p>}
           <button className="button" disabled={busy} type="submit">
             {busy ? "Sending…" : "Submit"}
           </button>
-          <p className="form-status" role="status">
+          <p className="form-status" role="status" aria-live="polite" aria-atomic="true">
             {message}
           </p>
         </div>

@@ -5,10 +5,12 @@ import AxeBuilder from "@axe-core/playwright";
 
 // Run against `npm run dev`, or set BASE_URL to a local production server.
 const base = process.env.BASE_URL || "http://localhost:3001";
+if (!["localhost", "127.0.0.1", "[::1]"].includes(new URL(base).hostname)) throw new Error("BASE_URL must be local.");
+const outputDir = process.env.ARTIFACT_DIR || "artifacts";
 const browser = await chromium.launch({ channel: "chrome", headless: true });
 const report = [];
 const expectedCounts = ["156", "15+", "200", "100%"];
-await mkdir("artifacts", { recursive: true });
+await mkdir(outputDir, { recursive: true });
 
 async function scrollPage(page) {
   const bottom = await page.evaluate(() => document.documentElement.scrollHeight);
@@ -27,7 +29,7 @@ async function contentIsVisible(page) {
 }
 
 try {
-  for (const width of [320, 375, 390, 430, 768, 1024, 1440]) {
+  for (const width of [320, 360, 390, 414, 768, 1024, 1280, 1440]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, isMobile: width < 768, hasTouch: width < 768 });
     const page = await context.newPage();
     const errors = [];
@@ -64,6 +66,24 @@ try {
     await page.locator(".home-testimonials").focus();
     await page.keyboard.press("ArrowLeft");
     assert.equal(await page.locator(".testimonial-position-0 .testimonial-person strong").textContent(), "Muhammed Navas");
+    const dots = page.locator(".slider-dots button");
+    const targets = await dots.evaluateAll((buttons) => buttons.map((button) => {
+      const { x, y, width, height, right } = button.getBoundingClientRect();
+      return { x, y, width, height, right };
+    }));
+    assert.equal(targets.length, 4);
+    for (const [index, target] of targets.entries()) {
+      assert(target.width >= 44 && target.height >= 44, "Testimonial selectors need 44px touch targets at every breakpoint");
+      if (index) assert(target.x >= targets[index - 1].right, "Adjacent testimonial selectors must not overlap");
+    }
+    // Activate outside the visible dot but inside the circular button. The
+    // bounding-box corner is intentionally outside a border-radius: 50% target.
+    await dots.nth(1).click({ position: { x: 4, y: targets[1].height / 2 } });
+    assert.equal(await dots.nth(1).getAttribute("aria-pressed"), "true");
+    assert.equal(await page.locator(".testimonial-position-0 .testimonial-person strong").textContent(), "Juan");
+    await dots.first().focus();
+    await page.keyboard.press("Enter");
+    assert.equal(await page.locator(".testimonial-position-0 .testimonial-person strong").textContent(), "Muhammed Navas");
     if (width < 1024) {
       await page.getByRole("button", { name: "Menu", exact: true }).click();
       assert.equal(await page.locator(".primary-navigation").isVisible(), true);
@@ -71,14 +91,14 @@ try {
       assert.equal(await page.locator(".primary-navigation").isVisible(), false);
     }
     if ([390, 1440].includes(width)) {
-      const accessibility = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"]).analyze();
+      const accessibility = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).analyze();
       assert.deepEqual(accessibility.violations.map((issue) => issue.id), []);
       await page.evaluate(() => {
         if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
         window.scrollTo({ top: 0, behavior: "instant" });
       });
       await page.waitForTimeout(150);
-      await page.screenshot({ path: `artifacts/motion-home-${width}.png`, fullPage: true, animations: "disabled" });
+      await page.screenshot({ path: `${outputDir}/motion-home-${width}.png`, fullPage: true, animations: "disabled" });
     }
     if (width === 1440) {
       await page.locator('.primary-navigation a[href="/about/"]').first().click();
@@ -91,7 +111,7 @@ try {
       await page.waitForFunction(() => document.querySelector('[data-motion-state="pending"]'));
     }
     assert.deepEqual(errors, []);
-    report.push({ width, checks: "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed" });
+    report.push({ width, checks: "scroll reveals, counters, links, unique logos, sticky header, testimonials including non-overlapping 44px targets and outer-area activation, navigation, overflow and console passed" });
     console.log(`PASS ${width}px`);
     await context.close();
   }
@@ -114,7 +134,7 @@ try {
     console.log(`PASS ${mode}`);
     await context.close();
   }
-  await writeFile("artifacts/motion-browser-check.json", JSON.stringify({ base, checked: report }, null, 2) + "\n");
+  await writeFile(`${outputDir}/motion-browser-check.json`, JSON.stringify({ checkedAt: new Date().toISOString(), base, checked: report }, null, 2) + "\n");
 } finally {
   await browser.close();
 }

@@ -1,0 +1,22 @@
+{
+  "verifiedAtUtc": "2026-10-12T08:32:19.777Z",
+  "timezone": "Asia/Dubai",
+  "syntheticLocalDatabaseOnly": true,
+  "liveProviderCalls": 0,
+  "checks": {
+    "runtimeAuthenticationAndRestrictedIdentity": true,
+    "sharedRateBudgets": true,
+    "contactClaimCompletionAndDuplicate": true,
+    "newsletterConsentClaimAndCompletion": true,
+    "submissionDeleteDenied": true,
+    "consentDeleteDenied": true,
+    "fingerprintUpdateDenied": true,
+    "schemaVersionUpdateDenied": true,
+    "tableCreationDenied": true,
+    "schemaCreationDenied": true
+  },
+  "cleanup": true,
+  "passed": true,
+  "phase": "complete",
+  "postgresVersion": "16.15"
+}

@@ -1,9 +1,16 @@
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { resolve } from "node:path";
+import { dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { load } from "cheerio";
 
 const base = new URL(process.env.BASE_URL || "http://localhost:3001");
+const artifactDirectory = process.env.ARTIFACT_DIR;
+export const migrationPaths = {
+  validation: process.env.VALIDATION_OUTPUT || join(artifactDirectory || "docs", "validation-results.json"),
+  browser: process.env.BROWSER_OUTPUT || join(artifactDirectory || "docs", "browser-validation-results.json"),
+  report: process.env.MIGRATION_REPORT_OUTPUT || join(artifactDirectory || "docs", "migration-report.md"),
+  screenshots: artifactDirectory ? join(artifactDirectory, "screenshots", "migration") : "docs/screenshots/local",
+};
 const sourceOrigin = "https://acexperts.ae";
 const normalize = (value) =>
   String(value ?? "")
@@ -55,8 +62,8 @@ export async function writeMigrationReport() {
   const mediaValidation = await optionalJson("docs/media-redirect-validation.json");
   const [validation, browser, crawl, map, assets, assetSummary, pagesInput] =
     await Promise.all([
-      optionalJson("docs/validation-results.json"),
-      optionalJson("docs/browser-validation-results.json"),
+      optionalJson(migrationPaths.validation),
+      optionalJson(migrationPaths.browser),
       optionalJson("data/crawl.json"),
       optionalJson("docs/url-map.json"),
       optionalJson("data/assets.json"),
@@ -133,7 +140,7 @@ export async function writeMigrationReport() {
     }).filter(Boolean)),
   ];
   const body = `# AC Experts migration report\n\nGenerated: ${new Date().toISOString()}\n\n${validationState} ${browserState}\n\n## Coverage\n\n| Item | Count |\n| --- | ---: |\n${summaryTable(counts)}\n\nThe inventory is based on public navigation, internal links, canonical URLs, robots, and sitemaps. Source crawl time: ${crawl?.crawledAt || "Unavailable"}. Canonical content pages and redirect aliases are counted separately. See [site inventory](site-inventory.md), [URL map](url-map.json), [asset inventory](assets-inventory.md), and [source audit](source-audit.md).\n\n## Verification evidence\n\n- [HTTP validation results](validation-results.json): exact URL responses, permanent redirects, titles, descriptions, canonicals, H1s, article paragraph checks, actual rendered links and image targets, sitemap, and robots.\n- [Browser validation results](browser-validation-results.json): viewport cases, overflow, image decoding, JavaScript errors, keyboard/mobile navigation, FAQ interaction, local contact form behavior, and axe checks.\n- [Local screenshots](screenshots/local/).\n- Build and lint results must be confirmed separately from these scripts; this report does not infer their success.\n\n## Current failures\n\n${[...failures, ...browserFailures].length ? [...failures, ...browserFailures].map((item) => `- ${typeof item === "string" ? item : JSON.stringify(item)}`).join("\n") : "- No failures in the checks that have run."}\n\n## Source URLs not migrated\n\n${unavailable.length ? unavailable.map((item) => `- ${item.originalUrl}: ${item.action || "unavailable"}`).join("\n") : "- No URL-map entries are left without a page or permanent redirect."}\n\n## Source quirks and migration decisions\n\n- The original public contact form is embedded through Zoho Forms. The new frontend is local; sending remains intentionally disabled until a backend is configured. Valid local submissions return HTTP 503 with an explicit unsent-message notice. No test submitted the live form.\n- The FAQ brochure Download points to a placeholder, so it is not a downloadable public PDF. No document is fabricated.\n- The source FAQ sidebar contains template contact details for a different country and example email. Those are recorded in the source audit and not treated as verified business details.\n- The contact page's public map names Nathan Star Technical Services LLC; its identity is a source discrepancy.\n- Source article author display and biography spellings differ (Maries/Maris). Source text is preserved.\n- The original installation sidebar email differs from the site-wide contact email; see the source audit.\n- Source date/archive aliases that resolve to other canonical pages are represented by explicit permanent redirects; they are not duplicate indexed content pages.\n${migrationNotes.map((note) => `- ${note}`).join("\n")}\n\n## Remaining work\n\n${!validation || !browser ? "- Complete the local validation suite that has not yet run.\n" : ""}${[...failures, ...browserFailures].length ? "- Resolve the failures listed above, then rerun the affected checks.\n" : ""}- Configure and verify a real contact-form backend before deployment; local validation does not claim delivery.\n- Confirm the source map identity and inconsistent sidebar contact details with the business before publication.\n- Deployment, search-engine recrawling, field Core Web Vitals, and search ranking outcomes are outside local verification. Existing URLs and metadata are retained, but ranking outcomes cannot be guaranteed.\n\nLocal development command: \`npm run dev\` at \`http://localhost:3001\`. No live website files, forms, or administrative settings were modified.\n`;
-  await mkdir("docs", { recursive: true });
+  await mkdir(dirname(migrationPaths.report), { recursive: true });
   const buildEvidence = buildVerification
     ? `Build/lint verification: [record](build-verification.json).\n\n\`\`\`json\n${JSON.stringify(buildVerification, null, 2)}\n\`\`\``
     : "Build and lint results must be confirmed separately from these scripts; this report does not infer their success.";
@@ -143,9 +150,13 @@ export async function writeMigrationReport() {
   const recheckEvidence = browser?.lastRecheckedAt
     ? `\n\nBrowser geometry evidence was recorded at ${browser.checkedAt}; affected accessibility checks and additional component interactions were rechecked at ${browser.lastRecheckedAt}. The ${browser.cases.length} previously passing geometry cases were retained because the final fix only underlined existing text links.\n`
     : "";
-  await writeFile("docs/migration-report.md", body
+  const reportLink = (path) => relative(dirname(migrationPaths.report), path).replaceAll("\\", "/");
+  await writeFile(migrationPaths.report, body
     .replace("Build and lint results must be confirmed separately from these scripts; this report does not infer their success.", buildEvidence)
-    .replace("- [Local screenshots](screenshots/local/).", `- [Local screenshots](screenshots/local/).${mediaEvidence}${recheckEvidence}`));
+    .replace("- [Local screenshots](screenshots/local/).", `- [Local screenshots](${reportLink(migrationPaths.screenshots)}/).${mediaEvidence}${recheckEvidence}`)
+    .replace("(validation-results.json)", `(${reportLink(migrationPaths.validation)})`)
+    .replace("(browser-validation-results.json)", `(${reportLink(migrationPaths.browser)})`)
+    .replace(/\((site-inventory\.md|url-map\.json|assets-inventory\.md|source-audit\.md|build-verification\.json|media-redirect-validation\.json)\)/g, (_, path) => `(${reportLink(join("docs", path))})`));
 }
 
 async function main() {
@@ -517,8 +528,9 @@ async function main() {
     failures: result.failures.length,
     passed: !result.failures.length,
   };
+  await mkdir(dirname(migrationPaths.validation), { recursive: true });
   await writeFile(
-    "docs/validation-results.json",
+    migrationPaths.validation,
     JSON.stringify(result, null, 2) + "\n",
   );
   await writeMigrationReport();

@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-10-12T09:53:40.994Z",
+  "environment": "local production build; deliberately invalid provider configuration",
+  "configuredPrivacy": false,
+  "checks": [
+    {
+      "name": "Both About card word separators rendered",
+      "passed": true
+    },
+    {
+      "name": "Homepage H1 computed motion",
+      "width": 390,
+      "reducedMotion": "no-preference",
+      "style": {
+        "duration": "0.42s",
+        "delay": "0s",
+        "animation": "hero-arrive"
+      },
+      "passed": true
+    },
+    {
+      "name": "Homepage H1 computed motion",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "style": {
+        "duration": "0.65s",
+        "delay": "0.2s",
+        "animation": "hero-arrive"
+      },
+      "passed": true
+    },
+    {
+      "name": "Homepage H1 computed motion",
+      "width": 390,
+      "reducedMotion": "reduce",
+      "style": {
+        "duration": "0s",
+        "delay": "0s",
+        "animation": "none"
+      },
+      "passed": true
+    }
+  ],
+  "configuration": {
+    "names": [
+      "BREVO_API_KEY",
+      "CONTACT_FROM_EMAIL",
+      "CONTACT_TO_EMAIL",
+      "BREVO_NEWSLETTER_LIST_ID",
+      "BREVO_NEWSLETTER_DOI_TEMPLATE_ID",
+      "BREVO_NEWSLETTER_REDIRECT_URL",
+      "FORM_ALLOWED_ORIGINS",
+      "FORM_DATABASE_URL",
+      "FORM_STATE_SECRET",
+      "FORM_STORE_NAMESPACE",
+      "PRIVACY_NOTICE_URL",
+      "PRIVACY_NOTICE_VERSION",
+      "NEWSLETTER_CONSENT_RETENTION_DAYS"
+    ],
+    "allExampleValuesEmpty": true
+  },
+  "assets": [
+    {
+      "path": ".next/static/9yguB2Gc4E71XyaulxVIl/_buildManifest.js",
+      "bytes": 219,
+      "gzipBytes": 154
+    },
+    {
+      "path": ".next/static/9yguB2Gc4E71XyaulxVIl/_clientMiddlewareManifest.js",
+      "bytes": 509,
+      "gzipBytes": 274
+    },
+    {
+      "path": ".next/static/9yguB2Gc4E71XyaulxVIl/_ssgManifest.js",
+      "bytes": 80,
+      "gzipBytes": 64
+    },
+    {
+      "path": ".next/static/chunks/05zr-3wpp_496.js",
+      "bytes": 31534,
+      "gzipBytes": 9062
+    },
+    {
+      "path": ".next/static/chunks/0cz1d0mv5g_q7.js",
+      "bytes": 112594,
+      "gzipBytes": 39627
+    },
+    {
+      "path": ".next/static/chunks/0lazh3swsjpwl.js",
+      "bytes": 28656,
+      "gzipBytes": 10480
+    },
+    {
+      "path": ".next/static/chunks/0lj2vhusc9wx6.css",
+      "bytes": 9533,
+      "gzipBytes": 2344
+    },
+    {
+      "path": ".next/static/chunks/19mx3mg6lkumu.js",
+      "bytes": 28907,
+      "gzipBytes": 7614
+    },
+    {
+      "path": ".next/static/chunks/3-uj775uv9fyt.js",
+      "bytes": 166048,
+      "gzipBytes": 45220
+    },
+    {
+      "path": ".next/static/chunks/322yv2bmd5zoy.js",
+      "bytes": 25761,
+      "gzipBytes": 7690
+    },
+    {
+      "path": ".next/static/chunks/3fntmmi971322.js",
+      "bytes": 14377,
+      "gzipBytes": 3661
+    },
+    {
+      "path": ".next/static/chunks/3g4px251sg85e.js",
+      "bytes": 228922,
+      "gzipBytes": 71576
+    },
+    {
+      "path": ".next/static/chunks/3s6nzrbk-8mnv.js",
+      "bytes": 5598,
+      "gzipBytes": 2029
+    },
+    {
+      "path": ".next/static/chunks/42ybo52ehdbjb.css",
+      "bytes": 65826,
+      "gzipBytes": 13055
+    },
+    {
+      "path": ".next/static/chunks/turbopack-29tnlg3etm031.js",
+      "bytes": 10946,
+      "gzipBytes": 4307
+    },
+    {
+      "path": ".next/static/media/roboto_latin-s.p.113jqrlu1v-_f.woff2",
+      "bytes": 43136,
+      "gzipBytes": 43169
+    }
+  ],
+  "staticSecretMarkerAbsent": true,
+  "cacheHeaders": [
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": "private, no-store, max-age=0",
+      "contentType": "text/html; charset=utf-8",
+      "robots": null
+    },
+    {
+      "path": "/_next/static/9yguB2Gc4E71XyaulxVIl/_buildManifest.js",
+      "status": 200,
+      "cacheControl": "public, max-age=31536000, immutable",
+      "contentType": "application/javascript; charset=UTF-8",
+      "robots": null
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "contentType": "text/plain",
+      "robots": null
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "contentType": "application/xml",
+      "robots": null
+    }
+  ]
+}

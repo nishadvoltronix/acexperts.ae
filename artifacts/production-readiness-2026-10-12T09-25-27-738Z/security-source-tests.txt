@@ -1,0 +1,89 @@
+(node:22600) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/contact-request.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\acexperts.ae\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ unconfigured public form stays explicitly unsent and disables caching (34.4752ms)
+✔ rejects filled honeypots and accepts the new AC/HVAC enquiry choices (5.2412ms)
+✔ accepts Other only with its conditional detail (3.2125ms)
+✔ rejects unexpected fields, invalid types, invalid services, missing values, and excess lengths (4.6637ms)
+✔ rejects malformed JSON and returns generic errors without submitted data (1.4266ms)
+✔ validates required mobile and optional phone without rejecting normal international formatting (5.6436ms)
+✔ rejects non-JSON, encoded bodies, and malformed Content-Length (1.7647ms)
+✔ rejects foreign, null, absent, or spoofed origins without trusting forwarding headers (1.9589ms)
+✔ allows canonical www and matching loopback origins for local form use (1.6545ms)
+✔ allows explicit loopback hostname aliases only at the same protocol and port (5.4539ms)
+✔ loopback exceptions reject foreign hosts, wrong ports/schemes and malformed origins (3.9343ms)
+✔ bounds actual body bytes when the declared length is missing or dishonest (3.9803ms)
+✔ rate limits before reading another body and cannot be bypassed with forged client IPs (10.6715ms)
+✔ cancels a stalled request and responds with a generic timeout (1.5096ms)
+✔ links reject executable, malformed and ambiguous URLs, including obfuscation (1.6439ms)
+✔ rendering removes executable elements, namespaces and forbidden attributes (12.7814ms)
+✔ HTML-entity and control-character URL payloads cannot become executable links (1.4689ms)
+✔ heading replacements and wrapper normalization use sanitized attributes too (1.1222ms)
+✔ semantic content, accessibility, table attributes and external link protections survive (12.1047ms)
+✔ all checked-in migrated content uses allowed tags and safe URLs, and preserves visible text (1512.9147ms)
+(node:20876) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/contact-request.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\acexperts.ae\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ contact delivery uses configured recipient/sender and returns success only after a receipt (59.9857ms)
+✔ contact deduplicates concurrent and reordered normalized submissions without claiming pending delivery (5.913ms)
+✔ contact dedupe expires after 30 minutes; changed enquiries still send (2.7362ms)
+✔ contact rejects invalid data before sending to a configured provider (1.5574ms)
+✔ contact provider rejection never exposes upstream data and can retry after cooldown (2.7161ms)
+✔ provider 5xx, transport errors, invalid receipt and unexpected 2xx remain uncertain (5.7592ms)
+✔ provider 408 and 409 remain uncertain across channels, expiry windows and new handlers (9.8377ms)
+✔ provider timeout aborts the request, reports uncertainty, and suppresses retries (14.4366ms)
+✔ provider timeout also bounds a stalled success-response body (15.7076ms)
+✔ missing or malformed configuration fails closed without a provider request (2.8367ms)
+✔ newsletter initiates double opt-in with explicit consent and no tracking consent (1.3417ms)
+✔ newsletter rejects missing/fake consent, spam traps, invalid addresses and unknown fields (2.182ms)
+✔ newsletter duplicate/provider rejection and timeout never claim subscription (25.4577ms)
+✔ newsletter shares origin, body, media, and global abuse guards (4.1404ms)
+(node:8612) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/contact-request.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\acexperts.ae\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ staging environment contract matches implementation and thirteen empty server-only .env.example settings (12.0145ms)
+✔ contact: every missing required setting returns 503 with zero provider calls and no secret echo (39.4862ms)
+ℹ 6 absent/empty-setting cases; provider calls: 0.
+✔ contact: provider errors and receipts cannot echo synthetic credentials or upstream details (35.366ms)
+ℹ 9 synthetic provider outcomes checked; no real provider calls.
+✔ contact: independent handlers and reinitialization share accepted/pending duplicate state through the injected store (4.1723ms)
+ℹ Three handler initializations share one injected test store: one provider mock call; pending duplicate 409, accepted duplicate 200. This is orchestration evidence, not real database/restart/deployed-cluster evidence.
+✔ contact: shared injected budget remains 30/minute across handlers and reinitialization (17.2017ms)
+ℹ 30 total provider mock calls across four handler initializations in one test-store minute; spoofed forwarded IPs did not multiply the budget. Real PostgreSQL concurrency is tested separately.
+✔ newsletter: every missing required setting returns 503 with zero provider calls and no secret echo (5.4637ms)
+ℹ 14 absent/empty-setting cases; provider calls: 0.
+✔ newsletter: provider errors and receipts cannot echo synthetic credentials or upstream details (26.9044ms)
+ℹ 8 synthetic provider outcomes checked; no real provider calls.
+✔ newsletter: independent handlers and reinitialization share accepted/pending duplicate state through the injected store (2.9909ms)
+ℹ Three handler initializations share one injected test store: one provider mock call; pending duplicate 409, accepted duplicate 200. This is orchestration evidence, not real database/restart/deployed-cluster evidence.
+✔ newsletter: shared injected budget remains 10/minute across handlers and reinitialization (6.5596ms)
+ℹ 10 total provider mock calls across four handler initializations in one test-store minute; spoofed forwarded IPs did not multiply the budget. Real PostgreSQL concurrency is tested separately.
+✔ staging origins accept only exact configured HTTPS origins and reject cross-site requests (8.3913ms)
+✔ malformed staging allowlist settings fail closed even if the Origin matches verbatim (2.9257ms)
+✔ newsletter consent is required before provider contact; acceptance requests confirmation without changing unsubscribe flags (2.5325ms)
+ℹ Local orchestration proof only: checked, versioned consent enters the injected store before DOI initiation; payload does not overwrite unsubscribe/blocklist fields and contains no tracking consent. Received DOI, list eligibility and withdrawal/suppression still require authorized live account verification.
+✔ contact: missing durable-store configuration and explicit absent store fail closed without provider calls (2.2579ms)
+✔ contact: rate/claim store failures fail closed and do not echo database details (0.8616ms)
+✔ contact: completion acknowledgement failure preserves uncertain ownership and suppresses repeat delivery (1.3364ms)
+✔ contact: lost claim acknowledgement prevents provider contact and keeps the claim blocked (1.0375ms)
+✔ contact: lost completion acknowledgement after commit reuses accepted state without resending (1.1791ms)
+✔ contact: uncertain and timeout states remain suppressed across new handlers beyond normal expiry (13.6086ms)
+✔ newsletter: missing durable-store configuration and explicit absent store fail closed without provider calls (2.155ms)
+✔ newsletter: rate/claim store failures fail closed and do not echo database details (0.7584ms)
+✔ newsletter: completion acknowledgement failure preserves uncertain ownership and suppresses repeat delivery (1.0388ms)
+✔ newsletter: lost claim acknowledgement prevents provider contact and keeps the claim blocked (0.8616ms)
+✔ newsletter: lost completion acknowledgement after commit reuses accepted state without resending (1.0489ms)
+✔ newsletter: uncertain and timeout states remain suppressed across new handlers beyond normal expiry (27.5667ms)
+✔ newsletter rejects stale or missing consent and notice versions before recording or contacting provider (1.7723ms)
+✔ newsletter malformed privacy URL, notice version and retention settings fail closed (2.2976ms)
+ℹ tests 60
+ℹ suites 0
+ℹ pass 60
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2625.6685

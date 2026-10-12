@@ -1,6 +1,12 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { createContactHandler, MAX_CONTACT_BODY_BYTES } from "../lib/contact-request.ts";
+import { createContactHandler as createProductionContactHandler, MAX_CONTACT_BODY_BYTES } from "../lib/contact-request.ts";
+
+// Hermetic even when a developer has live delivery credentials in their environment.
+const createContactHandler = (now) => createProductionContactHandler(now, {
+  env: {},
+  fetch: () => { throw new Error("Security tests must never contact a live provider"); },
+});
 
 const validBody = {
   firstName: "Test",
@@ -27,7 +33,7 @@ function request(body = validBody, options = {}) {
   });
 }
 
-test("valid public form stays explicitly unsent and disables caching", async () => {
+test("unconfigured public form stays explicitly unsent and disables caching", async () => {
   const response = await createContactHandler()(request());
   assert.equal(response.status, 503);
   const body = await response.json();
@@ -36,6 +42,15 @@ test("valid public form stays explicitly unsent and disables caching", async () 
   assert.equal(response.headers.get("cache-control"), "no-store");
   assert.equal(response.headers.get("x-content-type-options"), "nosniff");
   assert.equal(response.headers.get("set-cookie"), null);
+});
+
+test("rejects filled honeypots and accepts the new AC/HVAC enquiry choices", async () => {
+  const handler = createContactHandler();
+  assert.equal((await handler(request({ ...validBody, website: "https://spam.invalid" }))).status, 400);
+  assert.equal((await handler(request({ ...validBody, website: "" }))).status, 503);
+  for (const service of ["Duct Cleaning", "HVAC Services"]) {
+    assert.equal((await handler(request({ ...validBody, service }))).status, 503);
+  }
 });
 
 test("accepts Other only with its conditional detail", async () => {
@@ -115,6 +130,46 @@ test("allows canonical www and matching loopback origins for local form use", as
   const handler = createContactHandler();
   for (const origin of ["https://www.acexperts.ae", "http://localhost:3001", "http://127.0.0.1:3000", "http://[::1]:3000"]) {
     assert.equal((await handler(request(undefined, { url: `${origin}/api/contact/`, headers: { origin } }))).status, 503);
+  }
+});
+
+test("allows explicit loopback hostname aliases only at the same protocol and port", async () => {
+  for (const protocol of ["http", "https"]) {
+    const handler = createContactHandler();
+    for (const host of ["localhost", "127.0.0.1", "[::1]"]) {
+      for (const originHost of ["localhost", "127.0.0.1", "[::1]"]) {
+        const response = await handler(request(undefined, {
+          url: `${protocol}://${host}:3112/api/contact/`,
+          headers: { origin: `${protocol}://${originHost}:3112`, "sec-fetch-site": "same-origin" },
+        }));
+        assert.equal(response.status, 503, `${host} should accept the local alias ${originHost}`);
+      }
+    }
+  }
+});
+
+test("loopback exceptions reject foreign hosts, wrong ports/schemes and malformed origins", async () => {
+  const handler = createContactHandler();
+  for (const origin of [
+    "http://127.0.0.1:3113", "https://127.0.0.1:3112", "http://127.0.0.1",
+    "http://localhost:3113", "http://[::1]:3113", "https://[::1]:3112",
+    "http://attacker.invalid:3112", "http://localhost.attacker.invalid:3112",
+    "http://127.0.0.2:3112", "http://0.0.0.0:3112", "http://2130706433:3112",
+    "http://127.0.0.1:3112/", "http://127.0.0.1:3112/path", "http://127.0.0.1:3112?query=1",
+    "http://127.0.0.1:3112#fragment", "http://user:password@127.0.0.1:3112",
+  ]) {
+    assert.equal((await handler(request(undefined, {
+      url: "http://localhost:3112/api/contact/", headers: { origin },
+    }))).status, 403, `Unexpectedly allowed ${origin}`);
+  }
+  assert.equal((await handler(request(undefined, {
+    url: "http://localhost:3112/api/contact/",
+    headers: { origin: "http://127.0.0.1:3112", "sec-fetch-site": "cross-site" },
+  }))).status, 403);
+  for (const url of ["http://attacker.invalid:3112/api/contact/", "https://acexperts.ae/api/contact/"]) {
+    assert.equal((await handler(request(undefined, {
+      url, headers: { origin: "http://127.0.0.1:3112", "x-forwarded-host": "localhost:3112" },
+    }))).status, 403);
   }
 });
 

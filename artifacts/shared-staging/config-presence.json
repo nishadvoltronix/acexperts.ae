@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-12T08:34:53.211Z",
+  "applicationNames": [
+    "BREVO_API_KEY",
+    "CONTACT_FROM_EMAIL",
+    "CONTACT_TO_EMAIL",
+    "BREVO_NEWSLETTER_LIST_ID",
+    "BREVO_NEWSLETTER_DOI_TEMPLATE_ID",
+    "BREVO_NEWSLETTER_REDIRECT_URL",
+    "FORM_ALLOWED_ORIGINS",
+    "FORM_DATABASE_URL",
+    "FORM_STATE_SECRET",
+    "FORM_STORE_NAMESPACE",
+    "PRIVACY_NOTICE_URL",
+    "PRIVACY_NOTICE_VERSION",
+    "NEWSLETTER_CONSENT_RETENTION_DAYS"
+  ],
+  "processPresence": {
+    "BREVO_API_KEY": false,
+    "CONTACT_FROM_EMAIL": false,
+    "CONTACT_TO_EMAIL": false,
+    "BREVO_NEWSLETTER_LIST_ID": false,
+    "BREVO_NEWSLETTER_DOI_TEMPLATE_ID": false,
+    "BREVO_NEWSLETTER_REDIRECT_URL": false,
+    "FORM_ALLOWED_ORIGINS": false,
+    "FORM_DATABASE_URL": false,
+    "FORM_STATE_SECRET": false,
+    "FORM_STORE_NAMESPACE": false,
+    "PRIVACY_NOTICE_URL": false,
+    "PRIVACY_NOTICE_VERSION": false,
+    "NEWSLETTER_CONSENT_RETENTION_DAYS": false
+  },
+  "localFiles": [],
+  "note": "Presence only; test commands inject synthetic values into their own child processes. No values are recorded."
+}

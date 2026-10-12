@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-12T08:34:03.930Z",
+  "ownedNextSession": 96759,
+  "nextStopped": true,
+  "postgresStopped": true,
+  "postgresDataDirectory": "node_modules/.cache/acexperts-postgres/data",
+  "otherServicesTouched": false,
+  "productionServicesTouched": false,
+  "portChecks": {
+    "checkedAt": "2026-10-12T08:39:24.671Z",
+    "open": {
+      "next3112": false,
+      "preview3113": false,
+      "postgres55432": false
+    }
+  }
+}

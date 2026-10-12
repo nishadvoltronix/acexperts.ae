@@ -1,0 +1,109 @@
+{
+  "checkedAt": "2026-10-12T09:55:56.649Z",
+  "baseUrl": "http://127.0.0.1:3112/",
+  "conclusion": "The x4/y4 bounding-box corner is outside the circular button. x4/y22 is inside the44px target, outside the6px visible dot, and correctly activates it. No application defect.",
+  "results": [
+    {
+      "width": 44,
+      "height": 44,
+      "borderRadius": "50%",
+      "visibleDotWidth": "6px",
+      "visibleDotHeight": "6px",
+      "points": [
+        {
+          "name": "bounding-box-corner",
+          "x": 4,
+          "y": 4,
+          "hitsButton": false,
+          "hitTag": "DIV",
+          "hitClass": "slider-dots"
+        },
+        {
+          "name": "left-mid-edge",
+          "x": 4,
+          "y": 22,
+          "hitsButton": true,
+          "hitTag": "BUTTON",
+          "hitClass": ""
+        },
+        {
+          "name": "visible-dot-center",
+          "x": 22,
+          "y": 22,
+          "hitsButton": true,
+          "hitTag": "BUTTON",
+          "hitClass": ""
+        }
+      ],
+      "actualOuterAreaClickPassed": true
+    },
+    {
+      "width": 44,
+      "height": 44,
+      "borderRadius": "50%",
+      "visibleDotWidth": "6px",
+      "visibleDotHeight": "6px",
+      "points": [
+        {
+          "name": "bounding-box-corner",
+          "x": 4,
+          "y": 4,
+          "hitsButton": false,
+          "hitTag": "DIV",
+          "hitClass": "slider-dots"
+        },
+        {
+          "name": "left-mid-edge",
+          "x": 4,
+          "y": 22,
+          "hitsButton": true,
+          "hitTag": "BUTTON",
+          "hitClass": ""
+        },
+        {
+          "name": "visible-dot-center",
+          "x": 22,
+          "y": 22,
+          "hitsButton": true,
+          "hitTag": "BUTTON",
+          "hitClass": ""
+        }
+      ],
+      "actualOuterAreaClickPassed": true
+    },
+    {
+      "width": 44,
+      "height": 44,
+      "borderRadius": "50%",
+      "visibleDotWidth": "6px",
+      "visibleDotHeight": "6px",
+      "points": [
+        {
+          "name": "bounding-box-corner",
+          "x": 4,
+          "y": 4,
+          "hitsButton": false,
+          "hitTag": "DIV",
+          "hitClass": "slider-dots"
+        },
+        {
+          "name": "left-mid-edge",
+          "x": 4,
+          "y": 22,
+          "hitsButton": true,
+          "hitTag": "BUTTON",
+          "hitClass": ""
+        },
+        {
+          "name": "visible-dot-center",
+          "x": 22,
+          "y": 22,
+          "hitsButton": true,
+          "hitTag": "BUTTON",
+          "hitClass": ""
+        }
+      ],
+      "actualOuterAreaClickPassed": true
+    }
+  ]
+}

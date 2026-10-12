@@ -7,11 +7,13 @@ import type { ContentSection, FAQItem, PageData } from "@/lib/types";
 import { RichContent } from "./RichContent";
 import { ContentCard, formatDate } from "./Cards";
 import { ContactForm } from "./ContactForm";
+import { configuredPrivacyNotice } from "@/lib/privacy-notice";
 import { HomePage } from "./HomePage";
 import { BrandGrid } from "./BrandGrid";
 import { PageHero, getPageHeroImage } from "./PageHero";
 import { SharedCTA } from "./SharedCTA";
 import { LegacyHomeContent, LegacyHomeFAQs } from "./LegacyHomeContent";
+import { ProjectFilters, type FilterableProject } from "./ProjectFilters";
 
 /** Repair documented source heading skips without changing valid article hierarchies. */
 const articleHeadingRepairs: Record<string, Record<string, "h2" | "h3">> = {
@@ -69,7 +71,7 @@ export async function StructuredData({
         ? site.origin + getAsset(page.heroImage)!.localPath
         : undefined,
     });
-  const faqs = page.type === "home" ? [] : [...page.faqs, ...additionalFaqs];
+  const faqs = [...page.faqs, ...additionalFaqs];
   if (faqs.length)
     graph.push({
       "@type": "FAQPage",
@@ -126,7 +128,7 @@ function ContactContent({ page }: { page: PageData }) {
             </a>
           </section>
         </div>
-        <ContactForm />
+        <ContactForm privacyNoticeUrl={configuredPrivacyNotice()?.url} />
       </div>
       <div className="migrated-content internal-content contact-clients">
         {sections.filter((section) => section.kind !== "intro").map((section) => (
@@ -148,6 +150,21 @@ export function PageContent({ page }: { page: PageData }) {
 
   const heroImage = getPageHeroImage(page)?.url;
   const authorImage = getAsset(page.article?.authorImage);
+  const projectCards: FilterableProject[] = page.type === "projects" ? (page.cards || []).map((card) => {
+    const project = getPage(card.route);
+    const asset = getAsset(card.image || project?.heroImage);
+    return {
+      route: card.route,
+      title: card.title,
+      excerpt: card.excerpt || project?.description,
+      image: asset ? {
+        src: asset.localPath,
+        alt: asset.alt || card.title,
+        width: asset.width || 1200,
+        height: asset.height || 800,
+      } : undefined,
+    };
+  }) : [];
   return (
     <>
       <StructuredData
@@ -224,6 +241,10 @@ export function PageContent({ page }: { page: PageData }) {
           </>
         ) : page.type === "contact" ? (
           <ContactContent page={page} />
+        ) : page.type === "projects" ? (
+          <section className="container completion-projects" aria-label="AC project portfolio">
+            <ProjectFilters projects={projectCards} />
+          </section>
         ) : (
           <>
             <div className={`migrated-content internal-content${page.route === "/about/" ? " about-content" : ""}`}>
@@ -233,7 +254,12 @@ export function PageContent({ page }: { page: PageData }) {
                   .map((section, index) => (
                     <RichContent
                       key={`${section.id}-${index}`}
-                      html={section.html}
+                      // Restore two missing word separators in the migrated About cards.
+                      // Keep the source archive and its preservation hashes unchanged.
+                      html={page.route === "/about/"
+                        ? section.html.replaceAll(">InitiallyVoltronix", ">Initially Voltronix")
+                          .replaceAll(">ProfitablyVoltronix", ">Profitably Voltronix")
+                        : section.html}
                       omitH1
                       omitImageSrc={page.type === "products" ? undefined : heroImage}
                       normalizeHeadings
@@ -248,6 +274,16 @@ export function PageContent({ page }: { page: PageData }) {
         )}
         {page.route === "/about/" && <LegacyHomeContent />}
         {page.route === "/faq/" && <LegacyHomeFAQs />}
+        {page.route === "/emergency-ac-maintenance-service/" && (
+          <aside className="service-trust-strip container" aria-label="Emergency AC service">
+            <ul>
+              <li>Experienced Technicians</li>
+              <li>Rapid Response</li>
+              <li>ISO Certified</li>
+              <li>Dubai Coverage</li>
+            </ul>
+          </aside>
+        )}
         <SharedCTA />
       </div>
     </>

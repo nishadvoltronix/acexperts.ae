@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-10-12T12:22:27.032Z",
+  "scope": "Read-only source/data review; no browser or provider requests. These are not fresh runtime verification results.",
+  "wordSha256": "79fc75b01983e5f24a3b2f2f5554ffdd23cf6ded0eb2179a1ed5041e12c2e365",
+  "wordSeoComparisonsPassed": 11,
+  "heading": {
+    "expected": "Welcome to Voltronix, AC Service Company in Dubai",
+    "actual": "Welcome to Voltronix, AC Service Company in Dubai",
+    "exact": true
+  },
+  "servicesHeading": {
+    "expected": "Complete AC & HVAC Services in Dubai",
+    "exact": true
+  },
+  "approvedNavbar": [
+    "Home",
+    "About",
+    "Services",
+    "Projects",
+    "Products",
+    "Blog",
+    "Contact"
+  ],
+  "certificationNames": [
+    "NADCA",
+    "ISIAQ",
+    "ISSA",
+    "IAQA"
+  ],
+  "certificationImages": [
+    {
+      "name": "NADCA",
+      "file": "nadca.svg",
+      "hashMatchesProvenance": true
+    },
+    {
+      "name": "ISIAQ",
+      "file": "isiaq.png",
+      "hashMatchesProvenance": true
+    },
+    {
+      "name": "ISSA",
+      "file": "issa.png",
+      "hashMatchesProvenance": true
+    },
+    {
+      "name": "IAQA",
+      "file": "iaqa.png",
+      "hashMatchesProvenance": true
+    }
+  ],
+  "isoConfirmation": {
+    "userConfirmed": true,
+    "date": "2026-10-12",
+    "userMessage": "ISO is verified; project details pending",
+    "emergencyStripImplemented": true,
+    "emergencyLabels": [
+      "Experienced Technicians",
+      "Rapid Response",
+      "ISO Certified",
+      "Dubai Coverage"
+    ],
+    "scope": "Display ISO Certified only; no standard number, certificate identifier, or technician credential inferred."
+  },
+  "originalHomepageFaqs": {
+    "count": 8,
+    "answerHashUnchanged": true
+  },
+  "about": {
+    "archivedSectionsUnchanged": true,
+    "archivedContentUnchanged": true,
+    "presentationReviewed": [
+      "app/about-layout.css",
+      "components/PageContent.tsx"
+    ]
+  },
+  "newServices": [
+    {
+      "route": "/ac-duct-cleaning-services-in-dubai/",
+      "serviceNavigation": true,
+      "serviceListing": true,
+      "contactCta": true,
+      "canonical": "https://acexperts.ae/ac-duct-cleaning-services-in-dubai/",
+      "indexable": true
+    },
+    {
+      "route": "/hvac-services/",
+      "serviceNavigation": true,
+      "serviceListing": true,
+      "contactCta": true,
+      "canonical": "https://acexperts.ae/hvac-services/",
+      "indexable": true
+    }
+  ],
+  "publishedProjects": [
+    {
+      "route": "/project-portfolio/luxury-villa-ac-installation/",
+      "title": "Luxury Villa – AC Installation"
+    }
+  ],
+  "missingActionableSourceRequirements": [],
+  "contentDependencies": [
+    "Only one migrated villa project is available; additional project examples need approved factual records and images."
+  ],
+  "claimBoundary": "Experienced Technicians retained instead of a broader Certified Professionals assertion; ISO confirmation does not establish technician credentials.",
+  "separateLaunchDependencies": [
+    "Five development dependency audit findings remain unresolved; production audit and acceptance are separate.",
+    "Hosting/staging, approved privacy operations, Brevo account configuration and authorized real confirmation/unsubscribe/delivery tests remain external gates."
+  ],
+  "passed": true
+}

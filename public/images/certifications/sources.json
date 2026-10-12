@@ -1,0 +1,50 @@
+{
+  "retrievedAt": "2026-10-12T12:03:54.989Z",
+  "note": "Unmodified organization logos downloaded from official websites or their directly referenced CDN. Provenance records identify image sources; no independent certification verification or license grant is inferred.",
+  "assets": [
+    {
+      "file": "nadca.svg",
+      "organization": "NADCA",
+      "sourcePage": "https://nadca.com/",
+      "assetUrl": "https://nadca.com/sites/nadca/themes/nadca/img/logo.svg",
+      "width": 268,
+      "height": 166,
+      "bytes": 3614,
+      "sha256": "e395ddb258ffc37618a9e309da726658f6208625c6912a9ea8b6bd648461e3a3",
+      "visuallyInspected": true
+    },
+    {
+      "file": "isiaq.png",
+      "organization": "ISIAQ",
+      "sourcePage": "https://www.isiaq.org/",
+      "assetUrl": "https://isiaq.org/images/logo2.png?brk=1531330838",
+      "width": 445,
+      "height": 114,
+      "bytes": 15967,
+      "sha256": "016a323a438cccd4f7d4cdfc9460af54a67cf492eb1924ff7466b9765ee90e98",
+      "visuallyInspected": true
+    },
+    {
+      "file": "issa.png",
+      "organization": "ISSA",
+      "sourcePage": "https://www.issa.com/wp-json/wp/v2/media?search=ISSA&per_page=100&before=2025-11-01T00:00:00",
+      "assetUrl": "https://www.issa.com/wp-content/uploads/2025/07/ISSA-Main-logo-without-padding.png",
+      "width": 606,
+      "height": 337,
+      "bytes": 134667,
+      "sha256": "e24e9f76aa899052f70aee9c4174afe444f8680936c8dfad0017d9b101024376",
+      "visuallyInspected": true
+    },
+    {
+      "file": "iaqa.png",
+      "organization": "IAQA",
+      "sourcePage": "https://www.iaqa.org/",
+      "assetUrl": "https://irp.cdn-website.com/88e06cc9/dms3rep/multi/opt/IAQA_Logo_traced-4c-1920w.png",
+      "width": 1920,
+      "height": 877,
+      "bytes": 162268,
+      "sha256": "96f090f60a3cef25e93db268d20531f3b588db6a3fc101d6682c02799c634243",
+      "visuallyInspected": true
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-12T07:38:46.427Z",
+  "base": "http://127.0.0.1:3112",
+  "providerConfiguration": "Deliberately invalid sender/list on isolated local server; no live send possible",
+  "checks": [
+    {
+      "name": "newsletter requires consent",
+      "status": 400,
+      "passed": true
+    },
+    {
+      "name": "newsletter rejects string consent",
+      "status": 400,
+      "passed": true
+    },
+    {
+      "name": "newsletter rejects cross-site origin",
+      "status": 403,
+      "passed": true
+    },
+    {
+      "name": "newsletter missing configuration is explicit",
+      "status": 503,
+      "passed": true
+    },
+    {
+      "name": "newsletter repeated unconfigured request never reports success",
+      "status": 503,
+      "passed": true
+    }
+  ]
+}

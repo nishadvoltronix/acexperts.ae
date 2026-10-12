@@ -1,0 +1,139 @@
+
+> acexperts-next@1.0.0 test
+> node --test scripts/*.test.mjs
+
+(node:20336) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/contact-request.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\acexperts.ae\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ unconfigured public form stays explicitly unsent and disables caching (55.2371ms)
+✔ rejects filled honeypots and accepts the new AC/HVAC enquiry choices (6.9094ms)
+✔ accepts Other only with its conditional detail (5.2189ms)
+✔ rejects unexpected fields, invalid types, invalid services, missing values, and excess lengths (6.094ms)
+✔ rejects malformed JSON and returns generic errors without submitted data (1.6471ms)
+✔ validates required mobile and optional phone without rejecting normal international formatting (6.3677ms)
+✔ rejects non-JSON, encoded bodies, and malformed Content-Length (2.4602ms)
+✔ rejects foreign, null, absent, or spoofed origins without trusting forwarding headers (2.731ms)
+✔ allows canonical www and matching loopback origins for local form use (2.0021ms)
+✔ allows explicit loopback hostname aliases only at the same protocol and port (7.4497ms)
+✔ loopback exceptions reject foreign hosts, wrong ports/schemes and malformed origins (4.8652ms)
+✔ bounds actual body bytes when the declared length is missing or dishonest (3.493ms)
+✔ rate limits before reading another body and cannot be bypassed with forged client IPs (13.3566ms)
+✔ cancels a stalled request and responds with a generic timeout (2.076ms)
+✔ links reject executable, malformed and ambiguous URLs, including obfuscation (1.8608ms)
+✔ rendering removes executable elements, namespaces and forbidden attributes (14.7071ms)
+✔ HTML-entity and control-character URL payloads cannot become executable links (1.5542ms)
+✔ heading replacements and wrapper normalization use sanitized attributes too (1.2505ms)
+✔ semantic content, accessibility, table attributes and external link protections survive (13.9678ms)
+✔ all checked-in migrated content uses allowed tags and safe URLs, and preserves visible text (1625.6519ms)
+(node:20676) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/contact-request.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\acexperts.ae\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ contact delivery uses configured recipient/sender and returns success only after a receipt (58.6334ms)
+✔ contact deduplicates concurrent and reordered normalized submissions without claiming pending delivery (6.7184ms)
+✔ contact dedupe expires after 30 minutes; changed enquiries still send (4.7945ms)
+✔ contact rejects invalid data before sending to a configured provider (2.9876ms)
+✔ contact provider rejection never exposes upstream data and can retry after cooldown (3.9022ms)
+✔ provider 5xx, transport errors, invalid receipt and unexpected 2xx remain uncertain (7.8994ms)
+✔ provider 408 and 409 remain uncertain across channels, expiry windows and new handlers (9.6407ms)
+✔ provider timeout aborts the request, reports uncertainty, and suppresses retries (22.4348ms)
+✔ provider timeout also bounds a stalled success-response body (15.4508ms)
+✔ missing or malformed configuration fails closed without a provider request (4.4001ms)
+✔ newsletter initiates double opt-in with explicit consent and no tracking consent (2.4493ms)
+✔ newsletter rejects missing/fake consent, spam traps, invalid addresses and unknown fields (3.0465ms)
+✔ newsletter duplicate/provider rejection and timeout never claim subscription (28.6436ms)
+✔ newsletter shares origin, body, media, and global abuse guards (6.6607ms)
+✔ original routes, canonicals, indexability and every original FAQ answer survive (6.4748ms)
+✔ all articles and content outside explicitly revised service/project/contact/logo sections are preserved (10.0332ms)
+✔ only the two reviewed protected files depart from the original snapshot; original media remains byte-identical (221.8778ms)
+✔ SEO expectations preserve the independent original Word document table (2.759ms)
+✔ Word document metadata: / (0.6026ms)
+✔ Word document metadata: /products/ (0.1833ms)
+✔ Word document metadata: /contact-us/ (0.2253ms)
+✔ Word document metadata: /about/ (0.1937ms)
+✔ Word document metadata: /emergency-ac-maintenance-service/ (0.1696ms)
+✔ Word document metadata: /ac-installation-service/ (0.1547ms)
+✔ Word document metadata: /services/ (0.2036ms)
+✔ Word document metadata: /ac-repair-services/ (0.2252ms)
+✔ Word document metadata: /faq/ (0.4931ms)
+✔ Word document metadata: /projects/ (0.3093ms)
+✔ Word document metadata: /preventive-ac-maintenance-service/ (0.1766ms)
+✔ new service pages are indexable and linked from service navigation and content (24.8329ms)
+✔ project filters classify only the published residential installation (0.3101ms)
+✔ rendered metadata, canonical, H1 and robots: / (130.4294ms)
+✔ rendered metadata, canonical, H1 and robots: /products/ (53.3174ms)
+✔ rendered metadata, canonical, H1 and robots: /contact-us/ (25.7129ms)
+✔ rendered metadata, canonical, H1 and robots: /about/ (53.0888ms)
+✔ rendered metadata, canonical, H1 and robots: /emergency-ac-maintenance-service/ (33.6976ms)
+✔ rendered metadata, canonical, H1 and robots: /ac-installation-service/ (30.9368ms)
+✔ rendered metadata, canonical, H1 and robots: /services/ (47.2443ms)
+✔ rendered metadata, canonical, H1 and robots: /ac-repair-services/ (52.0208ms)
+✔ rendered metadata, canonical, H1 and robots: /faq/ (45.6898ms)
+✔ rendered metadata, canonical, H1 and robots: /projects/ (20.9678ms)
+✔ rendered metadata, canonical, H1 and robots: /preventive-ac-maintenance-service/ (21.4732ms)
+(node:20716) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/form-store.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\acexperts.ae\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PostgreSQL: unsafe/missing configuration fails closed without opening a connection (92.2447ms)
+✔ PostgreSQL: independent pools atomically acquire exactly one concurrent submission (238.5797ms)
+✔ PostgreSQL: separate Node processes share claims and persist pending/accepted after reconnect (638.3984ms)
+✔ PostgreSQL: contact30/newsletter10 budgets are shared across pools and Node processes (764.3837ms)
+✔ PostgreSQL: a different HMAC key in the same namespace fails closed (189.7491ms)
+✔ PostgreSQL: expiry uses database time and accepted/rejected acquire a new owner only after expiry (110.2402ms)
+✔ PostgreSQL: old pending/uncertain/timeout claims never automatically resend (226.2246ms)
+✔ PostgreSQL: only the pending request owner can complete; stale owners cannot overwrite retries (192.694ms)
+✔ PostgreSQL: consent evidence persists atomically without raw email or inferred confirmation (135.1974ms)
+✔ PostgreSQL: consent insertion errors roll back the submission claim (82.8876ms)
+✔ PostgreSQL: independent contact handlers dispatch one mocked provider request (181.1063ms)
+✔ PostgreSQL: newsletter handler commits checked consent before mocked DOI dispatch (119.5376ms)
+✔ PostgreSQL: provider receipt plus database completion failure stays blocked without resend (1171.0566ms)
+✔ PostgreSQL: database outage returns generic errors and handlers never call provider (47.6704ms)
+(node:22592) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///G:/acexperts.ae/lib/contact-request.ts is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to \\?\G:\acexperts.ae\package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ staging environment contract matches implementation and thirteen empty server-only .env.example settings (18.1109ms)
+✔ contact: every missing required setting returns 503 with zero provider calls and no secret echo (42.6696ms)
+ℹ 6 absent/empty-setting cases; provider calls: 0.
+✔ contact: provider errors and receipts cannot echo synthetic credentials or upstream details (42.235ms)
+ℹ 9 synthetic provider outcomes checked; no real provider calls.
+✔ contact: independent handlers and reinitialization share accepted/pending duplicate state through the injected store (4.0462ms)
+ℹ Three handler initializations share one injected test store: one provider mock call; pending duplicate 409, accepted duplicate 200. This is orchestration evidence, not real database/restart/deployed-cluster evidence.
+✔ contact: shared injected budget remains 30/minute across handlers and reinitialization (19.2118ms)
+ℹ 30 total provider mock calls across four handler initializations in one test-store minute; spoofed forwarded IPs did not multiply the budget. Real PostgreSQL concurrency is tested separately.
+✔ newsletter: every missing required setting returns 503 with zero provider calls and no secret echo (6.5548ms)
+ℹ 14 absent/empty-setting cases; provider calls: 0.
+✔ newsletter: provider errors and receipts cannot echo synthetic credentials or upstream details (31.0668ms)
+ℹ 8 synthetic provider outcomes checked; no real provider calls.
+✔ newsletter: independent handlers and reinitialization share accepted/pending duplicate state through the injected store (5.3506ms)
+ℹ Three handler initializations share one injected test store: one provider mock call; pending duplicate 409, accepted duplicate 200. This is orchestration evidence, not real database/restart/deployed-cluster evidence.
+✔ newsletter: shared injected budget remains 10/minute across handlers and reinitialization (10.9279ms)
+ℹ 10 total provider mock calls across four handler initializations in one test-store minute; spoofed forwarded IPs did not multiply the budget. Real PostgreSQL concurrency is tested separately.
+✔ staging origins accept only exact configured HTTPS origins and reject cross-site requests (16.8582ms)
+✔ malformed staging allowlist settings fail closed even if the Origin matches verbatim (6.3527ms)
+✔ newsletter consent is required before provider contact; acceptance requests confirmation without changing unsubscribe flags (7.2699ms)
+ℹ Local orchestration proof only: checked, versioned consent enters the injected store before DOI initiation; payload does not overwrite unsubscribe/blocklist fields and contains no tracking consent. Received DOI, list eligibility and withdrawal/suppression still require authorized live account verification.
+✔ contact: missing durable-store configuration and explicit absent store fail closed without provider calls (9.1663ms)
+✔ contact: rate/claim store failures fail closed and do not echo database details (3.448ms)
+✔ contact: completion acknowledgement failure preserves uncertain ownership and suppresses repeat delivery (10.0312ms)
+✔ contact: lost claim acknowledgement prevents provider contact and keeps the claim blocked (2.0973ms)
+✔ contact: lost completion acknowledgement after commit reuses accepted state without resending (2.1194ms)
+✔ contact: uncertain and timeout states remain suppressed across new handlers beyond normal expiry (14.652ms)
+✔ newsletter: missing durable-store configuration and explicit absent store fail closed without provider calls (4.4181ms)
+✔ newsletter: rate/claim store failures fail closed and do not echo database details (1.2744ms)
+✔ newsletter: completion acknowledgement failure preserves uncertain ownership and suppresses repeat delivery (1.6429ms)
+✔ newsletter: lost claim acknowledgement prevents provider contact and keeps the claim blocked (1.3613ms)
+✔ newsletter: lost completion acknowledgement after commit reuses accepted state without resending (1.8054ms)
+✔ newsletter: uncertain and timeout states remain suppressed across new handlers beyond normal expiry (16.1895ms)
+✔ newsletter rejects stale or missing consent and notice versions before recording or contacting provider (2.6527ms)
+✔ newsletter malformed privacy URL, notice version and retention settings fail closed (2.9569ms)
+ℹ tests 102
+ℹ suites 0
+ℹ pass 102
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4615.732

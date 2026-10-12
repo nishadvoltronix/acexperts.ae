@@ -1,19 +1,19 @@
 # AC Experts — Next.js migration
 
-Local rebuild of the publicly accessible https://acexperts.ae/ website, using Next.js App Router, React, TypeScript, local media and fonts. The October 2026 redesign applies the supplied homepage's white/red design system to all 46 existing public routes. No WordPress installation, database, PHP, theme or plugin runtime is required.
+Local rebuild of the publicly accessible https://acexperts.ae/ website, using Next.js App Router, React, TypeScript, local media and fonts. The October 2026 completion preserves the 46 migrated routes and adds duct-cleaning and HVAC service pages, for 48 public routes using the existing white/red design system. No WordPress installation, PHP, theme or plugin runtime is required. Browsing and builds need no database; enabling form delivery requires the shared PostgreSQL store through the `pg` runtime dependency.
 
-The reference analysis and centralized token/component decisions are documented in [the design system](docs/design-system.md). Current production checks and practical limitations are in [the redesign report](docs/redesign-report.md); [the migration report](docs/migration-report.md) retains the earlier migration evidence.
+The reference analysis and centralized token/component decisions are documented in [the design system](docs/design-system.md). The latest document comparison, full metadata audit and test results are in the [final verification report](docs/acexperts-final-verification-report.md). Production launch gates remain in the [production-readiness report](docs/acexperts-production-readiness-report.md), with the [deployment/rollback runbook](docs/acexperts-deployment-runbook.md), [database operations](docs/acexperts-database-operations.md), [security review](docs/acexperts-security-review.md) and [staging configuration checklist](docs/staging-configuration-checklist.md). The [earlier staging report](docs/acexperts-staging-readiness-report.md), [completion report](docs/acexperts-completion-report.md), [completion plan](docs/acexperts-completion-plan.md), [redesign report](docs/redesign-report.md) and [migration report](docs/migration-report.md) retain dated evidence.
 
 ## Run locally
 
-Requires Node.js 20.9 or newer; developed with Node.js 24.
+Use Node.js 24 for the application and the TypeScript-backed Node test suite.
 
 ```powershell
 npm ci
 npm run dev
 ```
 
-Open **http://localhost:3001**. Port 3001 was explicitly selected to keep the separate Switchgear site on port 3000 running.
+The default development URL is **http://localhost:3001**. Check which application owns an occupied port before using it; the completion checks use an isolated local production server on port 3112.
 
 ```powershell
 npm run lint
@@ -35,39 +35,52 @@ Stop the development server before starting production on the same port. The app
 - `docs/url-map.json`: every discovered HTML URL and its migration or redirect action.
 - `docs/site-inventory.md`, `docs/assets-inventory.md`, `docs/source-audit.md`: source inventories and discrepancies.
 - `docs/redesign-baseline.json`: preserved source-data, SEO implementation and original-media hashes captured before the redesign.
-- `docs/redesign-report.md`: current redesign validation evidence, reference limitations and integration limits.
+- `docs/acexperts-completion-report.md`: completed website implementation and its dated verification results.
+- `docs/acexperts-staging-readiness-report.md`, `docs/staging-configuration-checklist.md`: current evidence, external configuration, controlled acceptance and launch blockers.
+- `db/migrations/001-form-state.sql`: owner-applied schema for shared rate limits, durable submission claims and newsletter consent requests.
+- `db/maintenance/form-state-retention.sql`: operator-only scoped cleanup of expired consent and eligible completed claims.
+- `data/seo-requirements.json`: independent transcription of the original DOCX metadata requirements.
+- `docs/completion-preservation-changes.json`: reviewed exact revisions permitted alongside the immutable original baseline.
+- `docs/redesign-report.md`: historical redesign validation evidence.
 - `docs/migration-report.md`: historical migration validation evidence.
 
 Metadata retains the production canonical origin `https://acexperts.ae`. Category archives retain source `noindex` and are excluded from the generated sitemap. Existing redirect aliases use permanent Next.js redirects. No separate `/blog/[slug]` copies are introduced.
 
-The homepage preserves the supplied section sequence and artwork. Its original H1 remains accessible, while the supplied visual headline is rendered separately. Original homepage copy, links and imagery remain in the expandable "More about our AC services" section on About; its eight FAQs and FAQ illustration are retained on the FAQ page. All original content data remains unchanged. Existing business contact details, statistics and testimonials take precedence where reference-image copy conflicts with the migrated information.
+The homepage restores the original top information strip, uses the requested visible welcome H1, and adds three real articles, eight original FAQs and the existing villa installation project. The exact AC/HVAC services heading and Residential & Commercial benefits wording follow the Word document. Group-company links are visible in the footer. The full original homepage content remains in About's expandable section and the existing FAQ page. Existing animations, CTAs and About layouts remain in place. Following the owner's later confirmation, NADCA, ISIAQ, ISSA and IAQA appear in the homepage Certifications section, and ISO Certified appears in the emergency-service strip. Technician wording remains Experienced. Additional project records remain pending.
 
-## Contact form
+## Contact and newsletter
 
-The original visible form fields are recreated, including the conditional Other service field. `app/api/contact/route.ts` delegates request validation and the delivery boundary to `lib/contact-request.ts`: valid submissions receive HTTP 503 with an explicit unsent message and telephone/email alternatives. No enquiries are persisted, logged or forwarded. Connect a server-side email or CRM adapter before enabling submission delivery. No credentials are included or required to run the local website.
+Both forms use server-side Brevo integration. Contact accepts the original fields, conditional Other detail, and new duct-cleaning/HVAC service choices. The server only returns success after Brevo returns HTTP 201 with a nonempty message ID. The newsletter requires an unchecked-by-default consent checkbox and starts Brevo double opt-in; acceptance asks the visitor to confirm their email and does not claim completed subscription.
 
-The footer newsletter field validates email format locally, then explicitly reports that signup is unavailable and the email was neither sent nor saved. It does not call a mailing-list service; connect one before enabling subscriptions.
+Missing required configuration or unavailable shared storage returns generic HTTP 503 feedback without provider dispatch. Forms prevent repeated clicks and preserve input after failure. PostgreSQL atomically claims stable HMAC fingerprints before delivery, so instances sharing the database, namespace and key cannot dispatch the same active claim twice. Pending duplicates return 409; accepted outcomes suppress duplicates for 30 minutes and definite rejections for 60 seconds. Pending, uncertain and timeout claims never automatically expire or retry: an operator must reconcile provider state before releasing them. Database failures never fall back to in-memory delivery protection.
+
+The newsletter records checked consent, exact wording/version, notice URL/version, request time, keyed email identity, list/template IDs and retention deadline before dispatch. Stale consent/notice versions are rejected. It requires approved `PRIVACY_NOTICE_URL`, `PRIVACY_NOTICE_VERSION` and `NEWSLETTER_CONSENT_RETENTION_DAYS`; both forms link the notice when configured. Stored confirmation remains `not_verified`: actual confirmation and withdrawal require protected Brevo/operator evidence. Contact enquiries never enroll visitors in marketing.
+
+See [.env.example](.env.example), [delivery configuration](docs/delivery-configuration.md) and [the staging checklist](docs/staging-configuration-checklist.md) for all 13 application environment names, migration/least-privilege setup, retention operations and controlled live acceptance. No live delivery, confirmation, unsubscribe flow or deployment has been verified. Business privacy/retention approval and external provisioning remain required. No credentials are needed to build, browse locally or run mocked tests.
 
 ## Security
 
-The contact endpoint is intentionally public. There are no accounts, sessions, cookies, server actions, database queries or upload endpoints. Authentication and authorization behavior is unchanged. New private features must enforce access checks on the server; any future session cookies must use HttpOnly, Secure and an appropriate SameSite policy. Delivery integrations must keep credentials server-side and must never log enquiry bodies or credentials.
+The contact and newsletter endpoints are public application routes. There are no application accounts, sessions, cookies, server actions or upload endpoints. Form handlers use parameterized PostgreSQL transactions through a separate runtime role; migration and retention privileges belong to an operator role. Remote database connections enforce certificate-verified TLS. Staging access protection belongs at the authorized hosting edge, covering every path and blocking direct-origin bypass. Any future private feature must enforce server access checks; session cookies must use HttpOnly, Secure and an appropriate SameSite policy. Keep secrets server-side and never log enquiry bodies or credentials.
 
 Contact requests require JSON and an allowed Origin. The server rejects unknown fields, incorrect types, excessive lengths, invalid email/telephone formats and unsupported service values. The Other option requires a description. Request bodies are bounded while streaming, including when Content-Length is absent or misleading. Cross-site requests and uploads are rejected. All endpoint responses are non-cacheable and avoid reflecting submitted data or internal error details.
 
-The endpoint has a shared, process-local rate limit of 30 requests per minute. It deliberately ignores client-supplied IP forwarding headers. All callers share this limit; restarting a process resets it and additional workers have separate counters. A deployment-wide limit at the trusted ingress or shared store is required for multiple instances and before enabling message delivery. Configure request-size, connection and timeout limits at the hosting layer as well; application limits do not replace network flood protection.
+PostgreSQL enforces shared budgets of 30 contact attempts and 10 newsletter attempts per database calendar minute across all instances of one namespace. Secondary process-local caps remain, and browser-supplied forwarding/IP headers never establish trust. Shared protection persists across application restarts when the database preserves committed state and every worker uses the same database, namespace and stable HMAC key. Add per-client limits and trusted client identity at the hosting ingress/WAF; fixed-minute global budgets do not replace network flood protection. Configure request-size, connection and timeout limits there too.
 
 `proxy.ts` creates a random nonce on every page request and overwrites client-supplied nonce/CSP headers. Production CSP disallows inline scripts without the nonce, inline event handlers, eval, frames and plugins. Reviewed rich content uses allowlisted HTML tags, attributes and URL protocols. JSON-LD retains its escaping and receives the nonce. Style attributes remain allowed for React/Next image sizing and artwork; script execution is separately restricted. Development alone permits eval for Next.js debugging.
 
 Nonce-bearing pages use private, no-store caching and request-time rendering. This preserves server-rendered content, canonical URLs, structured data and indexing rules, but removes static HTML/CDN caching and increases rendering work. Do not override these pages to shared-cache HTML. Static image, font and script assets retain normal caching. Global headers include nosniff, frame denial, restricted browser permissions and a referrer policy; production sends one-year HSTS without extending it to unrelated subdomains. Deploy over HTTPS.
 
-Run focused security tests with Node.js 24, then the browser check against a local production server (it refuses remote hosts):
+Run focused security tests with Node.js 24, then the browser check against an unconfigured local production server (it refuses remote hosts). Set invalid provider values on the isolated server before startup to prevent a real send:
 
 ```powershell
 npm run test:security
 npm run lint
 npm run build
-npm run start -- --port 3100
+$env:CONTACT_FROM_EMAIL = 'disabled-local-validation'
+$env:BREVO_NEWSLETTER_LIST_ID = 'disabled-local-validation'
+npm run start -- --hostname 127.0.0.1 --port 3100
 # In another terminal:
+$env:BASE_URL = 'http://127.0.0.1:3100'
 npm run check:security
 ```
 
@@ -77,18 +90,18 @@ The code review uses the [OWASP Top 10:2025](https://top10.owasp.org/2025/) cate
 
 | Category | Review and boundaries |
 | --- | --- |
-| A01 Broken access control | Only a public contact API exists; Origin/Fetch Metadata checks and JSON-only input restrict browser cross-site submissions. No private resources or role changes. |
+| A01 Broken access control | Public contact and newsletter APIs exist; Origin/Fetch Metadata checks and JSON-only input restrict browser cross-site submissions. No private resources or role changes. |
 | A02 Security misconfiguration | Enforced CSP, security headers, no-store contact responses, and restricted content rendering. Hosting must preserve these headers. |
-| A03 Software supply chain | No new dependencies. Production dependency audit reports no known advisories as of 7 October 2026. Development tooling has the residual advisory below. |
-| A04 Cryptographic failures | Random per-request nonces and production HSTS; no enquiry persistence, credentials or session cookies. HTTPS termination belongs to hosting. |
-| A05 Injection | Exact input schema, no query construction, HTML/URL allowlists, escaped structured data and script CSP. No SQL/NoSQL execution exists. |
-| A06 Insecure design | Bounded request reads and process-local throttling; delivery remains disabled. Distributed abuse protection is a deployment requirement. |
+| A03 Software supply chain | `pg` is the added PostgreSQL runtime dependency; matching TypeScript types are development-only. Retain the reviewed lockfile and rerun dependency audits for release; the dated earlier audit below does not cover later changes. |
+| A04 Cryptographic failures | Random page nonces, production HSTS, stable keyed submission/email hashes and verified remote database TLS. Raw enquiry bodies/addresses are not stored in app tables; secrets and pseudonymous audit records require controlled access. HTTPS termination belongs to hosting. |
+| A05 Injection | Exact input schemas, parameterized SQL values, HTML/URL allowlists, escaped structured data and script CSP. Schema migration is an explicit operator step, never request-driven DDL. |
+| A06 Insecure design | Bounded request reads, shared database budgets and atomic durable claims; dispatch requires configured shared state and provider settings. Trusted per-client ingress protection and persistence/retention operations remain deployment requirements. |
 | A07 Authentication failures | No authentication exists or is added. Future private endpoints need server-side authentication and authorization. |
 | A08 Software/data integrity | Checked-in content is rendered through an allowlist; the lockfile is retained. No remote code or user uploads are accepted. |
 | A09 Logging/alerting failures | Application code does not log payloads, cookies, tokens or personal information. Configure redacted status/rate-limit monitoring at ingress; no monitoring service is connected here. |
 | A10 Exceptional conditions | Malformed/oversized requests, stream failures/timeouts and throttling return controlled errors without stack traces or payload echoes. |
 
-The full dependency audit reports five high-severity findings in the development-only ESLint dependency chain, all stemming from [braces GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm). The advisory lists no patched version as of 7 October 2026. Do not feed untrusted glob patterns to build/lint tooling. An incompatible framework-tooling downgrade was not applied; recheck the advisory when updating dependencies. This review and automated checks cover the repository, not deployed infrastructure or a penetration test.
+The dated 7 October 2026 dependency audit reported five high-severity findings in the development-only ESLint dependency chain, all stemming from [braces GHSA-vfj7-8cjw-p6xm](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm). The advisory lists no patched version as of 7 October 2026. Do not feed untrusted glob patterns to build/lint tooling. An incompatible framework-tooling downgrade was not applied; recheck the advisory when updating dependencies. This review and automated checks cover the repository, not deployed infrastructure or a penetration test.
 
 ## Reproduce the migration
 
@@ -102,27 +115,60 @@ npm run migrate
 
 The crawler exhausts navigation, internal links, canonicals, robots and sitemap discovery; source HTML snapshots are stripped of scripts/styles and stored in ignored `docs/source/*.html` files. Run the crawl before rerunning content migration on a fresh checkout. The complete generated content and assets are already included, so normal development and production builds do not require a crawl or network access.
 
-## Validate the current redesign
+## Validate the current implementation
 
-Run against a production build for final verification. Development can remain on port 3001 while production runs on 3100:
+Use a free local port and a production build. Prevent real provider calls for local checks by overriding required configuration with invalid placeholders:
 
 ```powershell
 npm run lint
+npm run typecheck
 npm run build
-npm run start -- --port 3100
+$env:CONTACT_FROM_EMAIL = 'disabled-local-validation'
+$env:BREVO_NEWSLETTER_LIST_ID = 'disabled-local-validation'
+npm run start -- --hostname 127.0.0.1 --port 3112
 ```
 
 In a second terminal:
 
 ```powershell
-$env:BASE_URL = 'http://localhost:3100'
-node scripts/validate-redesign.mjs
-node scripts/redesign-browser-check.mjs
-node scripts/redesign-performance.mjs
+$env:BASE_URL = 'http://127.0.0.1:3112'
+$env:ARTIFACT_DIR = 'artifacts/local-verification'
+New-Item -ItemType Directory -Force $env:ARTIFACT_DIR | Out-Null
+$env:VALIDATION_OUTPUT = Join-Path $env:ARTIFACT_DIR 'route-validation.json'
+npm test
+npm run check:routes
+npm run check:responsive
+npm run check:completion
+npm run check:motion
+npm run check:ac-viewer
+npm run check:security
 ```
 
-The HTTP validator compares original data/assets against the recorded baseline and checks all 46 public paths, preserved metadata/H1s, articles, 59 FAQs, relocated homepage sections, redirects, rendered links/images, sitemap, robots and 404 behavior. The full browser audit checks every route at 320, 375, 390, 430, 768, 1024, 1280, 1440 and 1920 pixels (414 cases), shared design consistency, accessibility, navigation, FAQs, filters, local form behavior and console/hydration errors. Screenshots and JSON evidence are stored under `docs/`. Chrome/Edge is detected at its standard Windows location; set `CHROME_PATH` for another Chromium executable.
+`npm test` includes request security, content sanitization, mocked contact/newsletter integration, staging safety, PostgreSQL integration, two independent HTTP workers sharing real PostgreSQL, recovery cleanup regressions, original-content preservation, all 11 exact document SEO entries and complete, unique metadata across all 41 indexable pages. `BASE_URL` enables the rendered SEO tests. Provider mocks are hermetic even if a developer has live credentials. The real PostgreSQL cases explicitly skip without `FORM_TEST_DATABASE_URL`; a skipped database suite is not shared-store verification. Choose a fresh artifact directory for each run so previous evidence remains intact. The separately guarded backup/restore drill is documented in [database operations](docs/acexperts-database-operations.md); it must never target production data.
 
-For the smaller four-route development check, set `$env:REDESIGN_SMOKE = '1'` before running the browser script; remove that variable before the full audit. The performance script records six local cold-context samples with explicit mobile throttling. These are lab measurements, not field Core Web Vitals. The original `npm run validate` and `scripts/browser-check.mjs` belong to the historical migration workflow; use the redesign scripts for the current UI.
+For actual PostgreSQL integration, explicitly provision an isolated loopback database named `acexperts_test` with role `acexperts_test`, and apply `db/migrations/001-form-state.sql` once to that disposable database. The integration role needs access to the test schema and DELETE for fixture cleanup; production runtime roles must not receive that cleanup privilege. The suite rejects remote hosts, other role/database names and URL query/fragment options. Use synthetic test credentials only:
 
-Source-derived corrections (template contact placeholders, broken brochure button, service links, counter animation starting values and absent headings) are recorded with the migrated content and in the migration report. Field Core Web Vitals and search ranking continuity require post-deployment monitoring; a local build cannot establish them.
+```powershell
+# Example for an already provisioned isolated local cluster; not production credentials.
+$env:FORM_TEST_DATABASE_URL = 'postgresql://acexperts_test:local-synthetic-password@127.0.0.1:55432/acexperts_test'
+npm run test:shared
+# npm test also includes these cases while FORM_TEST_DATABASE_URL is set.
+```
+
+These tests use real PostgreSQL transactions, independent pools/processes and fake provider transport. They exercise shared budgets/claims, consent persistence, failed writes and outage safety without live mail. See [database setup and operations](docs/delivery-configuration.md#shared-postgresql-setup-and-operations); never apply the test schema or fixtures to staging/production data.
+
+The route validator checks 48 pages, metadata, H1s, content, schema, 30 page redirects, 121 media redirects, links, original and upgraded images, robots, sitemap and 404 behavior. It preserves the original baseline and permits only the exact documented completion revisions. The responsive audit covers every route at 320, 360, 390, 414, 768, 1024, 1280 and 1440px (384 cases). The completion browser suite checks restored content, working project filters, service CTAs, keyboard use, intercepted form states and automated accessibility. Motion and AC-viewer checks retain reduced-motion, no-JavaScript, scrolling and animation controls. Chrome is required for these Playwright scripts.
+
+`npm run validate`, `scripts/browser-check.mjs` and `scripts/redesign-browser-check.mjs` are maintained historical suites. Their obsolete navigation/project/newsletter expectations have been aligned with documented current behavior while retaining meaningful coverage. Run them against the same deliberately disabled local server, using a separate artifact directory:
+
+```powershell
+$env:ARTIFACT_DIR = 'artifacts/local-verification/historical'
+New-Item -ItemType Directory -Force $env:ARTIFACT_DIR | Out-Null
+$env:VALIDATION_OUTPUT = Join-Path $env:ARTIFACT_DIR 'validation-results.json'
+$env:LOCAL_FORM_TEST_MODE = 'disabled-provider'
+npm run validate
+node scripts/browser-check.mjs
+node scripts/redesign-browser-check.mjs
+```
+
+`LOCAL_FORM_TEST_MODE=disabled-provider` acknowledges that the operator disabled delivery on the server; **the flag itself does not disable provider calls**. Historical suites and the security browser suite can POST to real local API routes. Loopback restrictions alone cannot prevent a configured server from contacting Brevo. Historical reports remain dated evidence; inspect the current report for actual results. The [performance review](docs/acexperts-performance-review.md) records actual local measurements and exact fresh-output sampler/Lighthouse commands; field Core Web Vitals and deployed SEO require authorized post-deployment verification.

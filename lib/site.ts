@@ -23,6 +23,8 @@ export const services = [
     title: "Emergency AC Maintenance",
     route: "/emergency-ac-maintenance-service/",
   },
+  { title: "AC Duct Cleaning", route: "/ac-duct-cleaning-services-in-dubai/" },
+  { title: "HVAC Services", route: "/hvac-services/" },
 ];
 export const navigation = [
   { title: "Home", route: "/" },

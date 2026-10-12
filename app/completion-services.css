@@ -1,0 +1,16 @@
+.completion-projects { padding-block: clamp(36px, 6vw, 80px); }
+.project-results { max-width: 680px; margin: 28px auto 0; }
+.project-results .content-card img { height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+.project-results .card-copy h2 { margin: 0 0 16px; }
+.project-results .eyebrow { margin-top: 0; }
+.project-empty { padding: 36px 24px; text-align: center; border: 1px solid var(--color-border); border-radius: var(--radius-card); background: var(--color-surface-soft); }
+.project-empty p { margin-top: 0; }
+.service-trust-strip { margin-block: 24px 48px; }
+.service-trust-strip ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 32px; padding: 24px; margin: 0; list-style: none; border: 1px solid var(--color-border); border-radius: var(--radius-card); background: var(--color-surface-soft); }
+.service-trust-strip li { margin: 0; font-weight: 600; color: var(--color-primary-dark); }
+@media (max-width: 479px) {
+  .project-filters { gap: 8px; }
+  .project-filters button { padding-inline: 14px; min-height: 44px; }
+  .project-results .card-copy { padding: 22px; }
+  .service-trust-strip ul { flex-direction: column; align-items: center; gap: 12px; }
+}

@@ -1,7 +1,8 @@
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
 import { readFile, writeFile, mkdir, access } from "node:fs/promises";
-import { writeMigrationReport } from "./validate.mjs";
+import { dirname, join } from "node:path";
+import { migrationPaths, writeMigrationReport } from "./validate.mjs";
 
 const base = new URL(process.env.BASE_URL || "http://localhost:3001");
 const widths = [320, 375, 390, 430, 768, 1024, 1280, 1440, 1920];
@@ -63,6 +64,8 @@ async function main() {
     throw new Error(
       "BASE_URL must point to a loopback host; browser tests never submit to the public site.",
     );
+  if (process.env.LOCAL_FORM_TEST_MODE !== "disabled-provider")
+    throw new Error("Set LOCAL_FORM_TEST_MODE=disabled-provider only after starting an isolated local server with deliberately invalid sender/list settings. This suite posts to the real local API; the test flag does not disable provider delivery.");
   const input = JSON.parse(await readFile("data/pages.json", "utf8"));
   const pages = Array.isArray(input) ? input : input.pages;
   const identityResponse = await fetch(base, {
@@ -90,7 +93,7 @@ async function main() {
     ["products", "/products/"],
     ["contact", "/contact-us/"],
   ].filter(([, route]) => route);
-  await mkdir("docs/screenshots/local", { recursive: true });
+  await mkdir(migrationPaths.screenshots, { recursive: true });
   const browser = await chromium.launch({
     executablePath: await executable(),
     headless: true,
@@ -136,7 +139,7 @@ async function main() {
       currentCase &&
       response.status() >= 400 &&
       response.url().startsWith(base.origin) &&
-      !(expectedApiFailure && response.url().includes("/api/contact/"))
+      !(expectedApiFailure && response.status() === 503 && new URL(response.url()).pathname === "/api/contact/")
     )
       currentCase.failedResponses.push({
         url: response.url(),
@@ -226,7 +229,7 @@ async function main() {
             (width === 390 && type === "home") ||
             !currentCase.ok
           ) {
-            currentCase.screenshot = `docs/screenshots/local/${type}-${width}.png`;
+            currentCase.screenshot = join(migrationPaths.screenshots, `${type}-${width}.png`);
             await page.screenshot({
               path: currentCase.screenshot,
               fullPage: width === 1440,
@@ -385,8 +388,11 @@ async function main() {
       "Valid local form returns explicit disabled-backend 503",
       response.status() === 503 &&
         posts === 1 &&
+        response.headers()["cache-control"] === "no-store" &&
+        response.headers()["x-content-type-options"] === "nosniff" &&
         typeof body.message === "string" &&
-        body.message.length > 20,
+        body.message.includes("has not been sent") &&
+        (await form.locator('[name="firstName"]').inputValue()) === "Local validation",
       { status: response.status(), message: body.message },
     );
     expectedApiFailure = false;
@@ -413,8 +419,9 @@ async function main() {
       !result.failures.length &&
       result.cases.length === widths.length * candidates.length,
   };
+  await mkdir(dirname(migrationPaths.browser), { recursive: true });
   await writeFile(
-    "docs/browser-validation-results.json",
+    migrationPaths.browser,
     JSON.stringify(result, null, 2) + "\n",
   );
   await writeMigrationReport();

@@ -1,0 +1,44 @@
+{
+  "preparedAt": "2026-10-12T08:26:05.751Z",
+  "namespace": "restart_edb321ad339a4328b3c2f9806977496a",
+  "scope": "Real isolated PostgreSQL; synthetic data; no live delivery",
+  "pending": {
+    "acquired": true,
+    "requestId": "4d98b4ce-3824-4e53-8ad3-e872518ec3c0",
+    "status": "pending"
+  },
+  "accepted": {
+    "acquired": true,
+    "requestId": "6ce73e16-6e3d-426d-b5cf-03745874d192",
+    "status": "pending"
+  },
+  "newsletter": {
+    "acquired": true,
+    "requestId": "1ad089f5-a155-477f-85b0-8b355e28061f",
+    "status": "pending"
+  },
+  "extendedRateWindowForRestartFixture": true,
+  "settings": {
+    "fsync": "on",
+    "synchronous_commit": "on",
+    "full_page_writes": "on"
+  },
+  "missingSchemaFailedClosed": true,
+  "wrongSchemaVersionFailedClosed": true,
+  "scramAuthenticationFailureSanitized": true,
+  "fixtureRateWindowMinutes": 10,
+  "databaseStoppedAt": "2026-10-12T08:28:59.686Z",
+  "databaseOutage": {
+    "status": 503,
+    "providerCalls": 0
+  },
+  "verifiedAfterRestartAt": "2026-10-12T08:29:00.407Z",
+  "persistence": {
+    "pendingClaim": true,
+    "acceptedClaim": true,
+    "rateBudget": true,
+    "newsletterConsent": true,
+    "confirmationNotInferred": true
+  },
+  "fixtureCleaned": true
+}

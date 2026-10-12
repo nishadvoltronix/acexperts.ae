@@ -1,0 +1,469 @@
+{
+  "checkedAt": "2026-10-12T12:06:37.576Z",
+  "base": "http://127.0.0.1:3112",
+  "checks": [
+    {
+      "width": 320,
+      "passed": true,
+      "names": [
+        "NADCA",
+        "ISIAQ",
+        "ISSA",
+        "IAQA"
+      ],
+      "heading": "Certifications",
+      "columns": 1,
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3112/images/certifications/nadca.svg",
+          "alt": "NADCA logo",
+          "complete": true,
+          "naturalWidth": 241
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fisiaq.png&w=256&q=75",
+          "alt": "ISIAQ logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fissa.png&w=256&q=75",
+          "alt": "ISSA logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fiaqa.png&w=256&q=75",
+          "alt": "IAQA logo",
+          "complete": true,
+          "naturalWidth": 160
+        }
+      ],
+      "cards": [
+        {
+          "x": 20,
+          "width": 280
+        },
+        {
+          "x": 20,
+          "width": 280
+        },
+        {
+          "x": 20,
+          "width": 280
+        },
+        {
+          "x": 20,
+          "width": 280
+        }
+      ]
+    },
+    {
+      "width": 360,
+      "passed": true,
+      "names": [
+        "NADCA",
+        "ISIAQ",
+        "ISSA",
+        "IAQA"
+      ],
+      "heading": "Certifications",
+      "columns": 1,
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3112/images/certifications/nadca.svg",
+          "alt": "NADCA logo",
+          "complete": true,
+          "naturalWidth": 241
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fisiaq.png&w=256&q=75",
+          "alt": "ISIAQ logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fissa.png&w=256&q=75",
+          "alt": "ISSA logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fiaqa.png&w=256&q=75",
+          "alt": "IAQA logo",
+          "complete": true,
+          "naturalWidth": 160
+        }
+      ],
+      "cards": [
+        {
+          "x": 20,
+          "width": 320
+        },
+        {
+          "x": 20,
+          "width": 320
+        },
+        {
+          "x": 20,
+          "width": 320
+        },
+        {
+          "x": 20,
+          "width": 320
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "names": [
+        "NADCA",
+        "ISIAQ",
+        "ISSA",
+        "IAQA"
+      ],
+      "heading": "Certifications",
+      "columns": 1,
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3112/images/certifications/nadca.svg",
+          "alt": "NADCA logo",
+          "complete": true,
+          "naturalWidth": 241
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fisiaq.png&w=256&q=75",
+          "alt": "ISIAQ logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fissa.png&w=256&q=75",
+          "alt": "ISSA logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fiaqa.png&w=256&q=75",
+          "alt": "IAQA logo",
+          "complete": true,
+          "naturalWidth": 160
+        }
+      ],
+      "cards": [
+        {
+          "x": 20,
+          "width": 350
+        },
+        {
+          "x": 20,
+          "width": 350
+        },
+        {
+          "x": 20,
+          "width": 350
+        },
+        {
+          "x": 20,
+          "width": 350
+        }
+      ]
+    },
+    {
+      "width": 414,
+      "passed": true,
+      "names": [
+        "NADCA",
+        "ISIAQ",
+        "ISSA",
+        "IAQA"
+      ],
+      "heading": "Certifications",
+      "columns": 1,
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3112/images/certifications/nadca.svg",
+          "alt": "NADCA logo",
+          "complete": true,
+          "naturalWidth": 241
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fisiaq.png&w=256&q=75",
+          "alt": "ISIAQ logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fissa.png&w=256&q=75",
+          "alt": "ISSA logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fiaqa.png&w=256&q=75",
+          "alt": "IAQA logo",
+          "complete": true,
+          "naturalWidth": 160
+        }
+      ],
+      "cards": [
+        {
+          "x": 20,
+          "width": 374
+        },
+        {
+          "x": 20,
+          "width": 374
+        },
+        {
+          "x": 20,
+          "width": 374
+        },
+        {
+          "x": 20,
+          "width": 374
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "passed": true,
+      "names": [
+        "NADCA",
+        "ISIAQ",
+        "ISSA",
+        "IAQA"
+      ],
+      "heading": "Certifications",
+      "columns": 2,
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3112/images/certifications/nadca.svg",
+          "alt": "NADCA logo",
+          "complete": true,
+          "naturalWidth": 241
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fisiaq.png&w=256&q=75",
+          "alt": "ISIAQ logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fissa.png&w=256&q=75",
+          "alt": "ISSA logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fiaqa.png&w=256&q=75",
+          "alt": "IAQA logo",
+          "complete": true,
+          "naturalWidth": 160
+        }
+      ],
+      "cards": [
+        {
+          "x": 34.859375,
+          "width": 337.125
+        },
+        {
+          "x": 395.984375,
+          "width": 337.140625
+        },
+        {
+          "x": 34.859375,
+          "width": 337.125
+        },
+        {
+          "x": 395.984375,
+          "width": 337.140625
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "passed": true,
+      "names": [
+        "NADCA",
+        "ISIAQ",
+        "ISSA",
+        "IAQA"
+      ],
+      "heading": "Certifications",
+      "columns": 4,
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3112/images/certifications/nadca.svg",
+          "alt": "NADCA logo",
+          "complete": true,
+          "naturalWidth": 241
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fisiaq.png&w=256&q=75",
+          "alt": "ISIAQ logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fissa.png&w=256&q=75",
+          "alt": "ISSA logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fiaqa.png&w=256&q=75",
+          "alt": "IAQA logo",
+          "complete": true,
+          "naturalWidth": 160
+        }
+      ],
+      "cards": [
+        {
+          "x": 46.484375,
+          "width": 208.75
+        },
+        {
+          "x": 287.234375,
+          "width": 208.75
+        },
+        {
+          "x": 527.984375,
+          "width": 208.75
+        },
+        {
+          "x": 768.734375,
+          "width": 208.765625
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "passed": true,
+      "names": [
+        "NADCA",
+        "ISIAQ",
+        "ISSA",
+        "IAQA"
+      ],
+      "heading": "Certifications",
+      "columns": 4,
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3112/images/certifications/nadca.svg",
+          "alt": "NADCA logo",
+          "complete": true,
+          "naturalWidth": 241
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fisiaq.png&w=256&q=75",
+          "alt": "ISIAQ logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fissa.png&w=256&q=75",
+          "alt": "ISSA logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fiaqa.png&w=256&q=75",
+          "alt": "IAQA logo",
+          "complete": true,
+          "naturalWidth": 160
+        }
+      ],
+      "cards": [
+        {
+          "x": 58.109375,
+          "width": 266.9375
+        },
+        {
+          "x": 357.046875,
+          "width": 266.9375
+        },
+        {
+          "x": 655.984375,
+          "width": 266.9375
+        },
+        {
+          "x": 954.921875,
+          "width": 266.953125
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "passed": true,
+      "names": [
+        "NADCA",
+        "ISIAQ",
+        "ISSA",
+        "IAQA"
+      ],
+      "heading": "Certifications",
+      "columns": 4,
+      "overflow": false,
+      "images": [
+        {
+          "src": "http://127.0.0.1:3112/images/certifications/nadca.svg",
+          "alt": "NADCA logo",
+          "complete": true,
+          "naturalWidth": 241
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fisiaq.png&w=256&q=75",
+          "alt": "ISIAQ logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fissa.png&w=256&q=75",
+          "alt": "ISSA logo",
+          "complete": true,
+          "naturalWidth": 160
+        },
+        {
+          "src": "http://127.0.0.1:3112/_next/image/?url=%2Fimages%2Fcertifications%2Fiaqa.png&w=256&q=75",
+          "alt": "IAQA logo",
+          "complete": true,
+          "naturalWidth": 160
+        }
+      ],
+      "cards": [
+        {
+          "x": 65,
+          "width": 303.5
+        },
+        {
+          "x": 400.5,
+          "width": 303.5
+        },
+        {
+          "x": 736,
+          "width": 303.5
+        },
+        {
+          "x": 1071.5,
+          "width": 303.5
+        }
+      ]
+    }
+  ],
+  "pageErrors": [],
+  "summary": {
+    "widths": 8,
+    "failures": 0,
+    "logos": 4,
+    "localAssets": true
+  }
+}

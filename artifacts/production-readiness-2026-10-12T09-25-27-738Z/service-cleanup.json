@@ -1,0 +1,10 @@
+{
+  "checkedAt": "2026-10-12T10:01:00.959Z",
+  "ownedTestServicesStopped": {
+    "next3112": true,
+    "postgres55432": true
+  },
+  "productionServicesTouched": false,
+  "otherUserServersTouched": false,
+  "configuredPrivacyServerCreated": false
+}

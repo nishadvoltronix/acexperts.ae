@@ -1,0 +1,38 @@
+{
+  "verifiedAtUtc": "2026-10-12T12:18:37.917Z",
+  "timezone": "Asia/Dubai",
+  "syntheticLocalDatabaseOnly": true,
+  "productionBackupConfigured": false,
+  "liveProviderCalls": 0,
+  "checks": {
+    "ownedLoopbackClusterAndMigration": true,
+    "syntheticAllOutcomeStatesAndNeighborSeeded": true,
+    "logicalBackupRestoresExactScopedState": true,
+    "restoredClaimsOutcomesIdsAndRateBudget": true,
+    "restoredRuntimeGrantsAndRestrictions": true,
+    "restoredConsentConstraint": true,
+    "restoredNamespaceFingerprintRejectsWrongKey": true,
+    "reapplyingOneTimeMigrationFailsWithoutDataLoss": true,
+    "retentionDeletesOnlyExpiredScopedConsentAndTerminalClaims": true,
+    "retentionPreservesCurrentAmbiguousAndNeighborRows": true,
+    "retentionIsRepeatable": true,
+    "originalHbaRestored": true
+  },
+  "passed": true,
+  "cleanup": true,
+  "phase": "complete",
+  "localClusterStarted": true,
+  "postgresVersion": "16.15",
+  "fixtureCounts": {
+    "namespace_settings": 2,
+    "rate_limits": 2,
+    "submissions": 10,
+    "consent_events": 3
+  },
+  "syntheticBackupMilliseconds": 329,
+  "backupBytes": 14150,
+  "backupSha256": "64b3c6d8e958b58c606e62f781fa673710f2004c7c0de43d562d8589cbf5b3d7",
+  "backupLocation": "node_modules/.cache/acexperts-postgres/recovery-fixtures/4f30dea019454784a0c723d0c99874ff/synthetic-forms.dump",
+  "syntheticRestoreMilliseconds": 205,
+  "localClusterLeftRunningForFurtherTests": true
+}

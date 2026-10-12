@@ -44,7 +44,7 @@ export function ACExplodedView() {
         <div className={styles.buttons} role="group" aria-label="AC assembly controls">
           <button type="button" disabled={!ready} aria-pressed={mode === "assembled"} onClick={() => setLevel(0, true)}>Normal <span>(Assembled)</span></button>
           <button type="button" disabled={!ready} aria-pressed={mode === "exploded"} onClick={() => setLevel(1, true)}>Explode <span>(Separate)</span></button>
-          <button type="button" disabled={!ready || reducedMotion} aria-pressed={mode === "loop"} onClick={toggleLoop} aria-label={mode === "loop" ? "Stop auto loop animation" : "Start auto loop animation"}>{mode === "loop" ? "Stop loop" : "Auto loop"}<span>Animation</span></button>
+          <button type="button" disabled={!ready || reducedMotion} aria-pressed={mode === "loop"} onClick={toggleLoop}>{mode === "loop" ? "Stop loop" : "Auto loop"}{" "}<span>Animation</span></button>
         </div>
         <div className={styles.sliderLabel}>
           <label htmlFor={`${id}-level`}>Explode level</label>

@@ -1,199 +1,60 @@
-// This module is imported only by the contact route. It never stores or logs enquiries.
-export const MAX_CONTACT_BODY_BYTES = 48 * 1024;
-const BODY_TIMEOUT_MS = 5000;
-const RATE_WINDOW_MS = 60_000;
-const RATE_LIMIT = 30;
+﻿import { createFormGuard, formResponse, validEmail } from "./form-security.ts";
+import { createFormDelivery, type Enquiry } from "./form-delivery.ts";
+import { createSubmissionState, type SubmissionOptions } from "./form-submissions.ts";
 
-const trustedOrigins = new Set([
-  "https://acexperts.ae",
-  "https://www.acexperts.ae",
-]);
-const loopbackHosts = new Set(["localhost", "127.0.0.1", "[::1]"]);
-const services = new Set([
-  "Installation",
-  "Replacements",
-  "Upgrades",
-  "Repairs",
-  "Solutions",
-  "Other",
-]);
-const fieldLimits = {
-  firstName: 100,
-  lastName: 100,
-  email: 254,
-  company: 200,
-  phone: 30,
-  mobile: 30,
-  service: 20,
-  otherService: 200,
-  message: 5000,
-} as const;
+export const MAX_CONTACT_BODY_BYTES = 48 * 1024;
+const services = new Set(["Installation", "Replacements", "Upgrades", "Repairs", "Solutions", "Duct Cleaning", "HVAC Services", "Other"]);
+const fieldLimits = { firstName: 100, lastName: 100, email: 254, company: 200, phone: 30, mobile: 30, service: 20, otherService: 200, message: 5000, website: 200 } as const;
 const requiredFields = ["firstName", "email", "mobile", "service", "message"];
 
-function response(status: number, message: string, headers: Record<string, string> = {}) {
-  return Response.json(
-    { message },
-    {
-      status,
-      headers: {
-        "Cache-Control": "no-store",
-        "X-Content-Type-Options": "nosniff",
-        ...headers,
-      },
-    },
-  );
-}
-
-function trustedRequestOrigin(request: Request): boolean {
-  // Neither Host nor forwarded headers establish trust. The explicit production
-  // origins are fixed; loopback requests must match their actual request URL.
-  const origin = request.headers.get("origin");
-  if (!origin || request.headers.get("sec-fetch-site") === "cross-site") {
-    return false;
-  }
-  if (trustedOrigins.has(origin)) return true;
-  try {
-    const url = new URL(request.url);
-    return (
-      loopbackHosts.has(url.hostname) &&
-      (url.protocol === "http:" || url.protocol === "https:") &&
-      origin === url.origin
-    );
-  } catch {
-    return false;
-  }
-}
-
-function validEnquiry(body: unknown): boolean {
-  if (!body || typeof body !== "object" || Array.isArray(body)) return false;
+function parseEnquiry(body: unknown): Enquiry | null {
+  if (!body || typeof body !== "object" || Array.isArray(body)) return null;
   const fields = body as Record<string, unknown>;
   for (const [name, value] of Object.entries(fields)) {
-    if (
-      !Object.hasOwn(fieldLimits, name) ||
-      typeof value !== "string" ||
-      value.length > fieldLimits[name as keyof typeof fieldLimits]
-    ) {
-      return false;
-    }
-    // Names and addresses are plain text; only the message permits line breaks.
-    const invalidControls = name === "message"
-      ? /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/
-      : /[\u0000-\u001f\u007f]/;
-    if (invalidControls.test(value)) return false;
+    if (!Object.hasOwn(fieldLimits, name) || typeof value !== "string" || value.length > fieldLimits[name as keyof typeof fieldLimits]) return null;
+    const invalidControls = name === "message" ? /[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/ : /[\u0000-\u001f\u007f]/;
+    if (invalidControls.test(value)) return null;
   }
-  if (!requiredFields.every((name) => typeof fields[name] === "string" && fields[name].trim())) {
-    return false;
-  }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((fields.email as string).trim())) return false;
+  if (!requiredFields.every((name) => typeof fields[name] === "string" && fields[name].trim())) return null;
+  if (fields.website) return null; // Hidden spam trap; never report a fake success.
+  if (!validEmail((fields.email as string).trim())) return null;
   for (const name of ["mobile", "phone"]) {
     const number = (fields[name] as string | undefined)?.trim();
     if (!number) continue;
     const digits = number.replace(/\D/g, "").length;
-    if (!/^\+?[0-9 ().-]+$/.test(number) || digits < 7 || digits > 15) return false;
+    if (!/^\+?[0-9 ().-]+$/.test(number) || digits < 7 || digits > 15) return null;
   }
-  if (!services.has(fields.service as string)) return false;
+  if (!services.has(fields.service as string)) return null;
   if (fields.service === "Other") {
-    return typeof fields.otherService === "string" && fields.otherService.trim().length > 0;
-  }
-  return !Object.hasOwn(fields, "otherService");
+    if (typeof fields.otherService !== "string" || !fields.otherService.trim()) return null;
+  } else if (Object.hasOwn(fields, "otherService")) return null;
+  const normalized = (key: string) => (fields[key] as string | undefined)?.trim() || "";
+  return {
+    firstName: normalized("firstName"), lastName: normalized("lastName"),
+    email: normalized("email").toLowerCase(), company: normalized("company"),
+    phone: normalized("phone"), mobile: normalized("mobile"), service: normalized("service"),
+    otherService: normalized("otherService"), message: normalized("message").replace(/\r\n/g, "\n"),
+  };
 }
 
-class InvalidBody extends Error {
-  status: number;
-
-  constructor(status: number) {
-    super("Invalid request body");
-    this.status = status;
-  }
-}
-
-async function readBoundedJson(request: Request): Promise<unknown> {
-  const length = request.headers.get("content-length");
-  if (length !== null) {
-    if (!/^\d+$/.test(length)) throw new InvalidBody(400);
-    if (Number(length) > MAX_CONTACT_BODY_BYTES) throw new InvalidBody(413);
-  }
-  if (!request.body) throw new InvalidBody(400);
-  const reader = request.body.getReader();
-  let timeout: ReturnType<typeof setTimeout> | undefined;
-  let complete = false;
-  const deadline = new Promise<never>((_, reject) => {
-    timeout = setTimeout(() => reject(new InvalidBody(408)), BODY_TIMEOUT_MS);
-  });
-  try {
-    const chunks: Uint8Array[] = [];
-    let size = 0;
-    while (true) {
-      const { done, value } = await Promise.race([reader.read(), deadline]);
-      if (done) {
-        complete = true;
-        break;
-      }
-      size += value.byteLength;
-      // Enforce the actual streamed size even when Content-Length is absent or false.
-      if (size > MAX_CONTACT_BODY_BYTES) throw new InvalidBody(413);
-      if (value.byteLength > 0) chunks.push(value);
-    }
-    const bytes = new Uint8Array(size);
-    let offset = 0;
-    for (const chunk of chunks) {
-      bytes.set(chunk, offset);
-      offset += chunk.byteLength;
-    }
-    return JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bytes));
-  } finally {
-    clearTimeout(timeout);
-    // Cancellation must not let a stalled client prolong this response.
-    if (!complete) void reader.cancel().catch(() => {});
-    reader.releaseLock();
-  }
-}
-
-export function createContactHandler(now: () => number = Date.now) {
-  // Conservative process-wide cap: IP headers are not trusted without a known
-  // ingress proxy. Multi-instance deployments also need a shared/edge limiter;
-  // this local limit resets on process restart and applies to all visitors.
-  let windowStart = now();
-  let attempts = 0;
-
-  return async function contactRequest(request: Request): Promise<Response> {
-    const currentTime = now();
-    if (currentTime - windowStart >= RATE_WINDOW_MS || currentTime < windowStart) {
-      windowStart = currentTime;
-      attempts = 0;
-    }
-    if (attempts >= RATE_LIMIT) {
-      return response(429, "Too many requests. Please try again later.", {
-        "Retry-After": String(Math.max(1, Math.ceil((windowStart + RATE_WINDOW_MS - currentTime) / 1000))),
-      });
-    }
-    attempts++;
-
-    if (!trustedRequestOrigin(request)) {
-      return response(403, "Unable to process this request.");
-    }
-    const mediaType = request.headers.get("content-type")?.split(";", 1)[0].trim().toLowerCase();
-    const encoding = request.headers.get("content-encoding");
-    if (mediaType !== "application/json" || (encoding && encoding.toLowerCase() !== "identity")) {
-      return response(415, "Unable to process this request.");
-    }
-
-    let body: unknown;
-    try {
-      body = await readBoundedJson(request);
-    } catch (error) {
-      return response(error instanceof InvalidBody ? error.status : 400, "Unable to process this request.");
-    }
-    if (!validEnquiry(body)) {
-      return response(400, "Please complete the required fields and enter a valid email address.");
-    }
-    // Public form: authentication is intentionally not required. Connect a
-    // server-side mail/CRM adapter before enabling delivery. Do not return or log
-    // submitted values; all responses are fixed strings and enquiries are unsent.
-    return response(
-      503,
-      "Online enquiries are not available yet. Your message has not been sent. Please call +971 4 824 0002 or email info@voltronix.ae.",
-    );
+export function createContactHandler(now: () => number = Date.now, options: SubmissionOptions = {}) {
+  const state = createSubmissionState(options);
+  const guard = createFormGuard(MAX_CONTACT_BODY_BYTES, 30, now, state.rateLimiter("contact", 30));
+  const delivery = createFormDelivery(options);
+  return async (request: Request): Promise<Response> => {
+    const input = await guard(request);
+    if ("error" in input) return input.error;
+    const enquiry = parseEnquiry(input.body);
+    if (!enquiry) return formResponse(400, "Please complete the required fields and enter a valid email address.");
+    const result = delivery.configured("contact")
+      ? await state.submit("contact", enquiry, (requestId) => delivery.contact(enquiry, requestId))
+      : { status: "unconfigured" };
+    if (result.status === "accepted") return formResponse(200, "Thank you. Your enquiry has been accepted for delivery to our team.");
+    if (result.status === "unconfigured") return formResponse(503, "Online enquiries are not available yet. Your message has not been sent. Please call +971 4 824 0002 or email info@voltronix.ae.");
+    if (result.status === "unavailable") return formResponse(503, "Online enquiries are temporarily unavailable. Please call +971 4 824 0002 or try again later.");
+    if (result.status === "pending") return formResponse(409, "This enquiry is already being processed. Please contact our team before submitting it again.");
+    if (result.status === "rejected") return formResponse(502, "Your message could not be sent. Please try again later, call +971 4 824 0002 or email info@voltronix.ae.");
+    return formResponse(result.status === "timeout" ? 504 : 502, "We could not confirm delivery of your enquiry. Please call +971 4 824 0002 or email info@voltronix.ae before sending it again.");
   };
 }
 

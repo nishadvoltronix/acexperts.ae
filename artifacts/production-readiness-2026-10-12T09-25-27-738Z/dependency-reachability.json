@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-10-12T09:27:10.115Z",
+  "nextSettings": null,
+  "defaultRootCount": 1,
+  "globCallsForCurrentSettings": 0,
+  "exposure": "The only Next plugin fast-glob call accepts settings.next.rootDir; current effective project settings do not define it. HTTP payloads do not enter ESLint configuration.",
+  "checkedFile": "components/Header.tsx"
+}

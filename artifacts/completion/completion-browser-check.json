@@ -1,0 +1,930 @@
+{
+  "checkedAt": "2026-10-12T07:32:34.240Z",
+  "base": "http://127.0.0.1:3112/",
+  "cases": [
+    {
+      "name": "Homepage content, restored header and group links",
+      "passed": true
+    },
+    {
+      "name": "Project filters show real installation and honest empty categories",
+      "passed": true
+    },
+    {
+      "name": "Original service CTAs and new service routes",
+      "passed": true
+    },
+    {
+      "name": "Contact provider acceptance, failure, network error and duplicate click UI",
+      "passed": true
+    },
+    {
+      "name": "Newsletter consent, provider failure and confirmation-email acceptance UI",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 390px /",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 390px /about/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 390px /services/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 390px /projects/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 390px /contact-us/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 390px /emergency-ac-maintenance-service/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 390px /ac-duct-cleaning-services-in-dubai/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 390px /hvac-services/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 1440px /",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 1440px /about/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 1440px /services/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 1440px /projects/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 1440px /contact-us/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 1440px /emergency-ac-maintenance-service/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 1440px /ac-duct-cleaning-services-in-dubai/",
+      "passed": true
+    },
+    {
+      "name": "Accessibility 1440px /hvac-services/",
+      "passed": true
+    },
+    {
+      "name": "No uncaught page errors",
+      "passed": true
+    }
+  ],
+  "accessibility": [
+    {
+      "width": 390,
+      "route": "/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "h1"
+            ],
+            [
+              ".hero-tagline"
+            ],
+            [
+              ".hero-tagline > span"
+            ],
+            [
+              ".home-hero-copy > p:nth-child(4)"
+            ],
+            [
+              "div:nth-child(1) > span > strong"
+            ],
+            [
+              "div:nth-child(1) > span > small"
+            ],
+            [
+              "div:nth-child(2) > span > strong"
+            ],
+            [
+              "div:nth-child(2) > span > small"
+            ],
+            [
+              "div:nth-child(3) > span > strong"
+            ],
+            [
+              "div:nth-child(3) > span > small"
+            ],
+            [
+              "div:nth-child(4) > span > strong"
+            ],
+            [
+              "div:nth-child(4) > span > small"
+            ],
+            [
+              ".learn-more[href$=\"ac-repair-services/\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".learn-more[href$=\"ac-installation-service/\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".service-card[data-reveal-delay=\"180\"] > .learn-more > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "article[data-reveal-delay=\"270\"] > .learn-more > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "a[href$=\"hvac-services/\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__eyebrow"
+            ],
+            [
+              "#_R_3inrb_-title"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__heading > p"
+            ],
+            [
+              "#_R_3inrb_-rotation"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__rotationHelp > button[type=\"button\"]"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__buttons > button[type=\"button\"]:nth-child(1)"
+            ],
+            [
+              "button[type=\"button\"]:nth-child(1) > span"
+            ],
+            [
+              "label[for=\"_R_3inrb_-level\"]"
+            ],
+            [
+              "output"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__motionNote"
+            ],
+            [
+              "ol > li:nth-child(1)"
+            ],
+            [
+              "ol > li:nth-child(2)"
+            ],
+            [
+              "ol > li:nth-child(3)"
+            ],
+            [
+              "ol > li:nth-child(4)"
+            ],
+            [
+              "ol > li:nth-child(5)"
+            ],
+            [
+              "ol > li:nth-child(6)"
+            ],
+            [
+              ".container > h2"
+            ],
+            [
+              ".promise-audience"
+            ],
+            [
+              "div[data-reveal=\"left\"][data-reveal-delay=\"0\"][data-motion-state=\"visible\"] > p > strong"
+            ],
+            [
+              "div[data-reveal=\"left\"][data-reveal-delay=\"0\"][data-motion-state=\"visible\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"50\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"50\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"100\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"100\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"150\"][data-reveal=\"right\"][data-motion-state=\"visible\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"150\"][data-reveal=\"right\"][data-motion-state=\"visible\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"200\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"200\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"250\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"250\"] > p > span"
+            ],
+            [
+              ".content-card:nth-child(1) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".content-card:nth-child(2) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".content-card:nth-child(3) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/about/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ],
+            [
+              ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+            ],
+            [
+              ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > p:nth-child(2)"
+            ],
+            [
+              ".columns-2.content-grid > .content-column:nth-child(1) > p:nth-child(2) > a[href=\"/\"]"
+            ],
+            [
+              ".columns-2.content-grid > .content-column:nth-child(1) > .button[href$=\"contact-us/\"]"
+            ],
+            [
+              ".carousel-card[data-reveal=\"up\"][data-motion-state=\"visible\"]:nth-child(1) > a[href$=\"services/\"]"
+            ],
+            [
+              "a[href$=\"services/\"] > .button"
+            ],
+            [
+              ".carousel-card[data-reveal=\"up\"][data-motion-state=\"visible\"]:nth-child(2) > a[href$=\"products/\"]"
+            ],
+            [
+              "a[href$=\"products/\"] > .button"
+            ],
+            [
+              ".section-cta.has-background.content-section > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+            ],
+            [
+              ".section-cta.has-background.content-section > .columns-2.content-grid > .content-column:nth-child(1) > h2"
+            ],
+            [
+              ".columns-2.content-grid > .content-column:nth-child(1) > h2 > strong"
+            ],
+            [
+              ".button[href$=\"projects/\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/services/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ],
+            [
+              ".button[href$=\"projects/\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/projects/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ],
+            [
+              ".text-link > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/contact-us/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/emergency-ac-maintenance-service/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              ".breadcrumbs > a[href$=\"services/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ],
+            [
+              ".has-background > .eyebrow"
+            ],
+            [
+              ".has-background > p:nth-child(3)"
+            ],
+            [
+              ".has-background > p:nth-child(4)"
+            ],
+            [
+              "a[href=\"tel:971 50 2420957\"]"
+            ],
+            [
+              "p:nth-child(4) > a[href$=\"mailto:info@voltronix.ae\"]"
+            ],
+            [
+              ".button[href$=\"contact-us/\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/ac-duct-cleaning-services-in-dubai/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              ".breadcrumbs > a[href$=\"services/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "route": "/hvac-services/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              ".breadcrumbs > a[href$=\"services/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              "h1"
+            ],
+            [
+              ".hero-tagline"
+            ],
+            [
+              ".hero-tagline > span"
+            ],
+            [
+              ".home-hero-copy > p:nth-child(4)"
+            ],
+            [
+              "div:nth-child(1) > span > strong"
+            ],
+            [
+              "div:nth-child(1) > span > small"
+            ],
+            [
+              "div:nth-child(2) > span > strong"
+            ],
+            [
+              "div:nth-child(2) > span > small"
+            ],
+            [
+              "div:nth-child(3) > span > strong"
+            ],
+            [
+              "div:nth-child(3) > span > small"
+            ],
+            [
+              "div:nth-child(4) > span > strong"
+            ],
+            [
+              "div:nth-child(4) > span > small"
+            ],
+            [
+              ".hero-scroll-cue"
+            ],
+            [
+              ".learn-more[href$=\"ac-repair-services/\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".learn-more[href$=\"ac-installation-service/\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".service-card[data-reveal-delay=\"180\"] > .learn-more > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "article[data-reveal-delay=\"270\"] > .learn-more > span[aria-hidden=\"true\"]"
+            ],
+            [
+              "a[href$=\"hvac-services/\"] > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__eyebrow"
+            ],
+            [
+              "#_R_3inrb_-title"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__heading > p"
+            ],
+            [
+              "#_R_3inrb_-rotation"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__rotationHelp > button[type=\"button\"]"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__buttons > button[type=\"button\"]:nth-child(1)"
+            ],
+            [
+              "button[type=\"button\"]:nth-child(1) > span"
+            ],
+            [
+              "label[for=\"_R_3inrb_-level\"]"
+            ],
+            [
+              "output"
+            ],
+            [
+              ".ACExplodedView-module__MdPhta__motionNote"
+            ],
+            [
+              "ol > li:nth-child(1)"
+            ],
+            [
+              "ol > li:nth-child(2)"
+            ],
+            [
+              "ol > li:nth-child(3)"
+            ],
+            [
+              "ol > li:nth-child(4)"
+            ],
+            [
+              "ol > li:nth-child(5)"
+            ],
+            [
+              "ol > li:nth-child(6)"
+            ],
+            [
+              ".why-copy > p"
+            ],
+            [
+              "span[data-count-value=\"156\"]"
+            ],
+            [
+              ".stat-card[data-reveal-delay=\"0\"][data-reveal=\"up\"] > span:nth-child(3)"
+            ],
+            [
+              "span[data-count-value=\"15+\"]"
+            ],
+            [
+              "div[data-reveal-delay=\"80\"] > span:nth-child(3)"
+            ],
+            [
+              "span[data-count-value=\"200\"]"
+            ],
+            [
+              "div[data-reveal-delay=\"160\"] > span:nth-child(3)"
+            ],
+            [
+              "span[data-count-value=\"100%\"]"
+            ],
+            [
+              "div[data-reveal-delay=\"240\"] > span:nth-child(3)"
+            ],
+            [
+              ".container > h2"
+            ],
+            [
+              ".promise-audience"
+            ],
+            [
+              "div[data-reveal=\"left\"][data-reveal-delay=\"0\"][data-motion-state=\"visible\"] > p > strong"
+            ],
+            [
+              "div[data-reveal=\"left\"][data-reveal-delay=\"0\"][data-motion-state=\"visible\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"50\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"50\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"100\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"100\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"150\"][data-reveal=\"right\"][data-motion-state=\"visible\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"150\"][data-reveal=\"right\"][data-motion-state=\"visible\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"200\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"200\"] > p > span"
+            ],
+            [
+              "div[data-reveal-delay=\"250\"] > p > strong"
+            ],
+            [
+              "div[data-reveal-delay=\"250\"] > p > span"
+            ],
+            [
+              ".content-card:nth-child(1) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".content-card:nth-child(2) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+            ],
+            [
+              ".content-card:nth-child(3) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/about/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ],
+            [
+              ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+            ],
+            [
+              ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > p:nth-child(2)"
+            ],
+            [
+              ".columns-2.content-grid > .content-column:nth-child(1) > p:nth-child(2) > a[href=\"/\"]"
+            ],
+            [
+              ".columns-2.content-grid > .content-column:nth-child(1) > .button[href$=\"contact-us/\"]"
+            ],
+            [
+              ".carousel-card[data-reveal=\"up\"][data-motion-state=\"visible\"]:nth-child(1) > a[href$=\"services/\"]"
+            ],
+            [
+              "a[href$=\"services/\"] > .button"
+            ],
+            [
+              ".carousel-card[data-reveal=\"up\"][data-motion-state=\"visible\"]:nth-child(2) > a[href$=\"products/\"]"
+            ],
+            [
+              "a[href$=\"products/\"] > .button"
+            ],
+            [
+              ".section-cta.has-background.content-section > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+            ],
+            [
+              ".section-cta.has-background.content-section > .columns-2.content-grid > .content-column:nth-child(1) > h2"
+            ],
+            [
+              ".columns-2.content-grid > .content-column:nth-child(1) > h2 > strong"
+            ],
+            [
+              ".button[href$=\"projects/\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/services/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ],
+            [
+              ".button[href$=\"projects/\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/projects/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ],
+            [
+              ".text-link > span"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/contact-us/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/emergency-ac-maintenance-service/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              ".breadcrumbs > a[href$=\"services/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ],
+            [
+              ".has-background > .eyebrow"
+            ],
+            [
+              ".has-background > p:nth-child(3)"
+            ],
+            [
+              ".has-background > p:nth-child(4)"
+            ],
+            [
+              "a[href=\"tel:971 50 2420957\"]"
+            ],
+            [
+              "p:nth-child(4) > a[href$=\"mailto:info@voltronix.ae\"]"
+            ],
+            [
+              ".button[href$=\"contact-us/\"]"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/ac-duct-cleaning-services-in-dubai/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              ".breadcrumbs > a[href$=\"services/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "route": "/hvac-services/",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "targets": [
+            [
+              ".breadcrumbs > a[href=\"/\"]"
+            ],
+            [
+              ".breadcrumbs > a[href$=\"services/\"]"
+            ],
+            [
+              "span[aria-current=\"page\"]"
+            ],
+            [
+              "h1"
+            ],
+            [
+              ".internal-hero-description"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "checks": 22,
+    "failures": 0,
+    "accessibilityScans": 16,
+    "providerMode": "Browser response mocks; no live provider calls"
+  }
+}

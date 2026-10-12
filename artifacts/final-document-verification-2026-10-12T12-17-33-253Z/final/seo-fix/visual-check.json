@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-12T12:31:46.249Z",
+  "checks": [
+    {
+      "width": 390,
+      "route": "/project-portfolio/",
+      "intro": "Browse AC Experts' project portfolio in Dubai, including the Luxury Villa AC Installation project. View the published project and discuss your AC requirements.",
+      "screenshot": "portfolio-390.png"
+    },
+    {
+      "width": 390,
+      "route": "/blog/page/2/",
+      "intro": "Explore page 2 of AC Experts' blog for articles on AC maintenance, repairs, home safety and indoor air quality, with practical advice for Dubai residents.",
+      "screenshot": "blog-page-2-390.png"
+    },
+    {
+      "width": 1440,
+      "route": "/project-portfolio/",
+      "intro": "Browse AC Experts' project portfolio in Dubai, including the Luxury Villa AC Installation project. View the published project and discuss your AC requirements.",
+      "screenshot": "portfolio-1440.png"
+    },
+    {
+      "width": 1440,
+      "route": "/blog/page/2/",
+      "intro": "Explore page 2 of AC Experts' blog for articles on AC maintenance, repairs, home safety and indoor air quality, with practical advice for Dubai residents.",
+      "screenshot": "blog-page-2-1440.png"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-10-12T11:32:04.895Z",
+  "head": "dd775cc55dc6d7611baab542a8142701b4b965f6",
+  "staged": "",
+  "baselineFiles": 1387,
+  "preservedPreviousArtifacts": 735,
+  "changedExistingFiles": [
+    "docs/acexperts-requirements-verification.md"
+  ],
+  "missingFiles": [],
+  "applicationFilesChanged": false,
+  "ownedLocalTestServerStopped": true,
+  "deployed": false,
+  "liveProviderCalls": false
+}

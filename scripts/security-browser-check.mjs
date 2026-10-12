@@ -167,7 +167,7 @@ async function main() {
     await page.getByRole("button", { name: "Menu", exact: true }).click();
     const nav = page.getByRole("navigation", { name: "Main navigation" });
     check(await nav.isVisible(), "mobile menu did not open after hydration");
-    await nav.getByRole("link", { name: "Contact Us", exact: true }).click();
+    await nav.getByRole("link", { name: "Contact", exact: true }).click();
     await page.waitForURL(new URL("/contact-us/", base).href);
     await page.locator(".contact-form").waitFor();
     check(await page.getByRole("button", { name: "Menu", exact: true }).getAttribute("aria-expanded") === "false", "mobile menu did not close after navigation");
@@ -189,7 +189,7 @@ async function main() {
       page.waitForResponse((result) => result.url() === contactUrl && result.request().method() === "POST"),
       form.getByRole("button", { name: "Submit", exact: true }).click(),
     ]);
-    check(response.status() === 503, "contact endpoint changed its disabled-delivery behavior");
+    check(response.status() === 503, "Local security checks require unconfigured delivery (503); disable provider configuration for this suite");
     const body = await response.json();
     check(typeof body.message === "string" && /not been sent/i.test(body.message), "contact response did not explain that the message was unsent");
     await form.getByRole("status").filter({ hasText: body.message }).waitFor();

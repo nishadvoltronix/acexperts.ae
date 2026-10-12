@@ -1,0 +1,8 @@
+
+> acexperts-next@1.0.0 check:security
+> node scripts/security-browser-check.mjs
+
+PASS HTTP: security headers, fresh trusted nonces and SEO on four routes
+PASS browser: hydration, CSP and mobile navigation on four routes
+PASS form: Other interaction and synthetic local submission remain explicitly unsent (503)
+PASS CSP: authorized nonce works; injected inline script and onclick are blocked

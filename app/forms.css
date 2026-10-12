@@ -1,0 +1,32 @@
+.form-honeypot {
+  display: none;
+}
+
+.newsletter-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.newsletter-consent input {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  margin: 3px 0 0;
+  accent-color: var(--color-primary);
+}
+
+.newsletter-consent a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.newsletter-submit:disabled,
+.contact-form button:disabled {
+  opacity: .65;
+  cursor: wait;
+}

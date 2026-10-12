@@ -1,0 +1,3001 @@
+{
+  "checkedAt": "2026-10-12T08:21:11.862Z",
+  "baseUrl": "http://127.0.0.1:3112/",
+  "widths": [
+    320,
+    375,
+    390,
+    430,
+    768,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "cases": [
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 298.24560546875
+        },
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 402.83274841308594
+        },
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 191.67922973632812
+        },
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 244.4128532409668
+        },
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 338.7376403808594
+        }
+      ],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 320,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 448.41546630859375
+        },
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 221.53821563720703
+        },
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 379.5474548339844
+        }
+      ],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 375,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 375,
+      "documentWidth": 375,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 455.91546630859375
+        },
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 229.03821563720703
+        }
+      ],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\home-390.png"
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 390,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 475.91546630859375
+        },
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 249.03821563720703
+        }
+      ],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 430,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 430,
+      "documentWidth": 430,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 798.8262939453125
+        }
+      ],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 768,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 768,
+      "documentWidth": 768,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [
+        {
+          "tag": "IMG",
+          "class": "ACExplodedModel-module__ZZOZvG__atlas",
+          "text": "",
+          "right": 1080.737060546875
+        }
+      ],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 1024,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1024,
+      "documentWidth": 1024,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 1280,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1280,
+      "documentWidth": 1280,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\about-1440.png"
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\home-1440.png"
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\service-1440.png"
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\projects-1440.png"
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\project-1440.png"
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\article-1440.png"
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\blog-1440.png"
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\faq-1440.png"
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\products-1440.png"
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 1440,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true,
+      "screenshot": "artifacts\\shared-staging\\legacy\\screenshots\\migration\\contact-1440.png"
+    },
+    {
+      "type": "about",
+      "path": "/about/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "home",
+      "path": "/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "service",
+      "path": "/ac-installation-service/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "projects",
+      "path": "/projects/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "project",
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "article",
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "blog",
+      "path": "/blog/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "faq",
+      "path": "/faq/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "products",
+      "path": "/products/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    },
+    {
+      "type": "contact",
+      "path": "/contact-us/",
+      "width": 1920,
+      "jsErrors": [],
+      "consoleErrors": [],
+      "failedResponses": [],
+      "status": 200,
+      "fontsLoaded": true,
+      "viewportWidth": 1920,
+      "documentWidth": 1920,
+      "overflowingElements": [],
+      "missingImages": [],
+      "overflow": false,
+      "ok": true
+    }
+  ],
+  "accessibility": [
+    {
+      "path": "/about/",
+      "width": 390,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > p:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".columns-2.content-grid > .content-column:nth-child(1) > p:nth-child(2) > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".columns-2.content-grid > .content-column:nth-child(1) > .button[href$=\"contact-us/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".carousel-card[data-reveal=\"up\"][data-motion-state=\"visible\"]:nth-child(1) > a[href$=\"services/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "a[href$=\"services/\"] > .button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".carousel-card[data-reveal=\"up\"][data-motion-state=\"visible\"]:nth-child(2) > a[href$=\"products/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "a[href$=\"products/\"] > .button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".section-cta.has-background.content-section > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".section-cta.has-background.content-section > .columns-2.content-grid > .content-column:nth-child(1) > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".columns-2.content-grid > .content-column:nth-child(1) > h2 > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".button[href$=\"projects/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 30
+    },
+    {
+      "path": "/",
+      "width": 390,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".hero-tagline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".hero-tagline > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".home-hero-copy > p:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".learn-more[href$=\"ac-repair-services/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".learn-more[href$=\"ac-installation-service/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".service-card[data-reveal-delay=\"180\"] > .learn-more > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "article[data-reveal-delay=\"270\"] > .learn-more > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a[href$=\"hvac-services/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#_R_3inrb_-title"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__heading > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#_R_3inrb_-rotation"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__rotationHelp > button[type=\"button\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__buttons > button[type=\"button\"]:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(1) > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "label[for=\"_R_3inrb_-level\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "output"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__motionNote"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(5)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(6)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".container > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".promise-audience"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal=\"left\"][data-reveal-delay=\"0\"][data-motion-state=\"visible\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal=\"left\"][data-reveal-delay=\"0\"][data-motion-state=\"visible\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"50\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"50\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"100\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"100\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"150\"][data-reveal=\"right\"][data-motion-state=\"visible\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"150\"][data-reveal=\"right\"][data-motion-state=\"visible\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"200\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"200\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"250\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"250\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(1) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(2) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(3) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passes": 30
+    },
+    {
+      "path": "/about/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".section-intro > .columns-2.content-grid > .content-column:nth-child(1) > p:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".columns-2.content-grid > .content-column:nth-child(1) > p:nth-child(2) > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".columns-2.content-grid > .content-column:nth-child(1) > .button[href$=\"contact-us/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".carousel-card[data-reveal=\"up\"][data-motion-state=\"visible\"]:nth-child(1) > a[href$=\"services/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "a[href$=\"services/\"] > .button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".carousel-card[data-reveal=\"up\"][data-motion-state=\"visible\"]:nth-child(2) > a[href$=\"products/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "a[href$=\"products/\"] > .button"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".section-cta.has-background.content-section > .columns-2.content-grid > .content-column:nth-child(1) > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".section-cta.has-background.content-section > .columns-2.content-grid > .content-column:nth-child(1) > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".columns-2.content-grid > .content-column:nth-child(1) > h2 > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".button[href$=\"projects/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 30
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".hero-tagline"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".hero-tagline > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".home-hero-copy > p:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(1) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > span > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div:nth-child(4) > span > small"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".hero-scroll-cue"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".learn-more[href$=\"ac-repair-services/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".learn-more[href$=\"ac-installation-service/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".service-card[data-reveal-delay=\"180\"] > .learn-more > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "article[data-reveal-delay=\"270\"] > .learn-more > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                "a[href$=\"hvac-services/\"] > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#_R_3inrb_-title"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__heading > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "#_R_3inrb_-rotation"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__rotationHelp > button[type=\"button\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__buttons > button[type=\"button\"]:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(1) > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "label[for=\"_R_3inrb_-level\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "output"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".ACExplodedView-module__MdPhta__motionNote"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(5)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "ol > li:nth-child(6)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".why-copy > p"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "span[data-count-value=\"156\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".stat-card[data-reveal-delay=\"0\"][data-reveal=\"up\"] > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "span[data-count-value=\"15+\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"80\"] > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "span[data-count-value=\"200\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"160\"] > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "span[data-count-value=\"100%\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"240\"] > span:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".container > h2"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".promise-audience"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal=\"left\"][data-reveal-delay=\"0\"][data-motion-state=\"visible\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal=\"left\"][data-reveal-delay=\"0\"][data-motion-state=\"visible\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"50\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"50\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"100\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"100\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"150\"][data-reveal=\"right\"][data-motion-state=\"visible\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"150\"][data-reveal=\"right\"][data-motion-state=\"visible\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"200\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"200\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"250\"] > p > strong"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "div[data-reveal-delay=\"250\"] > p > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(1) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(2) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(3) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passes": 30
+    },
+    {
+      "path": "/ac-installation-service/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".breadcrumbs > a[href$=\"services/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".has-background > .eyebrow"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".has-background > p:nth-child(3)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".has-background > p:nth-child(4)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "a[href=\"tel:971 50 2420957\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                "p:nth-child(4) > a[href$=\"mailto:info@voltronix.ae\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".button[href$=\"contact-us/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/projects/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".text-link > span"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/project-portfolio/luxury-villa-ac-installation/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".breadcrumbs > a[href$=\"projects/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/10-important-questions-ask-before-signing-ac-maintenance-contract-dubai/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 2,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".breadcrumbs > a[href$=\"blog/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".article-meta > span:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".article-meta > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "time"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span:nth-child(4) > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+            },
+            {
+              "target": [
+                "span:nth-child(4) > a"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(1) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(2) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(3) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(4) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            },
+            {
+              "target": [
+                ".content-card:nth-child(5) > a > .card-copy > .text-link > span[aria-hidden=\"true\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+            }
+          ]
+        },
+        {
+          "id": "link-in-text-block",
+          "help": "Links must be distinguishable without relying on color",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(4) > a"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/blog/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/faq/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/products/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".columns-2 > .content-column:nth-child(1) > h2:nth-child(1)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".columns-2 > .content-column:nth-child(1) > h2:nth-child(2)"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".columns-2 > .content-column:nth-child(1) > h2:nth-child(2) > b"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            },
+            {
+              "target": [
+                ".button[href$=\"projects/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+            }
+          ]
+        }
+      ],
+      "passes": 29
+    },
+    {
+      "path": "/contact-us/",
+      "width": 1440,
+      "violations": [],
+      "incomplete": 1,
+      "incompleteChecks": [
+        {
+          "id": "color-contrast",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".breadcrumbs > a[href=\"/\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "span[aria-current=\"page\"]"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                "h1"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            },
+            {
+              "target": [
+                ".internal-hero-description"
+              ],
+              "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+            }
+          ]
+        }
+      ],
+      "passes": 31
+    }
+  ],
+  "interactions": [
+    {
+      "name": "Desktop services opens with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes desktop services",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile menu opens with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Escape closes mobile menu and restores focus",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Mobile navigation follows local link and closes",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ toggles with keyboard",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "FAQ closes/restores on second keyboard action",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Empty form is blocked by native validation",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Valid local form returns explicit disabled-backend 503",
+      "ok": true,
+      "detail": {
+        "status": 503,
+        "message": "Online enquiries are not available yet. Your message has not been sent. Please call +971 4 824 0002 or email info@voltronix.ae."
+      }
+    }
+  ],
+  "externalRequests": [],
+  "failures": [],
+  "interactionConsole": {
+    "type": "interaction",
+    "path": "interactive checks",
+    "jsErrors": [],
+    "consoleErrors": [],
+    "failedResponses": []
+  },
+  "summary": {
+    "viewportCases": 90,
+    "expectedViewportCases": 90,
+    "accessibilityScans": 12,
+    "interactionChecks": 9,
+    "failures": 0,
+    "passed": true
+  }
+}

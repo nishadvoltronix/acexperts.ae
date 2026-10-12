@@ -1,0 +1,93 @@
+{
+  "checkedAt": "2026-10-12T12:27:19.134Z",
+  "checks": [
+    {
+      "width": 320,
+      "labels": [
+        "Experienced Technicians",
+        "Rapid Response",
+        "ISO Certified",
+        "Dubai Coverage"
+      ],
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "width": 360,
+      "labels": [
+        "Experienced Technicians",
+        "Rapid Response",
+        "ISO Certified",
+        "Dubai Coverage"
+      ],
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "width": 390,
+      "labels": [
+        "Experienced Technicians",
+        "Rapid Response",
+        "ISO Certified",
+        "Dubai Coverage"
+      ],
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "width": 414,
+      "labels": [
+        "Experienced Technicians",
+        "Rapid Response",
+        "ISO Certified",
+        "Dubai Coverage"
+      ],
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "width": 768,
+      "labels": [
+        "Experienced Technicians",
+        "Rapid Response",
+        "ISO Certified",
+        "Dubai Coverage"
+      ],
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "width": 1024,
+      "labels": [
+        "Experienced Technicians",
+        "Rapid Response",
+        "ISO Certified",
+        "Dubai Coverage"
+      ],
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "width": 1280,
+      "labels": [
+        "Experienced Technicians",
+        "Rapid Response",
+        "ISO Certified",
+        "Dubai Coverage"
+      ],
+      "overflow": false,
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "labels": [
+        "Experienced Technicians",
+        "Rapid Response",
+        "ISO Certified",
+        "Dubai Coverage"
+      ],
+      "overflow": false,
+      "passed": true
+    }
+  ]
+}

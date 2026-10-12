@@ -1,0 +1,78 @@
+{
+  "checkedAt": "2026-10-12T12:26:28.297Z",
+  "base": "http://127.0.0.1:3112",
+  "checked": [
+    {
+      "name": "accessible loop names in both states 390px",
+      "passed": true,
+      "checks": "visible and accessible labels agree while autoplay is active and paused; aria-pressed matches; both states pass WCAG 2.2 A/AA automated rules"
+    },
+    {
+      "name": "accessible loop names in both states 1440px",
+      "passed": true,
+      "checks": "visible and accessible labels agree while autoplay is active and paused; aria-pressed matches; both states pass WCAG 2.2 A/AA automated rules"
+    },
+    {
+      "name": "responsive 320px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow"
+    },
+    {
+      "name": "responsive 390px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow",
+      "accessibility": "WCAG 2.2 A/AA automated rules passed"
+    },
+    {
+      "name": "responsive 768px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow"
+    },
+    {
+      "name": "responsive 1024px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow"
+    },
+    {
+      "name": "responsive 1440px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow",
+      "accessibility": "WCAG 2.2 A/AA automated rules passed"
+    },
+    {
+      "name": "automatic playback and suspension",
+      "passed": true,
+      "checks": "autoplay on first entry and visible reload, repeated assembled/exploded endpoints, offscreen suspension and resume, explicit Stop retained after scroll scrubbing and motion preference changes, manual restart"
+    },
+    {
+      "name": "scroll speed and hover interaction",
+      "passed": true,
+      "checks": "scroll speed controls separation, hover expands the normal stage without stopping repeated autoplay, scroll idle resumes while hovered, leaving mid-expansion keeps the loop running, manual pause survives hover"
+    },
+    {
+      "name": "animation, controls, and cleanup",
+      "passed": true,
+      "checks": "smooth synchronized animation, immediate slider, loop continuity/stop, offscreen pause/resume, rapid input cancellation, keyboard and mouse, unmount cleanup and fresh Home autoplay, About has no viewer and passes accessibility"
+    },
+    {
+      "name": "real touch rotation and page scrolling",
+      "passed": true,
+      "checks": "touch does not trigger hover expansion, native horizontal touch rotates, native vertical touch scrolls and scrubs without restarting manually paused autoplay"
+    },
+    {
+      "name": "reduced motion",
+      "passed": true,
+      "checks": "autoplay suppressed by reduced motion, instant manual controls, conditional preference resume, explicit manual pause preserved, manual restart"
+    },
+    {
+      "name": "live motion preference",
+      "passed": true,
+      "checks": "autoplay suppressed by reduced motion, instant manual controls, conditional preference resume, explicit manual pause preserved, manual restart"
+    },
+    {
+      "name": "no JavaScript",
+      "passed": true,
+      "checks": "six loaded photographic layers, full-width server-rendered exploded view, explanation and legend; controls visibly disabled"
+    }
+  ]
+}

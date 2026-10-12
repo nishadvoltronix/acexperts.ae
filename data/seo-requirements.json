@@ -1,0 +1,92 @@
+{
+    "source":  {
+                   "document":  "web modification- acexperts.docx",
+                   "sha256":  "79fc75b01983e5f24a3b2f2f5554ffdd23cf6ded0eb2179a1ed5041e12c2e365",
+                   "location":  "word/document.xml, Meta title and Description table",
+                   "method":  "Exact Word table cell text, independently extracted from original document; not generated from website metadata",
+                   "verifiedOn":  "2026-10-12"
+               },
+    "requiredHeadings":  {
+                             "/":  "Welcome to Voltronix, AC Service Company in Dubai",
+                             "/services/":  "Complete AC \u0026 HVAC Services in Dubai"
+                         },
+    "pages":  [
+                  {
+                      "route":  "/",
+                      "title":  "AC Repair Experts | AC Repair Dubai | AC Repair Services in Dubai",
+                      "description":  "Need AC Repair in Dubai? AC Repair experts provide fast, reliable, and affordable AC Repair and maintenance services. Contact us today!",
+                      "canonical":  "https://acexperts.ae/",
+                      "sourceTableRow":  2
+                  },
+                  {
+                      "route":  "/products/",
+                      "title":  "Air Conditioning Products in Dubai | Best Quality Air Conditioners Dubai",
+                      "description":  "Get reliable, expert AC service and maintenance in Dubai with AC Expert. Our licensed and experienced technicians provide quick and professional solutions for the best quality air conditioners in Dubai",
+                      "canonical":  "https://acexperts.ae/products/",
+                      "sourceTableRow":  3
+                  },
+                  {
+                      "route":  "/contact-us/",
+                      "title":  "Contact Us | Leading AC Repairing Company | Voltronix",
+                      "description":  "Contact Voltronix, the leading AC repair company. Our expert technicians offer fast and reliable AC repair services to ensure your comfort. Contact us now",
+                      "canonical":  "https://acexperts.ae/contact-us/",
+                      "sourceTableRow":  4
+                  },
+                  {
+                      "route":  "/about/",
+                      "title":  "Best AC Repair \u0026 Services in Dubai | About Us",
+                      "description":  "AC breakdown? We\u0027re here to help. Voltronix offers fast, emergency AC Repair services in Dubai. Call us now for immediate assistance",
+                      "canonical":  "https://acexperts.ae/about/",
+                      "sourceTableRow":  5
+                  },
+                  {
+                      "route":  "/emergency-ac-maintenance-service/",
+                      "title":  "AC Maintenance Dubai | Emergency AC Maintenance Services",
+                      "description":  "Available 24/7, our emergency AC maintenance team provides quick and reliable solutions to keep your home or office cool and comfortable",
+                      "canonical":  "https://acexperts.ae/emergency-ac-maintenance-service/",
+                      "sourceTableRow":  6
+                  },
+                  {
+                      "route":  "/ac-installation-service/",
+                      "title":  "Dubai\u0027s Premier AC Installation Service | Trusted AC Repair Experts",
+                      "description":  "Experience Dubai\u0027s premier AC installation service with AC Expert. As trusted AC experts, we deliver top-quality installations for residential and commercial clients. Trust us for superior cooling solutions",
+                      "canonical":  "https://acexperts.ae/ac-installation-service/",
+                      "sourceTableRow":  7
+                  },
+                  {
+                      "route":  "/services/",
+                      "title":  "Experienced AC Repairing Team | Voltronix AC Repairing Services",
+                      "description":  "Get expert AC Repair, installation, and emergency maintenance in Dubai with AC Expert. Quality service and reliable solutions for all your AC needs.",
+                      "canonical":  "https://acexperts.ae/services/",
+                      "sourceTableRow":  8
+                  },
+                  {
+                      "route":  "/ac-repair-services/",
+                      "title":  "Voltronix AC Expert Repair Services Dubai, UAE",
+                      "description":  "AC Repair Dubai -Offers expert AC Repair and maintenance in Dubai. Our licensed technicians deliver quick and effective solutions to ensure optimal cooling.",
+                      "canonical":  "https://acexperts.ae/ac-repair-services/",
+                      "sourceTableRow":  9
+                  },
+                  {
+                      "route":  "/faq/",
+                      "title":  "Expert Solutions for All Your AC Needs | AC Experts",
+                      "description":  "Access answers to frequently asked questions about AC servicing alongside repair operations and troubleshooting advice. Additional information is offered concerning regular maintenance tasks. Connect with AC Experts to gain their expertise for an efficient operation of your cooling system",
+                      "canonical":  "https://acexperts.ae/faq/",
+                      "sourceTableRow":  10
+                  },
+                  {
+                      "route":  "/projects/",
+                      "title":  "Dubai AC Services Projects | Dubai\u0027s Leading AC Experts",
+                      "description":  "Trust our experienced team for reliable and professional AC repairing services in Dubai. Learn more about our projects and book a consultation today.",
+                      "canonical":  "https://acexperts.ae/projects/",
+                      "sourceTableRow":  11
+                  },
+                  {
+                      "route":  "/preventive-ac-maintenance-service/",
+                      "title":  "AC Maintenance \u0026 Services in Dubai | Preventive AC Maintenance Service",
+                      "description":  "Keep your AC efficient with expert preventive AC maintenance in Dubai. Extend lifespan and reduce energy costs with professional service",
+                      "canonical":  "https://acexperts.ae/preventive-ac-maintenance-service/",
+                      "sourceTableRow":  12
+                  }
+              ]
+}

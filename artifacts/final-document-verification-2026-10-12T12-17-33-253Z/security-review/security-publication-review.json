@@ -1,0 +1,208 @@
+{
+  "reviewedAt": "2026-10-12T12:24:52.790Z",
+  "mode": "Read-only security, configuration, Git-publication and deployment-linkage review. No tracked edits, commits, pushes, deployments, provider submissions or infrastructure changes performed by this review.",
+  "gitPublication": {
+    "status": "Await deployment-boundary decision and final parent-run verification.",
+    "publicRepository": "nishadvoltronix/acexperts.ae",
+    "branch": "main",
+    "head": "dd775cc55dc6d7611baab542a8142701b4b965f6",
+    "deploymentRisk": "GitHub exposes seven historical vercel[bot] deployments named Production, including current HEAD. The API also reports production_environment:false, which does not establish a push is deployment-free. Vercel official documentation says every branch push can deploy. A new branch alone is not a safe no-deploy guarantee.",
+    "documentedControl": "git.deploymentEnabled in a reviewed vercel.json can disable all or selected branch deployments. No such file exists currently; do not modify deployment settings or push without resolving the explicit no-deployment constraint.",
+    "noVerifiedCommitMessageBypass": true
+  },
+  "sourceFindings": {
+    "observedNewCriticalDefects": [],
+    "environment": "All 13 .env.example keys are blank and used by implementation. Secret-bearing configuration is server-side; only approved privacy URL/version pass to client components.",
+    "failClosed": "Missing provider/store/privacy configuration or database failure yields explicit generic unavailable responses; transport errors do not expose provider/database credentials.",
+    "durability": "Shared PostgreSQL claims and rate limits, namespace/key fingerprint, pre-send committed consent, no automatic replay of pending/uncertain/timeout outcomes.",
+    "provider": "Fixed Brevo HTTPS endpoint, redirect:error, bounded timeout, strict accepted responses; contact HTML escaped and newsletter provider acceptance is not confirmation.",
+    "privacy": "Explicit boolean consent plus matching wording/notice versions; hashed email audit only. Confirmation/unsubscribe/suppression require separately verified Brevo lifecycle and operator reconciliation.",
+    "certifications": "Root confirmed the user now also verified ISO in this turn, in addition to four earlier association credentials; emergency ISO wording therefore is authorized."
+  },
+  "dependencyAudit": {
+    "productionVulnerabilities": 0,
+    "fullAuditHighFindings": 5,
+    "underlyingAdvisory": "GHSA-vfj7-8cjw-p6xm",
+    "chain": "braces -> micromatch -> fast-glob -> @next/eslint-plugin-next -> eslint-config-next",
+    "scope": "Development lint tooling; no runtime vulnerability reported by npm audit --omit=dev.",
+    "automaticFix": "npm proposes a semver-major eslint-config-next downgrade to 14.2.35. Not applied; this audit does not justify silently downgrading current Next tooling."
+  },
+  "publicationScan": {
+    "candidateSnapshot": "candidate-file-secret-size-review.json",
+    "fixtureReview": "secret-scan-fixture-review.json",
+    "conclusion": "No observed live credentials in reviewed candidate files; eight candidate lines are documented/synthetic test fixtures. Pattern scanning does not prove absolute absence. Recheck final staged files before commit.",
+    "bulkArtifacts": "Snapshot contains about 490 MB of new artifacts. Preserve locally and select only evidence needed by repository documentation.",
+    "curatedEvidence": "documentation-evidence-publish-inventory.json identifies 75 directly referenced files, 9,723,108 bytes at this snapshot; directory/wildcard references are not expanded."
+  },
+  "remainingProductionBlockers": [
+    "Explicit deployment authorization and confirmed Vercel project/environment controls; protected staging origin/direct-origin restrictions/noindex and hosted TLS remain unverified.",
+    "Hosted shared PostgreSQL provisioning, migration/runtime grants, durable storage, connection limits, backup/restore and reconciliation operations remain external setup.",
+    "Approved privacy notice/version/retention, Brevo sender/API/list/DOI template/redirect/recipient/origin configuration, and controlled authorized-address real-delivery/confirmation/unsubscribe tests remain unverified.",
+    "Development lint-tool advisory remains unresolved; current full audit is not clean.",
+    "Additional approved project records remain pending business input."
+  ],
+  "evidenceFiles": [
+    "github-deployment-linkage.json",
+    "configuration-audit-summary.json",
+    "npm-audit-production.json",
+    "npm-audit-full.json",
+    "candidate-file-secret-size-review.json",
+    "secret-scan-fixture-review.json",
+    "documentation-evidence-publish-inventory.json"
+  ],
+  "officialSources": [
+    "https://vercel.com/docs/git/vercel-for-github",
+    "https://vercel.com/docs/project-configuration/git-configuration",
+    "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm"
+  ],
+  "reviewedFileHashes": [
+    {
+      "file": ".gitignore",
+      "sha256": "1b3b2ceccddabae773c7afeb90dffe9256cc39bf5cb0674b9c4c803fac464b14"
+    },
+    {
+      "file": ".env.example",
+      "sha256": "d0cdf186df8c4e94a095a5f24d6e950a40c87026c3b2e19fcabc5701c2e39a3f"
+    },
+    {
+      "file": "package.json",
+      "sha256": "2cc99b64c9c9a2ffc2bcdd8b26c2698d92ceb327e990d48faef3135d47befc61"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "af1c677caf2907950c7af3d34d836a519081968faf03dc4951560609e871d7ef"
+    },
+    {
+      "file": "tsconfig.json",
+      "sha256": "badbdf94ee31a4430140260799ab6350edc057f6f84b158207ea1a0f91bcbe81"
+    },
+    {
+      "file": "next-env.d.ts",
+      "sha256": "1b59d4c6b83807db275d43f3cf2cc8e9323f465fab764eea091cc5becd5bad37"
+    },
+    {
+      "file": "app/api/contact/route.ts",
+      "sha256": "68b55a3b3a97f5ae069fa7be847c3cbfda06b09039607a0e73bc457d38a09c10"
+    },
+    {
+      "file": "app/api/newsletter/route.ts",
+      "sha256": "ca4cb2f22cc84867566db676bf0792895176bc925e6f4681cb067aa17223a8d9"
+    },
+    {
+      "file": "lib/contact-request.ts",
+      "sha256": "4b01dbb3d9c89ce7f04d62e44daf9d51dcac684a65448056f1a48c77343b2bef"
+    },
+    {
+      "file": "lib/form-delivery.ts",
+      "sha256": "186fe0945560f741306929e79c77b18dc9d126f0c9c879a479efec056c271f44"
+    },
+    {
+      "file": "lib/form-security.ts",
+      "sha256": "e1a918ad34dfb210c333911cd3761463eef4c94a85311fe8c2bc26b097583aaa"
+    },
+    {
+      "file": "lib/form-store.ts",
+      "sha256": "140124b63fb29a85c589a4fc9e35dc8c1e51683a7d6a49522ffbfef88c50a316"
+    },
+    {
+      "file": "lib/form-submissions.ts",
+      "sha256": "8da81c3b3d77782a5d3c4b88d9ebc851de9859604ba8f30498e1f27b0696e9c4"
+    },
+    {
+      "file": "lib/newsletter-consent.ts",
+      "sha256": "1d13d6a42517f9be1c41775d14c3b8ad418f3e8c19b127d873eb47b54cf6f149"
+    },
+    {
+      "file": "lib/newsletter-request.ts",
+      "sha256": "861201016ab10799cc1e14c60fb3731019dd43f5e3c75353124493a6e8054038"
+    },
+    {
+      "file": "lib/privacy-notice.ts",
+      "sha256": "3767612c790e77abb2727c74d9300fc8ff773616bfba64c277214c393a0ddb83"
+    },
+    {
+      "file": "db/migrations/001-form-state.sql",
+      "sha256": "fd406a6fc5c737728dc50a6be2875ee698e96dc94a11d3c92d318877e91a4981"
+    },
+    {
+      "file": "db/maintenance/form-state-retention.sql",
+      "sha256": "ddca2cab4d00b8638bb177fc58ca44db95f5418960662058a4967ab7eea00b2e"
+    },
+    {
+      "file": "components/ContactForm.tsx",
+      "sha256": "aeee9508d56034b95faa6fa517a7b9d179430a5096e0b688934867218123ebca"
+    },
+    {
+      "file": "components/NewsletterForm.tsx",
+      "sha256": "b7b06963249aecc7b8a3d9eec757aa787fb12bee6d18676274de638806b2b20a"
+    },
+    {
+      "file": "components/Footer.tsx",
+      "sha256": "9fcd33583764cf0989c0d20456ef061b7fbe9dfafc672c9fd3cfabe33f47fc70"
+    },
+    {
+      "file": "components/Header.tsx",
+      "sha256": "53ba5c0d35930e93858b59a8c4ae6b16e8bfedd8f730e6669500b3ca5d99e67e"
+    },
+    {
+      "file": "components/HomePage.tsx",
+      "sha256": "e93fa2e7a3c2af2143be4ae6e2ed57ada117f7cfc1d620765ae3246394e01dd8"
+    },
+    {
+      "file": "components/HomepageSections.tsx",
+      "sha256": "ada0c0b8c4c0e09ecc21fc55c25506cbd3c7cd9ebdb5c10e3f126895e4b12cb6"
+    },
+    {
+      "file": "components/HomepageCertifications.tsx",
+      "sha256": "400c962eb2891278b14dc8294048807797b8c715122411574161bab152621289"
+    },
+    {
+      "file": "components/PageContent.tsx",
+      "sha256": "8c8aed3a427d915a9bf35156b50f24f435c461dcf20e1dc21d723756618f4a18"
+    },
+    {
+      "file": "components/ProjectFilters.tsx",
+      "sha256": "dde31fbdfdc3555e9776b4f74d111820bb0cd6c1a79b0b180df8ce176fa60f14"
+    },
+    {
+      "file": "components/CompanyLinks.tsx",
+      "sha256": "66bc86d1c09c95a0cd57fd089c66814761593d952326b0098bd939f61e640c79"
+    },
+    {
+      "file": "components/TopStrip.tsx",
+      "sha256": "3d4ac8ed51c8968f1cc84395e4fc6fb1baf50c6288f81a9674a6dca75ec3d6b0"
+    },
+    {
+      "file": "lib/project-categories.ts",
+      "sha256": "fefc67f0680a7b6efbf4f0663396a7e5cfd2b357ffdbe550b76ad8caa8d5cd79"
+    },
+    {
+      "file": "lib/site.ts",
+      "sha256": "fbda8cd315c7deebe62d5291fffb816c4a589507b42bdb00285f8746e3042da8"
+    },
+    {
+      "file": "scripts/contact-security.test.mjs",
+      "sha256": "9142a104688374038463a30f1638d6c754df030399cc27a7a969ca64d4d013e0"
+    },
+    {
+      "file": "scripts/browser-check.mjs",
+      "sha256": "5eaf845ba9302203056c3baec0844223374e599f67dc20a622b466c961c6ef93"
+    },
+    {
+      "file": "scripts/redesign-browser-check.mjs",
+      "sha256": "dae0d4b387980876ebabefd6a24d240eade851ce308e13372e7f4851623a4af6"
+    },
+    {
+      "file": "scripts/security-browser-check.mjs",
+      "sha256": "f256c3cfb9e4018e8a093303cb30229df49ca69c96d950438b17c6659dafd220"
+    },
+    {
+      "file": "scripts/validate-redesign.mjs",
+      "sha256": "31ef72c7a14b7bd70a3f791ea9ebcf20849eca9779cbc39be536b9055bbc69ff"
+    },
+    {
+      "file": "scripts/validate.mjs",
+      "sha256": "b4c20f78245ad1834ae7c2f997f4bf07b0a2efd1aec39daf30b624c59f86f08d"
+    }
+  ]
+}

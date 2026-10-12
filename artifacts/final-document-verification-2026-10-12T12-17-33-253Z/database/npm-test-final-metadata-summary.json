@@ -1,0 +1,21 @@
+{
+  "beganAt": "2026-10-12T12:30:01.862Z",
+  "finishedAt": "2026-10-12T12:30:08.256Z",
+  "candidate": "Final ISO strip plus repaired portfolio/blog pagination metadata; two new SEO regressions",
+  "command": "npm test",
+  "exitCode": 0,
+  "baseUrl": "http://127.0.0.1:3112",
+  "database": "isolated local PostgreSQL 16.15; credentials withheld",
+  "liveProviderCalls": 0,
+  "summary": {
+    "tests": "110",
+    "suites": "0",
+    "pass": "110",
+    "fail": "0",
+    "cancelled": "0",
+    "skipped": "0",
+    "todo": "0",
+    "duration_ms": "5976.5058"
+  },
+  "log": "artifacts/final-document-verification-2026-10-12T12-17-33-253Z/database/npm-test-final-metadata.log"
+}

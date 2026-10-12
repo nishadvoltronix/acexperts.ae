@@ -1,0 +1,36 @@
+✔ original routes, canonicals, indexability and every original FAQ answer survive (3.2353ms)
+✔ all articles and content outside explicitly revised service/project/contact/logo sections are preserved (5.1296ms)
+✔ only the two reviewed protected files depart from the original snapshot; original media remains byte-identical (129.4773ms)
+✔ SEO expectations preserve the independent original Word document table (2.5712ms)
+✔ Word document metadata: / (0.5415ms)
+✔ Word document metadata: /products/ (0.1834ms)
+✔ Word document metadata: /contact-us/ (0.2104ms)
+✔ Word document metadata: /about/ (0.2175ms)
+✔ Word document metadata: /emergency-ac-maintenance-service/ (0.1722ms)
+✔ Word document metadata: /ac-installation-service/ (0.152ms)
+✔ Word document metadata: /services/ (0.1581ms)
+✔ Word document metadata: /ac-repair-services/ (0.2048ms)
+✔ Word document metadata: /faq/ (0.3896ms)
+✔ Word document metadata: /projects/ (0.3208ms)
+✔ Word document metadata: /preventive-ac-maintenance-service/ (0.1428ms)
+✔ new service pages are indexable and linked from service navigation and content (20.2102ms)
+✔ project filters classify only the published residential installation (0.2957ms)
+✔ rendered metadata, canonical, H1 and robots: / (536.1268ms)
+✔ rendered metadata, canonical, H1 and robots: /products/ (128.0245ms)
+✔ rendered metadata, canonical, H1 and robots: /contact-us/ (130.0438ms)
+✔ rendered metadata, canonical, H1 and robots: /about/ (211.4896ms)
+✔ rendered metadata, canonical, H1 and robots: /emergency-ac-maintenance-service/ (177.1047ms)
+✔ rendered metadata, canonical, H1 and robots: /ac-installation-service/ (146.1525ms)
+✔ rendered metadata, canonical, H1 and robots: /services/ (52.5225ms)
+✔ rendered metadata, canonical, H1 and robots: /ac-repair-services/ (43.036ms)
+✔ rendered metadata, canonical, H1 and robots: /faq/ (33.8429ms)
+✔ rendered metadata, canonical, H1 and robots: /projects/ (42.9957ms)
+✔ rendered metadata, canonical, H1 and robots: /preventive-ac-maintenance-service/ (39.4222ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2463.0771

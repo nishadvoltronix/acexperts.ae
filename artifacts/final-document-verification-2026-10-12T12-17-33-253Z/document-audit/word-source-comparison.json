@@ -1,0 +1,617 @@
+{
+    "checkedAt":  "2026-10-12T12:19:16.2278005Z",
+    "source":  "C:\\Users\\Nishad\\Downloads\\web modification- acexperts.docx",
+    "sha256":  "79fc75b01983e5f24a3b2f2f5554ffdd23cf6ded0eb2179a1ed5041e12c2e365",
+    "method":  "Read original ZIP word/document.xml and exact table cell text directly; concatenate Word text runs and trim outer cell whitespace only. Compare case-sensitively against data/pages.json without using SEO fixture as expected values.",
+    "paragraphCount":  86,
+    "tableRows":  12,
+    "seoChecks":  [
+                      {
+                          "row":  2,
+                          "route":  "/",
+                          "expectedTitle":  "AC Repair Experts | AC Repair Dubai | AC Repair Services in Dubai",
+                          "actualTitle":  "AC Repair Experts | AC Repair Dubai | AC Repair Services in Dubai",
+                          "titleExact":  true,
+                          "expectedDescription":  "Need AC Repair in Dubai? AC Repair experts provide fast, reliable, and affordable AC Repair and maintenance services. Contact us today!",
+                          "actualDescription":  "Need AC Repair in Dubai? AC Repair experts provide fast, reliable, and affordable AC Repair and maintenance services. Contact us today!",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/",
+                          "actualCanonical":  "https://acexperts.ae/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  3,
+                          "route":  "/products/",
+                          "expectedTitle":  "Air Conditioning Products in Dubai | Best Quality Air Conditioners Dubai",
+                          "actualTitle":  "Air Conditioning Products in Dubai | Best Quality Air Conditioners Dubai",
+                          "titleExact":  true,
+                          "expectedDescription":  "Get reliable, expert AC service and maintenance in Dubai with AC Expert. Our licensed and experienced technicians provide quick and professional solutions for the best quality air conditioners in Dubai",
+                          "actualDescription":  "Get reliable, expert AC service and maintenance in Dubai with AC Expert. Our licensed and experienced technicians provide quick and professional solutions for the best quality air conditioners in Dubai",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/products/",
+                          "actualCanonical":  "https://acexperts.ae/products/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  4,
+                          "route":  "/contact-us/",
+                          "expectedTitle":  "Contact Us | Leading AC Repairing Company | Voltronix",
+                          "actualTitle":  "Contact Us | Leading AC Repairing Company | Voltronix",
+                          "titleExact":  true,
+                          "expectedDescription":  "Contact Voltronix, the leading AC repair company. Our expert technicians offer fast and reliable AC repair services to ensure your comfort. Contact us now",
+                          "actualDescription":  "Contact Voltronix, the leading AC repair company. Our expert technicians offer fast and reliable AC repair services to ensure your comfort. Contact us now",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/contact-us/",
+                          "actualCanonical":  "https://acexperts.ae/contact-us/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  5,
+                          "route":  "/about/",
+                          "expectedTitle":  "Best AC Repair \u0026 Services in Dubai | About Us",
+                          "actualTitle":  "Best AC Repair \u0026 Services in Dubai | About Us",
+                          "titleExact":  true,
+                          "expectedDescription":  "AC breakdown? We\u0027re here to help. Voltronix offers fast, emergency AC Repair services in Dubai. Call us now for immediate assistance",
+                          "actualDescription":  "AC breakdown? We\u0027re here to help. Voltronix offers fast, emergency AC Repair services in Dubai. Call us now for immediate assistance",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/about/",
+                          "actualCanonical":  "https://acexperts.ae/about/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  6,
+                          "route":  "/emergency-ac-maintenance-service/",
+                          "expectedTitle":  "AC Maintenance Dubai | Emergency AC Maintenance Services",
+                          "actualTitle":  "AC Maintenance Dubai | Emergency AC Maintenance Services",
+                          "titleExact":  true,
+                          "expectedDescription":  "Available 24/7, our emergency AC maintenance team provides quick and reliable solutions to keep your home or office cool and comfortable",
+                          "actualDescription":  "Available 24/7, our emergency AC maintenance team provides quick and reliable solutions to keep your home or office cool and comfortable",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/emergency-ac-maintenance-service/",
+                          "actualCanonical":  "https://acexperts.ae/emergency-ac-maintenance-service/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  7,
+                          "route":  "/ac-installation-service/",
+                          "expectedTitle":  "Dubai\u0027s Premier AC Installation Service | Trusted AC Repair Experts",
+                          "actualTitle":  "Dubai\u0027s Premier AC Installation Service | Trusted AC Repair Experts",
+                          "titleExact":  true,
+                          "expectedDescription":  "Experience Dubai\u0027s premier AC installation service with AC Expert. As trusted AC experts, we deliver top-quality installations for residential and commercial clients. Trust us for superior cooling solutions",
+                          "actualDescription":  "Experience Dubai\u0027s premier AC installation service with AC Expert. As trusted AC experts, we deliver top-quality installations for residential and commercial clients. Trust us for superior cooling solutions",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/ac-installation-service/",
+                          "actualCanonical":  "https://acexperts.ae/ac-installation-service/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  8,
+                          "route":  "/services/",
+                          "expectedTitle":  "Experienced AC Repairing Team | Voltronix AC Repairing Services",
+                          "actualTitle":  "Experienced AC Repairing Team | Voltronix AC Repairing Services",
+                          "titleExact":  true,
+                          "expectedDescription":  "Get expert AC Repair, installation, and emergency maintenance in Dubai with AC Expert. Quality service and reliable solutions for all your AC needs.",
+                          "actualDescription":  "Get expert AC Repair, installation, and emergency maintenance in Dubai with AC Expert. Quality service and reliable solutions for all your AC needs.",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/services/",
+                          "actualCanonical":  "https://acexperts.ae/services/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  9,
+                          "route":  "/ac-repair-services/",
+                          "expectedTitle":  "Voltronix AC Expert Repair Services Dubai, UAE",
+                          "actualTitle":  "Voltronix AC Expert Repair Services Dubai, UAE",
+                          "titleExact":  true,
+                          "expectedDescription":  "AC Repair Dubai -Offers expert AC Repair and maintenance in Dubai. Our licensed technicians deliver quick and effective solutions to ensure optimal cooling.",
+                          "actualDescription":  "AC Repair Dubai -Offers expert AC Repair and maintenance in Dubai. Our licensed technicians deliver quick and effective solutions to ensure optimal cooling.",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/ac-repair-services/",
+                          "actualCanonical":  "https://acexperts.ae/ac-repair-services/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  10,
+                          "route":  "/faq/",
+                          "expectedTitle":  "Expert Solutions for All Your AC Needs | AC Experts",
+                          "actualTitle":  "Expert Solutions for All Your AC Needs | AC Experts",
+                          "titleExact":  true,
+                          "expectedDescription":  "Access answers to frequently asked questions about AC servicing alongside repair operations and troubleshooting advice. Additional information is offered concerning regular maintenance tasks. Connect with AC Experts to gain their expertise for an efficient operation of your cooling system",
+                          "actualDescription":  "Access answers to frequently asked questions about AC servicing alongside repair operations and troubleshooting advice. Additional information is offered concerning regular maintenance tasks. Connect with AC Experts to gain their expertise for an efficient operation of your cooling system",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/faq/",
+                          "actualCanonical":  "https://acexperts.ae/faq/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  11,
+                          "route":  "/projects/",
+                          "expectedTitle":  "Dubai AC Services Projects | Dubai\u0027s Leading AC Experts",
+                          "actualTitle":  "Dubai AC Services Projects | Dubai\u0027s Leading AC Experts",
+                          "titleExact":  true,
+                          "expectedDescription":  "Trust our experienced team for reliable and professional AC repairing services in Dubai. Learn more about our projects and book a consultation today.",
+                          "actualDescription":  "Trust our experienced team for reliable and professional AC repairing services in Dubai. Learn more about our projects and book a consultation today.",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/projects/",
+                          "actualCanonical":  "https://acexperts.ae/projects/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      },
+                      {
+                          "row":  12,
+                          "route":  "/preventive-ac-maintenance-service/",
+                          "expectedTitle":  "AC Maintenance \u0026 Services in Dubai | Preventive AC Maintenance Service",
+                          "actualTitle":  "AC Maintenance \u0026 Services in Dubai | Preventive AC Maintenance Service",
+                          "titleExact":  true,
+                          "expectedDescription":  "Keep your AC efficient with expert preventive AC maintenance in Dubai. Extend lifespan and reduce energy costs with professional service",
+                          "actualDescription":  "Keep your AC efficient with expert preventive AC maintenance in Dubai. Extend lifespan and reduce energy costs with professional service",
+                          "descriptionExact":  true,
+                          "expectedCanonical":  "https://acexperts.ae/preventive-ac-maintenance-service/",
+                          "actualCanonical":  "https://acexperts.ae/preventive-ac-maintenance-service/",
+                          "canonicalExact":  true,
+                          "indexable":  true
+                      }
+                  ],
+    "seoPassed":  11,
+    "imageCount":  15,
+    "images":  [
+                   {
+                       "entry":  "word/media/image3.png",
+                       "bytes":  150737,
+                       "sha256":  "54f8e0e640642cbe2a37a332e7187e4803642106168fd542d744396a25c752c5",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image1.png",
+                       "bytes":  70346,
+                       "sha256":  "c2b3928d9a144911fb075be3cadca6a130bcc9588dfce26f325c50078beeb581",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image15.png",
+                       "bytes":  30671,
+                       "sha256":  "40929531bf4ca184a1637cc4113c888c701411a667f11fe5002840e883c67757",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image4.png",
+                       "bytes":  165995,
+                       "sha256":  "9e21e120ff233df58dc63dc2631a623dfe4de4e0cc75737833e8963d384f198f",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image6.png",
+                       "bytes":  122470,
+                       "sha256":  "5c7810a69af561ccc06c630348045b128004e6d18d93f4ee75f4366d2f81104a",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image13.png",
+                       "bytes":  8549,
+                       "sha256":  "dba4e6fbedb57693510da0f9f5b5ccb00f5e5aa4480858de22dcaa1bf76fbadf",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image8.png",
+                       "bytes":  57517,
+                       "sha256":  "ff3fa0bb6bc911744913539db8abf4226bd96f0421f077f71fc02e046e8eeae2",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image11.png",
+                       "bytes":  7213,
+                       "sha256":  "30ae69978e233be1582d8e606186b682390c9e961efd0339403661b18d7a5d2b",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image2.png",
+                       "bytes":  89090,
+                       "sha256":  "7d85c954e8a188fdf716a2f95c1187be0f5a32310fe36723e7a0eef71c00a2d6",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image5.png",
+                       "bytes":  74749,
+                       "sha256":  "926ba29be3debfe2776ee453f486c7f1e98339f0f780a20faef70fdb304a0161",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image9.png",
+                       "bytes":  17424,
+                       "sha256":  "99bf4a1d6fabced67400b9653dfe324d98b952612609e5933c0c6b24c03d174a",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image14.png",
+                       "bytes":  68667,
+                       "sha256":  "dbadfbad862f262438978ba8e5742cadc5b092d3d8af7c6308585a8b9993d479",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image10.png",
+                       "bytes":  112385,
+                       "sha256":  "2cedc9eb3d2cf9b39969c9990f2b81e85d4cf81b8b9f062b8e7086f05e88fdfd",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image7.png",
+                       "bytes":  19968,
+                       "sha256":  "14814b19f10392e107f4f1f76e176a03f6925f3f2f67857220e3055e19b0cc45",
+                       "preservedImageMatches":  true
+                   },
+                   {
+                       "entry":  "word/media/image12.png",
+                       "bytes":  82321,
+                       "sha256":  "d5c627b7582ab1712c3910ff3acf6bddeadea0a4f44626c2a0048244c71683b4",
+                       "preservedImageMatches":  true
+                   }
+               ],
+    "paragraphs":  [
+                       {
+                           "index":  0,
+                           "text":  "Home page"
+                       },
+                       {
+                           "index":  1,
+                           "text":  ""
+                       },
+                       {
+                           "index":  2,
+                           "text":  "Plz keep the top of the header ( important)"
+                       },
+                       {
+                           "index":  3,
+                           "text":  "Change titleWelcome to Voltronix, AC Service Company in Dubai "
+                       },
+                       {
+                           "index":  4,
+                           "text":  "Missing blog section"
+                       },
+                       {
+                           "index":  5,
+                           "text":  "Missing faq section- use the same content from old site"
+                       },
+                       {
+                           "index":  6,
+                           "text":  "Add portfolio section- add some projects as well"
+                       },
+                       {
+                           "index":  7,
+                           "text":  " Add- “ Residential \u0026 Commercial “"
+                       },
+                       {
+                           "index":  8,
+                           "text":  "Add footer content"
+                       },
+                       {
+                           "index":  9,
+                           "text":  ""
+                       },
+                       {
+                           "index":  10,
+                           "text":  "https://acexperts-ae-ashy.vercel.app/ac-installation-service/"
+                       },
+                       {
+                           "index":  11,
+                           "text":  ""
+                       },
+                       {
+                           "index":  12,
+                           "text":  ""
+                       },
+                       {
+                           "index":  13,
+                           "text":  "Add one call to action-"
+                       },
+                       {
+                           "index":  14,
+                           "text":  "https://acexperts-ae-ashy.vercel.app/preventive-ac-maintenance-service/"
+                       },
+                       {
+                           "index":  15,
+                           "text":  ""
+                       },
+                       {
+                           "index":  16,
+                           "text":  "Add one call to action-"
+                       },
+                       {
+                           "index":  17,
+                           "text":  ""
+                       },
+                       {
+                           "index":  18,
+                           "text":  "https://acexperts-ae-ashy.vercel.app/ac-repair-services/"
+                       },
+                       {
+                           "index":  19,
+                           "text":  ""
+                       },
+                       {
+                           "index":  20,
+                           "text":  "One call to action- "
+                       },
+                       {
+                           "index":  21,
+                           "text":  ""
+                       },
+                       {
+                           "index":  22,
+                           "text":  "https://acexperts-ae-ashy.vercel.app/emergency-ac-maintenance-service/"
+                       },
+                       {
+                           "index":  23,
+                           "text":  "One call to action- "
+                       },
+                       {
+                           "index":  24,
+                           "text":  ""
+                       },
+                       {
+                           "index":  25,
+                           "text":  "2. Add "
+                       },
+                       {
+                           "index":  26,
+                           "text":  "Certified Professionals | Rapid Response | ISO Certified | Dubai Coverage"
+                       },
+                       {
+                           "index":  27,
+                           "text":  "https://acexperts-ae-ashy.vercel.app/projects/"
+                       },
+                       {
+                           "index":  28,
+                           "text":  ""
+                       },
+                       {
+                           "index":  29,
+                           "text":  "Change categories"
+                       },
+                       {
+                           "index":  30,
+                           "text":  "Civil and MEP not included in AcexpertsCategories- AC Repair , AC Maintenance , AC Installation , Commercial AC (HVAC)"
+                       },
+                       {
+                           "index":  31,
+                           "text":  ""
+                       },
+                       {
+                           "index":  32,
+                           "text":  "https://acexperts-ae-ashy.vercel.app/about/"
+                       },
+                       {
+                           "index":  33,
+                           "text":  ""
+                       },
+                       {
+                           "index":  34,
+                           "text":  "Design need to correct- blank space"
+                       },
+                       {
+                           "index":  35,
+                           "text":  ""
+                       },
+                       {
+                           "index":  36,
+                           "text":  ""
+                       },
+                       {
+                           "index":  37,
+                           "text":  "Design correction"
+                       },
+                       {
+                           "index":  38,
+                           "text":  "Design correction"
+                       },
+                       {
+                           "index":  39,
+                           "text":  ""
+                       },
+                       {
+                           "index":  40,
+                           "text":  "SUGGESTIONS"
+                       },
+                       {
+                           "index":  41,
+                           "text":  "1-  CREATE NEW PAGE FOR -  AC Duct Cleaning in Dubai , HVAC Services https://acamcdubai.com/ac-duct-cleaning-services-in-dubai/"
+                       },
+                       {
+                           "index":  42,
+                           "text":  ""
+                       },
+                       {
+                           "index":  43,
+                           "text":  "Then change the service section heading to “Complete AC \u0026 HVAC Services in Dubai”"
+                       },
+                       {
+                           "index":  44,
+                           "text":  "2 ADD CERTIFICATIONS- HOME PAGE"
+                       },
+                       {
+                           "index":  45,
+                           "text":  " "
+                       },
+                       {
+                           "index":  46,
+                           "text":  ""
+                       },
+                       {
+                           "index":  47,
+                           "text":  ""
+                       },
+                       {
+                           "index":  48,
+                           "text":  "Meta title and Description"
+                       },
+                       {
+                           "index":  49,
+                           "text":  "Title"
+                       },
+                       {
+                           "index":  50,
+                           "text":  "Meta Description"
+                       },
+                       {
+                           "index":  51,
+                           "text":  "Input URL"
+                       },
+                       {
+                           "index":  52,
+                           "text":  "AC Repair Experts | AC Repair Dubai | AC Repair Services in Dubai"
+                       },
+                       {
+                           "index":  53,
+                           "text":  "Need AC Repair in Dubai? AC Repair experts provide fast, reliable, and affordable AC Repair and maintenance services. Contact us today!"
+                       },
+                       {
+                           "index":  54,
+                           "text":  "https://acexperts.ae/"
+                       },
+                       {
+                           "index":  55,
+                           "text":  "Air Conditioning Products in Dubai | Best Quality Air Conditioners Dubai"
+                       },
+                       {
+                           "index":  56,
+                           "text":  "Get reliable, expert AC service and maintenance in Dubai with AC Expert. Our licensed and experienced technicians provide quick and professional solutions for the best quality air conditioners in Dubai"
+                       },
+                       {
+                           "index":  57,
+                           "text":  "https://acexperts.ae/products/"
+                       },
+                       {
+                           "index":  58,
+                           "text":  "Contact Us | Leading AC Repairing Company | Voltronix"
+                       },
+                       {
+                           "index":  59,
+                           "text":  "Contact Voltronix, the leading AC repair company. Our expert technicians offer fast and reliable AC repair services to ensure your comfort. Contact us now"
+                       },
+                       {
+                           "index":  60,
+                           "text":  "https://acexperts.ae/contact-us/"
+                       },
+                       {
+                           "index":  61,
+                           "text":  "Best AC Repair \u0026 Services in Dubai | About Us"
+                       },
+                       {
+                           "index":  62,
+                           "text":  "AC breakdown? We\u0027re here to help. Voltronix offers fast, emergency AC Repair services in Dubai. Call us now for immediate assistance"
+                       },
+                       {
+                           "index":  63,
+                           "text":  "https://acexperts.ae/about/"
+                       },
+                       {
+                           "index":  64,
+                           "text":  "AC Maintenance Dubai | Emergency AC Maintenance Services"
+                       },
+                       {
+                           "index":  65,
+                           "text":  "Available 24/7, our emergency AC maintenance team provides quick and reliable solutions to keep your home or office cool and comfortable"
+                       },
+                       {
+                           "index":  66,
+                           "text":  "https://acexperts.ae/emergency-ac-maintenance-service/"
+                       },
+                       {
+                           "index":  67,
+                           "text":  "Dubai\u0027s Premier AC Installation Service | Trusted AC Repair Experts"
+                       },
+                       {
+                           "index":  68,
+                           "text":  "Experience Dubai\u0027s premier AC installation service with AC Expert. As trusted AC experts, we deliver top-quality installations for residential and commercial clients. Trust us for superior cooling solutions"
+                       },
+                       {
+                           "index":  69,
+                           "text":  "https://acexperts.ae/ac-installation-service/"
+                       },
+                       {
+                           "index":  70,
+                           "text":  "Experienced AC Repairing Team | Voltronix AC Repairing Services"
+                       },
+                       {
+                           "index":  71,
+                           "text":  "Get expert AC Repair, installation, and emergency maintenance in Dubai with AC Expert. Quality service and reliable solutions for all your AC needs."
+                       },
+                       {
+                           "index":  72,
+                           "text":  "https://acexperts.ae/services/"
+                       },
+                       {
+                           "index":  73,
+                           "text":  "Voltronix AC Expert Repair Services Dubai, UAE"
+                       },
+                       {
+                           "index":  74,
+                           "text":  "AC Repair Dubai -Offers expert AC Repair and maintenance in Dubai. Our licensed technicians deliver quick and effective solutions to ensure optimal cooling."
+                       },
+                       {
+                           "index":  75,
+                           "text":  "https://acexperts.ae/ac-repair-services/"
+                       },
+                       {
+                           "index":  76,
+                           "text":  "Expert Solutions for All Your AC Needs | AC Experts"
+                       },
+                       {
+                           "index":  77,
+                           "text":  "Access answers to frequently asked questions about AC servicing alongside repair operations and troubleshooting advice. Additional information is offered concerning regular maintenance tasks. Connect with AC Experts to gain their expertise for an efficient operation of your cooling system"
+                       },
+                       {
+                           "index":  78,
+                           "text":  "https://acexperts.ae/faq/"
+                       },
+                       {
+                           "index":  79,
+                           "text":  "Dubai AC Services Projects | Dubai\u0027s Leading AC Experts"
+                       },
+                       {
+                           "index":  80,
+                           "text":  "Trust our experienced team for reliable and professional AC repairing services in Dubai. Learn more about our projects and book a consultation today."
+                       },
+                       {
+                           "index":  81,
+                           "text":  "https://acexperts.ae/projects/"
+                       },
+                       {
+                           "index":  82,
+                           "text":  "AC Maintenance \u0026 Services in Dubai | Preventive AC Maintenance Service"
+                       },
+                       {
+                           "index":  83,
+                           "text":  "Keep your AC efficient with expert preventive AC maintenance in Dubai. Extend lifespan and reduce energy costs with professional service"
+                       },
+                       {
+                           "index":  84,
+                           "text":  "https://acexperts.ae/preventive-ac-maintenance-service/"
+                       },
+                       {
+                           "index":  85,
+                           "text":  ""
+                       }
+                   ],
+    "userPromptAttachments":  [
+                                  {
+                                      "file":  "C:\\Users\\Nishad\\.codex\\attachments\\4afad735-2217-43ab-8719-fb5f33535dfe\\Pasted text.txt",
+                                      "sha256":  "09f3eb847ef7c5bc2351734f098aef8244468b39fac4a1d2224f27675b331424",
+                                      "reviewed":  true
+                                  },
+                                  {
+                                      "file":  "C:\\Users\\Nishad\\.codex\\attachments\\980a865a-a7c3-43cb-9eae-53466463e51f\\Pasted text.txt",
+                                      "sha256":  "6de986be6e92e3b397ea0e017703093ecd0d21610b7baacd337540f8c0171630",
+                                      "reviewed":  true
+                                  }
+                              ],
+    "runtimeVerification":  "Not performed by this source audit; fresh rendered SEO/browser tests are run separately by the root agent."
+}

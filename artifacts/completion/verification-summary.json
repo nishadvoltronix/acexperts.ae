@@ -1,0 +1,95 @@
+{
+  "checkedAt": "2026-10-12T07:39:36.329Z",
+  "dateDubai": "2026-10-12",
+  "base": "http://127.0.0.1:3112",
+  "startingCommit": "dd775cc",
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0,
+    "typeCheckingIncluded": true
+  },
+  "lint": {
+    "command": "npm run lint",
+    "exitCode": 0
+  },
+  "standaloneTypecheck": {
+    "command": "npm run typecheck",
+    "exitCode": 0
+  },
+  "tests": {
+    "tests": 61,
+    "pass": 61,
+    "fail": 0,
+    "skipped": 0,
+    "evidence": "unit-integration-seo.tap"
+  },
+  "routes": {
+    "pages": 48,
+    "expectedPages": 48,
+    "protectedFiles": 134,
+    "intentionalFileChanges": 2,
+    "articleChecks": 24,
+    "faqChecks": 67,
+    "redirects": 30,
+    "mediaRedirects": 121,
+    "linkedTargets": 869,
+    "failures": 0,
+    "passed": true
+  },
+  "responsive": {
+    "cases": 384,
+    "routes": 48,
+    "failures": 0,
+    "passed": true
+  },
+  "finalHomeWordingRecheck": {
+    "cases": 8,
+    "routes": 1,
+    "failures": 0,
+    "passed": true
+  },
+  "browser": {
+    "checks": 22,
+    "failures": 0,
+    "accessibilityScans": 16,
+    "providerMode": "Browser response mocks; no live provider calls"
+  },
+  "motion": {
+    "widths": [
+      320,
+      360,
+      390,
+      414,
+      768,
+      1024,
+      1280,
+      1440
+    ],
+    "fallbackModes": [
+      "reduced",
+      "no-javascript",
+      "no-observer",
+      "live-preference"
+    ],
+    "passed": true
+  },
+  "acViewer": {
+    "checks": 12,
+    "failures": 0
+  },
+  "securityBrowser": {
+    "exitCode": 0,
+    "checks": [
+      "fresh nonces and security headers",
+      "hydration and mobile navigation",
+      "actual local contact POST503 while provider disabled",
+      "nonce script allowed and inline/onclick probes blocked"
+    ]
+  },
+  "newsletterRoutes": {
+    "evidence": "api-route-check.json",
+    "checks": 5,
+    "failures": 0
+  },
+  "scope": "Local production build; provider success/failure mocked. Live Brevo delivery and unsubscribe not verified. No deployment, commit or push."
+}

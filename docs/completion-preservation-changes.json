@@ -1,0 +1,23 @@
+{
+  "reviewedOn": "2026-10-12",
+  "originalBaseline": "docs/redesign-baseline.json",
+  "instructionSource": "User final implementation prompt and web modification- acexperts.docx",
+  "addedRoutes": [
+    "/ac-duct-cleaning-services-in-dubai/",
+    "/hvac-services/"
+  ],
+  "files": [
+    {
+      "path": "data/pages.json",
+      "originalSha256": "ce6755230e64c1163a148a7ae85fdf8422ed91da0d10306ed5dfeaf3ed8a1bf0",
+      "sha256": "0fc650ad488dd01f8899dcf2a1a89dfa74347f191f0f6eade6074d2fa7bfc4d3",
+      "reason": "Reviewed completion changes: exact DOCX metadata for the 11 specified pages; homepage and services H1; AC project categories; two linked service pages. Also retains committed October 7 contact-brand correction and October 8 duplicate FAQ-logo removal. The October 12 full metadata audit adds the missing indexable /project-portfolio/ description using its existing single villa project and distinguishes /blog/page/2/ title and description using its existing article topics. Independent before/after comparison verifies only those three later metadata values changed; all 11 DOCX pairs, seven noindex archives, canonicals and robots remain unchanged. Article text and original FAQ answers remain protected by independent content checks."
+    },
+    {
+      "path": "app/api/contact/route.ts",
+      "originalSha256": "af34d88d3d18f97ec593eb0107883ab842bb6a2c9a17474a561283ddba0ed917",
+      "sha256": "68b55a3b3a97f5ae069fa7be847c3cbfda06b09039607a0e73bc457d38a09c10",
+      "reason": "Committed October 7 request-handler delegation replaces the original inline endpoint. Completion integrates provider delivery in the delegated server modules; focused security/integration tests protect request validation and truthful response semantics."
+    }
+  ]
+}

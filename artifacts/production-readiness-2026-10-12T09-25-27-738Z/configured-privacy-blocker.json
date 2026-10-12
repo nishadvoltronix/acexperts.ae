@@ -1,0 +1,12 @@
+{
+  "status": "BLOCKED",
+  "date": "2026-10-12",
+  "action": "Start owned loopback Next production server on 127.0.0.1:3112 with synthetic public privacy URL/version and deliberately invalid Brevo sender/list settings",
+  "result": "Automatic approval review rejected exec_command: blocked by policy",
+  "specificReasonProvided": false,
+  "processCreated": false,
+  "retriedThroughAlternativeRoute": false,
+  "priorServerStopped": true,
+  "unexecutedCheck": "node artifacts/production-readiness-2026-10-12T09-25-27-738Z/supplemental-check.mjs --configured-privacy",
+  "limits": "No configured-privacy browser result, published-policy verification or live provider result is claimed. Existing parsing/version/server mock tests and unconfigured browser tests passed."
+}

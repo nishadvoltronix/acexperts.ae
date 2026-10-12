@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-10-12T09:26:46.401Z",
+  "runs": [
+    {
+      "command": "npm audit --json",
+      "exitCode": 1,
+      "signal": null,
+      "evidence": "dependency-audit-full.json"
+    },
+    {
+      "command": "npm audit --omit=dev --json",
+      "exitCode": 0,
+      "signal": null,
+      "evidence": "dependency-audit-production.json"
+    },
+    {
+      "command": "npm ls braces micromatch fast-glob @next/eslint-plugin-next eslint-config-next --all --json",
+      "exitCode": 0,
+      "signal": null,
+      "evidence": "dependency-chain.json"
+    },
+    {
+      "command": "npm ls braces micromatch fast-glob @next/eslint-plugin-next eslint-config-next --omit=dev --all --json",
+      "exitCode": 1,
+      "signal": null,
+      "evidence": "dependency-runtime-chain.json"
+    },
+    {
+      "command": "npm view braces version versions --json",
+      "exitCode": 0,
+      "signal": null,
+      "evidence": "dependency-braces-metadata.json"
+    },
+    {
+      "command": "npm view fast-glob version dependencies --json",
+      "exitCode": 0,
+      "signal": null,
+      "evidence": "dependency-fastglob-metadata.json"
+    },
+    {
+      "command": "npm view micromatch version dependencies --json",
+      "exitCode": 0,
+      "signal": null,
+      "evidence": "dependency-micromatch-metadata.json"
+    },
+    {
+      "command": "npm view @next/eslint-plugin-next version dependencies --json",
+      "exitCode": 0,
+      "signal": null,
+      "evidence": "dependency-next-eslint-metadata.json"
+    }
+  ],
+  "reproduction": [
+    {
+      "depth": 100,
+      "characters": 201,
+      "exitCode": 0,
+      "signal": null,
+      "result": "{\"depth\":100,\"outcome\":\"returned\"}",
+      "error": null
+    },
+    {
+      "depth": 3500,
+      "characters": 7001,
+      "exitCode": 0,
+      "signal": null,
+      "result": "{\"depth\":3500,\"outcome\":\"returned\"}",
+      "error": null
+    },
+    {
+      "depth": 4500,
+      "characters": 9001,
+      "exitCode": 2,
+      "signal": null,
+      "result": "{\"depth\":4500,\"outcome\":\"RangeError\",\"message\":\"Maximum call stack size exceeded\"}",
+      "error": null
+    }
+  ],
+  "packages": [
+    {
+      "name": "braces",
+      "version": "3.0.3",
+      "developmentOnly": true
+    },
+    {
+      "name": "micromatch",
+      "version": "4.0.8",
+      "developmentOnly": true
+    },
+    {
+      "name": "fast-glob",
+      "version": "3.3.1",
+      "developmentOnly": true
+    },
+    {
+      "name": "@next/eslint-plugin-next",
+      "version": "16.3.8",
+      "developmentOnly": true
+    },
+    {
+      "name": "eslint-config-next",
+      "version": "16.3.8",
+      "developmentOnly": true
+    }
+  ],
+  "conclusion": "One advisory propagated through five development packages; no patched braces version. No package changes or audit suppression."
+}

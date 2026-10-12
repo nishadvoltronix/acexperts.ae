@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-10-12T11:29:49.983Z",
+  "base": "http://127.0.0.1:3112",
+  "externalRequests": [],
+  "preventedWrites": [],
+  "cases": [
+    {
+      "width": 1440,
+      "screenshots": [
+        "top-strip-1440.png",
+        "home-hero-1440.png",
+        "promise-band-1440.png",
+        "portfolio-1440.png",
+        "blog-1440.png",
+        "faq-closed-1440.png",
+        "group-footer-1440.png",
+        "faq-expanded-1440.png",
+        "about-intro-1440.png",
+        "about-cta-1440.png",
+        "about-insights-title-1440.png",
+        "about-insights-cards-1440.png"
+      ],
+      "aboutGeometry": {
+        "cards": [
+          {
+            "text": "Initially Voltronix AC experts began by conducting a thorough evaluation of the air conditioning system to identify any issues and determine the most effective solutions.Our Services",
+            "buttonGap": 24.1875,
+            "buttonHeight": 48
+          },
+          {
+            "text": "Profitably Voltronix AC experts optimized the air conditioning system with cost-effective methods and their specialized knowledge, resulting in a profitable benefit for the client. Our Products",
+            "buttonGap": 24.1875,
+            "buttonHeight": 48
+          }
+        ],
+        "insightsGap": 28,
+        "documentWidth": 1440,
+        "viewportWidth": 1440
+      }
+    },
+    {
+      "width": 390,
+      "screenshots": [
+        "top-strip-390.png",
+        "home-hero-390.png",
+        "promise-band-390.png",
+        "portfolio-390.png",
+        "blog-390.png",
+        "faq-closed-390.png",
+        "group-footer-390.png",
+        "faq-expanded-390.png",
+        "about-intro-390.png",
+        "about-cta-390.png",
+        "about-insights-title-390.png",
+        "about-insights-cards-390.png"
+      ],
+      "aboutGeometry": {
+        "cards": [
+          {
+            "text": "Initially Voltronix AC experts began by conducting a thorough evaluation of the air conditioning system to identify any issues and determine the most effective solutions.Our Services",
+            "buttonGap": 24.5,
+            "buttonHeight": 48
+          },
+          {
+            "text": "Profitably Voltronix AC experts optimized the air conditioning system with cost-effective methods and their specialized knowledge, resulting in a profitable benefit for the client. Our Products",
+            "buttonGap": 24.5,
+            "buttonHeight": 48
+          }
+        ],
+        "insightsGap": 28,
+        "documentWidth": 390,
+        "viewportWidth": 390
+      }
+    }
+  ],
+  "passed": true
+}

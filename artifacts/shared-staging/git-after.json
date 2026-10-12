@@ -1,0 +1,389 @@
+{
+  "checkedAt": "2026-10-12T08:39:24.444Z",
+  "head": "dd775cc55dc6d7611baab542a8142701b4b965f6",
+  "branch": "main",
+  "staged": [],
+  "baseline": {
+    "trackedModified": 21,
+    "newNonArtifacts": 24,
+    "priorArtifacts": 315
+  },
+  "priorArtifactsPreserved": 315,
+  "missingExisting": [],
+  "changedExisting": [
+    "README.md",
+    "components/ContactForm.tsx",
+    "components/Footer.tsx",
+    "components/NewsletterForm.tsx",
+    "components/PageContent.tsx",
+    "lib/contact-request.ts",
+    "package.json",
+    ".env.example",
+    "docs/acexperts-staging-readiness-report.md",
+    "docs/delivery-configuration.md",
+    "lib/form-delivery.ts",
+    "lib/form-security.ts",
+    "lib/form-submissions.ts",
+    "lib/newsletter-request.ts",
+    "scripts/form-delivery.test.mjs",
+    "scripts/staging-delivery.test.mjs"
+  ],
+  "unexpectedNewTrackedModifications": [],
+  "secretPatternScan": {
+    "files": 58,
+    "findings": [],
+    "limitation": "Recognizable token patterns only; not proof of external log redaction or absence of every possible secret."
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "status": "modified",
+      "bytes": 19062,
+      "sha256": "9c4e2eeb61d62e419c36212b47b59ca0b73e9050af9c049a5b321fae6c9a9eea"
+    },
+    {
+      "path": "app/api/contact/route.ts",
+      "status": "modified",
+      "bytes": 186,
+      "sha256": "68b55a3b3a97f5ae069fa7be847c3cbfda06b09039607a0e73bc457d38a09c10"
+    },
+    {
+      "path": "app/globals.css",
+      "status": "modified",
+      "bytes": 364,
+      "sha256": "1549845e72e3ce69ec4bb22f14c6468c2ad28e1f309be3d70ebf1f95b15c7d97"
+    },
+    {
+      "path": "components/ContactForm.tsx",
+      "status": "modified",
+      "bytes": 4691,
+      "sha256": "aeee9508d56034b95faa6fa517a7b9d179430a5096e0b688934867218123ebca"
+    },
+    {
+      "path": "components/Footer.tsx",
+      "status": "modified",
+      "bytes": 3673,
+      "sha256": "9fcd33583764cf0989c0d20456ef061b7fbe9dfafc672c9fd3cfabe33f47fc70"
+    },
+    {
+      "path": "components/Header.tsx",
+      "status": "modified",
+      "bytes": 4206,
+      "sha256": "3f0499d002e22491f123b02a668ba5952b757f94c3a149fc59d07bef140c6154"
+    },
+    {
+      "path": "components/HomePage.tsx",
+      "status": "modified",
+      "bytes": 7709,
+      "sha256": "4ce7ef6d85c07a64fc1bb2feee67bb596eadb0ec11ed34ee0594a4631208d724"
+    },
+    {
+      "path": "components/NewsletterForm.tsx",
+      "status": "modified",
+      "bytes": 3018,
+      "sha256": "b7b06963249aecc7b8a3d9eec757aa787fb12bee6d18676274de638806b2b20a"
+    },
+    {
+      "path": "components/PageContent.tsx",
+      "status": "modified",
+      "bytes": 10594,
+      "sha256": "a62a3e8479a743c14786a45c55f39f6fd4c7deac47cd514398bccdaee790b275"
+    },
+    {
+      "path": "components/ProjectFilters.tsx",
+      "status": "modified",
+      "bytes": 2532,
+      "sha256": "dde31fbdfdc3555e9776b4f74d111820bb0cd6c1a79b0b180df8ce176fa60f14"
+    },
+    {
+      "path": "data/pages.json",
+      "status": "modified",
+      "bytes": 1010188,
+      "sha256": "cacc701e563eb9f8f8b3633df3787eb676600d5521da09283771f3602a443bd5"
+    },
+    {
+      "path": "lib/contact-request.ts",
+      "status": "modified",
+      "bytes": 4379,
+      "sha256": "4b01dbb3d9c89ce7f04d62e44daf9d51dcac684a65448056f1a48c77343b2bef"
+    },
+    {
+      "path": "lib/site.ts",
+      "status": "modified",
+      "bytes": 1314,
+      "sha256": "fbda8cd315c7deebe62d5291fffb816c4a589507b42bdb00285f8746e3042da8"
+    },
+    {
+      "path": "package-lock.json",
+      "status": "modified",
+      "bytes": 248083,
+      "sha256": "af1c677caf2907950c7af3d34d836a519081968faf03dc4951560609e871d7ef"
+    },
+    {
+      "path": "package.json",
+      "status": "modified",
+      "bytes": 1666,
+      "sha256": "2cc99b64c9c9a2ffc2bcdd8b26c2698d92ceb327e990d48faef3135d47befc61"
+    },
+    {
+      "path": "scripts/ac-viewer-browser-check.mjs",
+      "status": "modified",
+      "bytes": 29192,
+      "sha256": "68990370917bbd86458d45baf6ff6c53de43566e2c3c80c3efbc82e0ec337e4d"
+    },
+    {
+      "path": "scripts/browser-check.mjs",
+      "status": "modified",
+      "bytes": 16694,
+      "sha256": "fc577129d9872acbebb1c53f5963d6243552699fb5aaca8355204c24d67c2c42"
+    },
+    {
+      "path": "scripts/contact-security.test.mjs",
+      "status": "modified",
+      "bytes": 11152,
+      "sha256": "9142a104688374038463a30f1638d6c754df030399cc27a7a969ca64d4d013e0"
+    },
+    {
+      "path": "scripts/motion-browser-check.mjs",
+      "status": "modified",
+      "bytes": 7542,
+      "sha256": "8951844ab5861d2e5f6f3f3d7f965a51a468b10f1ebf0f8e336e3b84d32f93ca"
+    },
+    {
+      "path": "scripts/redesign-browser-check.mjs",
+      "status": "modified",
+      "bytes": 27402,
+      "sha256": "554890f97ed19c28f64fe02d5bd2e30d2e30d87a659a7f93a18e6b530a12c349"
+    },
+    {
+      "path": "scripts/responsive-layout-check.mjs",
+      "status": "modified",
+      "bytes": 11608,
+      "sha256": "e439508bc4af353e64abef1d3e8eb15ebe6de9662c17ba3a56e02792332622dc"
+    },
+    {
+      "path": "scripts/security-browser-check.mjs",
+      "status": "modified",
+      "bytes": 12553,
+      "sha256": "9cdc17eca8d161a734ebf37b279ff55384ad990fb30102a9c457d325e76bd43c"
+    },
+    {
+      "path": "scripts/validate-redesign.mjs",
+      "status": "modified",
+      "bytes": 16526,
+      "sha256": "31ef72c7a14b7bd70a3f791ea9ebcf20849eca9779cbc39be536b9055bbc69ff"
+    },
+    {
+      "path": "scripts/validate.mjs",
+      "status": "modified",
+      "bytes": 24814,
+      "sha256": "b4c20f78245ad1834ae7c2f997f4bf07b0a2efd1aec39daf30b624c59f86f08d"
+    },
+    {
+      "path": "tsconfig.json",
+      "status": "modified",
+      "bytes": 594,
+      "sha256": "badbdf94ee31a4430140260799ab6350edc057f6f84b158207ea1a0f91bcbe81"
+    },
+    {
+      "path": ".env.example",
+      "status": "untracked",
+      "bytes": 1572,
+      "sha256": "d0cdf186df8c4e94a095a5f24d6e950a40c87026c3b2e19fcabc5701c2e39a3f"
+    },
+    {
+      "path": "app/api/newsletter/route.ts",
+      "status": "untracked",
+      "bytes": 195,
+      "sha256": "ca4cb2f22cc84867566db676bf0792895176bc925e6f4681cb067aa17223a8d9"
+    },
+    {
+      "path": "app/completion-home.css",
+      "status": "untracked",
+      "bytes": 7011,
+      "sha256": "03338cc5173a40d6999163ab7300afbbcf1a1f935dce5692ac174c27c0e13164"
+    },
+    {
+      "path": "app/completion-services.css",
+      "status": "untracked",
+      "bytes": 1191,
+      "sha256": "673b4a54dc46d345379e8afba09818911ff4e300261a9c028efce1934b78484f"
+    },
+    {
+      "path": "app/forms.css",
+      "status": "untracked",
+      "bytes": 524,
+      "sha256": "cbcfa70c1d2424e84b3a987e39c34c0efaaad5651637ed2c316392d05fbac7cd"
+    },
+    {
+      "path": "components/CompanyLinks.tsx",
+      "status": "untracked",
+      "bytes": 1857,
+      "sha256": "66bc86d1c09c95a0cd57fd089c66814761593d952326b0098bd939f61e640c79"
+    },
+    {
+      "path": "components/HomepageSections.tsx",
+      "status": "untracked",
+      "bytes": 3074,
+      "sha256": "ada0c0b8c4c0e09ecc21fc55c25506cbd3c7cd9ebdb5c10e3f126895e4b12cb6"
+    },
+    {
+      "path": "components/TopStrip.tsx",
+      "status": "untracked",
+      "bytes": 889,
+      "sha256": "3d4ac8ed51c8968f1cc84395e4fc6fb1baf50c6288f81a9674a6dca75ec3d6b0"
+    },
+    {
+      "path": "data/seo-requirements.json",
+      "status": "untracked",
+      "bytes": 6532,
+      "sha256": "f01b35cf3a38bc56ba698bdc89bf105afa5e7c2f533ad2bec1078294ad0ef791"
+    },
+    {
+      "path": "db/maintenance/form-state-retention.sql",
+      "status": "untracked",
+      "bytes": 694,
+      "sha256": "ddca2cab4d00b8638bb177fc58ca44db95f5418960662058a4967ab7eea00b2e"
+    },
+    {
+      "path": "db/migrations/001-form-state.sql",
+      "status": "untracked",
+      "bytes": 4589,
+      "sha256": "fd406a6fc5c737728dc50a6be2875ee698e96dc94a11d3c92d318877e91a4981"
+    },
+    {
+      "path": "docs/acexperts-completion-plan.md",
+      "status": "untracked",
+      "bytes": 3677,
+      "sha256": "8e1ee492ce585da01f5195786c078210f18f85a6dbf7b913a7eb77ace6cd7e15"
+    },
+    {
+      "path": "docs/acexperts-completion-report.md",
+      "status": "untracked",
+      "bytes": 14431,
+      "sha256": "dde5d1fd8d372cc7f51d348f354c6a1948ef7f8600916791cf6540437cb5d9a0"
+    },
+    {
+      "path": "docs/acexperts-staging-readiness-report.md",
+      "status": "untracked",
+      "bytes": 22134,
+      "sha256": "9180098b355bce6fa7878e99610dc4b8e6bf4565967bf657acd79306e638755e"
+    },
+    {
+      "path": "docs/completion-preservation-changes.json",
+      "status": "untracked",
+      "bytes": 1370,
+      "sha256": "c48f673b3c3a83a92037f1ea68079c2d4594bcb913f08cd13d8cf2b9c389f7d5"
+    },
+    {
+      "path": "docs/delivery-configuration.md",
+      "status": "untracked",
+      "bytes": 28045,
+      "sha256": "318c84c19e2a7380e6f988b40b6d9b80c874313f866f85ccd77629fab8c6edd9"
+    },
+    {
+      "path": "docs/staging-configuration-checklist.md",
+      "status": "untracked",
+      "bytes": 13616,
+      "sha256": "48c52cf3ec637bf20e69b3e39584682b25c2fa3c5d4f3c292138386ba494c0a8"
+    },
+    {
+      "path": "lib/form-delivery.ts",
+      "status": "untracked",
+      "bytes": 6137,
+      "sha256": "186fe0945560f741306929e79c77b18dc9d126f0c9c879a479efec056c271f44"
+    },
+    {
+      "path": "lib/form-security.ts",
+      "status": "untracked",
+      "bytes": 5703,
+      "sha256": "e1a918ad34dfb210c333911cd3761463eef4c94a85311fe8c2bc26b097583aaa"
+    },
+    {
+      "path": "lib/form-store.ts",
+      "status": "untracked",
+      "bytes": 12062,
+      "sha256": "140124b63fb29a85c589a4fc9e35dc8c1e51683a7d6a49522ffbfef88c50a316"
+    },
+    {
+      "path": "lib/form-submissions.ts",
+      "status": "untracked",
+      "bytes": 2400,
+      "sha256": "8da81c3b3d77782a5d3c4b88d9ebc851de9859604ba8f30498e1f27b0696e9c4"
+    },
+    {
+      "path": "lib/newsletter-consent.ts",
+      "status": "untracked",
+      "bytes": 262,
+      "sha256": "1d13d6a42517f9be1c41775d14c3b8ad418f3e8c19b127d873eb47b54cf6f149"
+    },
+    {
+      "path": "lib/newsletter-request.ts",
+      "status": "untracked",
+      "bytes": 4134,
+      "sha256": "861201016ab10799cc1e14c60fb3731019dd43f5e3c75353124493a6e8054038"
+    },
+    {
+      "path": "lib/privacy-notice.ts",
+      "status": "untracked",
+      "bytes": 739,
+      "sha256": "3767612c790e77abb2727c74d9300fc8ff773616bfba64c277214c393a0ddb83"
+    },
+    {
+      "path": "lib/project-categories.ts",
+      "status": "untracked",
+      "bytes": 824,
+      "sha256": "fefc67f0680a7b6efbf4f0663396a7e5cfd2b357ffdbe550b76ad8caa8d5cd79"
+    },
+    {
+      "path": "scripts/completion-browser-check.mjs",
+      "status": "untracked",
+      "bytes": 10128,
+      "sha256": "a5b0d021ca0cc4381ad983f41dc746548d55a7eb25422fb8216bb4e55815311f"
+    },
+    {
+      "path": "scripts/form-delivery.test.mjs",
+      "status": "untracked",
+      "bytes": 14112,
+      "sha256": "ea3c714de37a3029f5a691d95fdade9be0fa444561206d8aeb47523cb03dc42b"
+    },
+    {
+      "path": "scripts/helpers/mock-form-store.mjs",
+      "status": "untracked",
+      "bytes": 2501,
+      "sha256": "3a7b335cadeefe7a7bcc591c49c8993122601cbec12f283d7f6a8caaff9db5e7"
+    },
+    {
+      "path": "scripts/helpers/shared-store-worker.mjs",
+      "status": "untracked",
+      "bytes": 1598,
+      "sha256": "6e6df3538d12989645ad047d229fd5a46c984de645412cf77fcf88122aa9c8aa"
+    },
+    {
+      "path": "scripts/preservation-contract.test.mjs",
+      "status": "untracked",
+      "bytes": 2502,
+      "sha256": "14d7ca173f702acdc03e3574d4471c8bccdde82587acd66c0a12cff9a6bb381b"
+    },
+    {
+      "path": "scripts/seo-metadata.test.mjs",
+      "status": "untracked",
+      "bytes": 6457,
+      "sha256": "1dd0043bac7527aed66364448ad0edcc1816522f419f7842c22bbd0a77119f9c"
+    },
+    {
+      "path": "scripts/shared-store.test.mjs",
+      "status": "untracked",
+      "bytes": 21031,
+      "sha256": "a6e4f1d05a1f04853d43e3e51e42ca5daceb0aada794e1485bfc140a3b609f5a"
+    },
+    {
+      "path": "scripts/staging-delivery.test.mjs",
+      "status": "untracked",
+      "bytes": 22732,
+      "sha256": "f2fff295e150a545dc52ed712245c27dd272bd6230cba8843c0824eb93122531"
+    }
+  ],
+  "generatedNextEnvRestored": true,
+  "finalGitDiffCheckPassed": true
+}

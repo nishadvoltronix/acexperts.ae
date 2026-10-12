@@ -5,20 +5,16 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { services, site } from "@/lib/site";
 import { BrandLogo, Icon } from "./ui";
+import { TopStrip } from "./TopStrip";
 
 const primaryLinks = [
   { title: "Home", route: "/" },
+  { title: "About", route: "/about/" },
   { title: "Services", route: "/services/" },
-  { title: "About Us", route: "/about/" },
-  { title: "Why Us", route: "/#why-us" },
-  { title: "Blogs", route: "/blog/" },
-  { title: "Contact Us", route: "/contact-us/" },
-];
-
-const additionalLinks = [
-  { title: "Our Projects", route: "/projects/" },
+  { title: "Projects", route: "/projects/" },
   { title: "Products", route: "/products/" },
-  { title: "Frequently Asked Questions", route: "/faq/" },
+  { title: "Blog", route: "/blog/" },
+  { title: "Contact", route: "/contact-us/" },
 ];
 
 export function Header() {
@@ -53,6 +49,8 @@ export function Header() {
   }
 
   return (
+    <>
+    <TopStrip />
     <header className="site-header">
       <div className="navigation-bar container">
         <Link
@@ -95,11 +93,11 @@ export function Header() {
                 </Link>
                 {item.route === "/services/" && (
                   <details className="nav-dropdown">
-                    <summary aria-label="Service pages and more">
+                    <summary aria-label="Service pages">
                       <Icon name="arrow" size={12} />
                     </summary>
                     <ul>
-                      {[...services, ...additionalLinks].map((service) => (
+                      {services.map((service) => (
                         <li key={service.route}>
                           <Link
                             href={service.route}
@@ -128,5 +126,6 @@ export function Header() {
         </a>
       </div>
     </header>
+    </>
   );
 }

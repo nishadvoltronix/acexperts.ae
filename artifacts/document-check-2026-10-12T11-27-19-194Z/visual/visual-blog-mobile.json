@@ -1,0 +1,34 @@
+{
+  "width": 390,
+  "height": 1100,
+  "screenshots": [
+    "blog-card-1-390.png",
+    "blog-card-2-390.png",
+    "blog-card-3-390.png"
+  ],
+  "blocks": [
+    {
+      "top": 329.296875,
+      "bottom": 862.796875,
+      "height": 533.5,
+      "headerBottom": 76,
+      "viewportHeight": 1100
+    },
+    {
+      "top": 328.796875,
+      "bottom": 862.296875,
+      "height": 533.5,
+      "headerBottom": 76,
+      "viewportHeight": 1100
+    },
+    {
+      "top": 304.296875,
+      "bottom": 888.171875,
+      "height": 583.875,
+      "headerBottom": 76,
+      "viewportHeight": 1100
+    }
+  ],
+  "screenshotLimitation": "The taller-than-viewport whole-blog element screenshot includes sticky header positioning during capture. These individual card screenshots preserve the normal viewport.",
+  "passed": true
+}

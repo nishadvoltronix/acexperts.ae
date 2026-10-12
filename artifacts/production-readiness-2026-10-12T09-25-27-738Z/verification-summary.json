@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-10-12T10:02:01.697Z",
+  "decision": "NOT READY",
+  "head": "dd775cc55dc6d7611baab542a8142701b4b965f6",
+  "staged": "",
+  "buildLintTypecheck": "COMPLETE; final commands exited 0",
+  "automatedTests": {
+    "passed": 108,
+    "failed": 0,
+    "skipped": 0
+  },
+  "checks": {
+    "routes": {
+      "pages": 48,
+      "expectedPages": 48,
+      "protectedFiles": 134,
+      "intentionalFileChanges": 2,
+      "articleChecks": 24,
+      "faqChecks": 67,
+      "redirects": 30,
+      "mediaRedirects": 121,
+      "linkedTargets": 869,
+      "failures": 0,
+      "passed": true
+    },
+    "responsive": {
+      "cases": 384,
+      "routes": 48,
+      "failures": 0,
+      "passed": true
+    },
+    "completion": {
+      "checks": 25,
+      "failures": 0,
+      "accessibilityScans": 16,
+      "providerMode": "Browser response mocks; no live provider calls"
+    },
+    "migrationBrowser": {
+      "viewportCases": 90,
+      "expectedViewportCases": 90,
+      "accessibilityScans": 12,
+      "interactionChecks": 9,
+      "failures": 0,
+      "passed": true
+    },
+    "redesignBrowser": {
+      "viewportCases": 432,
+      "expectedViewportCases": 432,
+      "accessibilityScans": 59,
+      "interactionChecks": 25,
+      "designConsistencyChecks": 432,
+      "failures": 0,
+      "passed": true
+    },
+    "migrationValidator": {
+      "sourceUrls": 76,
+      "renderedPages": 48,
+      "redirects": 30,
+      "targetChecks": 869,
+      "articleChecks": 24,
+      "failures": 0,
+      "passed": true
+    },
+    "motionGroups": 12,
+    "viewerGroups": 14
+  },
+  "dependencyAudits": {
+    "full": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 5,
+      "critical": 0,
+      "total": 5
+    },
+    "production": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "lighthouse": {
+    "mobile": {
+      "categories": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 3272.25255,
+      "cls": 0
+    },
+    "desktop": {
+      "categories": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcpMs": 812.7539999999999,
+      "cls": 0
+    }
+  },
+  "localRecovery": {
+    "verifiedAtUtc": "2026-10-12T09:38:39.954Z",
+    "timezone": "Asia/Dubai",
+    "syntheticLocalDatabaseOnly": true,
+    "productionBackupConfigured": false,
+    "liveProviderCalls": 0,
+    "checks": {
+      "ownedLoopbackClusterAndMigration": true,
+      "syntheticAllOutcomeStatesAndNeighborSeeded": true,
+      "logicalBackupRestoresExactScopedState": true,
+      "restoredClaimsOutcomesIdsAndRateBudget": true,
+      "restoredRuntimeGrantsAndRestrictions": true,
+      "restoredConsentConstraint": true,
+      "restoredNamespaceFingerprintRejectsWrongKey": true,
+      "reapplyingOneTimeMigrationFailsWithoutDataLoss": true,
+      "retentionDeletesOnlyExpiredScopedConsentAndTerminalClaims": true,
+      "retentionPreservesCurrentAmbiguousAndNeighborRows": true,
+      "retentionIsRepeatable": true,
+      "originalHbaRestored": true
+    },
+    "passed": true,
+    "cleanup": true,
+    "phase": "complete",
+    "postgresVersion": "16.15",
+    "fixtureCounts": {
+      "namespace_settings": 2,
+      "rate_limits": 2,
+      "submissions": 10,
+      "consent_events": 3
+    },
+    "syntheticBackupMilliseconds": 278,
+    "backupBytes": 14147,
+    "backupSha256": "010a9433510fb95da819449ef550f105c6d377c3845ace51deae330720a3f1c6",
+    "backupLocation": "node_modules/.cache/acexperts-postgres/recovery-fixtures/386efb7a8c604f35a1b0e0cedf5a1453/synthetic-forms.dump",
+    "syntheticRestoreMilliseconds": 235,
+    "localClusterLeftRunningForFurtherTests": true
+  },
+  "configuredPrivacyProbe": {
+    "status": "BLOCKED",
+    "date": "2026-10-12",
+    "action": "Start owned loopback Next production server on 127.0.0.1:3112 with synthetic public privacy URL/version and deliberately invalid Brevo sender/list settings",
+    "result": "Automatic approval review rejected exec_command: blocked by policy",
+    "specificReasonProvided": false,
+    "processCreated": false,
+    "retriedThroughAlternativeRoute": false,
+    "priorServerStopped": true,
+    "unexecutedCheck": "node artifacts/production-readiness-2026-10-12T09-25-27-738Z/supplemental-check.mjs --configured-privacy",
+    "limits": "No configured-privacy browser result, published-policy verification or live provider result is claimed. Existing parsing/version/server mock tests and unconfigured browser tests passed."
+  },
+  "cleanup": {
+    "checkedAt": "2026-10-12T10:01:00.959Z",
+    "ownedTestServicesStopped": {
+      "next3112": true,
+      "postgres55432": true
+    },
+    "productionServicesTouched": false,
+    "otherUserServersTouched": false,
+    "configuredPrivacyServerCreated": false
+  },
+  "preservation": {
+    "previousArtifacts": 550,
+    "originalProtectedArtifacts": 315,
+    "missingFiles": [],
+    "changedExistingArtifacts": []
+  },
+  "liveBrevo": "NOT VERIFIED; no live sends authorized or performed",
+  "deployed": false,
+  "productionReady": false
+}

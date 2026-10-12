@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-12T12:27:56.696Z",
+  "changes": [
+    {
+      "route": "/blog/page/2/",
+      "field": "title",
+      "before": "AC Repair Updated Blogs and News | Voltronix",
+      "after": "AC Repair Updated Blogs and News - Page 2 | Voltronix"
+    },
+    {
+      "route": "/blog/page/2/",
+      "field": "description",
+      "before": "Get expert tips, industry updates, and professional advice to keep your air conditioner in top condition. Explore our regularly updated content for the best AC maintenance and repair insights",
+      "after": "Explore page 2 of AC Experts' blog for articles on AC maintenance, repairs, home safety and indoor air quality, with practical advice for Dubai residents."
+    },
+    {
+      "route": "/project-portfolio/",
+      "field": "description",
+      "before": "",
+      "after": "Browse AC Experts' project portfolio in Dubai, including the Luxury Villa AC Installation project. View the published project and discuss your AC requirements."
+    }
+  ],
+  "beforePageDataSha256": "cacc701e563eb9f8f8b3633df3787eb676600d5521da09283771f3602a443bd5",
+  "afterPageDataSha256": "0fc650ad488dd01f8899dcf2a1a89dfa74347f191f0f6eade6074d2fa7bfc4d3",
+  "originalBaselineUnchanged": true,
+  "allOther46PagesUnchanged": true,
+  "sevenNoindexArchivesUnchanged": true,
+  "all11WordMetadataPairsUnchanged": true,
+  "allCanonicalRobotsContentFaqSectionsAndMediaUnchanged": true,
+  "passed": true
+}

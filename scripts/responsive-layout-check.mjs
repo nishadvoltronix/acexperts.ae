@@ -8,7 +8,8 @@ if (!["localhost", "127.0.0.1", "[::1]"].includes(base.hostname)) {
   throw new Error("BASE_URL must use a loopback host.");
 }
 const pages = JSON.parse(await readFile("data/pages.json", "utf8"));
-const widths = (process.env.WIDTHS || "320,390,1440").split(",").map(Number);
+const widths = (process.env.WIDTHS || "320,360,390,414,768,1024,1280,1440").split(",").map(Number);
+const outputDir = process.env.ARTIFACT_DIR || "artifacts";
 const representatives = new Map([
   ["/", "home"], ["/about/", "about"],
   ["/ac-installation-service/", "service"], ["/services/", "services"],
@@ -20,11 +21,8 @@ const representatives = new Map([
 ]);
 const routes = process.env.ROUTES ? pages.filter((page) => process.env.ROUTES.split(",").includes(page.route)) : pages;
 const jobs = widths.flatMap((width) => routes.map((page) => ({ ...page, width })));
-if (!process.env.WIDTHS && !process.env.ROUTES) {
-  jobs.push(...pages.filter((page) => representatives.has(page.route)).map((page) => ({ ...page, width: 768 })));
-}
 const report = { checkedAt: new Date().toISOString(), base: base.href, cases: [], failures: [] };
-await mkdir("artifacts", { recursive: true });
+await mkdir(outputDir, { recursive: true });
 const browser = await chromium.launch({ channel: "chrome", headless: true });
 let next = 0;
 
@@ -149,7 +147,7 @@ async function worker() {
       if (entry.missingImages.length) entry.pendingImageRequests = [...pendingImages];
       entry.ok = entry.status === 200 && entry.documentWidth <= job.width + 1 && !entry.textOverflow.length && !entry.controlOverflow.length && !entry.buttonOverlaps.length && !entry.clippedControls.length && !entry.missingImages.length && !entry.alignmentIssues.length && entry.tableScroll.every((table) => table.reachable) && !entry.errors.length;
       if (representatives.has(job.route) && [390, 1440].includes(job.width) && process.env.SCREENSHOTS !== "0") {
-        entry.screenshot = `artifacts/responsive-${representatives.get(job.route)}-${job.width}.png`;
+        entry.screenshot = `${outputDir}/responsive-${representatives.get(job.route)}-${job.width}.png`;
         await page.screenshot({ path: entry.screenshot, fullPage: true, animations: "disabled" });
       }
     } catch (error) {
@@ -179,6 +177,6 @@ try {
 }
 report.cases.sort((a, b) => a.width - b.width || a.route.localeCompare(b.route));
 report.summary = { cases: report.cases.length, routes: new Set(report.cases.map((entry) => entry.route)).size, failures: report.failures.length, passed: report.cases.length === jobs.length && !report.failures.length };
-await writeFile("artifacts/responsive-layout-check.json", JSON.stringify(report, null, 2) + "\n");
+await writeFile(`${outputDir}/responsive-layout-check.json`, JSON.stringify(report, null, 2) + "\n");
 console.log(JSON.stringify(report.summary, null, 2));
 if (!report.summary.passed) process.exitCode = 1;

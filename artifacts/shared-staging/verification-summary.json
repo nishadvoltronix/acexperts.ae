@@ -1,0 +1,215 @@
+{
+  "checkedAt": "2026-10-12T08:39:24.614Z",
+  "liveProviderCalls": 0,
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0
+  },
+  "lint": {
+    "command": "npm run lint",
+    "exitCode": 0
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "exitCode": 0
+  },
+  "tests": {
+    "command": "npm test",
+    "baseUrl": "http://127.0.0.1:3112",
+    "realPostgres": true,
+    "passed": 102,
+    "failed": 0,
+    "skipped": 0,
+    "sharedPostgresCases": 14
+  },
+  "routes": {
+    "pages": 48,
+    "expectedPages": 48,
+    "protectedFiles": 134,
+    "intentionalFileChanges": 2,
+    "articleChecks": 24,
+    "faqChecks": 67,
+    "redirects": 30,
+    "mediaRedirects": 121,
+    "linkedTargets": 869,
+    "failures": 0,
+    "passed": true
+  },
+  "responsive": {
+    "cases": 384,
+    "routes": 48,
+    "failures": 0,
+    "passed": true
+  },
+  "completion": {
+    "checks": 22,
+    "failures": 0,
+    "accessibilityScans": 16,
+    "providerMode": "Browser response mocks; no live provider calls"
+  },
+  "motion": [
+    {
+      "width": 320,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed"
+    },
+    {
+      "width": 360,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed"
+    },
+    {
+      "width": 390,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed"
+    },
+    {
+      "width": 414,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed"
+    },
+    {
+      "width": 768,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed"
+    },
+    {
+      "width": 1024,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed"
+    },
+    {
+      "width": 1280,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed"
+    },
+    {
+      "width": 1440,
+      "checks": "scroll reveals, counters, links, unique logos, sticky header, testimonials, navigation, overflow and console passed"
+    },
+    {
+      "mode": "reduced",
+      "checks": "All content and final statistics remain visible"
+    },
+    {
+      "mode": "no-javascript",
+      "checks": "All content and final statistics remain visible"
+    },
+    {
+      "mode": "no-observer",
+      "checks": "All content and final statistics remain visible"
+    },
+    {
+      "mode": "live-preference",
+      "checks": "All content and final statistics remain visible"
+    }
+  ],
+  "acViewer": [
+    {
+      "name": "responsive 320px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow"
+    },
+    {
+      "name": "responsive 390px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow",
+      "accessibility": "WCAG 2.1 A/AA passed"
+    },
+    {
+      "name": "responsive 768px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow"
+    },
+    {
+      "name": "responsive 1024px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow"
+    },
+    {
+      "name": "responsive 1440px",
+      "passed": true,
+      "checks": "six loaded photographic layers, compact full-width placement immediately after Home services, automatic motion on entry, manual reassembly, four tilt limits, responsive controls, model fit, no horizontal overflow",
+      "accessibility": "WCAG 2.1 A/AA passed"
+    },
+    {
+      "name": "automatic playback and suspension",
+      "passed": true,
+      "checks": "autoplay on first entry and visible reload, repeated assembled/exploded endpoints, offscreen suspension and resume, explicit Stop retained after scroll scrubbing and motion preference changes, manual restart"
+    },
+    {
+      "name": "scroll speed and hover interaction",
+      "passed": true,
+      "checks": "scroll speed controls separation, hover expands the normal stage without stopping repeated autoplay, scroll idle resumes while hovered, leaving mid-expansion keeps the loop running, manual pause survives hover"
+    },
+    {
+      "name": "animation, controls, and cleanup",
+      "passed": true,
+      "checks": "smooth synchronized animation, immediate slider, loop continuity/stop, offscreen pause/resume, rapid input cancellation, keyboard and mouse, unmount cleanup and fresh Home autoplay, About has no viewer and passes accessibility"
+    },
+    {
+      "name": "real touch rotation and page scrolling",
+      "passed": true,
+      "checks": "touch does not trigger hover expansion, native horizontal touch rotates, native vertical touch scrolls and scrubs without restarting manually paused autoplay"
+    },
+    {
+      "name": "reduced motion",
+      "passed": true,
+      "checks": "autoplay suppressed by reduced motion, instant manual controls, conditional preference resume, explicit manual pause preserved, manual restart"
+    },
+    {
+      "name": "live motion preference",
+      "passed": true,
+      "checks": "autoplay suppressed by reduced motion, instant manual controls, conditional preference resume, explicit manual pause preserved, manual restart"
+    },
+    {
+      "name": "no JavaScript",
+      "passed": true,
+      "checks": "six loaded photographic layers, full-width server-rendered exploded view, explanation and legend; controls visibly disabled"
+    }
+  ],
+  "security": {
+    "command": "npm run check:security",
+    "exitCode": 0
+  },
+  "historicalValidator": {
+    "sourceUrls": 76,
+    "renderedPages": 48,
+    "redirects": 30,
+    "targetChecks": 869,
+    "articleChecks": 24,
+    "failures": 0,
+    "passed": true
+  },
+  "historicalMigration": {
+    "viewportCases": 90,
+    "expectedViewportCases": 90,
+    "accessibilityScans": 12,
+    "interactionChecks": 9,
+    "failures": 0,
+    "passed": true
+  },
+  "historicalRedesign": {
+    "viewportCases": 432,
+    "expectedViewportCases": 432,
+    "accessibilityScans": 59,
+    "interactionChecks": 25,
+    "designConsistencyChecks": 432,
+    "failures": 0,
+    "passed": true
+  },
+  "productionAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "fullAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 5,
+    "critical": 0,
+    "total": 5
+  },
+  "limitations": [
+    "Browser build predates final backend HTTP408/409 classification refinement; final102source tests and productionbuild include it.",
+    "No hosted cluster, realBrevo, confirmation, unsubscribe or backuprestore tested.",
+    "Additional configured-privacy-link preview denied by automaticapprovalpolicy; verify on authorizedstaging."
+  ]
+}

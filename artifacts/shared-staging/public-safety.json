@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-12T08:31:49.807Z",
+  "liveDeliveryTested": false,
+  "base": "http://127.0.0.1:3112",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/contact-us/",
+      "status": 200
+    },
+    {
+      "path": "/services/",
+      "status": 200
+    }
+  ],
+  "api": [
+    {
+      "name": "contact disabled",
+      "status": 503,
+      "noStore": true,
+      "nosniff": true
+    },
+    {
+      "name": "newsletter disabled",
+      "status": 503,
+      "noStore": true,
+      "nosniff": true
+    },
+    {
+      "name": "newsletter no consent",
+      "status": 400,
+      "noStore": true,
+      "nosniff": true
+    },
+    {
+      "name": "newsletter string consent",
+      "status": 400,
+      "noStore": true,
+      "nosniff": true
+    },
+    {
+      "name": "newsletter foreign origin",
+      "status": 403,
+      "noStore": true,
+      "nosniff": true
+    },
+    {
+      "name": "newsletter honeypot",
+      "status": 400,
+      "noStore": true,
+      "nosniff": true
+    },
+    {
+      "name": "newsletter stale wording",
+      "status": 400,
+      "noStore": true,
+      "nosniff": true
+    }
+  ],
+  "httpLimitation": "Disabled local provider only. Final build markers are checked separately in client assets; this server was built before the final 408/409 adapter refinement.",
+  "clientAssetCount": 16,
+  "finalBuildSyntheticMarkers": 3,
+  "clientMarkerMatches": 0,
+  "assetsCheckedAt": "2026-10-12T08:33:00.163Z"
+}
