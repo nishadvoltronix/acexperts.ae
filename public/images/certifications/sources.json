@@ -1,6 +1,6 @@
 {
   "retrievedAt": "2026-10-12T12:03:54.989Z",
-  "note": "Unmodified organization logos downloaded from official websites or their directly referenced CDN. Provenance records identify image sources; no independent certification verification or license grant is inferred.",
+  "note": "The four organization logos are unmodified assets downloaded from official websites or their directly referenced CDN. The ISO Certified badge is original site artwork, not an official ISO logo. Provenance records identify image sources; no independent certification verification or license grant is inferred.",
   "assets": [
     {
       "file": "nadca.svg",
@@ -45,6 +45,15 @@
       "bytes": 162268,
       "sha256": "96f090f60a3cef25e93db268d20531f3b588db6a3fc101d6682c02799c634243",
       "visuallyInspected": true
+    },
+    {
+      "file": "iso-certified.svg",
+      "label": "ISO Certified",
+      "origin": "Original site artwork; no ISO standard number or certificate identifier supplied",
+      "width": 160,
+      "height": 96,
+      "bytes": 657,
+      "sha256": "e521c00ee987a6f3f46fc2373b9081f1f95774aab82440a3227175ccdd17663f"
     }
   ]
 }

@@ -32,8 +32,10 @@ try {
     assert.equal(await page.locator("#home-blog .content-card").count(), 3);
     assert.equal(await page.locator("#home-faq details").count(), 8);
     assert.equal(await page.locator("#home-portfolio .home-project-card").count(), 1);
-    assert.equal(await page.locator(".promise-band h2").textContent(), "Residential & Commercial");
-    assert.doesNotMatch(await page.locator(".promise-band").textContent(), /We Make AC Services Simple/);
+    assert.equal(await page.locator(".promise-band h2").textContent(), "We Make AC Services Simple, Fast & Reliable!");
+    assert.equal(await page.locator(".promise-band .promise-audience").count(), 0);
+    assert.equal(await page.locator(".promise-grid > div:nth-child(4) strong").textContent(), "Residential & Commercial");
+    assert.equal(await page.getByRole("heading", { name: "Inside a split AC" }).count(), 0);
     for (const label of ["Contracting", "DEWA Approvals", "AC Experts", "Switchgear"]) {
       assert(await page.locator(".footer-group").getByRole("link", { name: label, exact: true }).isVisible());
     }

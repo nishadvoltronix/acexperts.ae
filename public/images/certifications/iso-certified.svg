@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 96" role="img" aria-labelledby="title">
+  <title id="title">ISO Certified badge</title>
+  <rect x="21" y="10" width="118" height="76" rx="10" fill="#f5fbff" stroke="#1373a6" stroke-width="2"/>
+  <path d="M34 22h92M34 74h92" stroke="#9dcbdc" stroke-width="2" stroke-linecap="round"/>
+  <text x="80" y="57" fill="#126b9c" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" text-anchor="middle">ISO</text>
+  <text x="80" y="70" fill="#126b9c" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" letter-spacing="2" text-anchor="middle">CERTIFIED</text>
+</svg>

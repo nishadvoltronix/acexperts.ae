@@ -128,10 +128,12 @@ try {
     await page.locator(".promise-band h2").waitFor();
     assert.equal(await page.locator(".top-strip").count(), 0);
   });
-  await check("Residential & Commercial replaces the old heading without duplicate subtitle", async () => {
-    assert.equal((await page.locator(".promise-band h2").textContent()).trim(), "Residential & Commercial");
-    assert.equal(await page.locator(".promise-band").getByText("Residential & Commercial", { exact: true }).count(), 1);
-    assert.doesNotMatch(await page.locator(".promise-band").textContent(), /We Make AC Services Simple, Fast & Reliable/i);
+  await check("Benefits band includes Residential & Commercial in the fourth slot and the AC viewer is removed", async () => {
+    assert.equal((await page.locator(".promise-band h2").textContent()).trim(), "We Make AC Services Simple, Fast & Reliable!");
+    assert.equal(await page.locator(".promise-band .promise-audience").count(), 0);
+    assert.equal(await page.locator(".promise-grid > div:nth-child(4) strong").textContent(), "Residential & Commercial");
+    assert.equal(await page.locator(".promise-grid > div:nth-child(4) p > span").count(), 0);
+    assert.equal(await page.getByRole("heading", { name: "Inside a split AC" }).count(), 0);
     assert.equal(await page.locator(".promise-grid > div").count(), 6, "Existing service benefits stay present");
   });
   await check("Real-time autoplay waits three seconds, repeats, and does not announce automatic changes", async () => {
