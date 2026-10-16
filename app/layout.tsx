@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import localFont from "next/font/local";
 import { Header } from "@/components/Header";
+import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
+import { FloatingChatbot } from "@/components/FloatingChatbot";
 import { Footer } from "@/components/Footer";
 import { MotionEffects } from "@/components/MotionEffects";
 import { site } from "@/lib/site";
@@ -77,6 +79,8 @@ export default async function RootLayout({
         <MotionEffects />
         <main id="main-content">{children}</main>
         <Footer />
+        <FloatingWhatsApp />
+        <FloatingChatbot />
       </body>
     </html>
   );

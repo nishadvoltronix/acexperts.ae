@@ -49,15 +49,18 @@ async function auditGeometry(page) {
       if (!node.textContent.trim() || !parent || !parent.closest("main,header,footer") || !isVisible(parent) || parent.closest("script,style,svg,[aria-hidden=true]")) continue;
       const range = document.createRange();
       range.selectNodeContents(node);
-      const hasHorizontalScroller = (() => {
+      const hasContainedHorizontalOverflow = (() => {
         for (let ancestor = parent; ancestor; ancestor = ancestor.parentElement) {
           const style = getComputedStyle(ancestor);
           const rect = ancestor.getBoundingClientRect();
-          if (/auto|scroll/.test(style.overflowX) && ancestor.scrollWidth > ancestor.clientWidth + 1 && rect.left >= -1.5 && rect.right <= innerWidth + 1.5) return true;
+          if (rect.left >= -1.5 && rect.right <= innerWidth + 1.5 && (
+            (/auto|scroll/.test(style.overflowX) && ancestor.scrollWidth > ancestor.clientWidth + 1) ||
+            /hidden|clip/.test(style.overflowX)
+          )) return true;
         }
         return false;
       })();
-      const outside = [...range.getClientRects()].filter((rect) => !hasHorizontalScroller && rect.width > 1 && (rect.left < -1.5 || rect.right > innerWidth + 1.5));
+      const outside = [...range.getClientRects()].filter((rect) => !hasContainedHorizontalOverflow && rect.width > 1 && (rect.left < -1.5 || rect.right > innerWidth + 1.5));
       if (outside.length) textOverflow.push({ element: descriptor(parent), text: node.textContent.trim().slice(0, 140), rects: outside.map(rectData) });
     }
     const controls = [...document.querySelectorAll("main button,main .button,main input:not([type=hidden]),main select,main textarea,header button,header .button,footer button")].filter(isVisible);

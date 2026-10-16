@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
+import { interceptZohoContact, checkZohoContact, checkZohoContactFailures, checkZohoContactWithoutJavaScript } from "./helpers/zoho-contact-check.mjs";
 
 const base = new URL(process.env.BASE_URL || "http://127.0.0.1:3112");
 if (!["localhost", "127.0.0.1", "[::1]"].includes(base.hostname)) throw new Error("Local checks only.");
@@ -13,15 +14,15 @@ async function check(name, action) {
   try { await action(); report.cases.push({ name, passed: true }); console.log(`PASS ${name}`); }
   catch (error) { report.cases.push({ name, passed: false, error: error.message }); console.error(`FAIL ${name}: ${error.message}`); }
 }
-const context = await browser.newContext({ viewport: { width: 390, height: 900 }, reducedMotion: "reduce" });
+const context = await browser.newContext({ viewport: { width: 390, height: 900 }, reducedMotion: "reduce", serviceWorkers: "block" });
+const zohoContact = await interceptZohoContact(context, base);
 const page = await context.newPage();
 page.setDefaultTimeout(15000);
 const pageErrors = [];
 page.on("pageerror", (error) => pageErrors.push(error.message));
 // All form requests in this suite are fulfilled in the browser. This verifies
-// UI state transitions without delivering mail. Backend provider mocks are in
-// the Node integration tests; real provider acceptance remains a launch check.
-await context.route("**/api/contact/", (route) => route.fulfill({ status: 503, json: { ok: false, message: "Your message has not been sent. Please contact us by phone." } }));
+// CRM contact submission and newsletter UI states without delivering mail.
+// Real provider acceptance remains a separate launch check.
 await context.route("**/api/newsletter/", (route) => route.fulfill({ status: 503, json: { ok: false, message: "Newsletter signup is currently unavailable. Please try again later." } }));
 try {
   await check("Homepage content, simplified header and group links", async () => {
@@ -165,32 +166,14 @@ try {
       assert.equal(await page.getByRole("navigation", { name: "Breadcrumb", exact: true }).count(), 0, route);
     }
   });
-  await check("Contact provider acceptance, failure, network error and duplicate click UI", async () => {
-    await page.goto(new URL("/contact-us/", base).href, { waitUntil: "networkidle" });
-    const form = page.locator(".contact-form");
-    await form.locator('[name="firstName"]').fill("Local test");
-    await form.locator('[name="email"]').fill("local@example.invalid");
-    await form.locator('[name="mobile"]').fill("+971501234567");
-    await form.locator('[name="service"]').selectOption("Other");
-    await form.locator('[name="otherService"]').fill("Synthetic local test");
-    await form.locator('[name="message"]').fill("Browser verification; no real delivery.");
-    await form.getByRole("button", { name: "Submit", exact: true }).click();
-    await form.getByRole("status").filter({ hasText: "has not been sent" }).waitFor();
-    assert.equal(await form.locator('[name="firstName"]').inputValue(), "Local test");
-    await page.route("**/api/contact/", (route) => route.abort("failed"));
-    await form.getByRole("button", { name: "Submit", exact: true }).click();
-    await page.waitForFunction(() => /could not|unable|not been sent/i.test(document.querySelector('.contact-form [role="status"]').textContent));
-    let submissions = 0;
-    let release;
-    const gate = new Promise((resolve) => { release = resolve; });
-    await page.route("**/api/contact/", async (route) => { submissions++; await gate; await route.fulfill({ status: 200, json: { ok: true, message: "Your enquiry has been accepted. Our team will contact you." } }); });
-    await form.getByRole("button", { name: "Submit", exact: true }).click();
-    await page.waitForTimeout(100);
-    assert(await form.locator('button[type="submit"]').isDisabled());
-    release();
-    await form.getByRole("status").filter({ hasText: "has been accepted" }).waitFor();
-    assert.equal(submissions, 1);
-    assert.equal(await form.locator('[name="firstName"]').inputValue(), "");
+  await check("Contact validation, exact CRM multipart payloads, acceptance and duplicate guard (intercepted)", async () => {
+    await checkZohoContact(page, base, zohoContact);
+  });
+  await check("Contact rejection, CAPTCHA, HTTP, unknown response and network failures preserve inputs (intercepted)", async () => {
+    await checkZohoContactFailures(page, base, zohoContact);
+  });
+  await check("Contact provides call/email fallback without JavaScript and prevents native submission", async () => {
+    await checkZohoContactWithoutJavaScript(browser, base);
   });
   await check("Newsletter consent, provider failure and confirmation-email acceptance UI", async () => {
     await page.goto(base.href, { waitUntil: "networkidle" });

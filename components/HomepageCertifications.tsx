@@ -35,7 +35,7 @@ export function HomepageCertifications() {
   const cards = (duplicate: boolean) => certifications.map(({ name, logo, logoAlt, description }) => (
     <article className="certification-card" key={name}>
       <div className="certification-logo">
-        <Image src={logo} alt={duplicate ? "" : logoAlt ?? `${name} logo`} fill sizes="160px" loading="eager" />
+        <Image src={logo} alt={duplicate ? "" : logoAlt ?? `${name} logo`} fill sizes="160px" />
       </div>
       <h3>{name}</h3>
       <p>{description}</p>

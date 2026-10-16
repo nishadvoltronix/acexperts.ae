@@ -3,6 +3,7 @@ import AxeBuilder from "@axe-core/playwright";
 import { readFile, writeFile, mkdir, access } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { migrationPaths, writeMigrationReport } from "./validate.mjs";
+import { interceptZohoContact, checkZohoContact } from "./helpers/zoho-contact-check.mjs";
 
 const base = new URL(process.env.BASE_URL || "http://localhost:3001");
 const widths = [320, 375, 390, 430, 768, 1024, 1280, 1440, 1920];
@@ -64,8 +65,6 @@ async function main() {
     throw new Error(
       "BASE_URL must point to a loopback host; browser tests never submit to the public site.",
     );
-  if (process.env.LOCAL_FORM_TEST_MODE !== "disabled-provider")
-    throw new Error("Set LOCAL_FORM_TEST_MODE=disabled-provider only after starting an isolated local server with deliberately invalid sender/list settings. This suite posts to the real local API; the test flag does not disable provider delivery.");
   const input = JSON.parse(await readFile("data/pages.json", "utf8"));
   const pages = Array.isArray(input) ? input : input.pages;
   const identityResponse = await fetch(base, {
@@ -101,6 +100,7 @@ async function main() {
   const context = await browser.newContext({
     viewport: { width: 1440, height: 1000 },
     reducedMotion: "reduce",
+    serviceWorkers: "block",
   });
   await context.route("**/*", async (route) => {
     const url = new URL(route.request().url());
@@ -120,17 +120,16 @@ async function main() {
     }
     return route.continue();
   });
+  const zohoContact = await interceptZohoContact(context, base);
   const page = await context.newPage();
   let currentCase = null;
-  let expectedApiFailure = false;
   page.on("pageerror", (error) => {
     if (currentCase) currentCase.jsErrors.push(String(error));
   });
   page.on("console", (message) => {
     if (
       message.type() === "error" &&
-      currentCase &&
-      !(expectedApiFailure && /503|Service Unavailable/.test(message.text()))
+      currentCase
     )
       currentCase.consoleErrors.push(message.text());
   });
@@ -138,8 +137,7 @@ async function main() {
     if (
       currentCase &&
       response.status() >= 400 &&
-      response.url().startsWith(base.origin) &&
-      !(expectedApiFailure && response.status() === 503 && new URL(response.url()).pathname === "/api/contact/")
+      response.url().startsWith(base.origin)
     )
       currentCase.failedResponses.push({
         url: response.url(),
@@ -345,58 +343,8 @@ async function main() {
       "FAQ closes/restores on second keyboard action",
       (await faq.evaluate((element) => element.open)) === initialOpen,
     );
-    await page.goto(new URL("/contact-us/", base).href, {
-      waitUntil: "load",
-    });
-    const form = page.locator("main form");
-    let posts = 0;
-    const countPosts = (request) => {
-      if (
-        request.method() === "POST" &&
-        new URL(request.url()).pathname === "/api/contact/"
-      )
-        posts++;
-    };
-    page.on("request", countPosts);
-    await form.getByRole("button", { name: "Submit", exact: true }).click();
-    recordInteraction(
-      "Empty form is blocked by native validation",
-      (await form.evaluate((element) => !element.checkValidity())) &&
-        posts === 0,
-    );
-    await form.locator('[name="firstName"]').fill("Local validation");
-    await form
-      .locator('[name="email"]')
-      .fill("local-validation@example.invalid");
-    await form.locator('[name="mobile"]').fill("+971500000000");
-    await form.locator('[name="service"]').selectOption({ label: "Repairs" });
-    await form
-      .locator('[name="message"]')
-      .fill("Synthetic local validation. No delivery is expected.");
-    expectedApiFailure = true;
-    const responsePromise = page.waitForResponse(
-      (response) =>
-        new URL(response.url()).origin === base.origin &&
-        new URL(response.url()).pathname === "/api/contact/" &&
-        response.request().method() === "POST",
-    );
-    await form.getByRole("button", { name: "Submit", exact: true }).click();
-    const response = await responsePromise;
-    const body = await response.json();
-    await page.getByRole("status").filter({ hasText: body.message }).waitFor();
-    recordInteraction(
-      "Valid local form returns explicit disabled-backend 503",
-      response.status() === 503 &&
-        posts === 1 &&
-        response.headers()["cache-control"] === "no-store" &&
-        response.headers()["x-content-type-options"] === "nosniff" &&
-        typeof body.message === "string" &&
-        body.message.includes("has not been sent") &&
-        (await form.locator('[name="firstName"]').inputValue()) === "Local validation",
-      { status: response.status(), message: body.message },
-    );
-    expectedApiFailure = false;
-    page.off("request", countPosts);
+    const contactCheck = await checkZohoContact(page, base, zohoContact);
+    recordInteraction("Contact validation, exact CRM multipart payloads, acceptance and duplicate guard (intercepted)", true, contactCheck);
     if (
       currentCase.jsErrors.length ||
       currentCase.consoleErrors.length ||

@@ -1,9 +1,10 @@
 import { access, readFile } from "node:fs/promises";
 import { load } from "cheerio";
 import { chromium } from "playwright";
+import { ZOHO_CONTACT_ORIGIN, interceptZohoContact, checkZohoContact } from "./helpers/zoho-contact-check.mjs";
 
 // Production checks only: run against a local `next start` instance.
-// Requests and redirects are restricted to this origin; form values are synthetic.
+// Requests remain local; CRM submissions and analytics are fulfilled in-browser.
 const base = new URL(process.env.BASE_URL || "http://localhost:3100");
 const routes = ["/", "/contact-us/", "/about/", "/faq/"];
 let phase = "local target validation";
@@ -36,10 +37,13 @@ function documentPolicy(headers, label) {
   check(nonces.length === 1, `${label}: expected one script nonce`);
   check(!scripts.includes("'unsafe-inline'") && !scripts.includes("'unsafe-eval'"), `${label}: unsafe production scripts allowed`);
   check(scripts.includes("'strict-dynamic'"), `${label}: strict-dynamic missing`);
-  for (const name of ["script-src-attr", "object-src", "frame-src", "frame-ancestors", "base-uri"]) {
+  for (const name of ["script-src-attr", "object-src", "frame-ancestors", "base-uri"]) {
     check(directives.get(name)?.join(" ") === "'none'", `${label}: ${name} must deny content`);
   }
-  check(directives.get("form-action")?.join(" ") === "'self'", `${label}: form destination unrestricted`);
+  check(directives.get("frame-src")?.join(" ") === "https://*.zohopublic.com",
+    `${label}: frames must be limited to the Zoho chat provider`);
+  check(directives.get("form-action")?.join(" ") === `'self' ${ZOHO_CONTACT_ORIGIN}`, `${label}: form destinations must be limited to self and Zoho CRM`);
+  check(directives.get("connect-src")?.includes(ZOHO_CONTACT_ORIGIN), `${label}: Zoho CRM AJAX submission must be allowed`);
   const cache = headers.get("cache-control") || "";
   check(/\bprivate\b/.test(cache) && /\bno-store\b/.test(cache), `${label}: nonce HTML may be cached`);
   return nonces[0].slice(7, -1);
@@ -127,6 +131,7 @@ async function main() {
       externalRequests++;
       socket.close();
     });
+    const zohoContact = await interceptZohoContact(context, base);
     await context.addInitScript(() => {
       globalThis.__securityViolations = [];
       document.addEventListener("securitypolicyviolation", (event) => {
@@ -138,17 +143,13 @@ async function main() {
     let consoleErrors = 0;
     let pageErrors = 0;
     let failedResponses = 0;
-    let expectedUnavailable = false;
-    const contactUrl = new URL("/api/contact/", base).href;
     page.on("pageerror", () => { pageErrors++; });
     page.on("console", (message) => {
       if (message.type() !== "error") return;
-      if (expectedUnavailable && message.location().url === contactUrl && /503/.test(message.text())) return;
       consoleErrors++;
     });
     page.on("response", (response) => {
       if (response.status() < 400) return;
-      if (expectedUnavailable && response.url() === contactUrl && response.status() === 503) return;
       failedResponses++;
     });
     async function cleanBrowser(label) {
@@ -174,30 +175,10 @@ async function main() {
     await cleanBrowser(phase);
     console.log("PASS browser: hydration, CSP and mobile navigation on four routes");
 
-    phase = "synthetic local contact submission";
-    const form = page.locator(".contact-form");
-    await form.locator('[name="firstName"]').fill("Security check");
-    await form.locator('[name="email"]').fill("security-check@example.invalid");
-    await form.locator('[name="mobile"]').fill("+12025550100");
-    await form.locator('[name="service"]').selectOption("Other");
-    const other = form.locator('[name="otherService"]');
-    check(await other.isVisible() && await other.getAttribute("required") !== null, "Other service did not reveal a required detail field");
-    await other.fill("Synthetic local security verification");
-    await form.locator('[name="message"]').fill("Synthetic local check; no delivery or storage is expected.");
-    expectedUnavailable = true;
-    const [response] = await Promise.all([
-      page.waitForResponse((result) => result.url() === contactUrl && result.request().method() === "POST"),
-      form.getByRole("button", { name: "Submit", exact: true }).click(),
-    ]);
-    check(response.status() === 503, "Local security checks require unconfigured delivery (503); disable provider configuration for this suite");
-    const body = await response.json();
-    check(typeof body.message === "string" && /not been sent/i.test(body.message), "contact response did not explain that the message was unsent");
-    await form.getByRole("status").filter({ hasText: body.message }).waitFor();
-    securityHeaders(new Headers(await response.allHeaders()), "contact API");
-    check(/\bno-store\b/.test((await response.headerValue("cache-control")) || ""), "contact response may be cached");
+    phase = "synthetic intercepted Zoho contact submission";
+    await checkZohoContact(page, base, zohoContact);
     await cleanBrowser(phase);
-    expectedUnavailable = false;
-    console.log("PASS form: Other interaction and synthetic local submission remain explicitly unsent (503)");
+    console.log("PASS form: validation, exact CRM multipart payloads, acceptance and duplicate guard; requests intercepted without delivery");
 
     // Intentional violations use a separate document, outside normal browser checks.
     phase = "deliberate CSP injection probes";

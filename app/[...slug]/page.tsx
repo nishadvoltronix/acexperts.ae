@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getPage, pages } from "@/lib/content";
 import { pageMetadata } from "@/lib/metadata";
 import { PageContent } from "@/components/PageContent";
+import { withServiceContent } from "@/lib/service-content";
 export const dynamicParams = false;
 export function generateStaticParams() {
   return pages
@@ -16,7 +17,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const page = getPage(`/${slug.join("/")}/`);
   if (!page) notFound();
-  return pageMetadata(page);
+  return pageMetadata(withServiceContent(page));
 }
 export default async function ContentPage({
   params,

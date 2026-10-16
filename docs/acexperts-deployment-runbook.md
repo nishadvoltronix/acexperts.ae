@@ -2,7 +2,7 @@
 
 **Later repository check, 12 October 2026:** GitHub exposes successful Vercel deployments named Production for this repository. A Git push may therefore deploy automatically even though this checkout has no Vercel configuration file. Review the [final verification report](acexperts-final-verification-report.md) and resolve deployment authorization before pushing; a new branch alone does not guarantee no deployment.
 
-12 October 2026, Asia/Dubai. **No deployment is authorized or performed by this document.** Hosting provider, operating system, service manager, ingress and final staging hostname remain unknown. `https://staging.acexperts.ae` is a proposal requiring explicit approval. Historical Vercel review URLs in the Word document do not establish current hosting access or a selected deployment.
+Updated 16 October 2026, Asia/Dubai. **No deployment is authorized or performed by this document.** Hosting provider, operating system, service manager, ingress and final staging hostname remain unknown. `https://staging.acexperts.ae` is a proposal requiring explicit approval. Historical Vercel review URLs in the Word document do not establish current hosting access or a selected deployment.
 
 Use this with the [staging configuration checklist](staging-configuration-checklist.md), [delivery guide](delivery-configuration.md) and [database operations procedure](acexperts-database-operations.md). The production-readiness report records actual local results and external blockers. Do not treat a prepared command or configuration example as a completed hosted check.
 
@@ -10,7 +10,8 @@ Use this with the [staging configuration checklist](staging-configuration-checkl
 
 - Next.js App Router on Node.js; use the project's Node.js 24 baseline and lockfile. `npm run build` invokes `next build`; `npm run start` invokes `next start`. Static-only hosting cannot run the APIs or per-request CSP proxy.
 - HTML renders dynamically with a fresh nonce and private/no-store caching. Preserve those headers. Public images/fonts and Next's hashed assets have separate cache behavior; `next/image` is served by the Node runtime.
-- Contact/newsletter APIs use Brevo and durable PostgreSQL. All workers in one environment share the database, namespace and HMAC key. Separate staging and production databases/secrets/namespace; cap workers according to database capacity. Pools allow up to three connections per form handler, up to six per worker for both forms.
+- The website contact form submits multipart data to Zoho CRM's `WebToLeadForm` endpoint through browser `fetch`, with public export configuration in `lib/zoho-contact.ts`. It needs JavaScript but no Brevo or database settings; a no-JavaScript notice offers telephone/email alternatives. Configure the CRM form location as `https://acexperts.ae/contact-us/`, lead owner and notifications. Live lead creation and notification delivery remain unverified. Follow [CRM setup and acceptance checks](delivery-configuration.md#zoho-contact-form-setup).
+- The newsletter and retained legacy contact API use Brevo and durable PostgreSQL. All workers in one environment share the database, namespace and HMAC key. Separate staging and production databases/secrets/namespace; cap workers according to database capacity. Pools allow up to three connections per API handler, up to six per worker if both are used. These APIs' validation, rate limits and duplicate claims do not apply to Zoho submissions.
 - No application accounts or public admin/debug/health API are supplied. Protect staging at the trusted ingress, including API/static/image paths, and block direct-origin bypass. Form origin validation is not staging authentication.
 - Current Git HEAD alone omits uncommitted/new implementation files. An approved release must include the reviewed source, `package.json`/lockfile, `next.config.ts` and its referenced JSON, application data/public assets and built `.next` output from the approved candidate. Preserve the raw-byte content baseline and LF checkout. Exclude environment secrets, `.git`, local PostgreSQL cache/data, test dumps and private evidence.
 - Build on the target-compatible OS/architecture or CI image; do not copy Windows `node_modules` into Linux. This project currently uses normal `next start`, not a preconfigured standalone export. Do not assume an `out/` directory or `.next/standalone/server.js` exists.
@@ -30,7 +31,7 @@ foreach ($check in @('lint', 'typecheck', 'build')) {
 }
 ```
 
-Use a free isolated local port; check ownership before starting or stopping processes. Start the production build with deliberately invalid provider settings. Do not apply these overrides to an existing hosted environment:
+Use a free isolated local port; check ownership before starting or stopping processes. Start the production build with deliberately invalid Brevo settings. Automated contact tests must mock CRM requests before submitting; these settings do not disable CRM delivery. Do not apply these overrides to an existing hosted environment:
 
 ```powershell
 $env:CONTACT_FROM_EMAIL = 'disabled-local-validation'
@@ -55,13 +56,12 @@ foreach ($check in @('check:routes', 'check:responsive', 'check:completion', 'ch
 }
 ```
 
-The `test:shared`, `test:seo`, `test:forms` and `test:security` aliases select tests already included by `npm test`. Require zero unintended skips; rendered SEO needs `BASE_URL`, real shared-store cases need the guarded test database. Run the full repaired historical suites too, under a separate output directory:
+The `test:shared`, `test:seo`, `test:forms` and `test:security` aliases select tests already included by `npm test`. Require zero unintended skips; rendered SEO needs `BASE_URL`, real shared-store cases need the guarded test database. The historical browser suites below have been updated for the current contact form and intercept Zoho submissions through `scripts/helpers/zoho-contact-check.mjs`. Run them under a separate output directory:
 
 ```powershell
 $env:ARTIFACT_DIR = 'artifacts/release-candidate-local/historical'
 New-Item -ItemType Directory -Force $env:ARTIFACT_DIR | Out-Null
 $env:VALIDATION_OUTPUT = Join-Path $env:ARTIFACT_DIR 'validation-results.json'
-$env:LOCAL_FORM_TEST_MODE = 'disabled-provider'
 npm run validate
 if ($LASTEXITCODE -ne 0) { throw 'Migration validator failed' }
 node scripts/browser-check.mjs
@@ -70,13 +70,13 @@ node scripts/redesign-browser-check.mjs
 if ($LASTEXITCODE -ne 0) { throw 'Redesign browser suite failed' }
 ```
 
-The acknowledgment `LOCAL_FORM_TEST_MODE=disabled-provider` does not disable delivery. Those browser suites POST to real local routes; the invalid server sender/list settings above are essential. Do not remove local-only test guards or point these suites at a credentialed hosted site. Use fake provider transport for outage, rate, duplicate, restart and concurrency tests.
+The migration, redesign, completion and security browser suites mock CRM responses through the shared helper before testing contact submission. These checks verify local serialization, validation and status behavior, not live lead creation. Keep invalid server sender/list settings for checks of local Brevo APIs. Do not remove local-only test guards or point these suites at a credentialed hosted site. Use fake provider transport for outage, rate, duplicate, restart and concurrency tests.
 
 ## Hosted staging configuration gate
 
-Before provisioning or enabling anything externally, approve the host, region, service names, hostname, network policy and candidate artifact. Configure all 13 application settings through the host's secret mechanism using [the exact contract](delivery-configuration.md#provider-and-configuration). Never store a live API key or database URL in the release, command history, screenshot or public log. Only the approved public privacy URL/version are intentionally rendered.
+Before provisioning or enabling anything externally, approve the host, region, service names, hostname, network policy and candidate artifact. Configure the newsletter's ten required application settings through the host's secret mechanism using [the exact contract](delivery-configuration.md#provider-and-configuration). Set an additional allowed staging origin when needed; the two `CONTACT_*` values are only needed if enabling the retained Brevo contact API. Configure the CRM webform location, owner and notifications, verify its current export/fields and confirm CSP permits the CRM connection and analytics script. Never store a live API key or database URL in the release, command history, screenshot or public log. The CRM export's webform identifiers/tokens and approved privacy URL/version are public values.
 
-Apply the reviewed migration once using a dedicated owner account with stop-on-error. The schema version and required grants must be verified before enabling forms. Give the web login only documented runtime privileges; keep DDL, DELETE, backups, retention and reconciliation separate. Do not rerun the initial migration against an existing schema, invent a destructive reset, or regenerate the HMAC key/namespace during normal deployments. See [database operations](acexperts-database-operations.md) for migration, backup/restore and retention commands.
+For the Brevo APIs, apply the reviewed migration once using a dedicated owner account with stop-on-error. The schema version and required grants must be verified before enabling these APIs. Give the web login only documented runtime privileges; keep DDL, DELETE, backups, retention and reconciliation separate. Do not rerun the initial migration against an existing schema, invent a destructive reset, or regenerate the HMAC key/namespace during normal deployments. See [database operations](acexperts-database-operations.md) for migration, backup/restore and retention commands. Zoho contact does not use this database.
 
 Use verified TLS for external PostgreSQL, persistent storage/WAL and an approved restore/failover strategy. Configure a per-client ingress limit based on trusted identity in addition to the application's global budgets. Every replica and release overlap must use the same shared-state configuration. Retention/reconciliation schedules, published policy and protected Brevo confirmation/withdrawal evidence are operator prerequisites.
 
@@ -143,7 +143,7 @@ Preserve Next's security and Cache-Control headers. Do not add a CDN rule that c
 
 ## Health, readiness and post-deployment checks
 
-The current application has no dedicated health endpoint. An authenticated `GET /` returning the expected page proves HTTP rendering availability only; it does not prove database access, current namespace/key agreement, Brevo configuration, sender validity or email delivery. Do not invent a `/health` URL or probe readiness by submitting a real enquiry/newsletter request.
+The current application has no dedicated health endpoint. An authenticated `GET /` returning the expected page proves HTTP rendering availability only; it does not prove Zoho form availability, database access, current namespace/key agreement, Brevo configuration, sender validity or email delivery. Do not invent a `/health` URL or probe readiness by submitting a real enquiry/newsletter request.
 
 Before accepting traffic, verify through the operator/database workflow: successful restricted runtime connection with verified TLS, schema version, documented privileges, namespace/key consistency, presence and syntax of required server settings, published notice/version, and host access/indexing controls. A read-only database probe and separate HTTP liveness monitor should report different statuses. Test these probes and alert routes in the chosen host; no monitoring account or deployed readiness check is configured here.
 
@@ -153,7 +153,7 @@ After an authorized staging deployment:
 2. As an authorized tester, verify HTTPS/certificate, noindex response headers, expected homepage H1, one canonical, CSP/nonces, no-store HTML/API responses, six service routes, header/footer links, fonts/images and responsive navigation. Verify both real privacy links resolve to the approved policy and show current versions.
 3. Verify production canonical/sitemap destinations remain correct on staging. On production, verify the staging edge noindex/auth configuration is absent while intended source noindex archives remain intact.
 4. In a separate fake-provider environment behind the intended ingress, exercise two app workers, duplicate races, shared budgets, a drained release transition, database outage and stale consent versions. Require no hidden retry, no forged-IP bypass and no secret output.
-5. Only after explicit named-inbox/send-count authorization, run [controlled live acceptance](staging-configuration-checklist.md#controlled-live-delivery-plan). One enquiry/DOI at a time; stop and reconcile uncertain results. Campaign unsubscribe tests need separate authorization. Store personal evidence privately; record redacted outcomes in the release evidence.
+5. Only after explicit named-inbox/send-count authorization, run [CRM enquiry acceptance](delivery-configuration.md#zoho-contact-form-setup) and the newsletter's [controlled live acceptance](staging-configuration-checklist.md#controlled-live-delivery-plan). Verify the CRM lead, field mapping, intended owner and notification receipt separately from Brevo DOI acceptance. One enquiry/DOI at a time; stop and reconcile uncertain results. Campaign unsubscribe tests need separate authorization. Store personal evidence privately; record redacted outcomes in the release evidence.
 
 Monitor HTTP availability/latency, status classes and 429 trends, database connection saturation/latency/errors, unresolved claim age/count, overdue retention rows, backup freshness/restore results, certificate/key expiry and Brevo delivery/suppression failures. Avoid high-cardinality personal labels. Confirm alerts reach authorized operators without making this document an authorization to contact third parties.
 

@@ -10,7 +10,7 @@
     "typecheck": "next typegen && tsc --noEmit",
     "test": "node --test scripts/*.test.mjs",
     "test:seo": "node --test scripts/seo-metadata.test.mjs",
-    "test:forms": "node --test scripts/contact-security.test.mjs scripts/form-delivery.test.mjs",
+    "test:forms": "node --test scripts/contact-security.test.mjs scripts/form-delivery.test.mjs scripts/zoho-contact-response.test.mjs",
     "check:routes": "node scripts/validate-redesign.mjs",
     "check:responsive": "node scripts/responsive-layout-check.mjs",
     "check:motion": "node scripts/motion-browser-check.mjs",

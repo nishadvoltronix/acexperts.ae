@@ -2,6 +2,12 @@
   display: none;
 }
 
+.contact-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .newsletter-consent {
   display: flex;
   align-items: flex-start;

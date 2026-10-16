@@ -8,6 +8,7 @@ export function CompanyLinks({ label = "Voltronix Group companies" }: { label?: 
       <a href="https://dewaapprovals.ae">DEWA Approvals</a>
       <Link href="/" className="company-current">AC Experts</Link>
       <a href="https://switchgear.ae">Switchgear</a>
+      <a href="https://voltronix-automation.vercel.app/">Voltronix Automation</a>
     </nav>
   );
 }

@@ -37,7 +37,7 @@ export function ACIcon({ type }: { type: "repair" | "installation" | "maintenanc
 
 export const referenceCrops = { hero: [348, 55, 357, 343], cta: [433, 1265, 239, 179], skyline: [133, 800, 572, 78], portrait1: [78, 1196, 28, 29], portrait2: [272, 1196, 28, 29], portrait3: [467, 1196, 28, 29], brandSamsung: [225, 1032, 65, 15], brandPanasonic: [505, 1032, 65, 15] } as const;
 const restoredArt: Partial<Record<keyof typeof referenceCrops, {src: string; width: number; height: number; cropHeight?: number; inset?: [number, number, number, number]; sizes: string}>> = {
-  hero: {src: '/images/design/hero-voltronix.png', width: 1278, height: 1230, sizes: '(max-width: 767px) 100vw, (max-width: 1440px) 50.64vw, 730px'},
+  hero: {src: '/images/design/hero-voltronix-optimized.webp', width: 1200, height: 1155, sizes: '(max-width: 767px) 100vw, (max-width: 1440px) 50.64vw, 730px'},
   cta: {src: '/images/design/cta-voltronix.png', width: 1448, height: 1086, sizes: '(max-width: 767px) 100vw, 500px'},
   skyline: {src: '/images/design/skyline-hq.png', width: 2172, height: 724, cropHeight: 2172 * 78 / 572, sizes: '1181px'},
   brandSamsung: {src: '/images/design/samsung-hq.png', width: 2172, height: 724, inset: [151.4, 126, 1897.3, 455], sizes: '150px'},
@@ -50,7 +50,7 @@ export function ReferenceArt({ crop, alt = "", className = "", priority = false,
   const inset = restored?.inset;
   const imageHeight = restored ? restored.height / (inset?.[3] || restored.cropHeight || restored.height) * 100 : 1600 / h * 100;
   const style = { aspectRatio: `${w}/${h}`, '--art-width': restored ? `${inset ? restored.width / inset[2] * 100 : 100}%` : `${705 / w * 100}%`, '--art-height': `${imageHeight}%`, '--art-left': inset ? `${-inset[0] / inset[2] * 100}%` : restored ? '0%' : `${-x / w * 100}%`, '--art-top': inset ? `${-inset[1] / inset[3] * 100}%` : restored ? `${(100 - imageHeight) / 2}%` : `${-y / h * 100}%` } as CSSProperties;
-  return <span className={`reference-art reference-${crop} ${className}`} style={style}><Image src={restored?.src || "/images/design/homepage-reference.jpeg"} alt={alt} width={restored?.width || 705} height={restored?.height || 1600} sizes={restored?.sizes} quality={90} priority={priority} unoptimized={!restored} draggable={false} />{children}</span>;
+  return <span className={`reference-art reference-${crop} ${className}`} style={style}><Image src={restored?.src || "/images/design/homepage-reference.jpeg"} alt={alt} width={restored?.width || 705} height={restored?.height || 1600} sizes={restored?.sizes} quality={75} priority={priority} unoptimized={crop === "hero" || !restored} draggable={false} />{children}</span>;
 }
 export function BrandLogo({ preload = false }: { preload?: boolean }) {
   return <Image src={site.logo} alt="Voltronix" width={407} height={75} className="brand-logo" preload={preload} unoptimized />;

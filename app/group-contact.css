@@ -1,0 +1,70 @@
+.footer-group .company-links {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 600px;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  z-index: 40;
+  left: max(16px, env(safe-area-inset-left));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 5px 18px #0003;
+}
+
+.floating-whatsapp:hover {
+  background: #1da851;
+  color: #fff;
+}
+
+.floating-whatsapp svg {
+  width: 32px;
+  height: 32px;
+}
+
+.floating-chatbot {
+  position: fixed;
+  z-index: 40;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(20px, env(safe-area-inset-bottom));
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #0068ca;
+  color: #fff;
+  box-shadow: 0 5px 18px #0003;
+  cursor: pointer;
+}
+
+.floating-chatbot:hover {
+  background: #0053a5;
+}
+
+.floating-chatbot:focus-visible,
+.floating-whatsapp:focus-visible {
+  outline: 3px solid #143e79;
+  outline-offset: 3px;
+}
+
+.floating-chatbot svg {
+  width: 29px;
+  height: 29px;
+}
+
+@media (max-width: 1279px) {
+  .footer-group .company-links {
+    justify-content: flex-start;
+    max-width: none;
+  }
+}

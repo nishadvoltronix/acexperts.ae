@@ -14,6 +14,8 @@ import { PageHero, getPageHeroImage } from "./PageHero";
 import { SharedCTA } from "./SharedCTA";
 import { LegacyHomeContent, LegacyHomeFAQs } from "./LegacyHomeContent";
 import { ProjectFilters, type FilterableProject } from "./ProjectFilters";
+import { getServiceContent, withServiceContent } from "@/lib/service-content";
+import { ServiceContent } from "./ServiceContent";
 
 /** Repair documented source heading skips without changing valid article hierarchies. */
 const articleHeadingRepairs: Record<string, Record<string, "h2" | "h3">> = {
@@ -147,6 +149,21 @@ export function PageContent({ page }: { page: PageData }) {
         <HomePage page={page} />
       </>
     );
+
+  const serviceContent = getServiceContent(page.route);
+  if (serviceContent) {
+    const servicePage = withServiceContent(page);
+    return (
+      <>
+        <StructuredData page={servicePage} />
+        <div className="page internal-page page-service page-service-story">
+          <PageHero page={servicePage} description={serviceContent.intro[0]} />
+          <ServiceContent page={servicePage} content={serviceContent} />
+          <SharedCTA />
+        </div>
+      </>
+    );
+  }
 
   const heroImage = getPageHeroImage(page)?.url;
   const authorImage = getAsset(page.article?.authorImage);

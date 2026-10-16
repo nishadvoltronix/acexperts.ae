@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { createRequire, registerHooks } from "node:module";
 import { dirname, extname, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -41,7 +42,9 @@ registerHooks({
 
 const fixture = require("../data/seo-requirements.json");
 const pages = require("../data/pages.json");
+const serviceContent = require("../data/service-content.json");
 const { pageMetadata } = require("../lib/metadata.ts");
+const { withServiceContent } = require("../lib/service-content.ts");
 const { services } = require("../lib/site.ts");
 const { projectMatchesCategory } = require("../lib/project-categories.ts");
 const indexablePages = pages.filter((page) => !/\bnoindex\b/i.test(page.robots));
@@ -107,6 +110,45 @@ test("new service pages are indexable and linked from service navigation and con
   }
 });
 
+test("service content preserves every established FAQ question", () => {
+  const baselines = {
+    "/ac-installation-service/": [8, "9d902d3f4954b53368f153ee530490722b54cde1b3c6ed6d343de0655a14bff3"],
+    "/preventive-ac-maintenance-service/": [7, "20d1c0becb5a44cbdcb37146e6b59f07ad4f6fe229ea8c27f6ad482960dd807d"],
+    "/ac-repair-services/": [9, "cbe45c68ecb9111ce49fad6750223d23ee385bb5b9ade0acdd76c67ea72da8b1"],
+    "/emergency-ac-maintenance-service/": [10, "5aff8c9dba017e60f7b53e81d37fc77e8b584f0bbc3a8dfa7e181471814d3fae"],
+  };
+  for (const [route, [count, expectedHash]] of Object.entries(baselines)) {
+    const original = pages.find((page) => page.route === route);
+    const composed = withServiceContent(original);
+    const questions = composed.faqs.map((faq) => faq.question);
+    assert.equal(questions.length, count, route);
+    assert.equal(createHash("sha256").update(JSON.stringify(questions)).digest("hex"), expectedHash, route);
+    assert.deepEqual(questions, original.faqs.map((faq) => faq.question), route);
+  }
+});
+
+test("every document-driven service page has exactly five local photographs", () => {
+  const serviceRoutes = [
+    "/hvac-services/",
+    "/ac-duct-cleaning-services-in-dubai/",
+    "/ac-installation-service/",
+    "/preventive-ac-maintenance-service/",
+    "/ac-repair-services/",
+    "/emergency-ac-maintenance-service/",
+  ];
+  for (const route of serviceRoutes) {
+    const photos = serviceContent[route]?.photos;
+    assert.equal(photos?.length, 5, route);
+    assert.equal(new Set(photos.map((photo) => photo.src)).size, 5, `${route} uses five distinct photos`);
+    for (const photo of photos) {
+      assert.match(photo.src, /^\/images\/(services|gallery|projects|hero)\//, `${route} photo path`);
+      assert.ok(photo.alt.trim(), `${route} photo has alt text`);
+      assert.ok(photo.width > 0 && photo.height > 0, `${route} photo dimensions`);
+      assert.ok(existsSync(resolve(root, "public", photo.src.slice(1))), `${route} missing ${photo.src}`);
+    }
+  }
+});
+
 test("project filters classify only the published residential installation", () => {
   const route = "/project-portfolio/luxury-villa-ac-installation/";
   assert.equal(projectMatchesCategory(route, "all"), true);
@@ -155,7 +197,7 @@ for (const expected of fixture.pages) {
     assert.equal($('link[rel="canonical"]').attr("href"), expected.canonical);
     assert.equal($("h1").length, 1);
     assert.equal($("h1").text().replace(/\s+/g, " ").trim(),
-      fixture.requiredHeadings[expected.route] || pages.find((page) => page.route === expected.route).h1);
+      fixture.requiredHeadings[expected.route] || serviceContent[expected.route]?.h1 || pages.find((page) => page.route === expected.route).h1);
     const robots = $('meta[name="robots"]').attr("content") || "";
     assert.match(robots, /\bindex\b/);
     assert.match(robots, /\bfollow\b/);

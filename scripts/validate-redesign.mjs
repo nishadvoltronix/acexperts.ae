@@ -9,6 +9,7 @@ const hash = (value) => createHash("sha256").update(value).digest("hex");
 const baselinePath = "docs/redesign-baseline.json";
 const protectedFiles = ["data/pages.json", "data/assets.json", "data/crawl.json", "data/source-layout.json", "data/background-assets.json", "data/assets-summary.json", "docs/url-map.json", "app/api/contact/route.ts", "app/robots.ts", "app/sitemap.ts", "lib/metadata.ts"];
 const pages = await json("data/pages.json");
+const serviceContent = await json("data/service-content.json");
 const mappings = await json("docs/url-map.json");
 const assets = await json("data/assets.json");
 const assetPaths = [...new Set(assets.map((asset) => asset.localPath).filter(Boolean))].sort();
@@ -76,7 +77,8 @@ await pool(pages, async (page) => {
     if (response.status !== 200) issue(`Expected HTTP 200; received ${response.status}`);
     for (const key of ["title", "description", "canonical"]) if (normalize(row[key]) !== normalize(page[key])) issue(`${key} changed from migrated metadata.`);
     if (/noindex/i.test(row.robots) !== /noindex/i.test(page.robots)) issue("Robots indexability changed.");
-    if (row.h1.length !== 1 || normalize(row.h1[0]) !== normalize(page.h1)) issue(`Expected one preserved H1 ${JSON.stringify(page.h1)}; received ${JSON.stringify(row.h1)}.`);
+    const expectedH1 = serviceContent[page.route]?.h1 || page.h1;
+    if (row.h1.length !== 1 || normalize(row.h1[0]) !== normalize(expectedH1)) issue(`Expected one H1 ${JSON.stringify(expectedH1)}; received ${JSON.stringify(row.h1)}.`);
     if ($("main").length !== 1 || $("header.site-header").length !== 1 || $("footer.site-footer").length !== 1) issue("Shared header/footer or main landmark missing or duplicated.");
     const expected = load(page.contentHtml || "");
     const mainText = normalize($("main").text());
@@ -87,7 +89,11 @@ await pool(pages, async (page) => {
     }
     // The completion requirements restore homepage FAQs. Retain the existing
     // FAQ-page copies too, and validate the schema against each rendered page.
-    const faqs = [...page.faqs, ...(page.route === "/faq/" ? pages.find((entry) => entry.route === "/").faqs : [])];
+    const serviceFaqs = serviceContent[page.route]?.documentFaqs || [];
+    const faqs = [
+      ...(page.faqs.length ? page.faqs : serviceFaqs.map(({ question, answer }) => ({ question, answerHtml: `<p>${answer}</p>` }))),
+      ...(page.route === "/faq/" ? pages.find((entry) => entry.route === "/").faqs : []),
+    ];
     for (const faq of faqs) {
       row.faqs++;
       if (!mainText.includes(normalize(faq.question))) issue(`FAQ question missing: ${faq.question}`);
