@@ -9,11 +9,32 @@ if (!["localhost", "127.0.0.1", "[::1]"].includes(new URL(base).hostname)) throw
 const outputDir = process.env.ARTIFACT_DIR || "artifacts";
 const browser = await chromium.launch({ channel: "chrome", headless: true });
 const report = [];
+const unexpectedExternalRequests = [];
 await mkdir(outputDir, { recursive: true });
 
+async function createContext(options) {
+  const context = await browser.newContext(options);
+  await context.route("**/*", async (route) => {
+    const url = route.request().url();
+    if (new URL(url).origin === new URL(base).origin) return route.continue();
+    // Keep the site-wide analytics integration offline during viewer checks.
+    if (url === "https://www.googletagmanager.com/gtm.js?id=GTM-K9HW63CV") {
+      return route.fulfill({ contentType: "application/javascript", body: "/* Local viewer check: analytics disabled. */" });
+    }
+    if (url === "https://www.googletagmanager.com/ns.html?id=GTM-K9HW63CV") {
+      return route.fulfill({ contentType: "text/html", body: "<!doctype html><html><head><title>Tag Manager fixture</title></head><body></body></html>" });
+    }
+    unexpectedExternalRequests.push(url);
+    await route.abort("blockedbyclient");
+  });
+  return context;
+}
+
 async function check(name, work) {
+  const externalRequestStart = unexpectedExternalRequests.length;
   try {
     const details = await work();
+    assert.deepEqual(unexpectedExternalRequests.slice(externalRequestStart), [], "Viewer checks must not make unexpected external requests");
     report.push({ name, passed: true, ...details });
     console.log(`PASS ${name}`);
   } catch (error) {
@@ -179,7 +200,7 @@ async function assertAccessible(page) {
 try {
   for (const width of [390, 1440]) {
     await check(`accessible loop names in both states ${width}px`, async () => {
-      const context = await browser.newContext({ viewport: { width, height: 1000 }, isMobile: width < 768, hasTouch: width < 768 });
+      const context = await createContext({ viewport: { width, height: 1000 }, isMobile: width < 768, hasTouch: width < 768 });
       const page = await context.newPage();
       try {
         await openHome(page);
@@ -204,7 +225,7 @@ try {
 
   for (const width of [320, 390, 768, 1024, 1440]) {
     await check(`responsive ${width}px`, async () => {
-      const context = await browser.newContext({ viewport: { width, height: 900 }, isMobile: width < 768, hasTouch: width < 768 });
+      const context = await createContext({ viewport: { width, height: 900 }, isMobile: width < 768, hasTouch: width < 768 });
       const page = await context.newPage();
       const errors = [];
       page.on("pageerror", (error) => errors.push(error.message));
@@ -266,7 +287,7 @@ try {
   }
 
   await check("automatic playback and suspension", async () => {
-    const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+    const context = await createContext({ viewport: { width: 1440, height: 1000 } });
     const page = await context.newPage();
     try {
       await openHome(page);
@@ -317,7 +338,7 @@ try {
   });
 
   await check("scroll speed and hover interaction", async () => {
-    const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+    const context = await createContext({ viewport: { width: 1440, height: 1000 } });
     const page = await context.newPage();
     try {
       await openHome(page);
@@ -403,7 +424,7 @@ try {
   });
 
   await check("animation, controls, and cleanup", async () => {
-    const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
+    const context = await createContext({ viewport: { width: 1440, height: 1000 } });
     const page = await context.newPage();
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));
@@ -512,7 +533,7 @@ try {
   });
 
   await check("real touch rotation and page scrolling", async () => {
-    const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+    const context = await createContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
     const page = await context.newPage();
     try {
       await openHome(page);
@@ -556,7 +577,7 @@ try {
 
   for (const mode of ["reduced motion", "live motion preference", "no JavaScript"]) {
     await check(mode, async () => {
-      const context = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: mode === "reduced motion" ? "reduce" : "no-preference", javaScriptEnabled: mode !== "no JavaScript" });
+      const context = await createContext({ viewport: { width: 390, height: 844 }, reducedMotion: mode === "reduced motion" ? "reduce" : "no-preference", javaScriptEnabled: mode !== "no JavaScript" });
       const page = await context.newPage();
       try {
         if (mode === "no JavaScript") {

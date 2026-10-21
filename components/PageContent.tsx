@@ -117,17 +117,27 @@ function ContactContent({ page }: { page: PageData }) {
           {sections.filter((section) => section.kind === "intro").map((section) => (
             <RichContent key={section.id} html={section.html} omitH1 normalizeHeadings />
           ))}
-          <section className="location-panel">
-            <h2>Visiting hours</h2>
-            <p>{site.hours}</p>
+          <section className="location-panel contact-location" aria-labelledby="contact-location-title">
+            <h2 id="contact-location-title">Find us</h2>
+            <iframe
+              className="contact-location-map"
+              title="Voltronix Contracting LLC on Google Maps"
+              src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!3m2!1m1!4s2645270074494771790"
+              width="100%"
+              height="200"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Aber+Warehouse+Dubai+Investment+Park+2+Dubai"
-              className="text-link"
+              href="https://www.google.com/maps/place/Voltronix+Contracting+LLC/@24.9746049,55.1865564,293m/data=!3m1!1e3!4m6!3m5!1s0x3e5f4289acafffff:0x24b5e31e153b624e!8m2!3d24.9751353!4d55.1866505!16s%2Fg%2F11dxkkr0jw"
+              className="text-link contact-location-link"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
-              Find this address on Google Maps <span aria-hidden="true">↗</span>
+              Open in Google Maps <span aria-hidden="true">↗</span>
             </a>
+            <p className="contact-location-hours"><strong>Visiting hours</strong><br />{site.hours}</p>
           </section>
         </div>
         <ContactForm privacyNoticeUrl={configuredPrivacyNotice()?.url} />

@@ -1,15 +1,21 @@
 import { access, readFile } from "node:fs/promises";
 import { load } from "cheerio";
 import { chromium } from "playwright";
-import { ZOHO_CONTACT_ORIGIN, interceptZohoContact, checkZohoContact } from "./helpers/zoho-contact-check.mjs";
+import { ZOHO_CONTACT_ORIGIN, interceptZohoContact, checkZohoContact, checkZohoContactReferrer, checkZohoContactWithoutJavaScript, checkContactMap } from "./helpers/zoho-contact-check.mjs";
 
 // Production checks only: run against a local `next start` instance.
-// Requests remain local; CRM submissions and analytics are fulfilled in-browser.
+// Requests remain local; provider embeds and tracking probes are fulfilled in-browser.
 const base = new URL(process.env.BASE_URL || "http://localhost:3100");
 const routes = ["/", "/contact-us/", "/about/", "/faq/"];
 const gtmOrigin = "https://www.googletagmanager.com";
 const gtmScript = `${gtmOrigin}/gtm.js?id=GTM-K9HW63CV`;
 const gtmFrame = `${gtmOrigin}/ns.html?id=GTM-K9HW63CV`;
+const trackingConnectionOrigins = [
+  "https://www.google.ae",
+  "https://stats.g.doubleclick.net",
+  "https://pagesense-collect.zoho.com",
+  "https://pagesense-hb-collect.zoho.com",
+];
 let phase = "local target validation";
 class CheckFailure extends Error {}
 function check(condition, message) {
@@ -39,18 +45,23 @@ function documentPolicy(headers, label) {
   const nonces = scripts.filter((value) => /^'nonce-[A-Za-z\d+/=_-]+'$/.test(value));
   check(nonces.length === 1, `${label}: expected one script nonce`);
   check(!scripts.includes("'unsafe-inline'") && !scripts.includes("'unsafe-eval'"), `${label}: unsafe production scripts allowed`);
+  check(!directives.get("script-src-elem")?.includes("'unsafe-inline'"), `${label}: unsafe inline script elements allowed`);
   check(scripts.includes("'strict-dynamic'"), `${label}: strict-dynamic missing`);
   for (const name of ["script-src-attr", "object-src", "frame-ancestors", "base-uri"]) {
     check(directives.get(name)?.join(" ") === "'none'", `${label}: ${name} must deny content`);
   }
-  check(directives.get("frame-src")?.slice().sort().join(" ") === ["https://*.zohopublic.com", gtmOrigin].sort().join(" "),
-    `${label}: frames must be limited to Zoho and Google Tag Manager`);
+  check(directives.get("frame-src")?.slice().sort().join(" ") === ["https://*.zohopublic.com", gtmOrigin, "https://www.google.com/maps/embed"].sort().join(" "),
+    `${label}: frames must be limited to Zoho, Google Tag Manager and the Google Maps embed endpoint`);
   for (const name of ["script-src-elem", "img-src", "connect-src"]) {
     check(directives.get(name)?.some((value) => [gtmOrigin, "https://*.googletagmanager.com"].includes(value)),
       `${label}: ${name} must allow Google Tag Manager`);
   }
   check(directives.get("form-action")?.join(" ") === `'self' ${ZOHO_CONTACT_ORIGIN}`, `${label}: form destinations must be limited to self and Zoho CRM`);
   check(directives.get("connect-src")?.includes(ZOHO_CONTACT_ORIGIN), `${label}: Zoho CRM AJAX submission must be allowed`);
+  for (const origin of trackingConnectionOrigins) {
+    check(directives.get("connect-src")?.includes(origin), `${label}: expected tracking connection origin missing`);
+  }
+  check(directives.get("img-src")?.includes("https://www.google.ae"), `${label}: Google UAE audience image must be allowed`);
   const cache = headers.get("cache-control") || "";
   check(/\bprivate\b/.test(cache) && /\bno-store\b/.test(cache), `${label}: nonce HTML may be cached`);
   return nonces[0].slice(7, -1);
@@ -217,7 +228,7 @@ async function main() {
     check(await nav.isVisible(), "mobile menu did not open after hydration");
     await nav.getByRole("link", { name: "Contact", exact: true }).click();
     await page.waitForURL(new URL("/contact-us/", base).href);
-    await page.locator(".contact-form").waitFor();
+    await page.locator("#ziframe_850132").waitFor();
     check(await page.getByRole("button", { name: "Menu", exact: true }).getAttribute("aria-expanded") === "false", "mobile menu did not close after navigation");
     await cleanBrowser(phase);
     check(gtmRequests === gtmRequestsBeforeNavigation, "client navigation must not reload GTM");
@@ -250,10 +261,59 @@ async function main() {
       await noScriptContext.close();
     }
 
-    phase = "synthetic intercepted Zoho contact submission";
+    phase = "intercepted Zoho Forms embed";
     await checkZohoContact(page, base, zohoContact);
     await cleanBrowser(phase);
-    console.log("PASS form: validation, exact CRM multipart payloads, acceptance and duplicate guard; requests intercepted without delivery");
+    await checkZohoContactReferrer(browser, base);
+    await checkZohoContactWithoutJavaScript(browser, base);
+    console.log("PASS form: Zoho auto-height, rejected untrusted/malformed resize messages, referrer encoding/length limit and no-JavaScript fallback; no live provider traffic or submissions");
+
+    phase = "intercepted contact map";
+    for (const width of [390, 1440]) {
+      await page.setViewportSize({ width, height: 900 });
+      await checkContactMap(page, zohoContact);
+      await cleanBrowser(`${phase} at ${width}px`);
+    }
+    console.log("PASS map: exact Voltronix embed, compact 200px map, direct Maps link and no overflow at 390px and 1440px; no live Google requests");
+
+    phase = "intercepted tracking destination probes";
+    const connectionProbes = trackingConnectionOrigins.map((origin) => `${origin}/__local_csp_probe__/connect`);
+    const imageProbe = "https://www.google.ae/__local_csp_probe__/image.png";
+    const probeRequests = new Map();
+    // Exact synthetic URLs override the provider interceptors. No vendor receives
+    // these requests; the browser still enforces the document's real CSP.
+    for (const url of [...connectionProbes, imageProbe]) {
+      await context.route(url, async (route) => {
+        check(route.request().method() === "GET", "tracking probe must use GET");
+        probeRequests.set(url, (probeRequests.get(url) || 0) + 1);
+        return route.fulfill({
+          status: 200,
+          headers: { "access-control-allow-origin": base.origin },
+          contentType: url === imageProbe ? "image/png" : "text/plain",
+          body: url === imageProbe
+            ? Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a8K0AAAAASUVORK5CYII=", "base64")
+            : "local CSP probe",
+        });
+      });
+    }
+    const destinationsAllowed = await page.evaluate(async ({ connections, image }) => {
+      const connectionsAllowed = await Promise.all(connections.map(async (url) => {
+        const response = await fetch(url, { credentials: "omit", signal: AbortSignal.timeout(10000) });
+        return response.ok && await response.text() === "local CSP probe";
+      }));
+      const imageAllowed = await new Promise((resolve) => {
+        const pixel = new Image();
+        const timeout = setTimeout(() => resolve(false), 10000);
+        pixel.onload = () => { clearTimeout(timeout); resolve(pixel.naturalWidth === 1 && pixel.naturalHeight === 1); };
+        pixel.onerror = () => { clearTimeout(timeout); resolve(false); };
+        pixel.src = image;
+      });
+      return connectionsAllowed.every(Boolean) && imageAllowed;
+    }, { connections: connectionProbes, image: imageProbe });
+    check(destinationsAllowed && [...connectionProbes, imageProbe].every((url) => probeRequests.get(url) === 1),
+      "CSP blocked a required tracking destination or probe was not intercepted exactly once");
+    await cleanBrowser(phase);
+    console.log("PASS tracking CSP: Google UAE image and four connection destinations allowed; all probes intercepted without tracking");
 
     // Intentional violations use a separate document, outside normal browser checks.
     phase = "deliberate CSP injection probes";

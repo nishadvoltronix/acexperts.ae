@@ -3,6 +3,7 @@ import rawAssets from "@/data/assets.json";
 import urlMap from "@/docs/url-map.json";
 import type { Asset, PageData } from "./types";
 import { safeContentUrl } from "./content-safety";
+import { uniformImageSource } from "./uniform-images";
 export const pages = rawPages as unknown as PageData[];
 export const assets = rawAssets as unknown as Asset[];
 const pageMap = new Map(pages.map((page) => [page.route, page]));
@@ -23,7 +24,7 @@ export function localLink(href: string) {
   const safeHref = safeContentUrl(href);
   if (!safeHref) return "#";
   const asset = getAsset(safeHref);
-  if (asset?.localPath) return safeContentUrl(asset.localPath) || "#";
+  if (asset?.localPath) return safeContentUrl(uniformImageSource(asset.localPath)) || "#";
   if (safeHref.startsWith("#")) return safeHref;
   try {
     const url = new URL(safeHref, "https://acexperts.ae");

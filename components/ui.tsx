@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { CSSProperties, ReactNode } from "react";
 import { site } from "@/lib/site";
+import { uniformImageSource } from "@/lib/uniform-images";
 
 export function Container({ children, className = "", id }: { children: ReactNode; className?: string; id?: string }) { return <div id={id} className={`container ${className}`}>{children}</div>; }
 export function Button({ children, href, secondary = false, className = "", arrow = true }: { children: ReactNode; href: string; secondary?: boolean; className?: string; arrow?: boolean }) { return <Link href={href} className={`button ${secondary ? "button-secondary" : ""} ${className}`}>{children}{arrow && <Icon name="arrow" size={18} />}</Link>; }
@@ -50,7 +51,7 @@ export function ReferenceArt({ crop, alt = "", className = "", priority = false,
   const inset = restored?.inset;
   const imageHeight = restored ? restored.height / (inset?.[3] || restored.cropHeight || restored.height) * 100 : 1600 / h * 100;
   const style = { aspectRatio: `${w}/${h}`, '--art-width': restored ? `${inset ? restored.width / inset[2] * 100 : 100}%` : `${705 / w * 100}%`, '--art-height': `${imageHeight}%`, '--art-left': inset ? `${-inset[0] / inset[2] * 100}%` : restored ? '0%' : `${-x / w * 100}%`, '--art-top': inset ? `${-inset[1] / inset[3] * 100}%` : restored ? `${(100 - imageHeight) / 2}%` : `${-y / h * 100}%` } as CSSProperties;
-  return <span className={`reference-art reference-${crop} ${className}`} style={style}><Image src={restored?.src || "/images/design/homepage-reference.jpeg"} alt={alt} width={restored?.width || 705} height={restored?.height || 1600} sizes={restored?.sizes} quality={75} priority={priority} unoptimized={crop === "hero" || !restored} draggable={false} />{children}</span>;
+  return <span className={`reference-art reference-${crop} ${className}`} style={style}><Image src={uniformImageSource(restored?.src || "/images/design/homepage-reference.jpeg")} alt={alt} width={restored?.width || 705} height={restored?.height || 1600} sizes={restored?.sizes} quality={75} priority={priority} unoptimized={crop === "hero" || !restored} draggable={false} />{children}</span>;
 }
 export function BrandLogo({ preload = false }: { preload?: boolean }) {
   return <Image src={site.logo} alt="Voltronix" width={407} height={75} className="brand-logo" preload={preload} unoptimized />;

@@ -344,7 +344,7 @@ async function main() {
       (await faq.evaluate((element) => element.open)) === initialOpen,
     );
     const contactCheck = await checkZohoContact(page, base, zohoContact);
-    recordInteraction("Contact validation, exact CRM multipart payloads, acceptance and duplicate guard (intercepted)", true, contactCheck);
+    recordInteraction("Contact uses the exact supplied Zoho iframe without legacy submissions (intercepted)", true, contactCheck);
     if (
       currentCase.jsErrors.length ||
       currentCase.consoleErrors.length ||

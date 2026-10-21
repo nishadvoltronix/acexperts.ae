@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
-import { interceptZohoContact, checkZohoContact, checkZohoContactFailures, checkZohoContactWithoutJavaScript } from "./helpers/zoho-contact-check.mjs";
+import { interceptZohoContact, checkZohoContact, checkZohoContactReferrer, checkZohoContactWithoutJavaScript } from "./helpers/zoho-contact-check.mjs";
 
 const base = new URL(process.env.BASE_URL || "http://127.0.0.1:3112");
 if (!["localhost", "127.0.0.1", "[::1]"].includes(base.hostname)) throw new Error("Local checks only.");
@@ -21,7 +21,7 @@ page.setDefaultTimeout(15000);
 const pageErrors = [];
 page.on("pageerror", (error) => pageErrors.push(error.message));
 // All form requests in this suite are fulfilled in the browser. This verifies
-// CRM contact submission and newsletter UI states without delivering mail.
+// The Zoho contact embed and newsletter UI states without delivering mail.
 // Real provider acceptance remains a separate launch check.
 await context.route("**/api/newsletter/", (route) => route.fulfill({ status: 503, json: { ok: false, message: "Newsletter signup is currently unavailable. Please try again later." } }));
 try {
@@ -166,13 +166,13 @@ try {
       assert.equal(await page.getByRole("navigation", { name: "Breadcrumb", exact: true }).count(), 0, route);
     }
   });
-  await check("Contact validation, exact CRM multipart payloads, acceptance and duplicate guard (intercepted)", async () => {
+  await check("Contact uses the exact supplied Zoho iframe without legacy submissions (intercepted)", async () => {
     await checkZohoContact(page, base, zohoContact);
   });
-  await check("Contact rejection, CAPTCHA, HTTP, unknown response and network failures preserve inputs (intercepted)", async () => {
-    await checkZohoContactFailures(page, base, zohoContact);
+  await check("Contact iframe preserves encoded referrer and limits oversized URLs (intercepted)", async () => {
+    await checkZohoContactReferrer(browser, base);
   });
-  await check("Contact provides call/email fallback without JavaScript and prevents native submission", async () => {
+  await check("Contact iframe and call/email fallback remain available without JavaScript", async () => {
     await checkZohoContactWithoutJavaScript(browser, base);
   });
   await check("Newsletter consent, provider failure and confirmation-email acceptance UI", async () => {

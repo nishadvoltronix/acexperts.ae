@@ -443,7 +443,7 @@ async function main() {
       recordInteraction(`Project category ${category} shows accurate membership and selection`, (await categoryButton.getAttribute("aria-pressed")) === "true" && await categories.locator('button[aria-pressed="true"]').count() === 1 && JSON.stringify(projectLinks) === JSON.stringify(expectedLinks) && (await page.locator(".filter-status").textContent()).trim() === expectedStatus && (hasInstallation ? await page.locator(".project-empty").count() === 0 : (await page.locator(".project-empty").textContent()).includes("No projects published in this category yet.")), { projectLinks, expectedStatus });
     }
     const contactCheck = await checkZohoContact(page, base, zohoContact);
-    recordInteraction("Contact validation, exact CRM multipart payloads, acceptance and duplicate guard (intercepted)", true, contactCheck);
+    recordInteraction("Contact uses the exact supplied Zoho iframe without legacy submissions (intercepted)", true, contactCheck);
     if (
       currentCase.jsErrors.length ||
       currentCase.consoleErrors.length ||

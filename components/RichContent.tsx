@@ -66,6 +66,14 @@ export function RichContent({
     }
     return false;
   }
+  function isGalleryImage(node: Element): boolean {
+    let parent = node.parent;
+    while (parent instanceof Element) {
+      if (parent.attribs.class?.split(/\s+/).includes("gallery-grid")) return true;
+      parent = parent.parent;
+    }
+    return false;
+  }
   const options: HTMLReactParserOptions = {
     replace(node) {
       if (!(node instanceof Element)) return;
@@ -120,6 +128,7 @@ export function RichContent({
             alt={attributes.alt || ""}
             width={asset.width || Number(attributes.width) || 900}
             height={asset.height || Number(attributes.height) || 600}
+            useSourceDimensions={isGalleryImage(node)}
             className={attributes.class || "content-image"}
             sizes={asset.localPath.includes('/logo/') ? '205px' : isCardImage(node)
               ? '(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) 45vw, 30vw'
