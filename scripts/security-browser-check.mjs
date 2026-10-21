@@ -7,6 +7,9 @@ import { ZOHO_CONTACT_ORIGIN, interceptZohoContact, checkZohoContact } from "./h
 // Requests remain local; CRM submissions and analytics are fulfilled in-browser.
 const base = new URL(process.env.BASE_URL || "http://localhost:3100");
 const routes = ["/", "/contact-us/", "/about/", "/faq/"];
+const gtmOrigin = "https://www.googletagmanager.com";
+const gtmScript = `${gtmOrigin}/gtm.js?id=GTM-K9HW63CV`;
+const gtmFrame = `${gtmOrigin}/ns.html?id=GTM-K9HW63CV`;
 let phase = "local target validation";
 class CheckFailure extends Error {}
 function check(condition, message) {
@@ -40,8 +43,12 @@ function documentPolicy(headers, label) {
   for (const name of ["script-src-attr", "object-src", "frame-ancestors", "base-uri"]) {
     check(directives.get(name)?.join(" ") === "'none'", `${label}: ${name} must deny content`);
   }
-  check(directives.get("frame-src")?.join(" ") === "https://*.zohopublic.com",
-    `${label}: frames must be limited to the Zoho chat provider`);
+  check(directives.get("frame-src")?.slice().sort().join(" ") === ["https://*.zohopublic.com", gtmOrigin].sort().join(" "),
+    `${label}: frames must be limited to Zoho and Google Tag Manager`);
+  for (const name of ["script-src-elem", "img-src", "connect-src"]) {
+    check(directives.get(name)?.some((value) => [gtmOrigin, "https://*.googletagmanager.com"].includes(value)),
+      `${label}: ${name} must allow Google Tag Manager`);
+  }
   check(directives.get("form-action")?.join(" ") === `'self' ${ZOHO_CONTACT_ORIGIN}`, `${label}: form destinations must be limited to self and Zoho CRM`);
   check(directives.get("connect-src")?.includes(ZOHO_CONTACT_ORIGIN), `${label}: Zoho CRM AJAX submission must be allowed`);
   const cache = headers.get("cache-control") || "";
@@ -91,7 +98,8 @@ async function main() {
     check(!seenNonces.has(nonce), `${path}: response nonce reused`);
     check(nonce !== suppliedNonce, `${path}: client controlled the nonce`);
     seenNonces.add(nonce);
-    const $ = load(await response.text());
+    const html = await response.text();
+    const $ = load(html);
     const expected = pages.find((entry) => entry.route === path);
     check(!!expected, `${path}: metadata baseline missing`);
     check(normalize($("title").text()) === normalize(expected.title), `${path}: title changed`);
@@ -101,6 +109,21 @@ async function main() {
     const scripts = $("script").toArray();
     check(scripts.length > 0, `${path}: framework scripts missing`);
     check(scripts.every((script) => $(script).attr("nonce") === nonce), `${path}: script nonce mismatch`);
+    const bootstrap = $("script#google-tag-manager");
+    check(bootstrap.length === 1 && bootstrap.parent().is("head"), `${path}: expected one GTM bootstrap in head`);
+    check(bootstrap.text().includes("GTM-K9HW63CV"), `${path}: incorrect GTM container`);
+    const noScriptDom = load(html, { scriptingEnabled: false });
+    const fallback = noScriptDom(`noscript:has(iframe[src="${gtmFrame}"])`);
+    check(fallback.length === 1 && fallback.parent().is("body"), `${path}: expected one GTM noscript in body`);
+    check(fallback.prevAll().toArray().every((node) => {
+      // React may insert an empty hidden div for its streaming boundary.
+      const element = noScriptDom(node);
+      return element.is("div[hidden]") && !element.children().length && !element.text().trim();
+    }), `${path}: GTM noscript must be the first authored body element`);
+    const frame = fallback.children("iframe");
+    check(frame.length === 1 && frame.attr("height") === "0" && frame.attr("width") === "0" &&
+      /display\s*:\s*none/.test(frame.attr("style") || "") && /visibility\s*:\s*hidden/.test(frame.attr("style") || ""),
+    `${path}: GTM fallback must remain hidden`);
     const structured = $('script[type="application/ld+json"]').toArray();
     check(structured.length >= 2, `${path}: structured data missing`);
     for (const script of structured) {
@@ -108,7 +131,7 @@ async function main() {
       check(schema["@context"] === "https://schema.org", `${path}: structured data invalid`);
     }
   }
-  console.log("PASS HTTP: security headers, fresh trusted nonces and SEO on four routes");
+  console.log("PASS HTTP: security headers, fresh trusted nonces, GTM placement and SEO on four routes");
 
   phase = "browser launch";
   const browser = await chromium.launch({ executablePath: await executable(), headless: true });
@@ -119,7 +142,16 @@ async function main() {
       serviceWorkers: "block",
     });
     let externalRequests = 0;
+    let gtmRequests = 0;
     await context.route("**/*", async (route) => {
+      if (route.request().url() === gtmScript && route.request().method() === "GET") {
+        gtmRequests++;
+        return route.fulfill({
+          status: 200,
+          contentType: "application/javascript",
+          body: "window.__securityGtmLoads = (window.__securityGtmLoads || 0) + 1;",
+        });
+      }
       const url = new URL(route.request().url());
       if (url.origin !== base.origin) {
         externalRequests++;
@@ -156,15 +188,30 @@ async function main() {
       check(await page.evaluate(() => globalThis.__securityViolations.length === 0), `${label}: unexpected CSP violation`);
       check(!consoleErrors && !pageErrors && !failedResponses, `${label}: browser errors (console=${consoleErrors}, page=${pageErrors}, HTTP=${failedResponses})`);
       check(!externalRequests, `${label}: attempted nonlocal request or WebSocket`);
+      const gtm = await page.evaluate((src) => {
+        const bootstrap = document.getElementById("google-tag-manager");
+        const injected = [...document.scripts].filter((script) => script.src === src);
+        return {
+          loads: globalThis.__securityGtmLoads,
+          starts: globalThis.dataLayer?.filter((entry) => entry.event === "gtm.js" && typeof entry["gtm.start"] === "number").length,
+          scripts: injected.length,
+          nonceMatches: !!bootstrap?.nonce && injected[0]?.nonce === bootstrap.nonce,
+        };
+      }, gtmScript);
+      check(gtm.loads === 1 && gtm.starts === 1 && gtm.scripts === 1 && gtm.nonceMatches,
+        `${label}: GTM must initialize once and pass its CSP nonce to the loaded script`);
     }
     for (const path of routes) {
       phase = `browser ${path}`;
+      const previousGtmRequests = gtmRequests;
       const response = await page.goto(new URL(path, base).href, { waitUntil: "load" });
       check(response?.status() === 200, `${phase}: page unavailable`);
       await cleanBrowser(phase);
+      check(gtmRequests === previousGtmRequests + 1, `${phase}: expected one GTM script request per document`);
     }
 
     phase = "mobile navigation";
+    const gtmRequestsBeforeNavigation = gtmRequests;
     await page.getByRole("button", { name: "Menu", exact: true }).click();
     const nav = page.getByRole("navigation", { name: "Main navigation" });
     check(await nav.isVisible(), "mobile menu did not open after hydration");
@@ -173,7 +220,35 @@ async function main() {
     await page.locator(".contact-form").waitFor();
     check(await page.getByRole("button", { name: "Menu", exact: true }).getAttribute("aria-expanded") === "false", "mobile menu did not close after navigation");
     await cleanBrowser(phase);
-    console.log("PASS browser: hydration, CSP and mobile navigation on four routes");
+    check(gtmRequests === gtmRequestsBeforeNavigation, "client navigation must not reload GTM");
+    console.log("PASS browser: hydration, CSP, GTM initialization and mobile navigation on four routes");
+
+    phase = "GTM fallback without JavaScript";
+    const noScriptContext = await browser.newContext({ javaScriptEnabled: false, serviceWorkers: "block" });
+    try {
+      let fallbackRequests = 0;
+      let unexpectedRequests = 0;
+      await noScriptContext.route("**/*", async (route) => {
+        if (route.request().url() === gtmFrame && route.request().method() === "GET") {
+          fallbackRequests++;
+          return route.fulfill({ status: 200, contentType: "text/html", body: "<!doctype html><html><body></body></html>" });
+        }
+        if (new URL(route.request().url()).origin !== base.origin) {
+          unexpectedRequests++;
+          return route.abort("blockedbyclient");
+        }
+        return route.continue();
+      });
+      const noScriptPage = await noScriptContext.newPage();
+      const response = await noScriptPage.goto(base.href, { waitUntil: "load" });
+      check(response?.status() === 200, "JavaScript-disabled document unavailable");
+      check(await noScriptPage.locator(`body > noscript > iframe[src="${gtmFrame}"]`).count() === 1,
+        "GTM iframe missing when JavaScript is disabled");
+      check(fallbackRequests === 1 && unexpectedRequests === 0, "GTM fallback must load once under CSP without external traffic");
+      console.log("PASS GTM fallback: JavaScript-disabled iframe allowed by CSP; request intercepted without tracking");
+    } finally {
+      await noScriptContext.close();
+    }
 
     phase = "synthetic intercepted Zoho contact submission";
     await checkZohoContact(page, base, zohoContact);
