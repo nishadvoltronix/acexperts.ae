@@ -10,6 +10,21 @@ const routes = ["/", "/contact-us/", "/about/", "/faq/"];
 const gtmOrigin = "https://www.googletagmanager.com";
 const gtmScript = `${gtmOrigin}/gtm.js?id=GTM-K9HW63CV`;
 const gtmFrame = `${gtmOrigin}/ns.html?id=GTM-K9HW63CV`;
+const mariesOrigin = "https://talk2maries.com";
+const mariesScript = `${mariesOrigin}/widget/v1/voice-widget.js?v=1.0.1`;
+const mariesFixture = `(() => {
+  const state = globalThis.__securityMaries = {
+    loads: (globalThis.__securityMaries?.loads || 0) + 1,
+    opens: 0, open: false, destroyed: false
+  };
+  globalThis.Talk2MariesWidget = {
+    init() { state.destroyed = false; return this; },
+    open() { state.opens++; state.open = true; },
+    close() { state.open = false; },
+    destroy() { state.destroyed = true; state.open = false; },
+    getState() { return { open: state.open, destroyed: state.destroyed, state: 'Ready', duration: 0 }; }
+  };
+})();`;
 const trackingConnectionOrigins = [
   "https://www.google.ae",
   "https://stats.g.doubleclick.net",
@@ -28,9 +43,11 @@ function securityHeaders(headers, label) {
   check(headers.get("x-frame-options") === "DENY", `${label}: frame protection missing`);
   check(headers.get("referrer-policy") === "strict-origin-when-cross-origin", `${label}: referrer policy missing`);
   check(/max-age=31536000(?:;|$)/.test(headers.get("strict-transport-security") || ""), `${label}: production HSTS missing`);
-  for (const feature of ["camera", "microphone", "geolocation", "payment"]) {
+  for (const feature of ["camera", "geolocation", "payment"]) {
     check((headers.get("permissions-policy") || "").includes(`${feature}=()`), `${label}: ${feature} restriction missing`);
   }
+  const microphonePolicy = (headers.get("permissions-policy") || "").split(",").map((value) => value.trim()).find((value) => value.startsWith("microphone="));
+  check(microphonePolicy === `microphone=(self "${mariesOrigin}")`, `${label}: microphone must be restricted to self and the Maries iframe origin for delegation`);
   check(!headers.has("x-powered-by"), `${label}: framework header exposed`);
 }
 
@@ -50,11 +67,14 @@ function documentPolicy(headers, label) {
   for (const name of ["script-src-attr", "object-src", "frame-ancestors", "base-uri"]) {
     check(directives.get(name)?.join(" ") === "'none'", `${label}: ${name} must deny content`);
   }
-  check(directives.get("frame-src")?.slice().sort().join(" ") === ["https://*.zohopublic.com", gtmOrigin, "https://www.google.com/maps/embed"].sort().join(" "),
-    `${label}: frames must be limited to Zoho, Google Tag Manager and the Google Maps embed endpoint`);
+  check(directives.get("frame-src")?.slice().sort().join(" ") === ["https://*.zohopublic.com", gtmOrigin, "https://www.google.com/maps/embed", mariesOrigin].sort().join(" "),
+    `${label}: frames must be limited to Zoho, Google Tag Manager, the Google Maps embed endpoint and Maries`);
   for (const name of ["script-src-elem", "img-src", "connect-src"]) {
     check(directives.get(name)?.some((value) => [gtmOrigin, "https://*.googletagmanager.com"].includes(value)),
       `${label}: ${name} must allow Google Tag Manager`);
+  }
+  for (const name of ["script-src-elem", "style-src-elem", "img-src", "connect-src", "frame-src"]) {
+    check(directives.get(name)?.includes(mariesOrigin), `${label}: ${name} must allow the Maries widget origin`);
   }
   check(directives.get("form-action")?.join(" ") === `'self' ${ZOHO_CONTACT_ORIGIN}`, `${label}: form destinations must be limited to self and Zoho CRM`);
   check(directives.get("connect-src")?.includes(ZOHO_CONTACT_ORIGIN), `${label}: Zoho CRM AJAX submission must be allowed`);
@@ -154,7 +174,12 @@ async function main() {
     });
     let externalRequests = 0;
     let gtmRequests = 0;
+    let mariesRequests = 0;
     await context.route("**/*", async (route) => {
+      if (route.request().url() === mariesScript && route.request().method() === "GET") {
+        mariesRequests++;
+        return route.fulfill({ status: 200, contentType: "application/javascript", body: mariesFixture });
+      }
       if (route.request().url() === gtmScript && route.request().method() === "GET") {
         gtmRequests++;
         return route.fulfill({
@@ -196,6 +221,7 @@ async function main() {
       failedResponses++;
     });
     async function cleanBrowser(label) {
+      await page.waitForFunction(() => globalThis.__securityMaries?.opens === 1);
       check(await page.evaluate(() => globalThis.__securityViolations.length === 0), `${label}: unexpected CSP violation`);
       check(!consoleErrors && !pageErrors && !failedResponses, `${label}: browser errors (console=${consoleErrors}, page=${pageErrors}, HTTP=${failedResponses})`);
       check(!externalRequests, `${label}: attempted nonlocal request or WebSocket`);
@@ -211,18 +237,39 @@ async function main() {
       }, gtmScript);
       check(gtm.loads === 1 && gtm.starts === 1 && gtm.scripts === 1 && gtm.nonceMatches,
         `${label}: GTM must initialize once and pass its CSP nonce to the loaded script`);
+      const maries = await page.evaluate((src) => {
+        const scripts = [...document.scripts].filter((script) => script.src === src);
+        const script = scripts[0];
+        return {
+          ...globalThis.__securityMaries,
+          scripts: scripts.length,
+          nonceMatches: !!script?.nonce && script.nonce === document.getElementById("google-tag-manager")?.nonce,
+          siteId: script?.dataset.siteId,
+          position: script?.dataset.position,
+          label: script?.dataset.label,
+        };
+      }, mariesScript);
+      check(maries.loads === 1 && maries.opens === 1 && maries.scripts === 1 && maries.nonceMatches,
+        `${label}: Maries must load and auto-open once per document with the CSP nonce`);
+      check(maries.siteId === "ac-experts" && maries.position === "bottom-right" && maries.label === "Talk to Maries",
+        `${label}: Maries site ID, right-side position or label is incorrect`);
     }
     for (const path of routes) {
       phase = `browser ${path}`;
       const previousGtmRequests = gtmRequests;
+      const previousMariesRequests = mariesRequests;
       const response = await page.goto(new URL(path, base).href, { waitUntil: "load" });
       check(response?.status() === 200, `${phase}: page unavailable`);
       await cleanBrowser(phase);
       check(gtmRequests === previousGtmRequests + 1, `${phase}: expected one GTM script request per document`);
+      check(mariesRequests === previousMariesRequests + 1, `${phase}: expected one Maries script request per document`);
+      check(await page.evaluate(() => globalThis.Talk2MariesWidget.getState().open), `${phase}: Maries must open automatically`);
     }
 
     phase = "mobile navigation";
     const gtmRequestsBeforeNavigation = gtmRequests;
+    const mariesRequestsBeforeNavigation = mariesRequests;
+    await page.evaluate(() => globalThis.Talk2MariesWidget.close());
     await page.getByRole("button", { name: "Menu", exact: true }).click();
     const nav = page.getByRole("navigation", { name: "Main navigation" });
     check(await nav.isVisible(), "mobile menu did not open after hydration");
@@ -232,7 +279,9 @@ async function main() {
     check(await page.getByRole("button", { name: "Menu", exact: true }).getAttribute("aria-expanded") === "false", "mobile menu did not close after navigation");
     await cleanBrowser(phase);
     check(gtmRequests === gtmRequestsBeforeNavigation, "client navigation must not reload GTM");
-    console.log("PASS browser: hydration, CSP, GTM initialization and mobile navigation on four routes");
+    check(mariesRequests === mariesRequestsBeforeNavigation && await page.evaluate(() => !globalThis.Talk2MariesWidget.getState().open),
+      "client navigation must not reload Maries or reopen a panel the visitor closed");
+    console.log("PASS browser: hydration, CSP, GTM initialization, Maries auto-open/close persistence and mobile navigation on four routes");
 
     phase = "GTM fallback without JavaScript";
     const noScriptContext = await browser.newContext({ javaScriptEnabled: false, serviceWorkers: "block" });

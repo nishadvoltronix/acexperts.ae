@@ -12,6 +12,7 @@ const FRAME_SELECTOR = "iframe#ziframe_850132";
 const FRAME_MARKER = "Local intercepted Zoho Forms embed; no enquiry delivered.";
 const GTM_SCRIPT = "https://www.googletagmanager.com/gtm.js?id=GTM-K9HW63CV";
 const GTM_FRAME = "https://www.googletagmanager.com/ns.html?id=GTM-K9HW63CV";
+const MARIES_SCRIPT = "https://talk2maries.com/widget/v1/voice-widget.js?v=1.0.1";
 
 export async function interceptZohoContact(context, base) {
   const frameRequests = [], mapRequests = [], unexpectedPosts = [], unexpectedProviderRequests = [];
@@ -160,6 +161,7 @@ async function isolateProviderTraffic(context, base, websiteOrigin) {
     const url = new URL(route.request().url());
     if (url.href === GTM_SCRIPT) return route.fulfill({ contentType: "application/javascript", body: "/* Local GTM fixture: no tracking. */" });
     if (url.href === GTM_FRAME) return route.fulfill({ contentType: "text/html", body: "<!doctype html><html><body></body></html>" });
+    if (url.href === MARIES_SCRIPT) return route.fulfill({ contentType: "application/javascript", body: "window.Talk2MariesWidget = { open() {} };" });
     if (websiteOrigin && url.origin === websiteOrigin) {
       // Exercise the real hydrated component at a public-looking URL while all
       // document/asset requests are fetched exclusively from the local server.

@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
           {
             key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=(), payment=()",
+            value: 'camera=(), microphone=(self "https://talk2maries.com"), geolocation=(), payment=()',
           },
           ...(process.env.NODE_ENV === "production"
             ? [{ key: "Strict-Transport-Security", value: "max-age=31536000" }]

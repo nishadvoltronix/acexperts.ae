@@ -63,37 +63,19 @@
   height: 32px;
 }
 
-.floating-chatbot {
+#maries-widget-anchor {
   position: fixed;
-  z-index: 40;
-  right: max(16px, env(safe-area-inset-right));
-  bottom: max(20px, env(safe-area-inset-bottom));
-  display: grid;
-  place-items: center;
+  right: max(20px, env(safe-area-inset-right));
+  /* The widget adds this 58px reference height and its 14px gap: 96px total. */
+  bottom: calc(24px + env(safe-area-inset-bottom));
   width: 58px;
   height: 58px;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  background: #0068ca;
-  color: #fff;
-  box-shadow: 0 5px 18px #0003;
-  cursor: pointer;
+  pointer-events: none;
 }
 
-.floating-chatbot:hover {
-  background: #0053a5;
-}
-
-.floating-chatbot:focus-visible,
 .floating-whatsapp:focus-visible {
   outline: 3px solid #143e79;
   outline-offset: 3px;
-}
-
-.floating-chatbot svg {
-  width: 29px;
-  height: 29px;
 }
 
 @media (max-width: 1279px) {

@@ -106,7 +106,7 @@ n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertB
         <main id="main-content">{children}</main>
         <Footer />
         <FloatingWhatsApp />
-        <FloatingChatbot />
+        <FloatingChatbot nonce={nonce} />
       </body>
     </html>
   );
