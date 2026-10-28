@@ -221,7 +221,7 @@ async function main() {
       failedResponses++;
     });
     async function cleanBrowser(label) {
-      await page.waitForFunction(() => globalThis.__securityMaries?.opens === 1);
+      await page.waitForFunction(() => globalThis.__securityMaries?.loads === 1);
       check(await page.evaluate(() => globalThis.__securityViolations.length === 0), `${label}: unexpected CSP violation`);
       check(!consoleErrors && !pageErrors && !failedResponses, `${label}: browser errors (console=${consoleErrors}, page=${pageErrors}, HTTP=${failedResponses})`);
       check(!externalRequests, `${label}: attempted nonlocal request or WebSocket`);
@@ -249,9 +249,9 @@ async function main() {
           label: script?.dataset.label,
         };
       }, mariesScript);
-      check(maries.loads === 1 && maries.opens === 1 && maries.scripts === 1 && maries.nonceMatches,
-        `${label}: Maries must load and auto-open once per document with the CSP nonce`);
-      check(maries.siteId === "ac-experts" && maries.position === "bottom-right" && maries.label === "Talk to Maries",
+      check(maries.loads === 1 && maries.opens === 0 && !maries.open && maries.scripts === 1 && maries.nonceMatches,
+        `${label}: Maries must load once with the CSP nonce and remain closed until requested`);
+      check(maries.siteId === "ac-experts" && maries.position === "bottom-right" && maries.label === "talk2maries",
         `${label}: Maries site ID, right-side position or label is incorrect`);
     }
     for (const path of routes) {
@@ -263,13 +263,12 @@ async function main() {
       await cleanBrowser(phase);
       check(gtmRequests === previousGtmRequests + 1, `${phase}: expected one GTM script request per document`);
       check(mariesRequests === previousMariesRequests + 1, `${phase}: expected one Maries script request per document`);
-      check(await page.evaluate(() => globalThis.Talk2MariesWidget.getState().open), `${phase}: Maries must open automatically`);
+      check(await page.evaluate(() => !globalThis.Talk2MariesWidget.getState().open), `${phase}: Maries must start as a closed chat button`);
     }
 
     phase = "mobile navigation";
     const gtmRequestsBeforeNavigation = gtmRequests;
     const mariesRequestsBeforeNavigation = mariesRequests;
-    await page.evaluate(() => globalThis.Talk2MariesWidget.close());
     await page.getByRole("button", { name: "Menu", exact: true }).click();
     const nav = page.getByRole("navigation", { name: "Main navigation" });
     check(await nav.isVisible(), "mobile menu did not open after hydration");
@@ -280,8 +279,8 @@ async function main() {
     await cleanBrowser(phase);
     check(gtmRequests === gtmRequestsBeforeNavigation, "client navigation must not reload GTM");
     check(mariesRequests === mariesRequestsBeforeNavigation && await page.evaluate(() => !globalThis.Talk2MariesWidget.getState().open),
-      "client navigation must not reload Maries or reopen a panel the visitor closed");
-    console.log("PASS browser: hydration, CSP, GTM initialization, Maries auto-open/close persistence and mobile navigation on four routes");
+      "client navigation must not reload Maries or automatically open its panel");
+    console.log("PASS browser: hydration, CSP, GTM initialization, Maries closed launcher and mobile navigation on four routes");
 
     phase = "GTM fallback without JavaScript";
     const noScriptContext = await browser.newContext({ javaScriptEnabled: false, serviceWorkers: "block" });
