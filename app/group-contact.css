@@ -78,6 +78,28 @@
   outline-offset: 3px;
 }
 
+/* Keep account-triggered greetings collapsed until the visitor requests chat. */
+html[data-zoho-chat-requested="false"] .zls-sptwndw,
+html[data-zoho-chat-requested="false"] #zsiq_chat_wrap {
+  visibility: hidden !important;
+  pointer-events: none;
+}
+
+/* Match voltronix.ae: Maries and WhatsApp remain available on smaller screens. */
+@media (max-width: 1024px) {
+  .zsiq_floatmain,
+  .zls-sptwndw,
+  #siqiframe,
+  [data-id="zsalesiq"],
+  #zsiq_float,
+  #zsiq_chat_wrap,
+  #siq_chatwindow {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
+
 @media (max-width: 1279px) {
   .footer-group .company-links {
     justify-content: flex-start;

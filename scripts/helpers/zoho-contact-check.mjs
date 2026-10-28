@@ -13,13 +13,33 @@ const FRAME_MARKER = "Local intercepted Zoho Forms embed; no enquiry delivered."
 const GTM_SCRIPT = "https://www.googletagmanager.com/gtm.js?id=GTM-K9HW63CV";
 const GTM_FRAME = "https://www.googletagmanager.com/ns.html?id=GTM-K9HW63CV";
 const MARIES_SCRIPT = "https://talk2maries.com/widget/v1/voice-widget.js?v=1.0.1";
+export const ZOHO_CHAT_URL = "https://salesiq.zohopublic.com/widget?wc=siq6c7caf10ab5558239b53ad29eb5d9801ab28f7cdd7b035124a54dee0b79f78f5e53880139d0b43526df2e43b1a0a42e3";
+const CHAT_FIXTURE = `(() => {
+  const salesiq = globalThis.$zoho?.salesiq;
+  const state = globalThis.__securitySalesIQ = {
+    loads: (globalThis.__securitySalesIQ?.loads || 0) + 1,
+    initialized: typeof salesiq?.ready === 'function', opens: 0
+  };
+  if (!state.initialized) throw new Error('SalesIQ must be initialized before its script loads');
+  salesiq.floatbutton = { position() {}, visible() {} };
+  salesiq.chatbutton = { click(callback) { state.onClick = callback; } };
+  salesiq.floatwindow = {
+    open(callback) { state.onOpen = callback; },
+    visible(value) { if (value === 'show') state.opens++; }
+  };
+  salesiq.ready();
+})();`;
 
 export async function interceptZohoContact(context, base) {
-  const frameRequests = [], mapRequests = [], unexpectedPosts = [], unexpectedProviderRequests = [];
+  const frameRequests = [], mapRequests = [], chatRequests = [], unexpectedPosts = [], unexpectedProviderRequests = [];
   const localOrigin = new URL(base).origin;
   await context.route("**/*", async (route) => {
     const request = route.request();
     const url = new URL(request.url());
+    if (url.href === ZOHO_CHAT_URL && request.method() === "GET") {
+      chatRequests.push(request.url());
+      return route.fulfill({ status: 200, contentType: "application/javascript", body: CHAT_FIXTURE });
+    }
     if (url.href === CONTACT_MAP_URL && request.method() === "GET" && request.isNavigationRequest()) {
       mapRequests.push(request.url());
       return route.fulfill({
@@ -46,7 +66,7 @@ export async function interceptZohoContact(context, base) {
     }
     return route.fallback();
   });
-  return { frameRequests, mapRequests, unexpectedPosts, unexpectedProviderRequests };
+  return { frameRequests, mapRequests, chatRequests, unexpectedPosts, unexpectedProviderRequests };
 }
 
 export async function checkContactMap(page, intercepted) {
@@ -162,6 +182,7 @@ async function isolateProviderTraffic(context, base, websiteOrigin) {
     if (url.href === GTM_SCRIPT) return route.fulfill({ contentType: "application/javascript", body: "/* Local GTM fixture: no tracking. */" });
     if (url.href === GTM_FRAME) return route.fulfill({ contentType: "text/html", body: "<!doctype html><html><body></body></html>" });
     if (url.href === MARIES_SCRIPT) return route.fulfill({ contentType: "application/javascript", body: "window.Talk2MariesWidget = { open() {} };" });
+    if (url.href === ZOHO_CHAT_URL) return route.fulfill({ contentType: "application/javascript", body: CHAT_FIXTURE });
     if (websiteOrigin && url.origin === websiteOrigin) {
       // Exercise the real hydrated component at a public-looking URL while all
       // document/asset requests are fetched exclusively from the local server.

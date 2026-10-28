@@ -16,6 +16,7 @@ export function proxy(request: NextRequest) {
     "style-src-attr 'unsafe-inline'",
     "img-src 'self' data: blob: https://www.googletagmanager.com https://*.google-analytics.com https://www.google.ae https://*.zohopublic.com https://*.zohocdn.com https://*.zohostatic.com https://talk2maries.com",
     "font-src 'self' https://*.zohocdn.com https://*.zohostatic.com",
+    "media-src 'self' https://static.zohocdn.com/salesiq/",
     // Destinations used by the published GTM container's GA and Zoho PageSense tags.
     `connect-src 'self' ${ZOHO_CONTACT_ORIGIN} https://www.googletagmanager.com https://*.google-analytics.com https://*.google.com https://www.google.ae https://stats.g.doubleclick.net https://pagesense-collect.zoho.com https://pagesense-hb-collect.zoho.com https://*.zohopublic.com https://*.zohocdn.com https://*.zohostatic.com https://talk2maries.com${development ? " ws://localhost:* ws://127.0.0.1:*" : ""}`,
     "object-src 'none'",

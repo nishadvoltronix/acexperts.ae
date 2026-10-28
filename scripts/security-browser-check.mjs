@@ -1,7 +1,7 @@
 import { access, readFile } from "node:fs/promises";
 import { load } from "cheerio";
 import { chromium } from "playwright";
-import { ZOHO_CONTACT_ORIGIN, interceptZohoContact, checkZohoContact, checkZohoContactReferrer, checkZohoContactWithoutJavaScript, checkContactMap } from "./helpers/zoho-contact-check.mjs";
+import { ZOHO_CONTACT_ORIGIN, ZOHO_CHAT_URL, interceptZohoContact, checkZohoContact, checkZohoContactReferrer, checkZohoContactWithoutJavaScript, checkContactMap } from "./helpers/zoho-contact-check.mjs";
 
 // Production checks only: run against a local `next start` instance.
 // Requests remain local; provider embeds and tracking probes are fulfilled in-browser.
@@ -76,6 +76,8 @@ function documentPolicy(headers, label) {
   for (const name of ["script-src-elem", "style-src-elem", "img-src", "connect-src", "frame-src"]) {
     check(directives.get(name)?.includes(mariesOrigin), `${label}: ${name} must allow the Maries widget origin`);
   }
+  check(directives.get("media-src")?.join(" ") === "'self' https://static.zohocdn.com/salesiq/",
+    `${label}: media must be limited to self and SalesIQ notification sounds`);
   check(directives.get("form-action")?.join(" ") === `'self' ${ZOHO_CONTACT_ORIGIN}`, `${label}: form destinations must be limited to self and Zoho CRM`);
   check(directives.get("connect-src")?.includes(ZOHO_CONTACT_ORIGIN), `${label}: Zoho CRM AJAX submission must be allowed`);
   for (const origin of trackingConnectionOrigins) {
@@ -221,7 +223,7 @@ async function main() {
       failedResponses++;
     });
     async function cleanBrowser(label) {
-      await page.waitForFunction(() => globalThis.__securityMaries?.loads === 1);
+      await page.waitForFunction(() => globalThis.__securityMaries?.loads === 1 && globalThis.__securitySalesIQ?.loads === 1);
       check(await page.evaluate(() => globalThis.__securityViolations.length === 0), `${label}: unexpected CSP violation`);
       check(!consoleErrors && !pageErrors && !failedResponses, `${label}: browser errors (console=${consoleErrors}, page=${pageErrors}, HTTP=${failedResponses})`);
       check(!externalRequests, `${label}: attempted nonlocal request or WebSocket`);
@@ -253,22 +255,38 @@ async function main() {
         `${label}: Maries must load once with the CSP nonce and remain closed until requested`);
       check(maries.siteId === "ac-experts" && maries.position === "bottom-right" && maries.label === "talk2maries",
         `${label}: Maries site ID, right-side position or label is incorrect`);
+      const salesiq = await page.evaluate((src) => {
+        const scripts = [...document.scripts].filter((script) => script.src === src);
+        const bootstrap = document.getElementById("zoho-salesiq-init");
+        const nonce = document.getElementById("google-tag-manager")?.nonce;
+        return {
+          ...globalThis.__securitySalesIQ,
+          scripts: scripts.length,
+          bootstraps: document.querySelectorAll("#zoho-salesiq-init").length,
+          nonceMatches: !!nonce && scripts[0]?.nonce === nonce && bootstrap?.nonce === nonce && globalThis.$zoho?.salesiq?.nonce === nonce,
+        };
+      }, ZOHO_CHAT_URL);
+      check(salesiq.initialized && salesiq.loads === 1 && salesiq.opens === 0 && salesiq.scripts === 1 && salesiq.bootstraps === 1 && salesiq.nonceMatches,
+        `${label}: SalesIQ must initialize before loading once, retain CSP nonces and stay closed`);
     }
     for (const path of routes) {
       phase = `browser ${path}`;
       const previousGtmRequests = gtmRequests;
       const previousMariesRequests = mariesRequests;
+      const previousChatRequests = zohoContact.chatRequests.length;
       const response = await page.goto(new URL(path, base).href, { waitUntil: "load" });
       check(response?.status() === 200, `${phase}: page unavailable`);
       await cleanBrowser(phase);
       check(gtmRequests === previousGtmRequests + 1, `${phase}: expected one GTM script request per document`);
       check(mariesRequests === previousMariesRequests + 1, `${phase}: expected one Maries script request per document`);
+      check(zohoContact.chatRequests.length === previousChatRequests + 1, `${phase}: expected one SalesIQ script request per document`);
       check(await page.evaluate(() => !globalThis.Talk2MariesWidget.getState().open), `${phase}: Maries must start as a closed chat button`);
     }
 
     phase = "mobile navigation";
     const gtmRequestsBeforeNavigation = gtmRequests;
     const mariesRequestsBeforeNavigation = mariesRequests;
+    const chatRequestsBeforeNavigation = zohoContact.chatRequests.length;
     await page.getByRole("button", { name: "Menu", exact: true }).click();
     const nav = page.getByRole("navigation", { name: "Main navigation" });
     check(await nav.isVisible(), "mobile menu did not open after hydration");
@@ -280,7 +298,8 @@ async function main() {
     check(gtmRequests === gtmRequestsBeforeNavigation, "client navigation must not reload GTM");
     check(mariesRequests === mariesRequestsBeforeNavigation && await page.evaluate(() => !globalThis.Talk2MariesWidget.getState().open),
       "client navigation must not reload Maries or automatically open its panel");
-    console.log("PASS browser: hydration, CSP, GTM initialization, Maries closed launcher and mobile navigation on four routes");
+    check(zohoContact.chatRequests.length === chatRequestsBeforeNavigation, "client navigation must not reload SalesIQ");
+    console.log("PASS browser: hydration, CSP, GTM initialization, Maries/SalesIQ closed launchers and mobile navigation on four routes");
 
     phase = "GTM fallback without JavaScript";
     const noScriptContext = await browser.newContext({ javaScriptEnabled: false, serviceWorkers: "block" });

@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { Header } from "@/components/Header";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { FloatingChatbot } from "@/components/FloatingChatbot";
+import { ZohoChatbot } from "@/components/ZohoChatbot";
 import { Footer } from "@/components/Footer";
 import { MotionEffects } from "@/components/MotionEffects";
 import { site } from "@/lib/site";
@@ -107,6 +108,7 @@ n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertB
         <Footer />
         <FloatingWhatsApp />
         <FloatingChatbot nonce={nonce} />
+        <ZohoChatbot nonce={nonce} />
       </body>
     </html>
   );
