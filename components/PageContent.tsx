@@ -1,7 +1,7 @@
 import { QualityImage as Image } from "./QualityImage";
 import Link from "next/link";
 import { headers } from "next/headers";
-import { getAsset, getPage, localLink } from "@/lib/content";
+import { getAsset, getPage, localLink, publishedArticles } from "@/lib/content";
 import { site } from "@/lib/site";
 import type { ContentSection, FAQItem, PageData } from "@/lib/types";
 import { RichContent } from "./RichContent";
@@ -66,7 +66,7 @@ export async function StructuredData({
       description: page.description,
       datePublished: page.article.published || undefined,
       dateModified: page.article.modified || undefined,
-      author: { "@type": "Person", name: page.article.author },
+      author: { "@type": page.article.authorType || "Person", name: page.article.author },
       publisher: { "@type": "Organization", name: site.name, url: site.origin },
       mainEntityOfPage: site.origin + page.route,
       image: getAsset(page.heroImage)
@@ -176,6 +176,10 @@ export function PageContent({ page }: { page: PageData }) {
   }
 
   const heroImage = getPageHeroImage(page)?.url;
+  const newListingArticles = publishedArticles
+    .filter((article) => page.route === "/blog/" ||
+      article.article?.categories.some((category) => category.route === page.route))
+    .sort((left, right) => Date.parse(right.article!.published) - Date.parse(left.article!.published));
   const authorImage = getAsset(page.article?.authorImage);
   const projectCards: FilterableProject[] = page.type === "projects" ? (page.cards || []).map((card) => {
     const project = getPage(card.route);
@@ -266,6 +270,30 @@ export function PageContent({ page }: { page: PageData }) {
               </section>
             )}
           </>
+        ) : newListingArticles.length > 0 ? (
+          <div className="migrated-content internal-content">
+            <section className="content-section section-content" aria-label="Articles">
+              <div className="content-inner">
+                <div className="card-grid">
+                  {[
+                    ...newListingArticles.map((article) => ({
+                      route: article.route,
+                      title: article.h1,
+                      image: article.heroImage,
+                      excerpt: article.description,
+                    })),
+                    ...(page.cards || []),
+                  ].map((card) => <ContentCard key={card.route} card={card} heading="h2" />)}
+                </div>
+                {page.route === "/blog/" && getPage("/blog/page/2/") && (
+                  <nav className="pagination" aria-label="Blog pages">
+                    <span className="current" aria-current="page">1</span>
+                    <Link href="/blog/page/2/">2</Link>
+                  </nav>
+                )}
+              </div>
+            </section>
+          </div>
         ) : page.type === "contact" ? (
           <ContactContent page={page} />
         ) : page.type === "projects" ? (

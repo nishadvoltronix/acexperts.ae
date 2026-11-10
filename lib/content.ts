@@ -1,10 +1,13 @@
 import rawPages from "@/data/pages.json";
+import rawArticles from "@/data/articles.json";
 import rawAssets from "@/data/assets.json";
 import urlMap from "@/docs/url-map.json";
 import type { Asset, PageData } from "./types";
 import { safeContentUrl } from "./content-safety";
 import { uniformImageSource } from "./uniform-images";
-export const pages = rawPages as unknown as PageData[];
+// Keep the migrated source archive intact while publishing new articles.
+export const publishedArticles = rawArticles as PageData[];
+export const pages = [...rawPages, ...publishedArticles] as PageData[];
 export const assets = rawAssets as unknown as Asset[];
 const pageMap = new Map(pages.map((page) => [page.route, page]));
 const assetMap = new Map(assets.map((asset) => [asset.url, asset]));

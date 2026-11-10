@@ -2,7 +2,7 @@ import Link from "next/link";
 import { QualityImage as Image } from "./QualityImage";
 import { getAsset, getPage, localLink } from "@/lib/content";
 import type { PageCard } from "@/lib/types";
-export function ContentCard({ card }: { card: PageCard }) {
+export function ContentCard({ card, heading: Heading = "h3" }: { card: PageCard; heading?: "h2" | "h3" }) {
   const page = getPage(card.route);
   const asset = getAsset(card.image || page?.heroImage);
   return (
@@ -23,7 +23,7 @@ export function ContentCard({ card }: { card: PageCard }) {
               {page.article.author} · {formatDate(page.article.published)}
             </p>
           )}
-          <h3>{card.title}</h3>
+          <Heading>{card.title}</Heading>
           {card.excerpt && <p>{card.excerpt}</p>}
           <span className="text-link">
             Read more <span aria-hidden="true">→</span>

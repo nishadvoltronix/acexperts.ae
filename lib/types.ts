@@ -37,6 +37,7 @@ export interface PageData {
   cards?: PageCard[];
   article?: {
     author: string;
+    authorType?: "Person" | "Organization";
     published: string;
     modified: string;
     categories: { name: string; route: string }[];
